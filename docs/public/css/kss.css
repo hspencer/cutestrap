@@ -16,7 +16,7 @@ html.grid--is_active {
       background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAeAQMAAAAxci3AAAAABlBMVEX///8AAABVwtN+AAAAAnRSTlMANrkpWKEAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVAiZY2AgGzwAAAEcAOFHPV40AAAAAElFTkSuQmCC) repeat left top; } }
 
 .kss-modifier-title {
-  color: #898989; }
+  color: #b2b2b2; }
 
 header {
   background-color: #5D0071;
@@ -32,7 +32,7 @@ header a:link, header a:visited, header a:hover, header a:focus, header a:active
   text-decoration: none; }
 
 nav {
-  border-bottom: 1px solid #bcbcbc;
+  border-bottom: 1px solid #e5e5e5;
   margin-top: -1px;
   padding: 1.2rem;
   text-align: center; }

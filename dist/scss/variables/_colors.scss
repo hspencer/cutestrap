@@ -6,13 +6,13 @@
 $primary:       #5D0071 !default;
 $primary-dark:  #25003C !default;
 
-$link:          #4076D4 !default;
-$link--visited: #9140D4 !default;
+$link:          lighten($primary, 15%) !default;
+$link--visited: darken($primary, 15%) !default;
 $link--hover:   darken($link, 5%) !default;
 $link--active:  #D44076 !default;
 
 // dark shades
-$gray1:         #565656 !default;
+$gray1:         #7F7F7F !default;
 $gray2:         lighten($gray1, 10%) !default;
 $gray3:         lighten($gray2, 10%) !default;
 
