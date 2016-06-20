@@ -54,6 +54,11 @@ Styleguide 2.0
   &:active{
     background-color: $primary;
   }
+
+  &.skew{
+    transform: skewX(-15deg) rotateZ(-15deg);
+    text-transform: italic;
+  }
 }
 
 .btn--secondary{

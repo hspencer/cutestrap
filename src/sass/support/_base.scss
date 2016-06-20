@@ -28,7 +28,8 @@ body{
 
 h1, h2, h3, h4, h5, h6{
   font-family: $heading;
-  font-weight: 500;
+  font-weight: 900;
+  color: $primary;
 }
 
 h1, h2, h3{
@@ -284,4 +285,8 @@ select:-webkit-autofill {
   color: $gray1;
   -webkit-text-fill-color: $gray1;
   -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
+
+.i{
+  font-style: italic;
 }
