@@ -3,8 +3,8 @@
 // Styleguide
 
 // primary colors
-$primary:       #E83FB8 !default;
-$primary-dark:  darken($primary, 5%) !default;
+$primary:       #5D0071 !default;
+$primary-dark:  #25003C !default;
 
 $link:          #4076D4 !default;
 $link--visited: #9140D4 !default;
@@ -12,13 +12,13 @@ $link--hover:   darken($link, 5%) !default;
 $link--active:  #D44076 !default;
 
 // dark shades
-$gray1:         #3c3c3d !default;
-$gray2:         #5a5a5b !default;
-$gray3:         #7d7d7e !default;
+$gray1:         #565656 !default;
+$gray2:         lighten($gray1, 10%) !default;
+$gray3:         lighten($gray2, 10%) !default;
 
 // light shades
-$gray4:         #cdcdce !default;
-$gray5:         #dededf !default;
-$gray6:         #efeff0 !default;
+$gray4:			lighten($gray3, 10%) !default;
+$gray5:			lighten($gray4, 10%) !default;
+$gray6:			lighten($gray5, 10%) !default;
 
 $white:         #ffffff !default;

@@ -36,7 +36,7 @@
     "gulp-tag-version": "latest",
     "gulp-zip": "latest",
     "jquery": "latest",
-    "kss": "^2.1.0",
+    "kss": "^2.4.0",
     "minimist": "latest",
     "run-sequence": "latest"
   },
@@ -45,11 +45,21 @@
       "block-no-empty": null,
       "color-no-invalid-hex": true,
       "declaration-colon-space-after": "always",
-      "indentation": ["tab", {
-        "except": ["value"]
-      }],
+      "indentation": [
+        "tab",
+        {
+          "except": [
+            "value"
+          ]
+        }
+      ],
       "max-empty-lines": 2,
-      "unit-whitelist": ["em", "rem", "%", "s"]
+      "unit-whitelist": [
+        "em",
+        "rem",
+        "%",
+        "s"
+      ]
     }
   }
 }
