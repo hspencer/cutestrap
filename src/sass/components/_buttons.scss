@@ -2,16 +2,17 @@
 
 Buttons
 
-Buttons and their variations
+Class <code>.btn</code>; Buttons and their variations
 
 Markup:
-<a href="#" class="btn {{modifier_class}}">Button</a>
+<a href="#" class="btn {{modifier_class}}">21 gb</a>
 
 .btn--secondary       - A link that`s sized like a button
 .btn--link            - A link that`s sized like a button
-.btn--wom             - A link that`s wom-icialized
-.btn--skew            - A link thats skewed
-.btn--wom--skew       - A link thats womlyskewed
+.wom             - A link that`s wom-icialized
+.skew            - A link that`s skewed
+.wom--skew       - A link thats womlyskewed
+.jumbo           - A big one
 
 Styleguide 2.0
 
@@ -25,15 +26,15 @@ Styleguide 2.0
   color: $white;
   cursor: pointer;
   display: inline-block;
-  height: 4.8rem;
-  line-height: 4.8rem;
+  height: 2.1rem;
+  line-height: 2.1rem;
   max-width: 100%;
   transition-property: background-color;
   transition-duration: 200ms;
   text-transform: uppercase;
   font-weight: 900;
   margin: 0 auto;
-  padding: 0 3rem;
+  padding: 0 .76rem;
   text-align: center;
   user-select: none;
   width: auto;
@@ -57,32 +58,36 @@ Styleguide 2.0
   &:active{
     background-color: $primary;
   }
+
+  &.skew{
+    transform: skewX(-15deg) rotateZ(-15deg);
+    text-transform: italic;
+  }
+
+  &.wom{
+    font-weight: 200;
+    padding: 0 .3rem;
+    font-size: 2.1em;
+    height: .96em;
+    line-height: .89;
+  }
+
+   &.wom--skew{
+    transform: skewX(-15deg) rotateZ(-15deg);
+    text-transform: italic;
+    font-weight: 200;
+    padding: 0 .6rem;
+    font-size: 2.1em;
+    height: .96em;
+    line-height: .89;
+  }
+   &.jumbo{
+    font-size: 2.9em;
+    height: 5rem;
+    line-height: 5rem;
+  }
 }
 
-.btn--skew{
-  transform: skewX(-15deg) rotateZ(-15deg);
-  text-transform: italic;
-}
-
-.btn--wom{
-  font-weight: 200;
-  padding: 0;
-  font-size: 2.1em;
-  height: .96em;
-  line-height: .89;
-  background-color: $gray5;
-}
-
-.btn--wom--skew{
-  font-weight: 200;
-  padding: 0;
-  font-size: 2.1em;
-  height: .96em;
-  line-height: .89;
-  background-color: $gray5;
-  transform: skewX(-15deg) rotateZ(-15deg);
-  text-transform: italic;
-}
 
 .btn--secondary{
   background-color: $gray6;
