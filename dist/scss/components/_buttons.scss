@@ -7,8 +7,11 @@ Buttons and their variations
 Markup:
 <a href="#" class="btn {{modifier_class}}">Button</a>
 
-.btn--secondary       - A link that's sized like a button
-.btn--link            - A link that's sized like a button
+.btn--secondary       - A link that`s sized like a button
+.btn--link            - A link that`s sized like a button
+.btn--wom             - A link that`s wom-icialized
+.btn--skew            - A link thats skewed
+.btn--wom--skew       - A link thats womlyskewed
 
 Styleguide 2.0
 
@@ -54,11 +57,31 @@ Styleguide 2.0
   &:active{
     background-color: $primary;
   }
+}
 
-  &.skew{
-    transform: skewX(-15deg) rotateZ(-15deg);
-    text-transform: italic;
-  }
+.btn--skew{
+  transform: skewX(-15deg) rotateZ(-15deg);
+  text-transform: italic;
+}
+
+.btn--wom{
+  font-weight: 200;
+  padding: 0;
+  font-size: 2.1em;
+  height: .96em;
+  line-height: .89;
+  background-color: $gray5;
+}
+
+.btn--wom--skew{
+  font-weight: 200;
+  padding: 0;
+  font-size: 2.1em;
+  height: .96em;
+  line-height: .89;
+  background-color: $gray5;
+  transform: skewX(-15deg) rotateZ(-15deg);
+  text-transform: italic;
 }
 
 .btn--secondary{
