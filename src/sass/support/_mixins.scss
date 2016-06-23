@@ -42,56 +42,22 @@
   background-image: linear-gradient($angle, $color 25%, transparent 25%, transparent 50%, $color 50%, $color 75%, transparent 75%, transparent);
 }
 
-// Long Shadow
-// http://codepen.io/awesomephant/pen/mAxHz
-// Usage: @include long-shadow(box/text, #000, 200, false, false, left);
+// Shadows, longs & shorts, for texts and boxes
 
-@mixin long-shadow($type, $color, $length, $fadeout: true, $skew: false, $direction: right){
-  $shadow: '';
-  @if $skew == false or $type == text{
-    @if $direction == right {
-      @for $i from 0 to $length - 1 {
-        $shadow: $shadow + $i + 'px ' + $i + 'px 0 ' + $color + ',';
-      }
-    }
-    @if $direction == left {
-      @for $i from 0 to $length - 1 {
-        $shadow: $shadow + $i * -1 + 'px ' + $i + 'px 0 ' + $color + ',';
-       }
-      }
-     }
-        
-   @if $fadeout == true{
-    @for $i from 1 to $length - 1 {
-      @if $type == text or $skew == false{
-        @if $direction == right{
-          $shadow: $shadow + $i + 'px ' + $i + 'px 0 ' +       rgba($color, 1 - $i / $length) + ',';
-        }
-        @if $direction == left{
-          $shadow: $shadow + $i * -1 + 'px ' + $i + 'px 0 ' +       rgba($color, 1 - $i / $length) + ',';
-        }
-      }
-      @if ($type == box) and $skew == true{
-        @if $direction == right {
-          $shadow: $shadow + $i + 'px ' + $i + 'px 0 ' + $i * .2 + 'px ' + rgba($color, 1 - $i / $length) + ',';
-        }
-        @if $direction == left {
-          $shadow: $shadow + $i * -1 + 'px ' + $i + 'px 0 ' + $i * .2 + 'px ' + rgba($color, 1 - $i / $length) + ',';
-        }
-      }
+@function make-long-shadow($color, $length, $alpha, $fade-factor, $fade-after) {
+  $val: 0px 0px rgba($color, $alpha);
+  @for $i from 1 through $length {
+  $temp: #{$i}px #{$i}px rgba($color, $alpha);
+  @if $i > $fade_after {$temp: #{$i}px #{$i}px rgba($color, $alpha - (($i - $fade-after) * $fade-factor))}
+    $val: #{$val}, $temp;
   }
-  $shadow: $shadow + $length + 'px ' + $length + 'px 0 ' + rgba($color, 0);
- }
- @if $fadeout == false{
-   @if $skew == true and ( $type == box ){
-     @for $i from 0 to $length - 1 {
-            $shadow: $shadow + $i + 'px ' + $i + 'px 0 ' + $i * .1 + 'px ' + $color + ',';
-      }
-   }
-    $shadow: $shadow + $length + 'px ' + $length + 'px 0 ' + rgba(0,0,0,0);
- }
- $shadow: unquote($shadow);
-  @if $type == 'box' {box-shadow: $shadow;}
-  @if $type == 'text' {text-shadow: $shadow;}
+  @return $val;
 }
 
+@mixin text-long-shadow($color, $length, $alpha, $fade-factor, $fade-after) {
+  text-shadow: make_long_shadow($color, $length, $alpha, $fade-factor, $fade-after);
+}
+
+@mixin box-long-shadow($color, $length, $alpha, $fade-factor, $fade-after) {
+  box-shadow: make_long_shadow($color, $length, $alpha, $fade-factor, $fade-after);
+}

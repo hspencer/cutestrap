@@ -142,7 +142,7 @@ Styleguide 2.0
 }
 
 .btn--shadow{
-  @include long-shadow(box, lighten($color-3, 30%), 22, true, false, right);
+  @include box-long-shadow(lighten($color-3, 30%), 100, .2, .0051, 1);
 }
 
 

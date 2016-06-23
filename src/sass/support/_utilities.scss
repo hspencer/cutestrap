@@ -18,8 +18,11 @@ Markup:
 .ta-left                 - text-align: left;
 .ta-center               - text-align: center;
 .ta-right                - text-align: right;
+.i                       - i is for italics
+.box                     - a box
+.white                   - white text
 
-Styleguide 4.0
+Styleguide Align & Floats
 
 */
 
@@ -63,6 +66,22 @@ Styleguide 4.0
   text-align: right;
 }
 
+// suplementary styles
+
+.i{
+  font-style: italic;
+}
+
+.box{
+  display: inline-block;
+  padding: 2rem;
+}
+
+.white{
+  color: $white;
+}
+
+
 /*
 
 Type Utilities
@@ -81,8 +100,11 @@ Markup:
 .fw-normal           - Changes the type to be 400 weight
 .fw-semibold         - Changes the type to be 600 weight
 .fw-bold             - Changes the type to be 700 weight
+.ft-tilt             - For promos and stuff
+.ft-shadow           - Enhanced from background
+.fs-large.fw-bold.ft-tilt.ft-shadow.white   - Everything!
 
-Styleguide 4.1
+Styleguide Type
 
 */
 
@@ -115,19 +137,12 @@ Styleguide 4.1
   font-weight: 900;
 }
 
-// suplementary styles
-
-.i{
-  font-style: italic;
+.ft-tilt{
+  transform: skewX($angle) rotateZ($angle);
+  text-transform: italic;
 }
 
-.box{
-  display: inline-block;
-  padding: 2rem;
+.ft-shadow{
+  @include text-long-shadow(lighten($color-3, 30%), 100, .25, .005, 1);
 }
-
-.white{
-  color: $white;
-}
-
 
