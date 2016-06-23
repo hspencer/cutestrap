@@ -1,6 +1,6 @@
 <div class="wrapper wrapper--large ta-center">
   <h1 class='i'>WOMstrap</h1>
-  <p>A sassy, opinionated CSS Framework for WOM. A tiny alternative to Bootstrap.</p>
+  <p>A sassy, opinionated CSS Framework for WOM. A tiny yet powerfull alternative to Bootstrap.</p>
 </div>
 
 <h2>Typography</h2>
