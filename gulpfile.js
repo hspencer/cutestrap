@@ -52,7 +52,7 @@ gulp.task('clean', function() {
       './dist',
       './temp',
       './docs',
-      './cutestrap.zip'
+      './womstrap.zip'
     ])
     .pipe(clean({force: true}));
 });
@@ -129,7 +129,7 @@ gulp.task('sass', function() {
   gulp.src('./src/sass/**/*.*')
     .pipe(gulp.dest('./dist/scss'));
 
-  return gulp.src('./src/sass/cutestrap.scss')
+  return gulp.src('./src/sass/womstrap.scss')
     .pipe(stylelint({
       reporters: [
         {formatter: 'string', console: true}
@@ -143,7 +143,7 @@ gulp.task('sass', function() {
 });
 
 gulp.task('minify', ['sass'], function() {
-  return gulp.src('./dist/css/cutestrap.css')
+  return gulp.src('./dist/css/womstrap.css')
     .pipe(cssmin())
 		.pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('./dist/css'));
@@ -166,7 +166,7 @@ gulp.task('watch', function() {
 gulp.task('zip', ['zip-temp-dist', 'zip-temp-docs'], function(){
 
   return gulp.src('temp/zip/**/*')
-    .pipe(zip('cutestrap.zip'))
+    .pipe(zip('womstrap.zip'))
     .pipe(gulp.dest('./'));
 
 });

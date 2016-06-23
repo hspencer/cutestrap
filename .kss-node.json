@@ -2,6 +2,6 @@
   "source": "src/sass/",
   "template": "temp/kss",
   "destination": "docs",
-  "css": "dist/css/cutestrap.css",
+  "css": "dist/css/womstrap.css",
   "homepage": "../../temp/kss/homepage.md"
 }
