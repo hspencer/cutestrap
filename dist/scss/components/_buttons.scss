@@ -7,12 +7,17 @@ Class <code>.btn</code>; buttons and their variations
 Markup:
 <a href="#" class="btn {{modifier_class}}">Button</a>
 
-.btn--secondary       - A link that`s sized like a button
-.btn--link            - A link that`s sized like a button
-.wom                  - A link that`s styled
-.skew                 - A link that`s skewed
-.wom-skew             - A link thats styled & skewed
-.jumbo                - A big one
+.btn--secondary           - A link that`s sized like a button
+.btn--link                - A link that`s sized like a button
+.btn--wom                 - A link that`s styled
+.btn--shadow              - A button with a fading shadow
+.btn--skew                - A link that`s skewed
+.btn--tilt                - A link that`s tilted
+.btn--wom.btn--tilt       - A link thats styled, tilted and skewed
+.btn--wom.btn--tilt.btn--shadow       - A link thats styled, tilted, skewed and shadowed
+.btn--jumbo               - A big one
+.btn--gradient-h          - A button with an horizontal gradient background
+.btn--jumbo.btn--wom.btn--tilt.btn--gradient-h.btn--shadow     - A very special button
 
 Styleguide 2.0
 
@@ -21,7 +26,7 @@ Styleguide 2.0
 .btn{
   background-color: $color-3;
   border: none;
-  border-radius: .2rem;
+  border-radius: .1rem;
   box-sizing: border-box;
   color: $white;
   cursor: pointer;
@@ -47,7 +52,7 @@ Styleguide 2.0
 
   &:focus,
   &:hover {
-    background-color: $primary-dark;
+    background-color: $primary-alt;
     color: $white;
   }
 
@@ -83,35 +88,39 @@ Styleguide 2.0
 
 .btn--link{
   background-color: transparent;
-  color: $link;
+  color: $link !important;
   text-decoration: underline;
 
   &:link{
-    color: $link;
+    color: $link !important;
   }
 
   &:visited{
-    color: $link--visited;
+    color: $link--visited !important;
   }
 
   &:focus,
   &:hover{
-    color: $link--hover;
+    color: $link--hover !important;
     background-color: transparent;
   }
 
   &:active{
-    color: $link--active;
+    color: $link--active !important;
     background-color: transparent;
   }
 }
 
-.skew{
+.btn--skew{
+  transform: skewX($angle);
+}
+
+.btn--tilt{
   transform: skewX($angle) rotateZ($angle);
   text-transform: italic;
 }
 
-.wom{
+.btn--wom{
   font-weight: 200;
   padding: 0 .3rem;
   font-size: 2.1em;
@@ -119,20 +128,21 @@ Styleguide 2.0
   line-height: .89;
 }
 
-.wom-skew{
-  transform: skewX(-$angle) rotateZ(-$angle);
-  text-transform: italic;
-  font-weight: 200;
-  padding: 0 .6rem;
-  font-size: 2.1em;
-  height: .96em;
-  line-height: .89;
-}
-
-.jumbo{
+.btn--jumbo{
   font-size: 2.9em;
   height: 5rem;
   line-height: 5rem;
+}
+
+.btn--gradient-h{
+  @include gradient-x($color-1, $color-2);
+  &:hover{
+    @include gradient-x($color-2, $color-3);
+  }
+}
+
+.btn--shadow{
+  @include long-shadow(box, lighten($color-3, 30%), 22, true, false, right);
 }
 
 

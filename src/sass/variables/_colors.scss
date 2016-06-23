@@ -5,16 +5,17 @@
 // primary colors
 
 $primary: 		#32044C !default;
-$primary-dark:	darken($primary, 20);
+$primary-alt:	lighten($primary, 10%);
 
 $color-1:		#4D0D7F; // dark purple
 $color-2:		#711082; // magenta
 $color-3:		#564599; // light purple
+$color-4:		#C200FF; // fuchsia
 
 $link:          $color-2 !default;
 $link--visited: darken($primary, 15%) !default;
-$link--hover:   darken($link, 5%) !default;
-$link--active:  #C200FF !default;
+$link--hover:   lighten($link, 10%) !default;
+$link--active:  lighten($link--hover, 20%);
 
 // dark shades
 $gray-1:         #424242 !default;
