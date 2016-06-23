@@ -9,7 +9,7 @@ html.grid--is_active{
 }
 
 .kss-modifier-title{
-  color: $gray3;
+  color: $gray-3;
 }
 
 
@@ -37,7 +37,7 @@ header a{
 
 
 nav{
-  border-bottom: 1px solid $gray5;
+  border-bottom: 1px solid $gray-5;
   margin-top: -1px;
   padding: 1.2rem;
   text-align: center;
@@ -50,4 +50,12 @@ nav ul{
 nav li{
   padding: 0 1.5rem;
   display: inline-block;
+
+  a{
+    text-decoration: none;
+    font-weight: 900;
+    &:hover{
+      border-bottom: 5px solid $primary;
+    }
+  }
 }

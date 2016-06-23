@@ -16,10 +16,10 @@ html.grid--is_active {
       background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAeAQMAAAAxci3AAAAABlBMVEX///8AAABVwtN+AAAAAnRSTlMANrkpWKEAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVAiZY2AgGzwAAAEcAOFHPV40AAAAAElFTkSuQmCC) repeat left top; } }
 
 .kss-modifier-title {
-  color: #757575; }
+  color: #848484; }
 
 header {
-  background-color: #5D0071;
+  background-color: #32044C;
   color: #ffffff;
   padding: 0 1rem; }
 
@@ -32,7 +32,7 @@ header a:link, header a:visited, header a:hover, header a:focus, header a:active
   text-decoration: none; }
 
 nav {
-  border-bottom: 1px solid #a8a8a8;
+  border-bottom: 1px solid #c7c7c7;
   margin-top: -1px;
   padding: 1.2rem;
   text-align: center; }
@@ -43,5 +43,10 @@ nav ul {
 nav li {
   padding: 0 1.5rem;
   display: inline-block; }
+  nav li a {
+    text-decoration: none;
+    font-weight: 900; }
+    nav li a:hover {
+      border-bottom: 5px solid #32044C; }
 
 /*# sourceMappingURL=kss.css.map */

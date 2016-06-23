@@ -100,7 +100,7 @@ Styleguide 4.1
 }
 
 .fw-light{
-  font-weight: 300;
+  font-weight: 100;
 }
 
 .fw-normal{
@@ -108,9 +108,26 @@ Styleguide 4.1
 }
 
 .fw-semibold{
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .fw-bold{
-  font-weight: 700;
+  font-weight: 900;
 }
+
+// suplementary styles
+
+.i{
+  font-style: italic;
+}
+
+.box{
+  display: inline-block;
+  padding: 2rem;
+}
+
+.white{
+  color: $white;
+}
+
+

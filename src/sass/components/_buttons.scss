@@ -2,24 +2,24 @@
 
 Buttons
 
-Class <code>.btn</code>; Buttons and their variations
+Class <code>.btn</code>; buttons and their variations
 
 Markup:
-<a href="#" class="btn {{modifier_class}}">21 gb</a>
+<a href="#" class="btn {{modifier_class}}">Button</a>
 
 .btn--secondary       - A link that`s sized like a button
 .btn--link            - A link that`s sized like a button
-.wom             - A link that`s wom-icialized
-.skew            - A link that`s skewed
-.wom--skew       - A link thats womlyskewed
-.jumbo           - A big one
+.wom                  - A link that`s styled
+.skew                 - A link that`s skewed
+.wom-skew             - A link thats styled & skewed
+.jumbo                - A big one
 
 Styleguide 2.0
 
 */
 
 .btn{
-  background-color: $primary;
+  background-color: $color-3;
   border: none;
   border-radius: .2rem;
   box-sizing: border-box;
@@ -32,7 +32,7 @@ Styleguide 2.0
   transition-property: background-color;
   transition-duration: 200ms;
   text-transform: uppercase;
-  font-weight: 900;
+  font-weight: 700;
   margin: 0 auto;
   padding: 0 .76rem;
   text-align: center;
@@ -52,60 +52,32 @@ Styleguide 2.0
   }
 
   &:focus{
-    outline: .1rem dotted $gray3;
+    outline: .1rem dotted $gray-3;
   }
 
   &:active{
     background-color: $primary;
   }
-
-  &.skew{
-    transform: skewX(-15deg) rotateZ(-15deg);
-    text-transform: italic;
-  }
-
-  &.wom{
-    font-weight: 200;
-    padding: 0 .3rem;
-    font-size: 2.1em;
-    height: .96em;
-    line-height: .89;
-  }
-
-   &.wom--skew{
-    transform: skewX(-15deg) rotateZ(-15deg);
-    text-transform: italic;
-    font-weight: 200;
-    padding: 0 .6rem;
-    font-size: 2.1em;
-    height: .96em;
-    line-height: .89;
-  }
-   &.jumbo{
-    font-size: 2.9em;
-    height: 5rem;
-    line-height: 5rem;
-  }
 }
 
 
 .btn--secondary{
-  background-color: $gray6;
-  color: $gray1;
+  background-color: $gray-6;
+  color: $gray-1;
 
   &:link,
   &:visited{
-    color: $gray1;
+    color: $gray-1;
   }
 
   &:focus,
   &:hover{
-    background-color: $gray5;
-    color: $gray1;
+    background-color: $gray-5;
+    color: $gray-1;
   }
 
   &:active{
-    color: $gray3;
+    color: $gray-3;
   }
 }
 
@@ -132,6 +104,35 @@ Styleguide 2.0
     color: $link--active;
     background-color: transparent;
   }
+}
+
+.skew{
+  transform: skewX(-15deg) rotateZ(-15deg);
+  text-transform: italic;
+}
+
+.wom{
+  font-weight: 200;
+  padding: 0 .3rem;
+  font-size: 2.1em;
+  height: .96em;
+  line-height: .89;
+}
+
+.wom-skew{
+  transform: skewX(-15deg) rotateZ(-15deg);
+  text-transform: italic;
+  font-weight: 200;
+  padding: 0 .6rem;
+  font-size: 2.1em;
+  height: .96em;
+  line-height: .89;
+}
+
+.jumbo{
+  font-size: 2.9em;
+  height: 5rem;
+  line-height: 5rem;
 }
 
 [type=button],
