@@ -22,7 +22,7 @@ Markup:
 .box                     - a box
 .white                   - white text
 
-Styleguide Align & Floats
+Styleguide 3.0
 
 */
 
@@ -77,6 +77,10 @@ Styleguide Align & Floats
   padding: 2rem;
 }
 
+.uc{
+  text-transform: uppercase;
+}
+
 .white{
   color: $white;
 }
@@ -96,6 +100,7 @@ Markup:
 .fs-small            - Smaller than the default font size
 .fs-base             - Exactly the default font size
 .fs-large            - Larger than the default font size
+.fs-jumbo            - Twice as large than large
 .fw-light            - Changes the type to be 300 weight
 .fw-normal           - Changes the type to be 400 weight
 .fw-semibold         - Changes the type to be 600 weight
@@ -104,7 +109,7 @@ Markup:
 .ft-shadow           - Enhanced from background
 .fs-large.fw-bold.ft-tilt.ft-shadow.white   - Everything!
 
-Styleguide Type
+Styleguide 3.1
 
 */
 
@@ -119,6 +124,11 @@ Styleguide Type
 
 .fs-large{
   font-size: $font-size--large;
+}
+
+.fs-jumbo{
+  font-size: $font-size--large * 2 !important;
+  line-height: $line-height * 2 !important;
 }
 
 .fw-light{

@@ -1,4 +1,5 @@
 @import "variables";
+@import "support/mixins";
 
 html.grid--is_active{
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAYAQMAAADnK87dAAAABlBMVEX///8AAABVwtN+AAAAAnRSTlMANrkpWKEAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVAiZY2AgCTwAAAEQAOFwuZEGAAAAAElFTkSuQmCC) repeat left top;
@@ -14,7 +15,7 @@ html.grid--is_active{
 
 
 header{
-  background-color: $primary;
+  @include gradient-x($primary, $color-2);;
   color: $white;
   padding: 0 1rem;
 }

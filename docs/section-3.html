@@ -38,13 +38,10 @@
         <a href="section-2.html">Buttons</a>
       </li>
       <li>
-        <a href="section-3.html">Forms</a>
+        <a href="section-3.html">Utilities</a>
       </li>
       <li>
-        <a href="section-align-floats.html">Utilities</a>
-      </li>
-      <li>
-        <a href="section-type.html">Type Utilities</a>
+        <a href="section-4.html">Forms</a>
       </li>
   </ul>
 </nav>
@@ -53,152 +50,146 @@
 <div class="wrapper">
 
       <article class="pattern">
-          <h2 id="3">Forms</h2>
+          <h2 id="3">Utilities</h2>
+          <div class="subtitle pattern-description"><p>These utility classes have one or two CSS properties that are meant to save you from creating several identical classes to do the same thing, like just centering some text.</p>
+</div>
           <section class="example">
-<pre class="">&lt;form&gt;
-  &lt;label class=&quot;textfield&quot;&gt;
-    &lt;input type=&quot;text&quot; /&gt;
-    &lt;span class=&quot;textfield__label&quot;&gt;Name&lt;/span&gt;
-  &lt;/label&gt;
-  &lt;label class=&quot;radio&quot;&gt;
-    &lt;input type=&quot;radio&quot; name=&quot;example&quot; /&gt;
-    &lt;span class=&quot;radio__label&quot;&gt;Desktop&lt;/span&gt;
-  &lt;/label&gt;
-  &lt;label class=&quot;radio&quot;&gt;
-    &lt;input type=&quot;radio&quot; name=&quot;example&quot; /&gt;
-    &lt;span class=&quot;radio__label&quot;&gt;Mobile&lt;/span&gt;
-  &lt;/label&gt;
-  &lt;label class=&quot;select&quot;&gt;
-    &lt;select name=&quot;select&quot;&gt;
-      &lt;option disabled=&quot;disabled&quot; selected=&quot;selected&quot;&gt;Flavors&lt;/option&gt;
-      &lt;option&gt;Chocolate&lt;/option&gt;
-    &lt;/select&gt;
-    &lt;span class=&quot;select__label&quot; for=&quot;select&quot;&gt;Favorite Ice Cream&lt;/span&gt;
-  &lt;/label&gt;
-  &lt;label class=&quot;textfield&quot;&gt;
-    &lt;textarea&gt;&lt;/textarea&gt;
-    &lt;span class=&quot;textfield__label&quot;&gt;Comments&lt;/span&gt;
-  &lt;/label&gt;
-  &lt;label class=&quot;checkbox&quot;&gt;
-    &lt;input type=&quot;checkbox&quot; /&gt;
-    &lt;span class=&quot;checkbox__label&quot;&gt;I Lied&lt;/span&gt;
-  &lt;/label&gt;
-  &lt;br/&gt;
-  &lt;input type=&quot;submit&quot; value=&quot;Cross My Heart&quot; /&gt;
-  &lt;button&gt;okay&lt;/button&gt;
-  &lt;button&gt;not okay&lt;/button&gt;
-&lt;/form&gt;</pre>
-            <div class="kss-example"><form>
-  <label class="textfield">
-    <input type="text" />
-    <span class="textfield__label">Name</span>
-  </label>
-  <label class="radio">
-    <input type="radio" name="example" />
-    <span class="radio__label">Desktop</span>
-  </label>
-  <label class="radio">
-    <input type="radio" name="example" />
-    <span class="radio__label">Mobile</span>
-  </label>
-  <label class="select">
-    <select name="select">
-      <option disabled="disabled" selected="selected">Flavors</option>
-      <option>Chocolate</option>
-    </select>
-    <span class="select__label" for="select">Favorite Ice Cream</span>
-  </label>
-  <label class="textfield">
-    <textarea></textarea>
-    <span class="textfield__label">Comments</span>
-  </label>
-  <label class="checkbox">
-    <input type="checkbox" />
-    <span class="checkbox__label">I Lied</span>
-  </label>
-  <br/>
-  <input type="submit" value="Cross My Heart" />
-  <button>okay</button>
-  <button>not okay</button>
-</form></div>
+<pre class="">&lt;div class=&quot;[modifier class]&quot; style=&quot;background-color: #ddd&quot;&gt;
+  Example Text
+&lt;/div&gt;</pre>
+            <div class="kss-example"><div class="[modifier class]" style="background-color: #ddd">
+  Example Text
+</div></div>
+              <hr />
+              <p class="clearfix kss-modifier-title"><code>.disabled</code> <span class="f-right fs-small">Disable an Element</span></p>
+              <div class="kss-example"><div class="disabled" style="background-color: #ddd">
+  Example Text
+</div></div>
+              <hr />
+              <p class="clearfix kss-modifier-title"><code>.smooth</code> <span class="f-right fs-small">Smoothed font rendering</span></p>
+              <div class="kss-example"><div class="smooth" style="background-color: #ddd">
+  Example Text
+</div></div>
+              <hr />
+              <p class="clearfix kss-modifier-title"><code>.clearfix</code> <span class="f-right fs-small">Clear floats to keep the parent container in shape</span></p>
+              <div class="kss-example"><div class="clearfix" style="background-color: #ddd">
+  Example Text
+</div></div>
+              <hr />
+              <p class="clearfix kss-modifier-title"><code>.f-none</code> <span class="f-right fs-small">float: none;</span></p>
+              <div class="kss-example"><div class="f-none" style="background-color: #ddd">
+  Example Text
+</div></div>
+              <hr />
+              <p class="clearfix kss-modifier-title"><code>.f-left</code> <span class="f-right fs-small">float: left;</span></p>
+              <div class="kss-example"><div class="f-left" style="background-color: #ddd">
+  Example Text
+</div></div>
+              <hr />
+              <p class="clearfix kss-modifier-title"><code>.f-right</code> <span class="f-right fs-small">float: right;</span></p>
+              <div class="kss-example"><div class="f-right" style="background-color: #ddd">
+  Example Text
+</div></div>
+              <hr />
+              <p class="clearfix kss-modifier-title"><code>.ta-left</code> <span class="f-right fs-small">text-align: left;</span></p>
+              <div class="kss-example"><div class="ta-left" style="background-color: #ddd">
+  Example Text
+</div></div>
+              <hr />
+              <p class="clearfix kss-modifier-title"><code>.ta-center</code> <span class="f-right fs-small">text-align: center;</span></p>
+              <div class="kss-example"><div class="ta-center" style="background-color: #ddd">
+  Example Text
+</div></div>
+              <hr />
+              <p class="clearfix kss-modifier-title"><code>.ta-right</code> <span class="f-right fs-small">text-align: right;</span></p>
+              <div class="kss-example"><div class="ta-right" style="background-color: #ddd">
+  Example Text
+</div></div>
+              <hr />
+              <p class="clearfix kss-modifier-title"><code>.i</code> <span class="f-right fs-small">i is for italics</span></p>
+              <div class="kss-example"><div class="i" style="background-color: #ddd">
+  Example Text
+</div></div>
+              <hr />
+              <p class="clearfix kss-modifier-title"><code>.box</code> <span class="f-right fs-small">a box</span></p>
+              <div class="kss-example"><div class="box" style="background-color: #ddd">
+  Example Text
+</div></div>
+              <hr />
+              <p class="clearfix kss-modifier-title"><code>.white</code> <span class="f-right fs-small">white text</span></p>
+              <div class="kss-example"><div class="white" style="background-color: #ddd">
+  Example Text
+</div></div>
           </section>
       </article>
       <article class="pattern">
           <h2 class="kss-title" id="3-1">
-            <span class="kss-ref badge pull-right">3-1</span> Radio
+            <span class="kss-ref badge pull-right">3-1</span> Type Utilities
           </h2>
+          <div class="subtitle pattern-description"><p>These are specific typography related utilities</p>
+</div>
           <section class="example">
-<pre class="">&lt;label class=&quot;radio &quot;&gt;
-  &lt;input type=&quot;radio&quot; /&gt;
-  &lt;span class=&quot;radio__label&quot;&gt;Radio&lt;/span&gt;
-&lt;/label&gt;</pre>
-            <div class="kss-example"><label class="radio ">
-  <input type="radio" />
-  <span class="radio__label">Radio</span>
-</label></div>
-          </section>
-      </article>
-      <article class="pattern">
-          <h2 class="kss-title" id="3-2">
-            <span class="kss-ref badge pull-right">3-2</span> Checkbox
-          </h2>
-          <section class="example">
-<pre class="">&lt;label class=&quot;checkbox &quot;&gt;
-  &lt;input type=&quot;checkbox&quot; /&gt;
-  &lt;span class=&quot;checkbox__label&quot;&gt;Checkbox&lt;/span&gt;
-&lt;/label&gt;</pre>
-            <div class="kss-example"><label class="checkbox ">
-  <input type="checkbox" />
-  <span class="checkbox__label">Checkbox</span>
-</label></div>
-          </section>
-      </article>
-      <article class="pattern">
-          <h2 class="kss-title" id="3-3">
-            <span class="kss-ref badge pull-right">3-3</span> Input and text areas
-          </h2>
-          <section class="example">
-<pre class="">&lt;label class=&quot;textfield &quot;&gt;
-  &lt;input type=&quot;text&quot; /&gt;
-  &lt;span class=&quot;textfield__label&quot;&gt;Input&lt;/span&gt;
-&lt;/label&gt;
-&lt;label class=&quot;textfield &quot;&gt;
-  &lt;textarea&gt;&lt;/textarea&gt;
-  &lt;span class=&quot;textfield__label&quot;&gt;Textarea&lt;/span&gt;
-&lt;/label&gt;</pre>
-            <div class="kss-example"><label class="textfield ">
-  <input type="text" />
-  <span class="textfield__label">Input</span>
-</label>
-<label class="textfield ">
-  <textarea></textarea>
-  <span class="textfield__label">Textarea</span>
-</label></div>
-          </section>
-      </article>
-      <article class="pattern">
-          <h2 class="kss-title" id="3-4">
-            <span class="kss-ref badge pull-right">3-4</span> Select
-          </h2>
-          <section class="example">
-<pre class="">&lt;label class=&quot;select &quot;&gt;
-  &lt;select&gt;
-    &lt;option disabled=&quot;disabled&quot; selected=&quot;selected&quot;&gt;Select&lt;/option&gt;
-    &lt;option&gt;Option 1&lt;/option&gt;
-    &lt;option&gt;Option 2&lt;/option&gt;
-    &lt;option&gt;Option 3&lt;/option&gt;
-  &lt;/select&gt;
-  &lt;span class=&quot;select__label&quot;&gt;Select Label&lt;/span&gt;
-&lt;/label&gt;</pre>
-            <div class="kss-example"><label class="select ">
-  <select>
-    <option disabled="disabled" selected="selected">Select</option>
-    <option>Option 1</option>
-    <option>Option 2</option>
-    <option>Option 3</option>
-  </select>
-  <span class="select__label">Select Label</span>
-</label></div>
+<pre class="">&lt;div class=&quot;type [modifier class]&quot;&gt;
+  The quick brown fox jumps over the lazy dog.
+&lt;/div&gt;</pre>
+            <div class="kss-example"><div class="type [modifier class]">
+  The quick brown fox jumps over the lazy dog.
+</div></div>
+              <hr />
+              <p class="clearfix kss-modifier-title"><code>.fs-small</code> <span class="f-right fs-small">Smaller than the default font size</span></p>
+              <div class="kss-example"><div class="type fs-small">
+  The quick brown fox jumps over the lazy dog.
+</div></div>
+              <hr />
+              <p class="clearfix kss-modifier-title"><code>.fs-base</code> <span class="f-right fs-small">Exactly the default font size</span></p>
+              <div class="kss-example"><div class="type fs-base">
+  The quick brown fox jumps over the lazy dog.
+</div></div>
+              <hr />
+              <p class="clearfix kss-modifier-title"><code>.fs-large</code> <span class="f-right fs-small">Larger than the default font size</span></p>
+              <div class="kss-example"><div class="type fs-large">
+  The quick brown fox jumps over the lazy dog.
+</div></div>
+              <hr />
+              <p class="clearfix kss-modifier-title"><code>.fs-jumbo</code> <span class="f-right fs-small">Twice as large than large</span></p>
+              <div class="kss-example"><div class="type fs-jumbo">
+  The quick brown fox jumps over the lazy dog.
+</div></div>
+              <hr />
+              <p class="clearfix kss-modifier-title"><code>.fw-light</code> <span class="f-right fs-small">Changes the type to be 300 weight</span></p>
+              <div class="kss-example"><div class="type fw-light">
+  The quick brown fox jumps over the lazy dog.
+</div></div>
+              <hr />
+              <p class="clearfix kss-modifier-title"><code>.fw-normal</code> <span class="f-right fs-small">Changes the type to be 400 weight</span></p>
+              <div class="kss-example"><div class="type fw-normal">
+  The quick brown fox jumps over the lazy dog.
+</div></div>
+              <hr />
+              <p class="clearfix kss-modifier-title"><code>.fw-semibold</code> <span class="f-right fs-small">Changes the type to be 600 weight</span></p>
+              <div class="kss-example"><div class="type fw-semibold">
+  The quick brown fox jumps over the lazy dog.
+</div></div>
+              <hr />
+              <p class="clearfix kss-modifier-title"><code>.fw-bold</code> <span class="f-right fs-small">Changes the type to be 700 weight</span></p>
+              <div class="kss-example"><div class="type fw-bold">
+  The quick brown fox jumps over the lazy dog.
+</div></div>
+              <hr />
+              <p class="clearfix kss-modifier-title"><code>.ft-tilt</code> <span class="f-right fs-small">For promos and stuff</span></p>
+              <div class="kss-example"><div class="type ft-tilt">
+  The quick brown fox jumps over the lazy dog.
+</div></div>
+              <hr />
+              <p class="clearfix kss-modifier-title"><code>.ft-shadow</code> <span class="f-right fs-small">Enhanced from background</span></p>
+              <div class="kss-example"><div class="type ft-shadow">
+  The quick brown fox jumps over the lazy dog.
+</div></div>
+              <hr />
+              <p class="clearfix kss-modifier-title"><code>.fs-large.fw-bold.ft-tilt.ft-shadow.white</code> <span class="f-right fs-small">Everything!</span></p>
+              <div class="kss-example"><div class="type fs-large fw-bold ft-tilt ft-shadow white">
+  The quick brown fox jumps over the lazy dog.
+</div></div>
           </section>
       </article>
 </div>

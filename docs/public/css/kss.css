@@ -19,7 +19,9 @@ html.grid--is_active {
   color: #848484; }
 
 header {
-  background-color: #32044C;
+  background-image: linear-gradient(to right, #32044C 0%, #711082 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF32044C', endColorstr='#FF711082', GradientType=1);
   color: #ffffff;
   padding: 0 1rem; }
 

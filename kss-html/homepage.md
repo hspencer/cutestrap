@@ -1,6 +1,6 @@
 <div class="wrapper wrapper--large ta-center">
-  <h1 class='i'>WOMstrap</h1>
-  <p>A sassy, opinionated CSS Framework for WOM. A tiny yet powerfull alternative to Bootstrap.</p>
+  <h1 class='ft-tilt uc fs-jumbo ft-shadow'>WOMstrap</h1>
+  <p class='fw-light fs-jumbo'>A sassy, opinionated CSS Framework for WOM. A tiny yet powerfull alternative to Bootstrap.</p>
 </div>
 
 <h2>Typography</h2>
@@ -49,6 +49,33 @@ Preformatted
     <th>Table Header</th>
   </tr>
   <tr>
+    <td>Table Cell</td>
+    <td>Table Cell</td>
+  </tr>
+</table>
+
+<table class='outlined'>
+  <tr>
+    <th>Table Header</th>
+    <th>Table Header</th>
+  </tr>
+  <tr>
+    <td>Table Cell</td>
+    <td>Table Cell</td>
+  </tr>
+    <tr>
+    <td>Table Cell</td>
+    <td>Table Cell</td>
+  </tr>
+    <tr>
+    <td>Table Cell</td>
+    <td>Table Cell</td>
+  </tr>
+    <tr>
+    <td>Table Cell</td>
+    <td>Table Cell</td>
+  </tr>
+    <tr>
     <td>Table Cell</td>
     <td>Table Cell</td>
   </tr>
