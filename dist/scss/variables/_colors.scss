@@ -4,18 +4,23 @@
 
 // primary colors
 
-$primary: 		#32044C !default;
-$primary-alt:	lighten($primary, 10%);
+$primary:			#4D0D7F !default; 
+$primary-dark:		darken($primary, 10%);
+$primary-light:		desaturate(lighten($primary, 15%), 35%);
 
-$color-1:		#4D0D7F; // dark purple
-$color-2:		#711082; // magenta
-$color-3:		#564599; // light purple
-$color-4:		#C200FF; // fuchsia
+$secondary:			#711082 !default; 
+$secondary-dark:	darken($secondary, 15%);
+$secondary-light:	desaturate(lighten($secondary, 20%), 40%);
 
-$link:          $color-2 !default;
-$link--visited: darken($primary, 15%) !default;
-$link--hover:   lighten($link, 10%) !default;
-$link--active:  lighten($link--hover, 20%);
+$terciary:			#564599 !default;
+$terciary-dark:		darken($terciary, 15%);
+$terciary-light:	desaturate(lighten($terciary, 15%), 5%);
+
+$color-action:		#B171C3 !default;
+$link:          	$color-action !default;
+$link--visited: 	darken($link, 10%) !default;
+$link--hover:   	lighten($link, 10%) !default;
+$link--active:  	darken($link, 20%);
 
 // dark shades
 $gray-1:         #424242 !default;

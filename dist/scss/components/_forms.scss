@@ -189,7 +189,7 @@ Styleguide 4.1
 }
 
 .radio input[type=radio]:checked + .radio__label:before{
-  background-color: $primary-alt;
+  background-color: $primary-dark;
   border-radius: 20px;
   content: '';
   height: 10px;
@@ -220,7 +220,7 @@ Styleguide 4.2
 }
 
 .checkbox input[type=checkbox]:checked + .checkbox__label:after {
-  color: $primary-alt;
+  color: $primary-dark;
   content: '\2714';
   font-size: 14px;
   line-height: 18px;

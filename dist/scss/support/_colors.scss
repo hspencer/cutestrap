@@ -1,0 +1,37 @@
+/*
+
+Colors
+
+These are specific color backgrounds for different elements and containers
+
+Markup:
+<div class="box {{modifier_class}}-dark">
+  <span class="white">{{modifier_class}}-dark</span>
+</div>
+<div class="box {{modifier_class}}">
+  <span class="white">{{modifier_class}}</span>
+</div>
+<div class="box {{modifier_class}}-light">
+  <span class="white">{{modifier_class}}-light</span>
+</div>
+
+.primary 				- Primary brand color
+.secondary 				- Secondary brand color
+.terciary 				- Terciary brand color
+
+Styleguide 5.0
+
+*/
+
+.primary{background-color: 			$primary;}
+.secondary{background-color: 		$secondary;}
+.terciary{background-color: 		$terciary;}
+
+.primary-dark{background-color: 	$primary-dark;}
+.secondary-dark{background-color: 	$secondary-dark;}
+.terciary-dark{background-color: 	$terciary-dark;}
+
+.primary-light{background-color: 	$primary-light;}
+.secondary-light{background-color: 	$secondary-light;}
+.terciary-light{background-color: 	$terciary-light;}
+

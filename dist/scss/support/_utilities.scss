@@ -153,6 +153,7 @@ Styleguide 3.1
 }
 
 .ft-shadow{
-  @include text-long-shadow(lighten($color-3, 30%), 100, .25, .005, 1);
+  @include text-long-shadow(lighten($terciary, 30%), 100, .25, .005, 1);
 }
+
 

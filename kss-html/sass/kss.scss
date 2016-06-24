@@ -15,7 +15,7 @@ html.grid--is_active{
 
 
 header{
-  @include gradient-x($primary, $color-2);;
+  @include gradient-x($primary-dark, $secondary);;
   color: $white;
   padding: 0 1rem;
 }

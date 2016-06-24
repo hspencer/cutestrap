@@ -79,7 +79,7 @@ samp,
 kbd{
   background-color: $gray-6;
   font-size: $font-size--small;
-  color: $primary-alt;
+  color: $primary-dark;
   font-family: $monospace;
   line-height: 1;
 }
@@ -258,17 +258,17 @@ table{
   }
 
   th, td{
-    padding: 0 .6rem;
+    padding: 1.2rem .6rem;
   }
 
   &.outlined{
-    border: 1px solid $gray-6;
+    border: 1px solid $terciary;
     th{
-      border-bottom: 3px solid $gray-4;
+      border-bottom: 3px solid $secondary;
     }
     
     tr:nth-child(even){
-      background-color: $gray-6;
+      background-color: lighten($gray-6, 5%);
     }
     
   }

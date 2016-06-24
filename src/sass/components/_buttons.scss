@@ -24,7 +24,7 @@ Styleguide 2.0
 */
 
 .btn{
-  background-color: $color-3;
+  background-color: $link;
   border: none;
   border-radius: .1rem;
   box-sizing: border-box;
@@ -52,7 +52,7 @@ Styleguide 2.0
 
   &:focus,
   &:hover {
-    background-color: $primary-alt;
+    background-color: $primary-dark;
     color: $white;
   }
 
@@ -135,14 +135,14 @@ Styleguide 2.0
 }
 
 .btn--gradient-h{
-  @include gradient-x($color-1, $color-2);
+  @include gradient-x($primary, $secondary);
   &:hover{
-    @include gradient-x($color-2, $color-3);
+    @include gradient-x($secondary, $terciary);
   }
 }
 
 .btn--shadow{
-  @include box-long-shadow(lighten($color-3, 30%), 100, .2, .0051, 1);
+  @include box-long-shadow(lighten($terciary, 30%), 100, .2, .0051, 1);
 }
 
 
