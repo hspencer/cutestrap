@@ -262,13 +262,13 @@ table{
   }
 
   &.outlined{
-    border: 1px solid $terciary;
+    border: 1px solid lighten($terciary-light, 25%);
     th{
-      border-bottom: 3px solid $secondary;
+      border-bottom: 3px solid lighten($terciary-light, 25%);
     }
     
     tr:nth-child(even){
-      background-color: lighten($gray-6, 5%);
+      background-color: lighten($terciary-light, 35%);
     }
     
   }
