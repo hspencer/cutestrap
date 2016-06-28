@@ -51,4 +51,12 @@ nav li {
     nav li a:hover {
       border-bottom: 5px solid #4D0D7F; }
 
+.box {
+  display: inline-block;
+  padding: 2rem;
+  border-radius: .3rem; }
+  .box.color {
+    min-width: 13rem;
+    text-align: center; }
+
 /*# sourceMappingURL=kss.css.map */
