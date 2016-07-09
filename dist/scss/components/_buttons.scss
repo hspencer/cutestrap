@@ -17,16 +17,17 @@ Markup:
 .btn--wom.tilt.btn--shadow       - A link thats styled, tilted, skewed and shadowed
 .btn--jumbo               - A big one
 .btn--gradient-h          - A button with an horizontal gradient background
-.btn--jumbo.btn--wom.tilt.btn--gradient-h.btn--shadow     - A very special button
+btn--wom.tilt.gradient-h.box-shadow-soft     - Combined case
+.btn--jumbo.tilt.gradient-h.box-shadow-hard     - Combined case
 
 Styleguide 2.0
 
 */
 
 .btn{
-  background-color: $link;
+  background-color: $primary-light;
   border: none;
-  border-radius: .1rem;
+  border-radius: $corner-radius / 2;
   box-sizing: border-box;
   color: $white;
   cursor: pointer;
@@ -35,7 +36,7 @@ Styleguide 2.0
   line-height: 2.1rem;
   max-width: 100%;
   transition-property: background-color;
-  transition-duration: 200ms;
+  transition-duration: 700ms;
   text-transform: uppercase;
   font-weight: 700;
   margin: 0 auto;
@@ -88,36 +89,27 @@ Styleguide 2.0
 
 .btn--link{
   background-color: transparent;
-  color: $link !important;
+  color: $primary-light !important;
   text-decoration: underline;
 
   &:link{
-    color: $link !important;
+    color: $primary-light !important;
   }
 
   &:visited{
-    color: $link--visited !important;
+    color: $terciary-light !important;
   }
 
   &:focus,
   &:hover{
-    color: $link--hover !important;
+    color: $primary-dark !important;
     background-color: transparent;
   }
 
   &:active{
-    color: $link--active !important;
+    color: $primary !important;
     background-color: transparent;
   }
-}
-
-.skew{
-  transform: skewX($angle);
-}
-
-.tilt{
-  transform: skewX($angle) rotateZ($angle);
-  text-transform: italic;
 }
 
 .btn--wom{
@@ -132,17 +124,6 @@ Styleguide 2.0
   font-size: 2.9em;
   height: 5rem;
   line-height: 5rem;
-}
-
-.btn--gradient-h{
-  @include gradient-x($primary, $secondary);
-  &:hover{
-    @include gradient-x($secondary, $terciary);
-  }
-}
-
-.btn--shadow{
-  @include box-long-shadow(lighten($terciary, 30%), 100, .2, .0051, 1);
 }
 
 

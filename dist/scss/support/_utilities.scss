@@ -100,9 +100,6 @@ Markup:
 .fw-normal           - Changes the type to be 400 weight
 .fw-semibold         - Changes the type to be 600 weight
 .fw-bold             - Changes the type to be 700 weight
-.ft-tilt             - For promos and stuff
-.ft-shadow           - Enhanced from background
-.fs-large.fw-bold.ft-tilt.ft-shadow.white   - Everything!
 
 Styleguide 3.1
 
@@ -122,8 +119,9 @@ Styleguide 3.1
 }
 
 .fs-jumbo{
-  font-size: $font-size--large * 2 !important;
-  line-height: $line-height * 2 !important;
+  font-size: $font-size * 3;
+  line-height: $line-height * 2;
+  margin-top: .4rem;
 }
 
 .fw-light{
@@ -142,13 +140,57 @@ Styleguide 3.1
   font-weight: 900;
 }
 
-.ft-tilt{
+/*
+
+Multi Purpose Utilities
+
+These are transversal classes that can be combined
+
+Markup:
+<div class="{{modifier_class}}">
+  The quick brown fox jumps over the lazy dog.
+</div>
+
+.tilt                   - For promos and stuff
+.skew                   - For using in complement with tilt
+.fw-bold.white.text-shadow-soft       - A faded long shadow for the text
+.box.box-shadow-soft    - A faded long shadow for boxes
+.fw-bold.white.text-shadow-hard       - A hard shadow for texts
+.box.box-shadow-hard    - A hard shadow for boxes
+.box.gradient-h.white   - An horizontal gradient in the background   
+Styleguide 3.2
+
+*/
+
+.tilt{
   transform: skewX($angle) rotateZ($angle);
   text-transform: italic;
 }
 
-.ft-shadow{
+.skew{
+  transform: skewX($angle);
+}
+
+.text-shadow-soft{
   @include text-long-shadow(lighten($terciary, 30%), 100, .25, .005, 1);
 }
 
+.text-shadow-hard{
+  @include text-long-shadow($terciary, 30, .5, 0.001, 30);
+}
+
+.box-shadow-soft{
+  @include box-long-shadow(lighten($terciary, 30%), 100, .25, .005, 1);
+}
+
+.box-shadow-hard{
+  @include box-long-shadow($terciary, 30, .5, 0.001, 30);
+}
+
+.gradient-h{
+  @include gradient-x($primary, $secondary);
+  &:hover{
+    @include gradient-x($secondary, $terciary);
+  }
+}
 

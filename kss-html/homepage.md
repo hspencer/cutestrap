@@ -1,12 +1,12 @@
 <div class="wrapper wrapper--large ta-center">
-  <h1 class='ft-tilt uc fs-jumbo ft-shadow'>WOMstrap</h1>
+  <h1 class='tilt uc fs-jumbo text-shadow-soft'>WOMstrap</h1>
   <p class='fw-light fs-jumbo'>A sassy, opinionated CSS Framework for WOM. A tiny yet powerfull alternative to Bootstrap.</p>
 </div>
 
 <h2>Typography</h2>
 
 <p>
-  All the typography is sized using rems to baseline of 24px by default and 30px above 960 width viewport. Every element adheres to this baseline grid with perfect vertical rhythm.
+  All the typography is sized using rems to baseline of <span class='fw-bold'>24px</span> by default and 30px above 960 width viewport. Every element adheres to this baseline grid with perfect vertical rhythm.
 </p>
 
 <h1>Headline 1</h1>
@@ -54,7 +54,8 @@ Preformatted
   </tr>
 </table>
 
-<table class='outlined'>
+
+<table class='outline'>
   <tr>
     <th>Table Header</th>
     <th>Table Header</th>
