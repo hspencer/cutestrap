@@ -3,7 +3,10 @@
 // Styleguide
 
 
-$base-font:       Cera, sans-serif !default;
+
+$sans-serif:	Cera, sans-serif !default;
+$serif:			Bitter, serif !default;
+$base-font:     $sans-serif;
 $monospace-font:  'Consolas', 'Monaco', 'Courier New', monospace !default;
 
 $heading:         $base-font !default;
