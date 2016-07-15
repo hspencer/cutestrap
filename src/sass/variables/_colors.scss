@@ -4,17 +4,17 @@
 
 // primary colors
 
-$primary:			#4D0D7F !default; 
-$primary-dark:		darken($primary, 10%);
-$primary-light:		desaturate(lighten($primary, 15%), 35%);
+$primary:			rgb(66, 20, 65) !default; // according to brand manual
+$primary-dark:		darken($primary, 5%);
+$primary-light:		desaturate(lighten($primary, 10%), 10%);
 
-$secondary:			#711082 !default; 
-$secondary-dark:	darken($secondary, 10%);
-$secondary-light:	desaturate(lighten($secondary, 20%), 40%);
+$secondary:			#602F84; // #AEA091 #711082 !default; 
+$secondary-dark:	darken($secondary, 12%);
+$secondary-light:	desaturate(lighten($secondary, 10%), 20%);
 
 $terciary:			#564599 !default;
 $terciary-dark:		darken($terciary, 11%);
-$terciary-light:	desaturate(lighten($terciary, 15%), 5%);
+$terciary-light:	desaturate(lighten($terciary, 15%), 4%);
 
 $color-action:		#B171C3 !default;
 $link:          	$color-action !default;

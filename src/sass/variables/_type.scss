@@ -2,22 +2,11 @@
 //
 // Styleguide
 
-$font-path:	'../../fonts/cera';
-
-@import "../../fonts/cera/cera_black_macroman/stylesheet.css";
-@import "../../fonts/cera/cera_blackitalic_macroman/stylesheet.css"; 
-@import "../../fonts/cera/cera_bold_macroman/stylesheet.css"; 
-@import "../../fonts/cera/cera_italic_macroman/stylesheet.css"; 
-@import "../../fonts/cera/cera_light_macroman/stylesheet.css"; 
-@import "../../fonts/cera/cera_lightitalic_macroman/stylesheet.css"; 
-@import "../../fonts/cera/cera_medium_macroman/stylesheet.css";
-@import "../../fonts/cera/cera_mediumitalic_macroman/stylesheet.css";
-@import "../../fonts/cera/cera_regular_macroman/stylesheet.css";
-@import "../../fonts/cera/cera_thin_macroman/stylesheet.css";
-@import "../../fonts/cera/cera_thinitalic_macroman/stylesheet.css";
 
 
-$base-font:       Cera, sans-serif !default;
+$sans-serif:	Cera, sans-serif !default;
+$serif:			Bitter, serif !default;
+$base-font:     $sans-serif;
 $monospace-font:  'Consolas', 'Monaco', 'Courier New', monospace !default;
 
 $heading:         $base-font !default;
