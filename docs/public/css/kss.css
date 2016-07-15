@@ -1,14 +1,94 @@
-@import url(../../fonts/cera/cera_black_macroman/stylesheet.css);
-@import url(../../fonts/cera/cera_blackitalic_macroman/stylesheet.css);
-@import url(../../fonts/cera/cera_bold_macroman/stylesheet.css);
-@import url(../../fonts/cera/cera_italic_macroman/stylesheet.css);
-@import url(../../fonts/cera/cera_light_macroman/stylesheet.css);
-@import url(../../fonts/cera/cera_lightitalic_macroman/stylesheet.css);
-@import url(../../fonts/cera/cera_medium_macroman/stylesheet.css);
-@import url(../../fonts/cera/cera_mediumitalic_macroman/stylesheet.css);
-@import url(../../fonts/cera/cera_regular_macroman/stylesheet.css);
-@import url(../../fonts/cera/cera_thin_macroman/stylesheet.css);
-@import url(../../fonts/cera/cera_thinitalic_macroman/stylesheet.css);
+@font-face {
+  font-family: 'Cera';
+  src: url("../../fonts/cera/cera-black-webfont.eot");
+  src: url("../../fonts/cera/cera-black-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/cera/cera-black-webfont.woff2") format("woff2"), url("../../fonts/cera/cera-black-webfont.woff") format("woff"), url("../../fonts/cera/cera-black-webfont.ttf") format("truetype"), url("../../fonts/cera/cera-black-webfont.svg#cerablack") format("svg");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Cera';
+  src: url("../../fonts/cera/cera-blackitalic-webfont.eot");
+  src: url("../../fonts/cera/cera-blackitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/cera/cera-blackitalic-webfont.woff2") format("woff2"), url("../../fonts/cera/cera-blackitalic-webfont.woff") format("woff"), url("../../fonts/cera/cera-blackitalic-webfont.ttf") format("truetype"), url("../../fonts/cera/cera-blackitalic-webfont.svg#cerablack_italic") format("svg");
+  font-weight: 900;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Cera';
+  src: url("../../fonts/cera/cera-bold-webfont.eot");
+  src: url("../../fonts/cera/cera-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/cera/cera-bold-webfont.woff2") format("woff2"), url("../../fonts/cera/cera-bold-webfont.woff") format("woff"), url("../../fonts/cera/cera-bold-webfont.ttf") format("truetype"), url("../../fonts/cera/cera-bold-webfont.svg#cerabold") format("svg");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Cera';
+  src: url("../../fonts/cera/cera-bold-webfont.eot");
+  src: url("../../fonts/cera/cera-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/cera/cera-bold-webfont.woff2") format("woff2"), url("../../fonts/cera/cera-bold-webfont.woff") format("woff"), url("../../fonts/cera/cera-bold-webfont.ttf") format("truetype"), url("../../fonts/cera/cera-bold-webfont.svg#cerabold") format("svg");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Cera';
+  src: url("../../fonts/cera/cera-bolditalic-webfont.eot");
+  src: url("../../fonts/cera/cera-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/cera/cera-bolditalic-webfont.woff2") format("woff2"), url("../../fonts/cera/cera-bolditalic-webfont.woff") format("woff"), url("../../fonts/cera/cera-bolditalic-webfont.ttf") format("truetype"), url("../../fonts/cera/cera-bolditalic-webfont.svg#cerabold_italic") format("svg");
+  font-weight: 700;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Cera';
+  src: url("../../fonts/cera/cera-regularitalic-webfont.eot");
+  src: url("../../fonts/cera/cera-regularitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/cera/cera-regularitalic-webfont.woff2") format("woff2"), url("../../fonts/cera/cera-regularitalic-webfont.woff") format("woff"), url("../../fonts/cera/cera-regularitalic-webfont.ttf") format("truetype"), url("../../fonts/cera/cera-regularitalic-webfont.svg#ceraitalic") format("svg");
+  font-weight: 600;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Cera';
+  src: url("../../fonts/cera/cera-light-webfont.eot");
+  src: url("../../fonts/cera/cera-light-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/cera/cera-light-webfont.woff2") format("woff2"), url("../../fonts/cera/cera-light-webfont.woff") format("woff"), url("../../fonts/cera/cera-light-webfont.ttf") format("truetype"), url("../../fonts/cera/cera-light-webfont.svg#ceralight") format("svg");
+  font-weight: 200;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Cera';
+  src: url("../../fonts/cera/cera-lightitalic-webfont.eot");
+  src: url("../../fonts/cera/cera-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/cera/cera-lightitalic-webfont.woff2") format("woff2"), url("../../fonts/cera/cera-lightitalic-webfont.woff") format("woff"), url("../../fonts/cera/cera-lightitalic-webfont.ttf") format("truetype"), url("../../fonts/cera/cera-lightitalic-webfont.svg#ceralight_italic") format("svg");
+  font-weight: 200;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Cera';
+  src: url("../../fonts/cera/cera-medium-webfont.eot");
+  src: url("../../fonts/cera/cera-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/cera/cera-medium-webfont.woff2") format("woff2"), url("../../fonts/cera/cera-medium-webfont.woff") format("woff"), url("../../fonts/cera/cera-medium-webfont.ttf") format("truetype"), url("../../fonts/cera/cera-medium-webfont.svg#ceramedium") format("svg");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Cera';
+  src: url("../../fonts/cera/cera-mediumitalic-webfont.eot");
+  src: url("../../fonts/cera/cera-mediumitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/cera/cera-mediumitalic-webfont.woff2") format("woff2"), url("../../fonts/cera/cera-mediumitalic-webfont.woff") format("woff"), url("../../fonts/cera/cera-mediumitalic-webfont.ttf") format("truetype"), url("../../fonts/cera/cera-mediumitalic-webfont.svg#ceramedium_italic") format("svg");
+  font-weight: 500;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Cera';
+  src: url("../../fonts/cera/cera-regular-webfont.eot");
+  src: url("../../fonts/cera/cera-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/cera/cera-regular-webfont.woff2") format("woff2"), url("../../fonts/cera/cera-regular-webfont.woff") format("woff"), url("../../fonts/cera/cera-regular-webfont.ttf") format("truetype"), url("../../fonts/cera/cera-regular-webfont.svg#ceraregular") format("svg");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Cera';
+  src: url("../../fonts/cera/cera-thin-webfont.eot");
+  src: url("../../fonts/cera/cera-thin-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/cera/cera-thin-webfont.woff2") format("woff2"), url("../../fonts/cera/cera-thin-webfont.woff") format("woff"), url("../../fonts/cera/cera-thin-webfont.ttf") format("truetype"), url("../../fonts/cera/cera-thin-webfont.svg#cerathin") format("svg");
+  font-weight: 100;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Cera';
+  src: url("../../fonts/cera/cera-thinitalic-webfont.eot");
+  src: url("../../fonts/cera/cera-thinitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/cera/cera-thinitalic-webfont.woff2") format("woff2"), url("../../fonts/cera/cera-thinitalic-webfont.woff") format("woff"), url("../../fonts/cera/cera-thinitalic-webfont.ttf") format("truetype"), url("../../fonts/cera/cera-thinitalic-webfont.svg#cerathin_italic") format("svg");
+  font-weight: 100;
+  font-style: italic; }
+
 html.grid--is_active {
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAYAQMAAADnK87dAAAABlBMVEX///8AAABVwtN+AAAAAnRSTlMANrkpWKEAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVAiZY2AgCTwAAAEQAOFwuZEGAAAAAElFTkSuQmCC) repeat left top; }
   @media (min-width: 960px) {
@@ -19,9 +99,9 @@ html.grid--is_active {
   color: #848484; }
 
 header {
-  background-image: linear-gradient(to right, #310851 0%, #711082 100%);
+  background-image: linear-gradient(to right, #2e0e2e 0%, #602F84 100%);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF310851', endColorstr='#FF711082', GradientType=1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF2E0E2E', endColorstr='#FF602F84', GradientType=1);
   color: #ffffff;
   padding: 0 1rem; }
 
@@ -49,7 +129,7 @@ nav li {
     text-decoration: none;
     font-weight: 900; }
     nav li a:hover {
-      border-bottom: 5px solid #4D0D7F; }
+      border-bottom: 5px solid #421441; }
 
 .box {
   display: inline-block;
