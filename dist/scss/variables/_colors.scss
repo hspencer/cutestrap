@@ -32,4 +32,7 @@ $gray-4:			lighten($gray-3, 13%) !default;
 $gray-5:			lighten($gray-4, 13%) !default;
 $gray-6:			lighten($gray-5, 13%) !default;
 
+$black:			#000000 !default;
 $white:         #ffffff !default;
+
+$shadow-col:	fade-out($black, .85);

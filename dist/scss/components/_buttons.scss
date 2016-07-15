@@ -7,9 +7,10 @@ Class <code>.btn</code>; buttons and their variations
 Markup:
 <a href="#" class="btn {{modifier_class}}">Button</a>
 
-.btn--secondary                 - A link that`s sized like a button
-.btn--link                      - A link that`s sized like a button
-.btn--wom                       - A link that`s styled
+.btn--secondary                 - Secondary button
+.disabled                       - Disabled button
+.btn--link                      - Link button
+.btn--wom                       - bOM Buttom
 .btn--shadow                    - A button with a fading shadow
 .skew                           - A link that`s skewed
 .tilt                           - A link that`s tilted (also skewed)
@@ -24,6 +25,8 @@ Markup:
 Styleguide 2.0
 
 */
+
+$btn-offset: 2px;
 
 .btn{
   display: inline-block;
@@ -47,7 +50,7 @@ Styleguide 2.0
   text-align: center;
   user-select: none;
   width: auto;
-  box-shadow: 3px 3px 1px $gray-5;
+  box-shadow: $btn-offset $btn-offset 1px $shadow-col;
 
   &:link,
   &:visited{
@@ -59,9 +62,9 @@ Styleguide 2.0
   &:hover {
     background-color: $primary-dark;
     color: $white;
-    top: 3px;
-    left: 3px;
-    box-shadow: 0 0 1px $gray-5;
+    top: $btn-offset;
+    left: $btn-offset;
+    box-shadow: 0 0 1px $shadow-col;
   }
 
   &:focus{
