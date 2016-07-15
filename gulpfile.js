@@ -154,7 +154,6 @@ gulp.task('temp', function(){
   // Sass
   return gulp.src('./src/sass/**/*.scss')
     .pipe(gulp.dest('./temp/sass/'));
-
 });
 
 // Watch Files For Changes
@@ -168,19 +167,16 @@ gulp.task('zip', ['zip-temp-dist', 'zip-temp-docs'], function(){
   return gulp.src('temp/zip/**/*')
     .pipe(zip('womstrap.zip'))
     .pipe(gulp.dest('./'));
-
 });
 
 gulp.task('zip-temp-docs', function(){
 
   return gulp.src('docs/**/*')
     .pipe(gulp.dest('./temp/zip/docs'));
-
 });
 
 gulp.task('zip-temp-dist', function(){
 
   return gulp.src('dist/**/*')
     .pipe(gulp.dest('./temp/zip/dist'));
-
 });

@@ -21,6 +21,7 @@ Markup:
 .i                       - i is for italics
 .box                     - a box
 .white                   - white text
+.serif                   - Serif text. Bitter font family.
 
 Styleguide 3.0
 
@@ -74,6 +75,10 @@ Styleguide 3.0
 
 .uc{
   text-transform: uppercase;
+}
+
+.serif{
+  font-family: $serif !important;
 }
 
 .white{
@@ -158,6 +163,7 @@ Markup:
 .fw-bold.white.text-shadow-hard       - A hard shadow for texts
 .box.box-shadow-hard    - A hard shadow for boxes
 .box.gradient-h.white   - An horizontal gradient in the background   
+
 Styleguide 3.2
 
 */

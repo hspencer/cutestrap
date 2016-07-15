@@ -7,17 +7,18 @@ Class <code>.btn</code>; buttons and their variations
 Markup:
 <a href="#" class="btn {{modifier_class}}">Button</a>
 
-.btn--secondary           - A link that`s sized like a button
-.btn--link                - A link that`s sized like a button
-.btn--wom                 - A link that`s styled
-.btn--shadow              - A button with a fading shadow
-.skew                     - A link that`s skewed
-.tilt                     - A link that`s tilted (also skewed)
-.btn--wom.tilt            - A link thats styled, tilted and skewed
-.btn--wom.tilt.btn--shadow       - A link thats styled, tilted, skewed and shadowed
-.btn--jumbo               - A big one
-.btn--gradient-h          - A button with an horizontal gradient background
-btn--wom.tilt.gradient-h.box-shadow-soft     - Combined case
+.btn--secondary                 - A link that`s sized like a button
+.btn--link                      - A link that`s sized like a button
+.btn--wom                       - A link that`s styled
+.btn--shadow                    - A button with a fading shadow
+.skew                           - A link that`s skewed
+.tilt                           - A link that`s tilted (also skewed)
+.btn--wom.tilt                  - A link thats styled, tilted and skewed
+.btn--wom.tilt.btn--shadow      - A link thats styled, tilted, skewed and shadowed
+.btn--jumbo                     - A big one
+.btn--jumbo.uc                  - A big one in upper case
+.gradient-h                     - A button with an horizontal gradient background
+.btn--wom.tilt.gradient-h.box-shadow-soft       - Combined case
 .btn--jumbo.tilt.gradient-h.box-shadow-hard     - Combined case
 
 Styleguide 2.0
@@ -25,25 +26,28 @@ Styleguide 2.0
 */
 
 .btn{
+  display: inline-block;
+  position: relative;
   background-color: $primary-light;
   border: none;
+  top: 0;
+  left: 0;
   border-radius: $corner-radius / 2;
   box-sizing: border-box;
   color: $white;
   cursor: pointer;
-  display: inline-block;
-  height: 2.1rem;
+  padding: .5rem .76rem;
+  height: 3.1rem;
   line-height: 2.1rem;
   max-width: 100%;
-  transition-property: background-color;
-  transition-duration: 700ms;
-  text-transform: uppercase;
+  transition-property: all;
+  transition-duration: 200ms;
   font-weight: 700;
   margin: 0 auto;
-  padding: 0 .76rem;
   text-align: center;
   user-select: none;
   width: auto;
+  box-shadow: 3px 3px 1px $gray-5;
 
   &:link,
   &:visited{
@@ -55,6 +59,9 @@ Styleguide 2.0
   &:hover {
     background-color: $primary-dark;
     color: $white;
+    top: 3px;
+    left: 3px;
+    box-shadow: 0 0 1px $gray-5;
   }
 
   &:focus{
@@ -114,6 +121,7 @@ Styleguide 2.0
 
 .btn--wom{
   font-weight: 200;
+  text-transform: uppercase;
   padding: 0 .3rem;
   font-size: 2.1em;
   height: .96em;
@@ -122,6 +130,8 @@ Styleguide 2.0
 
 .btn--jumbo{
   font-size: 2.9em;
+  height: 5.7rem !important;
+  padding: .2rem 1rem;
   height: 5rem;
   line-height: 5rem;
 }
