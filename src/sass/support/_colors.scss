@@ -64,3 +64,25 @@ Styleguide 5.1
 .gray-4{background-color: $gray-4}
 .gray-5{background-color: $gray-5}
 .gray-6{background-color: $gray-6}
+
+/*
+
+Semantic Colors
+
+Color relative to kind of action performed. This needs to be consistent across touchpoints
+
+Markup:
+<div class="box color skew {{modifier_class}}">
+  <span class="white">{{modifier_class}}</span>
+</div>
+
+.ok							- Positive action
+.cancel						- Negative action
+
+Styleguide 5.2
+
+*/
+
+
+.ok{background-color:  $color-action}
+.cancel{background-color: $gray-3}

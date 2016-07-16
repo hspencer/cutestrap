@@ -2,7 +2,7 @@
 //
 // Styleguide
 
-// primary colors
+// Brand colors
 
 $primary:			rgb(66, 20, 65) !default; // according to brand manual
 $primary-dark:		darken($primary, 5%);
@@ -16,7 +16,7 @@ $terciary:			#564599 !default;
 $terciary-dark:		darken($terciary, 11%);
 $terciary-light:	desaturate(lighten($terciary, 15%), 4%);
 
-$color-action:		#B171C3 !default;
+$color-action:		#720184 !default;
 $link:          	$color-action !default;
 $link--visited: 	darken($link, 10%) !default;
 $link--hover:   	lighten($link, 10%) !default;
