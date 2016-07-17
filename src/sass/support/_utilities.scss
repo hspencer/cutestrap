@@ -18,10 +18,6 @@ Markup:
 
 .disabled                - Disable an Element
 .smooth                  - Smoothed font rendering
-.clearfix                - Clear floats to keep the parent container in shape
-.f-none                  - float: none;
-.f-left                  - float: left;
-.f-right                 - float: right;
 .ta-left                 - text-align: left;
 .ta-center               - text-align: center;
 .ta-right                - text-align: right;
@@ -74,6 +70,27 @@ Styleguide 3.0
 .ta-right{
   text-align: right;
 }
+
+
+/*
+
+Floats
+
+These utility classes have one or two CSS properties that are meant to save you from creating several identical classes to do the same thing, like just centering some text.
+
+Markup:
+<div class="{{modifier_class}}" style="background-color: #ddd">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+</div>
+
+.clearfix                - Clear floats to keep the parent container in shape
+.f-none                  - float: none;
+.f-left                  - float: left;
+.f-right                 - float: right;
+
+Styleguide 3.1
+*/
+
 
 // suplementary styles
 
