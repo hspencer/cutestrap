@@ -199,6 +199,18 @@ Styleguide 3.2
   }
 }
 
+.press-fx{
+  position: relative;
+  top: 0;
+  left: 0;
+  box-shadow: $btn-offset $btn-offset 1px $shadow-col;
+  &:hover{
+    top: $btn-offset;
+    left: $btn-offset;
+    box-shadow: 0 0 1px $shadow-col;
+  }
+}
+
 .box{
   display: inline-block;
   padding: 1.2rem 2rem;

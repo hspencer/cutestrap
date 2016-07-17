@@ -54,53 +54,62 @@
 
       <article class="pattern">
           <h2 id="2">Buttons</h2>
-          <div class="subtitle pattern-description"><p>Class <code>.btn</code>; buttons and their variations</p>
+          <div class="subtitle pattern-description"><p>Class <code>.btn</code> defines a button-styled link. These are some variations
+This is a <a href='http://www.wom.cl' class='btn'>standard button</a>,
+this is the <a href='http://www.wom.cl' class='btn btn-secondary'>secondary button</a>,
+yet this is another, simpler one, the <a href='http://www.wom.cl' class='btn btn-link'>link button</a></p>
 </div>
           <section class="example">
-<pre class="">&lt;a href=&quot;#&quot; class=&quot;btn [modifier class]&quot;&gt;Button&lt;/a&gt;</pre>
-            <div class="kss-example"><a href="#" class="btn [modifier class]">Button</a></div>
+<pre class="">&lt;a href=&quot;http://www.wom.cl/testLink&quot; class=&quot;btn [modifier class]&quot;&gt;Button&lt;/a&gt;</pre>
+            <div class="kss-example"><a href="http://www.wom.cl/testLink" class="btn [modifier class]">Button</a></div>
               <hr />
-              <p class="clearfix kss-modifier-title"><code>.btn--secondary</code> <span class="f-right fs-small">Secondary button</span></p>
-              <div class="kss-example"><a href="#" class="btn btn--secondary">Button</a></div>
+              <p class="clearfix kss-modifier-title"><code>.press-fx</code> <span class="f-right fs-small">Press FX</span></p>
+              <div class="kss-example"><a href="http://www.wom.cl/testLink" class="btn press-fx">Button</a></div>
+              <hr />
+              <p class="clearfix kss-modifier-title"><code>.btn-secondary</code> <span class="f-right fs-small">Secondary button</span></p>
+              <div class="kss-example"><a href="http://www.wom.cl/testLink" class="btn btn-secondary">Button</a></div>
               <hr />
               <p class="clearfix kss-modifier-title"><code>.disabled</code> <span class="f-right fs-small">Disabled button</span></p>
-              <div class="kss-example"><a href="#" class="btn disabled">Button</a></div>
+              <div class="kss-example"><a href="http://www.wom.cl/testLink" class="btn disabled">Button</a></div>
               <hr />
-              <p class="clearfix kss-modifier-title"><code>.btn--link</code> <span class="f-right fs-small">Link button</span></p>
-              <div class="kss-example"><a href="#" class="btn btn--link">Button</a></div>
+              <p class="clearfix kss-modifier-title"><code>.btn-link</code> <span class="f-right fs-small">Link button</span></p>
+              <div class="kss-example"><a href="http://www.wom.cl/testLink" class="btn btn-link">Button</a></div>
               <hr />
-              <p class="clearfix kss-modifier-title"><code>.btn--wom</code> <span class="f-right fs-small">bOM Buttom</span></p>
-              <div class="kss-example"><a href="#" class="btn btn--wom">Button</a></div>
+              <p class="clearfix kss-modifier-title"><code>.btn-wom</code> <span class="f-right fs-small">A WOM-styled Buttom</span></p>
+              <div class="kss-example"><a href="http://www.wom.cl/testLink" class="btn btn-wom">Button</a></div>
               <hr />
-              <p class="clearfix kss-modifier-title"><code>.btn--shadow</code> <span class="f-right fs-small">A button with a fading shadow</span></p>
-              <div class="kss-example"><a href="#" class="btn btn--shadow">Button</a></div>
+              <p class="clearfix kss-modifier-title"><code>.box-shadow-soft</code> <span class="f-right fs-small">A button with a fading shadow</span></p>
+              <div class="kss-example"><a href="http://www.wom.cl/testLink" class="btn box-shadow-soft">Button</a></div>
+              <hr />
+              <p class="clearfix kss-modifier-title"><code>.box-shadow-hard</code> <span class="f-right fs-small">A button with a hard shadow</span></p>
+              <div class="kss-example"><a href="http://www.wom.cl/testLink" class="btn box-shadow-hard">Button</a></div>
               <hr />
               <p class="clearfix kss-modifier-title"><code>.skew</code> <span class="f-right fs-small">A link that&#x60;s skewed</span></p>
-              <div class="kss-example"><a href="#" class="btn skew">Button</a></div>
+              <div class="kss-example"><a href="http://www.wom.cl/testLink" class="btn skew">Button</a></div>
               <hr />
               <p class="clearfix kss-modifier-title"><code>.tilt</code> <span class="f-right fs-small">A link that&#x60;s tilted (also skewed)</span></p>
-              <div class="kss-example"><a href="#" class="btn tilt">Button</a></div>
+              <div class="kss-example"><a href="http://www.wom.cl/testLink" class="btn tilt">Button</a></div>
               <hr />
-              <p class="clearfix kss-modifier-title"><code>.btn--wom.tilt</code> <span class="f-right fs-small">A link thats styled, tilted and skewed</span></p>
-              <div class="kss-example"><a href="#" class="btn btn--wom tilt">Button</a></div>
+              <p class="clearfix kss-modifier-title"><code>.btn-wom.tilt</code> <span class="f-right fs-small">A link thats styled, tilted and skewed</span></p>
+              <div class="kss-example"><a href="http://www.wom.cl/testLink" class="btn btn-wom tilt">Button</a></div>
               <hr />
-              <p class="clearfix kss-modifier-title"><code>.btn--wom.tilt.btn--shadow</code> <span class="f-right fs-small">A link thats styled, tilted, skewed and shadowed</span></p>
-              <div class="kss-example"><a href="#" class="btn btn--wom tilt btn--shadow">Button</a></div>
+              <p class="clearfix kss-modifier-title"><code>.btn-wom.tilt.box-shadow-soft</code> <span class="f-right fs-small">A link thats styled, tilted, skewed and shadowed</span></p>
+              <div class="kss-example"><a href="http://www.wom.cl/testLink" class="btn btn-wom tilt box-shadow-soft">Button</a></div>
               <hr />
-              <p class="clearfix kss-modifier-title"><code>.btn--jumbo</code> <span class="f-right fs-small">A big one</span></p>
-              <div class="kss-example"><a href="#" class="btn btn--jumbo">Button</a></div>
+              <p class="clearfix kss-modifier-title"><code>.btn-jumbo</code> <span class="f-right fs-small">A big one</span></p>
+              <div class="kss-example"><a href="http://www.wom.cl/testLink" class="btn btn-jumbo">Button</a></div>
               <hr />
-              <p class="clearfix kss-modifier-title"><code>.btn--jumbo.uc</code> <span class="f-right fs-small">A big one in upper case</span></p>
-              <div class="kss-example"><a href="#" class="btn btn--jumbo uc">Button</a></div>
+              <p class="clearfix kss-modifier-title"><code>.btn-jumbo.uc</code> <span class="f-right fs-small">A big one in upper case</span></p>
+              <div class="kss-example"><a href="http://www.wom.cl/testLink" class="btn btn-jumbo uc">Button</a></div>
               <hr />
               <p class="clearfix kss-modifier-title"><code>.gradient-h</code> <span class="f-right fs-small">A button with an horizontal gradient background</span></p>
-              <div class="kss-example"><a href="#" class="btn gradient-h">Button</a></div>
+              <div class="kss-example"><a href="http://www.wom.cl/testLink" class="btn gradient-h">Button</a></div>
               <hr />
-              <p class="clearfix kss-modifier-title"><code>.btn--wom.tilt.gradient-h.box-shadow-soft</code> <span class="f-right fs-small">Combined case</span></p>
-              <div class="kss-example"><a href="#" class="btn btn--wom tilt gradient-h box-shadow-soft">Button</a></div>
+              <p class="clearfix kss-modifier-title"><code>.btn-wom.tilt.gradient-h.box-shadow-soft</code> <span class="f-right fs-small">Combined case</span></p>
+              <div class="kss-example"><a href="http://www.wom.cl/testLink" class="btn btn-wom tilt gradient-h box-shadow-soft">Button</a></div>
               <hr />
-              <p class="clearfix kss-modifier-title"><code>.btn--jumbo.tilt.gradient-h.box-shadow-hard</code> <span class="f-right fs-small">Combined case</span></p>
-              <div class="kss-example"><a href="#" class="btn btn--jumbo tilt gradient-h box-shadow-hard">Button</a></div>
+              <p class="clearfix kss-modifier-title"><code>.btn-jumbo.tilt.gradient-h.box-shadow-hard</code> <span class="f-right fs-small">Combined case</span></p>
+              <div class="kss-example"><a href="http://www.wom.cl/testLink" class="btn btn-jumbo tilt gradient-h box-shadow-hard">Button</a></div>
           </section>
       </article>
 </div>
