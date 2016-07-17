@@ -6,7 +6,14 @@ These utility classes have one or two CSS properties that are meant to save you 
 
 Markup:
 <div class="{{modifier_class}}" style="background-color: #ddd">
-  Example Text
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+  Sed faucibus mattis magna, quis tempus enim. Duis volutpat 
+  commodo laoreet. Pellentesque commodo pharetra massa non malesuada. 
+  Sed tristique ultricies metus nec pulvinar. Donec magna orci, 
+  rutrum et nisi dapibus, feugiat fringilla nisl. Donec id neque 
+  ante. Duis risus sem, consectetur eget ipsum vel, condimentum 
+  dictum ex. Proin sodales porttitor sem sed pharetra. 
+  Nam sed leo diam.
 </div>
 
 .disabled                - Disable an Element
@@ -22,6 +29,7 @@ Markup:
 .box                     - a box
 .white                   - white text
 .serif                   - Serif text. Bitter font family.
+.uc                      - Text in upper case
 
 Styleguide 3.0
 
