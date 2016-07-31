@@ -29,9 +29,6 @@ bower install womstrap
 
 If you want to create your own styleguide, fork the repository and modify the `src` and `kss-html` folders.
 
-### Gallery
-
-Have you built a site using womstrap? I'll be creating a gallery, so email a link and an thumbnail image to [mailto:womstrap@bamzap.pw](womstrap@bamzap.pw). The thumbnail should be sized 300px width by 240px height.
 
 ### Development
 

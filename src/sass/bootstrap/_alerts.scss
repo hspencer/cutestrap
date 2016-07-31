@@ -6,6 +6,24 @@
 // Base styles
 // -------------------------
 
+/*
+Alerts
+
+Markup:
+<div class="alert {{modifier_class}}" role="alert">
+  This is a very <strong>important</strong> menssage that suddenly appears in front of you
+</div>
+
+.alert-success          - Successful alert
+.alert-info             - Informative alert
+.alert-warning          - Warning alert
+.alert-danger           - Defcon 5
+
+Styleguide 6.3
+
+*/
+
+
 .alert {
   padding: $alert-padding;
   margin-bottom: $line-height-computed;

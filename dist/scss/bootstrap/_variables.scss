@@ -694,7 +694,7 @@ $progress-bg:                 #f5f5f5 !default;
 //** Progress bar text color
 $progress-bar-color:          #fff !default;
 //** Variable for setting rounded corners on progress bar.
-$progress-border-radius:      $border-radius-base !default;
+$progress-border-radius:      $border-radius-large * 2 !default;
 
 //** Default progress bar color
 $progress-bar-bg:             $brand-primary !default;
