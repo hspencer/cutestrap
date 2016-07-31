@@ -1,3 +1,5 @@
+/* this Style is for documentation purposes only */
+
 @import "variables";
 @import "support/mixins";
 
@@ -23,6 +25,7 @@ header{
 header h3{
   font-size: $font-size--large;
   padding: 0;
+  margin: 0;
 }
 
 header a{
@@ -55,9 +58,6 @@ nav li{
   a{
     text-decoration: none;
     font-weight: 900;
-    &:hover{
-      border-bottom: 5px solid $primary;
-    }
   }
 }
 
