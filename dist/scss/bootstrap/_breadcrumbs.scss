@@ -1,6 +1,15 @@
-//
-// Breadcrumbs
-// --------------------------------------------------
+/*
+Breadcrumbs
+
+Markup:
+<ol class="breadcrumb">
+  <li><a href="#">Home</a></li>
+  <li><a href="#">Library</a></li>
+  <li class="active">Data</li>
+</ol>
+
+Styleguide 6.5
+*/ 
 
 
 .breadcrumb {

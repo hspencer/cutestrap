@@ -78,11 +78,18 @@ Markup:
 
 .ok							- Positive color, used for action buttons
 .cancel						- Neutral or negative action
+.success 					- Success color
+.info 						- Information color
+.warning 					- Warning color
+.danger						- Danger color
 
 Styleguide 5.2
 
 */
 
-
-.ok{background-color:  $color-action}
+.ok{background-color: $color-action}
 .cancel{background-color: $gray-3}
+.success{background-color: $brand-success;}
+.info{background-color: $brand-info;}
+.warning{background-color: $brand-warning;}
+.danger{background-color: $brand-danger;}
