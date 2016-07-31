@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>WOMstrap</title>
+    <meta name="keywords" content="bootstrap alternative, css framework, styleguide, pattern library">
+    <meta name="description" content="A sassy, opinionated CSS Framework. A tiny alternative to Bootstrap.">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+    <meta name="apple-touch-fullscreen" content="yes">
+
+    
+  <link href="../dist/css/womstrap.css" rel="stylesheet" />
+  <link href="./public/css/kss.css" rel="stylesheet" />
+
+  </head>
+  <body class="language-markup">
+
+      <header>
+  <h3>
+    <a href="javascript:;" class="js-grid-toggle grid-toggle fs-base f-right">Grid</a>
+    <a href="./index.html">WOMstrap</a>
+  </h3>
+</header>
+
+
+      
+
+
+<nav class='navbar'>
+  <ul>
+      <li>
+        <a href="section-1.html">Grid</a>
+      </li>
+      <li>
+        <a href="section-2.html">Buttons</a>
+      </li>
+      <li>
+        <a href="section-3.html">Utilities</a>
+      </li>
+      <li>
+        <a href="section-4.html">Forms</a>
+      </li>
+      <li>
+        <a href="section-5.html">Colors</a>
+      </li>
+      <li>
+        <a href="section-6.html">Components</a>
+      </li>
+  </ul>
+</nav>
+
+
+<div class="container">
+
+      <article class="pattern">
+          <h2 id="6">Components</h2>
+          <div class="subtitle pattern-description"><p>These are mainly bootstrap components that have been tweaked specially for WOM.</p>
+</div>
+      </article>
+      <article class="pattern">
+          <h2 class="kss-title" id="6-1">
+            <span class="kss-ref badge pull-right">6-1</span> Progress Bars
+          </h2>
+          <section class="example">
+<pre class="">&lt;div class=&quot;progress [modifier class]&quot;&gt;
+  &lt;div class=&quot;progress-bar&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;60&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 60%;&quot;&gt;
+    &lt;span class=&quot;sr-only&quot;&gt;60% Complete&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+            <div class="kss-example"><div class="progress [modifier class]">
+  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+    <span class="sr-only">60% Complete</span>
+  </div>
+</div></div>
+              <hr />
+              <p class="clearfix kss-modifier-title"><code>.progress-striped</code> <span class="f-right fs-small">Striped</span></p>
+              <div class="kss-example"><div class="progress progress-striped">
+  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+    <span class="sr-only">60% Complete</span>
+  </div>
+</div></div>
+              <hr />
+              <p class="clearfix kss-modifier-title"><code>.progress-bar-success</code> <span class="f-right fs-small">Success</span></p>
+              <div class="kss-example"><div class="progress progress-bar-success">
+  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+    <span class="sr-only">60% Complete</span>
+  </div>
+</div></div>
+              <hr />
+              <p class="clearfix kss-modifier-title"><code>.progress-bar-info</code> <span class="f-right fs-small">Info</span></p>
+              <div class="kss-example"><div class="progress progress-bar-info">
+  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+    <span class="sr-only">60% Complete</span>
+  </div>
+</div></div>
+              <hr />
+              <p class="clearfix kss-modifier-title"><code>.progress-bar-warning</code> <span class="f-right fs-small">Warning</span></p>
+              <div class="kss-example"><div class="progress progress-bar-warning">
+  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+    <span class="sr-only">60% Complete</span>
+  </div>
+</div></div>
+              <hr />
+              <p class="clearfix kss-modifier-title"><code>.progress-bar-danger</code> <span class="f-right fs-small">Danger</span></p>
+              <div class="kss-example"><div class="progress progress-bar-danger">
+  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+    <span class="sr-only">60% Complete</span>
+  </div>
+</div></div>
+          </section>
+      </article>
+      <article class="pattern">
+          <h2 class="kss-title" id="6-2">
+            <span class="kss-ref badge pull-right">6-2</span> Wells
+          </h2>
+          <section class="example">
+<pre class="">&lt;div class=&quot;well [modifier class]&quot;&gt;
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+&lt;/div&gt;</pre>
+            <div class="kss-example"><div class="well [modifier class]">
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+</div></div>
+              <hr />
+              <p class="clearfix kss-modifier-title"><code>.well</code> <span class="f-right fs-small">Regular well</span></p>
+              <div class="kss-example"><div class="well well">
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+</div></div>
+              <hr />
+              <p class="clearfix kss-modifier-title"><code>.well-lg</code> <span class="f-right fs-small">A large well</span></p>
+              <div class="kss-example"><div class="well well-lg">
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+</div></div>
+              <hr />
+              <p class="clearfix kss-modifier-title"><code>.well-sm</code> <span class="f-right fs-small">A small well</span></p>
+              <div class="kss-example"><div class="well well-sm">
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+</div></div>
+          </section>
+      </article>
+      <article class="pattern">
+          <h2 class="kss-title" id="6-3">
+            <span class="kss-ref badge pull-right">6-3</span> Alerts
+          </h2>
+          <section class="example">
+<pre class="">&lt;div class=&quot;alert [modifier class]&quot; role=&quot;alert&quot;&gt;
+  This is a very &lt;strong&gt;important&lt;/strong&gt; menssage that suddenly appears in front of you
+&lt;/div&gt;</pre>
+            <div class="kss-example"><div class="alert [modifier class]" role="alert">
+  This is a very <strong>important</strong> menssage that suddenly appears in front of you
+</div></div>
+              <hr />
+              <p class="clearfix kss-modifier-title"><code>.alert-success</code> <span class="f-right fs-small">Successful alert</span></p>
+              <div class="kss-example"><div class="alert alert-success" role="alert">
+  This is a very <strong>important</strong> menssage that suddenly appears in front of you
+</div></div>
+              <hr />
+              <p class="clearfix kss-modifier-title"><code>.alert-info</code> <span class="f-right fs-small">Informative alert</span></p>
+              <div class="kss-example"><div class="alert alert-info" role="alert">
+  This is a very <strong>important</strong> menssage that suddenly appears in front of you
+</div></div>
+              <hr />
+              <p class="clearfix kss-modifier-title"><code>.alert-warning</code> <span class="f-right fs-small">Warning alert</span></p>
+              <div class="kss-example"><div class="alert alert-warning" role="alert">
+  This is a very <strong>important</strong> menssage that suddenly appears in front of you
+</div></div>
+              <hr />
+              <p class="clearfix kss-modifier-title"><code>.alert-danger</code> <span class="f-right fs-small">Defcon 5</span></p>
+              <div class="kss-example"><div class="alert alert-danger" role="alert">
+  This is a very <strong>important</strong> menssage that suddenly appears in front of you
+</div></div>
+          </section>
+      </article>
+      <article class="pattern">
+          <h2 class="kss-title" id="6-4">
+            <span class="kss-ref badge pull-right">6-4</span> Badges
+          </h2>
+          <section class="example">
+<pre class="">&lt;a href=&quot;#&quot;&gt;Inbox &lt;span class=&quot;badge&quot;&gt;42&lt;/span&gt;&lt;/a&gt;
+&lt;button class=&quot;btn btn-primary&quot; type=&quot;button&quot;&gt;
+  Messages &lt;span class=&quot;badge&quot;&gt;4&lt;/span&gt;
+&lt;/button&gt;
+&lt;hr&gt;
+&lt;ul class=&quot;nav nav-pills&quot; role=&quot;tablist&quot;&gt;
+  &lt;li role=&quot;presentation&quot; class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home &lt;span class=&quot;badge&quot;&gt;42&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#&quot;&gt;Profile&lt;/a&gt;&lt;/li&gt;
+  &lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#&quot;&gt;Messages &lt;span class=&quot;badge&quot;&gt;3&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</pre>
+            <div class="kss-example"><a href="#">Inbox <span class="badge">42</span></a>
+<button class="btn btn-primary" type="button">
+  Messages <span class="badge">4</span>
+</button>
+<hr>
+<ul class="nav nav-pills" role="tablist">
+  <li role="presentation" class="active"><a href="#">Home <span class="badge">42</span></a></li>
+  <li role="presentation"><a href="#">Profile</a></li>
+  <li role="presentation"><a href="#">Messages <span class="badge">3</span></a></li>
+</ul></div>
+          </section>
+      </article>
+      <article class="pattern">
+          <h2 class="kss-title" id="6-5">
+            <span class="kss-ref badge pull-right">6-5</span> Breadcrumbs
+          </h2>
+          <section class="example">
+<pre class="">&lt;ol class=&quot;breadcrumb&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Library&lt;/a&gt;&lt;/li&gt;
+  &lt;li class=&quot;active&quot;&gt;Data&lt;/li&gt;
+&lt;/ol&gt;</pre>
+            <div class="kss-example"><ol class="breadcrumb">
+  <li><a href="#">Home</a></li>
+  <li><a href="#">Library</a></li>
+  <li class="active">Data</li>
+</ol></div>
+          </section>
+      </article>
+</div>
+
+
+
+
+      
+
+    
+  <script src="./public/js/kss.js"></script>
+
+
+  </body>
+</html>
