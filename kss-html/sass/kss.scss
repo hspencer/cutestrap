@@ -1,7 +1,11 @@
 /* this Style is for documentation purposes only */
 
-@import "variables";
-@import "support/mixins";
+
+@import "custom/fonts";
+@import "custom/colors";
+@import "custom/type";
+@import "custom/z_index";
+@import "custom/mixins";
 
 html.grid--is_active{
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAYAQMAAADnK87dAAAABlBMVEX///8AAABVwtN+AAAAAnRSTlMANrkpWKEAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVAiZY2AgCTwAAAEQAOFwuZEGAAAAAElFTkSuQmCC) repeat left top;
