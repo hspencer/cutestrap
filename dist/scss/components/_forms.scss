@@ -52,7 +52,6 @@ Styleguide 4.0
 .select [disabled],
 .textfield [disabled]{
   @extend .disabled;
-
   & + * {
     @extend .disabled;
   }

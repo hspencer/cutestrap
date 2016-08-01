@@ -55,9 +55,9 @@ $gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
 
 $brand-primary:         rgb(66, 20, 65) !default; // according to brand manual
 $brand-success:         rgb(186, 0, 124) !default;
-$brand-info:            #602F84 !default;
-$brand-warning:         #f0ad4e !default;
-$brand-danger:          #d9534f !default;
+$brand-info:            #7291E9 !default;
+$brand-warning:         #EB851F !default;
+$brand-danger:          #D1104A !default;
 
 
 //== Scaffolding
@@ -190,10 +190,10 @@ $btn-font-weight:                bolder !default;
 
 $btn-default-color:              #333 !default;
 $btn-default-bg:                 #fff !default;
-$btn-default-border:             #ccc !default;
+$btn-default-border:             $primary !default;
 
 $btn-primary-color:              #fff !default;
-$btn-primary-bg:                 $brand-primary !default;
+$btn-primary-bg:                 $primary-light !default;
 $btn-primary-border:             darken($btn-primary-bg, 5%) !default;
 
 $btn-success-color:              #fff !default;
@@ -237,14 +237,14 @@ $input-border:                   $gray-lighter !default;
 // TODO: Rename `$input-border-radius` to `$input-border-radius-base` in v4
 //** Default `.form-control` border radius
 // This has no effect on `<select>`s in some browsers, due to the limited stylability of `<select>`s in CSS.
-$input-border-radius:            $border-radius-base !default;
+$input-border-radius:            0 !default;
 //** Large `.form-control` border radius
 $input-border-radius-large:      $border-radius-large !default;
 //** Small `.form-control` border radius
 $input-border-radius-small:      $border-radius-small !default;
 
 //** Border color for inputs on focus
-$input-border-focus:             #66afe9 !default;
+$input-border-focus:             $secondary !default;
 
 //** Placeholder text color
 $input-color-placeholder:        #999 !default;
@@ -874,15 +874,15 @@ $close-text-shadow:           0 1px 0 #fff !default;
 //
 //##
 
-$code-color:                  #c7254e !default;
-$code-bg:                     #f9f2f4 !default;
+$code-color:                  #750099 !default;
+$code-bg:                     #E5EFF8 !default;
 
 $kbd-color:                   #fff !default;
 $kbd-bg:                      #333 !default;
 
-$pre-bg:                      #f5f5f5 !default;
-$pre-color:                   $gray-dark !default;
-$pre-border-color:            #ccc !default;
+$pre-bg:                      $code-bg !default;
+$pre-color:                   $code-color !default;
+$pre-border-color:            darken($pre-bg, 5%);
 $pre-scrollable-max-height:   340px !default;
 
 

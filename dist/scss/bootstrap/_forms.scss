@@ -1,6 +1,6 @@
 /*
 
-Bootstrap Forms
+Bootstrap Standard Forms
 
 Markup:
 <form>
@@ -25,10 +25,11 @@ Markup:
   <button type="submit" class="btn btn-default">Submit</button>
 </form>
 
-Styleguide 4.3
+Styleguide 4.5
+*/
 
-
-Horizontal Form
+/*
+Bootstrap Horizontal Form
 
 Markup:
 <form class="form-horizontal">
@@ -60,7 +61,7 @@ Markup:
   </div>
 </form>
 
-Styleguide 4.4
+Styleguide 4.6
 
 */
 
@@ -183,9 +184,9 @@ output {
   color: $input-color;
   background-color: $input-bg;
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
-  border: 1px solid $input-border;
+  border-bottom: 3px solid $input-border;
   border-radius: $input-border-radius; // Note: This has no effect on <select>s in some browsers, due to the limited stylability of <select>s in CSS.
-  @include box-shadow(inset 0 1px 1px rgba(0,0,0,.075));
+  //@include box-shadow(inset 0 1px 1px rgba(0,0,0,.075));
   @include transition(border-color ease-in-out .15s, box-shadow ease-in-out .15s);
 
   // Customize the `:focus` state to imitate native WebKit styles.
@@ -306,6 +307,7 @@ input[type="search"] {
   margin-left: -20px;
   margin-top: 4px \9;
 }
+
 
 .radio + .radio,
 .checkbox + .checkbox {

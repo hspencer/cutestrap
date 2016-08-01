@@ -1,8 +1,6 @@
 # womstrap
 
-[![Join the chat at https://gitter.im/womstrap/womstrap](https://badges.gitter.im/womstrap/womstrap.svg)](https://gitter.im/womstrap/womstrap?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
-A sassy, opinionated CSS Framework. Now Bootstrap ~3.0.0 compatible!
+A sassy, opinionated CSS Framework for WOM. Now Bootstrap ~3.0.0 compatible!
 
 [Docs/Demo](https://www.womstrap.com/)
 

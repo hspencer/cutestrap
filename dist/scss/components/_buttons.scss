@@ -31,7 +31,7 @@ Styleguide 2.0
 
 */
 
-
+/*
 .btn{
   display: inline-block;
   box-sizing: border-box;
@@ -72,7 +72,7 @@ Styleguide 2.0
     background-color: $primary;
   }
 }
-
+*/
 
 .btn-secondary{
   background-color: $gray-6;
@@ -120,6 +120,8 @@ Styleguide 2.0
 }
 
 .btn-wom{
+  color: $white !important;
+  background-color: $primary;
   font-weight: 200;
   text-transform: uppercase;
   padding: 0 .3rem;

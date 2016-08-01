@@ -218,6 +218,7 @@ Styleguide 3.2
 }
 
 .gradient-h{
+  color: $white !important;
   @include gradient-x($color-action, $primary);
   &:hover{
     @include gradient-x($primary-light, $primary-dark);

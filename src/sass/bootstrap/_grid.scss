@@ -89,8 +89,7 @@ The Bootstrap Grid
 
 Markup:
 <div class="row">
-  <div class="col-md-1"><div class="fs-small ta-center">.col-md-1</div></div>
-  <div class="col-md-1"><div class="fs-small ta-center">.col-md-1</div></div>
+  <div class="col-md-2"><div class="well fs-small ta-center">.col-md-1</div></div>
   <div class="col-md-1"><div class="fs-small ta-center">.col-md-1</div></div>
   <div class="col-md-1"><div class="fs-small ta-center">.col-md-1</div></div>
   <div class="col-md-1"><div class="fs-small ta-center">.col-md-1</div></div>
@@ -103,16 +102,16 @@ Markup:
   <div class="col-md-1"><div class="fs-small ta-center">.col-md-1</div></div>
 </div>
 <div class="row">
-  <div class="col-md-8"><div class="fs-small ta-center">.col-md-8</div></div>
+  <div class="col-md-8"><div class="well fs-small ta-center">.col-md-8</div></div>
   <div class="col-md-4"><div class="fs-small ta-center">.col-md-4</div></div>
 </div>
 <div class="row">
-  <div class="col-md-4"><div class="fs-small ta-center">.col-md-4</div></div>
+  <div class="col-md-4"><div class="well fs-small ta-center">.col-md-4</div></div>
   <div class="col-md-4"><div class="fs-small ta-center">.col-md-4</div></div>
   <div class="col-md-4"><div class="fs-small ta-center">.col-md-4</div></div>
 </div>
 <div class="row">
-  <div class="col-md-6"><div class="fs-small ta-center">.col-md-6</div></div>
+  <div class="col-md-6"><div class="well fs-small ta-center">.col-md-6</div></div>
   <div class="col-md-6"><div class="fs-small ta-center">.col-md-6</div></div>
 </div>
 
