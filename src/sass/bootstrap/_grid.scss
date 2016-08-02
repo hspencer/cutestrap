@@ -87,6 +87,8 @@
 
 The Bootstrap Grid
 
+This is the <strong>bootstrap standard grid system</strong>, which serves as a basic scaffolding for responsive apps.
+
 Markup:
 <div class="row">
   <div class="col-md-2"><div class="well fs-small ta-center">.col-md-1</div></div>
@@ -115,6 +117,89 @@ Markup:
   <div class="col-md-6"><div class="fs-small ta-center">.col-md-6</div></div>
 </div>
 
-Styleguide 1.3
+Styleguide 1.2
 
+*/
+
+
+/*
+
+Responsive Utilities
+
+For faster mobile-friendly development, use these utility classes for showing and hiding content by device via media query. Also included are utility classes for toggling content when printed.
+
+Try to use these on a limited basis and avoid creating entirely different versions of the same site. Instead, use them to complement each device's presentation.
+
+Markup:
+<div class="table-responsive">
+    <table class="table table-bordered table-striped responsive-utilities">
+        <thead>
+            <tr>
+                <th></th>
+                <th> Extra small devices <small>Phones (&lt;768px)</small> </th> 
+                <th> Small devices <small>Tablets (≥768px)</small> </th> 
+                <th> Medium devices <small>Desktops (≥992px)</small> </th> 
+                <th> Large devices <small>Desktops (≥1200px)</small> </th> 
+            </tr>
+        </thead>
+        <tbody> 
+            <tr>
+                <th scope="row"><code>.visible-xs-*</code></th>
+                <td class="success">Visible</td>
+                <td class="danger">Hidden</td>
+                <td class="danger">Hidden</td>
+                <td class="danger">Hidden</td>
+            </tr>
+            <tr> 
+                <th scope="row"><code>.visible-sm-*</code></th>
+                <td class="danger">Hidden</td>
+                <td class="success">Visible</td>
+                <td class="danger">Hidden</td>
+                <td class="danger">Hidden</td>
+            </tr>
+            <tr> 
+                <th scope="row"><code>.visible-md-*</code></th>
+                <td class="danger">Hidden</td>
+                <td class="danger">Hidden</td>
+                <td class="success">Visible</td>
+                <td class="danger">Hidden</td>
+            </tr>
+            <tr> 
+                <th scope="row"><code>.visible-lg-*</code></th>
+                <td class="danger">Hidden</td>
+                <td class="danger">Hidden</td>
+                <td class="danger">Hidden</td>
+                <td class="success">Visible</td>
+            </tr> </tbody> <tbody> <tr> <th scope="row"><code>.hidden-xs</code></th>
+            <td class="danger">Hidden</td>
+            <td class="success">Visible</td>
+            <td class="success">Visible</td>
+            <td class="success">Visible</td>
+        </tr>
+        <tr> 
+            <th scope="row"><code>.hidden-sm</code></th>
+            <td class="success">Visible</td>
+            <td class="danger">Hidden</td>
+            <td class="success">Visible</td>
+            <td class="success">Visible</td>
+        </tr>
+        <tr> 
+            <th scope="row"><code>.hidden-md</code></th>
+            <td class="success">Visible</td>
+            <td class="success">Visible</td>
+            <td class="danger">Hidden</td>
+            <td class="success">Visible</td>
+        </tr>
+        <tr> 
+            <th scope="row"><code>.hidden-lg</code></th>
+            <td class="success">Visible</td>
+            <td class="success">Visible</td>
+            <td class="success">Visible</td> 
+            <td class="danger">Hidden</td>
+        </tr> 
+    </tbody>
+</table>
+</div>
+
+Styleguide 1.2.1
 */
