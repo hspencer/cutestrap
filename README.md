@@ -2,7 +2,7 @@
 
 A sassy, opinionated CSS Framework for WOM. Now Bootstrap ~3.0.0 compatible!
 
-[Docs/Demo](http://hspencer.github.io/womstrap/docs)
+[Docs/Demo](http://tinet-ux.github.io/womstrap/docs)
 
 ### Features
 
