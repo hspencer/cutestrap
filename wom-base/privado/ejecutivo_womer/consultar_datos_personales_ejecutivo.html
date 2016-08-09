@@ -7,7 +7,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="https://rawgithub.com/hspencer/womstrap/gh-pages/dist/css/womstrap.min.css">
+        <link rel="stylesheet" href="https://rawgit.com/tinet-ux/womstrap/gh-pages/dist/css/womstrap.min.css">
         <link rel="stylesheet" href="../../css/normalize.min.css">
         <link rel="stylesheet" href="../../css/main.css">
         <link rel="stylesheet" href="../../css/main_datos_personales.css">
@@ -61,24 +61,43 @@
               <p>Consultar WOMER por:</p>   
 
               <div class="row">
-                <p>Rut</p>
+                <div class="row col-xs-2"></div>
+                <div class="row col-xs-8">
+                  <p>Rut</p>
+                </div>
+                 <div class="row col-xs-2 ta-center">
+                  <label class="radio">
+                    <input type="radio" name="example" />
+                    <span class="radio__label"></span>
+                  </label>
+                </div>
               </div>
-              <div class="row">
-                <p>N° de Teléfono</p>
+              <div class="row">   
+                <div class="row col-xs-2"></div>            
+                <div class="row col-xs-8">
+                  <p>N° de Teléfono</p>
+                </div>
+                 <div class="row col-xs-2 ta-center">
+                  <label class="radio">
+                    <input type="radio" name="example" />
+                    <span class="radio__label"></span>
+                  </label>
+                </div>
               </div>
-
-
-
-              <input type="text" class="form-control" id="inputRut" placeholder="Ingrese rut del womer">             
+              <hr>
+              <input type="text" class="form-control" id="inputRut" placeholder="N° de Teléfono">    
+              </br>
+              <input type="password" class="form-control" id="inputPass" placeholder="Contraseña">   
+              </br>         
             </div>
         
-            <div class="col-xs-12 ta-center">                
-              <button type="button" class="btn btn-primary"
+            <div class="col-xs-12 ta-center">  
+            </br>              
+              <button type="button" class="btn btn-lg btn-primary"
               onclick="window.location.href='datos_personales_womer.html'">Consultar
               </button>
             </div>
         </div> 
-
 
 
 
