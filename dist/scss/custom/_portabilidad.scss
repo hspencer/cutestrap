@@ -1,4 +1,4 @@
-.bg-portabilidad{
+.bg-portabilidad {
     background-color: transparent;
     background-image: url('../../wom-base/img/portabilidad/FONDO1.png');
     background-repeat: no-repeat;
@@ -16,9 +16,7 @@
 .bg-portabilidad h4 {
     padding: 0 10px;
 }
-
-
-.bg-portate-bien{
+.bg-portate-bien {
     margin-top: -20px;
     height: 360px;
     background-color: transparent;
@@ -26,27 +24,41 @@
     background-repeat: no-repeat;
     background-position: left;
 }
+.bg-flujo-portate {
+    margin-top: -20px;
+    height: 430px;
+    background-color: transparent;
+    background-image: url('../../wom-base/img/portabilidad/fondo_flujo_portate.jpg');
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.bg-flujo-portate h3 {
+    margin-top: 230px;
+    padding: 0;
+    line-height: 1.5rem;
+}
+.bg-flujo-portate h4 {
+    padding: 0 10px;
+}
 .instrucciones-portabilidad {
     margin-top: -50px;
 }
-
-.instrucciones-portabilidad h4,{
+.instrucciones-portabilidad h4 {
   color: $secondary;
   font-size: 2.5rem;
 }
-.instrucciones-portabilidad h5{
+.instrucciones-portabilidad h5 {
   color: $secondary;
   font-size: 2.2rem;
   border-bottom: 2px solid $secondary;
   padding-bottom: 5px;
 }
-.instrucciones-portabilidad p{
+.instrucciones-portabilidad p {
   padding-left: 2rem;
   padding-right: 1rem;
   font-size: 1.8rem;
   color: $gray-2;
 }
-
 .abandona-darkside {
   margin-left: 0;
   display: inline-block;
@@ -66,4 +78,53 @@
 .solicita-portabilidad p{
     font-size: 1.8rem;
     color: $gray-2;
+}
+
+
+
+// steps
+
+
+.stepwizard-row {
+    display: table-row;
+}
+
+.stepwizard {
+    display: table;     
+    width: 100%;
+    position: relative;
+    margin-top: -50px;
+}
+
+.stepwizard-step button[disabled] {
+    opacity: 1 !important;
+    filter: alpha(opacity=100) !important;
+}
+
+.stepwizard-row:before {
+    top: 14px;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    z-order: 0;
+    
+}
+
+.stepwizard-step {    
+    display: table-cell;
+    text-align: center;
+    position: relative;
+}
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px;
 }
