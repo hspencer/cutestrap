@@ -16,7 +16,8 @@
   }
 
   p {
-    margin-bottom: 0;
+    margin-bottom: ($jumbotron-padding / 2);
+    font-size: $jumbotron-font-size;
     font-weight: 200;
   }
 
@@ -26,24 +27,13 @@
 
   .container &,
   .container-fluid & {
-    border-radius: 0; // Only round corners at higher resolutions if contained in a container
+    border-radius: $border-radius-large; // Only round corners at higher resolutions if contained in a container
     padding-left:  ($grid-gutter-width / 2);
     padding-right: ($grid-gutter-width / 2);
   }
 
   .container {
     max-width: 100%;
-  }
-
-  .portatebien-titulo{
-    margin-bottom: -20px;
-    padding-top: 4rem;
-    font-weight: 700;
-  }
-  .portatebien-subtitulo{
-    margin-top: -10px;
-    color: $terciary-light;
-    font-weight: 700;
   }
 
   @media screen and (min-width: $screen-sm-min) {
@@ -62,4 +52,3 @@
     }
   }
 }
-

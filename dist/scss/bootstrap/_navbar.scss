@@ -2,7 +2,7 @@
 Navbars
 
 Wrapper and base class:  Provide a static navbar from which we expand to create full-width, fixed, and
-other navbar variations. lol
+other navbar variations.
 
 Markup:
 <nav class="navbar navbar-default">
@@ -89,18 +89,7 @@ Styleguide 7.0
     float: left;
   }
 }
-.navbar-brand-centered {
-    position: absolute;
-    left: 50%;
-    display: block;
-    width: 160px;
-    text-align: center;
-    background-color: transparent;
-}
-.navbar>.container .navbar-brand-centered, 
-.navbar>.container-fluid .navbar-brand-centered {
-    margin-left: -50px;
-}
+
 
 // Navbar collapse (body)
 //
@@ -249,24 +238,6 @@ Styleguide 7.0
   }
 }
 
-.navbar-main {
-    background-color: transparent;
-    height: 80px;
-    margin-bottom: -80px;
-    border: none;
-}
-
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: #FFF;
-}
-.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
-    background-color: transparent;
-}
-.navbar-toggle {
-    border: 0;
-    margin-top: 30px;
-    border-color: white;
-}
 
 // Navbar toggle
 //
@@ -277,15 +248,12 @@ Styleguide 7.0
   position: relative;
   float: right;
   margin-right: $navbar-padding-horizontal;
-  margin-top: 30px;
   padding: 9px 10px;
   @include navbar-vertical-align(34px);
   background-color: transparent;
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
-  border: 0;
-  border-radius: none;
-  border-color: #fff;
-  z-index:1;
+  border: 1px solid transparent;
+  border-radius: $border-radius-base;
 
   // We remove the `outline` here, but later compensate by attaching `:hover`
   // styles to `:focus`.

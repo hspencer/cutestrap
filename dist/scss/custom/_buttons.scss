@@ -119,33 +119,6 @@ Styleguide 2.0
   }
 }
 
-.btn-portate{
-  background-color: transparent;
-  color: #fff !important;
-  text-decoration: underline;
-  font-weight: 500;
-  margin-top: 40px;
-
-  &:link{
-    color: $link !important;
-  }
-
-  &:visited{
-    color: $terciary-light !important;
-  }
-
-  &:focus,
-  &:hover{
-    color: $primary-dark !important;
-    background-color: transparent;
-  }
-
-  &:active{
-    color: $primary !important;
-    background-color: transparent;
-  }
-}
-
 .btn-wom{
   color: $white !important;
   background-color: $primary;
