@@ -23,9 +23,15 @@
 }
 
 .bg-modulo h3 {
-  margin-top: 230px;
+  margin-top: 200px;
   padding: 0;
-  line-height: 1.5rem;
+}
+
+.bg-modulo.modulo-mensajes h3 {
+  text-transform: uppercase;
+}
+.bg-modulo.modulo-mensajes h4 {
+  font-size: 4rem;
 }
 
 .bg-modulo h4 {
@@ -44,7 +50,6 @@
 
 .modulo-pagofacil h3 {
   font-weight: bold;
-  font-size: 42px;
   margin-top: 200px;
   margin-bottom: 20px;
 }

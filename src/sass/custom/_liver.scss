@@ -22,7 +22,6 @@
 .bg-portabilidad h3 {
     margin-top: 260px;
     padding: 0;
-    line-height: 1.5rem;
 }
 .bg-portabilidad h4 {
     padding: 0 10px;
@@ -47,7 +46,10 @@
     padding: 0 10px;
     line-height: 1.5rem;
 }
-
+.navbar-main {
+    position: relative;
+    z-index: 99;
+}
 
 .navbar-brand-centered {
     position: absolute;
