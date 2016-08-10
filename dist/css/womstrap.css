@@ -6008,8 +6008,7 @@ a.badge:hover, a.badge:focus {
 }
 
 .jumbotron p {
-  margin-bottom: 15px;
-  font-size: 24px;
+  margin-bottom: 0;
   font-weight: 200;
 }
 
@@ -6019,13 +6018,25 @@ a.badge:hover, a.badge:focus {
 
 .container .jumbotron,
 .container-fluid .jumbotron {
-  border-radius: 6px;
+  border-radius: 0;
   padding-left: 15px;
   padding-right: 15px;
 }
 
 .jumbotron .container {
   max-width: 100%;
+}
+
+.jumbotron .portatebien-titulo {
+  margin-bottom: -20px;
+  padding-top: 4rem;
+  font-weight: 700;
+}
+
+.jumbotron .portatebien-subtitulo {
+  margin-top: -10px;
+  color: #8071b9;
+  font-weight: 700;
 }
 
 @media screen and (min-width: 768px) {
@@ -9196,6 +9207,32 @@ Styleguide 2.0
   background-color: transparent;
 }
 
+.btn-portate {
+  background-color: transparent;
+  color: #fff !important;
+  text-decoration: underline;
+  font-weight: 500;
+  margin-top: 40px;
+}
+
+.btn-portate:link {
+  color: #720184 !important;
+}
+
+.btn-portate:visited {
+  color: #8071b9 !important;
+}
+
+.btn-portate:focus, .btn-portate:hover {
+  color: #2e0e2e !important;
+  background-color: transparent;
+}
+
+.btn-portate:active {
+  color: #421441 !important;
+  background-color: transparent;
+}
+
 .btn-wom {
   color: #ffffff !important;
   background-color: #421441;
@@ -9608,15 +9645,25 @@ Styleguide 1.1.2
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
-  min-height: 430px;
+  min-height: 370px;
+  min-width: 280px;
 }
 
 .bg-portabilidad h3 {
-  margin-top: 260px;
+  margin-top: 230px;
   padding: 0;
   line-height: 1.5rem;
 }
 
 .bg-portabilidad h4 {
   padding: 0 10px;
+}
+
+.bg-portate-bien {
+  margin-top: -20px;
+  height: 360px;
+  background-color: transparent;
+  background-image: url("../../wom-base/img/portabilidad/fondo-portatebien.png");
+  background-repeat: no-repeat;
+  background-position: left;
 }

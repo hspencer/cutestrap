@@ -25,6 +25,7 @@ $terciary-dark:		darken($terciary, 11%);
 $terciary-light:	desaturate(lighten($terciary, 15%), 4%);
 
 $color-action:		#720184 !default;
+$color-lila:		#8743A2 !default;
 $link:          	$color-action !default;
 $link--visited: 	darken($link, 10%) !default;
 $link--hover:   	lighten($link, 10%) !default;
