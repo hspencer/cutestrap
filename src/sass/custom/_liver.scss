@@ -234,3 +234,47 @@ ul {
 }
 
 /* fin del navbar centrado??? */
+
+/* estilos extras de pago facil */
+.modulo-morado {
+    color: white;
+    background: rebeccapurple;
+    padding: 0 15px 30px;
+}
+.modulo-morado h4,
+.modulo-morado h6 {
+    color: white;
+}
+.modulo-morado h6 {
+    margin: 0 0 15px;
+    padding: 0;
+}
+.modulo-morado .item {
+    margin-bottom: 60px;
+}
+.mensajes-sesion {
+    text-align: center;
+    margin: 0 auto;
+    width: 75%;
+}
+.mensajes-reporte-pago {
+    margin: 0 0 20px;
+    padding: 0;
+    list-style-type: none;
+}
+.mensajes-reporte-pago li > span {
+    font-size: 1.42rem;
+    display: inline-block;
+}
+    .mensajes-reporte-pago li > span:first-of-type {
+        text-align: right;
+        margin-right: 5px;
+        width: 55%;
+    }
+    .mensajes-reporte-pago li > span:last-of-type {
+        font-weight: semibold;
+        text-align: left;
+        margin-left: 5px;
+        width: 40%;
+        color: #6C017F;
+    }
