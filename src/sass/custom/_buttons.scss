@@ -31,49 +31,6 @@ Styleguide 2.0
 
 */
 
-/*
-.btn{
-  display: inline-block;
-  box-sizing: border-box;
-  border: none;
-  color: $white;
-  background-color: $color-action;
-  border-radius: $corner-radius/2;
-  cursor: pointer;
-  padding: 0 $line-height/4;
-  height: $line-height;
-  line-height: $line-height;
-  max-width: 100%;
-  transition-property: all;
-  transition-duration: 200ms;
-  font-weight: 700;
-  margin: 0 auto;
-  text-align: center;
-  user-select: none;
-  width: auto;
-  
-  &:link,
-  &:visited{
-    color: $white;
-    text-decoration: none;
-  }
-
-  &:focus,
-  &:hover {
-    background-color: saturate(darken($color-action, 10%), 10%);
-    color: $white;
-  }
-
-  &:focus{
-    outline: .1rem dotted $gray-3;
-  }
-
-  &:active{
-    background-color: $primary;
-  }
-}
-*/
-
 .btn-secondary{
   background-color: $gray-6;
   color: $gray-1;
