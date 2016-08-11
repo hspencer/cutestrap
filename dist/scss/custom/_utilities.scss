@@ -1,0 +1,249 @@
+/*
+
+Utilities
+
+These utility classes have one or two CSS properties that are meant to save you from creating several identical classes to do the same thing, like just centering some text.
+
+Markup:
+<div class="{{modifier_class}}" style="background-color: #ddd">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+  Sed faucibus mattis magna, quis tempus enim. Duis volutpat 
+  commodo laoreet. Pellentesque commodo pharetra massa non malesuada. 
+  Sed tristique ultricies metus nec pulvinar. Donec magna orci, 
+  rutrum et nisi dapibus, feugiat fringilla nisl. Donec id neque 
+  ante. Duis risus sem, consectetur eget ipsum vel, condimentum 
+  dictum ex. Proin sodales porttitor sem sed pharetra. 
+  Nam sed leo diam.
+</div>
+
+.disabled                - Disable an Element
+.smooth                  - Smoothed font rendering
+.ta-left                 - text-align: left;
+.ta-center               - text-align: center;
+.ta-right                - text-align: right;
+.i                       - i is for italics
+.box                     - a box
+.white                   - white text
+.serif                   - Serif text. Bitter font family.
+.uc                      - Text in upper case
+
+Styleguide 3.0
+
+*/
+
+.disabled{
+  cursor: default;
+  opacity: .5;
+  pointer-events: none;
+}
+
+.smooth{
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.f-none{
+  float: none;
+}
+
+.f-left{
+  float: left;
+}
+
+.f-right{
+  float: right;
+}
+
+.clearfix{
+  clear: both;
+  overflow: hidden;
+}
+
+.ta-left{
+  text-align: left;
+}
+
+.ta-center{
+  text-align: center;
+}
+
+.ta-right{
+  text-align: right;
+}
+
+
+/*
+
+Floats
+
+These utility classes have one or two CSS properties that are meant to save you from creating several identical classes to do the same thing, like just centering some text.
+
+Markup:
+<div class="{{modifier_class}}" style="background-color: #ddd">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+</div>
+
+.clearfix                - Clear floats to keep the parent container in shape
+.f-none                  - float: none;
+.f-left                  - float: left;
+.f-right                 - float: right;
+
+Styleguide 3.1
+*/
+
+
+// suplementary styles
+
+.i{
+  font-style: italic;
+}
+
+.uc{
+  text-transform: uppercase;
+}
+
+.serif{
+  font-family: $serif !important;
+}
+
+.white{
+  color: $white;
+}
+
+
+/*
+
+Type Utilities
+
+These are specific typography related utilities
+
+Markup:
+<div class="type {{modifier_class}}">
+  The quick brown fox jumps over the lazy dog.
+</div>
+
+.fs-small            - Smaller than the default font size
+.fs-base             - Exactly the default font size
+.fs-large            - Larger than the default font size
+.fs-jumbo            - Twice as large than large
+.fw-light            - Changes the type to be 300 weight
+.fw-normal           - Changes the type to be 400 weight
+.fw-semibold         - Changes the type to be 600 weight
+.fw-bold             - Changes the type to be 700 weight
+
+Styleguide 3.1
+
+*/
+
+
+.fs-small{
+  font-size: $font-size--small;
+}
+
+.fs-base{
+  font-size: $font-size;
+}
+
+.fs-large{
+  font-size: $font-size--large;
+}
+
+.fs-jumbo{
+  font-size: $font-size * 3;
+  line-height: $line-height * 2;
+}
+
+.fw-light{
+  font-weight: 100;
+}
+
+.fw-normal{
+  font-weight: 400;
+}
+
+.fw-semibold{
+  font-weight: 700;
+}
+
+.fw-bold{
+  font-weight: 900;
+}
+
+/*
+
+Multi Purpose Utilities
+
+These are transversal classes that can be combined
+
+Markup:
+<div class="{{modifier_class}}">
+  The quick brown fox jumps over the lazy dog.
+</div>
+
+.tilt                   - For promos and stuff
+.skew                   - For using in complement with tilt
+.fw-bold.white.text-shadow-soft       - A faded long shadow for the text
+.box.box-shadow-soft    - A faded long shadow for boxes
+.fw-bold.white.text-shadow-hard       - A hard shadow for texts
+.box.box-shadow-hard    - A hard shadow for boxes
+.box.gradient-h.white   - An horizontal gradient in the background   
+
+Styleguide 3.2
+
+*/
+
+.tilt{
+  transform: skewX($angle) rotateZ($angle);
+  text-transform: italic;
+}
+
+.skew{
+  transform: skewX($angle);
+}
+
+.text-shadow-soft{
+  @include text-long-shadow(lighten($terciary, 30%), 100, .25, .005, 1);
+}
+
+.text-shadow-hard{
+  @include text-long-shadow($terciary, 30, .5, 0.001, 30);
+}
+
+.box-shadow-soft{
+  @include box-long-shadow(lighten($terciary, 30%), 100, .25, .005, 1);
+}
+
+.box-shadow-hard{
+  @include box-long-shadow($terciary, 30, .5, 0.001, 30);
+}
+
+.gradient-h{
+  color: $white !important;
+  @include gradient-x($color-action, $primary);
+  &:hover{
+    @include gradient-x($primary-light, $primary-dark);
+  }
+}
+
+.press-fx{
+  position: relative;
+  top: 0;
+  left: 0;
+  box-shadow: $btn-offset $btn-offset 1px $shadow-col;
+  &:hover{
+    top: $btn-offset;
+    left: $btn-offset;
+    box-shadow: 0 0 1px $shadow-col;
+  }
+}
+
+.box{
+  display: inline-block;
+  padding: 1.2rem 2rem;
+  border-radius: .3rem;
+  margin: 1.2rem .6rem 1.2rem 0;
+  &.color{
+    min-width: 13rem;
+    text-align: center;
+  }
+}
