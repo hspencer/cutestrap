@@ -154,12 +154,10 @@ footer .row{
 }
 .main-foot{
     background-color: transparent;
-    background: url(../img/footer.jpg) no-repeat center bottom;
-    background-size: 100%;
+    background-image: url('../../wom-base/img/footer.jpg');
     color: #fff;
     padding-top: 50px;
     position: relative;
-    z-index: 999;
     display: block;
     height: auto;
     padding-top: 50px;
@@ -197,6 +195,35 @@ footer .row{
 .lista-foot ul li{
     border-bottom:1px solid #FFF;
 }
+
+.main-foot .triangle-foot {
+    width: 0;
+    height: 0;
+    border-left-style: solid;
+    border-left-color: transparent;
+    border-right-style: solid;
+    border-right-color: transparent;
+    border-top: 50px inset #fff;
+    top: 0px !important;
+    position: absolute;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    transform: rotate(360deg);
+    border-style: solid dotted none;
+}
+.main-foot .triangle-foot {
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-style: solid dotted none;
+    border-top: 1px solid transparent;
+    height: 0;
+    position: absolute;
+    top: -1px;
+    transform: rotate(360deg);
+    width: 0;
+    z-index: 999;
+}
+
 .ico-space {
     display: inline;
     margin: 0 0 0 10px;
