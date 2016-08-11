@@ -14,6 +14,8 @@
         <script src="../../js/vendor/modernizr-2.8.3.min.js"></script>
         <script src="../../js/bootstrap.js"></script>
         <script src="../../js/main.js"></script>
+        <!-- jQuery easing plugin -->
+        <script src="http://thecodeplayer.com/uploads/js/jquery.easing.min.js" type="text/javascript"></script>
         
     </head>
     <body>
@@ -87,62 +89,231 @@
             </div>
           </div>
         </div> -->
-        <div class="stepwizard">
-        <div class="stepwizard-row">
-        <div class="stepwizard-step">
-            <button type="button" class="btn btn-primary btn-circle">1</button>
-        </div>
-        <div class="stepwizard-step">
-            <button type="button" class="btn btn-default btn-circle" disabled="disabled">2</button>
-        </div>
-        <div class="stepwizard-step">
-            <button type="button" class="btn btn-default btn-circle" disabled="disabled">3</button>
-        </div>
-        <div class="stepwizard-step">
-            <button type="button" class="btn btn-default btn-circle" disabled="disabled">4</button>
-        </div>
-        <div class="stepwizard-step">
-            <button type="button" class="btn btn-default btn-circle" disabled="disabled">5</button>
-        </div> 
-    </div>
-</div>
       </div>    
     </header>
-
-
         
-		  <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-  					<h4 class="fw-semibold">INGRESA LOS DATOS PARA COMENZAR EL PROCESO DE PORTABILIDAD</h4>
-  					<div class="form-group">
-  					  <label class="select ">
-  						<select>
-  						  <option disabled="disabled" selected="selected">Compañia actual</option>
-  						  <option>Option 1</option>
-  						  <option>Option 2</option>
-  						  <option>Option 3</option>
-  						</select>
-  					  </label>
-  					</div>
-					<div class="form-group">
-					   <input type="text" class="form-control" id="inputEmail3" placeholder="Número de celular">
-					</div>
-					<div class="form-group">
-					   <input type="text" class="form-control" id="inputEmail3" placeholder="IMEI">
-					   <p class="help-block fs-small skew">Para obtener el IMEI marca *#06# desde tu celular.</p>
-					</div>
-					
-					<div class="form-group">
-					   <input type="text" class="form-control" id="inputEmail3" placeholder="Numero de serie">
-					   <p class="help-block fs-small skew">Revisa en la sección ajustes o configuración el número de serie de tu celular.</p>
-					</div>
+<div class="container">
 
-					<div class="row ta-center">
-                 		<button type="button" class="btn btn-primary" onclick="window.location.href='paso2.html'">Continuar</button>
-                    </div>					
+  <form id="msform">
+    <!-- progressbar -->
+      <ul id="progressbar">
+      <li class="active">Solicitud</li>
+      <li class="active">Datos personales</li>
+      <li>Código CAP</li>
+    </ul>
+    <!-- fieldsets -->
+    <fieldset style="opacity: 0; transform: scale(0.8); display: none;">
+      <h2 class="fs-title">Solicitud de portabilidad <span class="wom-detalle-pasos">Paso 1 de 3</span></h2>
+    
+          
+    <div class="wom-div-alto-select">
+        <label>Compañia de Origen</label>
+        <select name="wom-cmb_compania" id="wom-id_compania" class="wom-select">
+          <option value="">Seleccione</option>
+          
+            <option value="${cia.codigo}">${cia.nombre}</option>
+          
+        </select>
+      </div>
+      <div class="wom-div-alto">
+        <label for="wom-id_numero">Número Teléfono a portar</label>
+          <input type="text" name="wom-in_numero" id="wom-id_numero" maxlength="9" size="15" onblur="saludar();">
+      </div>
+      <div class="wom-div-alto">
+        <div class="input-tooltip">
+                <label>IMEI<img src="img/ico-tooltip.png" alt="Tooltip" class="ico-tooltip"></label>
+                <input type="text" name="wom-id_imei" id="wom-in_imei" maxlength="15" size="15">
               </div>
-            </div>			
-        </div>
+              
+      </div>
+      <div class="wom-div-alto">
+        <label>Número Serie Chip WOM<img src="img/ico-tooltip.png" alt="Tooltip" class="ico-tooltip"></label>
+          <input type="text" name="wom-in_serie" id="wom-id_serie" maxlength="20" size="15">
+      </div>
+
+      
+         <input type="button" name="next" class="next action-button wom-mrg-btn" value="Continuar">
+        
+         
+          
+    </fieldset>
+    <fieldset style="display: block; left: 0%; opacity: 1;">
+      <h2 class="fs-title">Ingresa tus datos <span class="wom-detalle-pasos">Paso 2 de 3</span></h2> 
+        
+          <div class="wom-div-alto">
+        <label>Nombre</label>
+        <input type="text" name="wom-in_nomSolicitante" id="wom-id_nomSolicitante" maxlength="30" size="15">
+      </div>
+          
+          
+          
+          <div class="wom-div-alto">
+        <label>Apellido</label>
+          <input type="text" name="wom-in_apellSolicitante" id="wom-id_apellSolicitante" maxlength="30" size="15">
+      </div>
+      <div class="wom-div-alto">
+        <label>RUT</label>
+          <input type="text" name="wom-in_rutSolicitante" id="wom-id_rutSolicitante" maxlength="9" size="15">
+      </div>
+      <div class="wom-div-alto">
+        <label>E-Mail</label>
+          <input type="text" name="wom-in_serie" id="wom-in_email" maxlength="30" size="15">
+      </div>
+          <div class="wom-paso2-separador">
+              <h2 class="fs-title">¿Dónde vives?</h2>
+              <div class="wom-div-alto">
+                  <label>Dirección</label>
+                  <input type="text" name="wom-in_direccion" id="wom-id_direccion" maxlength="30" size="15">
+              </div>
+              <div class="wom-div-alto">
+                  <label>Nóumero</label>
+                  <input type="text" name="wom-in_direccion" id="wom-id_direccion" maxlength="30" size="15">
+              </div>
+              <div class="wom-div-alto">
+                  <label>Departamento</label>
+                  <input type="text" name="wom-in_direccion" id="wom-id_direccion" maxlength="30" size="15">
+              </div>
+              
+              <div class="wom-div-alto">
+                  <label>Región</label>
+                  <input type="text" name="wom-cmb_region" id="wom-id_region" maxlength="30" size="15">
+              </div>
+              <div class="wom-div-alto">
+                  <label>Comuna</label>
+                  <input type="text" name="wom-cmb_comuna" id="wom-id_comuna" maxlength="9" size="15">
+              </div>
+              
+          </div>
+          
+          <div class="wom-paso2-separador">
+            <h2>Cédula de identidad <span class="wom-detalle-pasos">Paso 3 de 3</span></h2>
+              <div class="wom-div-alto">
+                  <label>Número de serie CI<img src="img/ico-tooltip.png" alt="Tooltip" class="ico-tooltip"></label>
+                  <input type="text" name="wom-in_serie_ci" id="wom-id_serie_ci" maxlength="30" size="15">
+              </div>
+              
+              <div class="wom-mensaje-imagen">
+                <p>A continuación necesitamos la imagen de tu cédula de identidad. ¿La tienes a mano?</p>
+              </div>
+              
+              <div class="wom-div-alto">
+             <label>Adjuntar cara frontal de tu CI</label>
+                  <input type="file" name="wom-in_imagen_frontal" id="wom-id_imagen_frontal">
+              </div>
+              <div class="wom-div-alto">
+                  <label>Adjuntar cara posterior de tu CI</label>
+                  <input type="file" name="wom-in_imagen_trasera" id="wom-id_imagen_trasera">
+              </div>
+           </div>
+
+              <input type="button" name="previous" class="previous action-button" value="Paso anterior">
+              <input type="button" name="next" class="next action-button wom-mrg-btn" value="Continuar">
+                  
+    </fieldset>
+    <fieldset>
+      <h2 class="fs-title">Código CAP</h2><label></label>
+           <div class="wom-solicitarcap">
+                <p>Felicidades ya puedes solicitar tu código CAP</p>
+              </div>
+      <div class="wom-codigo-cap">
+            <input type="button" class="action-button-enlace press-fx" name="wom-in_nomSolicitante" id="wom-id_btn_cap" value="Solicitar">
+          </div>
+          <div class="wom-mensaje-tle-cap">
+                <p>¿Qué es el número CAP?</p>
+           </div>
+            <div class="wom-mensaje-cap">
+                <p>Una vez solicitado, te harenos llegar dentro de los siguientes 10 minutos, un SMS con tu <span class="wom-span-cap">código cap, </span>con una vigencia de 24 horas para completar el proceso de portabilidad.</p>
+           </div>
+          
+      <div class="wom-botonera">
+              <input type="button" name="previous" class="previous action-button" value="Paso anterior">
+              <input type="submit" name="submit" class="submit action-button" value="Finalizar">
+              </div>
+    </fieldset>
+  </form>
+  
+</div>
+
+<script type="text/javascript">
+//jQuery time
+var current_fs, next_fs, previous_fs; //fieldsets
+var left, opacity, scale; //fieldset properties which we will animate
+var animating; //flag to prevent quick multi-click glitches
+
+$(".next").click(function(){
+  if(animating) return false;
+  animating = true;
+
+  current_fs = $(this).parent();
+  next_fs = $(this).parent().next();
+
+  //activate next step on progressbar using the index of next_fs
+  $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
+
+  //show the next fieldset
+  next_fs.show();
+  //hide the current fieldset with style
+  current_fs.animate({opacity: 0}, {
+    step: function(now, mx) {
+      //as the opacity of current_fs reduces to 0 - stored in "now"
+      //1. scale current_fs down to 80%
+      scale = 1 - (1 - now) * 0.2;
+      //2. bring next_fs from the right(50%)
+      left = (now * 50)+"%";
+      //3. increase opacity of next_fs to 1 as it moves in
+      opacity = 1 - now;
+      current_fs.css({'transform': 'scale('+scale+')'});
+      next_fs.css({'left': left, 'opacity': opacity});
+    },
+    duration: 800,
+    complete: function(){
+      current_fs.hide();
+      animating = false;
+    },
+    //this comes from the custom easing plugin
+    easing: 'easeInOutBack'
+  });
+});
+
+$(".previous").click(function(){
+  if(animating) return false;
+  animating = true;
+
+  current_fs = $(this).parent();
+  previous_fs = $(this).parent().prev();
+
+  //de-activate current step on progressbar
+  $("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
+
+  //show the previous fieldset
+  previous_fs.show();
+  //hide the current fieldset with style
+  current_fs.animate({opacity: 0}, {
+    step: function(now, mx) {
+      //as the opacity of current_fs reduces to 0 - stored in "now"
+      //1. scale previous_fs from 80% to 100%
+      scale = 0.8 + (1 - now) * 0.2;
+      //2. take current_fs to the right(50%) - from 0%
+      left = ((1-now) * 50)+"%";
+      //3. increase opacity of previous_fs to 1 as it moves in
+      opacity = 1 - now;
+      current_fs.css({'left': left});
+      previous_fs.css({'transform': 'scale('+scale+')', 'opacity': opacity});
+    },
+    duration: 800,
+    complete: function(){
+      current_fs.hide();
+      animating = false;
+    },
+    //this comes from the custom easing plugin
+    easing: 'easeInOutBack'
+  });
+});
+
+$(".submit").click(function(){
+  return false;
+})
+
+</script>
     </body>
 </html>
