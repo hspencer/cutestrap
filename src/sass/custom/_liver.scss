@@ -253,8 +253,11 @@ ul {
   padding-bottom: 5px;
 }
 
+/* helpers */
 .nomargin {margin: 0;}
 .nopadding {padding: 0;}
+.margintop {margin: 15px 0 0 0;}
+.marginbottom {margin: 0 0 15px 0;}
 
 /* estilos extras de pago facil */
 
@@ -271,17 +274,41 @@ ul {
 }
 
 // gradiente para sacar de sketch
-.bajada-morada {
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#86029e+48,86029e+48,1e5799+100,4e0165+100 */
+
+.bajada-morada,
+.modulo-morado {
   background: #86029e; /* Old browsers */
   background: -moz-linear-gradient(top,  #86029e 48%, #86029e 48%, #4e0165 100%, #4e0165 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(top,  #86029e 48%,#86029e 48%,#4e0165 100%,#4e0165 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom,  #86029e 48%,#86029e 48%,#4e0165 100%,#4e0165 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#86029e', endColorstr='#4e0165',GradientType=0 ); /* IE6-9 */
+}
+
+.bajada-morada {
   width: 120%;
   margin-top: -40px;
   margin-left: -10%;
   padding: 40px 10% 0px;
+}
+
+.modulo-morado {
+    color: white;
+    padding: 0 15px 30px;
+}
+.modulo-morado .svg-blanco {
+  background: rgba(255,255,255,.1);
+  padding: 5px;
+}
+.modulo-morado h4,
+.modulo-morado h6 {
+    color: white;
+}
+.modulo-morado h6 {
+    margin: 0;
+    padding: 0;
+}
+.modulo-morado .item {
+    margin-bottom: 30px;
 }
 
 
@@ -326,23 +353,6 @@ ul {
 
 .instrucciones-portabilidad {
   margin-top: -50px;
-}
-
-.modulo-morado {
-    color: white;
-    background: rebeccapurple;
-    padding: 0 15px 30px;
-}
-.modulo-morado h4,
-.modulo-morado h6 {
-    color: white;
-}
-.modulo-morado h6 {
-    margin: 0 0 15px;
-    padding: 0;
-}
-.modulo-morado .item {
-    margin-bottom: 60px;
 }
 .mensajes-sesion {
     text-align: center;
