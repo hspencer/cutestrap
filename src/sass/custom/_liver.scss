@@ -217,6 +217,12 @@ ul {
 .nopadding {padding: 0;}
 .margintop {margin: 15px 0 0 0;}
 .marginbottom {margin: 0 0 15px 0;}
+.numerical {
+  font-family: "Cera";
+  -moz-font-feature-settings: "lnum";
+  -webkit-font-feature-settings: "lnum";
+  font-feature-settings: "lnum";
+}
 
 /* estilos extras de pago facil */
 
@@ -471,10 +477,14 @@ ul {
 /* para el flujo de portabilidad */
 
 #stepper_portabilidad {
+  font-family: 'Cera';
   margin: 0;
   padding: 0 0 30px 0;
   list-style-type: none;
   text-align: center;
+  -moz-font-feature-settings: "lnum";
+  -webkit-font-feature-settings: "lnum";
+  font-feature-settings: "lnum";
 }
 
 #stepper_portabilidad:after {
@@ -617,13 +627,20 @@ ul {
 }
 .portabilidad-pills .nav-pills > li > a {
   border-radius: 0;
-  font-size: 11px;
+  font-size: 14px;
   line-height: 100%;
+  text-align: center;
 }
 .portabilidad-pills .tab-content.well {
   border-radius: 0;
   padding: 20px;
 }
+
+.portabilidad-pills .tab-pane input.form-control {
+  background-color: transparent;
+  color: white;
+}
+
 .portabilidad-pills .tab-content.well .btn {
   margin-top: 15px;
 }
