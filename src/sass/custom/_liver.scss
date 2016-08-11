@@ -239,17 +239,17 @@ ul {
 
 /** helper classes*/
 .morado-plain {
-  color: #602F84;
+  color: $quaternary;
 }
 
 .morado-grande {
-  color: #602F84;
+  color: $quaternary;
   font-size: 2.5rem;
 }
 
 .morado-grande-subrayado {
   font-size: 2.2rem;
-  border-bottom: 2px solid #602F84;
+  border-bottom: 2px solid $quaternary;
   padding-bottom: 5px;
 }
 
@@ -338,6 +338,18 @@ ul {
 .modulo-portabilidad {
   background-image: url("../../wom-base/img/portabilidad/FONDO1.png");
 }
+.modulo-portatebien {
+  background-image: url("../../wom-base/img/portabilidad/fondo-portatebien.png");
+  background-repeat: no-repeat;
+  min-height: 360px;
+}
+.modulo-portatebien .btn-group {
+  margin-top: 145px;
+}
+.modulo-portatebien .btn-portate {
+
+  background-color: transparent;
+}
 .modulo-pagofacil {
   background-image: url("../../wom-base/img/portabilidad/FONDO1.png");
 }
@@ -351,9 +363,7 @@ ul {
   margin-bottom: 20px;
 }
 
-.instrucciones-portabilidad {
-  margin-top: -50px;
-}
+
 .mensajes-sesion {
     text-align: center;
     margin: 0 auto;
@@ -388,8 +398,16 @@ ul {
   font-size: 1.8rem;
   color: #636363;
 }
+.instrucciones-portabilidad h4{
+  color: $quaternary;
+  font-size: 2rem;
+}
+.instrucciones-portabilidad h5{
+  font-size: 2rem;
+}
 
 .solicita-portabilidad h4 {
-  color: #602F84;
-  margin-bottom: -10px;
+  color: $quaternary;
+  font-size: 2.2rem;
+  margin-bottom: -15px;
 }
