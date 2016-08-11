@@ -1,0 +1,43 @@
+/* inicio del navbar centrado */
+
+.navbar-main {
+    position: relative;
+    z-index: 99;
+}
+
+.navbar-brand-centered {
+    position: absolute;
+    left: 50%;
+    display: block;
+    width: 160px;
+    text-align: center;
+    background-color: transparent;
+}
+.navbar>.container .navbar-brand-centered, 
+.navbar>.container-fluid .navbar-brand-centered {
+    margin-left: -50px;
+}
+
+
+.navbar-toggle {
+    z-index:1;
+}
+
+.navbar-main {
+    background-color: transparent;
+    height: 80px;
+    margin-bottom: -80px;
+    border: none;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #FFF;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+    background-color: transparent;
+}
+.navbar-toggle {
+    border: 0;
+    margin-top: 30px;
+    border-color: white;
+}
