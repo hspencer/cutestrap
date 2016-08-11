@@ -9,7 +9,6 @@
 {
   background-color: #229955;
 }
-
 .bg-portabilidad{
     background-color: transparent;
     background-image: url('../img/portabilidad/FONDO1.png');
@@ -29,11 +28,11 @@
 }
 .bg-home{
     background-color: transparent;
-    background-image: url('../img/home/bghome.jpg');
+    background-image: url('../../wom-base/img/home/bghome.jpg');
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
-    min-height: 570px;
+    min-height: 530px;
     margin-bottom: 40px;
 }
 
