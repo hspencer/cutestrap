@@ -201,11 +201,6 @@ ul {
   color: $quaternary;
 }
 
-.morado-grande {
-  color: $quaternary;
-  font-size: 2.2rem;
-}
-
 .morado-grande-subrayado {
   font-size: 2.2rem;
   border-bottom: 2px solid $quaternary;
@@ -619,7 +614,7 @@ ul {
   border-bottom: 3px solid #EEE;
 }
 
-/* bootstrap pills overlay para portabilidad */
+/* bootstrap pills override para portabilidad */
 .portabilidad-pills {}
 .portabilidad-pills .nav-pills {margin: 0; padding: 0;}
 .portabilidad-pills .nav-pills > li {
