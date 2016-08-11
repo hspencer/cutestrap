@@ -1,5 +1,14 @@
+/* inicio del navbar centrado */
 
+.c1
+{
+  background-color: #336699;
+}
 
+.c2
+{
+  background-color: #229955;
+}
 .bg-portabilidad{
     background-color: transparent;
     background-image: url('../img/portabilidad/FONDO1.png');
@@ -36,6 +45,58 @@
     padding: 0 10px;
     line-height: 1.5rem;
 }
+.navbar-main {
+    position: relative;
+    z-index: 99;
+}
+
+.navbar-brand-centered {
+    position: absolute;
+    left: 50%;
+    display: block;
+    width: 160px;
+    text-align: center;
+    background-color: transparent;
+}
+.navbar>.container .navbar-brand-centered, 
+.navbar>.container-fluid .navbar-brand-centered {
+    margin-left: -50px;
+}
+
+
+.navbar-toggle {
+    z-index:1;
+}
+
+.navbar-main {
+    background-color: transparent;
+    height: 80px;
+    margin-bottom: -80px;
+    border: none;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #FFF;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+    background-color: transparent;
+}
+.navbar-toggle {
+    border: 0;
+    margin-top: 30px;
+    border-color: white;
+}
+.btn-success,.btn-lg{
+    margin:0 auto;
+    text-align: center;
+    margin-top: 1rem;
+    position: absolute;
+    bottom:20px;
+    left: 50%;
+    width: 40%;
+    margin-left: -20%;
+    font-size: 0.7em;
+}
 #block{
     font-size: 0.7em;
     display: block;
@@ -43,6 +104,15 @@
     height: auto;
     left: 50%;
     margin-left: -25%;
+}
+.btn strong{
+    color: #FFF;
+}
+
+.btn .fw-light{
+    color: #FFF;
+    padding: 0.1rem;
+    font-size: 11px;
 }
 
 .btn-purple{
@@ -61,7 +131,7 @@
     width: 100%;
     border-radius: 0;
 }
-.recom {
+.recom{
     padding: 6px 7px;
     font-size: 11px;
 }
