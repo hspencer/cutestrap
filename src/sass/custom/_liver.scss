@@ -564,3 +564,8 @@ ul {
   height: 16px;
   background-image: url(../../wom-base/img/icons/ico-warning.svg);
 }
+
+/* bootstrap core override para portabilidad form */
+.alert {
+  border-radius: 0;
+}
