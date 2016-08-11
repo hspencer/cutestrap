@@ -20,6 +20,27 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
+<!-- Modal -->
+
+<div class="modal" style="display: block;" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="overlay"></div>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Permisos</h4>
+      </div>
+      <div class="modal-body">
+        <p>Para ingresar la imagen, debemos acceder a tus fotos.</p>
+      </div>
+      <div class="modal-footer">
+        <a role="button" href="http://www.wom.cl/testLink" class="btn fw-normal grayed-out">Denegar</a>
+        <a role="button" href="http://www.wom.cl/testLink" class="btn fw-normal">Permitir</a>
+      </div>
+    </div>
+  </div>
+</div>
+
 <nav class="navbar navbar-default navbar-main" role="navigation">
         <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -90,9 +111,7 @@
           </ul>
         </div>
 
-        <div class="alert alert-info" role="alert">
-          This is a very <strong>important</strong> message that suddenly appears in front of you.
-        </div>
+
 
         <div class="container">
 
@@ -166,28 +185,28 @@
 					<h5 class="fw-small ta-center">A continuación, necesitamos la imagen de tu CI. ¿Lo tienes a mano?</h5>
 					
 					<div class="photoUpload row">
-            <div class="col-xs-10">
-              <input type="text" class="form-control" id="reversa" placeholder="Adjunta cara frontal de tu CI">
-            </div>
-            <div class="col-xs-2">
-              <img class="ico" src="../../img/icons/ico-camara.svg" alt="">
-            </div>
-          </div>
-          
-          <div class="photoUpload row">
-            <div class="col-xs-10">
-              <input type="text" class="form-control" id="reversa" placeholder="Adjunta cara reversa de tu CI">
-            </div>
-            <div class="col-xs-2">
-              <img class="ico" src="../../img/icons/ico-camara.svg" alt="">
-            </div>
-          </div>  				
+						<div class="col-xs-10">
+							<input type="text" class="form-control" id="reversa" placeholder="Adjunta cara frontal de tu CI">
+						</div>
+						<div class="col-xs-2">
+							<img class="ico" src="../../img/icons/ico-camara.svg" alt="">
+						</div>
+					</div>
+					
+					<div class="photoUpload row">
+						<div class="col-xs-10">
+							<input type="text" class="form-control" id="reversa" placeholder="Adjunta cara reversa de tu CI">
+						</div>
+						<div class="col-xs-2">
+							<img class="ico" src="../../img/icons/ico-camara.svg" alt="">
+						</div>
+					</div>					
 					
 					<div class="row ta-center">
-                 		<button type="button" class="btn btn-primary" onclick="window.location.href='paso3.html'">Continuar</button>
-                    </div>
+       		 <button type="button" class="btn btn-primary" onclick="window.location.href='paso3.html'">Continuar</button>
+          </div>
 					
-              </div>
+        </div>
 
 			  
             </div>			
