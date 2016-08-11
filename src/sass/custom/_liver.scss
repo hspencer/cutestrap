@@ -351,6 +351,32 @@ ul {
   margin-bottom: 20px;
 }
 
+.pago-facil-desglose,
+.pago-facil-selecciona {
+  margin-bottom: 30px;
+}
+
+.pago-facil-desglose p {
+  margin: 0;
+  padding: 0;
+}
+
+.pago-facil-selecciona strong,
+.pago-facil-paga strong {
+  display: block;
+  font-size: 3rem;
+}
+
+.pago-facil-paga small {
+  margin: 20px 0 10px;
+  display: block;
+  text-transform: uppercase;
+}
+
+.pago-facil-paga .btn-primary {
+  margin-top: 30px;
+}
+
 .instrucciones-portabilidad {
   margin-top: -50px;
 }
@@ -387,10 +413,6 @@ ul {
   padding-right: 1rem;
   font-size: 1.8rem;
   color: #636363;
-}
-
-.pagofacil-selecciona-info {
-  padding: 0 15px;
 }
 
 .solicita-portabilidad h4 {
