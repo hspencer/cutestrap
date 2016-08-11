@@ -534,8 +534,54 @@ ul {
   background: white;
 }
 
-/* forms de portabilidad */
+/* para forms de portabilidad */
 
+.modal .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  background-color: rgba(0,0,0,.66);
+  z-index: 100;
+}
+
+.modal .modal-dialog {
+  z-index: 1000;
+}
+
+.modal .modal-dialog .btn {
+  text-transform: uppercase;
+  color: $primary-light;
+}
+
+.modal .modal-dialog .btn.grayed-out {
+  color: #888;
+}
+
+.modal .modal-header,
+.modal .modal-footer {
+  border: none;
+}
+
+.modal .modal-dialog .modal-content {
+  border-radius: 0;
+}
+
+.modal .modal-dialog .modal-content .modal-title {
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.photoUpload {
+  margin-bottom: 30px;
+}
+.photoUpload img.ico {
+  position: relative;
+  top: 8px;
+  right: 15px;
+}
 .validInput,
 .invalidInput {
   position: relative;
