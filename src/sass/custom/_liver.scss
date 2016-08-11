@@ -601,3 +601,9 @@ ul {
 .alert {
   border-radius: 0;
 }
+
+/* bootstrap core override para lite selects */
+.select.select-lite select {
+  border: none;
+  border-bottom: 3px solid #EEE;
+}
