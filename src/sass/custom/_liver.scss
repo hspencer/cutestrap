@@ -363,8 +363,26 @@ ul {
   margin-bottom: 20px;
 }
 
+.paga-cuenta-copy,
+.paga-cuenta-copy h5,
+.paga-cuenta-copy p {
+  color: white;
+  margin: 0;
+  padding: 0;
+  line-height: 100%;
+}
 
-.pago-facil-desglose,
+.paga-cuenta-copy h5 {
+  margin-bottom: 5px;
+}
+.paga-cuenta-copy p {
+  margin-bottom: 15px;
+}
+
+.pago-facil-desglose {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
 .pago-facil-selecciona {
   margin-bottom: 30px;
 }
