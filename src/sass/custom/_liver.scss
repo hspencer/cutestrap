@@ -533,3 +533,19 @@ ul {
 #stepper_portabilidad li.active span {
   background: white;
 }
+
+/* forms de portabilidad */
+
+.validInput {
+  position: relative;
+}
+.validInput:after {
+  position: absolute;
+  right: 0;
+  top: 15px;
+  content: '';
+  background-image: url(../../wom-base/img/icons/ico-ticket.svg);
+  width: 14px;
+  height: 10px;
+  display: block;
+}
