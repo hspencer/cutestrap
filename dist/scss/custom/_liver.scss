@@ -298,6 +298,7 @@ ul {
   background-image: url("../../wom-base/img/portabilidad/fondo-portatebien.png");
   background-repeat: no-repeat;
   min-height: 360px;
+  position: relative;
 }
 .modulo-portatebien .btn-group {
   margin-top: 145px;
@@ -437,24 +438,45 @@ ul {
 /* despliegue botón btn-portate*/ 
 
 .modulo-portatebien .dropdown-menu {
-    /* position: absolute; */
-    width: 120%;
-    padding: 5px 0;
+    transition: all .3s ease-out;
+    width: 119%;
+    padding: 50px 0 0 0;
     margin-left: -10%;
     margin-right: -10%;
+    margin-top: -15px;
     list-style: none;
     font-size: 1.35rem;
     text-align: left;
     background-color: $primary-transparent;
     border: 0;
     border-radius: 0;
+    position: absolute;
+    z-index : 90;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    max-height: 0;
+    display: block;
+    overflow: hidden;
+    opacity: 0;
+}
+.modulo-portatebien .btn-group button.tilt.btn-portate {
+  position: relative;
+  z-index: 180;
+}
+.modulo-portatebien .open > .dropdown-menu {
+    max-height: 300px;
+    opacity: 1;
 }
 
 .modulo-portatebien .dropdown-menu a{
   color: white;
 }
 
-.modulo-portatebien .dropdown-menu li{
+.modulo-portatebien .dropdown-menu li {
+  overflow: hidden;
   padding: 10px;
   clear: both;
   border-bottom: 1px solid white;
