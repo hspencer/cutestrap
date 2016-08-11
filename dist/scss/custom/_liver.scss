@@ -1,14 +1,4 @@
 /* inicio del navbar centrado */
-
-.c1
-{
-  background-color: #336699;
-}
-
-.c2
-{
-  background-color: #229955;
-}
 .bg-portabilidad{
     background-color: transparent;
     background-image: url('../img/portabilidad/FONDO1.png');
@@ -86,17 +76,6 @@
     margin-top: 30px;
     border-color: white;
 }
-.btn-success,.btn-lg{
-    margin:0 auto;
-    text-align: center;
-    margin-top: 1rem;
-    position: absolute;
-    bottom:20px;
-    left: 50%;
-    width: 40%;
-    margin-left: -20%;
-    font-size: 0.7em;
-}
 #block{
     font-size: 0.7em;
     display: block;
@@ -105,40 +84,7 @@
     left: 50%;
     margin-left: -25%;
 }
-.btn strong{
-    color: #FFF;
-}
 
-.btn .fw-light{
-    color: #FFF;
-    padding: 0.1rem;
-    font-size: 11px;
-}
-
-.btn-purple{
-    text-align: center;
-    color: #FFF;
-    padding: 10px 15px;
-    width: 100%;
-    border-radius: 0;
-    background-color: #460151;
-}
-.btn-blue{
-    text-align: center;
-    background-color: #553FA0;
-    color: #FFF;
-    padding: 10px 15px;
-    width: 100%;
-    border-radius: 0;
-}
-.recom{
-    padding: 6px 7px;
-    font-size: 11px;
-}
-
-.btns .col-xs-6{
-    padding:0;
-}
 .photo img{
     position: relative;
 }
@@ -240,15 +186,7 @@ ul {
     color: #fff;
     background-color: #96309F;
     max-height: 70px;
-}
-.centro .fs-small{
-    font-size: 10px;
-}
-.centro .col-xs-8{
-    line-height: 1;
-    padding: 0 5px;
-}
-.noticias img{
+}.noticias img{
     margin:0 auto;
 }
 .main-foot .ta-center img{
