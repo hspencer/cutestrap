@@ -293,7 +293,7 @@ ul {
 
 .modulo-morado {
     color: white;
-    padding: 0 15px 30px;
+    padding: 0 0 30px;
 }
 .modulo-morado .svg-blanco {
   background: rgba(255,255,255,.1);
@@ -363,6 +363,57 @@ ul {
   margin-bottom: 20px;
 }
 
+
+.pago-facil-desglose,
+.pago-facil-selecciona {
+  margin-bottom: 30px;
+}
+
+.pago-facil-desglose p {
+  margin: 0;
+  padding: 0;
+}
+
+.pago-facil-selecciona strong,
+.pago-facil-paga strong {
+  display: block;
+  font-size: 3rem;
+  line-height: 100%;
+}
+
+.pago-facil-selecciona .item {
+  overflow: hidden;
+  padding: 15px 0;
+}
+
+.pago-facil-selecciona .item.dark {
+  border-top: 1px solid #ECECEC;
+  background: -moz-linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(236,236,236,1) 100%); /* ff3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(236,236,236,1))); /* safari4+,chrome */
+  background: -webkit-linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(236,236,236,1) 100%); /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(236,236,236,1) 100%); /* opera 11.10+ */
+  background: -ms-linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(236,236,236,1) 100%); /* ie10+ */
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(236,236,236,1) 100%); /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#ECECEC',GradientType=0 ); /* ie6-9 */
+}
+
+.pago-facil-selecciona .checkbox {
+  margin: 10px 0 0;
+}
+
+.pago-facil-paga small {
+  margin: 20px 0 10px;
+  display: block;
+  text-transform: uppercase;
+}
+
+.pago-facil-paga .btn-primary {
+  margin-top: 30px;
+}
+
+.instrucciones-portabilidad {
+  margin-top: -50px;
+}
 
 .mensajes-sesion {
     text-align: center;
