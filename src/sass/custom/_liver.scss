@@ -625,11 +625,12 @@ ul {
     font-size: 1em;
     margin: 0px auto;
     text-align: center;
-
+}
 .invalidInput input,
 .invalidInput .help-block {
   color: #D0021B; 
   border-color: #D0021B;
+}
 .invalidInput:after {
   top: 10px;
   width: 16px;
