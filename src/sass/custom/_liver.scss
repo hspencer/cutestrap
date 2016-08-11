@@ -536,16 +536,31 @@ ul {
 
 /* forms de portabilidad */
 
-.validInput {
+.validInput,
+.invalidInput {
   position: relative;
 }
-.validInput:after {
+.validInput:after,
+.invalidInput:after {
   position: absolute;
   right: 0;
-  top: 15px;
   content: '';
-  background-image: url(../../wom-base/img/icons/ico-ticket.svg);
+  display: block;
+}
+.validInput:after {
+  top: 15px;
   width: 14px;
   height: 10px;
-  display: block;
+  background-image: url(../../wom-base/img/icons/ico-ticket.svg);
+}
+.invalidInput input,
+.invalidInput .help-block {
+  color: #D0021B; 
+  border-color: #D0021B;
+}
+.invalidInput:after {
+  top: 10px;
+  width: 16px;
+  height: 16px;
+  background-image: url(../../wom-base/img/icons/ico-warning.svg);
 }
