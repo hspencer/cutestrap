@@ -4,9 +4,10 @@
 
 // Brand colors
 
-$primary:			rgb(66, 20, 65) !default; // according to brand manual
-$primary-dark:		darken($primary, 5%);
-$primary-light:		desaturate(lighten($primary, 10%), 10%);
+$primary:				rgb(66, 20, 65) !default; // according to brand manual
+$primary-dark:			darken($primary, 5%);
+$primary-light:			desaturate(lighten($primary, 10%), 10%);
+$primary-transparent:	rgba(66, 20, 65, 0.7); 
 
 $secondary:			#602F84; // #AEA091 #711082 !default; 
 $secondary-dark:	darken($secondary, 12%);
