@@ -7,9 +7,8 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="https://rawgit.com/tinet-ux/womstrap/gh-pages/dist/css/womstrap.min.css">
+        <link rel="stylesheet" href="../../../dist/css/womstrap.css">
         <link rel="stylesheet" href="../../css/normalize.min.css">
-        <link rel="stylesheet" href="../../css/main.css">
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="../../js/vendor/modernizr-2.8.3.min.js"></script>
@@ -21,43 +20,78 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <nav class="navbar navbar-default">
-          <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>			  
-		  </div>
+<nav class="navbar navbar-default navbar-main" role="navigation">
+        <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-brand-centered">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="navbar-brand navbar-brand-centered"><a href="#" title=""><img src="../../img/logo-wom.svg" width="80" height="80" ></div>
+        </div>
 
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="/img/portabilidad/paso2.png" target="_blank">Ver Imagen Prototipo</a></li>
-              <ul>
-            </div>
-          </div>
-        </nav>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-brand-centered">
+          <ul class="nav navbar-nav">
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>
+                </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>
+                </li>           
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
 
         <header>
-          <div class="container">
-            <div class="row">
-              <h3 class="ta-center">MEJORA TU PREPAGO</h3>
-              <p class="ta-center">Es momento de abandonar el Darkside. ¡Comenzaremos la portabilidad para únirte al lado de la conveniencia!</p>
-            </div>		
-			<div class="row">
-              <div class="col-sm-12">				
-				<div class="progress progress-striped">
-				  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
-					<span class="sr-only">60% Complete</span>
-				  </div>
-				</div>
-			  </div>
-			</div>
-			
+          <div class="bg-modulo modulo-portabilidad">
+            <div class="container">
+              <h3 class="ta-center white">MEJORA TU PREPAGO</h3>
+              <h4 class="ta-center fw-normal white fs-base">Es momento de abandonar el Darkside. ¡Comenzemos la portabilidad para únirte al lado de la conveniencia!</h4>
+            </div>
+          </div>
         </header>
+
+        <div class="bajada-morada">
+          <ul id="stepper_portabilidad">
+            <li class="active"><span>1</span></li>
+            <li class="active"><span>2</span></li>
+            <li><span>3</span></li>
+            <li><span>4</span></li>
+            <li><span>5</span></li>
+          </ul>
+        </div>
+
+
+
         <div class="container">
 
             <div class="row">

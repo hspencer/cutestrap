@@ -285,10 +285,8 @@ ul {
 }
 
 .bajada-morada {
-  width: 120%;
   margin-top: -40px;
-  margin-left: -10%;
-  padding: 40px 10% 0px;
+  padding: 40px 0 0px;
 }
 
 .modulo-morado {
@@ -479,9 +477,6 @@ ul {
   margin-bottom: -15px;
 }
 
-
-// despliegue botón btn-portate
-
 .modulo-portatebien .dropdown-menu {
     /* position: absolute; */
     width: 100%;
@@ -501,3 +496,40 @@ ul {
 
 /* para el flujo de portabilidad */
 
+#stepper_portabilidad {
+  margin: 0;
+  padding: 0 0 30px 0;
+  list-style-type: none;
+  text-align: center;
+}
+
+#stepper_portabilidad:after {
+  content: '';
+  background: #9157A4;
+  width: 75%;
+  height: 3px;
+  margin-top: -13px;
+  margin-left: 15%;
+  display: block;
+}
+
+#stepper_portabilidad li {
+  display: inline-block;
+  margin: 0 5%;
+}
+
+#stepper_portabilidad li span {
+  display: block;
+  background: #9157A4;
+  color: white;
+  text-align: center;
+  border-radius: 100%;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  color: $primary-light;
+}
+
+#stepper_portabilidad li.active span {
+  background: white;
+}
