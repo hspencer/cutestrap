@@ -607,3 +607,19 @@ ul {
   border: none;
   border-bottom: 3px solid #EEE;
 }
+
+/* bootstrap pills overlay para portabilidad */
+.portabilidad-pills {}
+.portabilidad-pills .nav-pills {margin: 0; padding: 0;}
+.portabilidad-pills .nav-pills > li {
+  width: 49%;
+}
+.portabilidad-pills .nav-pills > li > a {
+  border-radius: 0;
+  font-size: 11px;
+  line-height: 100%;
+}
+.portabilidad-pills .tab-content.well {
+  border-radius: 0;
+  padding: 20px;
+}
