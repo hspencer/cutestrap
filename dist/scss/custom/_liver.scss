@@ -662,6 +662,7 @@ ul {
 .portabilidad-pills .nav-pills {margin: 0; padding: 0;}
 .portabilidad-pills .nav-pills > li {
   width: 49%;
+  margin-bottom: -1px;
 }
 .portabilidad-pills .nav-pills > li > a {
   border-radius: 0;
@@ -669,9 +670,13 @@ ul {
   line-height: 100%;
   text-align: center;
 }
+.portabilidad-pills .nav-pills .active a,
+.portabilidad-pills .nav-pills .active a:focus {
+  background-color: #790597;
+}
 .portabilidad-pills .tab-content.well {
   border-radius: 0;
-  padding: 20px;
+  padding: 30px 20px;
   border: none;
 }
 
