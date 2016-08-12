@@ -114,7 +114,7 @@
 
              <div class="form-group">
              <span class="miniLabel">IMEI</span>
-               <input type="text" class="form-control" id="inputEmail3" placeholder="IMEI" onfocus="$(this).attr(placeholder).val(' ');">
+               <input type="text" class="form-control" id="inputEmail3" placeholder="IMEI">
                <p class="help-block fs-small skew">Para obtener el IMEI marca *#06# desde tu celular.</p>
              </div>
 
@@ -133,9 +133,7 @@
         <script>
           $(".form-group input").focus(function () {
             $(this).siblings('.miniLabel').show();
-          });
-          $(".form-group input").blur(function () {
-            $(this).siblings('.miniLabel').hide();
+            $(this).removeAttr('placeholder');
           });
         </script>
     </body>
