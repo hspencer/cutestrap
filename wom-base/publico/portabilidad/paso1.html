@@ -109,7 +109,7 @@
 
               <div class="form-group">
                 <span class="miniLabel">Número de celular</span>
-               <input type="text" class="form-control" id="inputEmail3" placeholder="Número de celular" onfocus="$(this).val('+56 9');" onblur="$(this).val('');">
+               <input type="textnumber" class="form-control" id="inputEmail3" placeholder="Número de celular" onfocus="$(this).val('569');" onblur="$(this).val('');">
              </div>
 
              <div class="form-group">
@@ -132,7 +132,7 @@
         </div>
         <script>
           $(".form-group input").focus(function () {
-            $(this).siblings('.miniLabel').show();
+            $(this).siblings('.miniLabel').fadeIn();
             $(this).removeAttr('placeholder');
           });
         </script>
