@@ -109,31 +109,48 @@
 
               <div class="form-group">
                 <span class="miniLabel">Número de celular</span>
-               <input type="textnumber" class="form-control" id="inputEmail3" placeholder="Número de celular" onfocus="$(this).val('569');" onblur="$(this).val('');">
+               <input type="textnumber" class="form-control" id="numerocelular" placeholder="Número de celular" onfocus="$(this).val('569');">
              </div>
 
              <div class="form-group">
              <span class="miniLabel">IMEI</span>
-               <input type="text" class="form-control" id="inputEmail3" placeholder="IMEI">
+               <input type="text" class="form-control" id="imeicelular" placeholder="IMEI">
                <p class="help-block fs-small skew">Para obtener el IMEI marca *#06# desde tu celular.</p>
              </div>
 
              <div class="form-group">
               <span class="miniLabel">Número de serie</span>
-               <input type="text" class="form-control" id="inputEmail3" placeholder="Numero de serie">
+               <input type="text" class="form-control" id="seriecelular" placeholder="Numero de serie">
                <p class="help-block fs-small skew">Revisa en la sección ajustes o configuración el número de serie de tu celular.</p>
              </div>
 
               <div class="row ta-center">
-                    <p><button type="button" class="btn btn-primary" onclick="window.location.href='paso2.html'">Continuar</button></p>
+                    <p><button id="nextStep" type="button" class="btn btn-lg btn-primary" onclick="validateForm();">Continuar</button></p>
               </div>          
               </div>
             </div>      
         </div>
         <script>
+          
+          // super-mega-simple client-side form validator
+          function validateForm() {
+            var isValid = true;
+            $('.form-control').each(function() {
+              if ( $(this).val() === '' )
+                  isValid = false;
+            });
+            return isValid;
+          }
+
           $(".form-group input").focus(function () {
             $(this).siblings('.miniLabel').fadeIn();
             $(this).removeAttr('placeholder');
+          });
+
+          $("#nextStep").click(function () {
+            isValid = false;
+            validateForm();
+            console.log(isValid);
           });
         </script>
     </body>
