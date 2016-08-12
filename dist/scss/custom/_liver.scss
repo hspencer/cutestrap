@@ -630,10 +630,12 @@ ul {
   border-radius: 0;
 }
 
-/* bootstrap core override para lite selects */
-.select.select-lite select {
+/* bootstrap core override para lite form components */
+.select.select-lite select,
+.form-group.select-lite input {
   border: none;
   border-bottom: 3px solid #EEE;
+  background-color: transparent;
 }
 
 /* bootstrap pills override para portabilidad */
