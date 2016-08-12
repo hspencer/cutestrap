@@ -92,6 +92,10 @@
           </ul>
         </div>
 
+        <div id="camposvacios" class="alert alert-danger" role="alert" style="display: none;">
+          <strong>Uno o más campos están vacíos</strong>. Recuerda que toda la información es necesaria.
+        </div>
+
         <div class="container">
           <div class="row">
             <div class="col-sm-12">
@@ -125,7 +129,7 @@
              </div>
 
               <div class="row ta-center">
-                    <p><button id="nextStep" type="button" class="btn btn-lg btn-primary" onclick="validateForm();">Continuar</button></p>
+                    <p><button id="nextStep" type="button" class="btn btn-lg btn-primary">Continuar</button></p>
               </div>          
               </div>
             </div>      
@@ -134,23 +138,29 @@
           
           // super-mega-simple client-side form validator
           function validateForm() {
-            var isValid = true;
-            $('.form-control').each(function() {
-              if ( $(this).val() === '' )
-                  isValid = false;
+            var $fields = $(".form-control");
+            var $emptyFields = $fields.filter(function() {
+                // remove the $.trim if whitespace is counted as filled
+                return $.trim(this.value) === "";
             });
-            return isValid;
+            if (!$emptyFields.length) {
+                window.location.href='paso2.html'
+                console.log('lleno');
+            } else {
+                console.log('vacio');
+                console.log($emptyFields);
+                $emptyFields.parents('.form-group').addClass('invalidInput');
+                $('#camposvacios').slideToggle();
+            }
           }
+            
+            $("#nextStep").click(function () {
+              validateForm();
+            });
 
           $(".form-group input").focus(function () {
             $(this).siblings('.miniLabel').fadeIn();
             $(this).removeAttr('placeholder');
-          });
-
-          $("#nextStep").click(function () {
-            isValid = false;
-            validateForm();
-            console.log(isValid);
           });
         </script>
     </body>
