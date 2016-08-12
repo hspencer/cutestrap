@@ -60,8 +60,12 @@ header a{
   display: inline-block;
 
   a{
+    color: #720184;
     text-decoration: none;
     font-weight: 900;
+    &:hover{
+      color: darken(#720184, 20%)
+    }
   }
 }
 

@@ -84,6 +84,25 @@ textarea {
     padding: 0 10px;
     line-height: 1.5rem;
 }
+.bg-home{
+    background-color: transparent;
+    background-image: url('../img/home/bghome.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    min-height: 570px;
+    margin-bottom: 40px;
+}
+
+.bg-home h3 {
+    margin-top: 260px;
+    padding: 0;
+    line-height: 1.5rem;
+}
+.bg-home h4 {
+    padding: 0 10px;
+    line-height: 1.5rem;
+}
 
 
 .navbar-brand-centered {
@@ -122,9 +141,153 @@ textarea {
     margin-top: 30px;
     border-color: white;
 }
+a:link{
+    color:#FFF;
+}
+.btn-success,.btn-lg{
+    margin:0 auto;
+    text-align: center;
+    margin-top: 1rem;
+    position: absolute;
+    bottom:20px;
+    left: 50%;
+    width: 40%;
+    margin-left: -20%;
+    font-size: 0.7em;
+}
+#block{
+    font-size: 0.7em;
+    display: block;
+    width: 50%;
+    height: auto;
+    left: 50%;
+    margin-left: -25%;
+}
+.btn strong{
+    color: #FFF;
+}
 
+.btn .fw-light{
+    color: #FFF;
+    padding: 0.1rem;
+    font-size: 11px;
+}
+.btn a, a:visited {
+    color: #FFF;
+}
 
+.btn-purple{
+    text-align: center;
+    color: #FFF;
+    padding: 10px 15px;
+    width: 100%;
+    border-radius: 0;
+    background-color: #460151;
+}
+.btn-blue{
+    text-align: center;
+    background-color: #553FA0;
+    color: #FFF;
+    padding: 10px 15px;
+    width: 100%;
+    border-radius: 0;
+}
+.recom{
+    padding: 6px 7px;
+    font-size: 11px;
+}
 
+.btns .col-xs-6{
+    padding:0;
+}
+.photo img{
+    position: relative;
+}
+footer .row{
+    padding: 30px
+}
+.main-foot{
+    background-color: transparent;
+    background: url(../img/footer.jpg) no-repeat center bottom;
+    background-size: 100%;
+    color: #fff;
+    padding-top: 50px;
+    position: relative;
+    z-index: 999;
+    display: block;
+    height: auto;
+    padding-top: 50px;
+    background-size: cover;
+    /* background: center bottom; */
+    clear: both;
+    min-height: 264px;
+}
+.main-foot ul{
+    list-style: none;
+    display: inline-block;
+}
+.accesos-foot{
+    list-style-position: inside;
+    float: left;
+    margin: 20px 30px;
+    width: 100%;
+    display: inline-block;
+    padding: 0;
+}
+.lista-foot a{
+    font-size: 16px;
+    font-family: Cera,sans-serif;
+    font-weight: normal;
+    color: #fff;
+}
+.lista-foot ul{
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+    border-top: 1px solid #333;
+    color: #fff;
+    width: 70%;
+}
+.lista-foot ul li{
+    border-bottom:1px solid #FFF;
+}
+.ico-space {
+    display: inline;
+    margin: 0 0 0 10px;
+}
+.accesos-foot a {
+    color: #b171c3;
+    font-size: 12px;
+}
+.non-point {
+    list-style: outside none none;
+}
+ul {
+    list-style-position: inside;
+}
+.centro{
+    position: absolute;
+    top:5rem;
+    right:0;
+    font-size:14px;
+    padding: 5px;
+    color: #fff;
+    background-color: #96309F;
+    max-height: 70px;
+}
+.centro .fs-small{
+    font-size: 10px;
+}
+.centro .col-xs-8{
+    line-height: 1;
+    padding: 0 5px;
+}
+.noticias img{
+    margin:0 auto;
+}
+.main-foot .ta-center img{
+    margin:0 auto;
+}
 
 /* ==========================================================================
    Media Queries
@@ -140,6 +303,55 @@ textarea {
        (min-resolution: 120dpi) {
 
 }
+@media only screen and (max-width: 768px)
+.main-foot .triangle-foot {
+    width: 0;
+    height: 0;
+    border-left-style: solid;
+    border-left-color: transparent;
+    border-right-style: solid;
+    border-right-color: transparent;
+    border-top: 50px inset #fff;
+    top: 0px !important;
+    position: absolute;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    transform: rotate(360deg);
+    border-style: solid dotted none;
+}
+.main-foot .triangle-foot {
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-style: solid dotted none;
+    border-top: 1px solid transparent;
+    height: 0;
+    position: absolute;
+    top: -1px;
+    transform: rotate(360deg);
+    width: 0;
+    z-index: 999;
+}
+.main-foot .triangle-foot {
+    width: 0;
+    height: 0;
+    border-left-style: solid;
+    border-left-color: transparent;
+    border-right-style: solid;
+    border-right-color: transparent;
+    border-top: 50px inset #fff;
+    top: 0px !important;
+    position: absolute;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    transform: rotate(360deg);
+    border-style: solid dotted none;
+}
+@media only screen and (max-width: 768px)
+.main-foot {
+    padding-top: 50px;
+    background-size: cover;
+}
+
 
 /* ==========================================================================
    Helper classes
