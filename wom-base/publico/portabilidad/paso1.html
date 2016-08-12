@@ -26,13 +26,13 @@
         <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-brand-centered">
+          <button id="navToggler" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-brand-centered">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <div class="navbar-brand navbar-brand-centered"><a href="../../index.html" title=""><img src="../../img/logo-wom.svg" width="80" height="80" ></div>
+          <div id="womLogo" class="navbar-brand navbar-brand-centered"><a href="#" title=""><img src="../../img/logo-wom.svg" width="80" height="80"></a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -92,6 +92,10 @@
           </ul>
         </div>
 
+        <div id="camposvacios" class="alert alert-danger" role="alert" style="display: none;">
+          <strong>Uno o más campos están vacíos</strong>. Recuerda que toda la información es necesaria.
+        </div>
+
         <div class="container">
           <div class="row">
             <div class="col-sm-12">
@@ -109,24 +113,23 @@
 
               <div class="form-group">
                 <span class="miniLabel">Número de celular</span>
-               <input type="text" class="form-control" id="inputEmail3" placeholder="Número de celular" onfocus="$(this).val('+56 9');" onblur="$(this).val('');">
+               <input type="textnumber" class="form-control" id="numerocelular" placeholder="Número de celular" onfocus="$(this).val('569');">
              </div>
 
              <div class="form-group">
              <span class="miniLabel">IMEI</span>
-               <input type="text" class="form-control" id="inputEmail3" placeholder="IMEI">
+               <input type="text" class="form-control" id="imeicelular" placeholder="IMEI">
                <p class="help-block fs-small skew">Para obtener el IMEI marca *#06# desde tu celular.</p>
              </div>
 
              <div class="form-group">
               <span class="miniLabel">Número de serie</span>
-               <input type="text" class="form-control" id="inputEmail3" placeholder="Numero de serie">
+               <input type="text" class="form-control" id="seriecelular" placeholder="Numero de serie">
                <p class="help-block fs-small skew">Revisa en la sección ajustes o configuración el número de serie de tu celular.</p>
              </div>
 
               <div class="row ta-center">
-                    <p><button type="button" class="btn btn-primary fw-semibold" onclick="window.location.href='paso2.html'">Continuar</button></p>
-              </div>          
+                    <p><button id="nextStep" type="button" class="btn btn-lg btn-primary">Continuar</button></p>
               </div>
             </div>      
         </div>
@@ -156,10 +159,44 @@
               </div>
           </footer>
         <script>
+          
+          // super-mega-simple client-side form validator
+          function validateForm() {
+            var $fields = $(".form-control");
+            var $emptyFields = $fields.filter(function() {
+                return $.trim(this.value) === "";
+            });
+            if (!$emptyFields.length) {
+                window.location.href='paso2.html'
+            } else {
+                console.log($emptyFields);
+                $emptyFields.parents('.form-group').addClass('invalidInput');
+                $('#camposvacios').slideToggle();
+            }
+          }
+            // run validator on click
+            $("#nextStep").click(function () {
+              validateForm();
+            });
+
+          // minilabels toggle on input focus
           $(".form-group input").focus(function () {
-            $(this).siblings('.miniLabel').show();
+            $(this).siblings('.miniLabel').fadeIn();
             $(this).removeAttr('placeholder');
           });
+
+          // content descent on navbar toggle event
+          $('#navbar-brand-centered').on('show.bs.collapse', function () {
+            $('#womLogo').css('margin-top','295px');
+            $('.navbar-main').css('margin-bottom','274px');
+            $('#navToggler').toggleClass('open');
+          });
+          $('#navbar-brand-centered').on('hide.bs.collapse', function () {
+            $('#womLogo').css('margin-top','0');
+            $('.navbar-main').css('margin-bottom','-80px');
+            $('#navToggler').toggleClass('open');
+          });
+
         </script>
     </body>
 </html>
