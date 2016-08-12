@@ -210,7 +210,8 @@
 										<img src="../../img/portabilidad/ico-tengo-prepago.svg" alt="">
 									</div>
 									<div class="col-xs-10">
-										<input type="text" class="form-control input-lite" id="nombre" placeholder="Ingresa tu número de teléfono" onclick="$(this).val('+56 9');" onblur="$(this).val('');">
+										<div class="form-group">
+										<span class="miniLabel">Ingresa tu número de teléfono</span><input type="text" class="form-control input-lite" id="telefono" placeholder="Ingresa tu número de teléfono" onclick="$(this).val('+56 9');" onblur="$(this).val('');"></div>
 									</div>
 								</div>
 
@@ -224,8 +225,9 @@
 										<img src="../../img/portabilidad/ico-portabilidad-solicitud.svg" alt="">
 									</div>
 									<div class="col-xs-10">
-										<input type="text" class="form-control input-lite" id="nombre" placeholder="Ingresa tu número de portabilidad">
-									</div>
+										<div class="form-group"><span class="miniLabel">Ingresa tu número de portabilidad</span>
+											<input type="text" class="form-control input-lite" id="nombre" placeholder="Ingresa tu número de portabilidad"></div>
+										</div>
 								</div>
 
 								<div class="row ta-center">
@@ -259,5 +261,11 @@
 		            </div>
 	            </div>
           </footer>
+          <script>
+          $(".form-group input").focus(function () {
+            $(this).siblings('.miniLabel').show();
+            $(this).removeAttr('placeholder');
+          });
+        </script>
     </body>
 </html>
