@@ -35,9 +35,24 @@
     padding: 0 10px;
     line-height: 1.5rem;
 }
+
+.navbar-main,
+#womLogo {
+  -webkit-transition: all .3s ease-out;
+}
+
 .navbar-main {
     position: relative;
     z-index: 99;
+}
+
+.navbar-default .navbar-collapse {
+  border-color: transparent;
+  margin-top: 80px;
+  background: white;
+}
+.navbar-default .navbar-collapse {
+  color: #421441;
 }
 
 .navbar-brand-centered {
@@ -56,6 +71,9 @@
 
 .navbar-toggle {
     z-index:1;
+}
+#navToggler.open .icon-bar {
+  background-color: #622761;
 }
 
 .navbar-main {

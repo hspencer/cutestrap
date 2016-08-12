@@ -26,13 +26,13 @@
         <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-brand-centered">
+          <button id="navToggler" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-brand-centered">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <div class="navbar-brand navbar-brand-centered"><a href="#" title=""><img src="../../img/logo-wom.svg" width="80" height="80" ></div>
+          <div id="womLogo" class="navbar-brand navbar-brand-centered"><a href="#" title=""><img src="../../img/logo-wom.svg" width="80" height="80"></a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -150,15 +150,29 @@
                 $('#camposvacios').slideToggle();
             }
           }
-            
+            // run validator on click
             $("#nextStep").click(function () {
               validateForm();
             });
 
+          // minilabels toggle on input focus
           $(".form-group input").focus(function () {
             $(this).siblings('.miniLabel').fadeIn();
             $(this).removeAttr('placeholder');
           });
+
+          // content descent on navbar toggle event
+          $('#navbar-brand-centered').on('show.bs.collapse', function () {
+            $('#womLogo').css('margin-top','295px');
+            $('.navbar-main').css('margin-bottom','274px');
+            $('#navToggler').toggleClass('open');
+          });
+          $('#navbar-brand-centered').on('hide.bs.collapse', function () {
+            $('#womLogo').css('margin-top','0');
+            $('.navbar-main').css('margin-bottom','-80px');
+            $('#navToggler').toggleClass('open');
+          });
+
         </script>
     </body>
 </html>
