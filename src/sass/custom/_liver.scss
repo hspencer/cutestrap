@@ -94,14 +94,6 @@
     margin-top: 30px;
     border-color: white;
 }
-#block{
-    font-size: 0.7em;
-    display: block;
-    width: 50%;
-    height: auto;
-    left: 50%;
-    margin-left: -25%;
-}
 
 .photo img{
     position: relative;
@@ -279,13 +271,10 @@ ul {
 .modulo-morado .item {
     margin-bottom: 30px;
 }
-
-
 .bg-modulo h3 {
   margin-top: 200px;
   padding: 0;
 }
-
 .bg-modulo.modulo-mensajes h3,
 .bg-modulo.modulo-mensajes h4 {
   line-height: 100%;
@@ -299,11 +288,9 @@ ul {
   font-size: 4rem;
   margin: 0;
 }
-
 .bg-modulo h4 {
   padding: 0 10px;
 }
-
 .modulo-portabilidad {
   background-image: url("../../wom-base/img/portabilidad/FONDO1.png");
 }
@@ -330,6 +317,25 @@ ul {
 .modulo-pagofacil h3 {
   margin-top: 200px;
   margin-bottom: 20px;
+}
+
+.halfButtons {
+  margin-top: -40px;
+}
+
+.halfButtons a {
+  text-align: center;
+  color: white;
+  display: block;
+  font-size: 1.1rem;
+  line-height: 130%;
+  padding: 15px;
+}
+
+.halfButtons .halfButton strong {
+  display: block;
+  font-size: 1.4rem;
+  margin-bottom: 3px;
 }
 
 .paga-cuenta-copy,
@@ -651,6 +657,8 @@ ul {
   color: white;
   border-color: white;
 }
+#rut_usuario::-webkit-input-placeholder {color: white;}
+
 .form-control.input-lite[type="text"]::-webkit-input-placeholder {
   color: white;
 }
