@@ -651,13 +651,20 @@ ul {
 }
 
 /* womstrap inputs: fuck you; */
-.form-group {margin-bottom: 30px;}
+.form-group {margin-bottom: 30px; position: relative;}
 .form-group .select select,
 .form-control {
   box-shadow: none;
   padding: 0 5px;
   border: none;
   border-bottom: 1px solid #333;
+}
+
+.form-group .miniLabel {
+  display: none;
+  font-size: 12px;
+  position: absolute;
+  top: -15px;
 }
 
 
