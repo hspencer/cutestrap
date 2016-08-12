@@ -633,10 +633,33 @@ ul {
 /* bootstrap core override para lite form components */
 .select.select-lite select,
 .form-group.select-lite input {
+  color: white;
   border: none;
   border-bottom: 3px solid #EEE;
   background-color: transparent;
 }
+.form-control.input-lite {
+  color: white;
+  border-color: white;
+}
+.form-control.input-lite[type="text"]::-webkit-input-placeholder {
+  color: white;
+}
+.select-lite 
+.select-lite input[type="text"]::-webkit-input-placeholder {
+  color: white;
+}
+
+/* womstrap inputs: fuck you; */
+.form-group {margin-bottom: 30px;}
+.form-group .select select,
+.form-control {
+  box-shadow: none;
+  padding: 0 5px;
+  border: none;
+  border-bottom: 1px solid #333;
+}
+
 
 /* bootstrap pills override para portabilidad */
 .portabilidad-pills {}
