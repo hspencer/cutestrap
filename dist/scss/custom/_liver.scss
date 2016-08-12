@@ -93,7 +93,7 @@ footer .row {
 }
 .main-foot{
     background-color: transparent;
-    background-image: url('../../wom-base/img/footer.jpg');
+    background-image: url('../../wom-base/img/footer2.jpg');
     color: #fff;
     margin-top: 70px;
     position: relative;
@@ -101,7 +101,6 @@ footer .row {
     height: auto;
     padding-top: 30px;
     background-size: cover;
-    /* background: center bottom; */
     clear: both;
     min-height: 264px;
 }
@@ -173,7 +172,7 @@ ul {
     margin:0 auto;
 }
 
-.main-foot:before {
+/*.main-foot:before {
   content: '';
   margin-top: -59px;
   display: block;
@@ -311,7 +310,6 @@ ul {
 }
 
 .modulo-pagofacil h3 {
-  font-weight: bold;
   margin-top: 200px;
   margin-bottom: 20px;
 }
