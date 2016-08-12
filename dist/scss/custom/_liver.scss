@@ -173,27 +173,16 @@ ul {
     margin:0 auto;
 }
 
-.main-foot .footerPoints {
-  position: absolute;
-  top: -49px;
-}
-.main-foot .footerPoints span {
-  display: inline-block;
+.main-foot:before {
+  content: '';
+  margin-top: -59px;
+  display: block;
   width: 0;
   height: 0;
   border-style: solid;
-}
-
-.main-foot .footerPoints .left {
-  border-width: 50px 0 0px 185px;
-  border-color: transparent transparent transparent #180831;
-}
-
-.main-foot .footerPoints .right {
-  border-width: 50px 185px 0px 0px;
+  border-width: 30px 375px 0px 0px;
   border-color: transparent #3A196B transparent transparent;
 }
-
 /* fin del navbar centrado??? */
 
 /** helper classes*/
@@ -677,6 +666,7 @@ ul {
 .portabilidad-pills .nav-pills {margin: 0; padding: 0;}
 .portabilidad-pills .nav-pills > li {
   width: 49%;
+  margin-bottom: -1px;
 }
 .portabilidad-pills .nav-pills > li > a {
   border-radius: 0;
@@ -684,16 +674,17 @@ ul {
   line-height: 100%;
   text-align: center;
 }
+.portabilidad-pills .nav-pills .active a,
+.portabilidad-pills .nav-pills .active a:focus {
+  background-color: #790597;
+}
 .portabilidad-pills .tab-content.well {
   border-radius: 0;
-  padding: 20px;
+  padding: 30px 20px;
+  border: none;
 }
 
 .portabilidad-pills .tab-pane input.form-control {
   background-color: transparent;
   color: white;
-}
-
-.portabilidad-pills .tab-content.well .btn {
-  margin-top: 15px;
 }
