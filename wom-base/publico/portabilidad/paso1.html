@@ -140,14 +140,11 @@
           function validateForm() {
             var $fields = $(".form-control");
             var $emptyFields = $fields.filter(function() {
-                // remove the $.trim if whitespace is counted as filled
                 return $.trim(this.value) === "";
             });
             if (!$emptyFields.length) {
                 window.location.href='paso2.html'
-                console.log('lleno');
             } else {
-                console.log('vacio');
                 console.log($emptyFields);
                 $emptyFields.parents('.form-group').addClass('invalidInput');
                 $('#camposvacios').slideToggle();
