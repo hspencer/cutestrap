@@ -457,10 +457,7 @@ ul {
 
 .modulo-portatebien .dropdown-menu {
     transition: all .3s ease-out;
-    width: 119%;
-    padding: 50px 0 0 0;
-    margin-left: -10%;
-    margin-right: -10%;
+    padding: 32px 0 0 0;
     margin-top: -15px;
     list-style: none;
     font-size: 1.35rem;
@@ -468,7 +465,6 @@ ul {
     background-color: $primary-transparent;
     border: 0;
     border-radius: 0;
-    position: absolute;
     z-index : 90;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
@@ -479,6 +475,11 @@ ul {
     display: block;
     overflow: hidden;
     opacity: 0;
+    left: -25px;
+    right: -25px;
+}
+.modulo-portatebien .col-xs-2.nopadding {
+  margin-left: 10px;
 }
 .modulo-portatebien .btn-group button.tilt.btn-portate {
   position: relative;
