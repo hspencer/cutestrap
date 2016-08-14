@@ -13,6 +13,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="../../js/vendor/modernizr-2.8.3.min.js"></script>
         <script src="../../js/bootstrap.js"></script>
+        <script src="../../js/main.js"></script>
         
     </head>
     <body>
@@ -92,17 +93,19 @@
         
         <div class="container">
             <div class="row">
-              <div class="col-sm-12 ta-center">
+              <div class="col-sm-12">
       					<h4 class="fw-semibold morado-plain">INGRESA TU CODIGO CAP</h4>
       					<p>El código CAP será enviado por SMS Y tiene una vigencia de 24 horas. Si no lo ingresas a tiempo debes hacer una nueva solicitud de portabilidad y recibirás un nuevo código.</p>
-                <p class="fw-semibold morado-plain">SOLICITASTE PORTAR<br>+567 7783442</p>
+                <p class="fw-semibold morado-plain ta-center">SOLICITASTE PORTAR<br>+567 7783442</p>
                 <div class="form-group">
+                  <span class="miniLabel">Ingresa el código CAP</span>
                   <input type="text" class="form-control" id="CAPinput" placeholder="Ingresa el código CAP">
                 </div>
                 <div class="form-group">
+                <span class="miniLabel">Vuelve a ingresar el código CAP</span>
                   <input type="text" class="form-control" id="CAPverify" placeholder="Vuelve a ingresar el código CAP">
                 </div>
-                <p><button type="button" class="btn btn-primary fw-semibold" onclick="window.location.href='paso4_2.html'">Verificar codigo CAP</button></p>
+                <p class="ta-center"><button type="button" class="btn btn-primary fw-semibold" onclick="window.location.href='paso4_2.html'">Verificar codigo CAP</button></p>
               </div>
             </div>
         </div>
