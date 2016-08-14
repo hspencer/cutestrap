@@ -8,7 +8,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../../../dist/css/womstrap.css">
         <link rel="stylesheet" href="../../css/normalize.min.css">
-
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="../../js/vendor/modernizr-2.8.3.min.js"></script>
         <script src="../../js/bootstrap.js"></script>
@@ -158,45 +157,5 @@
                 </div>
               </div>
           </footer>
-        <script>
-          
-          // super-mega-simple client-side form validator
-          function validateForm() {
-            var $fields = $(".form-control");
-            var $emptyFields = $fields.filter(function() {
-                return $.trim(this.value) === "";
-            });
-            if (!$emptyFields.length) {
-                window.location.href='paso2.html'
-            } else {
-                console.log($emptyFields);
-                $emptyFields.parents('.form-group').addClass('invalidInput');
-                $('#camposvacios').slideToggle();
-            }
-          }
-            // run validator on click
-            $("#nextStep").click(function () {
-              validateForm();
-            });
-
-          // minilabels toggle on input focus
-          $(".form-group input").focus(function () {
-            $(this).siblings('.miniLabel').fadeIn();
-            $(this).removeAttr('placeholder');
-          });
-
-          // content descent on navbar toggle event
-          $('#navbar-brand-centered').on('show.bs.collapse', function () {
-            $('#womLogo').css('margin-top','295px');
-            $('.navbar-main').css('margin-bottom','274px');
-            $('#navToggler').toggleClass('open');
-          });
-          $('#navbar-brand-centered').on('hide.bs.collapse', function () {
-            $('#womLogo').css('margin-top','0');
-            $('.navbar-main').css('margin-bottom','-80px');
-            $('#navToggler').toggleClass('open');
-          });
-
-        </script>
     </body>
 </html>
