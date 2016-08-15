@@ -1,4 +1,4 @@
-<!doctype html>
+  <!doctype html>
 <html class="no-js" lang="">
     <head>
         <meta charset="utf-8">
@@ -6,11 +6,8 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <link rel="stylesheet" href="https://rawgit.com/tinet-ux/womstrap/gh-pages/dist/css/womstrap.min.css">
+        <link rel="stylesheet" href="../../../dist/css/womstrap.css">
         <link rel="stylesheet" href="../../css/normalize.min.css">
-        <link rel="stylesheet" href="../../css/main.css">
-        <link rel="stylesheet" href="../../css/main_nb.css">
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="../../js/vendor/modernizr-2.8.3.min.js"></script>
@@ -23,45 +20,81 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <nav class="navbar navbar-default">
-          <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-            </div>
+    <nav class="navbar navbar-default navbar-main" role="navigation">
+        <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-brand-centered">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="navbar-brand navbar-brand-centered"><a href="../../index.html" title=""><img src="../../img/logo-wom.svg" width="80" height="80" ></div>
+        </div>
 
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="../../img/servicio_tecnico/landing.png" target="_blank">Ver Imagen Prototipo</a></li>
-              <ul>
-            </div>
-          </div>
-        </nav>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-brand-centered">
+          <ul class="nav navbar-nav">
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>
+                </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>
+                </li>           
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
 
         <header>
-          <div class="container">
-            <div class="row">
-              <h3 class="ta-center">SERVICIO TÉCNICO</h3>
-              <p class="ta-center">WOMER acá te ayudamos a revisar el estado de reparación de tu equipo en nuestro Servicio Técnico. Ingresa tus datos y mantente atento al proceso.</p>
-            </div>		
+          <div class="bg-modulo modulo-portabilidad">
+        <div class="container">
+          <h3 class="ta-center white fw-semibold">SERVICIO TÉCNICO</h3>
+          <h4 class="ta-center fw-normal white fs-base">WOMER acá te ayudamos a revisar el estado de reparación de tu equipo en nuestro Servicio Técnico. Ingresa tus datos y mantente atento al proceso.</h4>
+        </div>
+      </div>    
         </header>
+
+   
 		<div class="container">
-			 <div class="row">
-				<div class="col-md-12">
-					<h4 class="fs-small">ESTADO</h4>
-					<p class="fs-small">Podrás revisar si tu equipo ya se encuentra Servicio Técnico.</p>
-				</div>
-				<div class="col-md-12">
-					<h4 class="fs-small">DISPONIBILIDAD</h4>
-					<p class="fs-small">Podrás revisar si tu equipo se encuentra disponible en nuestra sucursal para que puedas retirarlo.</p>
-				</div>
-				<div class="col-md-12">
-					<h4 class="fs-small ta-center">REVISA EL ESTADO DE REPARACIÓN DE TU EQUIPO</h4>
+
+              <div class="col-xs-12">
+                <h6 class="morado-plain fw-semibold nomargin nopadding">ESTADO</h6>
+                <p>Podrás revisar si tu equipo ya se encuentra Servicio Técnico.</p>
+              </div>
+            <div class="row marginbottom">
+              <div class="col-xs-12">
+                <h6 class="morado-plain fw-semibold nomargin nopadding">DISPONIBILIDAD</h6>
+                <p>Podrás revisar si tu equipo se encuentra disponible en nuestra sucursal para que puedas retirarlo.</p>
+              </div>
+            </div>
+          <div class="col-md-12">
+					<h4 class="ta-center morado-plain fw-semibold nomargin nopadding">REVISA EL ESTADO DE REPARACIÓN DE TU EQUIPO</h4>
 				</div>
 			</div>
 			<div class="row">
