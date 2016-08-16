@@ -398,6 +398,7 @@ ul {
   margin: 0;
   padding: 0;
   font-size: 2rem;
+  line-height: 175%;
 }
 
 .pago-facil-selecciona strong,
@@ -409,7 +410,7 @@ ul {
 
 .pago-facil-selecciona .item {
   overflow: hidden;
-  padding: 15px 0;
+  padding: 30px 0;
 }
 
 .pago-facil-selecciona .item.dark {
@@ -441,7 +442,6 @@ ul {
 
 .pago-facil-paga .btn-primary {
   margin-top: 30px;
-  background-color: #BA007C;
 }
 .medio-pago p {margin: 0;}
 
@@ -450,9 +450,11 @@ ul {
     margin: 0 auto;
     width: 75%;
 }
-.mensajes-sesion p{
+.mensajes-sesion p {
   font-size: 1.8rem;
   color: $gray-3;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 .mensajes-reporte-pago {
     margin: 25px 0 20px;
@@ -460,8 +462,8 @@ ul {
     list-style-type: none;
 }
 .mensajes-reporte-pago li > span {
-    font-size: 1.42rem;
     display: inline-block;
+    margin-bottom: 5px;
 }
     .mensajes-reporte-pago li > span:first-of-type {
         text-align: right;
@@ -688,6 +690,22 @@ ul {
 /* bootstrap core override para portabilidad form */
 .alert {
   border-radius: 0;
+}
+
+/* bootstrap core overrides para botones */
+
+.btn-grey {
+  background-color: #CCC;
+  border-color: transparent;
+}
+
+.btn-primary.success {
+  border-color: transparent;
+}
+
+.btn-link-success {
+  text-decoration: none;
+  color: #ba007c !important;
 }
 
 /* bootstrap core override para lite form components */
