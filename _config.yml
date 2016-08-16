@@ -1,0 +1,13 @@
+safe: false
+source: .
+destination: docs/templates
+lsi: false
+markdown: rdiscount
+highlighter: pygments
+permalink: pretty
+baseurl: "http://tinet-ux.github.io/womstrap"
+project:
+name: womstrap
+exclude: [bower_components, src, node_modules, wom-base, temp, kss-html, dist, fonts, docs]
+version: 0.0.1
+
