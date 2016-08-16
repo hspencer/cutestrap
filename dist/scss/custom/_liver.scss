@@ -229,6 +229,12 @@ ul {
   -webkit-font-feature-settings: "lnum";
   font-feature-settings: "lnum";
 }
+.p-5 {padding: 5px !important;}
+.p-10 {padding: 10px !important;}
+.pt-10 {padding-top:10px;}
+.pl-10 {padding-left:10px;}
+.pb-10 {padding-bottom:10px;}
+.pr-10 {padding-right:10px;}
 
 /* estilos extras de pago facil */
 
@@ -241,6 +247,17 @@ ul {
   background-position: center top;
   background-size: cover;
   min-height: 370px;
+  min-width: 280px;
+}
+
+.bg-modulo-short {
+  position: relative;
+  z-index: 10;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  height: 270px;
   min-width: 280px;
 }
 
@@ -266,7 +283,7 @@ ul {
   line-height: 125%;
 }
 .modulo-morado .svg-blanco {
-  background: rgba(255,255,255,.1);
+  background: rgba(145,2,168,1);
   padding: 5px;
 }
 .modulo-morado h4,
@@ -292,6 +309,14 @@ ul {
 .bg-modulo.modulo-mensajes h3 {
   text-transform: uppercase;
   margin-bottom: 0;
+}
+.bg-modulo-short.modulo-mensajes h3 {
+  text-transform: uppercase;
+  margin-top: 120px;
+}
+.bg-modulo-short.modulo-mensajes h4 {
+  font-size: 4rem;
+  margin-top: -30px;
 }
 .bg-modulo.modulo-mensajes h4 {
   font-size: 4rem;
@@ -368,13 +393,11 @@ ul {
   margin-top: 15px;
   margin-bottom: 15px;
 }
-.pago-facil-selecciona {
-  margin-bottom: 30px;
-}
 
 .pago-facil-desglose p {
   margin: 0;
   padding: 0;
+  font-size: 2rem;
 }
 
 .pago-facil-selecciona strong,
@@ -404,20 +427,32 @@ ul {
   margin: 10px 0 0;
 }
 
+.pago-facil-paga {
+  background-color: #5D0274;
+  color: white;
+  padding-bottom: 20px;
+}
 .pago-facil-paga small {
-  margin: 20px 0 10px;
+  margin: 20px 0 0 10px;
+  font-size: 1.5rem;
   display: block;
   text-transform: uppercase;
 }
 
 .pago-facil-paga .btn-primary {
   margin-top: 30px;
+  background-color: #BA007C;
 }
+.medio-pago p {margin: 0;}
 
 .mensajes-sesion {
     text-align: center;
     margin: 0 auto;
     width: 75%;
+}
+.mensajes-sesion p{
+  font-size: 1.8rem;
+  color: $gray-3;
 }
 .mensajes-reporte-pago {
     margin: 25px 0 20px;
