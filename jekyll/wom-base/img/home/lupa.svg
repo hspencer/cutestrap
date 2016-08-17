@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="27px" height="27px" viewBox="0 0 27 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>Page 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="PDF-MOBILE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1-Home-" transform="translate(-254.000000, -105.000000)" fill="#FFFFFF">
+            <g id="Group-12" filter="url(#filter-1)" transform="translate(252.000000, 93.000000)">
+                <path d="M7.13350447,22.0989211 C7.13350447,18.255909 10.2600701,15.1336625 14.0989737,15.1336625 C17.9417751,15.1336625 21.0642323,18.2602281 21.0642323,22.0989211 C21.0642323,25.937614 17.9417751,29.0684987 14.0989737,29.0684987 C10.2600701,29.0684987 7.13350447,25.9419331 7.13350447,22.0989211 M24.8356629,32.0306746 L20.2173696,27.412434 C21.4561657,25.9882319 22.2061643,24.1298535 22.2061643,22.0989211 C22.2061643,17.6281624 18.5697324,13.9958389 14.1030822,13.9958389 C9.63232351,13.9958389 6,17.6322708 6,22.0989211 C6,26.5655713 9.63643193,30.2020032 14.1030822,30.2020032 C16.1340146,30.2020032 17.992393,29.4520046 19.4165951,28.2132085 L24.0348357,32.8315018 C24.1444991,32.9409545 24.2920338,33 24.4352493,33 C24.5784649,33 24.7259995,32.9452736 24.8356629,32.8315018 C25.054779,32.612333 25.054779,32.2498434 24.8356629,32.0306746" id="Page-1"></path>
+            </g>
+        </g>
+    </g>
+</svg>

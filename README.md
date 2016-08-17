@@ -47,9 +47,16 @@ Contributors are welcome, just follow these few guidelines:
 
 ### Compile templates using jekyll
 
-to run locally:
+HTML templates can be generated using [jekyll](https://jekyllrb.com/). 
 
+Required foldes:
+* `/_inculdes` where place the html components
+* `/_layouts` where to define layouts
+* `/pages` where to assemble the html pages using the components with with `{% include xxxx.html %}`
+
+To build the templates for (re)publishing:
 ```
-jekyll server --watch --baseurl=
+jekyll build
 ```
+**important**: all `href` links must be relative to the output folder, which is `/jekyll`.
 

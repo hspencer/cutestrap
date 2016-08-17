@@ -1,6 +1,6 @@
 safe: false
 source: .
-destination: docs/templates
+destination: jekyll
 lsi: false
 markdown: rdiscount
 highlighter: pygments
@@ -8,6 +8,5 @@ permalink: pretty
 baseurl: "http://tinet-ux.github.io/womstrap"
 project:
 name: womstrap
-exclude: [bower_components, src, node_modules, wom-base, temp, kss-html, dist, fonts, docs]
+exclude: [bower_components, docs, fonts, kss-html, node_modules, src, temp, bower.json, gulpfile.js, package.json, README.md]
 version: 0.0.1
-
