@@ -44,18 +44,4 @@ $(document).ready(function(){
 		$(this).removeAttr('placeholder');
 	});
 
-	// content descent on navbar toggle event
-	console.log('minilabels navbar onshow events OK');
-	$('#navbar-brand-centered').on('show.bs.collapse', function () {
-		$('#womLogo').css('margin-top','295px');
-		$('.navbar-main').css('margin-bottom','274px');
-		$('#navToggler').toggleClass('open');
-	});
-	$('#navbar-brand-centered').on('hide.bs.collapse', function () {
-		console.log('minilabels navbar oncollapse events OK');
-		$('#womLogo').css('margin-top','0');
-		$('.navbar-main').css('margin-bottom','-80px');
-		$('#navToggler').toggleClass('open');
-	});
-
 });
