@@ -1,10 +1,10 @@
 ---
 layout: base
-title: This is the demo!
+title: Index template
 ---
 
 {% include navbar.html %}
 
-this is random content
+this is NOT random content
 
 {% include footer.html %}
