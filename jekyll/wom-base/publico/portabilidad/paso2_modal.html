@@ -1,0 +1,215 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="../../../dist/css/womstrap.css">
+        <link rel="stylesheet" href="../../css/normalize.min.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="../../js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="../../js/bootstrap.js"></script>
+        
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+<!-- Modal -->
+
+<div class="modal" style="display: block;" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="overlay"></div>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Permisos</h4>
+      </div>
+      <div class="modal-body">
+        <p>Para ingresar la imagen, debemos acceder a tus fotos.</p>
+      </div>
+      <div class="modal-footer">
+        <a role="button" href="http://www.wom.cl/testLink" class="btn fw-normal grayed-out">Denegar</a>
+        <a role="button" href="http://www.wom.cl/testLink" class="btn fw-normal">Permitir</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<nav class="navbar navbar-default navbar-main" role="navigation">
+        <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-brand-centered">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="navbar-brand navbar-brand-centered"><a href="../../index.html" title=""><img src="../../img/logo-wom.svg" width="80" height="80" ></div>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-brand-centered">
+          <ul class="nav navbar-nav">
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>
+                </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>
+                </li>           
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+        <header>
+          <div class="bg-modulo modulo-portabilidad">
+            <div class="container">
+              <h3 class="ta-center white">MEJORA TU PREPAGO</h3>
+              <h4 class="ta-center fw-normal white fs-base">Es momento de abandonar el Darkside. ¡Comenzemos la portabilidad para únirte al lado de la conveniencia!</h4>
+            </div>
+          </div>
+        </header>
+
+        <div class="bajada-morada">
+          <ul id="stepper_portabilidad">
+            <li class="active"><span>1</span></li>
+            <li class="active"><span>2</span></li>
+            <li><span>3</span></li>
+            <li><span>4</span></li>
+            <li><span>5</span></li>
+          </ul>
+        </div>
+
+
+
+        <div class="container">
+
+            <div class="row">
+              <div class="col-sm-12">
+					<h4>DATOS DE UN WOMER</h4>
+					
+					<div class="form-group">
+					  <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+					</div>
+
+					<div class="form-group">
+					  <input type="text" class="form-control" id="apellido" placeholder="Apellido">
+					</div>
+
+					<div class="form-group">
+					  <input type="text" class="form-control" id="rut" placeholder="Rut">
+					</div>
+
+					<div class="form-group">
+					  <input type="text" class="form-control" id="email" placeholder="Email">
+					</div>
+
+					<div class="form-group">
+					  <input type="text" class="form-control" id="telefono" placeholder="Teléfono">
+					</div>
+					
+					<h4>¿DÓNDE VIVES?</h4>
+					
+					<div class="form-group">
+					  <input type="text" class="form-control" id="direccion" placeholder="Dirección">
+					</div>
+					
+					<div class="form-group">
+					  <input type="text" class="form-control" id="numero" placeholder="Número">
+					</div>
+								
+					<div class="form-group">
+					  <input type="text" class="form-control" id="departamento" placeholder="Departamento">
+					</div>
+					
+					<label class="select ">
+					  <select>
+						<option disabled="disabled" selected="selected">Comuna</option>
+						<option>Comuna 0</option>
+						<option>Comuna 1</option>
+						<option>Comuna 2</option>
+						<option>Comuna 3</option>
+						<option>Comuna 4</option>
+					  </select>
+					</label>
+					
+					<label class="select ">
+					  <select>
+						<option disabled="disabled" selected="selected">Region</option>
+						<option>Region 0</option>
+						<option>Region 1</option>
+						<option>Region 2</option>
+						<option>Region 3</option>
+						<option>Region 4</option>
+					  </select>
+					</label>
+					
+					<h4>CÉDULA DE IDENTIDAD</h4>
+					
+					<div class="form-group">
+					  <input type="text" class="form-control" id="cedula" placeholder="Ingresa n° de serie/documento de tu cédula de identidad">
+					  <p class="help-block fs-small skew">El número de serie de tu cédula se encuentra al reverso, mientras que el número de documento en cédulas nuevas esta junto a tu fecha de nacimiento.</p>
+					</div>
+					
+					<h5 class="fw-small ta-center">A continuación, necesitamos la imagen de tu CI. ¿Lo tienes a mano?</h5>
+					
+					<div class="photoUpload row">
+						<div class="col-xs-10">
+							<input type="text" class="form-control" id="reversa" placeholder="Adjunta cara frontal de tu CI">
+						</div>
+						<div class="col-xs-2">
+							<img class="ico" src="../../img/icons/ico-camara.svg" alt="">
+						</div>
+					</div>
+					
+					<div class="photoUpload row">
+						<div class="col-xs-10">
+							<input type="text" class="form-control" id="reversa" placeholder="Adjunta cara reversa de tu CI">
+						</div>
+						<div class="col-xs-2">
+							<img class="ico" src="../../img/icons/ico-camara.svg" alt="">
+						</div>
+					</div>					
+					
+					<div class="row ta-center">
+       		 <button type="button" class="btn btn-primary" onclick="window.location.href='paso3.html'">Continuar</button>
+          </div>
+					
+        </div>
+
+			  
+            </div>			
+        </div>
+    </body>
+</html>
