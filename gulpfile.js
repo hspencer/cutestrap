@@ -43,7 +43,7 @@ gulp.task('bump', function() {
 });
 
 gulp.task('compile', ['clean'], function(){
-  runSequence('sass', 'minify', 'kss-html', 'kss', 'kss-public');
+  runSequence('sass', 'minify', 'kss-html', 'kss', 'kss-public', 'scripts');
 });
 
 // Clean build
@@ -154,6 +154,13 @@ gulp.task('temp', function(){
   // Sass
   return gulp.src('./src/sass/**/*.scss')
     .pipe(gulp.dest('./temp/sass/'));
+});
+
+// compile and consolidate js
+gulp.task('scripts', function() {
+  return gulp.src('./src/js/*.js')
+    .pipe(concat('wom-scripts.js'))
+    .pipe(gulp.dest('./dist/js/'));
 });
 
 // Watch Files For Changes
