@@ -44,3 +44,19 @@ Contributors are welcome, just follow these few guidelines:
 * BEM for naming conventions
 * Alphabetical properties
 * Only nest for pseudo-elements
+
+### Compile templates using jekyll
+
+HTML templates can be generated using [jekyll](https://jekyllrb.com/). 
+
+Required foldes:
+* `/_inculdes` where place the html components
+* `/_layouts` where to define layouts
+* `/pages` where to assemble the html pages using the components with with `{% include xxxx.html %}`
+
+To build the templates for (re)publishing:
+```
+jekyll build
+```
+**important**: all `href` links must be relative to the output folder, which is `/jekyll`.
+

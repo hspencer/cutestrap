@@ -1,0 +1,164 @@
+---
+layout: base
+title: Estado Portabilidad - Paso 2 variante modal
+---
+
+{% include navbar.html %}
+
+<!-- notify! -->
+<div class="modal" id="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display: block">
+	<div class="overlay"></div>
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="$('#modal').hide();"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel">Permisos</h4>
+			</div>
+			<div class="modal-body">
+				<p>Para ingresar la imagen, debemos acceder a tus fotos.</p>
+			</div>
+			<div class="modal-footer">
+				<a role="button" href="http://www.wom.cl/testLink" class="btn fw-normal grayed-out">Denegar</a>
+				<a role="button" href="http://www.wom.cl/testLink" class="btn fw-normal">Permitir</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<header>
+	<div class="bg-modulo modulo-portabilidad">
+		<div class="container">
+			<h3 class="ta-center white fw-semibold">MEJORA TU PREPAGO</h3>
+			<h4 class="ta-center fw-normal white fs-base">Es momento de abandonar el Darkside. ¡Comenzemos la portabilidad para únirte al lado de la conveniencia!</h4>
+		</div>
+	</div>
+</header>
+
+<div class="bajada-morada">
+	<ul id="stepper_portabilidad">
+		<li class="active"><span>1</span></li>
+		<li class="active"><span>2</span></li>
+		<li><span>3</span></li>
+		<li><span>4</span></li>
+		<li><span>5</span></li>
+	</ul>
+</div>
+
+
+
+<div class="container">
+
+	<div class="row">
+		<div class="col-sm-12">
+			<h4 class="fw-semibold morado-plain">DATOS DE UN WOMER</h4>
+			
+			<div class="form-group">
+				<span class="miniLabel">Nombre</span>
+				<input type="text" class="form-control" id="nombre" placeholder="Nombre">
+			</div>
+
+			<div class="form-group">
+				<span class="miniLabel">Apellido</span>
+				<input type="text" class="form-control" id="apellido" placeholder="Apellido">
+			</div>
+
+			<div class="form-group">
+				<span class="miniLabel">RUT</span>
+				<input type="text" class="form-control" id="rut" placeholder="Rut">
+			</div>
+
+			<div class="form-group">
+				<span class="miniLabel">Email</span>
+				<input type="text" class="form-control" id="email" placeholder="Email">
+			</div>
+
+			<div class="form-group">
+				<span class="miniLabel">Teléfono</span>
+				<input type="text" class="form-control" id="telefono" placeholder="Teléfono">
+			</div>
+			
+			<h4 class="fw-semibold morado-plain">¿DÓNDE VIVES?</h4>
+			
+			<div class="form-group">
+				<span class="miniLabel">Dirección</span>
+				<input type="text" class="form-control" id="direccion" placeholder="Dirección">
+			</div>
+			
+			<div class="form-group">
+				<span class="miniLabel">Número</span>
+				<input type="text" class="form-control" id="numero" placeholder="Número">
+			</div>
+			
+			<div class="form-group">
+				<span class="miniLabel">Departamento</span>
+				<input type="text" class="form-control" id="departamento" placeholder="Departamento">
+			</div>
+			
+			<div class="form-group">
+				<label class="select fw-normal">
+					<select>
+						<option disabled="disabled" selected="selected">Comuna</option>
+						<option>Comuna 0</option>
+						<option>Comuna 1</option>
+						<option>Comuna 2</option>
+						<option>Comuna 3</option>
+						<option>Comuna 4</option>
+					</select>
+				</label>
+			</div>
+			
+			<div class="form-group">
+				<label class="select fw-normal">
+					<select>
+						<option disabled="disabled" selected="selected">Region</option>
+						<option>Region 0</option>
+						<option>Region 1</option>
+						<option>Region 2</option>
+						<option>Region 3</option>
+						<option>Region 4</option>
+					</select>
+				</label>
+			</div>
+			
+			<h4 class="fw-semibold morado-plain">CÉDULA DE IDENTIDAD</h4>
+			
+			<div class="form-group">
+				<span class="miniLabel">Ingresa n° de serie/documento de tu cédula de identidad</span>
+				<input type="text" class="form-control" id="cedula" placeholder="Ingresa n° de serie/documento de tu cédula de identidad">
+				<p class="help-block fs-small skew">El número de serie de tu cédula se encuentra al reverso, mientras que el número de documento en cédulas nuevas esta junto a tu fecha de nacimiento.</p>
+			</div>
+			
+			<h5 class="fw-small fw-semibold morado-plain ta-center">A continuación, necesitamos la imagen de tu CI. ¿Lo tienes a mano?</h5>
+			
+			<div class="photoUpload row">
+				<div class="col-xs-10">
+					<div class="form-group"><span class="miniLabel">Adjunta cara frontal de tu CI</span>
+						<input onclick="$('#modal').show();" type="text" class="form-control" id="reversa" placeholder="Adjunta cara frontal de tu CI"></div>
+					</div>
+					<div class="col-xs-2">
+						<img class="ico" src="../../img/icons/ico-camara.svg" alt="">
+					</div>
+				</div>
+				
+				<div class="photoUpload row">
+					<div class="col-xs-10">
+						<div class="form-group"><span class="miniLabel">Adjunta cara reversa de tu CI</span>
+							<input type="text" class="form-control" id="reversa" placeholder="Adjunta cara reversa de tu CI"></div>
+						</div>
+						<div class="col-xs-2">
+							<img class="ico" src="../../img/icons/ico-camara.svg" alt="">
+						</div>
+					</div>					
+					
+					<div class="row ta-center">
+						<p><button type="button" class="btn btn-primary fw-semibold" onclick="window.location.href='paso3.html'">Continuar</button></p>
+					</div>
+					
+				</div>
+
+				
+			</div>			
+		</div>
+
+
+		{% include footer.html %}

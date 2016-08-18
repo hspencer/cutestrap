@@ -36,6 +36,11 @@
     line-height: 1.5rem;
 }
 
+.navbar-header {
+  position: absolute;
+  width: 100%;
+}
+
 .navbar-main,
 #womLogo {
   -webkit-transition: all .3s ease-out;
@@ -46,36 +51,26 @@
     z-index: 99;
 }
 
+.navbar-default .navbar-nav > li > a {
+  color: $quaternary;
+}
+
 .navbar-default .navbar-collapse {
   border-color: transparent;
-  margin-top: 80px;
   background: white;
-}
-.navbar-default .navbar-collapse {
   color: #421441;
+  padding-top: 75px;
 }
 
 .navbar-brand-centered {
-    position: absolute;
-    left: 50%;
-    display: block;
-    width: 160px;
-    text-align: center;
-    background-color: transparent;
+  position: absolute;
+  left: 50%;
+  margin-left: -55px; 
 }
-.navbar>.container .navbar-brand-centered, 
-.navbar>.container-fluid .navbar-brand-centered {
-    margin-left: -50px;
-}
-
 
 .navbar-toggle {
     z-index:1;
 }
-#navToggler.open .icon-bar {
-  background-color: #622761;
-}
-
 .navbar-main {
     background-color: transparent;
     height: 80px;

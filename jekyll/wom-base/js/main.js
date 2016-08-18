@@ -44,6 +44,7 @@ $(document).ready(function(){
 		$(this).removeAttr('placeholder');
 	});
 
+<<<<<<< HEAD
 	// content descent on navbar toggle event
 	console.log('minilabels navbar onshow events OK');
 	$('#navbar-brand-centered').on('show.bs.collapse', function () {
@@ -58,4 +59,6 @@ $(document).ready(function(){
 		$('#navToggler').toggleClass('open');
 	});
 
+=======
+>>>>>>> jekyll
 });
