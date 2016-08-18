@@ -1,0 +1,60 @@
+---
+layout: base
+title: Pago Facil - Selecciona cuenta, variantes
+---
+
+{% include navbar.html %}
+
+<header>
+    <div class="bg-modulo-short modulo-pagofacil">
+        <div class="container">
+            <div class="bg-modulo-short modulo-totalapagar modulo-mensajes">
+                <div class="container">
+                    <h3 class="ta-center fw-semibold white">Selecciona la cuenta a pagar</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container bajada-morada">
+  <div class="paga-cuenta-copy row">
+    <div class="col-xs-12">
+      <h5 class="fw-semibold">Hola!</h5>
+      <p>Selecciona la cuenta que quieres pagar:</p>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="pago-facil-desglose row">
+    <div class="col-xs-12">
+      <p>Nº factura: <strong>8762340</strong></p>
+      <p>Número cliente: <strong>1.123</strong></p>
+    </div>
+  </div>
+  <div class="row pago-facil-selecciona">
+    <div class="item dark">
+      <div class="col-xs-8">
+        <strong>$145.990</strong>
+      </div>
+      <div class="col-xs-4">
+        <label class="checkbox ">
+          Pagar
+          <input type="checkbox" class="f-left">
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="row pago-facil-paga modulo-morado">
+    <div class="col-xs-8">
+      <small>Total a pagar</small>
+      <strong>$145.990</strong>
+    </div>
+    <div class="col-xs-4">
+      <button class="btn btn-primary success fs-medium">Pagar</button>
+    </div>
+  </div>
+</div>
+
+{% include footer.html %}
