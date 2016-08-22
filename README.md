@@ -62,6 +62,6 @@ womstrap
     │   └── all-scripts.js
     └── templates
        └── partials
-``
+```
 
 ''Templates'' define HTMLs DOM structure while ''partials'' define HTML code snipets to use as modules.
