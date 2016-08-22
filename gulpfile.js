@@ -162,7 +162,7 @@ gulp.task('temp', function(){
 gulp.task('watch', function() {
   gulp.watch('./src/sass/**/*.scss', ['sass', 'kss-html', 'kss', 'kss-public']);
   gulp.watch('./kss-html/**/*.*', ['kss-html', 'kss', 'kss-public']);
-  gulp.watch('./mockups/pages/*.html', ['nunjucks']);
+  gulp.watch('./mockups/pages/**/*.html', ['nunjucks']);
 });
 
 gulp.task('zip', ['zip-temp-dist', 'zip-temp-docs'], function(){
