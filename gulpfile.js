@@ -18,7 +18,9 @@ var autoprefixer  = require('gulp-autoprefixer'),
     stylelint     = require('gulp-stylelint'),
     swig          = require('gulp-swig'),
     tag_version   = require('gulp-tag-version'),
-    zip           = require('gulp-zip');;
+    zip           = require('gulp-zip'),
+    nunjucksRender = require('gulp-nunjucks-render');;
+
 
 var config = {
    packages: './node_modules' ,
@@ -163,7 +165,6 @@ gulp.task('watch', function() {
 });
 
 gulp.task('zip', ['zip-temp-dist', 'zip-temp-docs'], function(){
-
   return gulp.src('temp/zip/**/*')
     .pipe(zip('womstrap.zip'))
     .pipe(gulp.dest('./'));
@@ -180,3 +181,16 @@ gulp.task('zip-temp-dist', function(){
   return gulp.src('dist/**/*')
     .pipe(gulp.dest('./temp/zip/dist'));
 });
+
+////////////////////////////////////////////////////////////// - nunjucks start
+gulp.task('nunjucks', function() {
+  // Gets .html and .nunjucks files in pages
+  return gulp.src('mockups/pages/**/*.+(html|nunjucks)')
+  // Renders template with nunjucks
+  .pipe(nunjucksRender({
+      path: ['mockups/templates']
+    }))
+  // output files in app folder
+  .pipe(gulp.dest('mockups'))
+});
+////////////////////////////////////////////////////////////// - nunjucks restart
