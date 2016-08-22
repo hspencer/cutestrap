@@ -45,7 +45,7 @@ gulp.task('bump', function() {
 });
 
 gulp.task('compile', ['clean'], function(){
-  runSequence('sass', 'minify', 'kss-html', 'kss', 'kss-public');
+  runSequence('sass', 'minify', 'kss-html', 'kss', 'kss-public', 'nunjucks');
 });
 
 // Clean build
@@ -147,7 +147,7 @@ gulp.task('sass', function() {
 gulp.task('minify', ['sass'], function() {
   return gulp.src('./dist/css/womstrap.css')
     .pipe(cssmin())
-		.pipe(rename({suffix: '.min'}))
+    .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('./dist/css'));
 });
 
@@ -162,6 +162,7 @@ gulp.task('temp', function(){
 gulp.task('watch', function() {
   gulp.watch('./src/sass/**/*.scss', ['sass', 'kss-html', 'kss', 'kss-public']);
   gulp.watch('./kss-html/**/*.*', ['kss-html', 'kss', 'kss-public']);
+  gulp.watch('./mockups/pages/**/*.*', ['nunjucks']);
 });
 
 gulp.task('zip', ['zip-temp-dist', 'zip-temp-docs'], function(){
