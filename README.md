@@ -51,3 +51,17 @@ To compile the static HTML files run:
 ```
 npm nunjucks
 ```
+
+Folder structure:
+```
+womstrap
+└── mockups
+    ├── index.html
+    ├── all.html
+    ├── js
+    │   └── all-scripts.js
+    └── templates
+       └── partials
+``
+
+''Templates'' define HTMLs DOM structure while ''partials'' define HTML code snipets to use as modules.
