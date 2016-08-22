@@ -185,7 +185,7 @@ gulp.task('zip-temp-dist', function(){
 ////////////////////////////////////////////////////////////// - nunjucks start
 gulp.task('nunjucks', function() {
   // Gets .html and .nunjucks files in pages
-  return gulp.src('mockups/pages/**/*.+(html|nunjucks)')
+  return gulp.src('mockups/pages/**/*.+(html|nunjucks|njk)')
   // Renders template with nunjucks
   .pipe(nunjucksRender({
       path: ['mockups/templates']

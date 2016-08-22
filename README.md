@@ -45,7 +45,7 @@ Contributors are welcome, just follow these few guidelines:
 * Alphabetical properties
 * Only nest for pseudo-elements
 
-### Compile templates using nunjucks
+### Compile templates using [nunjucks](https://mozilla.github.io/nunjucks/)
 
 To compile the static HTML files run:
 ```
