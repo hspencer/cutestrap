@@ -47,4 +47,7 @@ Contributors are welcome, just follow these few guidelines:
 
 ### Compile templates using nunjucks
 
-
+To compile the static HTML files run:
+```
+npm nunjucks
+```
