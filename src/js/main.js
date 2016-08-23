@@ -39,4 +39,12 @@ $(document).ready(function(){
 		}
 	});
 
+	// progressbars animadas (primero a 100, luego a aria-value)
+	$('.progress.progress-animated').each(function() {
+	  var bar = $(this).children('.progress-bar');
+	  var value = bar.attr('aria-valuenow');
+	  bar.animate({width: "100%"}, 10).delay('400').animate({width: value + "%"}, 10);
+	  console.log(value);
+	});
+	  
 });
