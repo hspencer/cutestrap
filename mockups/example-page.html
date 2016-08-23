@@ -11,20 +11,25 @@
 
   <!-- You write code for this content block in another file -->
   
-<nav class="navbar navbar-default navbar-main" role="navigation">
-	<div class="container">
-		<!-- Brand and toggle get grouped for better mobile display -->
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-brand-centered">
-				<span class="sr-only">Toggle navigation</span>
+	<nav class="navbar navbar-default navbar-main navbar-centered" role="navigation">
+	<!-- Brand and toggle get grouped for better mobile display -->
+	<div class="navbar-header">
+
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-brand-centered">
+			<span class="navLabel">Menú</span>
+			<figure class="hamburger">
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
-			</button>
-			<div class="navbar-brand navbar-brand-centered"><a href="../../index.html" title="">
-				<img src="img/logo-wom.svg" width="80" height="80" >
-				</div>
-			</div>
+			</figure>
+		</button>
+
+		<!-- wom logo -->
+		<div class="navbar-brand navbar-brand-centered">
+			<a href="../../index.html" title="">
+				<img src="../../womstrap/wom-base/img/logo-wom.svg" width="80" height="80" >
+			</a>
+		</div>
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse" id="navbar-brand-centered">
 			<ul class="nav navbar-nav">
@@ -48,12 +53,12 @@
 				<li><a class="fw-semibold" href="#">Sucursal Online</a></li>
 			</ul>
 		</div><!-- /.navbar-collapse -->
-	</div><!-- /.container-fluid -->
+	</div>
 </nav>
-<div class='container'>
-	<p>Proin feugiat aliquam tortor, id hendrerit urna semper pulvinar. Nullam iaculis aliquam risus, nec tempus quam condimentum ut. Proin nibh nisl, imperdiet non dictum quis, sodales quis risus. Lorem Ipsum gravida rhoncus. Proin sollicitudin mi eget felis congue sed adipiscing tellus vulputate. Cras suscipit aliquam sapien, non pretium turpis ullamcorper vitae. Aenean vitae libero velit, nec malesuada diam. Curabitur imperdiet porta sapien, sed luctus sapien sollicitudin at.</p>
-</div>
-<footer class="main-foot">
+	<div class='container'>
+		<p>Proin feugiat aliquam tortor, id hendrerit urna semper pulvinar. Nullam iaculis aliquam risus, nec tempus quam condimentum ut. Proin nibh nisl, imperdiet non dictum quis, sodales quis risus. Lorem Ipsum gravida rhoncus. Proin sollicitudin mi eget felis congue sed adipiscing tellus vulputate. Cras suscipit aliquam sapien, non pretium turpis ullamcorper vitae. Aenean vitae libero velit, nec malesuada diam. Curabitur imperdiet porta sapien, sed luctus sapien sollicitudin at.</p>
+	</div>
+	<footer class="main-foot">
   <div class="container">
     <div class="row">
       <div class="ta-center">
@@ -85,6 +90,6 @@
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script src="js/main.js"></script>
+  <script src="../dist/js/wom.js"></script>
 </body>
 </html>

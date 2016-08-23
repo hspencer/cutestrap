@@ -45,7 +45,7 @@ gulp.task('bump', function() {
 });
 
 gulp.task('compile', ['clean'], function(){
-  runSequence('sass', 'minify', 'kss-html', 'kss', 'kss-public', 'nunjucks');
+  runSequence('sass', 'minify', 'kss-html', 'kss', 'kss-public', 'scripts', 'nunjucks');
 });
 
 // Clean build
@@ -158,11 +158,19 @@ gulp.task('temp', function(){
     .pipe(gulp.dest('./temp/sass/'));
 });
 
+// compile and consolidate js
+gulp.task('scripts', function() {
+  return gulp.src(['./src/js/bootstrap*.js','.src/js/modernizr-2.8.3.min.js','./src/js/main.js'])
+    .pipe(concat('wom.js'))
+    .pipe(gulp.dest('./dist/js/'));
+});
+
 // Watch Files For Changes
 gulp.task('watch', function() {
   gulp.watch('./src/sass/**/*.scss', ['sass', 'kss-html', 'kss', 'kss-public']);
   gulp.watch('./kss-html/**/*.*', ['kss-html', 'kss', 'kss-public']);
   gulp.watch(['./mockups/pages/**/*.*', './mockups/templates/**/*.*'], ['nunjucks']);
+  gulp.watch('./src/js/*.js', ['scripts']);
 });
 
 gulp.task('zip', ['zip-temp-dist', 'zip-temp-docs'], function(){
