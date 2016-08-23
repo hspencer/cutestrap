@@ -6,6 +6,7 @@
   <meta charset="UTF-8">
   <title>Historial de Recargas</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://dl.dropboxusercontent.com/u/3538/animate.css">
   <link rel="stylesheet" href="../dist/css/womstrap.css">
 </head>
 <body>
@@ -110,7 +111,7 @@
 <div class="container">
 	
 	<ul class="calendarCards">
-		<li class="item">
+		<li class="item wow fadeInUp">
 			<div class="cards-head">
 				<div class="cards-head-mes uc">
 					<small>Mes Actual</small>
@@ -151,7 +152,7 @@
 			</div>
 		</li>
 
-		<li class="item">
+		<li class="item wow fadeInUp">
 			<div class="cards-head">
 				<div class="cards-head-mes uc">
 					<strong>Mayo</strong>
@@ -191,7 +192,7 @@
 			</div>
 		</li>
 
-		<li class="item">
+		<li class="item wow fadeInUp">
 			<div class="cards-head">
 				<div class="cards-head-mes uc">
 					<strong>Abril</strong>
@@ -232,7 +233,9 @@
 		</li>
 	</ul>
 
-	<i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw margin-bottom"></i>
+	<div class="ta-center">
+		<i class="fa morado-plain fa-circle-o-notch fa-spin fa-3x fa-fw margin-bottom"></i>
+	</div>
 
 </div>
 
@@ -271,5 +274,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="https://use.fontawesome.com/fc096a74c6.js"></script>
   <script src="../dist/js/wom.js"></script>
+  <script>
+    new WOW().init();
+  </script>
 </body>
 </html>
