@@ -22,7 +22,6 @@ $(document).ready(function(){
 	});
 
 	// minilabels toggle on input focus
-	console.log('minilabels OK');
 	$(".form-group input").focus(function () {
 		$(this).siblings('.miniLabel').fadeIn();
 		$(this).removeAttr('placeholder');

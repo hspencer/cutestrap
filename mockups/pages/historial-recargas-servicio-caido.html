@@ -1,0 +1,27 @@
+{% extends "layout.nunjucks" %}
+{% set title = "Historial de Recargas, var servicio caído" %}
+
+{% block content %}
+
+	{% include "partials/navbar.html" %}
+
+	<header>
+		<div class="bg-modulo bg-modulo-short modulo-portabilidad">
+			<div class="container">
+				<h3 class="ta-center white fw-semibold uc">Historial de Recargas</h3>
+				<h4 class="ta-center fw-normal white fs-base">Revisa tu histórico de recargas</h4>
+			</div>
+		</div>
+	</header>
+
+	<div class="container">
+		<div class="row ta-center">
+			<h3 class="fw-semibold morado-plain">¡Oops!</h4>
+			<p>Estamos trabajando, pronto volveremos a estar disponibles.</p>
+			<p><button class="btn btn-primary fs-base fw-semibold">Volver</button></p>
+		</div>
+	</div>
+
+	{% include "partials/footer.html" %}
+
+{% endblock %}
