@@ -1,4 +1,4 @@
-/* inicio del navbar centrado */
+
 .bg-portabilidad{
     background-color: transparent;
     background-image: url('../img/portabilidad/FONDO1.png');
@@ -36,65 +36,8 @@
     line-height: 1.5rem;
 }
 
-.navbar-header {
-  position: absolute;
-  width: 100%;
-}
-
-.navbar-main,
-#womLogo {
-  -webkit-transition: all .3s ease-out;
-}
-
-.navbar-main {
+.photo img {
     position: relative;
-    z-index: 99;
-}
-
-.navbar-default .navbar-nav > li > a {
-  color: $quaternary;
-}
-
-.navbar-default .navbar-collapse {
-  border-color: transparent;
-  background: white;
-  color: #421441;
-  padding-top: 75px;
-}
-
-.navbar-brand-centered {
-  position: absolute;
-  left: 50%;
-  margin-left: -55px; 
-}
-
-.navbar-toggle {
-    z-index:1;
-}
-.navbar-main {
-    background-color: transparent;
-    height: 80px;
-    margin-bottom: -80px;
-    border: none;
-}
-
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: #FFF;
-}
-.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
-    background-color: transparent;
-}
-.navbar-toggle {
-    border: 0;
-    margin-top: 30px;
-    border-color: white;
-}
-
-.photo img{
-    position: relative;
-}
-footer .row {
-  padding: 20px;
 }
 .main-foot{
     background-color: transparent;
@@ -113,8 +56,9 @@ footer .row {
     list-style: none;
     display: inline-block;
 }
+footer {padding: 20px;}
 .main-foot .ta-center img {
-  margin: 0 auto 15px auto;
+  margin: 15px auto;
 }
 .accesos-foot{
     list-style-position: inside;
@@ -177,21 +121,15 @@ ul {
     margin:0 auto;
 }
 
-/*.main-foot:before {
-  content: '';
-  margin-top: -59px;
-  display: block;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 30px 375px 0px 0px;
-  border-color: transparent #3A196B transparent transparent;
-}
-/* fin del navbar centrado??? */
-
 /** helper classes*/
 .morado-plain {
   color: $quaternary;
+}
+.morado-chicle {
+  color: #ba007c;
+}
+.morado-chicle a {
+  text-decoration: underline;
 }
 
 .bignumber {
@@ -218,6 +156,9 @@ ul {
 .nopadding {padding: 0;}
 .margintop {margin: 15px 0 0 0;}
 .marginbottom {margin: 0 0 15px 0;}
+.lineheight100 {line-height: 100%;}
+.lineheight120 {line-height: 120%;}
+
 .numerical {
   font-family: "Cera";
   -moz-font-feature-settings: "lnum";
@@ -226,10 +167,20 @@ ul {
 }
 .p-5 {padding: 5px !important;}
 .p-10 {padding: 10px !important;}
+
 .pt-10 {padding-top:10px;}
 .pl-10 {padding-left:10px;}
+.pl-30 {padding-left: 30px !important;}
+.pl-40 {padding-left: 40px !important;}
 .pb-10 {padding-bottom:10px;}
 .pr-10 {padding-right:10px;}
+.pr-30 {padding-right: 30px !important;}
+.pr-40 {padding-right: 40px !important;}
+
+.mt-10 {margin-top: 10px !important;}
+.mr-10 {margin-right: 10px !important;}
+.mb-10 {margin-bottom: 10px !important;}
+.ml--20 {margin-left: -15px !important;}
 
 /* estilos extras de pago facil */
 
@@ -265,6 +216,21 @@ ul {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#86029e', endColorstr='#4e0165',GradientType=0 ); /* IE6-9 */
 }
 
+.modulo-morado-alt {
+  background: rgba(115,1,132,1);
+  background: -moz-linear-gradient(top, rgba(115,1,132,1) 0%, rgba(50,0,77,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(115,1,132,1)), color-stop(100%, rgba(50,0,77,1)));
+  background: -webkit-linear-gradient(top, rgba(115,1,132,1) 0%, rgba(50,0,77,1) 100%);
+  background: -o-linear-gradient(top, rgba(115,1,132,1) 0%, rgba(50,0,77,1) 100%);
+  background: -ms-linear-gradient(top, rgba(115,1,132,1) 0%, rgba(50,0,77,1) 100%);
+  background: linear-gradient(to bottom, rgba(115,1,132,1) 0%, rgba(50,0,77,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#730184', endColorstr='#32004d', GradientType=0 );
+}
+
+.modulo-morado-alt .miniLabel {
+  color: white;
+}
+
 .bajada-morada {
   margin-top: -40px;
   padding: 40px 0 0px;
@@ -280,6 +246,10 @@ ul {
 .modulo-morado .svg-blanco {
   background: rgba(145,2,168,1);
   padding: 5px;
+  margin-top: -25px;
+}
+.svg-blanco {
+  max-width: 105%;
 }
 .modulo-morado h4,
 .modulo-morado h6 {
@@ -295,6 +265,10 @@ ul {
 .bg-modulo h3 {
   margin-top: 200px;
   padding: 0;
+  line-height: 125%;
+}
+.bg-modulo h3.large {
+  font-size: 4.5rem;
 }
 .bg-modulo.modulo-mensajes h3,
 .bg-modulo.modulo-mensajes h4 {
@@ -320,6 +294,9 @@ ul {
 .bg-modulo h4 {
   padding: 0 10px;
 }
+.bg-modulo h4.fs-base {
+  line-height: 130%;
+}
 .modulo-portabilidad {
   background-image: url("../../wom-base/img/portabilidad/FONDO1.png");
 }
@@ -338,18 +315,42 @@ ul {
 }
 .modulo-pagofacil {
   background-image: url("../../wom-base/img/portabilidad/FONDO1.png");
+  min-height: 400px;
+}
+.modulo-pagofacil-short {
+  background-image: url("../../wom-base/img/portabilidad/FONDO1.png");
+  min-height: 220px;
+}
+.embed-responsive-16by9 {
+    padding-bottom: 40% !important;
 }
 .modulo-centroayuda {
   background-image: url("../../wom-base/img/portabilidad/FONDO1.png");
 }
 
 .modulo-pagofacil h3 {
-  margin-top: 200px;
+  margin-top: 180px;
   margin-bottom: 20px;
+}
+
+.modulo-pagofacil-short h3 {
+  margin-top: 190px;
+  margin-bottom: 20px;
+  line-height: 3rem;
+}
+.modulo-pagofacil-short h4 {
+  margin-top: -10px;
+  margin-bottom: 20px;
+  line-height: 1rem;
+}
+
+.title-selecciona-medio-pago {
+  line-height: 2.5rem !important;
 }
 
 .halfButtons {
   margin-top: -40px;
+  
 }
 
 .halfButtons a {
@@ -399,8 +400,9 @@ ul {
 .pago-facil-selecciona strong,
 .pago-facil-paga strong {
   display: block;
-  font-size: 3rem;
+  font-size: 4rem;
   line-height: 100%;
+  font-weight: 500;
 }
 
 .pago-facil-selecciona .item {
@@ -473,7 +475,7 @@ ul {
 
 .instrucciones-portabilidad p {
   padding-left: 1.5rem;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   color: #636363;
 }
 .instrucciones-portabilidad h4{
@@ -481,13 +483,17 @@ ul {
   font-size: 2rem;
 }
 .instrucciones-portabilidad h5{
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 .solicita-portabilidad h4 {
   margin-bottom: -25px;
 }
 
+
+.iconos-portabilidad-lista {
+  padding-top: 30px;
+}
 
 /* despliegue botón btn-portate*/ 
 
@@ -538,7 +544,12 @@ ul {
 }
 
 .modulo-portatebien .dropdown-menu li:after{
-  content: url(../../wom-base/img/icons/ico-arrow-right.svg); width: 10px; height: 17px;
+  content: url(../../wom-base/img/icons/ico-arrow-right.svg);
+  width: 10px;
+  height: 17px;
+  top: 20px;
+  position: relative;
+  left: 10px;
 }
 
 .modulo-portatebien .btn:hover{
@@ -548,15 +559,42 @@ ul {
 
 /* para el flujo de portabilidad */
 
+.ico-portabilidad {
+  height: 65px;
+  background-size: 88%;
+  background-repeat: no-repeat;
+  background-position: center;  
+}
+
+.ico-portabilidad-bottom {
+  margin-left: 25px;
+  margin-top: -5px;
+}
+
+.ico-portabilidad-text {
+  margin-top: 10px;
+}
+
+.ico-portabilidad-tengoplan {
+  background-image: url(../../wom-base/img/portabilidad/ico-tengo-plan.svg);
+  background-position: 11px center;
+}
+.ico-portabilidad-tengoprepago {
+  background-image: url(../../wom-base/img/portabilidad/ico-tengo-prepago.svg);
+}
+.ico-portabilidad-tengoprepago2 {
+  background-image: url(../../wom-base/img/portabilidad/ico-tengo-plan2.svg);
+}
+
 #stepper_portabilidad {
   font-family: 'Cera';
-  margin: 0;
+  margin: 0 auto;
   padding: 0 0 30px 0;
   list-style-type: none;
   text-align: center;
-  -moz-font-feature-settings: "lnum";
   -webkit-font-feature-settings: "lnum";
   font-feature-settings: "lnum";
+  max-width: 350px;
 }
 
 #stepper_portabilidad:after {
@@ -573,6 +611,13 @@ ul {
   display: inline-block;
   margin: 0 5%;
 }
+
+  #stepper_portabilidad li:first-of-type {
+    margin-left: 0;
+  }
+  #stepper_portabilidad li:last-of-type {
+    margin-right: 0;
+  }
 
 #stepper_portabilidad li span {
   display: block;
@@ -605,6 +650,8 @@ ul {
 
 .modal .modal-dialog {
   z-index: 1000;
+  padding-top: 90px;
+
 }
 
 .modal .modal-dialog .btn {
@@ -680,6 +727,10 @@ ul {
   background-image: url(../../wom-base/img/icons/ico-warning.svg);
 }
 
+.help-block{
+  padding-bottom: 0;
+}
+
 /* bootstrap core override para portabilidad form */
 .alert {
   border-radius: 0;
@@ -710,7 +761,7 @@ ul {
 .form-group.select-lite input {
   color: white;
   border: none;
-  border-bottom: 3px solid #EEE;
+  border-bottom: 1px solid #EEE;
   background-color: transparent;
 }
 .form-control.input-lite {
@@ -727,23 +778,75 @@ ul {
   color: white;
 }
 
-/* womstrap inputs: fuck you; */
-.form-group {margin-bottom: 30px; position: relative;}
-.form-group .select select,
-.form-control {
-  box-shadow: none;
-  padding: 0 5px;
-  border: none;
-  border-bottom: 1px solid #333;
-}
+/*  bootstrap navbar overrides */
 
-.form-group .miniLabel {
-  display: none;
-  font-size: 12px;
+.navbar.navbar-centered {
   position: absolute;
-  top: -15px;
+  padding: 0;
+  width: 100%;
+  z-index: 99;
+  margin-bottom: 0;
 }
 
+.navbar.navbar-centered .navbar-collapse {
+  border-color: transparent;
+}
+
+.navbar.navbar-centered .nav.navbar-nav {
+  background-color: white;
+  margin-top: 50px;
+}
+.navbar.navbar-centered .navbar-toggle {
+  position: absolute;
+  margin: 0;
+  top: 30px;
+  right: 15px;
+  overflow: hidden;
+  border-radius: 0;
+  z-index: 99;
+}
+
+  .navbar.navbar-centered .navbar-toggle:hover,
+  .navbar.navbar-centered .navbar-toggle:focus {
+    background-color: $primary;
+    color: white;
+  }
+
+.navbar.navbar-centered .navbar-toggle .navLabel,
+.navbar.navbar-centered .navbar-toggle .hamburger {
+  color: white;
+  float: left;
+  vertical-align: middle;
+}
+
+.navbar.navbar-centered .navbar-toggle .navLabel {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.navbar.navbar-centered .navbar-toggle .icon-bar {
+  background-color: white;
+}
+
+.navbar.navbar-centered .hamburger {
+  margin: 4px 0 0 7px;
+  padding: 0;
+}
+
+.navbar.navbar-centered .navLabel {
+
+}
+
+.navbar.navbar-default {
+  border: none;
+  background-color: transparent;
+}
+
+.navbar.navbar-centered .navbar-brand-centered {
+  width: 100px;
+  float: none;
+  margin: 0 auto;
+}
 
 /* bootstrap pills override para portabilidad */
 .portabilidad-pills {}
@@ -760,7 +863,7 @@ ul {
 }
 .portabilidad-pills .nav-pills .active a,
 .portabilidad-pills .nav-pills .active a:focus {
-  background-color: #790597;
+  background-color: #730184;
 }
 .portabilidad-pills .tab-content.well {
   border-radius: 0;
@@ -771,4 +874,178 @@ ul {
 .portabilidad-pills .tab-pane input.form-control {
   background-color: transparent;
   color: white;
+}
+
+/* recargas */
+
+.select-phone {
+  margin-top: 20px;
+}
+
+.form-control.select-caret {
+  font-size: 2.2rem;
+  border: 1px solid #CCC;
+  border-radius: 5px;
+  padding: 10px 10px;
+  color: $quaternary;
+  line-height: 125%;
+  height: auto;
+  background-image: url(../../wom-base/img/icons/caret-down-purple.svg);
+  background-position: 96% center;
+  background-repeat: no-repeat;
+  background-clip: padding-box;
+}
+
+.modulo-saldo {
+  margin: 20px auto;
+}
+
+.modulo-saldo .modulo-saldo-cash,
+.modulo-saldo .modulo-saldo-promedio {
+  margin: 0 0 15px 0;
+  padding: 0;
+}
+
+.modulo-saldo .modulo-saldo-cash {
+  font-size: 5.4rem;
+  color: #666;
+}
+
+.modulo-saldo .modulo-saldo-promedio {
+  font-size: 3rem;
+  line-height: 110%;
+}
+
+.modulo-planes-convenientes button {
+  width: 85%;
+}
+
+/* nuevo layout: calendar cards; */
+
+.calendarCards {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.calendarCards .item {
+  border: 1px solid #CCC;
+  margin-bottom: 30px;
+}
+
+.calendarCards .item .cards-head {
+  background-color: #CCC;
+  color: white;
+  overflow: hidden;
+  padding: 5px 15px;
+}
+
+.calendarCards .item .cards-head-mes {
+  float: left;
+}
+.calendarCards .item .cards-head-mes strong {
+  display: block;
+  font-size: 2.4rem;
+}
+  
+  .calendarCards .item:first-of-type .cards-head {
+    background-color: #BA007C;
+  }
+
+.calendarCards .item .cards-head-total {
+  float: right;
+  margin-top: 0;
+}
+
+  .calendarCards .item:first-of-type .cards-head-total {
+    margin-top: 25px;
+  }
+
+.calendarCards .item .cards-head-total span {
+  font-size: 1.8em;
+}
+
+.calendarCards .item .cards-content-item {
+  padding: 15px;
+  overflow: hidden;
+  border-bottom: 1px solid #CCC;
+}
+
+  .calendarCards .item .cards-content-item:last-of-type {
+    border-bottom: 0;
+  }
+
+.calendarCards .item .cards-content-item .cards-content-item-date {
+  width: 48px;
+  height: 48px;
+  margin-right: 15px;
+  border: 1px solid #CCC;
+  color: #666;
+  font-size: 2.4rem;
+  float: left;
+}
+
+.calendarCards .item .cards-content-item .cards-content-item-date span {
+  background-color: $quaternary;
+  color: white;
+  display: block;
+  font-size: 1.3rem;
+  padding: 1px 0;
+  line-height: 110%;
+}
+.calendarCards .item .cards-content-item .cards-content-item-desc {
+  float: left;
+  max-width: 49%;
+  padding: 0 5px 0 0;
+  line-height: 115%;
+}
+
+.calendarCards .item .cards-content-item .cards-content-item-desc p {
+  margin: 0;
+  padding: 0;
+}
+
+  .calendarCards .item .cards-content-item .cards-content-item-desc p:first-of-type {
+    font-size: 1.25rem;
+  }
+
+.calendarCards .item .cards-content-item .cards-content-item-total {
+  float: right;
+  font-size: 1.7rem;
+  text-align: right
+}
+
+/* womstrap inputs: general override; */
+.form-group {margin-bottom: 30px; position: relative;}
+.form-group .select select,
+.form-control {
+  box-shadow: none;
+  padding: 0 5px;
+  border: none;
+  border-bottom: 1px solid #333;
+}
+
+.form-group .miniLabel {
+  display: none;
+  font-size: 12px;
+  position: absolute;
+  top: -15px;
+}
+
+/* womstrap wells: general override; */
+
+.well {
+  color: #777;
+  padding: 5px;
+  background-color: #f7f7f7;
+  border: 1px solid #CCC;
+}
+
+.well > p {
+  padding: 0;
+  margin: 15px auto;
+}
+
+.fs-small {
+  line-height: 120%;
 }
