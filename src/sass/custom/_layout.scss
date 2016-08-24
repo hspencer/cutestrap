@@ -207,6 +207,15 @@ ul {
   min-width: 280px;
 }
 
+.bg-modulo-shortest {
+  height: 250px;
+  min-height: 250px;
+}
+
+.bg-modulo.bg-modulo-shortest h3 {
+  margin-top: 130px;
+}
+
 .bajada-morada,
 .modulo-morado {
   background: #86029e; /* Old browsers */
