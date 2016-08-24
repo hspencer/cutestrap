@@ -125,8 +125,15 @@ ul {
 .morado-plain {
   color: $quaternary;
 }
+.morado-plain-bg {
+  background-color: $quaternary;
+}
 .morado-chicle {
   color: #ba007c;
+}
+.morado-chicle-bg {
+  background-color: #ba007c;
+  border: none;
 }
 .morado-chicle a {
   text-decoration: underline;
@@ -1045,6 +1052,47 @@ ul {
   position: absolute;
   top: -15px;
 }
+
+/* visualizar informacion de plan */
+
+.info-plan-desglose {margin-bottom: 15px;}
+.info-plan-desglose h6 {
+  background-color: $quaternary;
+  color: white;
+  padding: 10px 10px 10px 15px;
+}
+
+.info-plan-desglose .numbersData .item {
+  border-left: 1px solid #CCC;
+  line-height: 110%;
+}
+
+.info-plan-desglose .numbersData .item .big small {
+  font-size: 1.6rem;
+  vertical-align: baseline;
+  line-height: 0;
+}
+
+.info-plan-desglose .numbersData .item .big {
+  color: $quaternary;
+  display: block;
+  margin-bottom: 15px;
+}
+  .info-plan-desglose .numbersData .item:first-of-type {border-left: none;}
+
+.promociones-activas ul {
+  list-style-type: none;
+}
+
+.promociones-activas .item {
+  border-bottom: 1px solid #CCC;
+  padding: 10px 0;
+}
+  .promociones-activas .item:last-of-type {
+    border-bottom: none;
+  }
+
+  .promociones-activas .item .big small {font-size: 1.4rem;}
 
 /* womstrap wells: general override; */
 
