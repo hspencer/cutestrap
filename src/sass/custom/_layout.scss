@@ -1110,17 +1110,19 @@ ul {
 }
 
 .saldo-actual-detalles li {
+  padding: 7px;
   line-height: 175%;
+  border-bottom: 1px solid #CCC;
 }
+
+  .saldo-actual-detalles li:last-of-type {
+    border-bottom: 0;
+  }
 
 .saldo-actual-detalles .btn.ver-historial {
   position: absolute;
   right: 5px;
   bottom: 5px;
-}
-
-.saldo-actual-detalles li {
-  padding: 7px;
 }
 
 .saldo-actual-detalles li .big {
