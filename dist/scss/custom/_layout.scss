@@ -138,6 +138,9 @@ ul {
 .morado-chicle a {
   text-decoration: underline;
 }
+.dark-red {
+  color: #AE8282;
+}
 
 .bignumber {
   font-family: 'Cera';
@@ -1056,7 +1059,8 @@ ul {
 /* visualizar informacion de plan */
 
 .info-plan-desglose {margin-bottom: 15px;}
-.info-plan-desglose h6 {
+
+.info-plan-title {
   background-color: $quaternary;
   color: white;
   padding: 10px 10px 10px 15px;
@@ -1094,6 +1098,40 @@ ul {
 
 .promociones-activas h6 {margin-bottom: 0;}
 .promociones-activas .item .big small {font-size: 1.4rem;}
+
+.ver-saldo-actual {
+}
+
+.saldo-actual-detalles {
+  position: relative;
+  list-style-type: none;
+  border: 1px solid #CCC;
+  margin: 15px 0;
+}
+
+.saldo-actual-detalles li {
+  line-height: 175%;
+}
+
+.saldo-actual-detalles .btn.ver-historial {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+}
+
+.saldo-actual-detalles li {
+  padding: 7px;
+}
+
+.saldo-actual-detalles li .big {
+  display: block;
+}
+
+.consumoBars {}
+.consumoBars .progress-bar {
+  background-color: white;
+  border-top: 1px solid #CCC;
+}
 
 /* womstrap wells: general override; */
 
