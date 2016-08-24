@@ -43,7 +43,7 @@ $(document).ready(function(){
 	$('.progress.progress-animated').each(function() {
 	  var bar = $(this).children('.progress-bar');
 	  var value = bar.attr('aria-valuenow');
-	  bar.animate({width: "100%"}, 1).delay('420').animate({width: value + "%"}, 1);
+	  bar.animate({width: "100%"}, 500).delay('420').animate({width: value + "%"}, 1200);
 	  console.log(value);
 	});
 	  

@@ -1160,6 +1160,10 @@ ul {
   position: relative;
   left: -10px;
   box-shadow: -4px 0 16px #000;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
 }
 
 /* womstrap wells: general override; */
