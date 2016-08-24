@@ -1127,10 +1127,39 @@ ul {
   display: block;
 }
 
-.consumoBars {}
+.consumoBars {
+  border: 1px solid #CCC;
+}
+.consumoBars .item {
+  position: relative;
+}
+.consumoBars .item .consumoInfo {
+  position: absolute;
+  z-index: 1313;
+  padding-top: 15px;
+  padding-left: 15px;
+}
+.consumoBars .item .consumoInfo p {
+  margin: 0;
+  padding: 0;
+}
+.consumoBars .progress {
+  height: 85px;
+  padding: 15px auto;
+  margin-bottom: 0;
+  box-shadow: none;
+  border-bottom: 1px solid #CCC;
+}
+  .consumoBars .item:last-of-type .progress {
+    border-bottom: 0;
+  }
 .consumoBars .progress-bar {
   background-color: white;
-  border-top: 1px solid #CCC;
+  border: 0;
+  box-shadow: none;
+  position: relative;
+  left: -10px;
+  box-shadow: -4px 0 16px #000;
 }
 
 /* womstrap wells: general override; */
