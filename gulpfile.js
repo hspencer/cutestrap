@@ -160,7 +160,7 @@ gulp.task('temp', function(){
 
 // compile and consolidate js
 gulp.task('scripts', function() {
-  return gulp.src(['./src/js/bootstrap*.js','./src/js/modernizr-2.8.3.min.js','./src/js/wow.js','./src/js/main.js'])
+  return gulp.src(['./src/js/bootstrap*.js','./src/js/modernizr-2.8.3.min.js','./src/js/wow.js','./src/js/inview.js','./src/js/main.js'])
     .pipe(concat('wom.js'))
     .pipe(gulp.dest('./dist/js/'));
 });

@@ -1,3 +1,6 @@
+// js layer para prototipos WOM
+// version nunjucks!
+// dependencias: muchas, checar gulpfile
 
 $(document).ready(function(){
         
@@ -15,7 +18,7 @@ $(document).ready(function(){
 		    $('#camposvacios').slideToggle();
 		}
 	}
-	// run validator on click
+	// run form validator on click
 	$("#nextStep").click(function () {
 	  validateForm();
 	  return false;
@@ -40,10 +43,12 @@ $(document).ready(function(){
 	});
 
 	// progressbars animadas (primero a 100, luego a aria-value)
-	$('.progress.progress-animated').each(function() {
-	  var bar = $(this).children('.progress-bar');
-	  var value = bar.attr('aria-valuenow');
-	  bar.animate({width: "100%"}, 500).delay('420').animate({width: value + "%"}, 1600);
+	$('.consumoBars').one('inview', function(event, isInView) {
+	   	$(this).find('.progress.progress-animated').each(function() {
+		  var bar = $(this).children('.progress-bar');
+		  var value = bar.attr('aria-valuenow');
+		  bar.animate({width: "100%"}, 500).delay('420').animate({width: value + "%"}, 1600);
+		});
 	});
 	  
 });
