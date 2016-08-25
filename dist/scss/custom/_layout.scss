@@ -1232,6 +1232,21 @@ ul {
 
   .bolsaPicker .row:nth-child(2) {margin-bottom: 10px;}
 
+#bolsas-destacadas-carousel .item img {
+  width: 100%;
+  height: auto;
+}
+#bolsas-destacadas-carousel .carousel-indicators {
+  bottom: 0;
+}
+#bolsas-destacadas-carousel .carousel-control {
+  opacity: 1;
+  color: white;
+  font-size: 4rem;
+  line-height: 560%;
+  width: 30px;
+}
+
 /* womstrap wells: general override; */
 
 .well {
