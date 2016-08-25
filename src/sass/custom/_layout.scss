@@ -1227,6 +1227,59 @@ ul {
   box-shadow: 0 0 1px #444 inset;
 }
 
+.ico-input-money {
+    background-image: url(../../mockups/img/private_site/compra_bolsa/ico-input-money.svg);
+    width: 18px;
+    height: 18px;
+    display: block;
+    margin-right: 5px;
+    margin-top: 3px;
+    margin-left: -7px;
+}
+
+.ico-bolsa-bolsa_datos {
+    background-image: url(../../mockups/img/private_site/compra_bolsa/ico-bolsa_datos.svg);
+    width: 40px;
+    height: 32px;
+    display: block;
+    margin: 0 auto;
+}
+.ico-bolsa-bolsa_voz {
+    background-image: url(../../mockups/img/private_site/compra_bolsa/ico-bolsa_voz.svg);
+    width: 32px;
+    height: 32px;
+    display: block;
+    margin: 0 auto;
+}
+.ico-bolsa-bolsa_sms {
+    background-image: url(../../mockups/img/private_site/compra_bolsa/ico-bolsa_sms.svg);
+    width: 40px;
+    height: 30px;
+    display: block;
+    margin: 0 auto;
+}
+.ico-bolsa-bolsa_mixtas {
+    background-image: url(../../mockups/img/private_site/compra_bolsa/ico-bolsa_mixta.svg);
+    width: 38px;
+    height: 32px;
+    display: block;
+    margin: 0 auto;
+}
+.ico-bolsa-bolsa_tematicas {
+    background-image: url(../../mockups/img/private_site/compra_bolsa/ico-bolsa_tematica.svg);
+    width: 32px;
+    height: 32px;
+    display: block;
+    margin: 0 auto;
+}
+.ico-bolsa-bolsa_roaming {
+    background-image: url(../../mockups/img/private_site/compra_bolsa/ico-bolsa_roaming.svg);
+    width: 32px;
+    height: 32px;
+    display: block;
+    margin: 0 auto;
+}
+
 .bolsaPicker {
   margin: 15px 0;
 }
