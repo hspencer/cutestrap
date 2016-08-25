@@ -3096,7 +3096,7 @@ $(document).ready(function(){
 		$(this).value == '';
 	});
 	$(".form-group input").blur(function () {
-		$(this).siblings('.miniLabel').toggleClass('visible');
+		// [this is bad UX yo creo] $(this).siblings('.miniLabel').toggleClass('visible');
 		$(this).parents('.form-group').toggleClass('active');
 	});
 
