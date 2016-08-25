@@ -1188,6 +1188,22 @@ ul {
   transition: none;
 }
 
+/* Gestionando Autoatencion Compra de Bolsas */
+
+.btn-group.saldo-recarga-ahora {
+  width: 100%;
+}
+.btn-group.saldo-recarga-ahora .btn {
+  width: 50%;
+  line-height: 160%;
+  height: 50px;
+}
+.btn-group.saldo-recarga-ahora .btn.saldo-money {
+  line-height: 0;
+  background-color: transparent;
+  box-shadow: 0 0 1px #444 inset;
+}
+
 /* womstrap wells: general override; */
 
 .well {
