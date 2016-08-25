@@ -1204,6 +1204,32 @@ ul {
   box-shadow: 0 0 1px #444 inset;
 }
 
+.bolsaPicker {
+  margin: 15px 0;
+}
+
+.bolsaPicker h5 {
+  color: #666;
+}
+
+.bolsaPicker .item {
+
+}
+
+.bolsaPicker .item a {
+  border-radius: 5px;
+  border: 1px solid #CCC;
+  display: block;
+  width: 90%;
+  padding: 15px 0;
+  text-decoration: none;
+}
+
+.bolsaPicker .item i.fa {
+  display: block;
+  font-size: 32px;
+}
+
 /* womstrap wells: general override; */
 
 .well {
