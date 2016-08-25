@@ -3104,7 +3104,10 @@ $(document).ready(function(){
 	   	$(this).find('.progress.progress-animated').each(function() {
 		  var bar = $(this).children('.progress-bar');
 		  var value = bar.attr('aria-valuenow');
-		  bar.animate({width: "100%"}, 500).delay('420').animate({width: value + "%"}, 1600);
+		  // hay que ponerle 5 pixeles mas porque el skew hace que se vea más cortito
+		  var valueOffset = '5';
+		  var valueWidth = (+value) + (+valueOffset);
+		  bar.animate({width: "100%"}, 500).delay('420').animate({width: valueWidth + "%"}, 1600);
 		});
 	});
 
