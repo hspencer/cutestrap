@@ -1351,6 +1351,10 @@ ul {
 .gigaMeasures li .graphButton.selected .graphHolder {
   background-color: $quaternary;
 }
+  .gigaMeasures li:first-of-type .graphButton.selected .graphHolder {
+    background-color: white;
+    border-color: $quaternary;
+  }
 .gigaMeasures li .graphButton.selected .graphHolder .gigas-bar {
   background-color: white;
 }

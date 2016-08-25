@@ -92,6 +92,12 @@ $(document).ready(function(){
 		$('#wizardPlanes a:not(.finWizard)').click(function() {
 			wizardGo();
 		});
+		// for graph buttons
+		$('#wizardPlanes a.graphButton').click(function () {
+			$(this).parents('.gigaMeasures').find('a.graphButton').removeClass('selected');
+			$(this).addClass('selected');
+			return false;
+		});
 
 		// animando graph bars en wizard-appendix modules
 		// DEPENDSON inview.js - migrar a wow quiza?
