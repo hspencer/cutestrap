@@ -3056,10 +3056,14 @@ $(document).ready(function(){
 	    	$('#stepper_portabilidad li').removeClass('active');
 	    	// prende stepper correcto
 	    	$('#stepper_portabilidad li.stepperLED-' + $nextStep).addClass('active');
+	    	// deshabilita este boton
+	    	$($thisStep).find('.nextStep').addClass('disabled');
 	    	// oculta este paso
 	    	$($thisStep).slideUp();
 	    	// muestra el paso siguiente
 	    	$('#portateForm-' + $nextStep).slideDown();
+	    	// habilita el boton a paso siguiente
+	    	$('#portateForm-' + $nextStep).find('.nextStep').removeClass('disabled');
 	    	// anima el DOM hasta el stepper
 	    	$('html, body').animate({
 		        scrollTop: $("#stepper_portabilidad").offset().top
@@ -3069,6 +3073,7 @@ $(document).ready(function(){
 	    }
 		if (!$emptyFields.length) {
 			// if form is ok...
+			$('#camposvacios').slideUp();
 			continueForm();
 		} else {
 		    console.log($emptyFields);
@@ -3078,7 +3083,8 @@ $(document).ready(function(){
 	}
 
 	// run form validator on click
-	$("#portateForm .nextStep:not(.disabled)").click(function () {
+	$("#portateForm .nextStep:not(.disabled)").on('click', function () {
+	  console.log('valida!');
 	  validateForm();
 	  return false;
 	});
