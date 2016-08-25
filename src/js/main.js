@@ -45,7 +45,7 @@ $(document).ready(function(){
 	}
 
 	// run form validator on click
-	$("#portateForm .nextStep:not(.disabled)").on('click', function () {
+	$("#portateForm .nextStep").on('click', function () {
 	  console.log('valida!');
 	  validateForm();
 	  return false;
