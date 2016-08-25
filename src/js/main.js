@@ -39,6 +39,7 @@ $(document).ready(function(){
 		    console.log($emptyFields);
 		    $emptyFields.parents('.form-group').addClass('invalidInput');
 		    $('#camposvacios').slideToggle();
+		    $('html, body').animate({scrollTop: $("#camposvacios").offset().top}, 200);
 		}
 	}
 
