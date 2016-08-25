@@ -38,7 +38,7 @@ $(document).ready(function(){
 			continueForm();
 		} else {
 		    console.log($emptyFields);
-		    $emptyFields.parents('.form-group').addClass('invalidInput');
+		    $emptyFields.parents('.form-group').addClass('invalidInput').removeClass('input-effect');
 		    $('#camposvacios').slideToggle();
 		    $('html, body').animate({scrollTop: $("#camposvacios").offset().top}, 200);
 		}
@@ -55,7 +55,11 @@ $(document).ready(function(){
 	$(".form-group input").focus(function () {
 		$(this).siblings('.miniLabel').addClass('visible');
 		$(this).parents('.form-group').addClass('active');
-		$(this).removeAttr('placeholder');
+		$(this).value == '';
+	});
+	$(".form-group input").blur(function () {
+		$(this).siblings('.miniLabel').toggleClass('visible');
+		$(this).parents('.form-group').toggleClass('active');
 	});
 
 	// boton de ver portabilidad tiene clase on form click
