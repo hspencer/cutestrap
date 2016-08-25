@@ -1,6 +1,7 @@
 // js layer para prototipos WOM
 // version nunjucks!
 // dependencias: muchas, checar gulpfile
+// 
 
 $(document).ready(function(){
 
@@ -69,7 +70,7 @@ $(document).ready(function(){
 		  // hay que ponerle 5 pixeles mas porque el skew hace que se vea más cortito
 		  var valueOffset = '5';
 		  var valueWidth = (+value) + (+valueOffset);
-		  bar.animate({width: "100%"}, 500).delay('420').animate({width: valueWidth + "%"}, 1600);
+		  bar.animate({width: "100%"}, 750).delay('200').animate({width: valueWidth + "%"}, 1600);
 		});
 	});
 
