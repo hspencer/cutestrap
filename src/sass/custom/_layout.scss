@@ -699,11 +699,11 @@ ul {
 
 .photoUpload {
   margin-bottom: 30px;
+  overflow: hidden;
 }
 .photoUpload img.ico {
   position: relative;
   top: 8px;
-  right: 15px;
 }
 .validInput,
 .invalidInput {

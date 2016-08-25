@@ -15,7 +15,7 @@
   <!-- You write code for this content block in another file -->
   
 
-	<nav class="navbar navbar-default navbar-main navbar-centered" role="navigation">
+<nav class="navbar navbar-default navbar-main navbar-centered" role="navigation">
 	<!-- Brand and toggle get grouped for better mobile display -->
 	<div class="navbar-header">
 
@@ -60,74 +60,162 @@
 	</div>
 </nav>
 
-	<header>
-		<div class="bg-modulo modulo-portabilidad">
-			<div class="container">
-			  <h3 class="ta-center white fw-semibold uc">Mejora tu prepago</h3>
-			  <h4 class="ta-center fw-normal white fs-base">Es momento de abandonar el Darkside. ¡Comenzemos la portabilidad para únirte al lado de la conveniencia!</h4>
-			</div>
-		</div>		
-	</header>
+<header>
+	<div class="bg-modulo modulo-portabilidad">
+		<div class="container">
+			<h3 class="ta-center white fw-semibold uc">Mejora tu prepago</h3>
+			<h4 class="ta-center fw-normal white fs-base">Es momento de abandonar el Darkside. ¡Comenzemos la portabilidad para únirte al lado de la conveniencia!</h4>
+		</div>
+	</div>		
+</header>
 
-	<div class="bajada-morada">
-		<ul id="stepper_portabilidad">
-			<li class="active"><span>1</span></li>
-			<li><span>2</span></li>
-			<li><span>3</span></li>
-			<li><span>4</span></li>
-			<li><span>5</span></li>
-		</ul>
-	</div>
+<div class="bajada-morada">
+	<ul id="stepper_portabilidad">
+		<li class="active"><span>1</span></li>
+		<li><span>2</span></li>
+		<li><span>3</span></li>
+		<li><span>4</span></li>
+		<li><span>5</span></li>
+	</ul>
+</div>
 
-	<div id="camposvacios" class="alert alert-danger" role="alert" style="display: none;">
-      <strong>Uno o más campos están vacíos</strong>. Recuerda que toda la información es necesaria.
-    </div>
+<div id="camposvacios" class="alert alert-danger" role="alert" style="display: none;">
+	<strong>Uno o más campos están vacíos</strong>. Recuerda que toda la información es necesaria.
+</div>
 
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-12">
-				<form id="portateForm" class="nopadding">
-					<div id="portateForm-paso1">
-						<h4 class="fw-semibold ">INGRESA LOS DATOS PARA COMENZAR EL PROCESO DE PORTABILIDAD</h4>
-						<div class="form-group">
-							<label class="select fw-normal">
-								<select>
-									<option disabled="disabled" selected="selected">Compañia actual</option>
-									<option>Option 1</option>
-									<option>Option 2</option>
-									<option>Option 3</option>
-								</select>
-							</label>
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+			<form id="portateForm" class="nopadding">
+				
+				<div id="portateForm-paso1">
+					<h4 class="fw-semibold ">INGRESA LOS DATOS PARA COMENZAR EL PROCESO DE PORTABILIDAD</h4>
+					<div class="form-group">
+						<label class="select fw-normal">
+							<select>
+								<option disabled="disabled" selected="selected">Compañia actual</option>
+								<option>Option 1</option>
+								<option>Option 2</option>
+								<option>Option 3</option>
+							</select>
+						</label>
+					</div>
+					<div class="form-group">
+						<span class="miniLabel">Número de celular</span>
+						<input type="textnumber" class="form-control" id="numerocelular" placeholder="Número de celular" onfocus="$(this).val('569');">
+					</div>
+					<div class="form-group">
+						<span class="miniLabel">IMEI</span>
+						<input type="text" class="form-control" id="imeicelular" placeholder="IMEI">
+						<p class="help-block fs-small skew">Para obtener el IMEI marca *#06# desde tu celular.</p>
+					</div>
+					<div class="form-group">
+						<span class="miniLabel">Número de serie</span>
+						<input type="text" class="form-control" id="seriecelular" placeholder="Numero de serie">
+						<p class="help-block fs-small skew">Revisa en la sección ajustes o configuración el número de serie de tu celular.</p>
+					</div>
+					<div class="row ta-center">
+						<p><button type="button" class="btn btn-lg btn-primary nextStep">Continuar</button></p>
+					</div>
+				</div>
+
+				<div id="portateForm-paso2">
+					<h4 class="fw-semibold morado-plain">DATOS DE UN WOMER</h4>
+					<div class="form-group">
+						<span class="miniLabel">Nombre</span>
+						<input type="text" class="form-control" id="nombre" placeholder="Nombre">
+					</div>
+					<div class="form-group">
+						<span class="miniLabel">Apellido</span>
+						<input type="text" class="form-control" id="apellido" placeholder="Apellido">
+					</div>
+					<div class="form-group">
+						<span class="miniLabel">RUT</span>
+						<input type="text" class="form-control" id="rut" placeholder="Rut">
+					</div>
+					<div class="form-group">
+						<span class="miniLabel">Email</span>
+						<input type="text" class="form-control" id="email" placeholder="Email">
+					</div>
+					<div class="form-group">
+						<span class="miniLabel">Teléfono</span>
+						<input type="text" class="form-control" id="telefono" placeholder="Teléfono">
+					</div>
+					<h4 class="fw-semibold morado-plain">¿DÓNDE VIVES?</h4>
+					<div class="form-group">
+						<span class="miniLabel">Dirección</span>
+						<input type="text" class="form-control" id="direccion" placeholder="Dirección">
+					</div>
+					<div class="form-group">
+						<span class="miniLabel">Número</span>
+						<input type="text" class="form-control" id="numero" placeholder="Número">
+					</div>
+					<div class="form-group">
+						<span class="miniLabel">Departamento</span>
+						<input type="text" class="form-control" id="departamento" placeholder="Departamento">
+					</div>
+					<div class="form-group">
+						<label class="select fw-normal">
+							<select>
+								<option disabled="disabled" selected="selected">Comuna</option>
+								<option>Comuna 0</option>
+								<option>Comuna 1</option>
+								<option>Comuna 2</option>
+								<option>Comuna 3</option>
+								<option>Comuna 4</option>
+							</select>
+						</label>
+					</div>
+					<div class="form-group">
+						<label class="select fw-normal">
+							<select>
+								<option disabled="disabled" selected="selected">Region</option>
+								<option>Region 0</option>
+								<option>Region 1</option>
+								<option>Region 2</option>
+								<option>Region 3</option>
+								<option>Region 4</option>
+							</select>
+						</label>
+					</div>
+					<h4 class="fw-semibold morado-plain uc">CÉDULA DE IDENTIDAD</h4>
+					<div class="form-group">
+						<span class="miniLabel">Ingresa n° de serie/documento de tu cédula de identidad</span>
+						<input type="text" class="form-control" id="cedula" placeholder="Ingresa n° de serie/documento de tu cédula de identidad"></input>
+						<p class="help-block fs-small skew">El número de serie de tu cédula se encuentra al reverso, mientras que el número de documento en cédulas nuevas esta junto a tu fecha de nacimiento.</p>
+					</div>
+					<h5 class="fw-small fw-semibold morado-plain ta-center">A continuación, necesitamos la imagen de tu CI. ¿Lo tienes a mano?</h5>
+					<div class="photoUpload">
+						<div class="col-xs-10 nomargin">
+							<div class="form-group"><span class="miniLabel">Adjunta cara frontal de tu CI</span>
+								<input onclick="$('#modal').show();" type="text" class="form-control" id="reversa" placeholder="Adjunta cara frontal de tu CI">
+							</div>
 						</div>
-
-						<div class="form-group">
-							<span class="miniLabel">Número de celular</span>
-							<input type="textnumber" class="form-control" id="numerocelular" placeholder="Número de celular" onfocus="$(this).val('569');">
+						<div class="col-xs-2 nopadding">
+							<img class="ico" src="../../womstrap/wom-base/img/icons/ico-camara.svg" alt="">
 						</div>
-
-						<div class="form-group">
-							<span class="miniLabel">IMEI</span>
-							<input type="text" class="form-control" id="imeicelular" placeholder="IMEI">
-							<p class="help-block fs-small skew">Para obtener el IMEI marca *#06# desde tu celular.</p>
+						<div class="col-xs-10 nomargin">
+							<div class="form-group"><span class="miniLabel">Adjunta cara frontal de tu CI</span>
+								<input onclick="$('#modal').show();" type="text" class="form-control" id="reversa" placeholder="Adjunta cara trasera de tu CI">
+							</div>
 						</div>
-
-						<div class="form-group">
-							<span class="miniLabel">Número de serie</span>
-							<input type="text" class="form-control" id="seriecelular" placeholder="Numero de serie">
-							<p class="help-block fs-small skew">Revisa en la sección ajustes o configuración el número de serie de tu celular.</p>
-						</div>
-
-						<div class="row ta-center">
-							<p><button type="button" class="btn btn-lg btn-primary nextStep">Continuar</button></p>
+						<div class="col-xs-2 nopadding">
+							<img class="ico" src="../../womstrap/wom-base/img/icons/ico-camara.svg" alt="">
 						</div>
 					</div>
-				</form>
+					<div class="row ta-center">
+						<p><button type="button" class="btn btn-lg btn-primary nextStep">Continuar</button></p>
+					</div>
+				</div>
 
-			</div>      
+				
+
+
+			</form>
 		</div>
 	</div>
-
-	<footer class="main-foot">
+</div>
+<footer class="main-foot">
   <div class="container">
     <div class="row">
       <div class="ta-center">

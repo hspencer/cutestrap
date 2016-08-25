@@ -3041,30 +3041,31 @@ if (typeof jQuery === 'undefined') {
 // dependencias: muchas, checar gulpfile
 
 $(document).ready(function(){
+
         
 	// super-mega-simple client-side form validator
 	function validateForm() {
 		var $fields = $(".form-control");
 		var $emptyFields = $fields.filter(function() {
-	    return $.trim(this.value) === "";
-	});
+	    return $.trim(this.value) === "";});
+
+	    function continueForm() {
+	    	alert('GO!');
+	    	return false;
+	    }
 		if (!$emptyFields.length) {
-		    alert('Formulario completado con éxito! :)');
+			//if form is ok...
+			continueForm();
 		} else {
 		    console.log($emptyFields);
 		    $emptyFields.parents('.form-group').addClass('invalidInput');
 		    $('#camposvacios').slideToggle();
 		}
 	}
-	//if form is ok...
-	function continueWithForm() {
-		alert('GO!');
-		return false;
-	}
 
 	// run form validator on click
-	$("#portateForm .nextStep").click(function () {
-	  continueWithForm();
+	$("#portateForm .nextStep:not(.disabled)").click(function () {
+	  validateForm();
 	  return false;
 	});
 
