@@ -3059,9 +3059,9 @@ $(document).ready(function(){
 	    	// deshabilita este boton
 	    	$($thisStep).find('.nextStep').addClass('disabled');
 	    	// oculta este paso
-	    	$($thisStep).slideUp();
+	    	$($thisStep).slideUp('1200');
 	    	// muestra el paso siguiente
-	    	$('#portateForm-' + $nextStep).slideDown();
+	    	$('#portateForm-' + $nextStep).slideDown('1200');
 	    	// habilita el boton a paso siguiente
 	    	$('#portateForm-' + $nextStep).find('.nextStep').removeClass('disabled');
 	    	// anima el DOM hasta el stepper
