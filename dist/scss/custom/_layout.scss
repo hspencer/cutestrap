@@ -1377,16 +1377,16 @@ ul {
   opacity: 0;
 }
   .gigaMeasures li .graphHolder .gigas-bar:nth-child(1) {
-    -webkit-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in;
   }
   .gigaMeasures li .graphHolder .gigas-bar:nth-child(2) {
-    -webkit-transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in;
   }
   .gigaMeasures li .graphHolder .gigas-bar:nth-child(3) {
-    -webkit-transition: all 2s ease-in-out;
+    -webkit-transition: all 2s ease-in;
   }
   .gigaMeasures li .graphHolder .gigas-bar:nth-child(4) {
-    -webkit-transition: all 3s ease-in-out;
+    -webkit-transition: all 3s ease-in;
   }
 .gigaMeasures li .graphHolder .gigas-bar.visible {
   opacity: .65;

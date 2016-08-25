@@ -80,24 +80,44 @@ $(document).ready(function(){
 	});
 
 	// interacciones para el wizard de planes
+		
 		// goto Next Step
 		function wizardGo () {
-			$currentStep = $('#wizardPlanes .wizardPlanes-pasos:visible');
-			nextStep = $currentStep.attr('data-nextStep');
+			$currentStep = $('#wizardPlanes .wizardPlanes-pasos').filter(':visible');
+			nextStep = $currentStep.last().attr('data-nextStep');
+			console.log($currentStep);
+			console.log(nextStep);
 			$('#wizardPlanes-' + nextStep).slideDown();
 			// anima el DOM hasta el paso que viene
 	    	$('html, body').animate({scrollTop: $('#wizardPlanes-' + nextStep).offset().top}, 500);
 		}
-		// evt handler
-		$('#wizardPlanes a.continueWizard').click(function() {
-			wizardGo();
-		});
+
+		// super-mega-simple client-side form validator and form next step enabler
+		// version wizard
+		function wizardValidate() {
+			var $fields = $('#wizardPlanes a.graphButton');
+			var $okfields = $fields.filter('.selected');
+			var resultfields = $okfields.length;
+			if (resultfields == 4) {
+				wizardGo();
+			} 
+		}
+
 		// for graph buttons
 		$('#wizardPlanes a.graphButton').click(function () {
 			$(this).parents('.gigaMeasures').find('a.graphButton').removeClass('selected');
 			$(this).addClass('selected');
 			return false;
 		});
+		
+		// evt handlers
+		$('#wizardPlanes .continueWizard').click(function() {
+			wizardGo();
+		});
+		$('#wizardPlanes .continueAndValidateWizard').click(function() {
+			wizardValidate();
+		});
+		
 
 		// animando graph bars en wizard-appendix modules
 		// DEPENDSON inview.js - migrar a wow quiza?
