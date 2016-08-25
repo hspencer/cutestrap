@@ -263,15 +263,13 @@ ul {
     padding: 0 0 30px;
 }
 .modulo-morado small {
-  line-height: 125%;
+  display: block;
+  margin: 0;
 }
 .modulo-morado .svg-blanco {
   background: rgba(145,2,168,1);
   padding: 5px;
-  margin-top: -25px;
-}
-.svg-blanco {
-  max-width: 105%;
+  margin: 5px 0 0 0;
 }
 .modulo-morado h4,
 .modulo-morado h6 {
@@ -1136,6 +1134,19 @@ ul {
   float: right;
   margin-top: 6px;
   font-size: 2rem;
+}
+
+.bannerText {
+  margin: 15px 0;
+}
+
+.bannerText ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.bannerText .fa-check {
+  margin-right: 10px;
 }
 
 .consumoBars {
