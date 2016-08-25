@@ -122,6 +122,9 @@ ul {
 }
 
 /** helper classes*/
+.no-underline {
+  text-decoration: none;
+}
 .morado-plain {
   color: $quaternary;
 }
@@ -1102,31 +1105,37 @@ ul {
 .ver-saldo-actual {
 }
 
-.saldo-actual-detalles {
+.saldo-data-table {
   position: relative;
   list-style-type: none;
   border: 1px solid #CCC;
   margin: 15px 0;
 }
 
-.saldo-actual-detalles li {
+.saldo-data-table li {
   padding: 7px;
   line-height: 175%;
   border-bottom: 1px solid #CCC;
 }
 
-  .saldo-actual-detalles li:last-of-type {
+  .saldo-data-table li:last-of-type {
     border-bottom: 0;
   }
 
-.saldo-actual-detalles .btn.ver-historial {
+.saldo-data-table .btn.ver-historial {
   position: absolute;
   right: 5px;
   bottom: 5px;
 }
 
-.saldo-actual-detalles li .big {
+.saldo-data-table li .big {
   display: block;
+}
+
+.saldo-data-table li i.fa.fa-check-circle {
+  float: right;
+  margin-top: 6px;
+  font-size: 2rem;
 }
 
 .consumoBars {
