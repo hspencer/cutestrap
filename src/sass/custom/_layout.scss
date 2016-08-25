@@ -903,11 +903,11 @@ ul {
 /* recargas */
 
 .select-phone {
-  margin-top: 20px;
+
 }
 
 .form-control.select-caret {
-  font-size: 2.2rem;
+  font-size: 1.65rem;
   border: 1px solid #CCC;
   border-radius: 5px;
   padding: 10px 10px;
@@ -1197,6 +1197,7 @@ ul {
   width: 50%;
   line-height: 160%;
   height: 50px;
+  border: none;
 }
 .btn-group.saldo-recarga-ahora .btn.saldo-money {
   line-height: 0;
@@ -1207,14 +1208,24 @@ ul {
 .bolsaPicker {
   margin: 15px 0;
 }
-
+.bolsaPicker.bolsaSelected .item img {
+  display: inline-block;
+}
+.bolsaPicker.bolsaSelected .item .item-container > span {
+  display: block;
+}
+.bolsaPicker.bolsaSelected .item .btn.btn-primary {
+  margin: 10px 0;
+}
 .bolsaPicker h5 {
   color: #666;
 }
 
-.bolsaPicker .item {
-
-}
+  .bolsaPicker.bolsaSelected .item > .item-container {
+    border-radius: 5px;
+    border: 1px solid #CCC;
+    padding: 5px 2px;
+  }
 
 .bolsaPicker .item a {
   border-radius: 5px;
@@ -1231,6 +1242,7 @@ ul {
 }
 
   .bolsaPicker .row:nth-child(2) {margin-bottom: 10px;}
+  .bolsaPicker.bolsaSelected .row:nth-child(2) {margin-bottom: 30px;}
 
 #bolsas-destacadas-carousel {margin-top: 15px;}
 
