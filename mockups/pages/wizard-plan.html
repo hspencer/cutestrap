@@ -1,0 +1,60 @@
+{% extends "layout.nunjucks" %}
+{% set title = "Wizard de Planes" %}
+
+{% block content %}
+
+	{% include "partials/navbar.html" %}
+
+	<header>
+		<div class="bg-modulo bg-modulo-short modulo-portabilidad">
+			<div class="container">
+				<h3 class="ta-center white fw-semibold uc" style="margin-top: 140px">Busquemos el plan más conveniente</h3>
+				<h4 class="ta-center fw-normal white fs-base">Te ayudamos a <br>elegir un plan conveniente<br> junto a un equipo</h4>
+			</div>
+		</div>
+	</header>
+
+	
+	<div id="wizardPlanes">
+		<div class="container">
+			<div id="wizardPlanes-paso1" class="wizardPlanes-pasos">
+				<div class="row">
+					<div class="col-xs-12">
+						<h4 class="morado-plain uc fw-semibold nopadding">¿Qué tipo de WOMER eres?</h4>
+						<p class="nopadding">Selecciona tu tipo de WOMER</p>
+					</div>
+				</div>
+				<div class="row fs-small ta-center">
+					<div class="col-xs-3 nopadding fw-semibold">
+						<a href="#" onclick="return false;">
+							<i class="fa fa-book"></i>
+							<span class="wizardLabel">WOMER<br>Estudiante</span>
+						</a>
+					</div>
+					<div class="col-xs-3 nopadding fw-semibold">
+						<a href="#" onclick="return false;">
+							<i class="fa fa-comment-o"></i>
+							<span class="wizardLabel">WOMER<br>Redes Sociales</span>
+						</a>
+					</div>
+					<div class="col-xs-3 nopadding fw-semibold">
+						<a href="#" onclick="return false;">
+							<i class="fa fa-gamepad"></i>
+							<span class="wizardLabel">WOMER<br>Gamer</span>
+						</a>
+					</div>
+					<div class="col-xs-3 nopadding fw-semibold">
+						<a href="#" onclick="return false;">
+							<i class="fa fa-envelope"></i>
+							<span class="wizardLabel">WOMER<br>Trabajador</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	{% include "partials/footer.html" %}
+{% endblock %}

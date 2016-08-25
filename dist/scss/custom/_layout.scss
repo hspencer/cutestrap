@@ -1261,6 +1261,50 @@ ul {
   width: 30px;
 }
 
+/* Wizard para elegir plan + equipo */
+
+#wizardPlanes {
+  background: rgba(255,255,255,1);
+  background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(236,236,236,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(236,236,236,1)));
+  background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(236,236,236,1) 100%);
+  background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(236,236,236,1) 100%);
+  background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(236,236,236,1) 100%);
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(236,236,236,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ececec', GradientType=0 );
+  padding-bottom: 30px;
+}
+
+#wizardPlanes .wizardPlanes-pasos {}
+#wizardPlanes #wizardPlanes-paso1 i.fa {
+  display: block;
+  font-size: 3rem;
+  background-color: white;
+  border-radius: 100%;
+  border: 1px solid #CCC;
+  width: 50px;
+  padding: 7px 0;
+  margin: 0 auto 10px;
+  line-height: 110%;
+  transition: all .3s ease-out;
+}
+  #wizardPlanes #wizardPlanes-paso1 a:hover i.fa,
+  #wizardPlanes #wizardPlanes-paso1 a:focus i.fa {
+    -webkit-transform: scale(1.2);
+    background-color: $quaternary;
+    color: white;
+  }
+#wizardPlanes a {
+  text-decoration: none;
+}
+  #wizardPlanes #wizardPlanes-paso1 a:hover .wizardLabel,
+  #wizardPlanes #wizardPlanes-paso1 a:focus .wizardLabel {
+    color: $quaternary;
+  }
+#wizardPlanes a .wizardLabel {
+  color: #666;
+}
+
 /* womstrap wells: general override; */
 
 .well {
