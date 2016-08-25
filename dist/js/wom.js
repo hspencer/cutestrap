@@ -3127,7 +3127,7 @@ $(document).ready(function(){
 	    	$('html, body').animate({scrollTop: $('#wizardPlanes-' + nextStep).offset().top}, 500);
 		}
 		// evt handler
-		$('#wizardPlanes a:not(.finWizard)').click(function() {
+		$('#wizardPlanes a.continueWizard').click(function() {
 			wizardGo();
 		});
 		// for graph buttons
