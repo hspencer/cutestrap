@@ -55,10 +55,9 @@ $(document).ready(function(){
 	$(".form-group input").focus(function () {
 		$(this).siblings('.miniLabel').addClass('visible');
 		$(this).parents('.form-group').addClass('active');
-		$(this).value == '';
+		$(this).removeAttr('placeholder');
 	});
 	$(".form-group input").blur(function () {
-		// [this is bad UX yo creo] $(this).siblings('.miniLabel').toggleClass('visible');
 		$(this).parents('.form-group').toggleClass('active');
 	});
 
