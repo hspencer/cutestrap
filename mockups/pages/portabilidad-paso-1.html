@@ -1,0 +1,77 @@
+{% extends "layout.nunjucks" %}
+{% set title = "Portabilidad - Portate Form multiples pasos" %}
+
+{% block content %}
+
+	{% include "partials/navbar.html" %}
+
+	<header>
+		<div class="bg-modulo modulo-portabilidad">
+			<div class="container">
+			  <h3 class="ta-center white fw-semibold uc">Mejora tu prepago</h3>
+			  <h4 class="ta-center fw-normal white fs-base">Es momento de abandonar el Darkside. ¡Comenzemos la portabilidad para únirte al lado de la conveniencia!</h4>
+			</div>
+		</div>		
+	</header>
+
+	<div class="bajada-morada">
+		<ul id="stepper_portabilidad">
+			<li class="active"><span>1</span></li>
+			<li><span>2</span></li>
+			<li><span>3</span></li>
+			<li><span>4</span></li>
+			<li><span>5</span></li>
+		</ul>
+	</div>
+
+	<div id="camposvacios" class="alert alert-danger" role="alert" style="display: none;">
+      <strong>Uno o más campos están vacíos</strong>. Recuerda que toda la información es necesaria.
+    </div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<form id="portateForm" class="nopadding">
+					<div id="portateForm-paso1">
+						<h4 class="fw-semibold ">INGRESA LOS DATOS PARA COMENZAR EL PROCESO DE PORTABILIDAD</h4>
+						<div class="form-group">
+							<label class="select fw-normal">
+								<select>
+									<option disabled="disabled" selected="selected">Compañia actual</option>
+									<option>Option 1</option>
+									<option>Option 2</option>
+									<option>Option 3</option>
+								</select>
+							</label>
+						</div>
+
+						<div class="form-group">
+							<span class="miniLabel">Número de celular</span>
+							<input type="textnumber" class="form-control" id="numerocelular" placeholder="Número de celular" onfocus="$(this).val('569');">
+						</div>
+
+						<div class="form-group">
+							<span class="miniLabel">IMEI</span>
+							<input type="text" class="form-control" id="imeicelular" placeholder="IMEI">
+							<p class="help-block fs-small skew">Para obtener el IMEI marca *#06# desde tu celular.</p>
+						</div>
+
+						<div class="form-group">
+							<span class="miniLabel">Número de serie</span>
+							<input type="text" class="form-control" id="seriecelular" placeholder="Numero de serie">
+							<p class="help-block fs-small skew">Revisa en la sección ajustes o configuración el número de serie de tu celular.</p>
+						</div>
+
+						<div class="row ta-center">
+							<p><button type="button" class="btn btn-lg btn-primary nextStep">Continuar</button></p>
+						</div>
+					</div>
+				</form>
+
+			</div>      
+		</div>
+	</div>
+
+	{% include "partials/footer.html" %}
+
+{% endblock %}

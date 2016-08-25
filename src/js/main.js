@@ -18,9 +18,15 @@ $(document).ready(function(){
 		    $('#camposvacios').slideToggle();
 		}
 	}
+	//if form is ok...
+	function continueWithForm() {
+		alert('GO!');
+		return false;
+	}
+
 	// run form validator on click
-	$("#nextStep").click(function () {
-	  validateForm();
+	$("#portateForm .nextStep").click(function () {
+	  continueWithForm();
 	  return false;
 	});
 
