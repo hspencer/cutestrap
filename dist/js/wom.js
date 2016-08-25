@@ -3091,7 +3091,8 @@ $(document).ready(function(){
 
 	// minilabels toggle on input focus
 	$(".form-group input").focus(function () {
-		$(this).siblings('.miniLabel').fadeIn();
+		$(this).siblings('.miniLabel').addClass('visible');
+		$(this).parents('.form-group').addClass('active');
 		$(this).removeAttr('placeholder');
 	});
 

@@ -1050,11 +1050,33 @@ ul {
 }
 
 .form-group .miniLabel {
-  display: none;
+  z-index: -1;
+  top: -20px;
+  left: -40px;
+  opacity: 0;
   font-size: 12px;
   position: absolute;
-  top: -15px;
+  -webkit-transition: all .4s ease-out;
 }
+.form-group .miniLabel.visible {
+  -webkit-transform: translate(40px, 0);
+  opacity: 1;
+}
+  .form-group.input-effect:after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 100;
+    width: 0%;
+    height: 2px;
+    background-color: $quaternary;
+    top: 36px;
+    left: 0;
+    -webkit-transition: all .4s ease-out;
+  }
+  .form-group.input-effect.active:after {
+    width: 100%;
+  }
 
 /* visualizar informacion de plan */
 
