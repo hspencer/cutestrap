@@ -84,8 +84,9 @@ $(document).ready(function(){
 		function wizardGo () {
 			$currentStep = $('#wizardPlanes .wizardPlanes-pasos:visible');
 			nextStep = $currentStep.attr('data-nextStep');
-			$currentStep.slideUp();
 			$('#wizardPlanes-' + nextStep).slideDown();
+			// anima el DOM hasta el paso que viene
+	    	$('html, body').animate({scrollTop: $('#wizardPlanes-' + nextStep).offset().top}, 500);
 		}
 		// evt handler
 		$('#wizardPlanes a:not(.finWizard)').click(function() {

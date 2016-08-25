@@ -1298,7 +1298,9 @@ ul {
   padding-bottom: 30px;
 }
 
-#wizardPlanes .wizardPlanes-pasos {}
+#wizardPlanes .wizardPlanes-pasos {
+  margin: 0 0 30px 0;
+}
 #wizardPlanes #wizardPlanes-paso1 i.fa {
   display: block;
   font-size: 3rem;
@@ -1345,6 +1347,12 @@ ul {
 .gigaMeasures li {
   display: inline-block;
   width: 19%;
+}
+.gigaMeasures li .graphButton.selected .graphHolder {
+  background-color: $quaternary;
+}
+.gigaMeasures li .graphButton.selected .graphHolder .gigas-bar {
+  background-color: white;
 }
 .gigaMeasures li .graphHolder {
   border: 1px solid #CCC;
