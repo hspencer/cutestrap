@@ -3101,16 +3101,36 @@ $(document).ready(function(){
 	});
 
 	// progressbars animadas (primero a 100, luego a aria-value)
+	// DEPENDSON inview.js - migrar a wow quiza?
 	$('.consumoBars').one('inview', function(event, isInView) {
 	   	$(this).find('.progress.progress-animated').each(function() {
-		  var bar = $(this).children('.progress-bar');
-		  var value = bar.attr('aria-valuenow');
+		  bar = $(this).children('.progress-bar');
+		  value = bar.attr('aria-valuenow');
 		  // hay que ponerle 5 pixeles mas porque el skew hace que se vea más cortito
-		  var valueOffset = '5';
-		  var valueWidth = (+value) + (+valueOffset);
+		  valueOffset = '5';
+		  valueWidth = (+value) + (+valueOffset);
 		  bar.animate({width: "100%"}, 750).delay('200').animate({width: valueWidth + "%"}, 1600);
 		});
 	});
+
+	// interacciones para el wizard de planes
+		// goto Next Step
+		function wizardGo () {
+			$currentStep = $('#wizardPlanes .wizardPlanes-pasos:visible');
+			nextStep = $currentStep.attr('data-nextStep');
+			$currentStep.slideUp();
+			$('#wizardPlanes-' + nextStep).slideDown();
+		}
+		// evt handler
+		$('#wizardPlanes a:not(.finWizard)').click(function() {
+			wizardGo();
+		});
+
+		// animando graph bars en wizard-appendix modules
+		// DEPENDSON inview.js - migrar a wow quiza?
+			$('.wizardPlanes-pasos .wizard-appendix .gigas-bar').one('inview', function(event, isInView) {
+				$(this).addClass('visible');
+			});
 
 	// cerrar nav si clicas afuera [desactivado – choca con el resto del js porque los selectores son super genericos]
 	// $('body > *').not('nav').click(function() {
