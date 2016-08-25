@@ -3065,9 +3065,7 @@ $(document).ready(function(){
 	    	// habilita el boton a paso siguiente
 	    	$('#portateForm-' + $nextStep).find('.nextStep').removeClass('disabled');
 	    	// anima el DOM hasta el stepper
-	    	$('html, body').animate({
-		        scrollTop: $("#stepper_portabilidad").offset().top
-		    }, 500);
+	    	$('html, body').animate({scrollTop: $("#stepper_portabilidad").offset().top - 30}, 500);
 		    // cancela form button
 	    	return false;
 	    }
