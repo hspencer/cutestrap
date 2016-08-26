@@ -82,13 +82,8 @@ $(document).ready(function(){
 	// interacciones para el wizard de planes
 		// goto Next Step
 		function wizardGo () {
-<<<<<<< HEAD
 			$currentStep = $('#wizardPlanes .wizardPlanes-pasos').filter(':visible');
 			nextStep = $currentStep.last().attr('data-nextStep');
-=======
-			$currentStep = $('#wizardPlanes .wizardPlanes-pasos:visible');
-			nextStep = $currentStep.attr('data-nextStep');
->>>>>>> 66e85e45576ad3f97b8fbc83c0b6c4c5cfc6750d
 			$('#wizardPlanes-' + nextStep).slideDown();
 			// anima el DOM hasta el paso que viene
 	    	$('html, body').animate({scrollTop: $('#wizardPlanes-' + nextStep).offset().top}, 500);
