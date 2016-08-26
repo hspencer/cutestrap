@@ -1402,10 +1402,15 @@ ul {
   width: 19%;
 }
 .gigaMeasures li .graphButton.selected .graphHolder {
-  background-color: $quaternary;
+  border-color: $quaternary;
 }
+  .gigaMeasures li:first-of-type .graphButton.selected .graphHolder {
+    background-color: white;
+    border-color: $quaternary;
+  }
 .gigaMeasures li .graphButton.selected .graphHolder .gigas-bar {
-  background-color: white;
+  background-color: $quaternary;
+  opacity: 1;
 }
 .gigaMeasures li .graphHolder {
   border: 1px solid #CCC;
@@ -1417,7 +1422,7 @@ ul {
   padding: 0 2px;
 }
 .gigaMeasures li .graphHolder .gigas-bar {
-  background-color: $quaternary;
+  background-color: #666;
   display: inline-block;
   height: 8px;
   vertical-align: bottom;
@@ -1425,19 +1430,19 @@ ul {
   opacity: 0;
 }
   .gigaMeasures li .graphHolder .gigas-bar:nth-child(1) {
-    -webkit-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in;
   }
   .gigaMeasures li .graphHolder .gigas-bar:nth-child(2) {
-    -webkit-transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in;
   }
   .gigaMeasures li .graphHolder .gigas-bar:nth-child(3) {
-    -webkit-transition: all 2s ease-in-out;
+    -webkit-transition: all 2s ease-in;
   }
   .gigaMeasures li .graphHolder .gigas-bar:nth-child(4) {
-    -webkit-transition: all 3s ease-in-out;
+    -webkit-transition: all 3s ease-in;
   }
 .gigaMeasures li .graphHolder .gigas-bar.visible {
-  opacity: 1;
+  opacity: .65;
 }
 .gigaMeasures li .gigas-bar-label {
   display: block;
