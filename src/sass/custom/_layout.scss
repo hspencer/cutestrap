@@ -1,3 +1,7 @@
+/*Home - Test Styles*/
+
+
+/* portabilidad */
 
 .bg-portabilidad{
     background-color: transparent;
@@ -196,7 +200,6 @@ ul {
 .pr-10 {padding-right:10px;}
 .pr-30 {padding-right: 30px !important;}
 .pr-40 {padding-right: 40px !important;}
-
 .mt-10 {margin-top: 10px !important;}
 .mr-10 {margin-right: 10px !important;}
 .mb-10 {margin-bottom: 10px !important;}
@@ -1485,14 +1488,14 @@ ul {
   width: 19%;
 }
 .gigaMeasures li .graphButton.selected .graphHolder {
-  border-color: $quaternary;
+  background-color: $quaternary;
 }
   .gigaMeasures li:first-of-type .graphButton.selected .graphHolder {
     background-color: white;
     border-color: $quaternary;
   }
 .gigaMeasures li .graphButton.selected .graphHolder .gigas-bar {
-  background-color: $quaternary;
+  background-color: white;
   opacity: 1;
 }
 .gigaMeasures li .graphHolder {
