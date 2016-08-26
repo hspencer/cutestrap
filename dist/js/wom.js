@@ -3139,7 +3139,7 @@ $(document).ready(function(){
 		function endWizardPlanes () {
 			$('.wizardPlanes-pasos:not(.pasoFinal)').slideUp();
 			$('.wizardPlanes-pasos.wizard-pasoFinal').slideDown();
-			$('html, body').animate({scrollTop: $('.wizardPlanes-pasos.wizard-pasoFinal').offset().top}, 500);
+			$('html, body').animate({scrollTop: $('header h3').offset().top}, 500);
 		}
 
 		// evt handlers
