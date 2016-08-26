@@ -16,36 +16,28 @@
 
 <div class="container">
 	<div class="row">
-		<div class="col-xs-12 select-phone">
-			<select class="form-control select-caret fw-bold">
-			  <option selected>+56 988776655</option>
-			  <option>2</option>
-			  <option>3</option>
-			  <option>4</option>
-			  <option>5</option>
-			</select>
-		</div>
-	</div>
+		{% include "partials/private-selector-bolsas.html" %}
 	<div class="row ta-center">
 		<div class="col-xs-12">
 			<div class="modulo-saldo">
-				<h4 class="fw-normal nopadding">Tu saldo actual:</h4>
-				<h2 class="modulo-saldo-cash">
+				<h4 class="fw-normal nopadding creamy-red fs-smalish">Tu saldo actual:</h4>
+				<h2 class="modulo-saldo-cash fw-semibold">
 					<small>$</small>7.000
 				</h2>
-				<h4 class="fw-normal nopadding">Tu recarga promedio mensual es de:</h4>
+				<h4 class="fw-normal nopadding fs-smalish">Tu recarga promedio mensual es de:</h4>
 				<h2 class="modulo-saldo-promedio">
-					<small>$</small><span class="fw-normal">20.000</span>
+					<small>$</small><span class="fw-semibold">20.000</span>
 				</h2>
 			</div>
 		</div>
 	</div>
-	<div class="row ta-center">
+	<div class="ta-center">
 		<div class="col-xs-12">
 			<div class="well modulo-planes-convenientes">
-				<p>Descubre un plan más conveniente</p>
+				<i class="fa morado-plain ico-promo-descubre-plan pull-left"></i>
+				<p class="pull-left">Descubre un plan más conveniente</p>
 				<p>
-					<button type="button" href="#" class="btn btn-primary fs-large fw-semibold">Ver planes</button>
+					<button type="button" href="#" class="btn btn-primary fs-medium pt-10 pb-10 fw-semibold">Ver planes</button>
 				</p>
 			</div>
 		</div>
@@ -57,126 +49,15 @@
 <div class="container">
 	
 	<ul class="calendarCards">
-		<li class="item wow fadeInUp">
-			<div class="cards-head">
-				<div class="cards-head-mes uc">
-					<small>Mes Actual</small>
-					<strong>Julio</strong>
-				</div>
-				<div class="cards-head-total">
-					<strong class="fw-semibold">Total</strong>
-					<span class="fw-bold">$20.000</span>
-				</div>
-			</div>
-			<div class="cards-content">
-				<div class="cards-content-item">
-					<div class="cards-content-item-date ta-center fw-bold">
-						<span class="uc">Jul</span>
-						25
-					</div>
-					<div class="cards-content-item-desc">
-						<p>Medio de recarga</p>
-						<p class="fw-semibold">Online</p>
-					</div>
-					<div class="cards-content-item-total">
-						<p class="fw-semibold">$10.000</p>
-					</div>
-				</div>
-				<div class="cards-content-item">
-					<div class="cards-content-item-date ta-center fw-bold">
-						<span class="uc">Jul</span>
-						08
-					</div>
-					<div class="cards-content-item-desc">
-						<p>Medio de recarga</p>
-						<p class="fw-semibold">Online</p>
-					</div>
-					<div class="cards-content-item-total">
-						<p class="fw-semibold">$10.000</p>
-					</div>
-				</div>
-			</div>
-		</li>
+		
 
-		<li class="item wow fadeInUp">
-			<div class="cards-head">
-				<div class="cards-head-mes uc">
-					<strong>Mayo</strong>
-				</div>
-				<div class="cards-head-total">
-					<strong class="fw-semibold">Total</strong>
-					<span class="fw-bold">$20.000</span>
-				</div>
-			</div>
-			<div class="cards-content">
-				<div class="cards-content-item">
-					<div class="cards-content-item-date ta-center fw-bold">
-						<span class="uc">Jul</span>
-						25
-					</div>
-					<div class="cards-content-item-desc">
-						<p>Medio de recarga</p>
-						<p class="fw-semibold">Unimarc Portugal</p>
-					</div>
-					<div class="cards-content-item-total">
-						<p class="fw-semibold">$10.000</p>
-					</div>
-				</div>
-				<div class="cards-content-item">
-					<div class="cards-content-item-date ta-center fw-bold">
-						<span class="uc">Jul</span>
-						08
-					</div>
-					<div class="cards-content-item-desc">
-						<p>Medio de recarga</p>
-						<p class="fw-semibold">Cruz Verde Avda Matta</p>
-					</div>
-					<div class="cards-content-item-total">
-						<p class="fw-semibold">$10.000</p>
-					</div>
-				</div>
-			</div>
-		</li>
+		{% include "partials/private-historial-mes-actual.html" %}
 
-		<li class="item wow fadeInUp">
-			<div class="cards-head">
-				<div class="cards-head-mes uc">
-					<strong>Abril</strong>
-				</div>
-				<div class="cards-head-total">
-					<strong class="fw-semibold">Total</strong>
-					<span class="fw-bold">$20.000</span>
-				</div>
-			</div>
-			<div class="cards-content">
-				<div class="cards-content-item">
-					<div class="cards-content-item-date ta-center fw-bold">
-						<span class="uc">Jul</span>
-						25
-					</div>
-					<div class="cards-content-item-desc">
-						<p>Medio de recarga</p>
-						<p class="fw-semibold">Unimarc Portugal</p>
-					</div>
-					<div class="cards-content-item-total">
-						<p class="fw-semibold">$10.000</p>
-					</div>
-				</div>
-				<div class="cards-content-item">
-					<div class="cards-content-item-date ta-center fw-bold">
-						<span class="uc">Jul</span>
-						08
-					</div>
-					<div class="cards-content-item-desc">
-						<p>Medio de recarga</p>
-						<p class="fw-semibold">Cruz Verde Avda Matta</p>
-					</div>
-					<div class="cards-content-item-total">
-						<p class="fw-semibold">$10.000</p>
-					</div>
-				</div>
-			</div>
-		</li>
+		{% include "partials/private-historial-mes-anterior.html" %}
+
+		{% include "partials/private-historial-mes-anterior.html" %}
+
+		
 	</ul>
 
 	<div class="ta-center">
