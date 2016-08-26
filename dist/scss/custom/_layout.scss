@@ -1491,7 +1491,7 @@ ul {
   background-color: $quaternary;
 }
   .gigaMeasures li:first-of-type .graphButton.selected .graphHolder {
-    background-color: white;
+    background-color: #622761;
     border-color: $quaternary;
   }
 .gigaMeasures li .graphButton.selected .graphHolder .gigas-bar {
@@ -1508,7 +1508,7 @@ ul {
   padding: 0 2px;
 }
 .gigaMeasures li .graphHolder .gigas-bar {
-  background-color: $quaternary;
+  background-color: #622761;
   display: inline-block;
   height: 8px;
   vertical-align: bottom;
