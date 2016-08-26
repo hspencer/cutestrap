@@ -3121,9 +3121,9 @@ $(document).ready(function(){
 		// goto Next Step
 		function wizardGo () {
 			$currentStep = $('#wizardPlanes .wizardPlanes-pasos').filter(':visible');
-			nextStep = $currentStep.last().attr('data-nextStep');
-			$('#wizardPlanes-' + nextStep).slideDown();
-			// anima el DOM hasta el paso que viene
+  			nextStep = $currentStep.last().attr('data-nextStep');
+  			$('#wizardPlanes-' + nextStep).slideDown();
+  			// anima el DOM hasta el paso que viene
 	    	$('html, body').animate({scrollTop: $('#wizardPlanes-' + nextStep).offset().top}, 500);
 		}
 		// evt handler
