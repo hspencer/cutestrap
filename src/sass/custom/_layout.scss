@@ -1533,6 +1533,28 @@ ul {
   color: #666;
 }
 
+#carousel-wizardPlanes-result .carousel-inner > .item > img {
+  width: 80%;
+  height: auto;
+  margin: 10% 10% 90px 10%;
+  position: relative;
+  top: -25px;
+}
+#carousel-wizardPlanes-result .carousel-control {background: none;}
+#carousel-wizardPlanes-result .carousel-indicators li {
+ background-color: $quaternary; 
+ border: none;
+}
+#carousel-wizardPlanes-result .carousel-indicators li.active {
+  background-color: #ba007c;
+}
+
+#carousel-wizardPlanes-result .carousel-inner > .item > a.btn {
+  margin-top: -170px;
+  color: white;
+  border: none;
+}
+
 /* womstrap wells: general override; */
 
 .well {
