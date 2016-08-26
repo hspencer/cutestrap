@@ -88,9 +88,15 @@ $(document).ready(function(){
   			// anima el DOM hasta el paso que viene
 	    	$('html, body').animate({scrollTop: $('#wizardPlanes-' + nextStep).offset().top}, 500);
 		}
-		// evt handler
-		$('#wizardPlanes a:not(.finWizard)').click(function() {
+		// evt handlers
+		$('#wizardPlanes a:not(.graphButton,.finWizard)').click(function() {
 			wizardGo();
+		});
+
+		$('#wizardPlanes .graphButton').click(function() {
+			$(this).parents('.gigaMeasures').find('.graphButton').removeClass('selected');
+			$(this).toggleClass('selected');
+			return false;
 		});
 
 		// animando graph bars en wizard-appendix modules
