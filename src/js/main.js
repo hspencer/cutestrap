@@ -80,6 +80,7 @@ $(document).ready(function(){
 	});
 
 	// interacciones para el wizard de planes
+		
 		// goto Next Step
 		function wizardGo () {
 			$currentStep = $('#wizardPlanes .wizardPlanes-pasos').filter(':visible');
@@ -88,15 +89,24 @@ $(document).ready(function(){
   			// anima el DOM hasta el paso que viene
 	    	$('html, body').animate({scrollTop: $('#wizardPlanes-' + nextStep).offset().top}, 500);
 		}
+
 		// evt handlers
 		$('#wizardPlanes a:not(.graphButton,.finWizard)').click(function() {
 			wizardGo();
 		});
 
+		// wizard appendix - interaccion estándar
 		$('#wizardPlanes .graphButton').click(function() {
 			$(this).parents('.gigaMeasures').find('.graphButton').removeClass('selected');
 			$(this).toggleClass('selected');
 			return false;
+		});
+		// wizard appendix - validando
+		$('#wizardPlanes-paso2 .wizard-appendix').last().find('.graphButton').click(function () {
+			if ($('#wizardPlanes .graphButton.selected').length == 4) {
+				$('#wizardPlanes-paso2').find('a.btn-default').removeClass('disabled btn-default').addClass('btn-primary morado-chicle-bg');
+				$('#wizardPlanes-paso2').find('.stepStatus').html('OK, continuemos:').addClass('morado-chicle');
+			}
 		});
 
 		// animando graph bars en wizard-appendix modules
