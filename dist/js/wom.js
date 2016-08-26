@@ -3123,8 +3123,6 @@ $(document).ready(function(){
 		function wizardGo () {
 			$currentStep = $('#wizardPlanes .wizardPlanes-pasos').filter(':visible');
 			nextStep = $currentStep.last().attr('data-nextStep');
-			console.log($currentStep);
-			console.log(nextStep);
 			$('#wizardPlanes-' + nextStep).slideDown();
 			// anima el DOM hasta el paso que viene
 	    	$('html, body').animate({scrollTop: $('#wizardPlanes-' + nextStep).offset().top}, 500);
