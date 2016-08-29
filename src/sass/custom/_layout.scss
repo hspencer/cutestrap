@@ -1361,10 +1361,15 @@ ul {
 
 #carousel-home-nonwomers {
   background-image: url(../../mockups/img/home/fondo-carrusel-home-nonwomer.png);
-  background-position: center;
+  background-position: center top;
   background-size: 100% auto;
   background-repeat: no-repeat;
-  min-height: 536px;
+}
+
+@media only screen and (min-width: 375px)  {
+  #carousel-home-nonwomers {
+    background-position: center -35px;
+  }
 }
 
 #carousel-home-nonwomers .item .promo-slide {
@@ -1375,6 +1380,25 @@ ul {
 #carousel-home-nonwomers .item .carousel-caption {
   margin: 15px auto 50px;
   position: static;
+}
+
+#carousel-home-nonwomers .carousel-control {
+  color: white;
+  font-size: 6rem;
+  background: none;
+  opacity: 1;
+  line-height: 537px;
+}
+
+#carousel-home-nonwomers .carousel-indicators {
+  bottom: 60px;
+}
+
+#carousel-home-nonwomers .continue {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  margin-left: -34px;
 }
 
 .ico-input-money {
