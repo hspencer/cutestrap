@@ -1360,7 +1360,11 @@ ul {
 }
 
 #carousel-home-nonwomers {
-  background-color: rebeccapurple;
+  background-image: url(../../mockups/img/home/fondo-carrusel-home-nonwomer.png);
+  background-position: center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  min-height: 536px;
 }
 
 #carousel-home-nonwomers .item .promo-slide {
