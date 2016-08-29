@@ -1471,6 +1471,19 @@ ul {
   line-height: 200%;
 }
 
+#form-centro-ayuda {
+  position: relative;
+  top: -45px;
+  margin-bottom: -75px;
+}
+
+#form-centro-ayuda .form-control {
+  border: 1px solid #666;
+  background-image: url(../../mockups/img/home/ico-lupa.svg);
+  background-repeat: no-repeat;
+  background-position: 97% center
+}
+
 #paga-recarga-modulo {
   margin: 30px 0;
   display: flex;
