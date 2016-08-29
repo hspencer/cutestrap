@@ -1366,10 +1366,30 @@ ul {
 /* HOME - Non-womers */
 
 .purpleActions .list-group-item {
+  background-image: url(../../mockups/img/home/thirdButtons-bg.png);
   border-radius: 0;
-  background-color: rebeccapurple;
   color: white;
   border-color: white;
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 600% auto;
+}
+
+.purpleActions .list-group-item:last-of-type {
+  background-position: right center;
+}
+
+.purpleActions h4 {
+  color: white;
+}
+
+.purpleActions-large .list-group-item {
+  background-image: url(../../mockups/img/home/halfButtons-bg.png);
+  background-size: 200% auto;
+}
+
+.purpleActions-large .holder {
+  padding: 50px 0;
 }
 
 #carousel-home-nonwomers {
