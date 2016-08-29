@@ -1567,11 +1567,39 @@ ul {
   background-position: 97% center
 }
 
-#paga-recarga-modulo {
-  margin: 30px 0;
-  display: flex;
-  width: 100%;
-  align-items:º stretch;
+.home-pago-modulo .tab-content > .tab-pane {
+  border: 1px solid $quaternary;
+}
+
+.home-pago-modulo .nav-tabs a {
+  border-radius: 0;
+  background-color: $quaternary;
+  color: white;
+}
+
+.home-pago-modulo .nav-tabs a {
+  border-color: $quaternary;
+  color: white;
+}
+
+.home-pago-modulo .nav-tabs {
+  border-bottom: none;
+}
+
+.home-pago-modulo .tab-content {
+  margin-top: -1px;
+}
+
+.home-pago-modulo .tab-content .tab-pane {
+  padding: 15px;
+}
+
+.home-pago-modulo .nav-tabs > li.active > a, 
+.home-pago-modulo .nav-tabs > li.active > a:hover, 
+.home-pago-modulo .nav-tabs > li.active > a:focus {
+  border-color: $quaternary;
+  color: $quaternary;
+  border-bottom: none;
 }
 
 @media only screen and (min-width: 375px)  {
