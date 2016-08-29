@@ -212,7 +212,6 @@ ul {
 
 /* estilos extras de pago facil */
 
-
 .bg-modulo {
   position: relative;
   z-index: 10;
@@ -1365,6 +1364,13 @@ ul {
 }
 
 /* HOME - Non-womers */
+
+.purpleActions .list-group-item {
+  border-radius: 0;
+  background-color: rebeccapurple;
+  color: white;
+  border-color: white;
+}
 
 #carousel-home-nonwomers {
   background-image: url(../../mockups/img/home/fondo-carrusel-home-nonwomer.png);
