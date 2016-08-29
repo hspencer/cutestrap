@@ -1426,6 +1426,8 @@ ul {
   background-position: center top;
   background-size: 100% auto;
   background-repeat: no-repeat;
+  position: relative;
+  z-index: 3;
 }
 
 #carousel-home-welcome .item .promo-slide {
@@ -1455,6 +1457,46 @@ ul {
   bottom: 20px;
   left: 50%;
   margin-left: -34px;
+}
+
+#carousel-home-nonwomers {
+  background-image: url(../../mockups/img/home/bg-carousel-nonwomers.png);
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: -42px;
+  padding-top: 50px;
+  z-index: 2;
+  position: relative;
+}
+
+#carousel-home-nonwomers .carousel-control {
+  color: white;
+  opacity: 1;
+  font-size: 6rem;
+  line-height: 40rem;
+}
+
+#carousel-home-nonwomers h3 {
+  margin: 20px auto;
+  width: 240px;
+  height: 120px;
+  text-indent: -9999em;
+  background-position: center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-image: url(../../mockups/img/home/plan-conveniente-title.png);
+}
+
+#carousel-home-nonwomers .item .carousel-caption {
+  position: static;
+  margin-bottom: 50px;
+}
+
+#carousel-home-nonwomers .item > img {
+  width: 200px;
+  height: auto;
+  margin: 0 auto;
 }
 
 .home-feature {
