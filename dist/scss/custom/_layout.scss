@@ -277,7 +277,7 @@ ul {
 
 .bajada-morada {
   margin-top: -40px;
-  padding: 40px 0 0px;
+  padding: 40px 0 40px;
 }
 
 .modulo-morado {
@@ -630,7 +630,7 @@ ul {
 
 #stepper_portabilidad {
   font-family: 'Cera';
-  margin: 0 auto;
+  margin: 0 auto -40px;
   padding: 0 0 30px 0;
   list-style-type: none;
   text-align: center;
@@ -1518,15 +1518,48 @@ ul {
 
 .home-feature-list li {
   display: block;
-  line-height: 200%;
+  line-height: 165%;
 }
 
+#carousel-belowfold-womfeatures {
+  padding-bottom: 45px;
+}
+#carousel-belowfold-womfeatures .carousel-control {
+  color: $quaternary;
+  font-size: 3rem;
+  opacity: 1;
+  line-height: 40rem;
+  background: none;
+}
+#carousel-belowfold-womfeatures .carousel-inner .item {
+  padding: 0 20px;
+}
+#carousel-belowfold-equipos {
+  margin: 30px 0;
+  background-image: url(../../mockups/img/home/carrusel-nonwomers-equipos-bg.png);
+  padding: 30px 0;
+  background-size: 100% auto;
+}
+#carousel-belowfold-equipos .carousel-control {
+  background: none;
+  color: white;
+  opacity: 1;
+  font-size: 5rem;
+  line-height: 35rem;
+}
+#carousel-belowfold-equipos .promo {
+  width: 65%;
+  margin: 20px auto;
+}
+#carousel-belowfold-equipos li.active {
+  background-color: #AF2FC9;
+  border-color: #AF2FC9;
+}
 #form-centro-ayuda {
   position: relative;
   top: -45px;
   margin-bottom: -75px;
 }
-
 #form-centro-ayuda .form-control {
   border: 1px solid #666;
   background-image: url(../../mockups/img/home/ico-lupa.svg);
@@ -1770,4 +1803,15 @@ ul {
 
 .fs-small {
   line-height: 120%;
+}
+
+/* womstrap carousel: overrides */
+
+.carousel-indicators li {
+  border-color: $quaternary;
+  background-color: white;
+}
+
+.carousel-indicators li.active {
+  background-color: $quaternary;
 }
