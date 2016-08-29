@@ -1421,24 +1421,24 @@ ul {
   background-position: -1px center;
 }
 
-#carousel-home-nonwomers {
+#carousel-home-welcome {
   background-image: url(../../mockups/img/home/fondo-carrusel-home-nonwomer.png);
   background-position: center top;
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
 
-#carousel-home-nonwomers .item .promo-slide {
+#carousel-home-welcome .item .promo-slide {
   margin: 120px auto 15px;
   width: 70%;
 }
 
-#carousel-home-nonwomers .item .carousel-caption {
+#carousel-home-welcome .item .carousel-caption {
   margin: -20px auto 60px;
   position: static;
 }
 
-#carousel-home-nonwomers .carousel-control {
+#carousel-home-welcome .carousel-control {
   color: white;
   font-size: 6rem;
   background: none;
@@ -1446,11 +1446,11 @@ ul {
   line-height: 537px;
 }
 
-#carousel-home-nonwomers .carousel-indicators {
+#carousel-home-welcome .carousel-indicators {
   bottom: 60px;
 }
 
-#carousel-home-nonwomers .continue {
+#carousel-home-welcome .continue {
   position: absolute;
   bottom: 20px;
   left: 50%;
@@ -1488,14 +1488,14 @@ ul {
   margin: 30px 0;
   display: flex;
   width: 100%;
-  align-items: stretch;
+  align-items:º stretch;
 }
 
 @media only screen and (min-width: 375px)  {
-  #carousel-home-nonwomers {
+  #carousel-home-welcome {
     background-position: center -35px;
   }
-  #carousel-home-nonwomers .item .carousel-caption {
+  #carousel-home-welcome .item .carousel-caption {
     margin: 15px auto 50px;
   }
   .purpleActions-large .holder {
