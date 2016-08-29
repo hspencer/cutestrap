@@ -1372,13 +1372,17 @@ ul {
   border-color: white;
   background-position: left center;
   background-repeat: no-repeat;
-  background-size: 500% auto;
+  background-size: 300% auto;
 }
-  .purpleActions-small .list-group-item:nth-child(1) .holder {
+  .purpleActions-small .list-group-item:nth-child(1) {
     background-position: left center;
   }
-  .purpleActions .purpleActions-small .holder:nth-child(2) {}
-  .purpleActions .purpleActions-small .holder:nth-child(3) {}
+  .purpleActions-small .list-group-item:nth-child(2) {
+    background-position: center;
+  }
+  .purpleActions-small .list-group-item:nth-child(3) {
+    background-position: right center;
+  }
 
 .purpleActions .ico {
   width: auto;
