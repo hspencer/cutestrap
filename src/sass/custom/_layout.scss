@@ -159,6 +159,10 @@ ul {
   color: white;
   border: 2px solid white;
 }
+.btn.btn-outline-quaternary {
+  color: $quaternary;
+  border: 1px solid $quaternary;
+}
 
 .bignumber {
   font-family: 'Cera';
@@ -1405,6 +1409,16 @@ ul {
 
 .purpleActions-large .holder {
   padding: 50px 0;
+}
+
+.separador-home {
+  background-image: url(../../mockups/img/home/tile-sombrita.png);
+  padding: 10%;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  border: none;
+  background-color: transparent;
+  background-position: -1px center;
 }
 
 #carousel-home-nonwomers {
