@@ -5,6 +5,8 @@
 
 $(document).ready(function(){
 
+	// stellar for parallax - on window
+	$.stellar();
         
 	// super-mega-simple client-side form validator and form next step enabler
 	function validateForm() {
