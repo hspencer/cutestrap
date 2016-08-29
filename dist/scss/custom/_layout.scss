@@ -1372,11 +1372,18 @@ ul {
   border-color: white;
   background-position: left center;
   background-repeat: no-repeat;
-  background-size: 600% auto;
+  background-size: 500% auto;
 }
+  .purpleActions-small .list-group-item:nth-child(1) .holder {
+    background-position: left center;
+  }
+  .purpleActions .purpleActions-small .holder:nth-child(2) {}
+  .purpleActions .purpleActions-small .holder:nth-child(3) {}
 
-.purpleActions .list-group-item:last-of-type {
-  background-position: right center;
+.purpleActions .ico {
+  width: auto;
+  margin: 0;
+  display: inline-block;
 }
 
 .purpleActions h4 {
@@ -1386,6 +1393,10 @@ ul {
 .purpleActions-large .list-group-item {
   background-image: url(../../mockups/img/home/halfButtons-bg.png);
   background-size: 200% auto;
+}
+
+.purpleActions-large .list-group-item:last-of-type {
+  background-position: right center;
 }
 
 .purpleActions-large .holder {
