@@ -1359,6 +1359,20 @@ ul {
   width: 30px;
 }
 
+#carousel-home-nonwomers {
+  background-color: rebeccapurple;
+}
+
+#carousel-home-nonwomers .item .promo-slide {
+  margin: 120px auto 15px;
+  width: 70%;
+}
+
+#carousel-home-nonwomers .item .carousel-caption {
+  margin: 15px auto 50px;
+  position: static;
+}
+
 .ico-input-money {
     background-image: url(../../mockups/img/private_site/compra_bolsa/ico-input-money.svg);
     width: 18px;
