@@ -1371,19 +1371,13 @@ ul {
   background-repeat: no-repeat;
 }
 
-@media only screen and (min-width: 375px)  {
-  #carousel-home-nonwomers {
-    background-position: center -35px;
-  }
-}
-
 #carousel-home-nonwomers .item .promo-slide {
   margin: 120px auto 15px;
   width: 70%;
 }
 
 #carousel-home-nonwomers .item .carousel-caption {
-  margin: 15px auto 50px;
+  margin: -20px auto 60px;
   position: static;
 }
 
@@ -1404,6 +1398,15 @@ ul {
   bottom: 20px;
   left: 50%;
   margin-left: -34px;
+}
+
+@media only screen and (min-width: 375px)  {
+  #carousel-home-nonwomers {
+    background-position: center -35px;
+  }
+  #carousel-home-nonwomers .item .carousel-caption {
+    margin: 15px auto 50px;
+  }
 }
 
 .ico-input-money {
