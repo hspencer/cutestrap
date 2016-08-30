@@ -1,18 +1,11 @@
 {% extends "layout.nunjucks" %}
-{% set title = "Portabilidad - Home" %}
+{% set title = "Portabilidad - Estado de portabilidad" %}
 
 {% block content %}
 
 	{% include "partials/navbar.html" %}
 
-	<header>
-		<div class="bg-modulo modulo-portabilidad">
-			<div class="container">
-			  <h3 class="ta-center white fw-semibold">PORTABILIDAD</h3>
-			  <h4 class="ta-center fw-normal white fs-base">Revolucionamos el mercado y somos líderes en portabilidad. ¡Gracias por ser parte! Vamos por más.</h4>
-			</div>
-		</div>		
-	</header>
+{% include "partials/header-portabilidad.html" %}
 
 	<div class="container">
 		<div class="row">
@@ -46,76 +39,33 @@
 				<div class="fs-small ta-center wow fadeIn">
 					<img src="img/portabilidad/ico-portabilidad-4g.png" width="70" height="70" class="center-block">
 				</div>
-				<div class="fs-base fw-light ta-center wow animated fadeInUp" data-wow-delay=".5s"">
+				<div class="fs-base fw-light ta-center wow animated fadeInUp" data-wow-delay=".5s">
 					<p style="font-size: 1.5rem;">Y volamos con nuestra red 4G</p>
 				</div>
 			</div>
 		</div>	
 	</div>
-	
-	<div class="modulo-portatebien">
-		<div class="ta-center">
-			<div class="btn-group" role="group" aria-label="...">
-			  <div class="btn-group" role="group">
-				<button type="button" class="tilt btn-portate white dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				  ¿QUIERES SER WOM? PÓRTATE AQUÍ!
-				  <span class="caret"></span>
-				</button>
-				<ul class="dropdown-menu">
-				  <li>
-
-				  	<div class="col-xs-2 nopadding">
-				  		<img src="img/portabilidad/ico-tengo-prepago.svg" class="center-block">
-				  	</div>
-				  	<div class="col-xs-8">
-				  		<a href="paso1.html">TENGO UN PREPAGO Y QUIERO UN PREPAGO WOM.</a>
-				  	</div>
-
-				  </li>
-				  <li>
-				  	<div class="col-xs-2 nopadding">
-				  		<img src="img/portabilidad/ico-tengo-plan.svg" class="center-block">
-				  	</div>
-				  	<div class="col-xs-8">
-				  		<a href="#">TENGO UN PLAN Y QUIERO UN PLAN WOM.</a>
-				  	</div>
-
-				  </li>
-				  <li>
-				  	<div class="col-xs-2 nopadding">
-				  		<img src="img/portabilidad/ico-tengo-prepago-2.svg" class="center-block">
-				  	</div>
-				  	<div class="col-xs-8">
-				  		<a href="#">TENGO UN PREPAGO Y AHORA QUIERO UN PLAN WOM.</a>
-				  	</div>
-
-				  </li>
-				</ul>
-			  </div>
-			</div>
-		</div>
-	</div>
 
 	<div class="container">
 		<div class="row instrucciones-portabilidad">
 			
-			<h4 class="ta-center fw-semibold">LO QUE TIENES QUE HACER<br> ANTES DE PORTARTE</h4>
+			<h4 class="ta-center fw-semibold nopadding">LO QUE TIENES QUE HACER<br> ANTES DE PORTARTE</h4>
 			
 			<div class="col-md-12">
-				<h5 class="morado-plain morado-subrayado fw-semibold"><span class="bignumber fw-normal">1</span> COMPRA UN CHIP WOM</h5>
+				<h5 class="morado-plain fw-semibold mt-20">1. COMPRA UN CHIP WOM</h5>
 				<p>Consigue tu CHIP en cualquiera de nuestras sucursales y kioskos.</p>
 			</div>
 			<div class="col-md-12">
-				<h5 class="morado-plain morado-subrayado fw-semibold"><span class="bignumber fw-normal">2</span> EQUIPO LIBERADO</h5>
+				<h5 class="morado-plain fw-semibold">2. EQUIPO LIBERADO</h5>
 				<p>Acércate a tu actual compañia y solicita el desbloqueo de tu equipo</p>
 			</div>
 			<div class="col-md-12">
-				<h5 class="morado-plain morado-subrayado fw-semibold"><span class="bignumber fw-normal">3</span> NECESITARÁS ESTOS DATOS</h5>
+				<h5 class="morado-plain fw-semibold">3. NECESITARÁS ESTOS DATOS</h5>
 				<p>Foto y número de serie/documento de tu cédula de identidad.</p>
 			</div>
 		</div>
 
-		<div class="row marginbottom">
+		<div class="row marginbottom mt-40">
           <div class="col-xs-3">
              <img src="img/portabilidad/ico-darthvader.svg" alt="">
           </div>
@@ -123,14 +73,16 @@
             <h6 class="morado-plain fw-semibold nomargin nopadding">ABANDONA EL DARKSIDE Y ÚNETE AL LADO DE LA CONVENIENCIA.</h6>
           </div>
         </div>
-
-		<div class="row solicita-portabilidad">
+	</div>
+	
+	{% include "partials/modulo-portate-bien.html" %}
+</div>
+	<div class="row solicita-portabilidad">
 			<div class="col-md-12">
 				<h4 class="ta-center morado-plain fw-semibold">¿YA SOLICITASTE PORTABILIDAD?</h4>
 				<p class="ta-center">Ahora conoce el estado...</p>
 			</div>
 		</div>
-	</div>
 
 	<div class="portabilidad-pills">
 		<ul class="nav nav-pills" role="tablist">

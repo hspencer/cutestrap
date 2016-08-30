@@ -61,15 +61,17 @@
 </nav>
 
 <header>
-	<div class="bg-modulo modulo-portabilidad">
+	<div class="bg-modulo-short modulo-portabilidad">
 		<div class="container">
-			<h3 class="ta-center white fw-semibold uc">Mejora tu prepago</h3>
-			<h4 class="ta-center fw-normal white fs-base">Es momento de abandonar el Darkside. ¡Comenzemos la portabilidad para únirte al lado de la conveniencia!</h4>
+			<h2 class="ta-center white fw-semibold uc pt-80">Portabilidad</h2>
 		</div>
 	</div>		
 </header>
 
-<div class="bajada-morada">
+		<h3 class="uc fw-semibold ta-center nopadding nomargin mb-10">Prepago a prepago</h3>
+	</div>
+</div>
+<div class="container">
 	<ul id="stepper_portabilidad">
 		<li class="stepperLED-paso1 active"><span>1</span></li>
 		<li class="stepperLED-paso2"><span>2</span></li>
@@ -83,13 +85,15 @@
 	<strong>Uno o más campos están vacíos</strong>. Recuerda que toda la información es necesaria.
 </div>
 
-<div class="container">
+<div class="container pl-30 pr-30">
 	<div class="row">
 		<div class="col-sm-12">
 			<form id="portateForm" class="nopadding">
 				
+
+
 				<div id="portateForm-paso1" class="formPaso-stepper" data-nextStep="paso2">
-					<h4 class="fw-semibold">INGRESA LOS DATOS PARA COMENZAR EL PROCESO DE PORTABILIDAD</h4>
+					<h4 class="fw-semibold uc mt-20 ">Ingresa tus datos</h4>
 					<div class="form-group">
 						<label class="select fw-normal">
 							<select>
@@ -115,12 +119,15 @@
 						<p class="help-block fs-small skew">Revisa en la sección ajustes o configuración el número de serie de tu celular.</p>
 					</div>
 					<div class="row ta-center">
-						<p><button type="button" class="btn btn-lg btn-primary nextStep">Continuar</button></p>
+						<p><button type="button" class="btn btn-disabled fw-semibold nextStep">Continuar</button></p>
 					</div>
 				</div>
 
+
+
+
 				<div id="portateForm-paso2" class="formPaso-stepper" data-nextStep="paso3" style="display: none;">
-					<h4 class="fw-semibold morado-plain">DATOS DE UN WOMER</h4>
+					<h4 class="fw-semibold morado-plain mt-20 uc">¿Quién eres?</h4>
 					<div class="form-group input-effect">
 						<span class="miniLabel">Nombre</span>
 						<input type="text" class="form-control" id="nombre" placeholder="Nombre">
@@ -157,18 +164,6 @@
 					<div class="form-group">
 						<label class="select fw-normal">
 							<select>
-								<option disabled="disabled" selected="selected">Comuna</option>
-								<option>Comuna 0</option>
-								<option>Comuna 1</option>
-								<option>Comuna 2</option>
-								<option>Comuna 3</option>
-								<option>Comuna 4</option>
-							</select>
-						</label>
-					</div>
-					<div class="form-group">
-						<label class="select fw-normal">
-							<select>
 								<option disabled="disabled" selected="selected">Region</option>
 								<option>Region 0</option>
 								<option>Region 1</option>
@@ -178,17 +173,30 @@
 							</select>
 						</label>
 					</div>
+					<div class="form-group">
+						<label class="select fw-normal">
+							<select>
+								<option disabled="disabled" selected="selected">Comuna</option>
+								<option>Comuna 0</option>
+								<option>Comuna 1</option>
+								<option>Comuna 2</option>
+								<option>Comuna 3</option>
+								<option>Comuna 4</option>
+							</select>
+						</label>
+					</div>
+					
 					<h4 class="fw-semibold morado-plain uc nopadding">CÉDULA DE IDENTIDAD</h4>
 					<br>
 					<div class="form-group input-effect">
-						<span class="miniLabel">Ingresa tu n° de serie/documento</span>
+						<span class="miniLabel">Ingresa tu n° de serie/documento de tu cédula de identidad</span>
 						<input type="text" class="form-control" id="cedula" placeholder="Ingresa tu n° de serie/documento"></input>
 						<p class="help-block fs-small skew">El número de serie de tu cédula se encuentra al reverso, mientras que el número de documento en cédulas nuevas esta junto a tu fecha de nacimiento.</p>
 					</div>
-					<h5 class="fw-small fw-semibold morado-plain ta-center">A continuación, necesitamos la imagen de tu CI. ¿Lo tienes a mano?</h5>
+					<h5 class="fw-small fw-semibold morado-plain ta-center">A continuación, necesitamos la imagen de tu cédula de identidad</h5>
 					<div class="photoUpload">
 						<div class="col-xs-10 nomargin">
-							<div class="form-group input-effect"><span class="miniLabel">Adjunta cara frontal de tu CI</span>
+							<div class="form-group input-effect"><span class="miniLabel">Adjunta cara frontal de tu carnet</span>
 								<input onclick="$('#modal').show();" type="text" class="form-control" id="reversa" placeholder="Adjunta cara frontal de tu CI">
 							</div>
 						</div>
@@ -196,7 +204,7 @@
 							<img class="ico" src="img/icons/ico-camara.svg" alt="">
 						</div>
 						<div class="col-xs-10 nomargin">
-							<div class="form-group input-effect"><span class="miniLabel">Adjunta cara trasera de tu CI</span>
+							<div class="form-group input-effect"><span class="miniLabel">Adjunta reverso de tu carnet</span>
 								<input onclick="$('#modal').show();" type="text" class="form-control" id="reversa" placeholder="Adjunta cara trasera de tu CI">
 							</div>
 						</div>
@@ -205,9 +213,27 @@
 						</div>
 					</div>
 					<div class="row ta-center">
-						<p><button type="button" class="btn btn-lg btn-primary nextStep disabled">Continuar</button></p>
+						<p><button type="button" class="btn btn-disabled nextStep fw-semibold">Continuar</button></p>
 					</div>
 				</div>
+
+				<!-- <div id="portateForm-paso3" class="formPaso-stepper" data-nextStep="paso4">
+					<h4 class="fw-semibold ta-center morado-plain uc mt-20 ">Verificar propiedad del teléfono</h4>
+					<p class="fs-small ta-center">Tranqui, para verificar que este número de teléfono te pertenece te enviaremos un un código vía SMS que deberás ingresar más abajo.</p>
+					
+					<div class="row ta-center mt-20">
+						<p><button type="button" class="btn btn-success fw-semibold nextStep">Solicitar código morado</button></p>
+					</div>
+				</div> -->
+
+				<!-- <div id="portateForm-paso4" class="formPaso-stepper" data-nextStep="paso4">
+					<h4 class="fw-semibold ta-center morado-plain uc mt-20 ">Verificar propiedad del teléfono</h4>
+					<p class="fs-small ta-center gray-2">Tranqui, para verificar que este número de teléfono te pertenece te enviaremos un un código vía SMS que deberás ingresar más abajo.</p>
+					
+					<div class="row ta-center mt-20">
+						<p><button type="button" class="btn btn-disabled fw-semibold nextStep">Verificar código</button></p>
+					</div>
+				</div> -->
 
 			</form>
 		</div>

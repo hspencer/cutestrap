@@ -201,6 +201,7 @@ ul {
 .p-10 {padding: 10px !important;}
 .pt-5 {padding-top:5px;}
 .pt-10 {padding-top:10px;}
+.pt-80 {padding-top:80px;}
 .pl-10 {padding-left:10px;}
 .pl-30 {padding-left: 30px !important;}
 .pl-40 {padding-left: 40px !important;}
@@ -305,7 +306,7 @@ ul {
     margin-bottom: 30px;
 }
 .bg-modulo h3 {
-  margin-top: 200px;
+  margin-top: 140px;
   padding: 0;
   line-height: 125%;
 }
@@ -340,12 +341,12 @@ ul {
   line-height: 130%;
 }
 .modulo-portabilidad {
-  background-image: url("../../wom-base/img/portabilidad/FONDO1.png");
+  background-image: url("../../mockups/img/portabilidad/FONDO1.png");
 }
 .modulo-portatebien {
-  background-image: url("../../wom-base/img/portabilidad/fondo-portatebien.png");
+  background-image: url("../../mockups/img/portabilidad/fondo-portatebien.png");
   background-repeat: no-repeat;
-  min-height: 360px;
+  min-height: 300px;
   position: relative;
 }
 .modulo-portatebien .btn-group {
@@ -517,6 +518,7 @@ ul {
 
 .instrucciones-portabilidad p {
   padding-left: 1.5rem;
+  padding-bottom: 0;
   font-size: 1.75rem;
   color: #636363;
 }
@@ -526,6 +528,7 @@ ul {
 }
 .instrucciones-portabilidad h5{
   font-size: 2rem;
+  padding: 1.5rem 0 0 1.5rem;
 }
 
 .solicita-portabilidad h4 {
@@ -641,9 +644,9 @@ ul {
 
 #stepper_portabilidad:after {
   content: '';
-  background: #9157A4;
+  background: $pink;
   width: 75%;
-  height: 3px;
+  height: 2px;
   margin-top: -13px;
   margin-left: 15%;
   display: block;
@@ -663,18 +666,17 @@ ul {
 
 #stepper_portabilidad li span {
   display: block;
-  background: #9157A4;
+  background: $pink;
   color: white;
   text-align: center;
   border-radius: 100%;
   width: 25px;
   height: 25px;
   line-height: 25px;
-  color: $primary-light;
 }
 
 #stepper_portabilidad li.active span {
-  background: white;
+  background: $primary;
 }
 
 /* para forms de portabilidad */
