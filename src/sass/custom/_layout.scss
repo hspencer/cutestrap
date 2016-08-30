@@ -351,15 +351,12 @@ ul {
 .modulo-portatebien {
   background-image: url("../../mockups/img/portabilidad/fondo-portatebien.png");
   background-repeat: no-repeat;
-  min-height: 300px;
+  min-height: 420px;
   position: relative;
+  background-size: 100% auto;
 }
 .modulo-portatebien .btn-group {
-  margin-top: 145px;
-}
-.modulo-portatebien .btn-portate {
-
-  background-color: transparent;
+  margin-top: 165px;
 }
 .modulo-pagofacil {
   background-image: url("../../mockups/img/pago_facil/bg-pago-facil.png");
@@ -567,7 +564,7 @@ ul {
 
 .modulo-portatebien .dropdown-menu {
     transition: all .3s ease-out;
-    padding: 32px 0 0 0;
+    padding: 0;
     margin-top: -15px;
     list-style: none;
     font-size: 1.35rem;
@@ -596,8 +593,9 @@ ul {
   z-index: 180;
 }
 .modulo-portatebien .open > .dropdown-menu {
-    max-height: 300px;
-    opacity: 1;
+  max-height: 300px;
+  opacity: 1;
+  margin: 0;
 }
 
 .modulo-portatebien .dropdown-menu a{
@@ -1106,7 +1104,7 @@ ul {
 }
 
 .form-group .miniLabel {
-  z-index: -1;
+  z-index: 0;
   top: -20px;
   left: -40px;
   opacity: 0;
@@ -1133,7 +1131,6 @@ ul {
   .form-group.input-effect.active:after {
     width: 100%;
   }
-
 /* visualizar informacion de plan */
 
 .info-plan-desglose {margin-bottom: 15px;}
