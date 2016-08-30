@@ -212,6 +212,7 @@ ul {
 .pr-20 {padding-right:20px !important;}
 .pr-30 {padding-right: 30px !important;}
 .pr-40 {padding-right: 40px !important;}
+.mt-0 {margin-top: 0px !important;}
 .mt-10 {margin-top: 10px !important;}
 .mt-20 {margin-top: 20px !important;}
 .mb-20 {margin-top: 20px !important;}
@@ -273,6 +274,8 @@ ul {
   background: linear-gradient(to bottom, rgba(115,1,132,1) 0%, rgba(50,0,77,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#730184', endColorstr='#32004d', GradientType=0 );
 }
+
+
 
 .modulo-morado-alt .miniLabel {
   color: white;
@@ -365,7 +368,8 @@ ul {
 }
 .modulo-pagofacil-short {
   background-image: url("../../mockups/img/pago_facil/bg-pago-facil.png");
-  min-height: 220px;
+  min-height: 272px;
+  background-position: bottom right;
 }
 .embed-responsive-16by9 {
     padding-bottom: 40% !important;
@@ -380,7 +384,7 @@ ul {
 }
 
 .modulo-pagofacil-short h3 {
-  margin-top: 190px;
+  margin-top: 120px;
   margin-bottom: 20px;
   line-height: 3rem;
 }
@@ -432,15 +436,15 @@ ul {
 }
 
 .pago-facil-desglose {
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin: 15px 0;
+  background-color: $primary;
 }
 
 .pago-facil-desglose p {
   margin: 0;
-  padding: 0;
-  font-size: 2rem;
-  line-height: 175%;
+  padding: 3px;
+  font-size: 1.6rem;
+  color: white;
 }
 
 .pago-facil-selecciona strong,
@@ -472,8 +476,17 @@ ul {
 }
 
 .pago-facil-paga {
-  background-color: #5D0274;
-  color: white;
+  border: 1px solid #ECECEC;
+  background: -moz-linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(236,236,236,1) 100%); /* ff3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(236,236,236,1))); /* safari4+,chrome */
+  background: -webkit-linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(236,236,236,1) 100%); /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(236,236,236,1) 100%); /* opera 11.10+ */
+  background: -ms-linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(236,236,236,1) 100%); /* ie10+ */
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(236,236,236,1) 100%); /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#ECECEC',GradientType=0 ); /* ie6-9 */
+  margin: -15px 15px 0;
+  color: $gray-1;
+  padding-top: 10px;
   padding-bottom: 20px;
 }
 .pago-facil-paga small {
@@ -481,6 +494,13 @@ ul {
   font-size: 1.5rem;
   display: block;
   text-transform: uppercase;
+}
+.pago-facil-paga strong{
+  display: inline-block;
+}
+
+.pago-facil-paga img{
+  display: inline-block;
 }
 
 .pago-facil-paga .btn-primary {
