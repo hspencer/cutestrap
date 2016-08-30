@@ -3139,6 +3139,18 @@ $(document).ready(function(){
 			return false;
 		});
 
+		// wizard appendix - interaccion estándar (ahora en wizard telefono que me sacaron del sombrero lol)
+		$('.wizardPlanes-pasos .option').click(function() {
+			$(this).parents('.wizard-appendix').find('.option').removeClass('selected');
+			$(this).toggleClass('selected');
+			return false;
+		});
+
+		// validacion falsa para wizardtelefonos
+		$('.wizard-telefono-cuantamemoria a.option').click(function () {
+			$('.wizardTelefonos-ending button').removeClass('disabled').addClass('btn-primary');
+		});
+
 		// fin wizard parte planes
 		function endWizardPlanes () {
 			$('.wizardPlanes-pasos:not(.pasoFinal)').slideUp();
@@ -3149,7 +3161,7 @@ $(document).ready(function(){
 		}
 
 		// evt handlers
-		$('#wizardPlanes a:not(.graphButton,.finWizard)').click(function() {
+		$('#wizardPlanes a:not(.graphButton,.finWizard,.option)').click(function() {
 			wizardGo();
 		});
 		$('#wizardPlanes a.finWizard').click(function() {

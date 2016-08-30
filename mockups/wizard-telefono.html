@@ -1,0 +1,316 @@
+<!-- layout.nunjucks -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Wizard de Teléfono</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- MOVER A /SRC -->
+  <link rel="stylesheet" href="https://dl.dropboxusercontent.com/u/3538/animate.css">
+  <link rel="stylesheet" href="../dist/css/womstrap.css">
+</head>
+<body>
+
+  <!-- You write code for this content block in another file -->
+  
+
+	<nav class="navbar navbar-default navbar-main navbar-centered" role="navigation">
+	<!-- Brand and toggle get grouped for better mobile display -->
+	<div class="navbar-header">
+
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-brand-centered">
+			<span class="navLabel">Menú</span>
+			<figure class="hamburger">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</figure>
+		</button>
+
+		<!-- wom logo -->
+		<div class="navbar-brand navbar-brand-centered">
+			<a href="index.html" title="">
+				<img src="img/logo-wom.svg" width="80" height="80" >
+			</a>
+		</div>
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="navbar-brand-centered">
+			<ul class="nav navbar-nav">
+				<!-- <li><a href="#">Link</a></li>
+				<li><a href="#">Link</a></li> -->
+				<!-- <li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Personas <span class="caret"></span></a>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="#">Planes</a></li>
+						<li><a href="#">Prepago</a></li>
+						<li><a href="#">Internet</a></li>
+						<li><a href="#">Equipos</a></li>
+						<li class="divider"></li>
+						<li><a href="#">Sucursal Online</a></li>
+					</ul>
+				</li> -->
+				<li><a class="fw-semibold" href="#">Planes</a></li>
+				<li><a class="fw-semibold" href="#">Prepago</a></li>
+				<li><a class="fw-semibold" href="#">Internet</a></li>
+				<li><a class="fw-semibold" href="#">Equipos</a></li>
+				<li><a class="fw-semibold" href="#">Sucursal Online</a></li>
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</div>
+</nav>
+
+	<header>
+		<div class="bg-modulo bg-modulo-short modulo-portabilidad">
+			<div class="container">
+				<h3 class="ta-center white fw-semibold uc" style="margin-top: 140px">Busquemos el equipo más conveniente</h3>
+			</div>
+		</div>
+	</header>
+
+	
+	<div id="wizardPlanes">
+		<div class="container">
+			<div id="wizardPlanes-paso1" class="wizardPlanes-pasos" data-nextStep="paso2" style="display: none;"">
+				<div class="row">
+					<div class="col-xs-12 ta-center">
+						<h4 class="morado-plain uc fw-semibold nopadding">hazla corta!</h4>
+						<p class="nopadding">¿Equipo con o sin portabilidad? <br>Elige tu opción:</p>
+					</div>
+				</div>
+				<div class="row fs-small ta-center">
+					<div class="col-xs-6 nopadding fw-semibold">
+						<a href="#" onclick="return false;">
+							<i class="fa fa-book"></i>
+							<span class="wizardLabel"><strong class="uc fw-bold">Sin portabilidad</strong><br>Tienes número nuevo</span>
+						</a>
+					</div>
+					<div class="col-xs-6 nopadding fw-semibold">
+						<a href="#" onclick="return false;">
+							<i class="fa fa-comment-o"></i>
+							<span class="wizardLabel"><strong class="uc fw-bold">Con portabilidad</strong><br>Mantienes tu número</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div id="wizardPlanes-paso2" class="wizardPlanes-pasos" data-nextStep="paso3" style="display: none;">
+				<div class="row">
+					<div class="col-xs-12">
+						<h4 class="morado-plain uc fw-semibold nopadding ta-center">Ahora debes elegir tu equipo</h4>
+					</div>
+				</div>
+				<div class="wizard-appendix wizard-telefono-cuantocosto">
+					<div class="wizard-appendix-header">
+						<div class="row">
+							<div class="col-xs-12">
+								<h5 class="morado-plain fw-semibold nomargin nopadding">Cuota inicial</h5>
+								<p class="nomargin nopadding">¿Cuánto estás dispuesto a pagar?</p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 ta-center">
+							<p class="nopadding mt-20"><a class="btn btn-default fw-semibold option" style="display: inline-block;" href="#">Costo 0</a></p>
+							<p class="nopadding"><a class="btn btn-default fw-semibold option" style="display: inline-block;" href="#">Entre $9.990 y $49.990</a></p>
+							<p class="nopadding"><a class="btn btn-default fw-semibold option" style="display: inline-block;" href="#">Entre $49.990 y $149.990</a></p>
+							<p class="nopadding"><a class="btn btn-default fw-semibold option" style="display: inline-block;" href="#">Entre $150.000 y $249.990</a></p>
+							<p class="nopadding"><a class="btn btn-default fw-semibold option" style="display: inline-block;" href="#">Entre $250.000 y $499.990</a></p>
+							<p class="nopadding"><a class="btn btn-default fw-semibold option" style="display: inline-block;" href="#">Sobre $500.000</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="wizard-appendix wizard-telefono-quemarca">
+					<div class="wizard-appendix-header">
+						<div class="row">
+							<div class="col-xs-12">
+								<h5 class="morado-plain fw-semibold nomargin nopadding">Marca</h5>
+								<p class="nomargin nopadding">¿Qué marca prefieres?</p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 ta-center">
+							<p class="nopadding nomargin" style="line-height: 265%;"><a class="btn btn-default fw-semibold option" style="display: inline-block;" href="#">Apple</a> <a class="btn btn-default fw-semibold option" style="display: inline-block;" href="#">Huawei</a> <a class="btn btn-default fw-semibold option" style="display: inline-block;" href="#">Lenovo</a> <a class="btn btn-default fw-semibold option" style="display: inline-block;" href="#">LG</a> <a class="btn btn-default fw-semibold option" style="display: inline-block;" href="#">Motorola</a> <a class="btn btn-default fw-semibold option" style="display: inline-block;" href="#">Samsung</a> <a class="btn btn-default fw-semibold option" style="display: inline-block;" href="#">Verycool</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="wizard-appendix wizard-telefono-quepantalla">
+					<div class="wizard-appendix-header">
+						<div class="row">
+							<div class="col-xs-12">
+								<h5 class="morado-plain fw-semibold nomargin nopadding">Pantalla</h5>
+								<p class="nomargin nopadding">¿Qué pantalla prefieres?</p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-3 ta-center">
+							<a href="#" class="option" style="background-color: transparent;">
+								<i class="fa fa-mobile-phone" style="font-size: 3rem; top: 15px;"></i>
+								<span class="smallLabel fs-small">3.9"</span>
+							</a>
+						</div>
+						<div class="col-xs-3 ta-center">
+							<a href="#" class="option" style="background-color: transparent;">
+								<i class="fa fa-mobile-phone" style="font-size: 4rem; top: 10px;"></i>
+								<span class="smallLabel fs-small">4" - 4.9"</span>
+							</a>
+						</div>
+						<div class="col-xs-3 ta-center">
+							<a href="#" class="option" style="background-color: transparent;">
+								<i class="fa fa-mobile-phone" style="font-size: 5rem; top: 5px;"></i>
+								<span class="smallLabel fs-small">5" - 5.9"</span>
+							</a>
+						</div>
+						<div class="col-xs-3 ta-center">
+							<a href="#" class="option" style="background-color: transparent;">
+								<i class="fa fa-mobile-phone" style="font-size: 6rem;"></i>
+								<span class="smallLabel fs-small">6" y más</span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="wizard-appendix wizard-telefono-quecamara">
+					<div class="wizard-appendix-header">
+						<div class="row">
+							<div class="col-xs-12">
+								<h5 class="morado-plain fw-semibold nomargin nopadding">Cámara</h5>
+								<p class="nomargin nopadding">¿Cuántos megapíxeles prefieres en tu cámara?</p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-3 ta-center">
+							<a href="#" class="option" style="background-color: transparent;">
+								<i class="fa fa-camera" style="font-size: 2rem; top: 15px;"></i>
+								<span class="smallLabel fs-small">4.9MP</span>
+							</a>
+						</div>
+						<div class="col-xs-3 ta-center">
+							<a href="#" class="option" style="background-color: transparent;">
+								<i class="fa fa-camera" style="font-size: 3rem; top: 10px;"></i>
+								<span class="smallLabel fs-small">5.9 a 9.9MP</span>
+							</a>
+						</div>
+						<div class="col-xs-3 ta-center">
+							<a href="#" class="option" style="background-color: transparent;">
+								<i class="fa fa-camera" style="font-size: 3.6rem; top: 5px;"></i>
+								<span class="smallLabel fs-small">10MP a 14MP</span>
+							</a>
+						</div>
+						<div class="col-xs-3 ta-center">
+							<a href="#" class="option" style="background-color: transparent;">
+								<i class="fa fa-camera" style="font-size: 4rem; top: 5px"></i>
+								<span class="smallLabel fs-small">Sobre 15MP</span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="wizard-appendix wizard-telefono-cuantamemoria">
+					<div class="wizard-appendix-header">
+						<div class="row">
+							<div class="col-xs-12">
+								<h5 class="morado-plain fw-semibold nomargin nopadding">Memoria</h5>
+								<p class="nomargin nopadding">¿Cuánta capacidad en memoria quieres?</p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-3 ta-center">
+							<a href="#" class="option" style="background-color: transparent;">
+								<i class="fa fa-folder-open" style="font-size: 3rem; top: 15px;"></i>
+								<span class="smallLabel fs-small">8GB</span>
+							</a>
+						</div>
+						<div class="col-xs-3 ta-center">
+							<a href="#" class="option" style="background-color: transparent;">
+								<i class="fa fa-folder-open" style="font-size: 4rem; top: 10px;"></i>
+								<span class="smallLabel fs-small">16GB</span>
+							</a>
+						</div>
+						<div class="col-xs-3 ta-center">
+							<a href="#" class="option" style="background-color: transparent;">
+								<i class="fa fa-folder-open" style="font-size: 5rem; top: 5px;"></i>
+								<span class="smallLabel fs-small">32GB</span>
+							</a>
+						</div>
+						<div class="col-xs-3 ta-center">
+							<a href="#" class="option" style="background-color: transparent;">
+								<i class="fa fa-folder-open" style="font-size: 6rem;"></i>
+								<span class="smallLabel fs-small">64GB y más</span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="wizardTelefonos-ending">
+					<p class="mt-20 ta-center">
+						<button class="btn btn-lg disabled">Encontrar mi equipo</button>
+					</p>
+				</div>
+			</div>
+			<div id="wizardPlanes-pasofinal">
+				<div class="row">
+					<div class="col-xs-6">
+						<h3 class="morado-plain fs-lg fw-semibold" style="line-height: 100%;">
+							<span class="uc" style="display: block;">Samsung</span>
+							Galaxy S6
+						</h3>
+						<p>
+							<a href="#" class="btn btn-sm btn-outline-quaternary">Ver detalles</a>
+						</p>
+						<p>
+							<h5 class="morado-plain">Cuota inicial</h5>
+						</p>
+					</div>
+					<div class="col-xs-6">
+						Foto
+						<p class="ta-center">
+							<button class="btn btn-sm btn-primary">Buscar otro equipo</button>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<footer class="main-foot">
+  <div class="container">
+    <div class="row">
+      <div class="ta-center">
+        <img src="img/logo-footer.svg">
+      </div>
+      <ul class="accesos-foot">
+        <li class="non-point">
+          <a class="salt-space" href="#">¡Síguenos!</a>
+          <a class="salt-space" href="https://www.facebook.com/womchile" target="_blank">
+            <img class="ico-space" src="img/icons/ico-face-white.png">
+          </a>
+          <a class="salt-space" href="#" target="_blank">
+            <img class="ico-space" src="img/icons/ico-twitter-white.png">
+          </a>
+          <a class="salt-space" href="#" target="_blank">
+            <img class="ico-space" src="img/icons/ico-youtube-white.png">
+          </a>
+          <a class="salt-space" href="#" target="_blank"><img class="ico-space" src="img/icons/ico-white-instagram.png"></a>
+        </li>
+      </ul>
+      <ul class="lista-foot">
+        <li><a href="#">Te ayudamos</a></li>
+        <li><a href="#">Sobre WOM</a></li>
+        <li><a href="#">Términos Legales</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://use.fontawesome.com/fc096a74c6.js"></script>
+  <script src="../dist/js/wom.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+</body>
+</html>

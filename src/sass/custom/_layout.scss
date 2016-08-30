@@ -1757,6 +1757,46 @@ ul {
   margin-bottom: 15px;
 }
 
+.wizard-telefono-cuantocosto a.btn-default {
+  width: 85%;
+}
+
+.wizard-appendix .option {
+  color: #666;
+  border-color: #CCC;
+}
+
+.wizard-appendix.wizard-telefono-quemarca .option {
+  background-color: #CCC;
+  color: white;
+}
+
+.wizard-telefono-quepantalla i.fa.fa-mobile-phone,
+.wizard-telefono-quecamara i.fa.fa-camera,
+.wizard-telefono-cuantamemoria i.fa.fa-folder-open {
+  height: 60px;
+  position: relative;
+}
+
+.wizard-appendix span.smallLabel {
+  display: block;
+  margin-top: 5px;
+  line-height: 125%;
+}
+
+.wizard-appendix .option.selected {
+  background-color: $quaternary;
+  border-color: $quaternary;
+  color: white;
+}
+
+  .wizard-appendix .option.selected i.fa {
+    color: $quaternary;
+  }
+  .wizard-appendix .option.selected .smallLabel {
+    color: $quaternary;
+  }
+
 .gigaMeasures {
   list-style-type: none;
 }
