@@ -5,7 +5,7 @@
 
 .bg-portabilidad{
     background-color: transparent;
-    background-image: url('../img/portabilidad/FONDO1.png');
+    background-image: url('../../mockups/img/portabilidad/FONDO1.png');
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
@@ -22,7 +22,7 @@
 }
 .bg-home{
     background-color: transparent;
-    background-image: url('../../wom-base/img/home/bghome.jpg');
+    background-image: url('../../mockups/img/home/bghome.jpg');
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
@@ -45,7 +45,7 @@
 }
 .main-foot{
     background-color: transparent;
-    background-image: url('../../wom-base/img/footer2.jpg');
+    background-image: url('../../mockups/img/footer2.jpg');
     color: #fff;
     margin-top: 70px;
     position: relative;
@@ -359,18 +359,19 @@ ul {
   background-color: transparent;
 }
 .modulo-pagofacil {
-  background-image: url("../../wom-base/img/portabilidad/FONDO1.png");
+  background-image: url("../../mockups/img/pago_facil/bg-pago-facil.png");
+  background-position: top right;
   min-height: 400px;
 }
 .modulo-pagofacil-short {
-  background-image: url("../../wom-base/img/portabilidad/FONDO1.png");
+  background-image: url("../../mockups/img/pago_facil/bg-pago-facil.png");
   min-height: 220px;
 }
 .embed-responsive-16by9 {
     padding-bottom: 40% !important;
 }
 .modulo-centroayuda {
-  background-image: url("../../wom-base/img/portabilidad/FONDO1.png");
+  background-image: url("../../mockups/img/portabilidad/FONDO1.png");
 }
 
 .modulo-pagofacil h3 {
@@ -591,7 +592,7 @@ ul {
 }
 
 .modulo-portatebien .dropdown-menu li:after{
-  content: url(../../wom-base/img/icons/ico-arrow-right.svg);
+  content: url(../../mockups/img/icons/ico-arrow-right.svg);
   width: 10px;
   height: 17px;
   top: 20px;
@@ -623,14 +624,14 @@ ul {
 }
 
 .ico-portabilidad-tengoplan {
-  background-image: url(../../wom-base/img/portabilidad/ico-tengo-plan.svg);
+  background-image: url(../../mockups/img/portabilidad/ico-tengo-plan.svg);
   background-position: 11px center;
 }
 .ico-portabilidad-tengoprepago {
-  background-image: url(../../wom-base/img/portabilidad/ico-tengo-prepago.svg);
+  background-image: url(../../mockups/img/portabilidad/ico-tengo-prepago.svg);
 }
 .ico-portabilidad-tengoprepago2 {
-  background-image: url(../../wom-base/img/portabilidad/ico-tengo-plan2.svg);
+  background-image: url(../../mockups/img/portabilidad/ico-tengo-plan2.svg);
 }
 
 #stepper_portabilidad {
@@ -745,7 +746,7 @@ ul {
   top: 15px;
   width: 14px;
   height: 10px;
-  background-image: url(../../wom-base/img/icons/ico-ticket.svg);
+  background-image: url(../../mockups/img/icons/ico-ticket.svg);
 }
 .pagadoStamp {
   position: absolute;
@@ -769,7 +770,7 @@ ul {
   top: 10px;
   width: 16px;
   height: 16px;
-  background-image: url(../../wom-base/img/icons/ico-warning.svg);
+  background-image: url(../../mockups/img/icons/ico-warning.svg);
 }
 
 .help-block{
@@ -806,23 +807,23 @@ ul {
 /* bootstrap core override para lite form components */
 .select.select-lite select,
 .form-group.select-lite input {
-  color: white;
+  color: #000;
   border: none;
   border-bottom: 1px solid #EEE;
   background-color: transparent;
 }
 .form-control.input-lite {
-  color: white;
+  color: #000;
   border-color: white;
 }
-#rut_usuario::-webkit-input-placeholder {color: white;}
+#rut_usuario::-webkit-input-placeholder {color: #000;}
 
 .form-control.input-lite[type="text"]::-webkit-input-placeholder {
-  color: white;
+  color: $primary;
 }
 .select-lite 
 .select-lite input[type="text"]::-webkit-input-placeholder {
-  color: white;
+  color: $primary;
 }
 
 /*  bootstrap navbar overrides */
@@ -937,7 +938,7 @@ ul {
   color: $quaternary;
   line-height: 125%;
   height: auto;
-  background-image: url(../../wom-base/img/icons/caret-down-purple.svg);
+  background-image: url(../../mockups/img/icons/caret-down-purple.svg);
   background-position: 96% center;
   background-repeat: no-repeat;
   background-clip: padding-box;
