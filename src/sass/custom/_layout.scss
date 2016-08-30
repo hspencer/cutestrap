@@ -199,15 +199,17 @@ ul {
 }
 .p-5 {padding: 5px !important;}
 .p-10 {padding: 10px !important;}
-.pt-5 {padding-top:5px;}
-.pt-10 {padding-top:10px;}
-.pt-80 {padding-top:80px;}
-.pl-10 {padding-left:10px;}
+.pt-5 {padding-top:5px !important;}
+.pt-10 {padding-top:10px !important;}
+.pt-80 {padding-top:80px !important;}
+.pl-10 {padding-left:10px !important;}
+.pl-20 {padding-left:20px !important;}
 .pl-30 {padding-left: 30px !important;}
 .pl-40 {padding-left: 40px !important;}
-.pb-5 {padding-bottom:5px;}
-.pb-10 {padding-bottom:10px;}
-.pr-10 {padding-right:10px;}
+.pb-5 {padding-bottom:5px !important;}
+.pb-10 {padding-bottom:10px !important;}
+.pr-10 {padding-right:10px !important;}
+.pr-20 {padding-right:20px !important;}
 .pr-30 {padding-right: 30px !important;}
 .pr-40 {padding-right: 40px !important;}
 .mt-10 {margin-top: 10px !important;}
@@ -786,9 +788,6 @@ ul {
 
 /* bootstrap core overrides para botones */
 
-.fs-medium {
-  font-size: 2rem;
-}
 
 .btn-grey {
   background-color: #CCC;
