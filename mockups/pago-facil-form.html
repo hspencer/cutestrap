@@ -15,25 +15,23 @@
 
   <!-- You write code for this content block in another file -->
   
-<div class="container-fluid">
-      <form id="formPago" class="nomargin nopadding" style="padding-top: 20px;" method="get" action="http://pdrpre.wom.devetel.cl/pago_facil/pagarCuenta">
+  <div class="container-fluid">
+    <form id="formPago" class="nomargin nopadding" style="padding-top: 20px;" method="get" action="http://pdrpre.wom.devetel.cl/pago_facil/pagarCuenta">
       <div id="resultado" class="row">
         <div class="col-xs-12">
-          <div class="form-group select-lite">
-            <span class="miniLabel">Ingresa tu RUT</span>
-             <input type="text" class="form-control" name="rut_usuario" id="rut_usuario" placeholder="Ingresa tu RUT" onfocus="$(this).val('+56 9')">
+          <div class="form-group input-effect">
+            <span class="miniLabel">Número de celular</span>
+            <input type="textnumber" class="form-control" id="numerocelular" placeholder="Número de celular" onfocus="$(this).val('569');">
           </div>
           <div class="row ta-center">
             <button type="submit" class="btn btn-disabled fw-semibold">Ir a pagar tu cuenta</button>
           </div>
         </div>
       </div>
-      </form>
-</div>
+    </form>
+  </div>
 
-
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://use.fontawesome.com/fc096a74c6.js"></script>
   <script src="../dist/js/wom.js"></script>
   <script>
