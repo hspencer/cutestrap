@@ -99,10 +99,12 @@ $(document).ready(function(){
 			return false;
 		});
 
-		// fin wizard
+		// fin wizard parte planes
 		function endWizardPlanes () {
 			$('.wizardPlanes-pasos:not(.pasoFinal)').slideUp();
 			$('.wizardPlanes-pasos.wizard-pasoFinal').slideDown();
+			$('header h3.ta-center').html('El plan más conveniente para ti es');
+			$('header h4').remove();
 			$('html, body').animate({scrollTop: $('header h3').offset().top}, 500);
 		}
 

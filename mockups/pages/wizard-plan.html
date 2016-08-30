@@ -17,7 +17,7 @@
 	
 	<div id="wizardPlanes">
 		<div class="container">
-			<div id="wizardPlanes-paso1" class="wizardPlanes-pasos" data-nextStep="paso2">
+			<div id="wizardPlanes-paso1" class="wizardPlanes-pasos" data-nextStep="paso2" style="display: none;"">
 				<div class="row">
 					<div class="col-xs-12">
 						<h4 class="morado-plain uc fw-semibold nopadding">¿Qué tipo de WOMER eres?</h4>
@@ -353,10 +353,48 @@
 					</div>
 				</div>
 			</div>
-			<div id="wizardPlanes-paso3" class="wizardPlanes-pasos wizard-pasoFinal" data-nextStep="paso4" style="display: none;">
-				<h3 class="ta-center">Fin del wizard</h3>
+			<div id="wizardPlanes-paso3" class="wizardPlanes-pasos wizard-pasoFinal" style="display: block;">
+				<div class="plan-result ta-center">
+					<img class="wow animated slideInUp" src="img/wizard-planes-resultado.svg" alt="" style="margin: 0 auto 20px; display: block;">
+					<p><button class="btn btn-primary">Buscar otro plan</button></p>
+				</div>
+				<div class="plan-result telefono-sugerido">
+					<h4 class="morado-plain ta-center fw-normal">Contrata tu plan y llévate <br> cualquiera de estos equipos <br>con <strong>cuota inicial $0</strong></h4>
+					<div id="carousel-wizard-resultadoPlan" class="carousel slide" data-ride="carousel">
+						<!-- Indicators -->
+						<ol class="carousel-indicators">
+							<li data-target="#carousel-wizard-resultadoPlan" data-slide-to="0" class="active"></li>
+							<li data-target="#carousel-wizard-resultadoPlan" data-slide-to="1"></li>
+						</ol>
+
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner" role="listbox">
+							<div class="item active">
+								<img src="img/wizard-planes-resultado-telefono.png" alt="">
+							</div>
+							<div class="item">
+								<img src="img/wizard-planes-resultado-telefono.png" alt="">
+							</div>
+						</div>
+
+						<!-- Controls -->
+						<a class="left carousel-control" href="#carousel-wizard-resultadoPlan" role="button" data-slide="prev">
+							<i class="fa fa-angle-left"></i>
+						</a>
+						<a class="right carousel-control" href="#carousel-wizard-resultadoPlan" role="button" data-slide="next">
+							<i class="fa fa-angle-right"></i>
+						</a>
+					</div>
+					<p class="ta-center nomargin nopadding"><button class="btn btn-primary">Buscar otro equipo</button></p>
+				</div>
 			</div>
 		</div>
+	</div>
+
+	<div class="wizardPlanes-ending">
+		<p class="mt-20 ta-center">
+			<button class="btn btn-primary btn-lg morado-chicle-bg wow animated rubberBand">Contrátalo! WOM te llama <i class="fa fa-mobile-phone"></i></button>
+		</p>
 	</div>
 
 
