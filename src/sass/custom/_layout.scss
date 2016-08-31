@@ -215,7 +215,7 @@ ul {
 .mt-0 {margin-top: 0px !important;}
 .mt-10 {margin-top: 10px !important;}
 .mt-20 {margin-top: 20px !important;}
-.mb-20 {margin-top: 20px !important;}
+.mb-20 {margin-bottom: 20px !important;}
 .mt-40 {margin-top: 40px !important;}
 .mb-40 {margin-top: 40px !important;}
 .mr-10 {margin-right: 10px !important;}
@@ -650,6 +650,27 @@ ul {
 }
 .ico-portabilidad-tengoprepago2 {
   background-image: url(../../mockups/img/portabilidad/ico-tengo-plan2.svg);
+}
+
+#captcha {
+
+}
+
+#captcha .captchaLink {
+  border-radius: 100%;
+  border: 1px solid #CCC;
+  text-align: center;
+  width: 35px;
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 1.6rem;
+  padding: 4px 0;
+}
+
+#captcha .captchaLink.selected {
+  background-color: $quaternary;
+  color: white;
+  border-color: $quaternary;
 }
 
 #stepper_portabilidad {

@@ -3053,6 +3053,7 @@ $(document).ready(function(){
 		var $fields = $(".form-control:visible");
 		var $thisStep = $('.formPaso-stepper:visible');
 		var $nextStep = $thisStep.attr('data-nextStep');
+		var $filledFields = $fields.find('input[value!=""]');
 		var $emptyFields = $fields.filter(function() {
 	    	return $.trim(this.value) === "";
 	    });
@@ -3081,6 +3082,10 @@ $(document).ready(function(){
 		} else {
 		    console.log($emptyFields);
 		    $emptyFields.parents('.form-group').addClass('invalidInput').removeClass('input-effect');
+
+		    $filledFields.addClass('totallyValidInput');
+
+		    console.log($filledFields);
 		    $('#camposvacios').slideToggle();
 		    $('html, body').animate({scrollTop: $("#camposvacios").offset().top}, 200);
 		}
@@ -3122,6 +3127,13 @@ $(document).ready(function(){
 	});
 
 	// interacciones para el wizard de planes
+
+		// captcha enabler
+		$('#captcha .captchaLink').click(function () {
+			$(this).siblings('.captchaLink').removeClass('selected');
+			$(this).addClass('selected');
+			return false;
+		});
 		
 		// goto Next Step
 		function wizardGo () {
