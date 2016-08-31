@@ -2010,6 +2010,24 @@ button {
   font-weight: 700;
 }
 
+.modal.pac-modal .nav-pills li {
+  width: 49%;
+}
+
+.modal.pac-modal .fa-info-circle {
+  color: $secondary;
+}
+
+.modal.pac-modal .nav-pills > li:not(.active) > a {
+  background-color: #EEE
+}
+  .modal.pac-modal .nav-pills > li:first-of-type a {
+    border-radius: 4px 0 0 4px;
+  }
+  .modal.pac-modal .nav-pills > li:last-of-type a {
+    border-radius: 0 4px 4px 0;
+  }
+
 /* womstrap wells: general override; */
 
 .well {

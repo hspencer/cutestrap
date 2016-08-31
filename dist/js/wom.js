@@ -3193,6 +3193,12 @@ $(document).ready(function(){
 				$(this).addClass('visible');
 			});
 
+	// nav pills no tienen la cosa de active
+	$('.pac-modal .nav-pills a').click(function (){
+		$('.pac-modal .nav-pills li').removeClass('active');
+		$(this).parents('li').addClass('active');
+	});
+
 	// cerrar nav si clicas afuera [desactivado – choca con el resto del js porque los selectores son super genericos]
 	// $('body > *').not('nav').click(function() {
 	// 	if(!$('button.navbar-toggle').hasClass('collapsed')) {
