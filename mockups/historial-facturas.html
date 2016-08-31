@@ -1,0 +1,407 @@
+<!-- layout.nunjucks -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Historial Facturas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- MOVER A /SRC -->
+  <link rel="stylesheet" href="https://dl.dropboxusercontent.com/u/3538/animate.css">
+  <link rel="stylesheet" href="../dist/css/womstrap.css">
+</head>
+<body>
+
+  <!-- You write code for this content block in another file -->
+  
+
+	<nav class="navbar navbar-default navbar-main navbar-centered" role="navigation">
+	<!-- Brand and toggle get grouped for better mobile display -->
+	<div class="navbar-header">
+
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-brand-centered">
+			<span class="navLabel">Menú</span>
+			<figure class="hamburger">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</figure>
+		</button>
+
+		<!-- wom logo -->
+		<div class="navbar-brand navbar-brand-centered">
+			<a href="index.html" title="">
+				<img src="img/logo-wom.svg" width="80" height="80" >
+			</a>
+		</div>
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="navbar-brand-centered">
+			<ul class="nav navbar-nav">
+				<!-- <li><a href="#">Link</a></li>
+				<li><a href="#">Link</a></li> -->
+				<!-- <li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Personas <span class="caret"></span></a>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="#">Planes</a></li>
+						<li><a href="#">Prepago</a></li>
+						<li><a href="#">Internet</a></li>
+						<li><a href="#">Equipos</a></li>
+						<li class="divider"></li>
+						<li><a href="#">Sucursal Online</a></li>
+					</ul>
+				</li> -->
+				<li><a class="fw-semibold" href="#">Planes</a></li>
+				<li><a class="fw-semibold" href="#">Prepago</a></li>
+				<li><a class="fw-semibold" href="#">Internet</a></li>
+				<li><a class="fw-semibold" href="#">Equipos</a></li>
+				<li><a class="fw-semibold" href="#">Sucursal Online</a></li>
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</div>
+</nav>
+
+	<header>
+		<div class="bg-modulo bg-modulo-short modulo-portabilidad">
+			<div class="container">
+				<h3 class="ta-center white fw-semibold uc">Historial de Facturas</h3>
+				<h4 class="ta-center fw-normal white fs-base">Revisa tu histórico de tus servicios contratados</h4>
+			</div>
+		</div>
+	</header>
+
+	<div class="container">
+		<div class="row mb-10">
+			<div class="col-xs-12 select-phone">
+				<select class="form-control select-caret fw-bold">
+				  <option selected="">Centro de Costos</option>
+				  <option>2</option>
+				  <option>3</option>
+				  <option>4</option>
+				  <option>5</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12 select-phone">
+				<select class="form-control select-caret fw-bold">
+				  <option selected="">+56 988776655</option>
+				  <option>2</option>
+				  <option>3</option>
+				  <option>4</option>
+				  <option>5</option>
+				</select>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-xs-6">
+				<h6 class="fw-light small nopadding nomargin">Tienes una deuda</h6>
+				<h3 class="fw-semibold nopadding pt-5 nomargin">$ 20.990</h3>
+			</div>
+			<div class="col-xs-6 pt-10">
+				<button class="btn-primary btn-lg fw-semibold morado-chicle-bg pull-right">Pagar ahora</button>
+			</div>
+		</div>
+		<br>
+		<div class="row ta-center mb-10">
+			<div class="col-xs-12">
+				 <button class="btn-default btn-lg fw-semibold"><i class="fa fa-credit-card"></i> Suscríbete al PAT / PAC</button>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="factura-box mt-10">
+					<div class="row mb-10">
+						<div class="col-xs-4">
+							<h3 class="fw-semibold morado-plain nopadding nomargin uc"><i class="fa fa-file-text"></i> Jul</h3>
+						</div>
+						<div class="col-xs-4">
+							<h6 class="fw-light nopadding nomargin small">Vencimiento</h6>
+							<h5 class="fw-semibold nopadding nomargin">15/08/16</h5>
+						</div>
+						<div class="col-xs-4">
+							<h6 class="fw-light nopadding nomargin small">Nº Boleta</h6>
+							<h5 class="fw-semibold nopadding nomargin">985423</h5>
+						</div>	
+					</div>
+					<div class="row">
+						<div class="col-xs-4">
+							<h6 class="fw-light nopadding nomargin small">Monto</h6>
+							<h5 class="fw-semibold nopadding nomargin">$20.990</h5>
+						</div>
+						<div class="col-xs-4">
+							<h6 class="fw-light nopadding nomargin small">Estado</h6>
+							<h5 class="fw-semibold nopadding nomargin">Pendiente</h5>
+						</div>
+						<div class="col-xs-4">
+							<button class="btn btn-success fw-semibold">Pagar</button>
+						</div>
+					</div>	
+				</div>
+
+				<div class="factura-box mt-10">
+					<div class="row">
+						<div class="col-xs-4">
+							<h3 class="fw-semibold morado-plain nopadding nomargin uc"><i class="fa fa-check-circle"></i> Jun</h3>
+						</div>
+						<div class="col-xs-4">
+							<h6 class="fw-light nopadding nomargin small">Vencimiento</h6>
+							<h5 class="fw-semibold nopadding nomargin">15/08/16</h5>
+						</div>
+						<div class="col-xs-4">
+							<h6 class="fw-light nopadding nomargin small">Nº Boleta</h6>
+							<h5 class="fw-semibold nopadding nomargin">985423</h5>
+						</div>	
+					</div>
+					<div class="row">
+						<div class="col-xs-4">
+							<h6 class="fw-light nopadding nomargin small">Monto</h6>
+							<h5 class="fw-semibold nopadding nomargin">$20.990</h5>
+						</div>
+						<div class="col-xs-4">
+							<h6 class="fw-light nopadding nomargin small">Estado</h6>
+							<h5 class="fw-semibold nopadding nomargin">Pagada</h5>
+						</div>
+						<div class="col-xs-4">
+							<a href="#"><h6 class="fw-semibold morado-chicle p-10 nomargin"><i class="fa fa-file-text small"></i> Ver</h6></a>
+						</div>
+					</div>
+				</div>
+				<div class="pago-historial p-10">
+					<div class="row">
+						<div class="col-xs-4">
+							<h6 class="fw-light nopadding nomargin small">Pagada el</h6>
+							<h5 class="fw-semibold nopadding nomargin">15/08/16</h5>
+						</div>
+						<div class="col-xs-4">
+							<h6 class="fw-light nopadding nomargin small">Forma de pago</h6>
+							<h5 class="fw-semibold nopadding nomargin">Servipag</h5>
+						</div>
+						<div class="col-xs-4">
+						</div>
+					</div>					
+				</div>
+
+				<div class="factura-box mt-10">
+					<div class="row">
+						<div class="col-xs-4">
+							<h3 class="fw-semibold morado-plain nopadding nomargin uc"><i class="fa fa-check-circle"></i> May</h3>
+						</div>
+						<div class="col-xs-4">
+							<h6 class="fw-light nopadding nomargin small">Vencimiento</h6>
+							<h5 class="fw-semibold nopadding nomargin">15/08/16</h5>
+						</div>
+						<div class="col-xs-4">
+							<h6 class="fw-light nopadding nomargin small">Nº Boleta</h6>
+							<h5 class="fw-semibold nopadding nomargin">985423</h5>
+						</div>	
+					</div>
+					<div class="row">
+						<div class="col-xs-4">
+							<h6 class="fw-light nopadding nomargin small">Monto</h6>
+							<h5 class="fw-semibold nopadding nomargin">$20.990</h5>
+						</div>
+						<div class="col-xs-4">
+							<h6 class="fw-light nopadding nomargin small">Estado</h6>
+							<h5 class="fw-semibold nopadding nomargin">Pagada</h5>
+						</div>
+						<div class="col-xs-4">
+							<a href="#"><h6 class="fw-semibold morado-chicle p-10 nomargin"><i class="fa fa-file-text small"></i> Ver</h6></a>
+						</div>
+					</div>
+				</div>
+				<div class="pago-historial p-10">
+					<div class="row">
+						<div class="col-xs-4">
+							<h6 class="fw-light nopadding nomargin small">Pagada el</h6>
+							<h5 class="fw-semibold nopadding nomargin">15/08/16</h5>
+						</div>
+						<div class="col-xs-4">
+							<h6 class="fw-light nopadding nomargin small">Forma de pago</h6>
+							<h5 class="fw-semibold nopadding nomargin">Servipag</h5>
+						</div>
+						<div class="col-xs-4">
+						</div>
+					</div>					
+				</div>
+				<div class="factura-box mt-10">
+					<div class="row">
+						<div class="col-xs-4">
+							<h3 class="fw-semibold morado-plain nopadding nomargin uc"><i class="fa fa-exclamation-circle"></i> Abr</h3>
+						</div>
+						<div class="col-xs-4">
+							<h6 class="fw-light nopadding nomargin small">Vencimiento</h6>
+							<h5 class="fw-semibold nopadding nomargin">15/08/16</h5>
+						</div>
+						<div class="col-xs-4">
+							<h6 class="fw-light nopadding nomargin small">Nº Boleta</h6>
+							<h5 class="fw-semibold nopadding nomargin">985423</h5>
+						</div>	
+					</div>
+					<div class="row">
+						<div class="col-xs-4">
+							<h6 class="fw-light nopadding nomargin small">Monto</h6>
+							<h5 class="fw-semibold nopadding nomargin">$20.990</h5>
+						</div>
+						<div class="col-xs-4">
+							<h6 class="fw-light nopadding nomargin small">Estado</h6>
+							<h5 class="fw-semibold nopadding nomargin">Pagada</h5>
+						</div>
+						<div class="col-xs-4">
+							<button class="btn-primary btn fw-semibold morado-chicle-bg">Pagar</button>
+						</div>
+					</div>
+				</div>
+				<div class="pago-historial p-10">
+					<div class="row">
+						<div class="col-xs-4">
+							<h6 class="fw-light nopadding nomargin small">Abonado</h6>
+							<h5 class="fw-semibold nopadding nomargin">15/08/16</h5>
+						</div>
+						<div class="col-xs-4">
+							<h6 class="fw-light nopadding nomargin small">Forma de pago</h6>
+							<h5 class="fw-semibold nopadding nomargin">Servipag</h5>
+						</div>
+						<div class="col-xs-4">
+							<h6 class="fw-light nopadding nomargin small">Monto</h6>
+							<h5 class="fw-semibold nopadding nomargin">$2.500</h5>
+						</div>
+					</div>					
+				</div>
+				<div class="pago-historial p-10">
+					<div class="row">
+						<div class="col-xs-4">
+							<h6 class="fw-light nopadding nomargin small">Abonado</h6>
+							<h5 class="fw-semibold nopadding nomargin">15/08/16</h5>
+						</div>
+						<div class="col-xs-4">
+							<h6 class="fw-light nopadding nomargin small">Forma de pago</h6>
+							<h5 class="fw-semibold nopadding nomargin">Servipag</h5>
+						</div>
+						<div class="col-xs-4">
+							<h6 class="fw-light nopadding nomargin small">Monto</h6>
+							<h5 class="fw-semibold nopadding nomargin">$ 3.000</h5>
+						</div>
+					</div>					
+				</div>
+				<div class="pago-historial p-10">
+					<div class="row">
+						<div class="col-xs-4">
+							<h6 class="fw-light nopadding nomargin small">Abonado</h6>
+							<h5 class="fw-semibold nopadding nomargin">15/08/16</h5>
+						</div>
+						<div class="col-xs-4">
+							<h6 class="fw-light nopadding nomargin small">Forma de pago</h6>
+							<h5 class="fw-semibold nopadding nomargin">Servipag</h5>
+						</div>
+						<div class="col-xs-4">
+						<h6 class="fw-light nopadding nomargin small">Monto</h6>
+							<h5 class="fw-semibold nopadding nomargin">$8.000</h5>
+						</div>
+					</div>					
+				</div>
+
+				<div class="factura-box mt-10">
+					<div class="row">
+						<div class="col-xs-4">
+							<h3 class="fw-semibold morado-plain nopadding nomargin uc"><i class="fa fa-check-circle"></i> Mar</h3>
+						</div>
+						<div class="col-xs-4">
+							<h6 class="fw-light nopadding nomargin small">Vencimiento</h6>
+							<h5 class="fw-semibold nopadding nomargin">15/08/16</h5>
+						</div>
+						<div class="col-xs-4">
+							<h6 class="fw-light nopadding nomargin small">Nº Boleta</h6>
+							<h5 class="fw-semibold nopadding nomargin">985423</h5>
+						</div>	
+					</div>
+					<div class="row">
+						<div class="col-xs-4">
+							<h6 class="fw-light nopadding nomargin small">Monto</h6>
+							<h5 class="fw-semibold nopadding nomargin">$20.990</h5>
+						</div>
+						<div class="col-xs-4">
+							<h6 class="fw-light nopadding nomargin small">Estado</h6>
+							<h5 class="fw-semibold nopadding nomargin">Pagada</h5>
+						</div>
+						<div class="col-xs-4">
+							<a href="#"><h6 class="fw-semibold morado-chicle p-10 nomargin"><i class="fa fa-file-text small"></i> Ver</h6></a>
+						</div>
+					</div>
+				</div>
+				<div class="pago-historial p-10">
+					<div class="row">
+						<div class="col-xs-4">
+							<h6 class="fw-light nopadding nomargin small">Pagada el</h6>
+							<h5 class="fw-semibold nopadding nomargin">15/08/16</h5>
+						</div>
+						<div class="col-xs-4">
+							<h6 class="fw-light nopadding nomargin small">Forma de pago</h6>
+							<h5 class="fw-semibold nopadding nomargin">Servipag</h5>
+						</div>
+						<div class="col-xs-4">
+						</div>
+					</div>					
+				</div>		
+			</div>
+		</div>
+		
+
+
+		<div class="ta-center pt-20">
+			<i class="fa morado-plain fa-circle-o-notch fa-spin fa-3x fa-fw margin-bottom"></i>
+		</div>
+
+		<div class="row pt-10">
+			<div class="col-xs-12 text-center">
+				<div class="ta-center fw-normal text-muted">
+	                <p class="pb-5">Descarga el total de todas tus facturas emitidas</p>
+	            </div>
+				<button class="btn btn-lg btn-success fw-semibold"><i class="fa fa-download"></i> Descargar</button>
+			</div>
+	    </div>
+
+	</div>
+
+	<footer class="main-foot">
+  <div class="container">
+    <div class="row">
+      <div class="ta-center">
+        <img src="img/logo-footer.svg">
+      </div>
+      <ul class="accesos-foot">
+        <li class="non-point">
+          <a class="salt-space" href="#">¡Síguenos!</a>
+          <a class="salt-space" href="https://www.facebook.com/womchile" target="_blank">
+            <img class="ico-space" src="img/icons/ico-face-white.png">
+          </a>
+          <a class="salt-space" href="#" target="_blank">
+            <img class="ico-space" src="img/icons/ico-twitter-white.png">
+          </a>
+          <a class="salt-space" href="#" target="_blank">
+            <img class="ico-space" src="img/icons/ico-youtube-white.png">
+          </a>
+          <a class="salt-space" href="#" target="_blank"><img class="ico-space" src="img/icons/ico-white-instagram.png"></a>
+        </li>
+      </ul>
+      <ul class="lista-foot">
+        <li><a href="#">Te ayudamos</a></li>
+        <li><a href="#">Sobre WOM</a></li>
+        <li><a href="#">Términos Legales</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://use.fontawesome.com/fc096a74c6.js"></script>
+  <script src="../dist/js/wom.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+</body>
+</html>
