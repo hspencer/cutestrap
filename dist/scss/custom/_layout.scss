@@ -152,6 +152,15 @@ ul {
 .morado-chicle a {
   text-decoration: underline;
 }
+.fc-primary {
+  color: $primary;
+}
+.fc-gray3 {
+  color: $gray-3;
+}
+.fc-gray2 {
+  color: $gray-2;
+}
 .dark-red {
   color: #AE8282;
 }
@@ -219,11 +228,15 @@ ul {
 .mt-0 {margin-top: 0px !important;}
 .mt-10 {margin-top: 10px !important;}
 .mt-20 {margin-top: 20px !important;}
+.mt--10 {margin-top: -10px !important;}
+.mt--20 {margin-top: -20px !important;}
 .mb-20 {margin-bottom: 20px !important;}
 .mt-40 {margin-top: 40px !important;}
 .mb-40 {margin-top: 40px !important;}
 .mr-10 {margin-right: 10px !important;}
 .mb-10 {margin-bottom: 10px !important;}
+.mb--10 {margin-bottom: -10px !important;}
+.mb--20 {margin-bottom: -20px !important;}
 .ml--20 {margin-left: -15px !important;}
 
 /* estilos extras de Carlos:; */
@@ -1062,8 +1075,9 @@ button {
 }
 
 .modulo-saldo .modulo-saldo-cash {
-  font-size: 5.4rem;
-  color: #666;
+  font-size: 4.4rem;
+  color: $primary;
+  margin-top: -15px;
 }
 
 .modulo-saldo .modulo-saldo-promedio {
@@ -1078,10 +1092,11 @@ button {
 }
 
 .modulo-planes-convenientes {
-  background-color: white;
+  background-color: $gray-6;
+  padding: 0;
 }
 .modulo-planes-convenientes p {
-  color: $gray-3 !important;
+  color: $gray-2 !important;
 }
 /* nuevo layout: calendar cards; */
 
@@ -1722,17 +1737,19 @@ button {
 }
 
 .home-pago-modulo .tab-content > .tab-pane {
-  border: 1px solid $quaternary;
+  border: 1px solid $primary;
+
 }
 
 .home-pago-modulo .nav-tabs a {
   border-radius: 0;
-  background-color: $quaternary;
+  background-color: $primary;
   color: white;
 }
 
 .home-pago-modulo .nav-tabs a {
-  border-color: $quaternary;
+  border-color: $primary;
+  border-bottom: 0;
   color: white;
 }
 
@@ -1751,9 +1768,11 @@ button {
 .home-pago-modulo .nav-tabs > li.active > a, 
 .home-pago-modulo .nav-tabs > li.active > a:hover, 
 .home-pago-modulo .nav-tabs > li.active > a:focus {
-  border-color: $quaternary;
-  color: $quaternary;
+  border-color: $primary;
+  color: $primary;
   border-bottom: none;
+  padding-right: 5px !important;
+  padding-left: 5px !important;
 }
 
 @media only screen and (min-width: 375px)  {
