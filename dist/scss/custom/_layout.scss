@@ -250,6 +250,16 @@ ul {
     margin-bottom: 0px;
   }
 
+  .factura-box .mes-verde {color: green;}
+  .factura-box .mes-rojo {color: red;}
+  .factura-box .mes-gris {color: gray;}
+
+  .factura-box span.bg-danger {
+    padding: 1px 4px;
+    background-color: #F4ADAD;
+    color: white;
+  }
+
   table.llamadas {
     border-radius: 0;
   }
