@@ -247,6 +247,10 @@ ul {
     margin-bottom: 0px;
   }
 
+  table.llamadas {
+    border-radius: 0;
+  }
+
   table.llamadas .table-striped > tbody > tr:nth-of-type(odd) {
     background-color: #DDD;
   }
