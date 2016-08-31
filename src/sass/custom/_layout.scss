@@ -147,6 +147,7 @@ ul {
 .morado-chicle-bg {
   background-color: #ba007c;
   border: none;
+  color: white;
 }
 .morado-chicle a {
   text-decoration: underline;
@@ -254,6 +255,11 @@ ul {
     padding: 10px;
     border: 1px solid #CCC;
     margin-bottom: 0px;
+  }
+
+  .factura-box .fw-semibold:not(.btn),
+  .pago-historial .fw-semibold {
+    color: #666;
   }
 
   .factura-box .mes-verde {color: green;}
