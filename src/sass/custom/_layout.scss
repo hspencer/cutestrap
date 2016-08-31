@@ -247,6 +247,14 @@ ul {
     margin-bottom: 0px;
   }
 
+  table.llamadas .table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: #DDD;
+  }
+
+  table.llamadas.table-striped th {
+    background-color: #DDD;
+  }
+
 /* estilos extras de pago facil */
 
 .bg-modulo {
