@@ -129,6 +129,9 @@ ul {
 .no-underline {
   text-decoration: none;
 }
+.autocenter {
+  margin: 0 auto;
+}
 .morado-plain {
   color: $quaternary;
 }
@@ -775,7 +778,6 @@ ul {
 .modal .modal-dialog {
   z-index: 1000;
   padding-top: 90px;
-
 }
 
 .modal .modal-dialog .btn {
@@ -879,6 +881,12 @@ ul {
 .btn-link-success {
   text-decoration: none;
   color: #ba007c !important;
+}
+
+.modal .modal-dialog .btn, .modal .modal-dialog [type=button], .modal .modal-dialog
+[type=submit], .modal .modal-dialog
+button {
+  color: white;
 }
 
 /* bootstrap core override para lite form components */
@@ -1665,6 +1673,32 @@ ul {
   background-position: 97% center
 }
 
+.modal-consumo-modulo .tab-content {
+  padding: 15px;
+  border: 1px solid #622761;
+  margin-top: -2px;
+}
+
+.modal-consumo-modulo .nav-tabs > li {
+  width: 50%;
+  text-align: center;
+}
+
+.modal-consumo-modulo .nav-tabs > li a {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.modal-consumo-modulo .nav-tabs > li.active > a, 
+.modal-consumo-modulo .nav-tabs > li.active > a:hover, 
+.modal-consumo-modulo .nav-tabs > li.active > a:focus {
+  border-radius: 0;
+  width: 100%;
+  border-color: #622761;
+  border-bottom: 1px solid white;
+}
+
 .home-pago-modulo .tab-content > .tab-pane {
   border: 1px solid $quaternary;
 }
@@ -1952,6 +1986,16 @@ ul {
   margin-top: -170px;
   color: white;
   border: none;
+}
+
+.modal.saldo-modal .modal-dialog .modal-content {
+  border-radius: 5px;
+  border: none;
+}
+
+.modal.saldo-modal .modal-dialog .modal-content .modal-title {
+  padding-top: 40px;
+  text-transform: none;
 }
 
 /* womstrap wells: general override; */
