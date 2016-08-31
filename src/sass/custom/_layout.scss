@@ -257,7 +257,7 @@ ul {
     margin-bottom: 0px;
   }
 
-  .factura-box .fw-semibold:not(.btn),
+  .factura-box .fw-semibold:not(.btn):not(h3):not(.morado-chicle):not(.bg-danger),
   .pago-historial .fw-semibold {
     color: #666;
   }
