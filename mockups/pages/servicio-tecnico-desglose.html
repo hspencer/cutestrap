@@ -1,0 +1,60 @@
+{% extends "layout.nunjucks" %}
+{% set title = "Servicio Técnico - Desglose" %}
+
+{% block content %}
+
+	{% include "partials/navbar.html" %}
+
+	{% include "partials/header-servicio-tecnico.html" %}
+
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<h4 class="morado-plain ta-center uc nomargin nopadding">Estado del proceso</h4>
+				<br>
+			</div>
+		</div>
+		<div class="row">
+			<div class="servicio-tecnico-timeline">
+				<ul>
+					<li class="complete">
+						<i class="fa fa-check-circle"></i>
+						<h6 class="nomargin nopadding uc">Ingreso de tu equipo</h6>
+						<p class="nomargin nopadding morado-plain"><i class="fa fa-calendar"></i> 22 Junio 2016</p>
+						<p class="nomargin nopadding morado-plain"><i class="fa fa-map-marker"></i> Sucursal Rosas</p>
+						<p class="nomargin nopadding"><a href="#" class="btn btn-default btn-sm">Ver en el mapa</a></p>
+					</li>
+
+					<li class="complete">
+						<i class="fa fa-check-circle"></i>
+						<h6 class="nomargin nopadding uc">En ruta a servicio</h6>
+						<p class="nomargin nopadding morado-plain"><i class="fa fa-calendar"></i> 4 Agosto 2016</p>
+					</li>
+
+					<li class="complete">
+						<i class="fa fa-check-circle"></i>
+						<h6 class="nomargin nopadding uc">Servicio Técnico</h6>
+						<p class="nomargin nopadding morado-plain"><i class="fa fa-calendar"></i> 22 Junio 2016</p>
+						<p class="nomargin nopadding morado-plain"><i class="fa fa-map-marker"></i> Sucursal Rosas</p>
+						<p class="nomargin nopadding"><a href="#" class="btn btn-default btn-sm">Ver en el mapa</a></p>
+					</li>
+
+					<li>
+						<i class="fa fa-circle-o"></i>
+						<h6 class="nomargin nopadding uc">En ruta a sucursal</h6>
+						<p class="nomargin nopadding"><i class="fa fa-calendar"></i> Por confirmar</p>
+					</li>
+
+					<li>
+						<i class="fa fa-circle-o"></i>
+						<h6 class="nomargin nopadding uc">Retira tu equipo</h6>
+						<p class="nomargin nopadding"><i class="fa fa-calendar"></i> Por confirmar</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	{% include "partials/footer.html" %}
+
+{% endblock %}
