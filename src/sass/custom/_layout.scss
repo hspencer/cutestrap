@@ -1891,6 +1891,55 @@ button {
   line-height: 120%;
 }
 
+.servicio-tecnico-timeline {
+  width: 65%;
+  margin: 0 auto;
+}
+
+.servicio-tecnico-timeline ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.servicio-tecnico-timeline ul li {
+  position: relative;
+  padding-left: 30px;
+  padding-bottom: 30px;
+  color: #7A7A7A;
+  border-left: 2px dashed #7a7a7a;
+}
+
+.servicio-tecnico-timeline ul li.complete {
+  color: black;
+  border-color: $quaternary;
+}
+
+.servicio-tecnico-timeline ul li h6 {
+  color: #7a7a7a;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.servicio-tecnico-timeline ul li .btn-link {
+  margin-top: 5px;
+}
+.servicio-tecnico-timeline ul li > p {
+  line-height: 180%;
+}
+.servicio-tecnico-timeline ul li i.fa-check-circle,
+.servicio-tecnico-timeline ul li i.fa-circle-o {
+  position: absolute;
+  top: -7px;
+  left: -14px;
+  font-size: 30px;
+  background: white;
+}
+
+.servicio-tecnico-timeline ul li.complete i.fa-check-circle {
+  color: $quaternary;
+}
+
 .modal-consumo-modulo .tab-content {
   padding: 15px;
   border: 1px solid #622761;
