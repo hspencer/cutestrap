@@ -1,6 +1,3 @@
-/*Home - Test Styles*/
-
-
 /* portabilidad */
 
 .bg-portabilidad{
@@ -137,6 +134,7 @@ ul {
 }
 .morado-plain-bg {
   background-color: $quaternary;
+  color: white;
 }
 .gray-2 {
   color: $gray-2;
@@ -1704,11 +1702,178 @@ button {
   top: -45px;
   margin-bottom: -75px;
 }
-#form-centro-ayuda .form-control {
+.form-control.centro-ayuda-search {
   border: 1px solid #666;
   background-image: url(../../mockups/img/home/ico-lupa.svg);
   background-repeat: no-repeat;
   background-position: 97% center
+}
+
+/* centro de ayuda : Home */
+
+.centro-ayuda-welcome {
+  background-image: url(../../mockups/img/centro-de-ayuda/welcome-bg.png);
+  background-position: center bottom;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  height: 350px;
+  color: #8B8B8B;
+  position: relative;
+}
+
+.centro-ayuda-robo {
+  position: absolute;
+  bottom: -10px;
+  width: 97%;
+}
+
+.centro-ayuda-robo .icon-flaite {
+  float: left;
+  margin-right: 15px;
+}
+
+.form-control.centro-ayuda-search-alt {
+  border-radius: 5px;
+  border-color: #CCC;
+  padding: 25px 10px;
+  width: 88%;
+}
+
+.centro-ayuda-welcome .fw-normal {
+  margin-left: 8%;
+}
+
+.centro-ayuda-navmap {
+  list-style-type: none;
+}
+
+.centro-ayuda-navmap > li {
+  line-height: 100%;
+  border-bottom: 1px solid white;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+  .centro-ayuda-navmap > li:last-of-type {
+    margin-bottom: 0;
+    border: none;
+  }
+
+.centro-ayuda-navmap > li .icon {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  width: 30px;
+  margin-left: 15px;
+}
+
+.centro-ayuda-navmap > li > a {
+  color: white;
+  text-decoration: none;
+}
+
+.centro-ayuda-navmap > li > a > p {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.centro-ayuda-navmap h5 {
+  color: white;
+  margin: 0 0 5px 0;
+  padding: 0;
+}
+
+.centro-ayuda-faq {
+  margin-bottom: 20px;
+}
+
+.centro-ayuda-faq ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.centro-ayuda-faq ul > li {
+  padding: 15px 30px;
+  border-bottom: 1px solid #CCC;
+}
+
+.centro-ayuda-faq ul > li:last-of-type {
+  border-bottom: 0;
+}
+
+.centro-ayuda-faq ul > li > a {
+  color: #8B8B8B;
+}
+
+.centro-ayuda-faq ul > li > a span {
+  display: block;
+  float: left;
+  background-color: $quaternary;
+  font-weight: 900;
+  border-radius: 100%;
+  width: 25px;
+  text-align: center;
+  color: white;
+  line-height: 25px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.centro-ayuda-social {
+}
+
+.centro-ayuda-social ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.centro-ayuda-social ul li {
+  padding: 10px 10% 10px 22%;
+}
+
+.centro-ayuda-social ul li i.fa {
+  margin-right: 20px;
+  border-radius: 100%;
+  width: 30px;
+  text-align: center;
+  padding: 7px 0px;
+  color: white;
+}
+
+.centro-ayuda-social ul li i.fa.fa-facebook {
+  background-color: #3b5998;
+}
+
+.centro-ayuda-social ul li i.fa.fa-twitter {
+  background-color: #1da1f2;
+}
+
+.centro-ayuda-social ul li i.fa.fa-instagram {
+  background-color: #5851db;
+}
+
+.centro-ayuda-social ul li i.fa.fa-youtube {
+  background-color: #ff0000;
+}
+
+.centro-ayuda-social ul li i.fa.fa-linkedin {
+  background-color: #0077b5;
+}
+
+.centro-ayuda-social > ul > li {
+  border-bottom: 1px solid #CCC;
+}
+
+  .centro-ayuda-social > ul > li:last-of-type {
+    border-bottom: 0;
+  }
+
+.centro-ayuda-social > ul > li > a {
+  color: #8B8B8B;
 }
 
 .modal-consumo-modulo .tab-content {
