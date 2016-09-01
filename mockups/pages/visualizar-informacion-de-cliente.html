@@ -1,0 +1,52 @@
+{% extends "layout.nunjucks" %}
+{% set title = "Visualizar información de cliente (Ejecutivo)" %}
+
+{% block content %}
+
+	{% include "partials/navbar.html" %}
+
+	<header>
+		<div class="bg-modulo bg-modulo-shortest modulo-portabilidad">
+			<div class="container">
+				<h3 class="ta-center white fw-semibold fs-normal uc">Información de nuestros Womers</h3>
+			</div>
+		</div>
+	</header>
+	
+	<div class="container home-pago-modulo consulta-datos-modulo">
+		<div class="row">
+			<div class="col-xs-12">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+					<li role="presentation" class="active"><a class="fs-small" href="#consulta-rut" aria-controls="home" role="tab" data-toggle="tab">RUT</a></li>
+					<li role="presentation"><a class="fs-small" href="#consulta-telefono" aria-controls="profile" role="tab" data-toggle="tab">Nº de teléfono</a></li>
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content ta-center">
+					<div role="tabpanel" class="tab-pane active" id="consulta-rut">
+						<div class="form-group input-effect">
+							<span class="miniLabel">RUT</span>
+							<input type="textnumber" class="form-control" id="consultaderut" placeholder="RUT">
+						</div>
+						<p>
+							<button class="btn btn-lg btn-primary morado-chicle-bg">Consultar</button>
+						</p>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="consulta-telefono">
+						<div class="form-group invalidInput">
+							<span class="miniLabel">Número de celular</span>
+							<input type="textnumber" class="form-control" id="consultadecelular" placeholder="Número de celular" onclick="$(this).val('+56 9');">
+							<span class="helpText fs-small text-danger ta-left">Ingrese datos numéricos</span>
+						</div>
+						<p>
+							<button class="btn btn-lg btn-primary morado-chicle-bg">Consultar</button>
+						</p>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</div>
+	
+	{% include "partials/footer.html" %}
+{% endblock %}
