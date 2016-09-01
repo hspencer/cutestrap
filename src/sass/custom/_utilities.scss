@@ -147,6 +147,10 @@ Styleguide 3.1
   font-size: $font-size;
 }
 
+.fs-bigish{
+  font-size: $font-size *1.2;
+}
+
 .fs-medium {
   font-size: 2.5rem;
 }
