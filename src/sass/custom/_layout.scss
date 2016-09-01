@@ -1777,6 +1777,7 @@ button {
 .centro-ayuda-navmap > li > a > p {
   margin-bottom: 0;
   padding-bottom: 0;
+  overflow: hidden;
 }
 
 .centro-ayuda-navmap h5 {
@@ -1819,7 +1820,7 @@ button {
   color: white;
   line-height: 25px;
   margin-right: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .centro-ayuda-social {
@@ -1874,6 +1875,20 @@ button {
 
 .centro-ayuda-social > ul > li > a {
   color: #8B8B8B;
+}
+
+/* Servicio técnico */
+
+.servicio-tecnico-welcome { padding: 0 25px; }
+.servicio-tecnico-pills .tab-content {
+  border: 1px solid $primary;
+  padding: 30px 5px;
+}
+
+.servicio-tecnico-pills .helpText {
+  margin-top: 10px;
+  display: inline-block;
+  line-height: 120%;
 }
 
 .modal-consumo-modulo .tab-content {
