@@ -5,41 +5,25 @@
 
 	{% include "partials/navbar.html" %}
 
-	<header>
-	<div class="bg-modulo bg-modulo-short modulo-portabilidad">
-		<div class="container">
-			<h3 class="ta-center white fw-semibold uc">Historial de Recargas</h3>
-			<h4 class="ta-center fw-normal white fs-base">Revisa tu histórico de recargas</h4>
-		</div>
-	</div>
-</header>
+	{% include "partials/header-historial-recargas.html" %}
+
+	
 
 <div class="container">
 	<div class="row">
 		{% include "partials/private-selector-bolsas.html" %}
-	<div class="row ta-center">
+	<div class="ta-center">
 		<div class="col-xs-12">
-			<div class="modulo-saldo">
-				<h4 class="fw-semibold nopadding fc-primary fs-smalish">Tu saldo actual:</h4>
-				<h2 class="modulo-saldo-cash fw-semibold">
-					<small class="fc-primary">$</small>7.000
-				</h2>
-				<h4 class="fw-normal nopadding fs-smalish fc-gray2">Tu recarga promedio mensual es de:</h4>
-				<h2 class="modulo-saldo-promedio">
-					<small>$</small><span class="fw-semibold fc-gray2 fs-medium">20.000</span>
-				</h2>
-			</div>
+			
+			{% include "partials/private-historial-recargas-modulo-saldo.html" %}
+			
 		</div>
 	</div>
 	<div class="ta-center">
 		<div class="col-xs-12">
-			<div class="well modulo-planes-convenientes">
-				<i class="fa morado-plain ico-promo-descubre-plan pull-left"></i>
-				<p class="pull-left">Descubre un plan más conveniente</p>
-				<p>
-					<button type="button" href="#" class="btn btn-primary fs-medium fw-semibold">Ver planes</button>
-				</p>
-			</div>
+			
+			{% include "partials/private-historial-recargas-descubre-plan.html" %}
+
 		</div>
 	</div>
 </div>
@@ -63,7 +47,7 @@
 	<div class="ta-center">
 		<i class="fa morado-plain fa-circle-o-notch fa-spin fa-3x fa-fw margin-bottom"></i>
 	</div>
-
+</div></div>
 </div>
 
 	{% include "partials/footer.html" %}
