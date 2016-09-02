@@ -20,7 +20,7 @@
 
       <header>
   <h3>
-    <a href="javascript:;" class="js-grid-toggle grid-toggle fs-base f-right">Grid</a>
+    <a href="../mockups/index.html" class="js-grid-toggle grid-toggle fs-base f-right">Mockups</a>
     <a href="./index.html">WOMstrap</a>
   </h3>
 </header>
@@ -29,7 +29,7 @@
       
 
 
-<nav class='navbar'>
+<nav class='doc-navbar'>
   <ul>
       <li>
         <a href="section-1.html">Grid</a>
@@ -49,15 +49,17 @@
       <li>
         <a href="section-6.html">Components</a>
       </li>
+      <li>
+        <a href="section-7.html">Navbars</a>
+      </li>
   </ul>
 </nav>
 
 
 <div class="container">
-
       <article class="pattern">
           <h2 id="1">Grid</h2>
-          <div class="subtitle pattern-description"><p>Basic grid made using flexbox. By default, the grid is collapsed on small screens.</p>
+          <div class="subtitle pattern-description"><p>This is a <strong>basic grid system</strong> made using flexbox. By default, the grid is collapsed on small screens.</p>
 </div>
           <section class="example">
 <pre class="">&lt;main class=&quot;grid [modifier class]&quot;&gt;
@@ -99,9 +101,9 @@
           </section>
       </article>
       <article class="pattern">
-          <h2 class="kss-title" id="1-1">
-            <span class="kss-ref badge pull-right">1-1</span> Direct children of &#x60;.grid&#x60; are columns.
-          </h2>
+          <h3 class="kss-title" id="1-1-1">
+            <span class="kss-ref badge pull-right">1-1-1</span> Direct children of &#x60;.grid&#x60; are columns.
+          </h3>
           <section class="example">
 <pre class="">&lt;main class=&quot;grid&quot;&gt;
   &lt;section class=&quot;[modifier class]&quot;&gt;
@@ -162,9 +164,9 @@
           </section>
       </article>
       <article class="pattern">
-          <h2 class="kss-title" id="1-2">
-            <span class="kss-ref badge pull-right">1-2</span> Wrappers
-          </h2>
+          <h3 class="kss-title" id="1-1-2">
+            <span class="kss-ref badge pull-right">1-1-2</span> Wrappers
+          </h3>
           <div class="subtitle pattern-description"><p>Use wrappers when you need a content area that is a standardized width and centered on the page.</p>
 </div>
           <section class="example">
@@ -179,13 +181,14 @@
           </section>
       </article>
       <article class="pattern">
-          <h2 class="kss-title" id="1-3">
-            <span class="kss-ref badge pull-right">1-3</span> The Bootstrap Grid
+          <h2 class="kss-title" id="1-2">
+            <span class="kss-ref badge pull-right">1-2</span> The Bootstrap Grid
           </h2>
+          <div class="subtitle pattern-description"><p>This is the <strong>bootstrap standard grid system</strong>, which serves as a basic scaffolding for responsive apps.</p>
+</div>
           <section class="example">
 <pre class="">&lt;div class=&quot;row&quot;&gt;
-  &lt;div class=&quot;col-md-1&quot;&gt;&lt;div class=&quot;fs-small ta-center&quot;&gt;.col-md-1&lt;/div&gt;&lt;/div&gt;
-  &lt;div class=&quot;col-md-1&quot;&gt;&lt;div class=&quot;fs-small ta-center&quot;&gt;.col-md-1&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=&quot;col-md-2&quot;&gt;&lt;div class=&quot;well fs-small ta-center&quot;&gt;.col-md-1&lt;/div&gt;&lt;/div&gt;
   &lt;div class=&quot;col-md-1&quot;&gt;&lt;div class=&quot;fs-small ta-center&quot;&gt;.col-md-1&lt;/div&gt;&lt;/div&gt;
   &lt;div class=&quot;col-md-1&quot;&gt;&lt;div class=&quot;fs-small ta-center&quot;&gt;.col-md-1&lt;/div&gt;&lt;/div&gt;
   &lt;div class=&quot;col-md-1&quot;&gt;&lt;div class=&quot;fs-small ta-center&quot;&gt;.col-md-1&lt;/div&gt;&lt;/div&gt;
@@ -198,21 +201,20 @@
   &lt;div class=&quot;col-md-1&quot;&gt;&lt;div class=&quot;fs-small ta-center&quot;&gt;.col-md-1&lt;/div&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;row&quot;&gt;
-  &lt;div class=&quot;col-md-8&quot;&gt;&lt;div class=&quot;fs-small ta-center&quot;&gt;.col-md-8&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=&quot;col-md-8&quot;&gt;&lt;div class=&quot;well fs-small ta-center&quot;&gt;.col-md-8&lt;/div&gt;&lt;/div&gt;
   &lt;div class=&quot;col-md-4&quot;&gt;&lt;div class=&quot;fs-small ta-center&quot;&gt;.col-md-4&lt;/div&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;row&quot;&gt;
-  &lt;div class=&quot;col-md-4&quot;&gt;&lt;div class=&quot;fs-small ta-center&quot;&gt;.col-md-4&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=&quot;col-md-4&quot;&gt;&lt;div class=&quot;well fs-small ta-center&quot;&gt;.col-md-4&lt;/div&gt;&lt;/div&gt;
   &lt;div class=&quot;col-md-4&quot;&gt;&lt;div class=&quot;fs-small ta-center&quot;&gt;.col-md-4&lt;/div&gt;&lt;/div&gt;
   &lt;div class=&quot;col-md-4&quot;&gt;&lt;div class=&quot;fs-small ta-center&quot;&gt;.col-md-4&lt;/div&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;row&quot;&gt;
-  &lt;div class=&quot;col-md-6&quot;&gt;&lt;div class=&quot;fs-small ta-center&quot;&gt;.col-md-6&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=&quot;col-md-6&quot;&gt;&lt;div class=&quot;well fs-small ta-center&quot;&gt;.col-md-6&lt;/div&gt;&lt;/div&gt;
   &lt;div class=&quot;col-md-6&quot;&gt;&lt;div class=&quot;fs-small ta-center&quot;&gt;.col-md-6&lt;/div&gt;&lt;/div&gt;
 &lt;/div&gt;</pre>
             <div class="kss-example"><div class="row">
-  <div class="col-md-1"><div class="fs-small ta-center">.col-md-1</div></div>
-  <div class="col-md-1"><div class="fs-small ta-center">.col-md-1</div></div>
+  <div class="col-md-2"><div class="well fs-small ta-center">.col-md-1</div></div>
   <div class="col-md-1"><div class="fs-small ta-center">.col-md-1</div></div>
   <div class="col-md-1"><div class="fs-small ta-center">.col-md-1</div></div>
   <div class="col-md-1"><div class="fs-small ta-center">.col-md-1</div></div>
@@ -225,17 +227,165 @@
   <div class="col-md-1"><div class="fs-small ta-center">.col-md-1</div></div>
 </div>
 <div class="row">
-  <div class="col-md-8"><div class="fs-small ta-center">.col-md-8</div></div>
+  <div class="col-md-8"><div class="well fs-small ta-center">.col-md-8</div></div>
   <div class="col-md-4"><div class="fs-small ta-center">.col-md-4</div></div>
 </div>
 <div class="row">
-  <div class="col-md-4"><div class="fs-small ta-center">.col-md-4</div></div>
+  <div class="col-md-4"><div class="well fs-small ta-center">.col-md-4</div></div>
   <div class="col-md-4"><div class="fs-small ta-center">.col-md-4</div></div>
   <div class="col-md-4"><div class="fs-small ta-center">.col-md-4</div></div>
 </div>
 <div class="row">
+  <div class="col-md-6"><div class="well fs-small ta-center">.col-md-6</div></div>
   <div class="col-md-6"><div class="fs-small ta-center">.col-md-6</div></div>
-  <div class="col-md-6"><div class="fs-small ta-center">.col-md-6</div></div>
+</div></div>
+          </section>
+      </article>
+      <article class="pattern">
+          <h3 class="kss-title" id="1-2-1">
+            <span class="kss-ref badge pull-right">1-2-1</span> Responsive Utilities
+          </h3>
+          <div class="subtitle pattern-description"><p>For faster mobile-friendly development, use these utility classes for showing and hiding content by device via media query. Also included are utility classes for toggling content when printed.</p>
+<p>Try to use these on a limited basis and avoid creating entirely different versions of the same site. Instead, use them to complement each device&#39;s presentation.</p>
+</div>
+          <section class="example">
+<pre class="">&lt;div class=&quot;table-responsive&quot;&gt;
+    &lt;table class=&quot;table table-bordered table-striped responsive-utilities&quot;&gt;
+        &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th&gt;&lt;/th&gt;
+                &lt;th&gt; Extra small devices &lt;small&gt;Phones (&amp;lt;768px)&lt;/small&gt; &lt;/th&gt;
+                &lt;th&gt; Small devices &lt;small&gt;Tablets (≥768px)&lt;/small&gt; &lt;/th&gt;
+                &lt;th&gt; Medium devices &lt;small&gt;Desktops (≥992px)&lt;/small&gt; &lt;/th&gt;
+                &lt;th&gt; Large devices &lt;small&gt;Desktops (≥1200px)&lt;/small&gt; &lt;/th&gt;
+            &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;th scope=&quot;row&quot;&gt;&lt;code&gt;.visible-xs-*&lt;/code&gt;&lt;/th&gt;
+                &lt;td class=&quot;success&quot;&gt;Visible&lt;/td&gt;
+                &lt;td class=&quot;danger&quot;&gt;Hidden&lt;/td&gt;
+                &lt;td class=&quot;danger&quot;&gt;Hidden&lt;/td&gt;
+                &lt;td class=&quot;danger&quot;&gt;Hidden&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;th scope=&quot;row&quot;&gt;&lt;code&gt;.visible-sm-*&lt;/code&gt;&lt;/th&gt;
+                &lt;td class=&quot;danger&quot;&gt;Hidden&lt;/td&gt;
+                &lt;td class=&quot;success&quot;&gt;Visible&lt;/td&gt;
+                &lt;td class=&quot;danger&quot;&gt;Hidden&lt;/td&gt;
+                &lt;td class=&quot;danger&quot;&gt;Hidden&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;th scope=&quot;row&quot;&gt;&lt;code&gt;.visible-md-*&lt;/code&gt;&lt;/th&gt;
+                &lt;td class=&quot;danger&quot;&gt;Hidden&lt;/td&gt;
+                &lt;td class=&quot;danger&quot;&gt;Hidden&lt;/td&gt;
+                &lt;td class=&quot;success&quot;&gt;Visible&lt;/td&gt;
+                &lt;td class=&quot;danger&quot;&gt;Hidden&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;th scope=&quot;row&quot;&gt;&lt;code&gt;.visible-lg-*&lt;/code&gt;&lt;/th&gt;
+                &lt;td class=&quot;danger&quot;&gt;Hidden&lt;/td&gt;
+                &lt;td class=&quot;danger&quot;&gt;Hidden&lt;/td&gt;
+                &lt;td class=&quot;danger&quot;&gt;Hidden&lt;/td&gt;
+                &lt;td class=&quot;success&quot;&gt;Visible&lt;/td&gt;
+            &lt;/tr&gt; &lt;/tbody&gt; &lt;tbody&gt; &lt;tr&gt; &lt;th scope=&quot;row&quot;&gt;&lt;code&gt;.hidden-xs&lt;/code&gt;&lt;/th&gt;
+            &lt;td class=&quot;danger&quot;&gt;Hidden&lt;/td&gt;
+            &lt;td class=&quot;success&quot;&gt;Visible&lt;/td&gt;
+            &lt;td class=&quot;success&quot;&gt;Visible&lt;/td&gt;
+            &lt;td class=&quot;success&quot;&gt;Visible&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th scope=&quot;row&quot;&gt;&lt;code&gt;.hidden-sm&lt;/code&gt;&lt;/th&gt;
+            &lt;td class=&quot;success&quot;&gt;Visible&lt;/td&gt;
+            &lt;td class=&quot;danger&quot;&gt;Hidden&lt;/td&gt;
+            &lt;td class=&quot;success&quot;&gt;Visible&lt;/td&gt;
+            &lt;td class=&quot;success&quot;&gt;Visible&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th scope=&quot;row&quot;&gt;&lt;code&gt;.hidden-md&lt;/code&gt;&lt;/th&gt;
+            &lt;td class=&quot;success&quot;&gt;Visible&lt;/td&gt;
+            &lt;td class=&quot;success&quot;&gt;Visible&lt;/td&gt;
+            &lt;td class=&quot;danger&quot;&gt;Hidden&lt;/td&gt;
+            &lt;td class=&quot;success&quot;&gt;Visible&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th scope=&quot;row&quot;&gt;&lt;code&gt;.hidden-lg&lt;/code&gt;&lt;/th&gt;
+            &lt;td class=&quot;success&quot;&gt;Visible&lt;/td&gt;
+            &lt;td class=&quot;success&quot;&gt;Visible&lt;/td&gt;
+            &lt;td class=&quot;success&quot;&gt;Visible&lt;/td&gt;
+            &lt;td class=&quot;danger&quot;&gt;Hidden&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;</pre>
+            <div class="kss-example"><div class="table-responsive">
+    <table class="table table-bordered table-striped responsive-utilities">
+        <thead>
+            <tr>
+                <th></th>
+                <th> Extra small devices <small>Phones (&lt;768px)</small> </th>
+                <th> Small devices <small>Tablets (≥768px)</small> </th>
+                <th> Medium devices <small>Desktops (≥992px)</small> </th>
+                <th> Large devices <small>Desktops (≥1200px)</small> </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row"><code>.visible-xs-*</code></th>
+                <td class="success">Visible</td>
+                <td class="danger">Hidden</td>
+                <td class="danger">Hidden</td>
+                <td class="danger">Hidden</td>
+            </tr>
+            <tr>
+                <th scope="row"><code>.visible-sm-*</code></th>
+                <td class="danger">Hidden</td>
+                <td class="success">Visible</td>
+                <td class="danger">Hidden</td>
+                <td class="danger">Hidden</td>
+            </tr>
+            <tr>
+                <th scope="row"><code>.visible-md-*</code></th>
+                <td class="danger">Hidden</td>
+                <td class="danger">Hidden</td>
+                <td class="success">Visible</td>
+                <td class="danger">Hidden</td>
+            </tr>
+            <tr>
+                <th scope="row"><code>.visible-lg-*</code></th>
+                <td class="danger">Hidden</td>
+                <td class="danger">Hidden</td>
+                <td class="danger">Hidden</td>
+                <td class="success">Visible</td>
+            </tr> </tbody> <tbody> <tr> <th scope="row"><code>.hidden-xs</code></th>
+            <td class="danger">Hidden</td>
+            <td class="success">Visible</td>
+            <td class="success">Visible</td>
+            <td class="success">Visible</td>
+        </tr>
+        <tr>
+            <th scope="row"><code>.hidden-sm</code></th>
+            <td class="success">Visible</td>
+            <td class="danger">Hidden</td>
+            <td class="success">Visible</td>
+            <td class="success">Visible</td>
+        </tr>
+        <tr>
+            <th scope="row"><code>.hidden-md</code></th>
+            <td class="success">Visible</td>
+            <td class="success">Visible</td>
+            <td class="danger">Hidden</td>
+            <td class="success">Visible</td>
+        </tr>
+        <tr>
+            <th scope="row"><code>.hidden-lg</code></th>
+            <td class="success">Visible</td>
+            <td class="success">Visible</td>
+            <td class="success">Visible</td>
+            <td class="danger">Hidden</td>
+        </tr>
+    </tbody>
+</table>
 </div></div>
           </section>
       </article>

@@ -1,0 +1,52 @@
+{% extends "layout.nunjucks" %}
+{% set title = "Autoatención Compra de Bolsas: Variante [Seleccion Bolsa de Datos]" %}
+
+{% block content %}
+
+	{% include "partials/navbar.html" %}
+
+	<header>
+		<div class="bg-modulo modulo-portabilidad">
+			<div class="container">
+				<h3 class="ta-center white fw-semibold uc">Compra tu bolsa</h3>
+				<h4 class="ta-center fw-normal white fs-base">Elige tu bolsa utilizando tu saldo y descubre nuestras promos</h4>
+			</div>
+		</div>
+	</header>
+
+	<div class="container">
+		
+		<div class="row">
+			<br>
+			{% include "partials/private-selector-bolsas.html" %}
+		</div>
+		<br>
+			
+		<div class="row">
+			<div class="col-xs-12">
+				<p class="nopadding dark-red">Tu saldo actual:</p>
+			</div>
+			<div class="col-xs-12">
+				{% include "partials/private-saldo-recarga.html" %}
+			</div>
+		</div>
+
+		<br>
+
+		<div class="row">
+			<div class="col-xs-12">
+				<p class="nopadding"><i class="fa fa-cloud-download morado-plain"></i> Vas a comprar una bolsa de datos</p>
+			</div>
+			
+			{% include "partials/private-selector-bolsa-datos.html" %}
+		</div>
+		
+
+		{% include "partials/private-bolsa-data-picker.html" %}
+
+
+	
+
+
+	{% include "partials/footer.html" %}
+{% endblock %}

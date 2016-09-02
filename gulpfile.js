@@ -18,7 +18,9 @@ var autoprefixer  = require('gulp-autoprefixer'),
     stylelint     = require('gulp-stylelint'),
     swig          = require('gulp-swig'),
     tag_version   = require('gulp-tag-version'),
-    zip           = require('gulp-zip');;
+    zip           = require('gulp-zip'),
+    nunjucksRender = require('gulp-nunjucks-render');;
+
 
 var config = {
    packages: './node_modules' ,
@@ -43,7 +45,7 @@ gulp.task('bump', function() {
 });
 
 gulp.task('compile', ['clean'], function(){
-  runSequence('sass', 'minify', 'kss-html', 'kss', 'kss-public');
+  runSequence('sass', 'minify', 'kss-html', 'kss', 'kss-public', 'scripts', 'copy-fonts', 'nunjucks');
 });
 
 // Clean build
@@ -145,7 +147,7 @@ gulp.task('sass', function() {
 gulp.task('minify', ['sass'], function() {
   return gulp.src('./dist/css/womstrap.css')
     .pipe(cssmin())
-		.pipe(rename({suffix: '.min'}))
+    .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('./dist/css'));
 });
 
@@ -156,14 +158,28 @@ gulp.task('temp', function(){
     .pipe(gulp.dest('./temp/sass/'));
 });
 
+// compile and consolidate js
+gulp.task('scripts', function() {
+  return gulp.src(['./src/js/bootstrap*.js','./src/js/modernizr-2.8.3.min.js','./src/js/wow.js','./src/js/inview.js', './src/js/stellar.min.js','./src/js/main.js'])
+    .pipe(concat('wom.js'))
+    .pipe(gulp.dest('./dist/js/'));
+});
+
+// font assets copy to /dist
+gulp.task('copy-fonts', function() {
+  gulp.src(['./src/fonts/*/*'])
+  .pipe(gulp.dest('./dist/fonts/'))
+});
+
 // Watch Files For Changes
 gulp.task('watch', function() {
   gulp.watch('./src/sass/**/*.scss', ['sass', 'kss-html', 'kss', 'kss-public']);
   gulp.watch('./kss-html/**/*.*', ['kss-html', 'kss', 'kss-public']);
+  gulp.watch(['./mockups/pages/**/*.*', './mockups/templates/**/*.*'], ['nunjucks']);
+  gulp.watch('./src/js/*.js', ['scripts']);
 });
 
 gulp.task('zip', ['zip-temp-dist', 'zip-temp-docs'], function(){
-
   return gulp.src('temp/zip/**/*')
     .pipe(zip('womstrap.zip'))
     .pipe(gulp.dest('./'));
@@ -180,3 +196,16 @@ gulp.task('zip-temp-dist', function(){
   return gulp.src('dist/**/*')
     .pipe(gulp.dest('./temp/zip/dist'));
 });
+
+////////////////////////////////////////////////////////////// - nunjucks start
+gulp.task('nunjucks', function() {
+  // Gets .html and .nunjucks files in pages
+  return gulp.src('mockups/pages/**/*.+(html|nunjucks|njk)')
+  // Renders template with nunjucks
+  .pipe(nunjucksRender({
+      path: ['mockups/templates']
+    }))
+  // output files in app folder
+  .pipe(gulp.dest('mockups'))
+});
+////////////////////////////////////////////////////////////// - nunjucks restart

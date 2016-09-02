@@ -1,0 +1,21 @@
+{% extends "layout.nunjucks" %}
+{% set title = "Pago Fácil - Home" %}
+
+{% block content %}
+
+	{% include "partials/navbar.html" %}
+
+	{% include "partials/header-pago-facil.html" %}
+
+	{% include "partials/form-pago-container.html" %}
+
+	<div class="container">
+		{% include "partials/modulo-otras-formas-de-pago.html" %}
+		{% include "partials/modulo-pagos-presenciales.html" %}
+		
+	</div>
+
+
+	{% include "partials/footer.html" %}
+
+{% endblock %}

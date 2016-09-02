@@ -1,0 +1,41 @@
+
+<!-- layout.nunjucks -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Pago Fácil, iframe form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- MOVER A /SRC -->
+  <link rel="stylesheet" href="https://dl.dropboxusercontent.com/u/3538/animate.css">
+  <link rel="stylesheet" href="../dist/css/womstrap.css">
+</head>
+<body style="background-color: transparent;">
+
+  <!-- You write code for this content block in another file -->
+  
+  <div class="container-fluid">
+    <form id="formPago" class="nomargin nopadding" style="padding-top: 20px;" method="get" action="http://pdrpre.wom.devetel.cl/pago_facil/pagarCuenta">
+      <div id="resultado" class="row">
+        <div class="col-xs-12">
+          <div class="form-group input-effect">
+            <span class="miniLabel">Número de celular</span>
+            <input type="textnumber" class="form-control" id="numerocelular" placeholder="Número de celular" onfocus="$(this).val('+569');">
+          </div>
+          <div class="row ta-center">
+            <button type="submit" class="btn btn-disabled fw-semibold">Ir a pagar tu cuenta</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://use.fontawesome.com/fc096a74c6.js"></script>
+  <script src="../dist/js/wom.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+</body>
+</html>

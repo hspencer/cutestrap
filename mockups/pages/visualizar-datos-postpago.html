@@ -1,0 +1,49 @@
+{% extends "layout.nunjucks" %}
+{% set title = "Visualizar datos post pago" %}
+
+{% block content %}
+
+  {% include "partials/navbar.html" %}
+
+	<header>
+		<div class="bg-modulo bg-modulo-shortest modulo-portabilidad">
+			<div class="container">
+				<h3 class="ta-center white fw-semibold uc">Información Personal</h3>
+				
+			</div>
+		</div>
+	</header> 
+
+	<div class="container">
+      
+      <div class="row">
+         <div class="col-xs-12 select-phone">
+            <select class="form-control select-caret fw-bold">
+              <option selected="">+56 988776655</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+          </select>
+      </div>
+  </div>
+
+  <br>
+
+  {% include "partials/private-datos-postpago-datos-personales.html" %}
+  {% include "partials/private-datos-postpago-datos-direccion.html" %}
+  {% include "partials/private-datos-postpago-datos-clave.html" %}
+</div>
+{% include "partials/private-datos-postpago-datos-ejecutivo.html" %}
+
+
+
+
+</div>
+
+</div>
+
+   
+{% include "partials/footer.html" %}
+
+{% endblock %}

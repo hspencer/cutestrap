@@ -1,0 +1,18 @@
+{% extends "layout.nunjucks" %}
+{% set title = "Pago Fácil - selecciona cuenta" %}
+
+{% block content %}
+
+  {% include "partials/navbar.html" %}
+  
+  {% include "partials/header-pago-facil-short.html" %}
+        
+
+        <div class="container">
+          {% include "partials/modulo-selecciona-cuenta-pagar.html" %}
+        </div>
+
+  {% include "partials/footer.html" %}
+
+
+{% endblock %}

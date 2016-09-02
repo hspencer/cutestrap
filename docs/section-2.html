@@ -20,7 +20,7 @@
 
       <header>
   <h3>
-    <a href="javascript:;" class="js-grid-toggle grid-toggle fs-base f-right">Grid</a>
+    <a href="../mockups/index.html" class="js-grid-toggle grid-toggle fs-base f-right">Mockups</a>
     <a href="./index.html">WOMstrap</a>
   </h3>
 </header>
@@ -29,7 +29,7 @@
       
 
 
-<nav class='navbar'>
+<nav class='doc-navbar'>
   <ul>
       <li>
         <a href="section-1.html">Grid</a>
@@ -49,12 +49,14 @@
       <li>
         <a href="section-6.html">Components</a>
       </li>
+      <li>
+        <a href="section-7.html">Navbars</a>
+      </li>
   </ul>
 </nav>
 
 
 <div class="container">
-
       <article class="pattern">
           <h2 id="2">Buttons</h2>
           <div class="subtitle pattern-description"><p>Class <code>.btn</code> defines a button-styled link. These are some variations
@@ -113,6 +115,95 @@ yet this is another, simpler one, the <a href='http://www.wom.cl' class='btn pre
               <hr />
               <p class="clearfix kss-modifier-title"><code>.btn-jumbo.tilt.gradient-h.box-shadow-hard</code> <span class="f-right fs-small">Combined case</span></p>
               <div class="kss-example"><a href="http://www.wom.cl/testLink" class="btn btn-jumbo tilt gradient-h box-shadow-hard">Button</a></div>
+          </section>
+      </article>
+      <article class="pattern">
+          <h2 class="kss-title" id="2-1">
+            <span class="kss-ref badge pull-right">2-1</span> Bootstrap Buttons
+          </h2>
+          <div class="subtitle pattern-description"><p>While button classes can be used on <code>&lt;a&gt;</code> and <code>&lt;button&gt;</code> elements, only <code>&lt;button&gt;</code> elements are supported within our nav and navbar components.
+If the <code>&lt;a&gt;</code> elements are used to act as buttons – triggering in-page functionality, rather than navigating to another document or section within the current page – they should also be given an appropriate role=&quot;button&quot;.
+As a best practice, we highly recommend using the <code>&lt;button&gt;</code> element whenever possible to ensure matching cross-browser rendering.
+Among other things, there&#39;s a bug in Firefox &lt;30 that prevents us from setting the line-height of <code>&lt;input&gt;</code>-based buttons, causing them to not exactly match the height of other buttons on Firefox.</p>
+</div>
+          <section class="example">
+<pre class="">&lt;button type=&quot;button&quot; class=&quot;btn btn-xs [modifier class]&quot;&gt;Button xs&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-sm [modifier class]&quot;&gt;Button sm&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn [modifier class]&quot;&gt;Button&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-lg [modifier class]&quot;&gt;Button lg&lt;/button&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;
+&lt;button type=&quot;button&quot; class=&quot;btn [modifier class]&quot; disabled&gt;Disabled&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn active [modifier class]&quot;&gt;Active&lt;/button&gt;</pre>
+            <div class="kss-example"><button type="button" class="btn btn-xs [modifier class]">Button xs</button>
+<button type="button" class="btn btn-sm [modifier class]">Button sm</button>
+<button type="button" class="btn [modifier class]">Button</button>
+<button type="button" class="btn btn-lg [modifier class]">Button lg</button>
+&nbsp;&nbsp;&nbsp;
+<button type="button" class="btn [modifier class]" disabled>Disabled</button>
+<button type="button" class="btn active [modifier class]">Active</button></div>
+              <hr />
+              <p class="clearfix kss-modifier-title"><code>.btn-default</code> <span class="f-right fs-small">Default button</span></p>
+              <div class="kss-example"><button type="button" class="btn btn-xs btn-default">Button xs</button>
+<button type="button" class="btn btn-sm btn-default">Button sm</button>
+<button type="button" class="btn btn-default">Button</button>
+<button type="button" class="btn btn-lg btn-default">Button lg</button>
+&nbsp;&nbsp;&nbsp;
+<button type="button" class="btn btn-default" disabled>Disabled</button>
+<button type="button" class="btn active btn-default">Active</button></div>
+              <hr />
+              <p class="clearfix kss-modifier-title"><code>.btn-primary</code> <span class="f-right fs-small">Primary button (brand color)</span></p>
+              <div class="kss-example"><button type="button" class="btn btn-xs btn-primary">Button xs</button>
+<button type="button" class="btn btn-sm btn-primary">Button sm</button>
+<button type="button" class="btn btn-primary">Button</button>
+<button type="button" class="btn btn-lg btn-primary">Button lg</button>
+&nbsp;&nbsp;&nbsp;
+<button type="button" class="btn btn-primary" disabled>Disabled</button>
+<button type="button" class="btn active btn-primary">Active</button></div>
+              <hr />
+              <p class="clearfix kss-modifier-title"><code>.btn-success</code> <span class="f-right fs-small">Success or positive action</span></p>
+              <div class="kss-example"><button type="button" class="btn btn-xs btn-success">Button xs</button>
+<button type="button" class="btn btn-sm btn-success">Button sm</button>
+<button type="button" class="btn btn-success">Button</button>
+<button type="button" class="btn btn-lg btn-success">Button lg</button>
+&nbsp;&nbsp;&nbsp;
+<button type="button" class="btn btn-success" disabled>Disabled</button>
+<button type="button" class="btn active btn-success">Active</button></div>
+              <hr />
+              <p class="clearfix kss-modifier-title"><code>.btn-info</code> <span class="f-right fs-small">Information button</span></p>
+              <div class="kss-example"><button type="button" class="btn btn-xs btn-info">Button xs</button>
+<button type="button" class="btn btn-sm btn-info">Button sm</button>
+<button type="button" class="btn btn-info">Button</button>
+<button type="button" class="btn btn-lg btn-info">Button lg</button>
+&nbsp;&nbsp;&nbsp;
+<button type="button" class="btn btn-info" disabled>Disabled</button>
+<button type="button" class="btn active btn-info">Active</button></div>
+              <hr />
+              <p class="clearfix kss-modifier-title"><code>.btn-warning</code> <span class="f-right fs-small">Warning button</span></p>
+              <div class="kss-example"><button type="button" class="btn btn-xs btn-warning">Button xs</button>
+<button type="button" class="btn btn-sm btn-warning">Button sm</button>
+<button type="button" class="btn btn-warning">Button</button>
+<button type="button" class="btn btn-lg btn-warning">Button lg</button>
+&nbsp;&nbsp;&nbsp;
+<button type="button" class="btn btn-warning" disabled>Disabled</button>
+<button type="button" class="btn active btn-warning">Active</button></div>
+              <hr />
+              <p class="clearfix kss-modifier-title"><code>.btn-danger</code> <span class="f-right fs-small">Danger button</span></p>
+              <div class="kss-example"><button type="button" class="btn btn-xs btn-danger">Button xs</button>
+<button type="button" class="btn btn-sm btn-danger">Button sm</button>
+<button type="button" class="btn btn-danger">Button</button>
+<button type="button" class="btn btn-lg btn-danger">Button lg</button>
+&nbsp;&nbsp;&nbsp;
+<button type="button" class="btn btn-danger" disabled>Disabled</button>
+<button type="button" class="btn active btn-danger">Active</button></div>
+              <hr />
+              <p class="clearfix kss-modifier-title"><code>.btn-link</code> <span class="f-right fs-small">Link button</span></p>
+              <div class="kss-example"><button type="button" class="btn btn-xs btn-link">Button xs</button>
+<button type="button" class="btn btn-sm btn-link">Button sm</button>
+<button type="button" class="btn btn-link">Button</button>
+<button type="button" class="btn btn-lg btn-link">Button lg</button>
+&nbsp;&nbsp;&nbsp;
+<button type="button" class="btn btn-link" disabled>Disabled</button>
+<button type="button" class="btn active btn-link">Active</button></div>
           </section>
       </article>
 </div>

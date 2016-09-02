@@ -1,10 +1,8 @@
 # womstrap
 
-[![Join the chat at https://gitter.im/womstrap/womstrap](https://badges.gitter.im/womstrap/womstrap.svg)](https://gitter.im/womstrap/womstrap?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+A sassy, opinionated CSS Framework for WOM. Now Bootstrap ~3.0.0 compatible!
 
-A sassy, opinionated CSS Framework. Now Bootstrap ~3.0.0 compatible!
-
-[Docs/Demo](https://www.womstrap.com/)
+[Docs/Demo](http://tinet-ux.github.io/womstrap/docs)
 
 ### Features
 
@@ -45,4 +43,24 @@ Contributors are welcome, just follow these few guidelines:
 * Avoid checking in compiled files (dist and docs folders) as this will reduce merge conflicts with master
 * BEM for naming conventions
 * Alphabetical properties
-* Only nest for psuedo-elements
+* Only nest for pseudo-elements
+
+### Compile templates using [nunjucks](https://mozilla.github.io/nunjucks/)
+
+To compile the static HTML files run:
+```
+npm nunjucks
+```
+
+Folder structure:
+```
+womstrap
+└── mockups
+    ├── index.html
+    ├── all.html
+    ├── js
+    │   └── all-scripts.js
+    └── templates
+       └── partials
+```
+`/templates` define HTMLs DOM structure while `/partials` define HTML code snipets to use as modules.

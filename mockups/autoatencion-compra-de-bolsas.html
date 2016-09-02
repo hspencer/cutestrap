@@ -1,0 +1,223 @@
+<!-- layout.nunjucks -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Autoatención Compra de Bolsas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- MOVER A /SRC -->
+  <link rel="stylesheet" href="https://dl.dropboxusercontent.com/u/3538/animate.css">
+  <link rel="stylesheet" href="../dist/css/womstrap.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="../dist/js/wom.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+  
+</head>
+<body>
+
+  <!-- You write code for this content block in another file -->
+  
+
+	<nav class="navbar navbar-default navbar-main navbar-centered" role="navigation">
+	<!-- Brand and toggle get grouped for better mobile display -->
+	<div class="navbar-header">
+
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-brand-centered">
+			<span class="navLabel">Menú</span>
+			<figure class="hamburger">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</figure>
+		</button>
+
+		<!-- wom logo -->
+		<div class="navbar-brand navbar-brand-centered">
+			<a href="index.html" title="">
+				<img src="img/logo-wom.svg" width="80" height="80" >
+			</a>
+		</div>
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="navbar-brand-centered">
+			<ul class="nav navbar-nav">
+				<!-- <li><a href="#">Link</a></li>
+				<li><a href="#">Link</a></li> -->
+				<!-- <li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Personas <span class="caret"></span></a>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="#">Planes</a></li>
+						<li><a href="#">Prepago</a></li>
+						<li><a href="#">Internet</a></li>
+						<li><a href="#">Equipos</a></li>
+						<li class="divider"></li>
+						<li><a href="#">Sucursal Online</a></li>
+					</ul>
+				</li> -->
+				<li><a class="fw-semibold" href="#">Planes</a></li>
+				<li><a class="fw-semibold" href="#">Prepago</a></li>
+				<li><a class="fw-semibold" href="#">Internet</a></li>
+				<li><a class="fw-semibold" href="#">Equipos</a></li>
+				<li><a class="fw-semibold" href="#">Sucursal Online</a></li>
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</div>
+</nav>
+
+	<header>
+		<div class="bg-modulo modulo-portabilidad">
+			<div class="container">
+				<h3 class="ta-center white fw-semibold uc">Compra tu bolsa</h3>
+				<h4 class="ta-center fw-normal white fs-base">Elige tu bolsa utilizando tu saldo y descubre nuestras promos</h4>
+			</div>
+		</div>
+	</header>
+
+	<div class="container">
+		<div class="row">
+			<br>
+			<div class="col-xs-12 select-phone">
+	<select class="form-control select-caret fw-bold">
+	  <option selected="">+56 988776655</option>
+	  <option>2</option>
+	  <option>3</option>
+	  <option>4</option>
+	  <option>5</option>
+	</select>
+</div>
+		</div>
+
+		<br>
+			
+		<div class="row">
+			<div class="col-xs-12">
+				<p class="nopadding dark-red">Tu saldo actual:</p>
+			</div>
+			<div class="col-xs-12">
+				<div class="btn-group saldo-recarga-ahora" role="group">
+  <button type="button" class="btn fs-large saldo-money dark-red fw-semibold">$7.000</button>
+  <button type="button" class="btn btn-primary morado-chicle-bg saldo-cta"><i style="display:inline-block;position: relative;top: 4px;left: 4px;" class="ico-input-money"></i> Recarga ahora</button>
+</div>
+			</div>
+		</div>
+
+		<div class="bolsaPicker">
+			<div class="row">
+				<div class="col-xs-12">
+					<h5 class="nopadding fw-semibold">Elige tu bolsa</h5>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="item ta-center col-xs-4 nopadding nomargin">
+						<a href="autoatencion-compra-de-bolsas-var-datos.html">
+							<i class="morado-plain ico-bolsa-bolsa_datos fa-center"></i>
+							<span class="morado-plain fw-semibold fs-small">Datos</span>
+						</a>
+					</div>
+					<div class="item ta-center col-xs-4 nopadding nomargin">
+						<a href="#">
+							<i class="fa morado-plain ico-bolsa-bolsa_voz"></i>
+							<span class="morado-plain fw-semibold fs-small">Voz</span>
+						</a>
+					</div>
+					<div class="item ta-center col-xs-4 nopadding nomargin">
+						<a href="#">
+							<i class="fa morado-plain ico-bolsa-bolsa_sms"></i>
+							<span class="morado-plain fw-semibold fs-small">SMS</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="item ta-center col-xs-4 nopadding nomargin">
+						<a href="#">
+							<i class="fa morado-plain ico-bolsa-bolsa_mixtas"></i>
+							<span class="morado-plain fw-semibold fs-small">Mixtas</span>
+						</a>
+					</div>
+					<div class="item ta-center col-xs-4 nopadding nomargin">
+						<a href="#">
+							<i class="fa morado-plain ico-bolsa-bolsa_tematicas"></i>
+							<span class="morado-plain fw-semibold fs-small">Temáticas</span>
+						</a>
+					</div>
+					<div class="item ta-center col-xs-4 nopadding nomargin">
+						<a href="autoatencion-compra-de-bolsas-var-roaming.html">
+							<i class="fa morado-plain ico-bolsa-bolsa_roaming"></i>
+							<span class="morado-plain fw-semibold fs-small">Roaming</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div><br></div><div id="bolsas-destacadas-carousel" class="carousel slide" data-ride="carousel">
+		<!-- Indicators -->
+	<ol class="carousel-indicators">
+		<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+		<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+	</ol>
+
+	<!-- Wrapper for slides -->
+	<div class="carousel-inner modulo-morado" role="listbox">
+		<div class="item active">
+			<a href="#">
+				<img src="img/banner/bolsas-destacadas-1.png">
+			</a>
+		</div>
+		<div class="item">
+			<a href="#">
+				<img src="img/banner/bolsas-destacadas-2.png">
+			</a>
+		</div>
+	</div>
+
+	<!-- Controls -->
+	<a class="left carousel-control" href="#bolsas-destacadas-carousel" role="button" data-slide="prev">
+		<i class="fa fa-angle-left"></i>
+		<span class="sr-only">Previous</span>
+	</a>
+	<a class="right carousel-control" href="#bolsas-destacadas-carousel" role="button" data-slide="next">
+		<i class="fa fa-angle-right"></i>
+		<span class="sr-only">Next</span>
+	</a>
+</div>
+
+	<footer class="main-foot">
+  <div class="container">
+    <div class="row">
+      <div class="ta-center">
+        <img src="img/logo-footer.svg">
+      </div>
+      <ul class="accesos-foot">
+        <li class="non-point">
+          <a class="salt-space" href="#">¡Síguenos!</a>
+          <a class="salt-space" href="https://www.facebook.com/womchile" target="_blank">
+            <img class="ico-space" src="img/icons/ico-face-white.png">
+          </a>
+          <a class="salt-space" href="#" target="_blank">
+            <img class="ico-space" src="img/icons/ico-twitter-white.png">
+          </a>
+          <a class="salt-space" href="#" target="_blank">
+            <img class="ico-space" src="img/icons/ico-youtube-white.png">
+          </a>
+          <a class="salt-space" href="#" target="_blank"><img class="ico-space" src="img/icons/ico-white-instagram.png"></a>
+        </li>
+      </ul>
+      <ul class="lista-foot">
+        <li><a href="#">Te ayudamos</a></li>
+        <li><a href="#">Sobre WOM</a></li>
+        <li><a href="#">Términos Legales</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+
+</body>
+</html>

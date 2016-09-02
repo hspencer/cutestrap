@@ -1,7 +1,11 @@
 /* this Style is for documentation purposes only */
 
-@import "variables";
-@import "support/mixins";
+
+@import "custom/fonts";
+@import "custom/colors";
+@import "custom/type";
+@import "custom/z_index";
+@import "custom/mixins";
 
 html.grid--is_active{
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAYAQMAAADnK87dAAAABlBMVEX///8AAABVwtN+AAAAAnRSTlMANrkpWKEAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVAiZY2AgCTwAAAEQAOFwuZEGAAAAAElFTkSuQmCC) repeat left top;
@@ -40,24 +44,28 @@ header a{
 }
 
 
-nav{
+.doc-navbar{
   border-bottom: 1px solid $gray-5;
   margin-top: -1px;
   padding: 1.2rem;
   text-align: center;
 }
 
-nav ul{
+.doc-navbar ul{
   padding: 0;
 }
 
-nav li{
+.doc-navbar li{
   padding: 0 1.5rem;
   display: inline-block;
 
   a{
+    color: #720184;
     text-decoration: none;
     font-weight: 900;
+    &:hover{
+      color: darken(#720184, 20%)
+    }
   }
 }
 
