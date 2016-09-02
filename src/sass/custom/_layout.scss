@@ -145,7 +145,8 @@ ul {
 .morado-uva {
   color: $grape;
 }
-.morado-chicle-bg {
+.morado-chicle-bg,
+.modal .modal-dialog .morado-chicle-bg {
   background-color: #ba007c;
   border: none;
   color: white;
