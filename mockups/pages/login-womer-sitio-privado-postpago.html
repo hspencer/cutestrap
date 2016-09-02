@@ -1,0 +1,63 @@
+{% extends "layout.nunjucks" %}
+{% set title = "Login WOMER Sitio Privado - Postpago" %}
+
+{% block content %}
+
+	{% include "partials/navbar.html" %}
+
+	<header>
+		<div class="bg-modulo modulo-portabilidad">
+			<div class="container">
+				<h3 class="ta-center white fw-semibold fs-normal uc">Sucursal Online</h3>
+				<h4 class="ta-center fw-normal white fs-base">WOMER, ingresa a tu cuenta y descubre cómo administrar tu servicio</h4>
+			</div>
+		</div>
+	</header>
+	
+	<div class="container home-pago-modulo consulta-datos-modulo">
+		<div class="row">
+			<div class="col-xs-12">
+				<p class="text-muted nopadding">Ingresa a tu cuenta por:</p>
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+					<li role="presentation" class="active"><a class="fs-small" href="#login-rut" aria-controls="home" role="tab" data-toggle="tab">RUT</a></li>
+					<li role="presentation"><a class="fs-small" href="#login-telefono" aria-controls="profile" role="tab" data-toggle="tab">Nº de teléfono</a></li>
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content ta-center">
+					<div role="tabpanel" class="tab-pane active" id="login-rut">
+						<div class="form-group input-effect">
+							<span class="miniLabel">RUT</span>
+							<input type="textnumber" class="form-control" id="loginrut" placeholder="RUT">
+						</div>
+						<div class="form-group input-effect">
+							<span class="miniLabel">Contraseña</span>
+							<input type="textnumber" class="form-control" id="passwordrut" placeholder="Contraseña">
+						</div>
+						<p>
+							<a href="#" class="btn-link notextdecoration">¿Olvidaste tu contraseña?</a>
+							<button class="btn btn-lg btn-primary morado-chicle-bg mt-20">Iniciar sesión</button>
+						</p>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="login-telefono">
+						<div class="form-group input-effect">
+							<span class="miniLabel">Nº de Teléfono</span>
+							<input type="textnumber" class="form-control" id="logintelefono" placeholder="Nº de Teléfono">
+						</div>
+						<div class="form-group input-effect">
+							<span class="miniLabel">Contraseña</span>
+							<input type="textnumber" class="form-control" id="passwordtelefono" placeholder="Contraseña">
+						</div>
+						<p>
+							<a href="#" class="btn-link notextdecoration">¿Olvidaste tu contraseña?</a>
+							<button class="btn btn-lg btn-primary morado-chicle-bg mt-20">Iniciar sesión</button>
+						</p>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</div>
+	
+	{% include "partials/footer.html" %}
+{% endblock %}
