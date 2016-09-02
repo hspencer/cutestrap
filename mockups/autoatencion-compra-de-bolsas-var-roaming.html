@@ -4,7 +4,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Autoatención Compra de Bolsas</title>
+  <title>Autoatención Compra de Bolsas: variante Roaming</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- MOVER A /SRC -->
   <link rel="stylesheet" href="https://dl.dropboxusercontent.com/u/3538/animate.css">
@@ -105,55 +105,30 @@
 			</div>
 		</div>
 
-		<div class="bolsaPicker">
-			<div class="row">
-				<div class="col-xs-12">
-					<h5 class="nopadding fw-semibold">Elige tu bolsa</h5>
-				</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<p class="nopadding mt-20 nomargin"><i class="fa fa-cloud-download morado-plain" aria-hidden="true"></i> Vas a comprar una bolsa de roaming</p>
 			</div>
-			<div class="row">
-				<div class="col-xs-12">
-					<div class="item ta-center col-xs-4 nopadding nomargin">
-						<a href="autoatencion-compra-de-bolsas-var-datos.html">
-							<i class="morado-plain ico-bolsa-bolsa_datos fa-center"></i>
-							<span class="morado-plain fw-semibold fs-small">Datos</span>
-						</a>
-					</div>
-					<div class="item ta-center col-xs-4 nopadding nomargin">
-						<a href="#">
-							<i class="fa morado-plain ico-bolsa-bolsa_voz"></i>
-							<span class="morado-plain fw-semibold fs-small">Voz</span>
-						</a>
-					</div>
-					<div class="item ta-center col-xs-4 nopadding nomargin">
-						<a href="#">
-							<i class="fa morado-plain ico-bolsa-bolsa_sms"></i>
-							<span class="morado-plain fw-semibold fs-small">SMS</span>
-						</a>
-					</div>
-				</div>
+			
+			<div class="col-xs-12 select-phone fs-normal">
+				<select class="form-control select-caret fw-semibold">
+				  <option selected="">Roaming</option>
+				  <option>Bolsas de voz</option>
+				  <option>Bolsas de SMS</option>
+				  <option>Bolsas mixtas</option>
+				  <option>Bolsas temáticas</option>
+				  <option>Roaming</option>
+				</select>
 			</div>
-			<div class="row">
-				<div class="col-xs-12">
-					<div class="item ta-center col-xs-4 nopadding nomargin">
-						<a href="#">
-							<i class="fa morado-plain ico-bolsa-bolsa_mixtas"></i>
-							<span class="morado-plain fw-semibold fs-small">Mixtas</span>
-						</a>
-					</div>
-					<div class="item ta-center col-xs-4 nopadding nomargin">
-						<a href="#">
-							<i class="fa morado-plain ico-bolsa-bolsa_tematicas"></i>
-							<span class="morado-plain fw-semibold fs-small">Temáticas</span>
-						</a>
-					</div>
-					<div class="item ta-center col-xs-4 nopadding nomargin">
-						<a href="autoatencion-compra-de-bolsas-var-roaming.html">
-							<i class="fa morado-plain ico-bolsa-bolsa_roaming"></i>
-							<span class="morado-plain fw-semibold fs-small">Roaming</span>
-						</a>
-					</div>
-				</div>
+
+			<div class="col-xs-12 ta-center roamingNotify">
+				<i class="fa fa-exclamation-circle"></i>
+				<h5 class="morado-plain fw-normal nopadding mb-20">Tu servicio de roaming está <br> desactivado, ¿Deseas activarlo ahora?</h5>
+				<p>
+					<a href="#">
+						<img class="autocenter" src="img/icons/activa-roaming-fancy-button.svg" alt="">
+					</a>
+				</p>
 			</div>
 		</div>
 	</div>

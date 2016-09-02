@@ -1,0 +1,65 @@
+{% extends "layout.nunjucks" %}
+{% set title = "Autoatención Compra de Bolsas: variante Roaming" %}
+
+{% block content %}
+
+	{% include "partials/navbar.html" %}
+
+	<header>
+		<div class="bg-modulo modulo-portabilidad">
+			<div class="container">
+				<h3 class="ta-center white fw-semibold uc">Compra tu bolsa</h3>
+				<h4 class="ta-center fw-normal white fs-base">Elige tu bolsa utilizando tu saldo y descubre nuestras promos</h4>
+			</div>
+		</div>
+	</header>
+
+	<div class="container">
+		<div class="row">
+			<br>
+			{% include "partials/private-selector-roaming.html" %}
+		</div>
+
+		<br>
+			
+		<div class="row">
+			<div class="col-xs-12">
+				<p class="nopadding dark-red">Tu saldo actual:</p>
+			</div>
+			<div class="col-xs-12">
+				{% include "partials/private-saldo-recarga.html" %}
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12">
+				<p class="nopadding mt-20 nomargin"><i class="fa fa-cloud-download morado-plain" aria-hidden="true"></i> Vas a comprar una bolsa de roaming</p>
+			</div>
+			
+			<div class="col-xs-12 select-phone fs-normal">
+				<select class="form-control select-caret fw-semibold">
+				  <option selected="">Roaming</option>
+				  <option>Bolsas de voz</option>
+				  <option>Bolsas de SMS</option>
+				  <option>Bolsas mixtas</option>
+				  <option>Bolsas temáticas</option>
+				  <option>Roaming</option>
+				</select>
+			</div>
+
+			<div class="col-xs-12 ta-center roamingNotify">
+				<i class="fa fa-exclamation-circle"></i>
+				<h5 class="morado-plain fw-normal nopadding mb-20">Tu servicio de roaming está <br> desactivado, ¿Deseas activarlo ahora?</h5>
+				<p>
+					<a href="#">
+						<img class="autocenter" src="img/icons/activa-roaming-fancy-button.svg" alt="">
+					</a>
+				</p>
+			</div>
+		</div>
+	</div>
+	{% include "partials/private-carousel-bolsas.html" %}
+
+	{% include "partials/footer.html" %}
+
+{% endblock %}

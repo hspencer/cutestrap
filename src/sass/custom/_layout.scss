@@ -1983,6 +1983,18 @@ button {
   margin-top: 5px;
 }
 
+/* autoatencion */
+
+
+.roamingNotify {
+  margin: 30px 0 20px;
+}
+
+.roamingNotify i.fa.fa-exclamation-circle {
+  font-size: 96px;
+  color: $quaternary;
+}
+
 /* Servicio técnico */
 
 .servicio-tecnico-welcome { padding: 0 25px; }
