@@ -293,7 +293,9 @@ ul {
   table.llamadas {
     border-radius: 0;
   }
-
+    table.llamadas td {
+      color: #3A1F4F;
+    }
   table.llamadas .table-striped > tbody > tr:nth-of-type(odd) {
     background-color: #DDD;
   }
@@ -1150,7 +1152,7 @@ button {
 }
 
 .modulo-planes-convenientes {
-  background-color: $gray-6;
+  background-color: #f7f7f7;
   padding: 0;
 }
 .modulo-planes-convenientes p {
@@ -1226,7 +1228,7 @@ button {
 }
 
 .calendarCards .item .cards-content-item .cards-content-item-date span {
-  background-color: $quaternary;
+  background-color: #421441;
   color: white;
   display: block;
   font-size: 1.3rem;
@@ -1251,7 +1253,7 @@ button {
 
 .calendarCards .item .cards-content-item .cards-content-item-total {
   float: right;
-  font-size: 1.7rem;
+  font-size: 20px;
   text-align: right
 }
 
@@ -1426,6 +1428,10 @@ button {
 }
 
 /* Gestionando Autoatencion Compra de Bolsas */
+
+.detalle-bolsa .morado-plain {
+  color: #622761;
+}
 
 .btn-group.saldo-recarga-ahora {
   width: 100%;
@@ -2474,6 +2480,11 @@ button {
   text-transform: none;
   color: $secondary;
   font-weight: 700;
+}
+
+.modal.pac-modal .modal-title {
+  font-size: 26px;
+  color: #720184;
 }
 
 .modal.pac-modal .nav-pills li {

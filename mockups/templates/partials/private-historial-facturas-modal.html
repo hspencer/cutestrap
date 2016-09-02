@@ -7,26 +7,44 @@
 	        <p class="nopadding">A través de este servicio podrás realizar suscripciones de Pago Automático de cuentas</p>
 	      </div>
 	      <div class="modal-body">
-	        <ul class="nav nav-pills mb-20">
-			  <li role="presentation" class="active"><a href="#">PAC</a></li>
-			  <li role="presentation"><a href="#">PAT</a></li>
+	        <ul class="nav nav-suscribir-pac nav-pills mb-20 ta-center fw-bold">
+			  <li role="presentation" class="active"><a href="#">PAT</a></li>
+			  <li role="presentation"><a href="#">PAC</a></li>
 			</ul>
-			<p><i class="fa fa-info-circle"></i> Carga tu cuenta a tu tarjeta de crédito</p>
-	        <p>
-		        <select class="form-control select-caret fw-bold">
-				  <option selected="">Selecciona banco</option>
-				  <option>2</option>
-				  <option>3</option>
-				  <option>4</option>
-				  <option>5</option>
-				</select>
-			</p>
-			<div class="form-group input-effect">
-				<span class="miniLabel">Número de tarjeta</span>
-				<input type="textnumber" class="form-control" id="numerotarjeta" placeholder="Número de tarjeta">
+			<div class="suscribir-pago suscribir-pago-PAT">
+				<p><i class="fa fa-info-circle"></i> Carga tu cuenta a tu tarjeta de crédito</p>
+		        <p>
+			        <select class="form-control select-caret fw-bold">
+					  <option selected="">Selecciona banco</option>
+					  <option>2</option>
+					  <option>3</option>
+					  <option>4</option>
+					  <option>5</option>
+					</select>
+				</p>
+				<div class="form-group input-effect">
+					<span class="miniLabel">Nº de tarjeta</span>
+					<input type="textnumber" class="form-control" id="numerotarjeta" placeholder="Número de tarjeta">
+				</div>
+			</div>
+			<div class="suscribir-pago suscribir-pago-PAC" style="display: none;">
+				<p><i class="fa fa-info-circle"></i> Carga tu cuenta a tu cuenta corriente</p>
+		        <p>
+			        <select class="form-control select-caret fw-bold">
+					  <option selected="">Selecciona banco</option>
+					  <option>2</option>
+					  <option>3</option>
+					  <option>4</option>
+					  <option>5</option>
+					</select>
+				</p>
+				<div class="form-group input-effect">
+					<span class="miniLabel">Nº de cuenta corriente</span>
+					<input type="textnumber" class="form-control" id="numerocuenta" placeholder="Número de cuenta corriente">
+				</div>
 			</div>
 			<p class="ta-center">
-				<button class="btn-primary btn-lg fw-semibold morado-chicle-bg" style="margin: 0 auto; width: 70%; text-transform: none; font-weight: 700;">Suscribirme</button>
+				<button class="btn-primary btn-lg fw-semibold morado-chicle-bg" style="margin: 0 auto; width: 70%; text-transform: none; font-weight: 700; font-size: 25px;">Suscribirme</button>
 			</p>
 	      </div>
 	    </div><!-- /.modal-content -->

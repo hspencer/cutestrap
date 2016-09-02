@@ -3200,6 +3200,14 @@ $(document).ready(function(){
 			return false;
 		});
 
+		// pac/pat
+		$('.nav-suscribir-pac a').click(function () {
+			var what = $(this).html();
+			$('.suscribir-pago').hide();
+			$('.suscribir-pago-' + what).show();
+			return false;
+		});
+
 	// nav pills no tienen la cosa de active
 	$('.pac-modal .nav-pills a').click(function (){
 		$('.pac-modal .nav-pills li').removeClass('active');
