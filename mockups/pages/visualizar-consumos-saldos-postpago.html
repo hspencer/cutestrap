@@ -13,7 +13,46 @@
         <h4 class="modal-title">Seleccionar tráfico</h4>
       </div>
       <div class="modal-body">
-        <div>Rut, Línea, Período</div>
+        
+        <div class="modal-consumo-modulo mb-20">
+            <div class="row">
+              <div class="col-xs-12">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                  <li role="presentation" class="active"><a class="fs-small" href="#trafico-rut" aria-controls="home" role="tab" data-toggle="tab">RUT</a></li>
+                  <li role="presentation"><a class="fs-small" href="#trafico-linea" aria-controls="profile" role="tab" data-toggle="tab">Línea</a></li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <div role="tabpanel" class="tab-pane active" id="#trafico-rut">
+                    <p class="nomargin nopadding fw-semibold">Período:</p>
+                    <select class="form-control select-caret fw-bold">
+                      <option selected="">Enero</option>
+                      <option>Diciembre</option>
+                      <option>Noviembre</option>
+                      <option>Octubre</option>
+                      <option>...</option>
+                    </select>
+                    <br>
+                  </div>
+                  <div role="tabpanel" class="tab-pane" id="trafico-linea">
+                    <p class="nomargin nopadding fw-semibold">Período:</p>
+                    <select class="form-control select-caret fw-bold">
+                      <option selected="">Enero</option>
+                      <option>Diciembre</option>
+                      <option>Noviembre</option>
+                      <option>Octubre</option>
+                      <option>...</option>
+                    </select>
+                    <br>
+                  </div>
+                </div>  
+              </div>
+            </div>
+          </div>
+
+
         <button class="btn-primary btn-lg fw-semibold morado-chicle-bg autocenter">Solicitar ahora</button>
         <p class="ta-center morado-plain mt-20">
           Tu solicitud será envíada en las <br> próximas 24 horas
