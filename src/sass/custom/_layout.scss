@@ -2389,6 +2389,22 @@ button {
   position: relative;
 }
 
+.wizard-telefono-detalles {
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+
+.wizard-telefono-detalles .subLabel {
+  display: block;
+  color: $quaternary;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.wizard-resultado-telefono-img {
+  margin: 40px 0 20px;
+}
+
 .wizard-appendix span.smallLabel {
   display: block;
   margin-top: 5px;

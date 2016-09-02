@@ -77,7 +77,7 @@
 	
 	<div id="wizardPlanes">
 		<div class="container">
-			<div id="wizardPlanes-paso1" class="wizardPlanes-pasos" data-nextStep="paso2" style="display: block;"">
+			<div id="wizardPlanes-paso1" class="wizardPlanes-pasos" data-nextStep="paso2" style="display: none;"">
 				<div class="row">
 					<div class="col-xs-12 ta-center">
 						<h4 class="morado-plain uc fw-semibold nopadding">hazla corta!</h4>
@@ -87,14 +87,14 @@
 				<div class="row fs-small ta-center">
 					<div class="col-xs-6 nopadding fw-semibold">
 						<a href="#" onclick="return false;">
-							<i class="fa fa-book"></i>
-							<span class="wizardLabel"><strong class="uc fw-bold">Sin portabilidad</strong><br>Tienes número nuevo</span>
+							<i class="fa fa-comment-o"></i>
+							<span class="wizardLabel"><strong class="uc fw-bold">Con portabilidad</strong><br>Mantienes tu número</span>
 						</a>
 					</div>
 					<div class="col-xs-6 nopadding fw-semibold">
 						<a href="#" onclick="return false;">
-							<i class="fa fa-comment-o"></i>
-							<span class="wizardLabel"><strong class="uc fw-bold">Con portabilidad</strong><br>Mantienes tu número</span>
+							<i class="fa fa-book"></i>
+							<span class="wizardLabel"><strong class="uc fw-bold">Sin portabilidad</strong><br>Tienes número nuevo</span>
 						</a>
 					</div>
 				</div>
@@ -254,26 +254,32 @@
 					</p>
 				</div>
 			</div>
-			<div id="wizardPlanes-pasofinal" style="display: none;">
+			<div id="wizardPlanes-pasofinal" style="display: block;">
 				<div class="row">
 					<div class="col-xs-6">
-						<h3 class="morado-plain fs-lg fw-semibold" style="line-height: 100%;">
+						<h3 class="morado-plain fs-lg fw-semibold nopadding lineheight100">
 							<span class="uc" style="display: block;">Samsung</span>
 							Galaxy S6
 						</h3>
-						<p>
-							<a href="#" class="btn btn-sm btn-outline-quaternary">Ver detalles</a>
-						</p>
-						<p>
-							<h5 class="morado-plain">Cuota inicial</h5>
-
-						</p>
+						<p><a href="#" class="btn btn-sm btn-outline-quaternary">Ver detalles</a></p>
+						<div class="wizard-telefono-detalles">
+							<p class="lineheight120 nopadding">
+								<span class="subLabel">Cuota inicial</span>
+								<span class="numbers fw-semibold">$99.000</span>
+							</p>
+							<p class="lineheight120 nopadding">
+								<span class="subLabel">¡Promocion!</span>
+								<span class="numbers">Cuota mensual arriendo $15.000 por 18 meses</span>
+							</p>
+							<p class="lineheight120 nopadding">
+								<span class="subLabel">Precio venta</span>
+								<span class="numbers">$449.000</span>
+							</p>
+						</div>
 					</div>
 					<div class="col-xs-6">
-						Foto
-						<p class="ta-center">
-							<button class="btn btn-sm btn-primary">Buscar otro equipo</button>
-						</p>
+						<img class="wizard-resultado-telefono-img" src="img/banner/wizardPlanes-resultado-telefono.svg" alt="">
+						<button class="btn btn-xs btn-primary fw-semibold">Buscar otro equipo</button>
 					</div>
 				</div>
 			</div>
