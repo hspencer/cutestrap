@@ -721,6 +721,13 @@ ul {
   color: $primary;
 }
 
+.despliegue-datos ul .precioDisplay p.fw-semibold {
+  font-size: 2rem;
+  margin-top: 20px;
+  margin-left: -40px;
+  white-space: pre;
+}
+
 .despliegue-datos.despliegue-lineas-asociadas a.btn-link {text-decoration: none;}
 .despliegue-datos.despliegue-lineas-asociadas li {
   overflow: hidden;
@@ -735,6 +742,7 @@ ul {
 
 .despliegue-datos.despliegue-servicios-contratados {
   background-color: #F6F6F6;
+  margin: 20px 0;
 }
 
 .despliegue-datos.despliegue-servicios-contratados h4 {
