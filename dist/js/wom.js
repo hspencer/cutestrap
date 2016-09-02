@@ -3193,6 +3193,13 @@ $(document).ready(function(){
 				$(this).addClass('visible');
 			});
 
+		// roaming bolsa selector (no pude hacerlo inline)
+		$('#selectBolsa').click(function() {
+			$('.roamingSelect').addClass('fadeOutLeft');
+			$('.roamingSelectBolsa').addClass('show');
+			return false;
+		});
+
 	// nav pills no tienen la cosa de active
 	$('.pac-modal .nav-pills a').click(function (){
 		$('.pac-modal .nav-pills li').removeClass('active');

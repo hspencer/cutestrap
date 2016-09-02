@@ -5,6 +5,22 @@
 
 	{% include "partials/navbar.html" %}
 
+	<div id="modal-comprabolsa-error" class="modal saldo-modal fade ta-center" tabindex="-1" role="dialog">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-body">
+	      	<img src="img/icons/no-cat.svg" alt="">
+	      	<h4 class="morado-plain fs-large">¡Error!</h4>
+	      	<p>La transacción no pudo ser completada. ¡Vuelve a intentar nuevamente!</p>
+	      	<div class="buttons">
+	      		<p><button class="btn btn-primary btn-lg">Reintentar</button></p><br>
+	      		<p><button class="btn btn-link btn-lg notextdecoration">Volver</button></p>
+	      	</div>
+	      </div>
+	    </div><!-- /.modal-content -->
+	  </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
 	<header>
 		<div class="bg-modulo modulo-portabilidad">
 			<div class="container">
@@ -13,6 +29,10 @@
 			</div>
 		</div>
 	</header>
+
+	<div id="roamingactivado" class="alert alert-success" role="alert" style="display: none;">
+		<i class="fa fa-check-circle"></i> Servicio Roaming <strong>activado</strong>
+	</div>
 
 	<div class="container">
 		<div class="row">
@@ -47,18 +67,71 @@
 				</select>
 			</div>
 
-			<div class="col-xs-12 ta-center roamingNotify">
+			<div class="col-xs-12 ta-center roamingNotify" style="display: none;">
 				<i class="fa fa-exclamation-circle"></i>
 				<h5 class="morado-plain fw-normal nopadding mb-20">Tu servicio de roaming está <br> desactivado, ¿Deseas activarlo ahora?</h5>
 				<p>
-					<a href="#">
+					<a href="#" onclick="$('.roamingNotify').hide();$('.roamingSelect').show();$('#roamingactivado').slideDown();return false;">
 						<img class="autocenter" src="img/icons/activa-roaming-fancy-button.svg" alt="">
 					</a>
 				</p>
 			</div>
 		</div>
 	</div>
-	{% include "partials/private-carousel-bolsas.html" %}
+	
+	<div class="roamingSelectContainer">
+		<div class="roamingSelect animated" style="position: absolute; width: 100%;">
+			<ul>
+				<li>
+					<a href="javascript:void(0);" id="selectBolsa" href="#">
+						<img class="roamingMap" src="img/icons/roaming-northamerica.svg" alt="">
+						<p class="nomargin nopadding fw-semibold">Roaming Norteamérica</p>
+						<p class="nomargin nopadding">USA, Canadá y México</p>
+						<i class="fa fa-angle-right"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+					<img class="roamingMap" src="img/icons/roaming-sudamerica.svg" alt="">
+					<p class="nomargin nopadding fw-semibold">Roaming Sudamérica</p>
+					<p class="nomargin nopadding">Argentina, Brasil, Perú, Colombia y Uruguay</p>
+					<i class="fa fa-angle-right"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+		
+		<div id="selectBolsa" class="roamingSelectBolsa animated fadeInRight" style="display: none; position: absolute; width: 100%;">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="bolsaPicker bolsaSelected">
+							<div class="row">
+								<div class="item ta-center col-xs-6 nomargin">
+									<div class="item-container">
+										<img src="img/icons/ico-shopping-bag.svg" alt="">
+										<span class="fw-semibold">100MB Norteamérica</span>
+										<p class="nopadding fs-small">Vigencia de <strong>7</strong> días</p>
+										<p class="nomargin nopadding"><strong class="fs-large fw-semibold morado-plain">$7.990</strong></p>
+										<p class="nomargin nopadding"><button href="#" class="btn btn-primary btn-lg morado-chicle-bg fw-semibold" data-toggle="modal" data-target="#modal-comprabolsa-error">Comprar</button> </p>
+									</div>
+								</div>
+								<div class="item ta-center col-xs-6 nomargin">
+									<div class="item-container">
+										<img src="img/icons/ico-shopping-bag-x2.svg" alt="">
+										<span class="fw-semibold">300MB Norteamérica</span>
+										<p class="nopadding fs-small">Vigencia de <strong>7</strong> días</p>
+										<p class="nomargin nopadding"><strong class="fs-large fw-semibold morado-plain">$9.990</strong></p>
+										<p class="nomargin nopadding"><button href="#" class="btn btn-primary btn-lg morado-chicle-bg fw-semibold">Comprar</button> </p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	{% include "partials/footer.html" %}
 
