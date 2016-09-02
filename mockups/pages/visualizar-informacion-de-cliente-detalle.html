@@ -94,11 +94,20 @@
 				<div class="despliegue-datos">
 					<ul>
 						<li>
-							<span class="datosLabel">Correo electrónico</span>
-							<p class="fw-semibold">vgutierrezecheverria@gmail.com</p>
+							<span class="emailLabel datosLabel">Correo electrónico</span>
+							<p class="fw-semibold mailnoEditable">vgutierrezecheverria@gmail.com</p>
+							<div class="mailEditable" style="display: none;">
+								<div class="form-group input-effect">
+									<span class="miniLabel">Email</span>
+									<input type="text" class="form-control" id="email" placeholder="Email">
+								</div>
+							</div>
 							<p class="ta-center mt-20">
-								<button class="btn-lg btn-primary" style="width: 100%;">
+								<button class="editarCorreo-Action editarActions btn-lg btn-primary" style="width: 100%;" onclick="$('.mailnoEditable').hide();$('.mailEditable').show();$('.guardarCorreo-Action').show();$('.emailLabel').hide();$(this).hide(); return false;">
 									Editar correo electrónico
+								</button>
+								<button class="guardarCorreo-Action editarActions btn-lg btn-primary" style="width: 100%; background-color: green; border-color: green; display: none;">
+									Guardar
 								</button>
 							</p>
 						</li>
