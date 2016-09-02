@@ -241,6 +241,7 @@ ul {
 .mb--20 {margin-bottom: -20px !important;}
 .ml--20 {margin-left: -15px !important;}
 .notextdecoration {text-decoration: none;}
+.overflowh {overflow: hidden;}
 
 /* estilos extras de Carlos:; */
 
@@ -1992,6 +1993,14 @@ button {
 
 .servicio-tecnico-timeline ul li.complete i.fa-check-circle {
   color: $quaternary;
+}
+
+/* login WOMER */ 
+
+.login-bienvenida-text .icon {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 .modal-consumo-modulo .tab-content {
