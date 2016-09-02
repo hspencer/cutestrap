@@ -1248,7 +1248,7 @@ button {
 }
 
   .calendarCards .item .cards-content-item .cards-content-item-desc p:first-of-type {
-    font-size: 1.25rem;
+    font-size: 14px;
   }
 
 .calendarCards .item .cards-content-item .cards-content-item-total {
@@ -1544,8 +1544,9 @@ button {
 #bolsas-destacadas-carousel {margin-top: 15px;}
 
 #bolsas-destacadas-carousel .item img {
-  width: 100%;
+  width: 300px;
   height: auto;
+  margin: 50px auto;
 }
 #bolsas-destacadas-carousel .carousel-indicators {
   bottom: 0;
@@ -1708,7 +1709,7 @@ button {
 }
 
 #carousel-home-nonwomers .item > img {
-  width: 200px;
+  width: 250px;
   height: auto;
   margin: 0 auto;
 }
@@ -2208,12 +2209,20 @@ button {
   background-color: #CCC;
   color: $quaternary;
   border-bottom: 1px solid $quaternary;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .home-pago-modulo.consulta-datos-modulo .nav-tabs li.active a {
   background-color: white;
   color: #3A1660;
   border-bottom: 0;
+  border-top: 1px solid $quaternary;
+  border-left: 1px solid $quaternary;
+  border-right: 1px solid $quaternary;
 }
 
 @media only screen and (min-width: 375px)  {
