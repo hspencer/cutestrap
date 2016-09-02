@@ -76,7 +76,7 @@
 
 	
 	<div id="wizardPlanes">
-		<div id="wizardPlanes-paso1" class="wizardPlanes-pasos" data-nextStep="paso2" style="display: none;">
+		<div id="wizardPlanes-paso1" class="wizardPlanes-pasos" data-nextStep="paso2" style="display: block;">
 			<div class="container wizardGradiente">
 				<div class="row">
 					<div class="col-xs-12 ta-center">
@@ -252,12 +252,12 @@
 				</div>
 				<div class="wizardTelefonos-ending">
 					<p class="mt-20 ta-center">
-						<button class="btn btn-lg disabled">Encontrar mi equipo</button>
+						<button class="btn btn-lg disabled" onclick="$('#wizardPlanes-paso1').slideUp();$('#wizardPlanes-paso2').slideUp();$('#wizardPlanes-pasofinal').slideToggle();$('html, body').animate({ scrollTop: 0 }, 'slow'); return false;">Encontrar mi equipo</button>
 					</p>
 				</div>
 			</div>
 		</div>
-		<div id="wizardPlanes-pasofinal" style="display: block;">
+		<div id="wizardPlanes-pasofinal" style="display: none;">
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-6">
@@ -293,7 +293,7 @@
 				</p>
 			</div>
 			<hr class="separador-home">
-			<p class="ta-center text-muted">¿Te gustó el equipo y el plan?</p>
+			<p class="ta-center">¿Te gustó el equipo y el plan?</p>
 			<p class="ta-center">
 				<button class="btn btn-primary morado-chicle-bg">Contrátalo! WOM te llama <img src="img/icons/icon-womtellama.svg" alt="" class="icon"> </button>
 			</p>
