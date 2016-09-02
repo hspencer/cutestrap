@@ -987,6 +987,9 @@ button {
   border-bottom: 1px solid #EEE;
   background-color: transparent;
 }
+.form-control.input-outline {
+  border: 1px solid #666;
+}
 .form-control.input-lite {
   color: #000;
   border-color: white;
@@ -1777,6 +1780,19 @@ button {
   position: relative;
 }
 
+.centro-ayuda-satisfaction {
+  background-image: url(../../mockups/img/centro-de-ayuda/welcome-bg.png);
+  height: 185px;
+  background-position: center 0px;
+  background-size: 100% auto;
+  border-bottom: 1px solid #CCC;
+}
+
+.centro-ayuda-satisfaction .btn.active {
+  background-color: #ba007c;
+  border-color: #ba007c;
+}
+
 .centro-ayuda-robo {
   position: absolute;
   bottom: -10px;
@@ -1931,6 +1947,40 @@ button {
 
 .centro-ayuda-social > ul > li > a {
   color: #8B8B8B;
+}
+
+.centro-ayuda-relatedLinks ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+.centro-ayuda-relatedLinks ul li a {
+  color: #8B8B8B;
+  padding: 15px 30px;
+  display: block;
+  border-bottom: 1px solid #D0D0D0;
+}
+
+.centro-ayuda-relatedLinks ul li:last-of-type a {
+  border-bottom: 0;
+}
+
+.centro-ayuda-relatedLinks ul li a p {
+  margin: 0;
+  padding: 0;
+}
+
+.centro-ayuda-relatedLinks ul li a strong {
+  text-transform: uppercase;
+  color: $quaternary;
+}
+
+.centro-ayuda-relatedLinks ul li a i.fa {
+  float: right;
+  font-size: 32px;
+  line-height: 16px;
+  color: $quaternary;
+  margin-top: 5px;
 }
 
 /* Servicio técnico */

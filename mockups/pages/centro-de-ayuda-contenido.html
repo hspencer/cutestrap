@@ -22,7 +22,105 @@
 		</div>
 	</div>
 
+	<div class="centro-ayuda-satisfaction">
+		<div class="container">
+			<div class="col-xs-8 ta-center">
+				<p class="nopadding mt-20 text-muted fw-semibold">¿Te mostré lo que querías?</p>
+				<div class="btn-group" role="group" aria-label="...">
+				  <button type="button" class="btn btn-primary active" style="margin-right: 3px;">Sí</button>
+				  <button type="button" class="btn btn-primary" onclick="$(this).siblings('.active').removeClass('active');$(this).addClass('active');$('.centro-ayuda-feedback').slideDown();$('.satisfactionMsg').html('¡Ayúdame tú!'); return false;">No</button>
+				</div>
+				<p class="satisfactionMsg nopadding text-muted skew mt-10">¡Súper! Vuelve cuando quieras</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="centro-ayuda-feedback" style="display: none;">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<form action="#">
+						<textarea class="form-control input-outline" rows="7" placeholder="escribe tus comentarios"></textarea>
+					</form>
+					<p class="ta-right">
+						<button class="btn btn-primary morado-chicle-bg">Enviar</button>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="centro-ayuda-relatedLinks">
+		<h4 class="ta-center uc morado-plain fw-semibold">Links relacionados</h4>
+		<ul>
+			<li class="wow animated fadeInUp">
+				<a href="#">
+					<p>Ir a <strong>Planes Multimedia</strong> <i class="fa fa-angle-right"></i> </p>
+				</a>
+			</li>
+			<li class="wow animated fadeInUp">
+				<a href="#">
+					<p>Ir a <strong>Chip Prepago</strong> <i class="fa fa-angle-right"></i> </p>
+				</a>
+			</li>
+			<li class="wow animated fadeInUp">
+				<a href="#">
+					<p>Ir a <strong>Recargar tu prepago</strong> <i class="fa fa-angle-right"></i> </p>
+				</a>
+			</li>
+			<li class="wow animated fadeInUp">
+				<a href="#">
+					<p>Ir a <strong>Internet Móvil y Hogar</strong> <i class="fa fa-angle-right"></i> </p>
+				</a>
+			</li>
+			<li class="wow animated fadeInUp">
+				<a href="#">
+					<p>Ir a <strong>Cobertura</strong> <i class="fa fa-angle-right"></i> </p>
+				</a>
+			</li>
+			<li class="wow animated fadeInUp">
+				<a href="#">
+					<p>Ir a <strong>4G</strong> <i class="fa fa-angle-right"></i> </p>
+				</a>
+			</li>
+			<li class="wow animated fadeInUp">
+				<a href="#">
+					<p>Ir a <strong>Nuestras Sucursales</strong> <i class="fa fa-angle-right"></i> </p>
+				</a>
+			</li>
+			<li class="wow animated fadeInUp">
+				<a href="#">
+					<p>Ir a <strong>Roaming</strong> <i class="fa fa-angle-right"></i> </p>
+				</a>
+			</li>
+		</ul>
+	</div>
+
 	<hr class="separador-home">
+
+	<div class="centro-ayuda-busca-otra">
+		<h4 class="ta-center uc morado-plain fw-semibold nopadding">Busca otra pregunta</h4>
+		<form action="#">
+			<div class="form-group">
+				<input type="text" class="form-control centro-ayuda-search centro-ayuda-search-alt autocenter" placeholder="Ingresa tu pregunta...">
+			</div>
+		</form>
+	</div>
+
+	<div class="centro-ayuda-otras-cats">
+		<h4 class="ta-center uc morado-plain fw-semibold nopadding">Otras categorías</h4>
+		<form action="#">
+			<div class="col-xs-12">
+				<select class="form-control select-caret" style="color: #555;">
+				  <option selected="">Navegación</option>
+				  <option>2</option>
+				  <option>3</option>
+				  <option>4</option>
+				  <option>5</option>
+				</select>
+			</div>
+		</form>
+	</div>
 
 </div>
 
