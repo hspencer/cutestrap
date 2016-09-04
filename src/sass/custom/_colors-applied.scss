@@ -5,19 +5,18 @@ Colors
 These are specific color backgrounds for different elements and containers
 
 Markup:
-<div class="box color skew {{modifier_class}}-dark">
-  <span class="white">{{modifier_class}}-dark</span>
-</div>
 <div class="box color skew {{modifier_class}}">
   <span class="white">{{modifier_class}}</span>
 </div>
-<div class="box color skew {{modifier_class}}-light">
-  <span class="white">{{modifier_class}}-light</span>
-</div>
 
-.primary 				- Primary brand color: Base purple: rgb(66, 20, 65)
+
+.primary 				- Primary brand color: Base purple: rgb(66, 20, 65) - loulou
 .secondary 				- Secondary brand color: Lighter purple
 .terciary 				- Terciary brand color: Washed purple
+.ok						- brand-ok
+.success 				- brand success
+.cancel					- cancel
+
 
 Styleguide 5.0
 
