@@ -1,0 +1,29 @@
+{% extends "layout.nunjucks" %}
+{% set title = "Historial sin facturas - Desktop" %}
+
+{% block content %}
+
+	{% include "partials/navbar.html" %}
+
+	<header>
+		<div class="bg-modulo bg-modulo-short modulo-portabilidad">
+			<div class="container">
+				<h3 class="ta-center white fw-semibold uc">Historial de Facturas</h3>
+				<h4 class="ta-center fw-normal white fs-base">Revisa tu histórico de tus servicios contratados</h4>
+			</div>
+		</div>
+	</header>
+
+	<div class="container">
+		<div class="row ta-center">
+			<div class="col-xs-12 col-lg-6 col-lg-offset-3">
+				<h2 class="fw-semibold morado-plain">Tu cuenta no ha sido facturada</h2>
+				<p>Sigue disfrutando de la experiencia <b>WOM</b></p>
+				<p><button class="btn btn-primary fs-base fw-semibold">Volver</button></p>
+			</div>
+		</div>
+	</div>
+
+{% include "partials/footer.html" %}
+
+{% endblock %}
