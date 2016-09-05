@@ -45,7 +45,7 @@ gulp.task('bump', function() {
 });
 
 gulp.task('compile', ['clean'], function(){
-  runSequence('sass', 'minify', 'kss-html', 'kss', 'kss-public', 'scripts', 'nunjucks');
+  runSequence('sass', 'minify', 'kss-html', 'kss', 'kss-public', 'scripts', 'copy-fonts', 'nunjucks');
 });
 
 // Clean build
@@ -160,9 +160,15 @@ gulp.task('temp', function(){
 
 // compile and consolidate js
 gulp.task('scripts', function() {
-  return gulp.src(['./src/js/bootstrap*.js','./src/js/modernizr-2.8.3.min.js','./src/js/wow.js','./src/js/inview.js','./src/js/main.js'])
+  return gulp.src(['./src/js/bootstrap*.js','./src/js/modernizr-2.8.3.min.js','./src/js/wow.js','./src/js/inview.js', './src/js/stellar.min.js','./src/js/main.js'])
     .pipe(concat('wom.js'))
     .pipe(gulp.dest('./dist/js/'));
+});
+
+// font assets copy to /dist
+gulp.task('copy-fonts', function() {
+  gulp.src(['./src/fonts/*/*'])
+  .pipe(gulp.dest('./dist/fonts/'))
 });
 
 // Watch Files For Changes

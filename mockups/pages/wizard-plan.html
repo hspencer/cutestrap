@@ -1,0 +1,403 @@
+{% extends "layout.nunjucks" %}
+{% set title = "Wizard de Planes" %}
+
+{% block content %}
+
+	{% include "partials/navbar.html" %}
+
+	<header>
+		<div class="bg-modulo bg-modulo-short modulo-portabilidad">
+			<div class="container">
+				<h3 class="ta-center white fw-semibold uc" style="margin-top: 140px">Busquemos el plan más conveniente</h3>
+				<h4 class="ta-center fw-normal white fs-base">Te ayudamos a <br>elegir un plan conveniente<br> junto a un equipo</h4>
+			</div>
+		</div>
+	</header>
+
+	
+	<div id="wizardPlanes">
+		<div class="container">
+			<div id="wizardPlanes-paso1" class="wizardPlanes-pasos" data-nextStep="paso2" style="display: block;"">
+				<div class="row">
+					<div class="col-xs-12">
+						<h4 class="morado-plain uc fw-semibold nopadding">¿Qué tipo de WOMER eres?</h4>
+						<p class="nopadding">Selecciona tu tipo de WOMER</p>
+					</div>
+				</div>
+				<div class="row fs-small ta-center">
+					<div class="col-xs-3 nopadding fw-semibold">
+						<a href="#" onclick="return false;">
+							<i class="fa fa-book"></i>
+							<span class="wizardLabel">WOMER<br>Estudiante</span>
+						</a>
+					</div>
+					<div class="col-xs-3 nopadding fw-semibold">
+						<a href="#" onclick="return false;">
+							<i class="fa fa-comment-o"></i>
+							<span class="wizardLabel">WOMER<br>Redes Sociales</span>
+						</a>
+					</div>
+					<div class="col-xs-3 nopadding fw-semibold">
+						<a href="#" onclick="return false;">
+							<i class="fa fa-gamepad"></i>
+							<span class="wizardLabel">WOMER<br>Gamer</span>
+						</a>
+					</div>
+					<div class="col-xs-3 nopadding fw-semibold">
+						<a href="#" onclick="return false;">
+							<i class="fa fa-envelope"></i>
+							<span class="wizardLabel">WOMER<br>Trabajador</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div id="wizardPlanes-paso2" class="wizardPlanes-pasos" data-nextStep="paso3" style="display: none;">
+				<div class="row">
+					<div class="col-xs-12">
+						<h4 class="morado-plain uc fw-semibold nopadding">¿En qué gastas tus gigas?</h4>
+					</div>
+				</div>
+				<div class="wizard-appendix wizard-socialmedia">
+					<div class="wizard-appendix-header">
+						<div class="row">
+							<div class="col-xs-7">
+								<h5 class="morado-plain fw-semibold nomargin nopadding">Redes Sociales</h5>
+							</div>
+							<div class="col-xs-5">
+								<div class="wizard-appendix-icons ta-right">
+									<i class="fa fa-facebook"></i>
+									<i class="fa fa-twitter"></i>
+									<i class="fa fa-whatsapp"></i>
+									<i class="fa fa-instagram"></i>
+									<i class="fa fa-snapchat"></i>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-9">
+								<p class="nopadding fs-small ta-left">¿Qué tan adicto eres a las redes sociales?</p>
+							</div>
+						</div>
+					</div>
+					<div class="row fs-small">
+						<div class="col-xs-12">
+							<ul class="gigaMeasures nomargin nopadding">
+								<li>
+									<a class="graphButton" href="#">
+										<div class="graphHolder">
+										</div>
+										<span class="gigas-bar-label ta-center fw-normal">Nada</span>
+									</a>
+								</li>
+								<li>
+									<a class="graphButton" href="#">
+										<div class="graphHolder">
+											<span class="gigas-bar">&nbsp;</span>
+										</div>
+										<span class="gigas-bar-label ta-center fw-normal">Poco</span>
+									</a>
+								</li>
+								<li>
+									<a class="graphButton" href="#">
+										<div class="graphHolder">
+											<span class="gigas-bar">&nbsp;</span>
+											<span class="gigas-bar">&nbsp;</span>
+										</div>
+										<span class="gigas-bar-label ta-center fw-normal">Normal</span>
+									</a>
+								</li>
+								<li>
+									<a class="graphButton" href="#">
+										<div class="graphHolder">
+											<span class="gigas-bar">&nbsp;</span>
+											<span class="gigas-bar">&nbsp;</span>
+											<span class="gigas-bar">&nbsp;</span>
+										</div>
+										<span class="gigas-bar-label ta-center fw-normal">Mucho</span>
+									</a>
+								</li>
+								<li>
+									<a class="graphButton" href="#">
+										<div class="graphHolder">
+											<span class="gigas-bar">&nbsp;</span>
+											<span class="gigas-bar">&nbsp;</span>
+											<span class="gigas-bar">&nbsp;</span>
+											<span class="gigas-bar">&nbsp;</span>
+										</div>
+										<span class="gigas-bar-label ta-center fw-normal">Caleta</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="wizard-appendix wizard-videos">
+					<div class="wizard-appendix-header">
+						<div class="row">
+							<div class="col-xs-7">
+								<h5 class="morado-plain fw-semibold nomargin nopadding">Videos</h5>
+							</div>
+							<div class="col-xs-5">
+								<div class="wizard-appendix-icons ta-right">
+									<i class="fa fa-youtube"></i>
+									<i class="fa fa-vimeo"></i>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-9">
+								<p class="nopadding fs-small ta-left">¿Qué tan adicto eres a los videos?</p>
+							</div>
+						</div>
+					</div>
+					<div class="row fs-small">
+						<div class="col-xs-12">
+							<ul class="gigaMeasures nomargin nopadding">
+								<li>
+									<a class="graphButton" href="#">
+										<div class="graphHolder">
+										</div>
+										<span class="gigas-bar-label ta-center fw-normal">Nada</span>
+									</a>
+								</li>
+								<li>
+									<a class="graphButton" href="#">
+										<div class="graphHolder">
+											<span class="gigas-bar">&nbsp;</span>
+										</div>
+										<span class="gigas-bar-label ta-center fw-normal">Poco</span>
+									</a>
+								</li>
+								<li>
+									<a class="graphButton" href="#">
+										<div class="graphHolder">
+											<span class="gigas-bar">&nbsp;</span>
+											<span class="gigas-bar">&nbsp;</span>
+										</div>
+										<span class="gigas-bar-label ta-center fw-normal">Normal</span>
+									</a>
+								</li>
+								<li>
+									<a class="graphButton" href="#">
+										<div class="graphHolder">
+											<span class="gigas-bar">&nbsp;</span>
+											<span class="gigas-bar">&nbsp;</span>
+											<span class="gigas-bar">&nbsp;</span>
+										</div>
+										<span class="gigas-bar-label ta-center fw-normal">Mucho</span>
+									</a>
+								</li>
+								<li>
+									<a class="graphButton" href="#">
+										<div class="graphHolder">
+											<span class="gigas-bar">&nbsp;</span>
+											<span class="gigas-bar">&nbsp;</span>
+											<span class="gigas-bar">&nbsp;</span>
+											<span class="gigas-bar">&nbsp;</span>
+										</div>
+										<span class="gigas-bar-label ta-center fw-normal">Caleta</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="wizard-appendix wizard-browsing">
+					<div class="wizard-appendix-header">
+						<div class="row">
+							<div class="col-xs-7">
+								<h5 class="morado-plain fw-semibold nomargin nopadding">Navegación</h5>
+							</div>
+							<div class="col-xs-5">
+								<div class="wizard-appendix-icons ta-right">
+									<i class="fa fa-map-marker"></i>
+									<i class="fa fa-film"></i>
+									<i class="fa fa-file-photo-o"></i>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-9">
+								<p class="nopadding fs-small ta-left">¿Cuánto navegas con aplicaciones de mapas, películas, streaming?</p>
+							</div>
+						</div>
+					</div>
+					<div class="row fs-small">
+						<div class="col-xs-12">
+							<ul class="gigaMeasures nomargin nopadding">
+								<li>
+									<a class="graphButton" href="#">
+										<div class="graphHolder">
+										</div>
+										<span class="gigas-bar-label ta-center fw-normal">Nada</span>
+									</a>
+								</li>
+								<li>
+									<a class="graphButton" href="#">
+										<div class="graphHolder">
+											<span class="gigas-bar">&nbsp;</span>
+										</div>
+										<span class="gigas-bar-label ta-center fw-normal">Poco</span>
+									</a>
+								</li>
+								<li>
+									<a class="graphButton" href="#">
+										<div class="graphHolder">
+											<span class="gigas-bar">&nbsp;</span>
+											<span class="gigas-bar">&nbsp;</span>
+										</div>
+										<span class="gigas-bar-label ta-center fw-normal">Normal</span>
+									</a>
+								</li>
+								<li>
+									<a class="graphButton" href="#">
+										<div class="graphHolder">
+											<span class="gigas-bar">&nbsp;</span>
+											<span class="gigas-bar">&nbsp;</span>
+											<span class="gigas-bar">&nbsp;</span>
+										</div>
+										<span class="gigas-bar-label ta-center fw-normal">Mucho</span>
+									</a>
+								</li>
+								<li>
+									<a class="graphButton" href="#">
+										<div class="graphHolder">
+											<span class="gigas-bar">&nbsp;</span>
+											<span class="gigas-bar">&nbsp;</span>
+											<span class="gigas-bar">&nbsp;</span>
+											<span class="gigas-bar">&nbsp;</span>
+										</div>
+										<span class="gigas-bar-label ta-center fw-normal">Caleta</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="wizard-appendix wizard-music">
+					<div class="wizard-appendix-header">
+						<div class="row">
+							<div class="col-xs-7">
+								<h5 class="morado-plain fw-semibold nomargin nopadding">Música Online</h5>
+							</div>
+							<div class="col-xs-5">
+								<div class="wizard-appendix-icons ta-right">
+									<i class="fa fa-spotify"></i>
+									<i class="fa fa-soundcloud"></i>
+									<i class="fa fa-music"></i>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-9">
+								<p class="nopadding fs-small ta-left">¿Cuánto navegas con aplicaciones de mapas, películas, streaming?</p>
+							</div>
+						</div>
+					</div>
+					<div class="row fs-small">
+						<div class="col-xs-12">
+							<ul class="gigaMeasures nomargin nopadding">
+								<li>
+									<a class="graphButton" href="#">
+										<div class="graphHolder">
+										</div>
+										<span class="gigas-bar-label ta-center fw-normal">Nada</span>
+									</a>
+								</li>
+								<li>
+									<a class="graphButton" href="#">
+										<div class="graphHolder">
+											<span class="gigas-bar">&nbsp;</span>
+										</div>
+										<span class="gigas-bar-label ta-center fw-normal">Poco</span>
+									</a>
+								</li>
+								<li>
+									<a class="graphButton" href="#">
+										<div class="graphHolder">
+											<span class="gigas-bar">&nbsp;</span>
+											<span class="gigas-bar">&nbsp;</span>
+										</div>
+										<span class="gigas-bar-label ta-center fw-normal">Normal</span>
+									</a>
+								</li>
+								<li>
+									<a class="graphButton" href="#">
+										<div class="graphHolder">
+											<span class="gigas-bar">&nbsp;</span>
+											<span class="gigas-bar">&nbsp;</span>
+											<span class="gigas-bar">&nbsp;</span>
+										</div>
+										<span class="gigas-bar-label ta-center fw-normal">Mucho</span>
+									</a>
+								</li>
+								<li>
+									<a class="graphButton" href="#">
+										<div class="graphHolder">
+											<span class="gigas-bar">&nbsp;</span>
+											<span class="gigas-bar">&nbsp;</span>
+											<span class="gigas-bar">&nbsp;</span>
+											<span class="gigas-bar">&nbsp;</span>
+										</div>
+										<span class="gigas-bar-label ta-center fw-normal">Caleta</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 ta-center">
+						<p class="stepStatus nopadding">Responde para continuar...</p>
+						<p class="nomargin nopadding"><a role="button" class="btn btn-default btn-lg disabled finWizard">Encontrar mi plan</a></p>
+					</div>
+				</div>
+			</div>
+			<div id="wizardPlanes-paso3" class="wizardPlanes-pasos wizard-pasoFinal" style="display: none;">
+				<div class="plan-result ta-center">
+					<img class="wow animated slideInUp" src="img/wizard-planes-resultado.svg" alt="" style="margin: 0 auto 20px; display: block;">
+					<p><button class="btn btn-primary">Buscar otro plan</button></p>
+				</div>
+				<div class="plan-result telefono-sugerido">
+					<h4 class="morado-plain ta-center fw-normal">Contrata tu plan y llévate <br> cualquiera de estos equipos <br>con <strong>cuota inicial $0</strong></h4>
+					<div id="carousel-wizard-resultadoPlan" class="carousel slide" data-ride="carousel">
+						<!-- Indicators -->
+						<ol class="carousel-indicators">
+							<li data-target="#carousel-wizard-resultadoPlan" data-slide-to="0" class="active"></li>
+							<li data-target="#carousel-wizard-resultadoPlan" data-slide-to="1"></li>
+						</ol>
+
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner" role="listbox">
+							<div class="item active">
+								<img src="img/wizard-planes-resultado-telefono.png" alt="">
+							</div>
+							<div class="item">
+								<img src="img/wizard-planes-resultado-telefono.png" alt="">
+							</div>
+						</div>
+
+						<!-- Controls -->
+						<a class="left carousel-control" href="#carousel-wizard-resultadoPlan" role="button" data-slide="prev">
+							<i class="fa fa-angle-left"></i>
+						</a>
+						<a class="right carousel-control" href="#carousel-wizard-resultadoPlan" role="button" data-slide="next">
+							<i class="fa fa-angle-right"></i>
+						</a>
+					</div>
+					<p class="ta-center nomargin nopadding"><button class="btn btn-primary">Buscar otro equipo</button></p>
+				</div>
+				<hr style="background-color: #CCC; border-color: #CCC; margin-left: -15px; margin-right: -15px; margin-bottom: 40px;">
+				<div class="wizardPlanes-ending">
+					<p class="mt-20 ta-center">
+						<button onclick="window.location.assign('wizard-telefono.html');" class="btn btn-primary btn-lg morado-chicle-bg wow animated rubberBand">Contrátalo! WOM te llama <i class="fa fa-mobile-phone"></i></button>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	{% include "partials/footer.html" %}
+{% endblock %}

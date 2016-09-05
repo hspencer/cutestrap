@@ -1,0 +1,328 @@
+{% extends "layout.nunjucks" %}
+{% set title = "Home - No WOMERS" %}
+
+
+{% block content %}
+
+	{% include "partials/navbar.html" %}
+
+	<div id="carousel-home-welcome" class="carousel slide" data-ride="carousel">
+	  <!-- Indicators -->
+	  <ol class="carousel-indicators">
+	    <li data-target="#carousel-home-welcome" data-slide-to="0" class="active"></li>
+	    <li data-target="#carousel-home-welcome" data-slide-to="1"></li>
+	    <li data-target="#carousel-home-welcome" data-slide-to="2"></li>
+	    <li data-target="#carousel-home-welcome" data-slide-to="3"></li>
+	  </ol>
+
+	  <!-- Wrapper for slides -->
+	  <div class="carousel-inner" role="listbox">
+	    <div class="item ta-center active">
+	      <img class="carousel-home-welcome promo-slide" src="img/home/slide-p9-home.png" alt="...">
+	      <div class="carousel-caption">
+	        <p><a href="#" class="btn btn-outline-white">Ver promo</a></p>
+	      </div>
+	    </div>
+	    <div class="item ta-center">
+	      <img class="carousel-home-welcome promo-slide" src="img/home/slide-p9-home.png" alt="...">
+	      <div class="carousel-caption">
+	        <p><a href="#" class="btn btn-outline-white">Ver promo</a></p>
+	      </div>
+	    </div>
+	    <div class="item ta-center">
+	      <img class="carousel-home-welcome promo-slide" src="img/home/slide-p9-home.png" alt="...">
+	      <div class="carousel-caption">
+	        <p><a href="#" class="btn btn-outline-white">Ver promo</a></p>
+	      </div>
+	    </div>
+	    <div class="item ta-center">
+	      <img class="carousel-home-welcome promo-slide" src="img/home/slide-p9-home.png" alt="...">
+	      <div class="carousel-caption">
+	        <p><a href="#" class="btn btn-outline-white">Ver promo</a></p>
+	      </div>
+	    </div>
+	  </div>
+
+	  <!-- Controls -->
+	  <a class="left carousel-control" href="#carousel-home-welcome" role="button" data-slide="prev">
+	    <i class="fa fa-angle-left"></i>
+	    <span class="sr-only">Previous</span>
+	  </a>
+	  <a class="right carousel-control" href="#carousel-home-welcome" role="button" data-slide="next">
+	    <i class="fa fa-angle-right"></i>
+	    <span class="sr-only">Next</span>
+	  </a>
+
+	  <img src="img/home/scroll-to-continue.svg" alt="" class="continue">
+
+	</div>
+
+	<div id="carousel-home-nonwomers" class="carousel slide" data-ride="carousel">
+	  <!-- Indicators -->
+	  <ol class="carousel-indicators">
+	    <li data-target="#carousel-home-nonwomers" data-slide-to="0" class="active"></li>
+	    <li data-target="#carousel-home-nonwomers" data-slide-to="1"></li>
+	  </ol>
+
+	  <h3 class="nomargin nopadding">¿Y tu plan es asi de conveniente?</h3>
+	  <!-- Wrapper for slides -->
+	  <div class="carousel-inner" role="listbox">
+	    <div class="item active">
+	      <!-- <img src="..." alt="..."> -->
+	      <img src="img/home/plan-conveniente-slider-1.png" alt="...">
+	      <div class="carousel-caption">
+	        <a href="#" class="btn btn-outline-white">Contrata aquí</a>
+	      </div>
+	    </div>
+	    <div class="item">
+	      <img src="img/home/plan-conveniente-slider-1.png" alt="...">
+	      <div class="carousel-caption">
+	        <a href="#" class="btn btn-outline-white">Contrata aquí</a>
+	      </div>
+	    </div>
+	  </div>
+
+	  <!-- Controls -->
+	  <a class="left carousel-control" href="#carousel-home-nonwomers" role="button" data-slide="prev">
+	    <i class="fa fa-angle-left"></i>
+	  </a>
+	  <a class="right carousel-control" href="#carousel-home-nonwomers" role="button" data-slide="next">
+	    <i class="fa fa-angle-right"></i>
+	  </a>
+	</div>
+
+	<div class="container home-feature mt-40 mb-40">
+		<div class="row mb-10 ta-center">
+			<div class="col-xs-12">
+				<h3 class="fw-normal uc morado-plain nomargin nopadding wow animated fadeIn" data-wow-offset="150">Recomendador <strong class="fw-semibold">WOM</strong></h3>
+			</div>
+			<p class="nomargin nopadding ta-center fw-semibold" style="font-size: 18px; padding: 0 25px;">Te ayudamos a elegir el plan <br>y el equipo más conveniente</p>
+			<div class="parallaxHolder nonwomer1 ta-center col-xs-12">
+				<img src="img/banner/persona-home-nonwomer-1.png" alt="" data-stellar-ratio="1.20" data-stellar-vertical-offset="1100" style="position: absolute; z-index: -1; width: 230px; left: 50%; margin-left: -100px;">
+				<p class="nomargin nopadding"><button href="#" class="btn btn-lg btn-primary">Encuentra tu plan</button></p>
+			</div>
+		</div>
+	</div>
+
+	<div class="container home-feature mt-40 mb-40">
+		<div class="row mb-10 ta-center">
+			<div class="col-xs-12">
+				<h3 class="fw-normal uc morado-plain nomargin nopadding wow animated fadeIn" data-wow-offset="150">Cobertura <strong class="fw-semibold">WOM</strong></h3>
+			</div>
+			<p class="nomargin nopadding ta-center fw-semibold" style="font-size: 18px; padding: 0 25px;">Consulta nuestra cobertura de telefonía móvil para volar en nuestra red</p>
+			<div class="parallaxHolder nonwomer1 ta-center col-xs-12">
+				<img src="img/banner/persona-home-nonwomer-2.png" alt="" data-stellar-ratio="1.20" data-stellar-vertical-offset="1000" style="position: absolute; z-index: -1; width: 230px; left: 50%; margin-left: -100px;">
+				<p class="nomargin nopadding"><button href="#" class="btn btn-lg btn-primary">Revisa tu cobertura</button></p>
+			</div>
+		</div>
+	</div>
+
+	<div class="container home-feature mt-40 mb-40">
+		<div class="row mb-10 ta-center">
+			<div class="col-xs-12">
+				<h3 class="fw-normal uc morado-plain nomargin nopadding wow animated fadeIn" data-wow-offset="150">Pórtate a <strong class="fw-semibold">WOM</strong></h3>
+			</div>
+			<p class="nomargin nopadding ta-center fw-semibold" style="font-size: 18px; padding: 0 25px;">Líderes en portabilidad! Deja el lado oscuro y únete a los planes más convenientes.</p>
+			<div class="parallaxHolder nonwomer1 ta-center col-xs-12">
+				<img src="img/banner/persona-home-nonwomer-3.png" alt="" data-stellar-ratio="1.20" data-stellar-vertical-offset="1200" style="position: absolute; z-index: -1; width: 230px; left: 50%; margin-left: -100px;">
+				<p class="nomargin nopadding"><button href="#" class="btn btn-lg btn-primary morado-chicle-bg wow animated rubberBand">Pórtate aquí <img src="img/icons/icon-portate.svg" alt="" style="display: inline-block;"> </button></p>
+			</div>
+		</div>
+	</div>
+
+	<div id="carousel-belowfold-equipos" class="carousel slide" data-ride="carousel">
+	  <!-- Indicators -->
+	  <ol class="carousel-indicators">
+	    <li data-target="#carousel-carousel-belowfold-equipos" data-slide-to="0" class="active"></li>
+	    <li data-target="#carousel-carousel-belowfold-equipos" data-slide-to="1"></li>
+	  </ol>
+
+	  <!-- Wrapper for slides -->
+	  <div class="carousel-inner" role="listbox">
+	    <div class="item active">
+	      <img class="promo" src="img/home/carousel-belowfold-equipos-slide.png" alt="">
+	      <p class="ta-center">
+	      	<a href="#" class="btn btn-outline-white">Ver equipo</a>
+	      </p>
+	    </div>
+	    <div class="item">
+	      <img class="promo" src="img/home/carousel-belowfold-equipos-slide.png" alt="">
+	      <p class="ta-center">
+	      	<a href="#" class="btn btn-outline-white">Ver equipo</a>
+	      </p>
+	    </div>
+	  </div>
+
+	  <!-- Controls -->
+	  <a class="left carousel-control" href="#carousel-belowfold-equipos" role="button" data-slide="prev">
+	    <i class="fa fa-angle-left"></i>
+	  </a>
+	  <a class="right carousel-control" href="#carousel-belowfold-equipos" role="button" data-slide="next">
+	    <i class="fa fa-angle-right"></i>
+	  </a>
+	</div>
+
+	<div id="carousel-belowfold-womfeatures" class="carousel slide" data-ride="carousel">
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#carousel-belowfold-womfeatures" data-slide-to="0" class="active"></li>
+			<li data-target="#carousel-belowfold-womfeatures" data-slide-to="1"></li>
+			<li data-target="#carousel-belowfold-womfeatures" data-slide-to="2"></li>
+		</ol>
+
+		<!-- Wrapper for slides -->
+		<div class="carousel-inner" role="listbox">
+			<div class="item active">
+				<div class="container home-feature">
+					<div class="row mb-10">
+						<div class="col-xs-12">
+							<h3 class="fw-normal uc morado-plain nomargin nopadding ta-center">Nueva App <strong class="fw-semibold">WOM</strong></h3>
+							<p class="nomargin nopadding">No más vueltas, házla corta descubriendo:</p>
+						</div>	
+					</div>
+					<div class="row">
+						<div class="col-xs-3 col-xs-offset-1 nopadding">
+							<img src="img/banner/persona-home-1.png">
+						</div>
+						<div class="col-xs-8">
+							<ul class="home-feature-list fs-small">
+								<li><i class="fa fa-check morado-plain"></i> Tu consumo</li>
+								<li><i class="fa fa-check morado-plain"></i> Tu saldo</li>
+								<li><i class="fa fa-check morado-plain"></i> Tu fecha de facturación</li>
+								<li><i class="fa fa-check morado-plain"></i> Tus bolsas</li>
+								<li><i class="fa fa-check morado-plain"></i> Tus promociones</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row ta-center mt-10">
+						<div class="col-xs-6">
+							<p><a href="#"><img src="img/home/boton-appstore.svg" alt=""></a></p>
+						</div>
+						<div class="col-xs-6">
+							<p><a href="#"><img src="img/home/boton-googleplay.svg" alt=""></a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="container home-feature">
+					<div class="row mb-10">
+						<div class="col-xs-12">
+							<h3 class="fw-normal uc morado-plain nomargin nopadding ta-center">Sucursal <strong class="fw-semibold">Online</strong></h3>
+							<p class="nomargin nopadding">Descubre lo que puedes ver en tu Sucursal Online</p>
+						</div>	
+					</div>
+					<div class="row">
+						<div class="col-xs-5 col-xs-offset-1 nopadding">
+							<img src="img/banner/persona-home-2.png" alt="">
+						</div>
+						<div class="col-xs-6">
+							<ul class="home-feature-list fs-small">
+								<li><p class="nomargin nopadding fw-semibold fs-small morado-plain">Revisa cuántas veces quieras:</p></li>
+								<li><i class="fa fa-check morado-plain"></i> Detalle de tu tráfico</li>
+								<li><i class="fa fa-check morado-plain"></i> Estado de tu cuenta</li>
+								<li><i class="fa fa-check morado-plain"></i> Tus servicios</li>
+								<li><i class="fa fa-check morado-plain"></i> Tu equipo</li>
+								<li><i class="fa fa-check morado-plain"></i> Claves PIN y PUK</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 ta-center">
+							<p><button class="btn btn-primary">Inicia sesión</button></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="container home-feature">
+					<div class="row mb-10">
+						<div class="col-xs-12">
+							<h3 class="fw-normal uc morado-plain nomargin nopadding ta-center">Pago <strong class="fw-semibold">Fácil</strong></h3>
+							<p class="nomargin nopadding">¡Hazla corta! <br>Paga tu cuenta rápidamente.</p>
+						</div>	
+					</div>
+					<div class="row">
+						<div class="col-xs-3 col-xs-offset-1 nopadding">
+							<img src="img/banner/persona-home-nonwomer-4.png" alt="">
+						</div>
+						<div class="col-xs-8">
+							<ul class="home-feature-list fs-small">
+								<li><p class="nomargin nopadding fw-semibold fs-small morado-plain">Podrás:</p></li>
+								<li><i class="fa fa-check morado-plain"></i> Pagar tu cuenta por internet</li>
+								<li><i class="fa fa-check morado-plain"></i> Pagar de forma fácil y segura</li>
+								<li><i class="fa fa-check morado-plain"></i> Revisar el monto total de tu facturación</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 ta-center">
+							<p><button class="btn btn-primary">Ir a pago fácil</button></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Controls -->
+		<a class="left carousel-control" href="#carousel-belowfold-womfeatures" role="button" data-slide="prev">
+			<i class="fa fa-angle-left"></i>
+		</a>
+		<a class="right carousel-control" href="#carousel-belowfold-womfeatures" role="button" data-slide="next">
+			<i class="fa fa-angle-right"></i>
+		</a>
+	</div>
+
+	<hr class="separador-home">
+
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 ta-center">
+				<h4 class="fw-normal fs-large morado-plain uc">Recargas</h4>
+				<p class="nomargin nopadding fw-semibold">¡Ahora recárgate! <br>Más de 29.000 puntos para recargar</p>
+				<p class="mt-10"><button class="btn btn-primary">Ir a recargar</button></p>
+				<br>
+			</div>
+		</div>
+	</div>
+
+	<hr class="separador-home">
+
+	<div class="container home-pago-modulo">
+		<div class="row">
+			<div class="col-xs-12">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+					<li role="presentation" class="active"><a class="fs-small" href="#pago-tarjetas" aria-controls="home" role="tab" data-toggle="tab"><i class="fa fa-credit-card"></i> Tarjetas</a></li>
+					<li role="presentation"><a class="fs-small" href="#pago-online" aria-controls="profile" role="tab" data-toggle="tab"><i class="fa fa-mobile-phone"></i> Pago Online</a></li>
+					<li role="presentation"><a class="fs-small" href="#pago-presencial" aria-controls="messages" role="tab" data-toggle="tab"><i class="fa fa-money"></i> Presencial</a></li>
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content ta-center">
+					<div role="tabpanel" class="tab-pane active" id="pago-tarjetas">
+						<h3 class="morado-plain lineheight100 fw-semibold">
+							Recarga con tarjetas desde $1.000
+						</h3>
+						<img style="width: auto; margin: 0 auto; display: block;" src="img/home/img-paga-tarjetas.png" alt="">
+					</div>
+					<div role="tabpanel" class="tab-pane" id="pago-online">
+						<h3 class="morado-plain lineheight100 fw-semibold">
+							Recargas online desde $1.000 en los siguientes sitios
+						</h3>
+						<img style="width: auto; margin: 0 auto; display: block;" src="img/home/img-paga-online.png" alt="">
+					</div>
+					<div role="tabpanel" class="tab-pane" id="pago-presencial">
+						<h3 class="morado-plain lineheight100 fw-semibold">
+							Canales disponibles para recargar desde $1.000
+						</h3>
+						<img style="width: auto; margin: 0 auto; display: block;" src="img/home/img-paga-presencial.png" alt="">
+					</div>
+				</div>	
+			</div>
+		</div>
+	</div>
+
+	{% include "partials/footer.html" %}
+
+{% endblock %}

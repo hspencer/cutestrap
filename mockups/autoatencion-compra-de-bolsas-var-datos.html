@@ -9,6 +9,12 @@
   <!-- MOVER A /SRC -->
   <link rel="stylesheet" href="https://dl.dropboxusercontent.com/u/3538/animate.css">
   <link rel="stylesheet" href="../dist/css/womstrap.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="../dist/js/wom.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+  
 </head>
 <body>
 
@@ -30,7 +36,7 @@
 
 		<!-- wom logo -->
 		<div class="navbar-brand navbar-brand-centered">
-			<a href="../../index.html" title="">
+			<a href="index.html" title="">
 				<img src="img/logo-wom.svg" width="80" height="80" >
 			</a>
 		</div>
@@ -61,7 +67,7 @@
 </nav>
 
 	<header>
-		<div class="bg-modulo bg-modulo-shortest modulo-portabilidad">
+		<div class="bg-modulo modulo-portabilidad">
 			<div class="container">
 				<h3 class="ta-center white fw-semibold uc">Compra tu bolsa</h3>
 				<h4 class="ta-center fw-normal white fs-base">Elige tu bolsa utilizando tu saldo y descubre nuestras promos</h4>
@@ -72,17 +78,17 @@
 	<div class="container">
 		
 		<div class="row">
+			<br>
 			<div class="col-xs-12 select-phone">
-				<select class="form-control select-caret fw-semibold">
-				  <option selected="">+56 988776655</option>
-				  <option>2</option>
-				  <option>3</option>
-				  <option>4</option>
-				  <option>5</option>
-				</select>
-			</div>
+	<select class="form-control select-caret fw-bold">
+	  <option selected="">+56 988776655</option>
+	  <option>2</option>
+	  <option>3</option>
+	  <option>4</option>
+	  <option>5</option>
+	</select>
+</div>
 		</div>
-
 		<br>
 			
 		<div class="row">
@@ -91,9 +97,9 @@
 			</div>
 			<div class="col-xs-12">
 				<div class="btn-group saldo-recarga-ahora" role="group">
-					<button type="button" class="btn fs-large saldo-money dark-red fw-normal">$7.000</button>
-					<button type="button" class="btn btn-primary morado-chicle-bg saldo-cta"><i class="fa fa-dollar"></i> Recarga ahora</button>
-				</div>
+  <button type="button" class="btn fs-large saldo-money dark-red fw-semibold">$7.000</button>
+  <button type="button" class="btn btn-primary morado-chicle-bg saldo-cta"><i style="display:inline-block;position: relative;top: 4px;left: 4px;" class="ico-input-money"></i> Recarga ahora</button>
+</div>
 			</div>
 		</div>
 
@@ -101,18 +107,21 @@
 
 		<div class="row">
 			<div class="col-xs-12">
-				<p class="nopadding nomargin"><i class="fa fa-cloud-download morado-plain"></i> Vas a comprar una bolsa de datos</p>
+				<p class="nopadding"><i class="fa fa-cloud-download morado-plain"></i> Vas a comprar una bolsa de datos</p>
 			</div>
+			
 			<div class="col-xs-12 select-phone fs-normal">
-				<select class="form-control select-caret fw-semibold">
-				  <option selected="">Bolsas de datos</option>
-				  <option>2</option>
-				  <option>3</option>
-				  <option>4</option>
-				  <option>5</option>
-				</select>
-			</div>
+	<select class="form-control select-caret fw-semibold">
+	  <option selected="">Bolsas de datos</option>
+	  <option>Bolsas de voz</option>
+	  <option>Bolsas de SMS</option>
+	  <option>Bolsas mixtas</option>
+	  <option>Bolsas temáticas</option>
+	  <option>Roaming</option>
+	</select>
+</div>
 		</div>
+		
 
 		<div class="bolsaPicker bolsaSelected">
 			<div class="row"></div>
@@ -123,7 +132,7 @@
 						<span class="fw-semibold">100MB</span>
 						<p class="nopadding fs-small">Vigencia de <strong>7</strong> días</p>
 						<p class="nomargin nopadding"><strong class="fs-large fw-semibold morado-plain">$5.000</strong></p>
-						<p class="nomargin nopadding"><button href="#" class="btn btn-primary btn-lg morado-chicle-bg">Comprar</button> </p>
+						<p class="nomargin nopadding"><button href="#" class="btn btn-primary btn-lg morado-chicle-bg fw-semibold">Comprar</button> </p>
 					</div>
 				</div>
 				<div class="item ta-center col-xs-6 nomargin">
@@ -132,7 +141,7 @@
 						<span class="fw-semibold">300MB</span>
 						<p class="nopadding fs-small">Vigencia de <strong>7</strong> días</p>
 						<p class="nomargin nopadding"><strong class="fs-large fw-semibold morado-plain">$7.000</strong></p>
-						<p class="nomargin nopadding"><button href="#" class="btn btn-primary btn-lg morado-chicle-bg">Comprar</button> </p>
+						<p class="nomargin nopadding"><button href="#" class="btn btn-primary btn-lg morado-chicle-bg fw-semibold">Comprar</button> </p>
 					</div>
 				</div>
 			</div>
@@ -143,7 +152,7 @@
 						<span class="fw-semibold">700MB</span>
 						<p class="nopadding fs-small">Vigencia de <strong>7</strong> días</p>
 						<p class="nomargin nopadding"><strong class="fs-large fw-semibold morado-plain">$9.000</strong></p>
-						<p class="nomargin nopadding"><button href="#" class="btn btn-primary btn-lg morado-chicle-bg">Comprar</button> </p>
+						<p class="nomargin nopadding"><button href="#" class="btn btn-primary btn-lg morado-chicle-bg fw-semibold">Comprar</button> </p>
 					</div>
 				</div>
 				<div class="item ta-center col-xs-6 nomargin">
@@ -152,13 +161,16 @@
 						<span class="fw-semibold">1000MB</span>
 						<p class="nopadding fs-small">Vigencia de <strong>7</strong> días</p>
 						<p class="nomargin nopadding"><strong class="fs-large fw-semibold morado-plain">$12.000</strong></p>
-						<p class="nomargin nopadding"><button href="#" class="btn btn-primary btn-lg morado-chicle-bg">Comprar</button> </p>
+						<p class="nomargin nopadding"><button href="#" class="btn btn-primary btn-lg morado-chicle-bg fw-semibold">Comprar</button> </p>
 					</div>
 				</div>
 			</div>
 		</div>
 
 	</div>
+
+
+	
 
 
 	<footer class="main-foot">
@@ -192,11 +204,5 @@
 </footer>
 
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script src="https://use.fontawesome.com/fc096a74c6.js"></script>
-  <script src="../dist/js/wom.js"></script>
-  <script>
-    new WOW().init();
-  </script>
 </body>
 </html>

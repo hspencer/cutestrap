@@ -1,0 +1,88 @@
+{% extends "layout.nunjucks" %}
+{% set title = "Autoatención Compra de Bolsas: Variante [Modal de Compra - paso 2]" %}
+
+{% block content %}
+
+<script>
+	$('body').addClass('modal-open');
+</script>
+
+<div id="compra-bolsa" class="modal saldo-modal fade in" tabindex="-1" role="dialog" style="display: block;">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header ta-center">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-close" style="color: black;"></i></span></button>
+				<h3 class="modal-title" style="text-transform: uppercase;">Estás comprando</h3>
+			</div>
+			<div class="modal-body ta-center">
+
+				<img src="img/icons/ico-large-bolsa100mb.svg" alt="" style="display: inline-block;">
+				<h3 class="nomargin nopadding">100MB</h3>
+				<p class=" nomargin nopadding">Valida por <strong>7</strong> días</p>
+				<h2 class="morado-plain nomargin ta-center">$5.000</h2>
+
+				<div class="row mb-20">
+					<div class="col-xs-6">
+						Activación
+						<p class="nomargin nopadding fw-semibold big">10/07/16</p>
+					</div>
+					<div class="col-xs-6" style="border-left: 1px solid #CCC;">
+						Término
+						<p class="nomargin nopadding fw-semibold big">17/07/16</p>
+					</div>
+				</div>
+
+				<div class="modal-sidestepper mb-20">
+					<p class="nomargin pt-10 pb-10 skew">Esta transacción se añadirá al total de tu facturación mensual.</p>
+				</div>
+				
+				<p><a href="autoatencion-compra-de-bolsas-var-datos-estas-comprando-3.html" class="btn-success btn-lg btn-block fw-semibold morado-chicle-bg autocenter">Compra ahora</a></p>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div>
+
+	{% include "partials/navbar.html" %}
+
+	<header>
+		<div class="bg-modulo modulo-portabilidad">
+			<div class="container">
+				<h3 class="ta-center white fw-semibold uc">Compra tu bolsa</h3>
+				<h4 class="ta-center fw-normal white fs-base">Elige tu bolsa utilizando tu saldo y descubre nuestras promos</h4>
+			</div>
+		</div>
+	</header>
+
+	<div class="container">
+		
+		<div class="row">
+			<br>
+			{% include "partials/private-selector-bolsas.html" %}
+		</div>
+		<br>
+			
+		<div class="row">
+			<div class="col-xs-12">
+				<p class="nopadding dark-red">Tu saldo actual:</p>
+			</div>
+			<div class="col-xs-12">
+				{% include "partials/private-saldo-recarga.html" %}
+			</div>
+		</div>
+
+		<br>
+
+		<div class="row">
+			<div class="col-xs-12">
+				<p class="nopadding"><i class="fa fa-cloud-download morado-plain"></i> Vas a comprar una bolsa de datos</p>
+			</div>
+			
+			{% include "partials/private-selector-bolsa-datos.html" %}
+		</div>
+		
+
+		{% include "partials/private-bolsa-data-picker.html" %}
+
+	<div class="modal-backdrop fade in"></div>
+	{% include "partials/footer.html" %}
+{% endblock %}

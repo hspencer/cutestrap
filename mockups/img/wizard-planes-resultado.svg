@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="262px" height="265px" viewBox="0 0 262 265" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 38</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0.729984484 81.1555556 67.202438 81.1555556 67.202438 0.419426667 0.729984484 0.419426667 0.729984484 81.1555556"></polygon>
+    </defs>
+    <g id="SP3-Wizard--Correcciones" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="3-Wizard" transform="translate(-57.000000, -292.000000)">
+            <g id="Group-38" transform="translate(56.000000, 283.000000)">
+                <text id="$" font-family="Cera-BoldItalic, Cera" font-size="36" font-style="italic" font-weight="bold" fill="#720184">
+                    <tspan x="0.316" y="258">$</tspan>
+                </text>
+                <g id="Group-37" transform="translate(2.000000, 0.000000)">
+                    <polygon id="Rectangle-2" fill="#720184" points="23.6812979 33 261 33 238.318702 192 0 192"></polygon>
+                    <g id="Page-1" transform="translate(34.000000, 54.000000)">
+                        <g id="Group-36">
+                            <polygon id="Fill-1" fill="#FFFFFF" points="34.4911026 2.30732368 0.957702249 9.86216812 2.97218735 28.0373237 16.5995865 24.9700126 6.88265841 80.2111237 27.2626561 80.2111237 41.0085544 2.30732368"></polygon>
+                            <g id="Group-4" transform="translate(41.492694, 0.471548)">
+                                <mask id="mask-2" fill="white">
+                                    <use xlink:href="#path-1"></use>
+                                </mask>
+                                <g id="Clip-3"></g>
+                                <path d="M21.4654795,50.2286489 C21.4654795,58.49176 24.3094585,62.5052711 30.114064,62.5052711 C42.9119693,62.5052711 46.5854421,40.6670489 46.5854421,30.8730489 C46.5854421,22.7279822 43.622964,19.06676 37.6980079,19.06676 C24.6649558,19.06676 21.4654795,39.25236 21.4654795,50.2286489 M67.202438,30.4008711 C67.202438,49.87636 56.7745152,81.1562933 27.5089348,81.1562933 C9.14157069,81.1562933 0.729984484,68.1732489 0.729984484,50.4665822 C0.729984484,31.1072933 10.8005584,0.419426667 40.3049886,0.419426667 C58.7890003,0.419426667 67.202438,12.8140933 67.202438,30.4008711" id="Fill-2" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                            </g>
+                        </g>
+                    </g>
+                    <text id="GIGAS" font-family="Cera-BoldItalic, Cera" font-size="28" font-style="italic" font-weight="bold" fill="#FFFFFF">
+                        <tspan x="154.126" y="103">GIGAS</tspan>
+                    </text>
+                    <text id="PLAN" font-family="Cera-BoldItalic, Cera" font-size="30" font-style="italic" font-weight="bold" fill="#720184">
+                        <tspan x="23.545" y="30">PLAN</tspan>
+                    </text>
+                    <text id="CARGO-FIJO-MENSUAL" font-family="Cera-RegularItalic, Cera" font-size="23" font-style="italic" font-weight="normal" fill="#621082">
+                        <tspan x="0" y="217">CARGO FIJO MENSUAL</tspan>
+                    </text>
+                    <text id="29.990" font-family="Cera-BoldItalic, Cera" font-size="70" font-style="italic" font-weight="bold" fill="#720184">
+                        <tspan x="18.19" y="265">29.990</tspan>
+                    </text>
+                    <g id="Group-35" transform="translate(10.000000, 150.000000)" font-weight="bold" font-size="30" font-family="Cera-BoldItalic, Cera" fill="#FFFFFF" font-style="italic">
+                        <text id="200-MIN">
+                            <tspan x="0" y="30">200</tspan>
+                            <tspan x="56.97" y="30" font-size="26"> MIN</tspan>
+                        </text>
+                        <text id="50-SMS">
+                            <tspan x="130" y="30">50 </tspan>
+                            <tspan x="174.76" y="30" font-size="26">SMS</tspan>
+                        </text>
+                    </g>
+                    <path d="M244.5,150.5 L5.44726324,150.5" id="Line" stroke="#FFFFFF" stroke-linecap="square"></path>
+                    <path d="M136.5,150.5 L129.5,191.5" id="Line" stroke="#FFFFFF" stroke-linecap="square"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

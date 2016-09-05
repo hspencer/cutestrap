@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="69px" height="45px" viewBox="0 0 69 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>Scroll</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0.00138613861 23.9658323 4.6585651 23.9658323 4.6585651 6.68085106 4.6585651 0.0788905505 0.00138613861 0.0788905505"></polygon>
+        <polygon id="path-3" points="0.00138613861 23.9658323 4.6585651 23.9658323 4.6585651 6.68085106 4.6585651 0.0788905505 0.00138613861 0.0788905505"></polygon>
+        <polygon id="path-5" points="0.00138613861 23.9658323 4.6585651 23.9658323 4.6585651 6.68085106 4.6585651 0.0788905505 0.00138613861 0.0788905505"></polygon>
+        <polygon id="path-7" points="0.00138613861 23.9658323 4.6585651 23.9658323 4.6585651 6.68085106 4.6585651 0.0788905505 0.00138613861 0.0788905505"></polygon>
+    </defs>
+    <g id="SP3-HOME-Clientes-WOM-Correcciones" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1-Home-Clientes" transform="translate(-152.000000, -479.000000)">
+            <g id="Scroll" transform="translate(132.000000, 474.000000)">
+                <g id="Group-11" transform="translate(13.000000, 5.000000)">
+                    <text id="Scroll-para-navegar" font-family="Cera-Medium, Cera" font-size="14" font-weight="400" line-spacing="12" fill="#FFFFFF">
+                        <tspan x="5.271" y="30">Scroll para </tspan>
+                        <tspan x="13.755" y="42">navegar</tspan>
+                    </text>
+                    <g id="next-(1)-copy" transform="translate(42.500000, 3.000000) scale(-1, 1) rotate(90.000000) translate(-42.500000, -3.000000) translate(40.000000, -9.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Clip-2"></g>
+                        <mask id="mask-4" fill="white">
+                            <use xlink:href="#path-3"></use>
+                        </mask>
+                        <g id="Clip-2"></g>
+                        <path d="M0.426491749,0.277829898 C0.328491749,0.0125774346 0.171465347,0.0125774346 0.0734653465,0.277829898 C-0.0244653465,0.543270085 -0.0244653465,0.968587612 0.0734653465,1.2340278 L4.05625743,12.0217122 L0.0734653465,22.8097095 C-0.0244653465,23.0748994 -0.0244653465,23.5004672 0.0734653465,23.7656571 C0.121564356,23.8959368 0.186181518,23.9658323 0.249066007,23.9658323 C0.311881188,23.9658323 0.376590759,23.9008176 0.42459736,23.7656571 L4.58490759,12.4974021 C4.68281518,12.237093 4.68281518,11.8066443 4.58670957,11.5463352 L0.426491749,0.277829898 Z" id="Fill-1" fill="#FFFFFF" mask="url(#mask-4)"></path>
+                    </g>
+                    <g id="next-(1)-copy" transform="translate(42.500000, 10.000000) scale(-1, 1) rotate(90.000000) translate(-42.500000, -10.000000) translate(40.000000, -2.000000)">
+                        <mask id="mask-6" fill="white">
+                            <use xlink:href="#path-5"></use>
+                        </mask>
+                        <g id="Clip-2"></g>
+                        <mask id="mask-8" fill="white">
+                            <use xlink:href="#path-7"></use>
+                        </mask>
+                        <g id="Clip-2"></g>
+                        <path d="M0.426491749,0.277829898 C0.328491749,0.0125774346 0.171465347,0.0125774346 0.0734653465,0.277829898 C-0.0244653465,0.543270085 -0.0244653465,0.968587612 0.0734653465,1.2340278 L4.05625743,12.0217122 L0.0734653465,22.8097095 C-0.0244653465,23.0748994 -0.0244653465,23.5004672 0.0734653465,23.7656571 C0.121564356,23.8959368 0.186181518,23.9658323 0.249066007,23.9658323 C0.311881188,23.9658323 0.376590759,23.9008176 0.42459736,23.7656571 L4.58490759,12.4974021 C4.68281518,12.237093 4.68281518,11.8066443 4.58670957,11.5463352 L0.426491749,0.277829898 Z" id="Fill-1" fill="#FFFFFF" mask="url(#mask-8)"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

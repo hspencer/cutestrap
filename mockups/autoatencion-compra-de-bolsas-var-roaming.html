@@ -1,0 +1,241 @@
+<!-- layout.nunjucks -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Autoatención Compra de Bolsas: variante Roaming</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- MOVER A /SRC -->
+  <link rel="stylesheet" href="https://dl.dropboxusercontent.com/u/3538/animate.css">
+  <link rel="stylesheet" href="../dist/css/womstrap.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="../dist/js/wom.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+  
+</head>
+<body>
+
+  <!-- You write code for this content block in another file -->
+  
+
+	<nav class="navbar navbar-default navbar-main navbar-centered" role="navigation">
+	<!-- Brand and toggle get grouped for better mobile display -->
+	<div class="navbar-header">
+
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-brand-centered">
+			<span class="navLabel">Menú</span>
+			<figure class="hamburger">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</figure>
+		</button>
+
+		<!-- wom logo -->
+		<div class="navbar-brand navbar-brand-centered">
+			<a href="index.html" title="">
+				<img src="img/logo-wom.svg" width="80" height="80" >
+			</a>
+		</div>
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="navbar-brand-centered">
+			<ul class="nav navbar-nav">
+				<!-- <li><a href="#">Link</a></li>
+				<li><a href="#">Link</a></li> -->
+				<!-- <li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Personas <span class="caret"></span></a>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="#">Planes</a></li>
+						<li><a href="#">Prepago</a></li>
+						<li><a href="#">Internet</a></li>
+						<li><a href="#">Equipos</a></li>
+						<li class="divider"></li>
+						<li><a href="#">Sucursal Online</a></li>
+					</ul>
+				</li> -->
+				<li><a class="fw-semibold" href="#">Planes</a></li>
+				<li><a class="fw-semibold" href="#">Prepago</a></li>
+				<li><a class="fw-semibold" href="#">Internet</a></li>
+				<li><a class="fw-semibold" href="#">Equipos</a></li>
+				<li><a class="fw-semibold" href="#">Sucursal Online</a></li>
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</div>
+</nav>
+
+	<div id="modal-comprabolsa-error" class="modal saldo-modal fade ta-center" tabindex="-1" role="dialog">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-body">
+	      	<img src="img/icons/no-cat.svg" alt="">
+	      	<h4 class="morado-plain fs-large">¡Error!</h4>
+	      	<p>La transacción no pudo ser completada. ¡Vuelve a intentar nuevamente!</p>
+	      	<div class="buttons">
+	      		<p><button class="btn btn-primary btn-lg">Reintentar</button></p><br>
+	      		<p><button class="btn btn-link btn-lg notextdecoration">Volver</button></p>
+	      	</div>
+	      </div>
+	    </div><!-- /.modal-content -->
+	  </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+	<header>
+		<div class="bg-modulo modulo-portabilidad">
+			<div class="container">
+				<h3 class="ta-center white fw-semibold uc">Compra tu bolsa</h3>
+				<h4 class="ta-center fw-normal white fs-base">Elige tu bolsa utilizando tu saldo y descubre nuestras promos</h4>
+			</div>
+		</div>
+	</header>
+
+	<div id="roamingactivado" class="alert alert-success" role="alert" style="display: none;">
+		<i class="fa fa-check-circle"></i> Servicio Roaming <strong>activado</strong>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<br>
+			<div class="col-xs-12 select-phone">
+	<select class="form-control select-caret fw-bold">
+	  <option selected="">+56 988776655</option>
+	  <option>2</option>
+	  <option>3</option>
+	  <option>4</option>
+	  <option>5</option>
+	</select>
+</div>
+		</div>
+
+		<br>
+			
+		<div class="row">
+			<div class="col-xs-12">
+				<p class="nopadding dark-red">Tu saldo actual:</p>
+			</div>
+			<div class="col-xs-12">
+				<div class="btn-group saldo-recarga-ahora" role="group">
+  <button type="button" class="btn fs-large saldo-money dark-red fw-semibold">$7.000</button>
+  <button type="button" class="btn btn-primary morado-chicle-bg saldo-cta"><i style="display:inline-block;position: relative;top: 4px;left: 4px;" class="ico-input-money"></i> Recarga ahora</button>
+</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12">
+				<p class="nopadding mt-20 nomargin"><i class="fa fa-cloud-download morado-plain" aria-hidden="true"></i> Vas a comprar una bolsa de roaming</p>
+			</div>
+			
+			<div class="col-xs-12 select-phone fs-normal">
+				<select class="form-control select-caret fw-semibold">
+				  <option selected="">Roaming</option>
+				  <option>Bolsas de voz</option>
+				  <option>Bolsas de SMS</option>
+				  <option>Bolsas mixtas</option>
+				  <option>Bolsas temáticas</option>
+				  <option>Roaming</option>
+				</select>
+			</div>
+
+			<div class="col-xs-12 ta-center roamingNotify">
+				<i class="fa fa-exclamation-circle"></i>
+				<h5 class="morado-plain fw-normal nopadding mb-20">Tu servicio de roaming está <br> desactivado, ¿Deseas activarlo ahora?</h5>
+				<p>
+					<a href="#" onclick="$('.roamingNotify').hide();$('.roamingSelectContainer').show();$('#roamingactivado').slideDown();return false;">
+						<img class="autocenter" src="img/icons/activa-roaming-fancy-button.svg" alt="">
+					</a>
+				</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="roamingSelectContainer" style="display: none;">
+		<div class="roamingSelect animated" style="position: absolute; width: 100%;">
+			<ul>
+				<li>
+					<a href="javascript:void(0);" id="selectBolsa" href="#">
+						<img class="roamingMap" src="img/icons/roaming-northamerica.svg" alt="">
+						<p class="nomargin nopadding fw-semibold">Roaming Norteamérica</p>
+						<p class="nomargin nopadding">USA, Canadá y México</p>
+						<i class="fa fa-angle-right"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+					<img class="roamingMap" src="img/icons/roaming-sudamerica.svg" alt="">
+					<p class="nomargin nopadding fw-semibold">Roaming Sudamérica</p>
+					<p class="nomargin nopadding">Argentina, Brasil, Perú, Colombia y Uruguay</p>
+					<i class="fa fa-angle-right"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+		
+		<div id="selectBolsa" class="roamingSelectBolsa animated fadeInRight" style="display: none; position: absolute; width: 100%;">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="bolsaPicker bolsaSelected">
+							<div class="row">
+								<div class="item ta-center col-xs-6 nomargin">
+									<div class="item-container">
+										<img src="img/icons/ico-shopping-bag.svg" alt="">
+										<span class="fw-semibold">100MB Norteamérica</span>
+										<p class="nopadding fs-small">Vigencia de <strong>7</strong> días</p>
+										<p class="nomargin nopadding"><strong class="fs-large fw-semibold morado-plain">$7.990</strong></p>
+										<p class="nomargin nopadding"><button href="#" class="btn btn-primary btn-lg morado-chicle-bg fw-semibold" data-toggle="modal" data-target="#modal-comprabolsa-error">Comprar</button> </p>
+									</div>
+								</div>
+								<div class="item ta-center col-xs-6 nomargin">
+									<div class="item-container">
+										<img src="img/icons/ico-shopping-bag-x2.svg" alt="">
+										<span class="fw-semibold">300MB Norteamérica</span>
+										<p class="nopadding fs-small">Vigencia de <strong>7</strong> días</p>
+										<p class="nomargin nopadding"><strong class="fs-large fw-semibold morado-plain">$9.990</strong></p>
+										<p class="nomargin nopadding"><button href="#" class="btn btn-primary btn-lg morado-chicle-bg fw-semibold">Comprar</button> </p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="main-foot">
+  <div class="container">
+    <div class="row">
+      <div class="ta-center">
+        <img src="img/logo-footer.svg">
+      </div>
+      <ul class="accesos-foot">
+        <li class="non-point">
+          <a class="salt-space" href="#">¡Síguenos!</a>
+          <a class="salt-space" href="https://www.facebook.com/womchile" target="_blank">
+            <img class="ico-space" src="img/icons/ico-face-white.png">
+          </a>
+          <a class="salt-space" href="#" target="_blank">
+            <img class="ico-space" src="img/icons/ico-twitter-white.png">
+          </a>
+          <a class="salt-space" href="#" target="_blank">
+            <img class="ico-space" src="img/icons/ico-youtube-white.png">
+          </a>
+          <a class="salt-space" href="#" target="_blank"><img class="ico-space" src="img/icons/ico-white-instagram.png"></a>
+        </li>
+      </ul>
+      <ul class="lista-foot">
+        <li><a href="#">Te ayudamos</a></li>
+        <li><a href="#">Sobre WOM</a></li>
+        <li><a href="#">Términos Legales</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+
+</body>
+</html>

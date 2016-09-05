@@ -6,7 +6,7 @@
 	{% include "partials/navbar.html" %}
 
 	<header>
-		<div class="bg-modulo bg-modulo-shortest modulo-portabilidad">
+		<div class="bg-modulo modulo-portabilidad">
 			<div class="container">
 				<h3 class="ta-center white fw-semibold uc">Compra tu bolsa</h3>
 				<h4 class="ta-center fw-normal white fs-base">Elige tu bolsa utilizando tu saldo y descubre nuestras promos</h4>
@@ -17,17 +17,9 @@
 	<div class="container">
 		
 		<div class="row">
-			<div class="col-xs-12 select-phone">
-				<select class="form-control select-caret fw-semibold">
-				  <option selected="">+56 988776655</option>
-				  <option>2</option>
-				  <option>3</option>
-				  <option>4</option>
-				  <option>5</option>
-				</select>
-			</div>
+			<br>
+			{% include "partials/private-selector-bolsas.html" %}
 		</div>
-
 		<br>
 			
 		<div class="row">
@@ -35,10 +27,7 @@
 				<p class="nopadding dark-red">Tu saldo actual:</p>
 			</div>
 			<div class="col-xs-12">
-				<div class="btn-group saldo-recarga-ahora" role="group">
-					<button type="button" class="btn fs-large saldo-money dark-red fw-normal">$7.000</button>
-					<button type="button" class="btn btn-primary morado-chicle-bg saldo-cta"><i class="fa fa-dollar"></i> Recarga ahora</button>
-				</div>
+				{% include "partials/private-saldo-recarga.html" %}
 			</div>
 		</div>
 
@@ -46,64 +35,17 @@
 
 		<div class="row">
 			<div class="col-xs-12">
-				<p class="nopadding nomargin"><i class="fa fa-cloud-download morado-plain"></i> Vas a comprar una bolsa de datos</p>
+				<p class="nopadding"><i class="fa fa-cloud-download morado-plain"></i> Vas a comprar una bolsa de datos</p>
 			</div>
-			<div class="col-xs-12 select-phone fs-normal">
-				<select class="form-control select-caret fw-semibold">
-				  <option selected="">Bolsas de datos</option>
-				  <option>2</option>
-				  <option>3</option>
-				  <option>4</option>
-				  <option>5</option>
-				</select>
-			</div>
+			
+			{% include "partials/private-selector-bolsa-datos.html" %}
 		</div>
+		
 
-		<div class="bolsaPicker bolsaSelected">
-			<div class="row"></div>
-			<div class="row">
-				<div class="item ta-center col-xs-6 nomargin">
-					<div class="item-container">
-						<img src="img/icons/ico-shopping-bag.svg" alt="">
-						<span class="fw-semibold">100MB</span>
-						<p class="nopadding fs-small">Vigencia de <strong>7</strong> días</p>
-						<p class="nomargin nopadding"><strong class="fs-large fw-semibold morado-plain">$5.000</strong></p>
-						<p class="nomargin nopadding"><button href="#" class="btn btn-primary btn-lg morado-chicle-bg">Comprar</button> </p>
-					</div>
-				</div>
-				<div class="item ta-center col-xs-6 nomargin">
-					<div class="item-container">
-						<img src="img/icons/ico-shopping-bag-x2.svg" alt="">
-						<span class="fw-semibold">300MB</span>
-						<p class="nopadding fs-small">Vigencia de <strong>7</strong> días</p>
-						<p class="nomargin nopadding"><strong class="fs-large fw-semibold morado-plain">$7.000</strong></p>
-						<p class="nomargin nopadding"><button href="#" class="btn btn-primary btn-lg morado-chicle-bg">Comprar</button> </p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="item ta-center col-xs-6 nomargin">
-					<div class="item-container">
-						<img src="img/icons/ico-shopping-bag-x3.svg" alt="">
-						<span class="fw-semibold">700MB</span>
-						<p class="nopadding fs-small">Vigencia de <strong>7</strong> días</p>
-						<p class="nomargin nopadding"><strong class="fs-large fw-semibold morado-plain">$9.000</strong></p>
-						<p class="nomargin nopadding"><button href="#" class="btn btn-primary btn-lg morado-chicle-bg">Comprar</button> </p>
-					</div>
-				</div>
-				<div class="item ta-center col-xs-6 nomargin">
-					<div class="item-container">
-						<img src="img/icons/ico-shopping-bag-x3.svg" alt="">
-						<span class="fw-semibold">1000MB</span>
-						<p class="nopadding fs-small">Vigencia de <strong>7</strong> días</p>
-						<p class="nomargin nopadding"><strong class="fs-large fw-semibold morado-plain">$12.000</strong></p>
-						<p class="nomargin nopadding"><button href="#" class="btn btn-primary btn-lg morado-chicle-bg">Comprar</button> </p>
-					</div>
-				</div>
-			</div>
-		</div>
+		{% include "partials/private-bolsa-data-picker.html" %}
 
-	</div>
+
+	
 
 
 	{% include "partials/footer.html" %}

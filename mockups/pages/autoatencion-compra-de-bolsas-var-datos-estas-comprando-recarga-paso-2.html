@@ -1,0 +1,97 @@
+{% extends "layout.nunjucks" %}
+{% set title = "Autoatención Compra de Bolsas: Variante [Modal de Recarga - paso 2]" %}
+
+{% block content %}
+
+<script>
+	$('body').addClass('modal-open');
+</script>
+
+<div id="compra-bolsa" class="modal saldo-modal fade in" tabindex="-1" role="dialog" style="display: block;">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header ta-center">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-close" style="color: black;"></i></span></button>
+				
+				<div class="compra-bolsa-stepper">
+					<span class="active">1</span>
+					<span class="active">2</span>
+					<span>3</span>
+					<span>4</span>
+				</div>
+
+				<h3 class="modal-title" style="text-transform: uppercase;">Recarga tu cuenta</h3>
+				<p class="fs-medium fw-semibold lineheight100 nomargin">Vas a recargar</p>
+			</div>
+			<div class="modal-body ta-center">
+				<h2 class="morado-plain fs-large nomargin nopadding">$3.500</h3>
+				al numero
+				<h3 class="morado-plain fs-medium nomargin nopadding">+56 7 3234235</h2>
+
+				<p class="ta-center mt-20">Selecciona tu modo de pago</p>
+
+				<div class="row">
+					<div class="col-xs-12 ta-left">
+						<a href="autoatencion-compra-de-bolsas-var-datos-estas-comprando-recarga-paso-3.html" class="modo-de-pago-btn webpay">
+							<span>Webpay</span>
+						</a>
+						<a href="autoatencion-compra-de-bolsas-var-datos-estas-comprando-recarga-paso-3.html" class="modo-de-pago-btn sencillito">
+							<span>Sencillito</span>
+						</a>
+						<a href="autoatencion-compra-de-bolsas-var-datos-estas-comprando-recarga-paso-3.html" class="modo-de-pago-btn servipag">
+							<span>Servipag</span>
+						</a>
+						<a href="autoatencion-compra-de-bolsas-var-datos-estas-comprando-recarga-paso-3.html" class="modo-de-pago-btn santander">
+							<span>Santander</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div>
+
+	{% include "partials/navbar.html" %}
+
+	<header>
+		<div class="bg-modulo modulo-portabilidad">
+			<div class="container">
+				<h3 class="ta-center white fw-semibold uc">Compra tu bolsa</h3>
+				<h4 class="ta-center fw-normal white fs-base">Elige tu bolsa utilizando tu saldo y descubre nuestras promos</h4>
+			</div>
+		</div>
+	</header>
+
+	<div class="container">
+		
+		<div class="row">
+			<br>
+			{% include "partials/private-selector-bolsas.html" %}
+		</div>
+		<br>
+			
+		<div class="row">
+			<div class="col-xs-12">
+				<p class="nopadding dark-red">Tu saldo actual:</p>
+			</div>
+			<div class="col-xs-12">
+				{% include "partials/private-saldo-recarga.html" %}
+			</div>
+		</div>
+
+		<br>
+
+		<div class="row">
+			<div class="col-xs-12">
+				<p class="nopadding"><i class="fa fa-cloud-download morado-plain"></i> Vas a comprar una bolsa de datos</p>
+			</div>
+			
+			{% include "partials/private-selector-bolsa-datos.html" %}
+		</div>
+		
+
+		{% include "partials/private-bolsa-data-picker.html" %}
+
+	<div class="modal-backdrop fade in"></div>
+	{% include "partials/footer.html" %}
+{% endblock %}

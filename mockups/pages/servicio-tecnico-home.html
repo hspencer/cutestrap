@@ -1,0 +1,79 @@
+{% extends "layout.nunjucks" %}
+{% set title = "Servicio Técnico - Home" %}
+
+{% block content %}
+
+	{% include "partials/navbar.html" %}
+
+	{% include "partials/header-servicio-tecnico.html" %}
+
+	<div class="container">
+		
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="servicio-tecnico-welcome">
+					<div class="item lineheight120">
+						<h5 class="uc morado-plain fw-semibold nopadding">Estado</h5>
+						<p>Podrás revisar si tu equipo ya se encuentra en Servicio Técnico.</p>
+					</div>
+					<div class="item lineheight120">
+						<h5 class="uc morado-plain fw-semibold nopadding">Disponibilidad</h5>
+						<p>Podrás revisar si tu equipo se encuentra disponible en nuestra sucursal para que puedas retirarlo.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-xs-12">
+				<h4 class="ta-center morado-plain uc fw-semibold">REVISA EL ESTADO DE <br> REPARACIÓN DE TU EQUIPO</h4>
+			</div>
+		</div>
+		
+		<div class="portabilidad-pills servicio-tecnico-pills">
+			<ul class="nav nav-pills" role="tablist">
+			  <li class="active"><a href="#tab_telefono" data-toggle="tab" class="fw-semibold">N° TÉLEFONO</a></li>
+			  <li><a href="#tab_solicitud" data-toggle="tab" class="fw-semibold">N° SOLICITUD</a></li>
+			</ul>
+			<div class="tab-content">
+				<div class="tab-pane active" id="tab_telefono">							
+					<div class="row">
+						<div class="col-xs-2">
+							<img src="img/icons/ico-planes-black.svg" alt="">
+						</div>
+						<div class="col-xs-10">
+							<div class="form-group invalidInput">
+								<span class="miniLabel">Ingresa tu número de teléfono</span>
+								<input type="text" class="form-control" id="telefono" onfocus="$(this).val('+56 9');" style="color: #666;" placeholder="Ingresa tu número de teléfono">
+								<span class="helpText text-danger fs-small">Oops!, al parecer tu número de teléfono no se encuentra en nuestro servicio técnico.</span>
+							</div>
+						</div>
+					</div>
+					<div class="row ta-center">
+						<button type="button" class="btn btn-primary disabled morado-chicle-bg">Ver estado de mi equipo</button>
+					</div>
+				</div>
+				<div class="tab-pane" id="tab_solicitud">
+					<div class="row">
+						<div class="col-xs-2">
+							<img src="img/icons/ico-planes-black.svg" alt="">
+						</div>
+						<div class="col-xs-10">
+							<div class="form-group">
+								<span class="miniLabel">Ingresa tu número de solicitud</span>
+								<input type="text" class="form-control" id="solicitud" style="color: #666;" placeholder="Ingresa tu número de solicitud">
+							</div>
+						</div>
+						<div class="row ta-center">
+							<button type="button" class="btn btn-primary morado-chicle-bg">Ver estado de mi equipo</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+	</div>
+
+	{% include "partials/footer.html" %}
+
+{% endblock %}

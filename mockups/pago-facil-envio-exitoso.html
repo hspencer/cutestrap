@@ -4,11 +4,17 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Pago Fácil var Envío Exitoso</title>
+  <title>Pago Fácil var Envio Exitoso</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- MOVER A /SRC -->
   <link rel="stylesheet" href="https://dl.dropboxusercontent.com/u/3538/animate.css">
   <link rel="stylesheet" href="../dist/css/womstrap.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="../dist/js/wom.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+  
 </head>
 <body>
 
@@ -30,7 +36,7 @@
 
 		<!-- wom logo -->
 		<div class="navbar-brand navbar-brand-centered">
-			<a href="../../index.html" title="">
+			<a href="index.html" title="">
 				<img src="img/logo-wom.svg" width="80" height="80" >
 			</a>
 		</div>
@@ -60,12 +66,13 @@
 	</div>
 </nav>
 
-	<header>	
-		<div class="bg-modulo modulo-pagofacil">
-			<div class="container">
-			</div>
-		</div>
-	</header>
+	<header>      
+  <div class="bg-modulo-short modulo-pagofacil-short">
+    <div class="container">
+      <h3 class="ta-center fw-semibold fs-large white uc">Pago Fácil</h3>
+    </div>
+  </div>
+</header>
 
 	<div class="container">
 		<div class="row ta-center">
@@ -74,8 +81,8 @@
 				<p class="nomargin nopadding"><strong>georgia.o.keefe@gmail.com</strong></p>
 			</div>
 		</div>
-		<div class="row ta-center margintop">
-			<p><button class="btn btn-link btn-link-success fw-semibold fs-medium">Ingresar otro RUT</button></p>
+		<div class="row ta-center mt-20">
+			<p class="nomargin nopadding"><button class="btn btn-link btn-link-success fw-semibold fs-medium">Ingresar otro RUT</button></p>
 			<p><button type="submit" class="btn btn-primary success fs-medium">Ir a WOM.cl</button></p>
 		</div>
 	</div>
@@ -112,11 +119,5 @@
 
 
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script src="https://use.fontawesome.com/fc096a74c6.js"></script>
-  <script src="../dist/js/wom.js"></script>
-  <script>
-    new WOW().init();
-  </script>
 </body>
 </html>

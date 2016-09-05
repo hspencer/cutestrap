@@ -5,12 +5,15 @@
 
 $(document).ready(function(){
 
+	// stellar for parallax - on window
+	$.stellar();
         
 	// super-mega-simple client-side form validator and form next step enabler
 	function validateForm() {
 		var $fields = $(".form-control:visible");
 		var $thisStep = $('.formPaso-stepper:visible');
 		var $nextStep = $thisStep.attr('data-nextStep');
+		var $filledFields = $fields.find('input[value!=""]');
 		var $emptyFields = $fields.filter(function() {
 	    	return $.trim(this.value) === "";
 	    });
@@ -38,7 +41,11 @@ $(document).ready(function(){
 			continueForm();
 		} else {
 		    console.log($emptyFields);
-		    $emptyFields.parents('.form-group').addClass('invalidInput');
+		    $emptyFields.parents('.form-group').addClass('invalidInput').removeClass('input-effect');
+
+		    $filledFields.addClass('totallyValidInput');
+
+		    console.log($filledFields);
 		    $('#camposvacios').slideToggle();
 		    $('html, body').animate({scrollTop: $("#camposvacios").offset().top}, 200);
 		}
@@ -53,8 +60,12 @@ $(document).ready(function(){
 
 	// minilabels toggle on input focus
 	$(".form-group input").focus(function () {
-		$(this).siblings('.miniLabel').fadeIn();
+		$(this).siblings('.miniLabel').addClass('visible');
+		$(this).parents('.form-group').addClass('active');
 		$(this).removeAttr('placeholder');
+	});
+	$(".form-group input").blur(function () {
+		$(this).parents('.form-group').toggleClass('active');
 	});
 
 	// boton de ver portabilidad tiene clase on form click
@@ -63,15 +74,104 @@ $(document).ready(function(){
 	});
 
 	// progressbars animadas (primero a 100, luego a aria-value)
+	// DEPENDSON inview.js - migrar a wow quiza?
 	$('.consumoBars').one('inview', function(event, isInView) {
 	   	$(this).find('.progress.progress-animated').each(function() {
-		  var bar = $(this).children('.progress-bar');
-		  var value = bar.attr('aria-valuenow');
+		  bar = $(this).children('.progress-bar');
+		  value = bar.attr('aria-valuenow');
 		  // hay que ponerle 5 pixeles mas porque el skew hace que se vea más cortito
-		  var valueOffset = '5';
-		  var valueWidth = (+value) + (+valueOffset);
+		  valueOffset = '5';
+		  valueWidth = (+value) + (+valueOffset);
 		  bar.animate({width: "100%"}, 750).delay('200').animate({width: valueWidth + "%"}, 1600);
 		});
+	});
+
+	// interacciones para el wizard de planes
+
+		// captcha enabler
+		$('#captcha .captchaLink').click(function () {
+			$(this).siblings('.captchaLink').removeClass('selected');
+			$(this).addClass('selected');
+			return false;
+		});
+		
+		// goto Next Step
+		function wizardGo () {
+			$currentStep = $('#wizardPlanes .wizardPlanes-pasos').filter(':visible');
+  			nextStep = $currentStep.last().attr('data-nextStep');
+  			$('#wizardPlanes-' + nextStep).slideDown();
+  			// anima el DOM hasta el paso que viene
+	    	$('html, body').animate({scrollTop: $('#wizardPlanes-' + nextStep).offset().top}, 500);
+		}
+		
+		// wizard appendix - interaccion estándar
+		$('#wizardPlanes .graphButton').click(function() {
+			$(this).parents('.gigaMeasures').find('.graphButton').removeClass('selected');
+			$(this).toggleClass('selected');
+			return false;
+		});
+
+		// wizard appendix - interaccion estándar (ahora en wizard telefono que me sacaron del sombrero lol)
+		$('.wizardPlanes-pasos .option').click(function() {
+			$(this).parents('.wizard-appendix').find('.option').removeClass('selected');
+			$(this).toggleClass('selected');
+			return false;
+		});
+
+		// validacion falsa para wizardtelefonos
+		$('.wizard-telefono-cuantamemoria a.option').click(function () {
+			$('.wizardTelefonos-ending button').removeClass('disabled').addClass('btn-primary');
+		});
+
+		// fin wizard parte planes
+		function endWizardPlanes () {
+			$('.wizardPlanes-pasos:not(.pasoFinal)').slideUp();
+			$('.wizardPlanes-pasos.wizard-pasoFinal').slideDown();
+			$('header h3.ta-center').html('El plan más conveniente para ti es');
+			$('header h4').remove();
+			$('html, body').animate({scrollTop: $('header h3').offset().top}, 500);
+		}
+
+		// evt handlers
+		$('#wizardPlanes a:not(.graphButton,.finWizard,.option)').click(function() {
+			wizardGo();
+		});
+		$('#wizardPlanes a.finWizard').click(function() {
+			endWizardPlanes();
+		});
+			// wizard appendix - validando y terminando desde el event handler (muy malo)
+			$('#wizardPlanes-paso2 .wizard-appendix').last().find('.graphButton').click(function () {
+				if ($('#wizardPlanes .graphButton.selected').length == 4) {
+					$('#wizardPlanes-paso2').find('a.btn-default').removeClass('disabled btn-default').addClass('btn-primary morado-chicle-bg');
+					$('#wizardPlanes-paso2').find('.stepStatus').html('OK, continuemos:').addClass('morado-chicle');
+				}
+			});
+
+		// animando graph bars en wizard-appendix modules
+		// DEPENDSON inview.js - migrar a wow quiza?
+			$('.wizardPlanes-pasos .wizard-appendix .gigas-bar').one('inview', function(event, isInView) {
+				$(this).addClass('visible');
+			});
+
+		// roaming bolsa selector (no pude hacerlo inline)
+		$('#selectBolsa').click(function() {
+			$('.roamingSelect').addClass('fadeOutLeft');
+			$('.roamingSelectBolsa').addClass('show');
+			return false;
+		});
+
+		// pac/pat
+		$('.nav-suscribir-pac a').click(function () {
+			var what = $(this).html();
+			$('.suscribir-pago').hide();
+			$('.suscribir-pago-' + what).show();
+			return false;
+		});
+
+	// nav pills no tienen la cosa de active
+	$('.pac-modal .nav-pills a').click(function (){
+		$('.pac-modal .nav-pills li').removeClass('active');
+		$(this).parents('li').addClass('active');
 	});
 
 	// cerrar nav si clicas afuera [desactivado – choca con el resto del js porque los selectores son super genericos]
