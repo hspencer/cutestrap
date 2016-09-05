@@ -1688,11 +1688,17 @@ button {
   color: #666;
 }
 
+  .bolsaPicker .item a:hover {
+    background: #fafafa;
+    border-color: $secondary;
+  }
+
   .bolsaPicker.bolsaSelected .item > .item-container {
     border-radius: 5px;
     border: 1px solid #CCC;
     padding: 5px 2px;
   }
+
 
 .bolsaPicker .item a {
   border-radius: 5px;
