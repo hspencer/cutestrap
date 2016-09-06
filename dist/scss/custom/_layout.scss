@@ -221,6 +221,7 @@ ul {
 .marginbottom {margin: 0 0 15px 0;}
 .lineheight100 {line-height: 100%;}
 .lineheight120 {line-height: 120%;}
+.width100 {width: 100% !important;}
 
 .numerical {
   font-family: "Cera";
@@ -462,7 +463,8 @@ ul {
   background-size: 100% auto;
 }
 .modulo-portatebien .btn-group {
-  margin-top: 150px;
+  margin-top: 180px;
+  width: 100%;
 }
 .modulo-pagofacil {
   background-image: url("../../mockups/img/pago_facil/bg-pago-facil.png");
