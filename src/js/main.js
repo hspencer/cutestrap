@@ -19,7 +19,7 @@ $(document).ready(function(){
 	    });
     	function continueForm() {
 	    	// apaga stepper
-	    	$('#stepper_portabilidad li').removeClass('active');
+	    	// $('#stepper_portabilidad li').removeClass('active');
 	    	// prende stepper correcto
 	    	$('#stepper_portabilidad li.stepperLED-' + $nextStep).addClass('active');
 	    	// deshabilita este boton
