@@ -136,6 +136,10 @@ ul {
   background-color: $quaternary;
   color: white;
 }
+.morado-bg {
+  background-color: $morado-morado;
+  color: white;
+}
 .gray-2 {
   color: $gray-2;
 }
@@ -144,6 +148,9 @@ ul {
 }
 .morado-uva {
   color: $grape;
+}
+.morado {
+  color: $morado-morado;
 }
 .morado-datos {
   color: #421441;
@@ -225,11 +232,13 @@ ul {
 .p-10 {padding: 10px !important;}
 .pt-5 {padding-top:5px !important;}
 .pt-10 {padding-top:10px !important;}
+.pt-20 {padding-top:20px !important;}
 .pt-80 {padding-top:80px !important;}
 .pl-10 {padding-left:10px !important;}
 .pl-20 {padding-left:20px !important;}
 .pl-30 {padding-left: 30px !important;}
 .pl-40 {padding-left: 40px !important;}
+.pb-0 {padding-bottom:0px !important;}
 .pb-5 {padding-bottom:5px !important;}
 .pb-10 {padding-bottom:10px !important;}
 .pr-10 {padding-right:10px !important;}
@@ -1809,6 +1818,16 @@ button {
   background-position: -1px center;
 }
 
+.separador-faq {
+  background-image: url(../../mockups/img/home/tile-sombrita.png);
+  padding: 4%;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  border: none;
+  background-color: transparent;
+  background-position: -1px center;
+}
+
 #carousel-home-welcome {
   background-image: url(../../mockups/img/home/fondo-carrusel-home-nonwomer.png);
   background-position: center top;
@@ -1959,7 +1978,7 @@ button {
   background-position: center bottom;
   background-size: 100% auto;
   background-repeat: no-repeat;
-  height: 350px;
+  height: 325px;
   color: #8B8B8B;
   position: relative;
 }
@@ -1979,7 +1998,7 @@ button {
 
 .centro-ayuda-robo {
   position: absolute;
-  bottom: -10px;
+  bottom: 0;
   width: 97%;
 }
 
@@ -2043,13 +2062,14 @@ button {
 }
 
 .centro-ayuda-faq {
-  margin-bottom: 20px;
+  margin-bottom: 0;
 }
 
 .centro-ayuda-faq ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  margin-bottom: -30px;
 }
 
 .centro-ayuda-faq ul > li {
@@ -2062,13 +2082,13 @@ button {
 }
 
 .centro-ayuda-faq ul > li > a {
-  color: #8B8B8B;
+  color: $gray-2;
 }
 
 .centro-ayuda-faq ul > li > a span {
   display: block;
   float: left;
-  background-color: $quaternary;
+  background-color: $grape;
   font-weight: 900;
   border-radius: 100%;
   width: 25px;
@@ -2076,7 +2096,7 @@ button {
   color: white;
   line-height: 25px;
   margin-right: 20px;
-  margin-bottom: 25px;
+  margin-bottom: -20px;
 }
 
 .centro-ayuda-social {
@@ -2136,6 +2156,7 @@ button {
 .centro-ayuda-relatedLinks ul {
   list-style-type: none;
   margin: 0;
+  margin-bottom: -30px;
 }
 
 .centro-ayuda-relatedLinks ul li a {
