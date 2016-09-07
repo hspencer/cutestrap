@@ -260,6 +260,7 @@ ul {
 .mb-10 {margin-bottom: 10px !important;}
 .mb--10 {margin-bottom: -10px !important;}
 .mb--20 {margin-bottom: -20px !important;}
+.mb--40 {margin-bottom: -40px !important;}
 .ml--20 {margin-left: -15px !important;}
 .mr--20 {margin-right: -15px !important;}
 .notextdecoration {text-decoration: none;}
@@ -470,6 +471,7 @@ ul {
   background-image: url("../../mockups/img/pago_facil/bg-pago-facil.png");
   background-position: top right;
   min-height: 400px;
+  margin-bottom: -50px;
 }
 .modulo-pagofacil-short {
   background-image: url("../../mockups/img/pago_facil/bg-pago-facil.png");
