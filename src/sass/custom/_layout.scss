@@ -14,7 +14,13 @@
 .maqueting a {
   text-decoration: none;
 }
-
+.maqueting .muted {
+  color: #CCC;
+}
+.maqueting .complete {
+  color: green;
+  background-color: transparent;
+}
 /* ordenar? */
 @media only screen and (min-width: 900px)  {
   html, body {
@@ -1968,7 +1974,7 @@ button {
 @media only screen and (min-width: 900px)  {
   #carousel-home-welcome {
     background-image: url(../../mockups/img/home/bg-carousel-womers-desktop.png);
-    background-position: -7px -90px;
+    background-position: 0px -90px;
   }
   #carousel-home-welcome .item .promo-slide {
     width: 25%;  
@@ -2008,6 +2014,38 @@ button {
   padding-top: 50px;
   z-index: 2;
   position: relative;
+}
+
+.container.home-feature .item {
+  margin-bottom: 75px;
+}
+
+.container.home-feature .item .parallaxHolder > img {
+  display: block;
+  margin-left: -115px;
+  left: 50% !important;
+}
+.container.home-feature p.ta-center {
+  font-size: 18px;
+  padding: 0 25px;
+}
+
+@media only screen and (min-width: 900px) {
+  #carousel-home-nonwomers {
+    background-image: url(../../mockups/img/home/bg-carousel-nonwomers-desktop.png);
+    margin-top: -120px;
+    padding-top: 150px;
+  }
+  .container.home-feature .item {
+    margin-bottom: 0;
+  }
+  .container.home-feature h3.fw-normal.morado-plain {
+   font-size: 2rem; 
+  }
+  .container.home-feature p.ta-center {
+    font-size: 1.2rem;
+    line-height: 120%;
+  }
 }
 
 .home-feature .parallaxHolder.nonwomer1 {
@@ -2086,6 +2124,12 @@ button {
   padding: 30px 0;
   background-size: 100% auto;
 }
+@media only screen and (min-width: 900px) {
+  #carousel-belowfold-equipos {
+    padding-top: 130px;
+  }
+}
+
 #carousel-belowfold-equipos .carousel-control {
   background: none;
   color: white;
@@ -2094,7 +2138,7 @@ button {
   line-height: 45rem;
 }
 #carousel-belowfold-equipos .promo {
-  width: 65%;
+  width: 245px;
   margin: 20px auto;
 }
 #carousel-belowfold-equipos li.active {
