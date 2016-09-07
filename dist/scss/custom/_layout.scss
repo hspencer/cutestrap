@@ -1,4 +1,13 @@
 /* ordenar? */
+@media only screen and (min-width: 900px)  {
+  html, body {
+    overflow-x: hidden;
+  }
+  .desktop-viewport-container {
+   width: 100%;
+   padding: 0; 
+  }
+}
 
 .bg-portabilidad{
     background-color: transparent;
@@ -329,7 +338,7 @@ ul {
 
   table.llamadas.table-striped th {
     background-color: #DDD;
-    color: $morado;
+    color: $morado-morado;
   }
 
 /* estilos extras de pago facil */
@@ -1090,6 +1099,7 @@ button {
   z-index: 99;
 }
 
+
   .navbar.navbar-centered .navbar-toggle:hover,
   .navbar.navbar-centered .navbar-toggle:focus {
     background-color: $primary;
@@ -1130,6 +1140,17 @@ button {
   width: 100px;
   float: none;
   margin: 0 auto;
+}
+
+@media only screen and (min-width: 900px) {
+  .navbar.navbar-centered .navbar-header {
+    float: left;
+    margin-left: 20px;
+  }
+
+  .navbar.navbar-centered .navbar-toggle {
+    display: block;
+  }
 }
 
 /* bootstrap pills override para portabilidad */
@@ -1799,6 +1820,10 @@ button {
 
 /* HOME - Non-womers */
 
+.purpleActions {
+  background-color: transparent;
+}
+
 .purpleActions .list-group-item {
   background-image: url(../../mockups/img/home/thirdButtons-bg.png);
   border-radius: 0;
@@ -1841,6 +1866,42 @@ button {
   padding: 50px 0;
 }
 
+@media only screen and (min-width: 900px)  {
+  .purpleActions-large {
+    position: relative;
+    top: -100px;
+    z-index: 20;
+    background-image: url(../../mockups/img/home/halfButtons-bg-desktop.png);
+    background-position: center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+  }
+
+  .purpleActions-large h4 {
+    color: white;
+    font-size: 3.5rem;
+  }
+  .purpleActions-large .list-group-item {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-image: none;
+    background-color: transparent;
+  }
+  .purpleActions-large .list-group-item .holder {
+    padding: 125px 0;
+    position: relative;
+    top: 30px;
+  }
+  .purpleActions-large .list-group-item:first-of-type .holder {
+    position: relative;
+    left: 70px;
+  }
+  .purpleActions-large .list-group-item:last-of-type .holder {
+    position: relative;
+    right: 70px;
+  }
+}
+
 .separador-home {
   background-image: url(../../mockups/img/home/tile-sombrita.png);
   padding: 10%;
@@ -1873,6 +1934,28 @@ button {
 #carousel-home-welcome .item .promo-slide {
   margin: 120px auto 15px;
   width: 70%;
+}
+
+@media only screen and (min-width: 375px)  {
+  #carousel-home-welcome {
+    background-position: center -35px;
+  }
+  #carousel-home-welcome .item .carousel-caption {
+    margin: 15px auto 50px;
+  }
+  .purpleActions-large .holder {
+    padding: 75px 0;
+  }
+}
+
+@media only screen and (min-width: 900px)  {
+  #carousel-home-welcome {
+    background-image: url(../../mockups/img/home/bg-carousel-womers-desktop.png);
+    background-position: -7px -90px;
+  }
+  #carousel-home-welcome .item .promo-slide {
+    width: 25%;  
+  }
 }
 
 #carousel-home-welcome .item .carousel-caption {
@@ -1945,6 +2028,15 @@ button {
 
 .home-feature {
   color: #666;
+}
+
+@media only screen and (min-width: 900px)  {
+  .home-feature {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 5;
+  }
 }
 
 .home-feature-list {
@@ -2455,18 +2547,6 @@ button {
   border-top: 1px solid $quaternary;
   border-left: 1px solid $quaternary;
   border-right: 1px solid $quaternary;
-}
-
-@media only screen and (min-width: 375px)  {
-  #carousel-home-welcome {
-    background-position: center -35px;
-  }
-  #carousel-home-welcome .item .carousel-caption {
-    margin: 15px auto 50px;
-  }
-  .purpleActions-large .holder {
-    padding: 75px 0;
-  }
 }
 
 /* Otros iconos */
