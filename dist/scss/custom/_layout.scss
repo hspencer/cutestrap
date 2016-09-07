@@ -1,3 +1,20 @@
+.maqueting i.fa {
+  margin: 0 5px;
+  font-size: 18px;
+  vertical-align: middle;
+}
+.maqueting ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.maqueting ul li {
+  margin-bottom: 15px;
+}
+.maqueting a {
+  text-decoration: none;
+}
+
 /* ordenar? */
 @media only screen and (min-width: 900px)  {
   html, body {
