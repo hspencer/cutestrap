@@ -51,7 +51,7 @@
 }
 .main-foot{
     background-color: transparent;
-    background-image: url('../../mockups/img/footer2.jpg');
+    background-image: url('../../mockups/img/footer2.png');
     color: #fff;
     margin-top: 70px;
     position: relative;
@@ -2882,4 +2882,35 @@ button .icon {
 
 .carousel-indicators li.active {
   background-color: $quaternary;
+}
+
+/* only-for-desktop */
+
+@media only screen and (min-width: 900px)  {
+
+.fullwidth-slab {
+  min-height: 400px;
+  background-image: url(../../mockups/img/home/sided-slab.png);
+  margin-top: -100px;
+  padding-top: 250px;
+  padding-bottom: 70px;
+}
+
+.fullwidth-slab .item {
+  background-color: white;
+  padding: 15px;
+  border: 1px solid #CCC;
+  margin-bottom: 20px;
+}
+
+.fullwidth-slab .item .ico {
+  width: 20%;
+  margin: 0 auto 15px;
+  display: block;
+}
+
+.main-foot {
+  margin-top: -70px;
+}
+
 }
