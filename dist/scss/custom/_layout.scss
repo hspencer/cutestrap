@@ -397,7 +397,32 @@ ul {
 .modulo-morado {
     color: white;
     padding: 0 0 30px;
+    position: relative;
 }
+
+.modulo-morado.triangulo3:before {
+  display: block;
+  position: absolute;
+  top: -20px;
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent transparent #86029e transparent;
+}
+
+@media only screen and (width: 320px)  {
+  .modulo-morado.triangulo3:before {
+    border-width: 0 0px 20px 320px;
+  }
+}
+
+@media only screen and (width: 375px)  {
+  .modulo-morado.triangulo3:before {
+    border-width: 0 0px 20px 375px;
+  }
+}
+
 .modulo-morado small {
   display: block;
   margin: 0;
@@ -974,6 +999,7 @@ ul {
 
 .help-block{
   padding-bottom: 0;
+  line-height: 100%;
 }
 
 /* bootstrap core override para portabilidad form */
@@ -1303,6 +1329,7 @@ button {
   font-size: 12px;
   position: absolute;
   -webkit-transition: all .25s ease-out;
+  white-space: pre;
 }
 .form-group .miniLabel.visible {
   -webkit-transform: translate(40px, 0);
