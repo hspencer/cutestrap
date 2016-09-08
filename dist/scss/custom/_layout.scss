@@ -1953,7 +1953,7 @@ button {
 
 #carousel-home-welcome {
   background-image: url(../../mockups/img/home/fondo-carrusel-home-nonwomer.png);
-  background-position: center top;
+  background-position: center bottom;
   background-size: 100% auto;
   background-repeat: no-repeat;
   position: relative;
@@ -1966,9 +1966,6 @@ button {
 }
 
 @media only screen and (min-width: 375px)  {
-  #carousel-home-welcome {
-    background-position: center -35px;
-  }
   #carousel-home-welcome .item .carousel-caption {
     margin: 15px auto 50px;
   }
@@ -1980,7 +1977,6 @@ button {
 @media only screen and (min-width: 900px)  {
   #carousel-home-welcome {
     background-image: url(../../mockups/img/home/bg-carousel-womers-desktop.png);
-    background-position: 0px -90px;
   }
   #carousel-home-welcome .item .promo-slide {
     width: 25%;  
