@@ -2975,4 +2975,36 @@ button .icon {
   margin-top: -70px;
 }
 
+.home-features-desktop h3.morado-plain {
+  font-size: 2rem;
+}
+
+.home-features-desktop p.nopadding.muted {
+  line-height: 130%;
+}
+
+.home-features-desktop i.fa.fa-check {
+  color: #67227E;
+}
+
+.home-recarga-desktop {
+}
+
+.home-recarga-desktop .ico {
+  margin-right: 20px;
+  float: left;
+}
+.home-recarga-desktop .col-lg-4 p.muted {
+  overflow: hidden;
+  line-height: 130%;
+  margin-top: 10px;
+}
+.home-recarga-desktop .col-lg-4 img:not(.ico) {
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  top: -30px;
+}
+
 }
