@@ -5,8 +5,15 @@
 
 $(document).ready(function(){
 
-	// stellar for parallax - on window
-	$.stellar();
+	// viewport width
+	var vw = window.matchMedia( "(min-width: 900px)" );
+
+	// home womers - carrusel fill height
+	if (vw.matches) {
+		vwheight = $(window).height();
+		console.log(vwheight);
+		$('#carousel-home-welcome').css('height', vwheight);
+	}
         
 	// super-mega-simple client-side form validator and form next step enabler
 	function validateForm() {
