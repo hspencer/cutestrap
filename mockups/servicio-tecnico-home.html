@@ -21,7 +21,7 @@
   <!-- You write code for this content block in another file -->
   
 
-	<nav class="navbar navbar-default navbar-main navbar-centered" role="navigation">
+	<nav class="navbar navbar-default navbar-main navbar-centered hidden-lg hidden-md" role="navigation">
 	<!-- Brand and toggle get grouped for better mobile display -->
 	<div class="navbar-header">
 
@@ -66,8 +66,122 @@
 		<!-- /.navbar-collapse -->
 	</div>
 </nav>
+	
+	<!-- layout desktop -->
+	<div class="desktop-layout hidden-sm hidden-xs">
+		<div class="desktop-header">
+			<div class="container">
+				<div class="row">
+					<div class="desktop-headerTitle col-lg-8 col-md-8 col-sm-8 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 ta-center">
+						
+						<!-- esto no me gusta pero... -->
+						<nav class="navbar navbar-default navbar-main hidden-xs hidden-sm" role="navigation">
+	<!-- Brand and toggle get grouped for better mobile display -->
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-brand-centered">
+			<span class="navLabel uc">Menú</span>
+			<figure class="hamburger">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</figure>
+		</button>
+		<!-- wom logo -->
+		<div class="navbar-brand navbar-brand-centered">
+			<a href="index.html" title="">
+				<img src="img/logo-wom.svg" width="80" height="80" >
+			</a>
+		</div>
+		<!-- /.navbar-collapse -->
+	</div>
+</nav>
 
-	<header>          
+						
+						<h1 class="uc white">Servicio Técnico</h1>
+						<p>WOMER acá te ayudamos a revisar el estado de reparación de tu equipo en nuestro servicio técnico</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="desktop-content">
+			<div class="row">
+				<div class="col-lg-4 col-md-4 col-sm-4 col-lg-offset-2 col-md-offset-2 col-sm-offset-2">
+					<div class="servicio-tecnico-welcome pt-40">
+						<div class="item lineheight120">
+							<h5 class="uc morado-plain fw-semibold nopadding">Estado</h5>
+							<p>Podrás revisar si tu equipo ya se encuentra en Servicio Técnico.</p>
+						</div>
+						<div class="item lineheight120">
+							<h5 class="uc morado-plain fw-semibold nopadding">Disponibilidad</h5>
+							<p>Podrás revisar si tu equipo se encuentra disponible en nuestra sucursal para que puedas retirarlo.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4">
+					<img src="img/banner/persona-home-nonwomer-1-nogradiente.png" alt="" style="width: 100%; display: block;">
+				</div>
+			</div>
+		</div>
+
+		<div class="servicio-tecnico-welcome-desktop fullwidth-slab">
+			<div class="container">
+				<div class="row">
+					<h4 class="ta-center morado-plain uc nomargin nopadding">Revisa el estado de reparación <br> de tu equipo</h4>
+				</div>
+				<div class="row mt-40">
+					<div class="col-lg-6 col-md-6 col-sm-6 col-lg-offset-3 col-md-offset-3 col-sm-offset-3">
+						<div class="portabilidad-pills servicio-tecnico-pills">
+							<ul class="nav nav-pills" role="tablist">
+							  <li class="active"><a href="#tab_telefono" data-toggle="tab" class="fw-semibold">N° TÉLEFONO</a></li>
+							  <li><a href="#tab_solicitud" data-toggle="tab" class="fw-semibold">N° SOLICITUD</a></li>
+							</ul>
+							<div class="tab-content">
+								<div class="tab-pane active" id="tab_telefono">							
+									<div class="row">
+										<div class="col-xs-2">
+											<img src="img/icons/ico-planes-black.svg" alt="">
+										</div>
+										<div class="col-xs-10">
+											<div class="form-group invalidInput">
+												<span class="miniLabel">Ingresa tu número de teléfono</span>
+												<input type="text" class="form-control" id="telefono" onfocus="$(this).val('+56 9');" style="color: #666;" placeholder="Ingresa tu número de teléfono">
+												<span class="helpText text-danger fs-small">Oops!, al parecer tu número de teléfono no se encuentra en nuestro servicio técnico.</span>
+											</div>
+										</div>
+									</div>
+									<div class="row ta-center">
+										<button type="button" class="btn btn-default btn-sm fw-semibold">Ver estado de mi equipo</button>
+									</div>
+								</div>
+								<div class="tab-pane" id="tab_solicitud">
+									<div class="row">
+										<div class="col-xs-2">
+											<img src="img/icons/ico-planes-black.svg" alt="">
+										</div>
+										<div class="col-xs-10">
+											<div class="form-group">
+												<span class="miniLabel">Ingresa tu número de solicitud</span>
+												<input type="text" class="form-control" id="solicitud" style="color: #666;" placeholder="Ingresa tu número de solicitud">
+											</div>
+										</div>
+										<div class="row ta-center">
+											<button type="button" class="btn btn-primary morado-chicle-bg">Ver estado de mi equipo</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- layout movil -->
+	<div class="container hidden-lg hidden-md">
+
+		<header>          
 		<div class="bg-modulo modulo-pagofacil">
 			<div class="container">
 				<h3 class="ta-center fw-semibold white uc">Servicio Técnico</h3>
@@ -75,8 +189,6 @@
 			</div>
 		</div>
 	</header>
-
-	<div class="container">
 		
 		<div class="row">
 			<div class="col-xs-12">
