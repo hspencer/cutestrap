@@ -2909,6 +2909,14 @@ button .icon {
 
 .desktop-content {
   position: relative;
+  margin-bottom: 40px;
+}
+
+.desktop-content .personas-serviciotecnico-bg {
+  background-image: url(../../mockups/img/banner/persona-home-nonwomer-1-nogradiente.png);
+  background-size: 300px auto;
+  background-repeat: no-repeat;
+  background-position: bottom right;
 }
 
 .desktop-content .servicio-tecnico-welcome {
