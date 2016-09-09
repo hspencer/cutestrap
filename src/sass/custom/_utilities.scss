@@ -261,3 +261,74 @@ Styleguide 3.2
     text-align: center;
   }
 }
+
+/*
+
+Margen y paddings
+
+Clases de ayuda para modificar los paddings y margenes de los elementos.
+Existe p-*numero* y m-*numero* para modificar el padding y margen total. además existe la variante pt-*numero* pr-*numero* pb-*numero*, pl-*numero* para modificar los paddings de cada lado. 
+Lo mismo se aplica para los márgenes (mt-*, mr-*, etc) con la salvedad que en los márgenes se pueden utilizar márgenes negativos anteponiendo 2 guiones en vez de uno antes del número: Ej: mt--40 (margin-top: -40px)
+
+Markup:
+<div class="{{modifier_class}}">
+  The quick brown fox jumps over the lazy dog.
+</div>
+
+.p-10                   - Padding: 10px
+.pt-10                   - Padding-top: 10px
+.pl-10       - padding-left: 10px
+.pb-10    - padding-bottom: 10px
+.pr-10      - padding-right: 10px
+.m-10    - margin: 10px
+.mt-10   - Margin-top: 10px  
+.mt--10  - Margin-top: -10px
+
+Styleguide 3.4
+
+*/
+
+.p-5 {padding: 5px !important;}
+.p-10 {padding: 10px !important;}
+.pt-5 {padding-top:5px !important;}
+.pt-10 {padding-top:10px !important;}
+.pt-20 {padding-top:20px !important;}
+.pt-80 {padding-top:80px !important;}
+.pt-200 {padding-top:200px !important;}
+.pl-10 {padding-left:10px !important;}
+.pl-15 {padding-left:15px !important;}
+.pl-20 {padding-left:20px !important;}
+.pl-30 {padding-left: 30px !important;}
+.pl-40 {padding-left: 40px !important;}
+.pb-0 {padding-bottom:0px !important;}
+.pb-5 {padding-bottom:5px !important;}
+.pb-10 {padding-bottom:10px !important;}
+.pr-10 {padding-right:10px !important;}
+.pr-20 {padding-right:20px !important;}
+.pr-30 {padding-right: 30px !important;}
+.pr-40 {padding-right: 40px !important;}
+
+.m-10 {margin: 10px !important;}
+.mt-0 {margin-top: 0px !important;}
+.mt-5 {margin-top: 5px !important;}
+.mt-10 {margin-top: 10px !important;}
+.mt-20 {margin-top: 20px !important;}
+.mt-30 {margin-top: 30px !important;}
+.mt-40 {margin-top: 40px !important;}
+.mt-60 {margin-top: 60px !important;}
+.mt--10 {margin-top: -10px !important;}
+.mt--20 {margin-top: -20px !important;}
+.mt--40 {margin-top: -40px !important;}
+.mb-10 {margin-bottom: 10px !important;}
+.mb-20 {margin-bottom: 20px !important;}
+.mb-40 {margin-bottom: 40px !important;}
+.mb-60 {margin-bottom: 60px !important;}
+.mr-10 {margin-right: 10px !important;}
+.mb--10 {margin-bottom: -10px !important;}
+.mb--20 {margin-bottom: -20px !important;}
+.mb--40 {margin-bottom: -40px !important;}
+.ml-70 {margin-left: 70px !important;}
+.ml-90 {margin-left: 90px !important;}
+.ml--20 {margin-left: -15px !important;}
+.ml--40 {margin-left: -40px !important;}
+.mr--20 {margin-right: -15px !important;}

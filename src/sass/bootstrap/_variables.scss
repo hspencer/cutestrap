@@ -200,7 +200,7 @@ $table-border-color:            #ddd !default;
 //
 //## For each of Bootstrap's buttons, define text, background and border color.
 
-$btn-font-weight:                700 !default;
+$btn-font-weight:                600 !default;
 
 $btn-default-color:              $primary !default;
 $btn-default-bg:                 #FFFEFF !default;
@@ -680,7 +680,7 @@ $modal-sm:                    300px !default;
 
 $alert-padding:               15px !default;
 $alert-border-radius:         $border-radius-base !default;
-$alert-link-font-weight:      bold !default;
+$alert-link-font-weight:      600 !default;
 
 $alert-success-bg:            $state-success-bg !default;
 $alert-success-text:          $state-success-text !default;
