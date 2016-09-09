@@ -2975,6 +2975,29 @@ button .icon {
   color: #666;
 }
 
+.centroayuda-bottom-desktop {
+  margin-bottom: 150px;
+}
+
+.centroayuda-bottom-desktop .centro-ayuda-social > ul > li,
+.centroayuda-bottom-desktop .centro-ayuda-faq > ul > li {
+  border: none;
+}
+
+.centroayuda-bottom-desktop .centro-ayuda-social > ul > li i.fa {
+  width: 35px;
+}
+
+.centroayuda-bottom-desktop .centro-ayuda-faq > ul > li span {
+  margin-bottom: 15px;
+}
+
+.centroayuda-bottom-desktop .centro-ayuda-faq > ul > li p {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
 @media only screen and (max-width: 768px)  {
   .desktop-headerTitle {
     padding: 70px 50px 80px;
