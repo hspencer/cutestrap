@@ -1829,6 +1829,7 @@ button {
 }
 
 .separador-home {
+  clear: both;
   background-image: url(../../mockups/img/home/tile-sombrita.png);
   padding: 10%;
   background-repeat: no-repeat;
@@ -2274,6 +2275,10 @@ button {
   line-height: 16px;
   color: $quaternary;
   margin-top: 5px;
+}
+
+.centro-ayuda-home-desktop {
+  margin-bottom: 70px;
 }
 
 /* autoatencion */
@@ -2937,8 +2942,37 @@ button .icon {
   padding-bottom: 70px;
 }
 
+.centro-de-ayuda-welcome-desktop.fullwidth-slab {
+  margin-top: -300px;
+}
+
+.centro-de-ayuda-welcome-desktop.fullwidth-slab .personaImage {
+  background: url(../../mockups/img/banner/persona-home-3.png) no-repeat 80px bottom;
+  min-height: 270px;
+  background-size: auto 100%;
+} 
+
 .desktop-persona-serviciotecnico {
   position: absolute;
+}
+
+.centro-de-ayuda-celrobado-ribbon {
+
+}
+
+.centro-de-ayuda-celrobado-ribbon .holder {
+  padding-top: 100px;
+}
+
+.centro-de-ayuda-celrobado-ribbon .holder .icon-flaite {
+  float: left;
+  margin-right: 15px;
+}
+
+.centro-de-ayuda-celrobado-ribbon .holder p {
+  margin: 0;
+  padding: 0;
+  color: #666;
 }
 
 @media only screen and (max-width: 768px)  {
@@ -2963,17 +2997,21 @@ button .icon {
 
 @media only screen and (min-width: 900px)  {
 
-  .fullwidth-slab .item {
+  .cardsContainer .item {
     background-color: white;
     padding: 15px;
     border: 1px solid #CCC;
     margin-bottom: 20px;
   }
 
-  .fullwidth-slab .item .ico {
+  .cardsContainer .item .ico {
     width: 20%;
     margin: 0 auto 15px;
     display: block;
+  }
+
+  .cardsContainer .item a {
+    text-decoration: none;
   }
 
   .main-foot {
