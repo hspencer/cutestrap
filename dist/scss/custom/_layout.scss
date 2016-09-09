@@ -2902,35 +2902,58 @@ button .icon {
   padding: 70px 50px 150px;
   color: white;
   background-image: url(../../mockups/img/servicio_tecnico/serviciotecnico-header-desktop-bg__inner.png);
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: bottom center;
 }
 
 .desktop-content {
-  padding: 0 40px;
+  position: relative;
 }
 
 .desktop-content .servicio-tecnico-welcome {
-  padding-top: 40px;
+  padding: 40px 0 0 0;
 }
 
 .servicio-tecnico-welcome-desktop.fullwidth-slab {
-  margin-top: -160px;
   position: relative;
   z-index: 100;
   padding-bottom: 100px;
 }
 
-/* only-for-desktop */
-@media only screen and (min-width: 900px)  {
+.fullwidth-slab {
+  min-height: 400px;
+  background-image: url(../../mockups/img/home/sided-slab.png);
+  margin-top: -100px;
+  padding-top: 250px;
+  padding-bottom: 70px;
+}
 
-  .fullwidth-slab {
-    min-height: 400px;
-    background-image: url(../../mockups/img/home/sided-slab.png);
-    margin-top: -100px;
-    padding-top: 250px;
-    padding-bottom: 70px;
+.desktop-persona-serviciotecnico {
+  position: absolute;
+}
+
+@media only screen and (max-width: 768px)  {
+  .desktop-headerTitle {
+    padding: 70px 50px 80px;
   }
+  .fullwidth-slab {
+   margin-top: -200px; 
+  }
+  .desktop-persona-serviciotecnico {
+    margin-top: 90px;
+  }
+}
+
+@media only screen and (max-width: 1024px)  {
+  .fullwidth-slab {
+    margin-top: -180px;
+  }
+}
+
+/* only-for-desktop */
+
+@media only screen and (min-width: 900px)  {
 
   .fullwidth-slab .item {
     background-color: white;

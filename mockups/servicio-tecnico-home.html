@@ -68,9 +68,9 @@
 </nav>
 	
 	<!-- layout desktop -->
-	<div class="desktop-layout hidden-sm hidden-xs">
+	<div class="desktop-layout hidden-xs">
 		<div class="desktop-header">
-			<div class="container">
+			<div class="container-tablet">
 				<div class="row">
 					<div class="desktop-headerTitle col-lg-8 col-md-8 col-sm-8 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 ta-center">
 						
@@ -105,21 +105,23 @@
 		</div>
 
 		<div class="desktop-content">
-			<div class="row">
-				<div class="col-lg-4 col-md-4 col-sm-4 col-lg-offset-2 col-md-offset-2 col-sm-offset-2">
-					<div class="servicio-tecnico-welcome pt-40">
-						<div class="item lineheight120">
-							<h5 class="uc morado-plain fw-semibold nopadding">Estado</h5>
-							<p>Podrás revisar si tu equipo ya se encuentra en Servicio Técnico.</p>
-						</div>
-						<div class="item lineheight120">
-							<h5 class="uc morado-plain fw-semibold nopadding">Disponibilidad</h5>
-							<p>Podrás revisar si tu equipo se encuentra disponible en nuestra sucursal para que puedas retirarlo.</p>
+			<div class="container-tablet">
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-4 col-lg-offset-2 col-md-offset-2 col-sm-offset-2">
+						<div class="servicio-tecnico-welcome pt-40">
+							<div class="item lineheight120">
+								<h5 class="uc morado-plain fw-semibold nopadding">Estado</h5>
+								<p>Podrás revisar si tu equipo ya se encuentra en Servicio Técnico.</p>
+							</div>
+							<div class="item lineheight120">
+								<h5 class="uc morado-plain fw-semibold nopadding">Disponibilidad</h5>
+								<p>Podrás revisar si tu equipo se encuentra disponible en nuestra sucursal para que puedas retirarlo.</p>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-lg-4 col-md-4 col-sm-4">
-					<img src="img/banner/persona-home-nonwomer-1-nogradiente.png" alt="" style="width: 100%; display: block;">
+					<div class="col-lg-4 col-md-4 col-sm-4">
+						<img class="desktop-persona-serviciotecnico" src="img/banner/persona-home-nonwomer-1-nogradiente.png" alt="" style="width: 100%; display: block;">
+					</div>
 				</div>
 			</div>
 		</div>
@@ -179,9 +181,8 @@
 	</div>
 
 	<!-- layout movil -->
-	<div class="container hidden-lg hidden-md">
-
-		<header>          
+	<div class="visible-xs">
+	<header>          
 		<div class="bg-modulo modulo-pagofacil">
 			<div class="container">
 				<h3 class="ta-center fw-semibold white uc">Servicio Técnico</h3>
@@ -189,7 +190,9 @@
 			</div>
 		</div>
 	</header>
-		
+	</div>
+	
+	<div class="container hidden-lg hidden-md hidden-sm">
 		<div class="row">
 			<div class="col-xs-12">
 				<div class="servicio-tecnico-welcome">
