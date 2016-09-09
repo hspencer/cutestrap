@@ -21,6 +21,7 @@
   color: green;
   background-color: transparent;
 }
+
 /* ordenar? */
 @media only screen and (min-width: 900px)  {
   html, body {
@@ -2845,87 +2846,11 @@ button .icon {
   background-color: $quaternary;
 }
 
-.page-title-desktop {
-  background-color: #3F1F57;
-  overflow: hidden;
-}
+/* desktop-only views */
 
-.page-title-desktop > h3 {
-  margin: 121px 0 50px;
-  white-space: pre;
-}
-
-.page-content-desktop {
-  background-size: 100% auto;
-  background-position: top;
-  background-repeat: no-repeat;
-  min-height: 500px;
-}
-
-.page-content-holder-desktop {
-  margin: 150px 15px 0 15px;
-  padding: 15px;
-  background-color: white;
-  min-height: 300px;
-  box-shadow: 0 2px 4px #CCC;
-}
-
-.desktop-crumbs {
-  margin: -15px -15px 15px -15px;
-  padding: 15px;
-  background-color: #3F1F57;
-  color: white;
-}
-
-.desktop-crumbs strong {
-  color: #AD6FDD;
-}
-
-.desktop-crumbs i.fa-angle-right {
-  margin: 0 5px;
-}
-
-.page-content-desktop {
-  margin-bottom: 60px;
-}
-
-.page-content-desktop.portabilidad-bg {
-  background-image: url(../../mockups/img/bg-portabilidad-desktop.png);
-}
-
-.page-content-desktop #captcha {
-  margin: 30px 0 15px;
-}
-
-.page-content-desktop #captcha .captchaLink {
-  width: 40px;
-}
-
-.form-desktop-body {
-  overflow: hidden;
-  padding: 0 60px;
-}
-
-.form-desktop-body .form-group.big-gap {
-  margin: 70px 0;
-}
-.form-desktop-body .form-group:first-of-type {
-  margin-top: 0;
-}
-
-.form-desktop-body .row > div:first-of-type {
-  padding-right: 60px;
-}
-.form-desktop-body .row > div:last-of-type {
-  padding-left: 60px;
-}
 
 /* only-for-desktop */
 @media only screen and (min-width: 900px)  {
-
-  .navbar.navbar-centered .navbar-brand-centered {
-    margin-left: 85px; 
-  }
 
   .fullwidth-slab {
     min-height: 400px;
