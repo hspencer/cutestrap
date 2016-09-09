@@ -2278,6 +2278,7 @@ button {
 }
 
 .centro-ayuda-home-desktop {
+  clear: both;
   margin-bottom: 70px;
 }
 
@@ -2958,6 +2959,15 @@ button .icon {
   background-size: auto 70%;
 }
 
+.centro-de-ayuda-related-links-desktop a {
+  color: #666;
+}
+
+.centro-de-ayuda-related-links-desktop a strong {
+  text-transform: uppercase;
+  color: $secondary;
+}
+
 .desktop-persona-serviciotecnico {
   position: absolute;
 }
@@ -3002,6 +3012,10 @@ button .icon {
   margin: 0;
   padding: 0;
   overflow: hidden;
+}
+
+.centro-ayuda-desktop-otra-pregunta {
+  margin-bottom: 70px;
 }
 
 @media only screen and (max-width: 768px)  {
