@@ -2935,11 +2935,13 @@ button .icon {
 }
 
 .fullwidth-slab {
+  flex-direction: column;
   min-height: 400px;
   background-image: url(../../mockups/img/home/sided-slab.png);
   margin-top: -100px;
+  margin-bottom: 70px;
   padding-top: 250px;
-  padding-bottom: 70px;
+  padding-bottom: 0px;
 }
 
 .centro-de-ayuda-welcome-desktop.fullwidth-slab {
@@ -2948,9 +2950,13 @@ button .icon {
 
 .centro-de-ayuda-welcome-desktop.fullwidth-slab .personaImage {
   background: url(../../mockups/img/banner/persona-home-3.png) no-repeat 80px bottom;
-  min-height: 270px;
+  flex: 1;
   background-size: auto 100%;
 } 
+
+.centro-de-ayuda-welcome-desktop.centro-de-ayuda-inner.fullwidth-slab .personaImage {
+  background-size: auto 70%;
+}
 
 .desktop-persona-serviciotecnico {
   position: absolute;
