@@ -1268,6 +1268,7 @@ button {
   padding: 0 5px;
   border: none;
   border-bottom: 1px solid #333;
+  background-color: transparent;
 }
 
 .form-group .miniLabel {
@@ -3083,6 +3084,26 @@ button .icon {
   background-color: white;
   padding: 15px;
   margin-bottom: 15px;
+}
+
+.login-ejecutivo-holder {
+  background-color: #f3f3f3;
+  margin-bottom: 75px;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-ejecutivo--top {align-self: flex-start;}
+.login-ejecutivo--bottom {align-self: flex-end;}
+
+
+.login-ejecutivo-mockup--header {
+  background-image: url(../../mockups/img/mockup-login-ejecutivo.png);
+  height: 770px;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }
 
 /* only-for-desktop */
