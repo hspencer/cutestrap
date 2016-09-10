@@ -1842,12 +1842,13 @@ button {
 
 .separador-faq {
   background-image: url(../../mockups/img/home/tile-sombrita.png);
-  padding: 4%;
+  padding: 20px;
   background-repeat: no-repeat;
   background-size: 100% auto;
   border: none;
   background-color: transparent;
   background-position: -1px center;
+  clear: both;
 }
 
 #carousel-home-welcome {
