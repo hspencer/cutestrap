@@ -21,51 +21,51 @@
   <!-- You write code for this content block in another file -->
   
 
-	<nav class="navbar navbar-default navbar-main navbar-centered visible-xs" role="navigation">
-	<!-- Brand and toggle get grouped for better mobile display -->
-	<div class="navbar-header">
+	<nav class="navbar navbar-default navbar-main navbar-centered" role="navigation">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
 
-		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-brand-centered">
-			<span class="navLabel">Menú</span>
-			<figure class="hamburger">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</figure>
-		</button>
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-brand-centered">
+				<span class="navLabel">Menú</span>
+				<figure class="hamburger">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</figure>
+			</button>
 
-		<!-- wom logo -->
-		<div class="navbar-brand navbar-brand-centered">
-			<a href="index.html" title="">
-				<img src="img/logo-wom.svg" width="80" height="80" >
-			</a>
+			<!-- wom logo -->
+			<div class="navbar-brand navbar-brand-centered">
+				<a href="index.html" title="">
+					<img src="img/logo-wom.svg" width="80" height="80" >
+				</a>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<!-- <div class="collapse navbar-collapse" id="navbar-brand-centered">
+				<ul class="nav navbar-nav">
+					<<li><a href="#">Link</a></li>
+					<li><a href="#">Link</a></li>
+					<<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Personas <span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="#">Planes</a></li>
+							<li><a href="#">Prepago</a></li>
+							<li><a href="#">Internet</a></li>
+							<li><a href="#">Equipos</a></li>
+							<li class="divider"></li>
+							<li><a href="#">Sucursal Online</a></li>
+						</ul>
+					</li>
+					<li><a class="fw-semibold" href="#">Planes</a></li>
+					<li><a class="fw-semibold" href="#">Prepago</a></li>
+					<li><a class="fw-semibold" href="#">Internet</a></li>
+					<li><a class="fw-semibold" href="#">Equipos</a></li>
+					<li><a class="fw-semibold" href="#">Sucursal Online</a></li>
+				</ul>
+			</div> -->
+			<!-- /.navbar-collapse -->
 		</div>
-		<!-- Collect the nav links, forms, and other content for toggling -->
-		<!-- <div class="collapse navbar-collapse" id="navbar-brand-centered">
-			<ul class="nav navbar-nav">
-				<<li><a href="#">Link</a></li>
-				<li><a href="#">Link</a></li>
-				<<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Personas <span class="caret"></span></a>
-					<ul class="dropdown-menu" role="menu">
-						<li><a href="#">Planes</a></li>
-						<li><a href="#">Prepago</a></li>
-						<li><a href="#">Internet</a></li>
-						<li><a href="#">Equipos</a></li>
-						<li class="divider"></li>
-						<li><a href="#">Sucursal Online</a></li>
-					</ul>
-				</li>
-				<li><a class="fw-semibold" href="#">Planes</a></li>
-				<li><a class="fw-semibold" href="#">Prepago</a></li>
-				<li><a class="fw-semibold" href="#">Internet</a></li>
-				<li><a class="fw-semibold" href="#">Equipos</a></li>
-				<li><a class="fw-semibold" href="#">Sucursal Online</a></li>
-			</ul>
-		</div> -->
-		<!-- /.navbar-collapse -->
-	</div>
-</nav>
+	</nav>
 
 	<div id="carousel-home-welcome" class="carousel slide" data-ride="carousel">
 	  <!-- Indicators -->
@@ -404,7 +404,7 @@
 
 	<div class="container home-features-desktop visible-lg visible-md mb-20">
 		<div class="row">
-			<div class="col-lg-4">
+			<div class="col-lg-4 col-md-4 col-sm-4">
 				<h3 class="fw-normal uc morado-plain nomargin nopadding wow animated fadeIn" data-wow-offset="150">Nueva App <strong class="fw-semibold">WOM</strong></h3>
 				<p class="nopadding nomargin fw-normal fs-small muted">No más vueltas. Házla corta <br>descubriendo:</p>
 				<div class="holder">
@@ -419,24 +419,19 @@
 						<li class="wow animated fadeInUp"><i class="fa fa-check"></i> Tus promociones</li>
 					</ul>
 
-				</div><br><br><br><br>
-				<div class="col-xs-6 ta-right">
-				<a href="#">
-					<img src="img/home/boton-appstore.svg" alt="" style="display: inline-block;">
-				</a>
-			</div>
-			<div class="col-xs-6 ta-left">
-				<a href="#">
-					<img src="img/home/boton-googleplay.svg" alt="" style="display: inline-block;">
-				</a>
-			</div>
-				<br>
-
-
+				</div>
+				<div>
+					<a href="#">
+						<img src="img/home/boton-appstore.svg" alt="" style="display: inline-block; width: 28%;">
+					</a>
+					<a href="#">
+						<img src="img/home/boton-googleplay.svg" alt="" style="display: inline-block; width: 28%;">
+					</a>
+				</div>
 			</div>
 		
 
-			<div class="col-lg-4">
+			<div class="col-lg-4 col-md-4 col-sm-4">
 				<h3 class="fw-normal uc morado-plain nomargin nopadding wow animated fadeIn">Sucursal <strong class="fw-semibold">Online</strong></h3>
 				<p class="nopadding nomargin fw-normal fs-small muted">Descubre todo lo que puedes ver<br> en tu sucursal online:</p>
 				<div class="holder">
@@ -452,7 +447,7 @@
 					<button class="btn btn-primary btn-lg fw-semibold wow animated fadeIn">Inicia tu sesión</button>
 				</div>
 			</div>
-			<div class="col-lg-4">
+			<div class="col-lg-4 col-md-4 col-sm-4">
 				<h3 class="fw-normal uc morado-plain nomargin nopadding wow animated fadeIn" data-wow-offset="150">Pago <strong class="fw-semibold">Fácil</strong></h3>
 				<p class="nopadding nomargin fw-normal fs-small muted mb-20">¡Házla corta!<br>Paga tu cuenta rápidamente</p>
 				<div class="holder">
@@ -475,29 +470,29 @@
 				<h4 class="ta-center morado-plain uc fw-light nomargin nopadding">Recargas</h4>
 			</div>
 			<div class="row mb-10">
-				<div class="col-lg-6 ta-right">
+				<div class="col-lg-6 col-md-6 col-sm-6 ta-right">
 					<p class="nomargin nopadding mt-10 lineheight120 fs-small">
 						¡Ahora recárgate!<br>Más de 29.000 puntos para recargar
 					</p>
 				</div>
-				<div class="col-lg-6 ta-left">
+				<div class="col-lg-6 col-md-6 col-sm-6 ta-left">
 					<button class="btn btn-primary mt-10">Ir a recargar</button>
 				</div>
 			</div>
 			<div class="row mt-60">
-				<div class="col-lg-4">
+				<div class="col-lg-4 col-md-4 col-sm-4">
 					<img src="img/home/ico-sucursales-pago.svg" class="ico" alt="">
 					<h4 class="morado-plain uc nomargin nopadding"> Tarjetas</h4>
 					<p class="muted fs-small fw-normal col-sm-8 nopadding mb-40">Recarga con tarjetas bancarias desde $1.000</p>
 					<img src="img/home/bnwlogos-tarjetas.png" alt="">
 				</div>
-				<div class="col-lg-4">
+				<div class="col-lg-4 col-md-4 col-sm-4">
 					<img src="img/home/ico-sucursales-pago.svg" class="ico" alt="">
 					<h4 class="morado-plain uc nomargin nopadding"> Recarga Online</h4>
 					<p class="muted fs-small fw-normal col-sm-8 nopadding mb-40">Recarga online desde $1.000 en múltiples sitios.</p>
 					<img src="img/home/bnwlogos-onlain.png" alt="">
 				</div>
-				<div class="col-lg-4">
+				<div class="col-lg-4 col-md-4 col-sm-4">
 					<img src="img/home/ico-sucursales-pago.svg" class="ico" alt="">
 					<h4 class="morado-plain uc nomargin nopadding"> Presencial</h4>
 					<p class="muted fs-small fw-normal col-sm-8 nopadding mb-40">Canales disponibles para recargar desde $1.000-.</p>

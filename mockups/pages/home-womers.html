@@ -4,7 +4,51 @@
 
 {% block content %}
 
-	{% include "partials/navbar.html" %}
+	<nav class="navbar navbar-default navbar-main navbar-centered" role="navigation">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-brand-centered">
+				<span class="navLabel">Menú</span>
+				<figure class="hamburger">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</figure>
+			</button>
+
+			<!-- wom logo -->
+			<div class="navbar-brand navbar-brand-centered">
+				<a href="index.html" title="">
+					<img src="img/logo-wom.svg" width="80" height="80" >
+				</a>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<!-- <div class="collapse navbar-collapse" id="navbar-brand-centered">
+				<ul class="nav navbar-nav">
+					<<li><a href="#">Link</a></li>
+					<li><a href="#">Link</a></li>
+					<<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Personas <span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="#">Planes</a></li>
+							<li><a href="#">Prepago</a></li>
+							<li><a href="#">Internet</a></li>
+							<li><a href="#">Equipos</a></li>
+							<li class="divider"></li>
+							<li><a href="#">Sucursal Online</a></li>
+						</ul>
+					</li>
+					<li><a class="fw-semibold" href="#">Planes</a></li>
+					<li><a class="fw-semibold" href="#">Prepago</a></li>
+					<li><a class="fw-semibold" href="#">Internet</a></li>
+					<li><a class="fw-semibold" href="#">Equipos</a></li>
+					<li><a class="fw-semibold" href="#">Sucursal Online</a></li>
+				</ul>
+			</div> -->
+			<!-- /.navbar-collapse -->
+		</div>
+	</nav>
 
 	<div id="carousel-home-welcome" class="carousel slide" data-ride="carousel">
 	  <!-- Indicators -->

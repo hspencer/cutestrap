@@ -151,8 +151,6 @@ ul {
 .autocenter {
   margin: 0 auto;
 }
-
-
 .btn.btn-outline-white {
   color: white;
   border: 2px solid white;
@@ -2939,6 +2937,7 @@ button .icon {
   background-image: url(../../mockups/img/servicio_tecnico/serviciotecnico-header-desktop-bg.png);
   background-size: 100% auto;
   background-repeat: no-repeat;
+  min-height: 520px;
 }
 
 .desktop-headerTitle {

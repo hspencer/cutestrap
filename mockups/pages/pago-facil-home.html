@@ -5,11 +5,85 @@
 
 	{% include "partials/navbar.html" %}
 
+	<div class="desktop-layout hidden-xs">
+		<div class="desktop-header">
+			<div class="container-tablet">
+				<div class="row">
+					<div class="desktop-headerTitle col-lg-8 col-md-8 col-sm-8 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 ta-center">
+						{% include "partials/navbar-desktop-inner.html" %}
+						<h1 class="uc white">Pago Fácil</h1>
+						<p>De este lado puedes pagar tu cuenta online. Hazla corta con pago fácil de forma rápida y segura para seguir volando en 4G</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="visible-xs">
 	{% include "partials/header-pago-facil.html" %}
-
-	{% include "partials/form-pago-container.html" %}
-
+	</div>
+	
 	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-6 col-sm-offset-1 col-md-6 col-md-offset-1 col-lg-6 col-lg-offset-1">
+				<div class="hidden-xs">
+					<br><br><br><br>
+				</div>
+				{% include "partials/form-pago-container.html" %}		
+			</div>
+			<div class="hidden-xs col-sm-5 col-md-5 col-lg-5">
+				<img src="img/banner/persona-home-2.png" alt="">
+			</div>
+		</div>
+	</div>
+
+	<div class="fullwidth-slab hidden-xs" style="margin-top: -280px; position: relative;">
+		<div class="container">
+			<div class="row">
+				<h4 class="uc ta-center">Otras formas de pago</h4>
+			</div>
+			<div class="row">
+				<div class="col-sm-4 col-md-4 col-lg-4">
+					<img src="img/pago_facil/ico-sucursal.svg" alt="" style="float: left; margin-right: 15px; margin-bottom: 40px;">
+					<div style="overflow: hidden;">
+						<h6 class="morado-plain fw-semibold nomargin nopadding uc">Sucursal Online</h6>
+						<p>Revisa tu boleta y paga desde tu cuenta.</p>
+					</div>
+				</div>
+				<div class="col-sm-4 col-md-4 col-lg-4">
+					<img src="img/pago_facil/ico-pago-online.svg" alt="" style="float: left; margin-right: 15px; margin-bottom: 40px;">
+					<div style="overflow: hidden;">
+						<h6 class="morado-plain fw-semibold nomargin nopadding uc">Pagos Online</h6>
+						<p>Paga de manera segura desde servipag.cl, sencillito.com o presto.cl.</p>
+					</div>
+				</div>
+				<div class="col-sm-4 col-md-4 col-lg-4">
+					<img src="img/pago_facil/ico-pago-online.svg" alt="" style="float: left; margin-right: 15px; margin-bottom: 40px;">
+					<div style="overflow: hidden;">
+						<h6 class="morado-plain fw-semibold nomargin nopadding uc">Pagos Automáticos</h6>
+						<p>Paga tus cuentas automáticamente con tarjeta de crédito (PAT)</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container pb-20">
+			<div class="row mt-20">
+				<h4 class="uc ta-center">Pagos Presenciales</h4>
+			</div>
+			<div class="row">
+				<div class="col-sm-4 col-sm-offset-1 col-md-4 col-md-offset-1 col-lg-4 col-lg-offset-1">
+					<p>WOMER cancela tus cuentas de forma electrónica en los siguientes bancos:</p>
+					<img style="background-color: rgba(0,0,0,.66); padding: 5px;" src="../wom-base/img/pago_facil/bancos-1.svg" alt="">
+				</div>
+				<div class="col-sm-4 col-sm-offset-2 col-md-4 col-md-offset-2 col-lg-4 col-lg-offset-2">
+					<p>WOMER cancela tus cuentas de forma electrónica en las siguientes cajas::</p>
+					<img style="background-color: rgba(0,0,0,.66); padding: 5px;" src="../wom-base/img/pago_facil/bancos-2.svg" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container visible-xs">
 		{% include "partials/modulo-otras-formas-de-pago.html" %}
 		{% include "partials/modulo-pagos-presenciales.html" %}
 	</div>
