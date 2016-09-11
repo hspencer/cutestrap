@@ -5,11 +5,27 @@
 
 {% include "partials/navbar.html" %}
 
-{% include "partials/header-portabilidad-pasos.html" %}
+<div class="desktop-layout hidden-xs">
+	<div class="desktop-header">
+		<div class="container-tablet">
+			<div class="row">
+				<div class="desktop-headerTitle col-lg-8 col-md-8 col-sm-8 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 ta-center">
+					{% include "partials/navbar-desktop-inner.html" %}
+					<h1 class="uc white">Portabilidad</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
+<div class="visible-xs">
+{% include "partials/header-portabilidad-pasos.html" %}
 		<h3 class="uc fw-semibold ta-center nopadding nomargin mb-10 morado-plain">Prepago a prepago</h3>
 	</div>
 </div>
+<!-- este fue claudio -->
+</div>
+
 <div class="container">
 	<ul id="stepper_portabilidad">
 		<li class="stepperLED-paso1 active"><span>1</span></li>
@@ -20,13 +36,19 @@
 	</ul>
 </div>
 
-<div id="camposvacios" class="alert alert-danger" role="alert" style="display: none;">
-	<strong>Uno o más campos están vacíos</strong>. Recuerda que toda la información es necesaria.
+<div class="container">
+	<div class="row">
+		<div class="col-lg-4 col-md-4 col-sm-4 col-lg-offset-4 col-md-offset-4 col-sm-offset-4">
+			<div id="camposvacios" class="alert alert-danger" role="alert" style="display: none;">
+				<strong>Uno o más campos están vacíos</strong>. Recuerda que toda la información es necesaria.
+			</div>	
+		</div>
+	</div>
 </div>
 
 <div class="container pl-30 pr-30">
 	<div class="row">
-		<div class="col-sm-12">
+		<div class="col-lg-4 col-md-4 col-sm-4 col-lg-offset-4 col-md-offset-4 col-sm-offset-4">
 			<form id="portateForm" class="nopadding">
 				<div id="portateForm-paso1" class="formPaso-stepper" data-nextStep="paso2" style="display: block;">
 
