@@ -521,7 +521,7 @@ ul {
 .pago-facil-selecciona strong,
 .pago-facil-paga strong {
   display: block;
-  font-size: 4rem;
+  font-size: 3.65rem;
   line-height: 100%;
   font-weight: 500;
 }
@@ -531,15 +531,18 @@ ul {
   padding: 30px 0;
 }
 
-.pago-facil-selecciona .item.dark {
-  border-top: 1px solid #ECECEC;
-  background: -moz-linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(236,236,236,1) 100%); /* ff3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(236,236,236,1))); /* safari4+,chrome */
-  background: -webkit-linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(236,236,236,1) 100%); /* safari5.1+,chrome10+ */
-  background: -o-linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(236,236,236,1) 100%); /* opera 11.10+ */
-  background: -ms-linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(236,236,236,1) 100%); /* ie10+ */
-  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(236,236,236,1) 100%); /* w3c */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#ECECEC',GradientType=0 ); /* ie6-9 */
+.pago-facil-paga .item-dark.disabled-pagando {
+  opacity: .3;
+}
+
+.pago-facil-paga .inputMoney {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #666;
+  display: inline-block;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  max-width: 90%;
 }
 
 .pago-facil-selecciona .checkbox {
@@ -555,10 +558,10 @@ ul {
   background: -ms-linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(236,236,236,1) 100%); /* ie10+ */
   background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(236,236,236,1) 100%); /* w3c */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#ECECEC',GradientType=0 ); /* ie6-9 */
-  margin: -15px 15px 0;
   color: $gray-1;
   padding-top: 10px;
   padding-bottom: 20px;
+  padding-left: 15px;
 }
 .pago-facil-paga small {
   margin: 20px 0 0 10px;
@@ -2634,16 +2637,19 @@ button .icon {
 
 /* Wizard para elegir plan + equipo */
 
-#wizardPlanes .wizardGradiente {
-  background: rgba(255,255,255,1);
-  background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(236,236,236,1) 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(236,236,236,1)));
-  background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(236,236,236,1) 100%);
-  background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(236,236,236,1) 100%);
-  background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(236,236,236,1) 100%);
-  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(236,236,236,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ececec', GradientType=0 );
-  padding-bottom: 20px;
+@media only screen and (max-width: 375px) {
+  #wizardPlanes .wizardGradiente {
+    background: white;
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, white), color-stop(100%, #ececec));
+    background: -webkit-linear-gradient(top, white 0%, #ececec 100%);
+    background: linear-gradient(to bottom, white 0%, #ececec 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ececec', GradientType=0 );
+    padding-bottom: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-right: 0;
+    width: 100%;
+  }
 }
 
 #wizardPlanes .huge {
@@ -2651,19 +2657,17 @@ button .icon {
 }
 
 #wizardPlanes .wizardPlanes-pasos {
-  margin: 0 0 30px 0;
+  margin-bottom: 30px;
 }
 #wizardPlanes #wizardPlanes-paso1 i.fa {
-  display: block;
+  display: inline-block;
   font-size: 3rem;
   background-color: white;
   border-radius: 100%;
   border: 1px solid #CCC;
-  width: 50px;
-  padding: 7px 0;
-  margin: 0 auto 10px;
-  line-height: 110%;
-  min-height: 50px;
+  padding: 10px;
+  margin: 14px auto 10px;
+  -webkit-transition: all .3s ease-out;
   transition: all .3s ease-out;
 }
   #wizardPlanes #wizardPlanes-paso1 a:hover i.fa,
@@ -2687,7 +2691,8 @@ button .icon {
 }
 
 .wizard-appendix {
-  margin: 30px 0;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .wizard-appendix-header {

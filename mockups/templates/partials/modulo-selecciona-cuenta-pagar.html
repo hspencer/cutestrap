@@ -1,23 +1,43 @@
-<h3 class="fw-semibold morado-plain ta-center uc lineheight120">Selecciona la<br>cuenta a pagar.</h3>
-<div class="pago-facil-desglose row">
-  <div class="col-xs-12">
+
+
+<h3 class="fw-semibold morado-plain ta-center uc lineheight120 visible-xs">Selecciona la cuenta a pagar</h3>
+
+<div class="pago-facil-desglose">
     <p>Nº factura: <strong>8762340</strong></p>
     <p>Número cliente: <strong>1.123</strong></p>
+</div>
+
+<div class="pago-facil-paga">
+  <div class="row item-dark">
+    <div class="col-xs-8">
+      <strong>$145.990</strong><a href="#"><img src="img/pago_facil/ico-pago-facil-edita-pago.svg" width="20" height="20"></a>
+    </div>
+    <div class="col-xs-4">
+      <button class="btn btn-primary success mt-10" onclick="$(this).parents('.item-dark').addClass('disabled-pagando');$('#pagalo').slideToggle();">Pagar</button>
+    </div>
   </div>
 </div>
-<div class="row pago-facil-paga item-dark">
-  <div class="col-xs-8">
-    <strong>$145.990</strong><a href="#"><img src="img/pago_facil/ico-pago-facil-edita-pago.svg" width="20" height="20"></a>
-  </div>
-  <div class="col-xs-4">
-    <button class="btn btn-primary success mt-10">Pagar</button>
+<div class="pago-facil-paga" style="display: none" id="pagalo">
+  <div class="row item-dark">
+    <div class="col-xs-8">
+      <p class="nomargin nopadding fs-small">Abono parcial mínimo $5.000</p>
+      <p class="nomargin nopadding">$ <input type="text" class="inputMoney"></p>
+    </div>
+    <div class="col-xs-4">
+      <button class="btn btn-primary success mt-10">Abonar</button>
+    </div>
   </div>
 </div>
-<div class="row pago-facil-paga item-dark mt-20">
-  <div class="col-xs-8">
-    <strong>$145.990</strong><a href="#"><img src="img/pago_facil/ico-pago-facil-edita-pago.svg" width="20" height="20"></a>
-  </div>
-  <div class="col-xs-4">
-    <button class="btn btn-primary success mt-10">Pagar</button>
+
+
+
+<div class="pago-facil-paga">
+  <div class="row item-dark mt-20">
+    <div class="col-xs-8">
+      <strong>$145.990</strong><a href="#"><img src="img/pago_facil/ico-pago-facil-edita-pago.svg" width="20" height="20"></a>
+    </div>
+    <div class="col-xs-4">
+      <button class="btn btn-primary success mt-10">Pagar</button>
+    </div>
   </div>
 </div>
