@@ -780,7 +780,8 @@ ul {
 }
 
 #captcha {
-
+  max-width: 768px;
+  margin: 0 auto;
 }
 
 #captcha .captchaLink {
@@ -788,9 +789,11 @@ ul {
   border: 1px solid #CCC;
   text-align: center;
   display: inline-block;
-  margin-right: 2px;
-  font-size: 1.6rem;
-  padding: 5px 10px;
+  margin-right: 6px;
+  font-size: 2rem;
+  padding: 12px 12px;
+  width: 50px;
+  height: 50px;
 }
 
 #captcha .captchaLink.selected {
@@ -808,7 +811,7 @@ ul {
   text-align: center;
   -webkit-font-feature-settings: "lnum";
   font-feature-settings: "lnum";
-  max-width: 350px;
+  max-width: 768px;
 }
 
 .portate-desktop-ad {
@@ -852,9 +855,9 @@ ul {
 #stepper_portabilidad:after {
   content: '';
   background: $pink;
-  width: 75%;
+  width: 72%;
   height: 2px;
-  margin-top: -13px;
+  margin-top: -25px;
   margin-left: 15%;
   display: block;
 }
@@ -877,9 +880,9 @@ ul {
   color: white;
   text-align: center;
   border-radius: 100%;
-  width: 25px;
-  height: 25px;
-  line-height: 25px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
 }
 
 #stepper_portabilidad li.active span {
