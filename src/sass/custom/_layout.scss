@@ -1136,10 +1136,13 @@ button {
   font-size: 14px;
   line-height: 100%;
   text-align: center;
+  background-color: $quaternary;
+  color: white;
 }
 .portabilidad-pills .nav-pills .active a,
 .portabilidad-pills .nav-pills .active a:focus {
-  background-color: #730184;
+  background-color: white;
+  color: $quaternary;
 }
 .portabilidad-pills .tab-content.well {
   border-radius: 0;
@@ -2404,8 +2407,8 @@ button {
 
 .servicio-tecnico-welcome { padding: 0 25px; }
 .servicio-tecnico-pills .tab-content {
-  border: 1px solid $primary;
   padding: 30px 5px;
+  background-color: white;
 }
 
 .helpText {
