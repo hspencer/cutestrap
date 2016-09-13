@@ -1641,6 +1641,24 @@ button {
     right: -9px;
   }
 
+/*modal cambia password*/
+
+#cambia-password .modal-dialog {
+  max-width: 420px;
+}
+
+#cambia-password .modal-header {
+  background: white;
+  background-image: url(../../mockups/img/cambiapass-modal-header.png);
+  background-position: top center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+#cambia-password .modal-header h4 {
+  padding: 15px 15px 120px 15px;
+}
+
 .detalle-bolsa .morado-plain {
   color: #622761;
 }
