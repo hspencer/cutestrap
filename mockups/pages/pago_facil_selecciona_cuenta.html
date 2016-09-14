@@ -1,18 +1,42 @@
 {% extends "layout.nunjucks" %}
-{% set title = "Pago Fácil - selecciona cuenta" %}
+{% set title = "Pago Fácil - Var Selecciona Cuenta" %}
 
 {% block content %}
 
-  {% include "partials/navbar.html" %}
-  
-  {% include "partials/header-pago-facil-short.html" %}
-        
+	{% include "partials/navbar.html" %}
 
-        <div class="container">
-          {% include "partials/modulo-selecciona-cuenta-pagar.html" %}
-        </div>
+	<div class="desktop-layout hidden-xs">
+		<div class="desktop-header">
+			<div class="container-tablet">
+				<div class="row">
+					<div class="desktop-headerTitle col-lg-8 col-md-8 col-sm-8 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 ta-center">
+						{% include "partials/navbar-desktop-inner.html" %}
+						<h1 class="uc white">Pago Fácil</h1>
+						<p>De este lado puedes pagar tu cuenta online. Hazla corta con pago fácil de forma rápida y segura para seguir volando en 4G</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-  {% include "partials/footer.html" %}
+	<div class="visible-xs">
+	{% include "partials/header-pago-facil.html" %}
+	</div>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-sm-offset-2 col-md-offset-2 col-lg-offset-2">
+				<div class="hidden-xs">
+					<h4 class="uc morado-plain">Paga tu cuenta online</h4>
+				</div>
+				{% include "partials/modulo-selecciona-cuenta-pagar.html" %}
+			</div>
+			<div class="hidden-xs col-sm-5 col-md-5 col-lg-5">
+				<img src="img/banner/persona-home-2.png" alt="">
+			</div>
+		</div>
+	</div>
 
+	{% include "partials/footer.html" %}
 
 {% endblock %}

@@ -21,7 +21,7 @@
   <!-- You write code for this content block in another file -->
   
 
-	<nav class="navbar navbar-default navbar-main navbar-centered" role="navigation">
+		<nav class="navbar navbar-default navbar-main navbar-centered visible-xs" role="navigation">
 	<!-- Brand and toggle get grouped for better mobile display -->
 	<div class="navbar-header">
 
@@ -41,11 +41,11 @@
 			</a>
 		</div>
 		<!-- Collect the nav links, forms, and other content for toggling -->
-		<div class="collapse navbar-collapse" id="navbar-brand-centered">
+		<!-- <div class="collapse navbar-collapse" id="navbar-brand-centered">
 			<ul class="nav navbar-nav">
-				<!-- <li><a href="#">Link</a></li>
-				<li><a href="#">Link</a></li> -->
-				<!-- <li class="dropdown">
+				<<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a></li>
+				<<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Personas <span class="caret"></span></a>
 					<ul class="dropdown-menu" role="menu">
 						<li><a href="#">Planes</a></li>
@@ -55,17 +55,114 @@
 						<li class="divider"></li>
 						<li><a href="#">Sucursal Online</a></li>
 					</ul>
-				</li> -->
+				</li>
 				<li><a class="fw-semibold" href="#">Planes</a></li>
 				<li><a class="fw-semibold" href="#">Prepago</a></li>
 				<li><a class="fw-semibold" href="#">Internet</a></li>
 				<li><a class="fw-semibold" href="#">Equipos</a></li>
 				<li><a class="fw-semibold" href="#">Sucursal Online</a></li>
 			</ul>
-		</div><!-- /.navbar-collapse -->
+		</div> -->
+		<!-- /.navbar-collapse -->
+	</div>
+</nav>
+	
+	<!-- layout desktop -->
+	<div class="desktop-layout hidden-xs">
+		<div class="desktop-header">
+			<div class="container-tablet">
+				<div class="row">
+					<div class="desktop-headerTitle col-lg-8 col-md-8 col-sm-8 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 ta-center">
+						
+						<!-- esto no me gusta pero... -->
+						<nav class="navbar navbar-default navbar-main hidden-xs" role="navigation">
+	<!-- Brand and toggle get grouped for better mobile display -->
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-brand-centered">
+			<span class="navLabel uc">Menú</span>
+			<figure class="hamburger">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</figure>
+		</button>
+		<!-- wom logo -->
+		<div class="navbar-brand navbar-brand-centered">
+			<a href="index.html" title="">
+				<img src="img/logo-wom.svg" width="80" height="80" >
+			</a>
+		</div>
+		<!-- /.navbar-collapse -->
 	</div>
 </nav>
 
+						
+						<h1 class="uc white">Servicio Técnico</h1>
+						<p>WOMER acá te ayudamos a revisar el estado de reparación de tu equipo en nuestro servicio técnico</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="desktop-content">
+			<div class="container-tablet">
+				<div class="row">
+					
+					<h4 class="uc col-lg-6 col-md-6 col-sm-6 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 morado-plain ta-center">
+						 Tu equipo está en <br>nuestro servicio técnico
+					</h4>
+
+				</div>
+				<div class="row">
+					<div class="col-lg-7 col-md-7 col-sm-7 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 personas-serviciotecnico-bg">
+
+						<p class="nopadding fw-semibold pl-20 mb-20" style="width: 62%; margin-left: auto; margin-right: auto; color: #720184;">Estado del proceso:</p>
+
+						<div class="servicio-tecnico-timeline">
+							<ul>
+								<li class="complete">
+									<i class="fa fa-check-circle"></i>
+									<h6 class="nomargin nopadding uc mb-15">Ingreso de tu equipo</h6>
+									<p class="nomargin nopadding morado-plain mb-10"><i class="fa fa-calendar"></i> 22 Junio 2016</p>
+									<p class="nomargin nopadding morado-plain mb-10"><i class="fa fa-map-marker"></i> Sucursal Rosas</p>
+									<button class="btn btn-primary btn-xs white fw-normal">Ver en el mapa</button>
+								</li>
+
+								<li class="complete">
+									<i class="fa fa-check-circle"></i>
+									<h6 class="nomargin nopadding uc">En ruta a servicio</h6>
+									<p class="nomargin nopadding morado-plain"><i class="fa fa-calendar"></i> 4 Agosto 2016</p>
+								</li>
+
+								<li class="complete">
+									<i class="fa fa-check-circle"></i>
+									<h6 class="nomargin nopadding uc">Servicio Técnico</h6>
+									<p class="nomargin nopadding morado-plain"><i class="fa fa-calendar"></i> 22 Junio 2016</p>
+								</li>
+
+								<li>
+									<i class="fa fa-circle-o"></i>
+									<h6 class="nomargin nopadding uc">En ruta a sucursal</h6>
+									<p class="nomargin nopadding"><i class="fa fa-calendar"></i> Por confirmar</p>
+								</li>
+
+								<li>
+									<i class="fa fa-circle-o"></i>
+									<h6 class="nomargin nopadding uc">Retira tu equipo</h6>
+									<p class="nomargin nopadding"><i class="fa fa-calendar"></i> Por confirmar</p>
+									<button class="btn btn-disabled btn-xs white fw-normal">Ver en el mapa</button>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- layout movil -->
+	<div class="visible-xs">
 	<header>          
 		<div class="bg-modulo modulo-pagofacil">
 			<div class="container">
@@ -74,11 +171,11 @@
 			</div>
 		</div>
 	</header>
-
-	<div class="container">
+	</div>
+	<div class="container visible-xs">
 		<div class="row">
 			<div class="col-xs-12">
-				<h4 class="morado-plain ta-center uc nomargin nopadding">Estado del proceso</h4>
+				<h4 class="morado-plain ta-center fw-semibold uc nomargin nopadding">Estado del proceso</h4>
 				<br>
 			</div>
 		</div>
@@ -90,7 +187,7 @@
 						<h6 class="nomargin nopadding uc">Ingreso de tu equipo</h6>
 						<p class="nomargin nopadding morado-plain"><i class="fa fa-calendar"></i> 22 Junio 2016</p>
 						<p class="nomargin nopadding morado-plain"><i class="fa fa-map-marker"></i> Sucursal Rosas</p>
-						<p class="nomargin nopadding"><a href="#" class="btn btn-default btn-sm">Ver en el mapa</a></p>
+						<button class="btn btn-primary btn-xs white fw-normal">Ver en el mapa</button>
 					</li>
 
 					<li class="complete">
@@ -103,8 +200,6 @@
 						<i class="fa fa-check-circle"></i>
 						<h6 class="nomargin nopadding uc">Servicio Técnico</h6>
 						<p class="nomargin nopadding morado-plain"><i class="fa fa-calendar"></i> 22 Junio 2016</p>
-						<p class="nomargin nopadding morado-plain"><i class="fa fa-map-marker"></i> Sucursal Rosas</p>
-						<p class="nomargin nopadding"><a href="#" class="btn btn-default btn-sm">Ver en el mapa</a></p>
 					</li>
 
 					<li>
@@ -117,7 +212,7 @@
 						<i class="fa fa-circle-o"></i>
 						<h6 class="nomargin nopadding uc">Retira tu equipo</h6>
 						<p class="nomargin nopadding"><i class="fa fa-calendar"></i> Por confirmar</p>
-						<p class="nomargin nopadding"><a href="#" class="btn btn-default btn-sm disabled">Ver en el mapa</a></p>
+						<button class="btn btn-disabled btn-xs white fw-normal">Ver en el mapa</button>
 					</li>
 				</ul>
 			</div>
@@ -126,7 +221,7 @@
 		<div class="row">
 			<div class="col-xs-12 ta-center mt-20">
 				<p class="nopadding"><a href="#" class="btn btn-text fw-normal" style="text-decoration: underline;">Ir a servicio técnico</a></p>
-				<p class="nopadding"><button class="btn btn-default btn-lg btn-primary morado-chicle-bg">Ir a WOM.cl</button></p>
+				<p class="nopadding"><button class="btn btn-default btn-lg fw-semibold btn-primary morado-chicle-bg">Ir a WOM.cl</button></p>
 			</div>
 		</div>
 	</div>

@@ -4,127 +4,286 @@
 {% block content %}
 
 	{% include "partials/navbar.html" %}
-
-	{% include "partials/header-centro-de-ayuda.html" %}
-
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-12">
-				<h4 class="ta-center morado-plain uc fw-semibold fs-large">Puedo darte lo que necesitas</h4>
-				<form action="#">
-					<div class="form-group">
-						<input type="text" class="form-control centro-ayuda-search centro-ayuda-search-alt autocenter" placeholder="Ingresa tu pregunta...">
+	
+	<!-- layout desktop -->
+	<div class="desktop-layout hidden-xs">
+		<div class="desktop-header">
+			<div class="container-tablet">
+				<div class="row">
+					<div class="desktop-headerTitle col-lg-8 col-md-8 col-sm-8 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 ta-center">
+						{% include "partials/navbar-desktop-inner.html" %}
+						<h1 class="uc white">Centro de Ayuda</h1>
+						<p>Encuentra en cada sección preguntas frecuentes con nuestros servicios</p>
 					</div>
-				</form>
+				</div>
 			</div>
 		</div>
-		<div class="row centro-ayuda-welcome">
-			<div class="col-xs-8">
-				<p class="fw-normal">Cuéntame tu duda y te enseño. Nuestros clientes me recomiendan para resolver cachitos de configuración de tu celu, entre otras cosas.</p>
-			</div>
-			<div class="centro-ayuda-robo col-xs-12">
-				<img class="icon-flaite" src="img/icons/ico-flaite.svg" alt="">
-				<p class="fw-semibold">¿Te robaron el celu? ¿Se te perdió? Rápido, comunicate con nosotros.</p>
-			</div>
-		</div>
-	</div>
 
-	<div class="morado-plain-bg">
-		<div class="container">
-			<div class="row">
-				<h4 class="white uc ta-center">ENCUENTRA EN CADA SECCIÓN PREGUNTAS FRECUENTES SOBRE NUESTROS SERVICIOS</h4>
-					<ul class="centro-ayuda-navmap">
-						<li class="wow animated fadeInUp">
-							<a href="#">
-								<img src="img/centro-de-ayuda/ico-telefoniamovil.svg" alt="" class="icon">
-								<h5 class="uc">Telefonía Móvil</h5>
-								<p>Conoce lo esencial sobre planes, prepago, roaming e internet.</p>
-							</a>
-						</li>
-						<li class="wow animated fadeInUp">
-							<a href="#">
-								<img src="img/centro-de-ayuda/ico-navegacion.svg" alt="" class="icon">
-								<h5 class="uc">Navegación</h5>
-								<p>Encuentra info sobre red 3G y 4G, señal y cobertura de WOM.</p>
-							</a>
-						</li>
-						<li class="wow animated fadeInUp">
-							<a href="#">
-								<img src="img/centro-de-ayuda/ico-portabilidad.svg" alt="" class="icon">
-								<h5 class="uc">Portabilidad</h5>
-								<p>Resuelve dudas de portabilidad para planes y prepago.</p>
-							</a>
-						</li>
-						<li class="wow animated fadeInUp">
-							<a href="#">
-								<img class="icon" src="img/centro-de-ayuda/ico-configequipos.svg" alt="">
-								<h5 class="uc">Configuración de Equipos</h5>
-								<p>Configura tus equipos celulares y equipos de Wifi Móvil.</p>
-							</a>
-						</li>
-						<li class="wow animated fadeInUp">
-							<a href="#">
-								<img class="icon" src="img/centro-de-ayuda/ico-serviciotecnico.svg" alt="">
-								<h5 class="uc">Servicio Técnico</h5>
-								<p>Soluciona fallas de configuración o bloqueos en tu celular.</p>
-							</a>
-						</li>
-						<li class="wow animated fadeInUp">
-							<a href="#">
-								<img class="icon" src="img/centro-de-ayuda/ico-sucursalonline.svg" alt="">
-								<h5 class="uc">Sucursal Online</h5>
-								<p>Aprende a administrar tu cuenta y tus servicios.</p>
-							</a>
-						</li>
-					</ul>	
+		<div class="centro-de-ayuda-welcome-desktop fullwidth-slab">
+			<div class="container">
+				<div class="row mt-40" style="display: flex;">
+					<div class="col-lg-5 col-md-5 col-sm-5 col-lg-offset-2 col-md-offset-2 col-sm-offset-2">
+						<h4 class="uc nopadding">Puedo darte lo que necesitas</h4>
+						<form action="#" style="margin-bottom: 0; padding-bottom: 0;">
+							<div class="form-group ">
+								<input type="text" class="form-control centro-ayuda-search autocenter" placeholder="Ingresa tu pregunta...">
+							</div>
+							<p class="fs-small">Cuéntame tu duda y te enseño. Nuestros clientes me recomiendan para resolver cachitos de configuración de tu celu, entre otras cosas.</p>
+						</form>
+					</div>
+					<div class="personaImage col-lg-5 col-md-5 col-sm-5">
+					</div>
+				</div>
 			</div>
 		</div>
+
+		<div class="centro-de-ayuda-celrobado-ribbon">
+			<div class="holder col-lg-4 col-md-4 col-sm-4 col-lg-offset-4 col-md-offset-4 col-sm-offset-4">
+				<a href="#">
+					<img class="icon-flaite" src="img/icons/ico-flaite.svg" alt="">
+					<p class="fs-small">¿Te robaron el celu? ¿Se te perdió?</p>
+					<p class="fs-small">Rápido, comunícate con nosotros.</p>
+				</a>
+			</div>
+		</div>
+
+		<hr class="separador-home">
+
+		<div class="centro-ayuda-home-desktop">
+			
+			<h3 class="uc ta-center lineheight120" style="color: #720184;">ENCUENTRA EN CADA SECCIÓN PREGUNTAS <br> FRECUENTES SOBRE NUESTROS SERVICIOS</h3>
+
+			<div class="container cardsContainer">
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-4 ta-center">
+						<div class="item wow  fadeInUp animated">
+							<img src="img/home/ico-equipos-desktop.png" alt="" class="ico">
+							<h5 class="nopadding uc"><a href="#">Telefonía Móvil</a></h5>
+							<p class="nomargin nopadding fs-small lineheight120">Conoce lo esencial sobre planes, prepago, roaming e internet.</p>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 ta-center">
+						<div class="item wow  fadeInUp animated" data-wow-offset="200">
+							<img src="img/home/ico-planes-desktop.png" alt="" class="ico">
+							<h5 class="nopadding uc"><a href="#">Navegación</a></h5>
+							<p class="nomargin nopadding fs-small lineheight120">Encuentra info sobre red 3G y 4G, señal y cobertura de WOM.</p>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 ta-center">
+						<div class="item wow  fadeInUp animated" data-wow-offset="350">
+							<img src="img/home/ico-sucursales-desktop.png" alt="" class="ico">
+							<h5 class="nopadding uc"><a href="#">Portabilidad</a></h5>
+							<p class="nomargin nopadding fs-small lineheight120">Resuelve dudas de portabilidad para planes y prepago.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row mb-40">
+					<div class="col-lg-4 col-md-4 col-sm-4 ta-center">
+						<div class="item wow  fadeInUp animated">
+							<img src="img/home/ico-desktop-configuracion.png" alt="" class="ico">
+							<h5 class="nopadding uc"><a href="#">Configuración</a></h5>
+							<p class="nomargin nopadding fs-small lineheight120">Configura tus equipos celulares y equipos de Wifi Móvil.</p>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 ta-center">
+						<div class="item wow  fadeInUp animated" data-wow-offset="200">
+							<img src="img/home/ico-desktop-serviciotecnico.png" alt="" class="ico">
+							<h5 class="nopadding uc"><a href="#">Servicio Técnico</a></h5>
+							<p class="nomargin nopadding fs-small lineheight120">Soluciona fallas de configuración o bloqueos en tu celular.</p>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 ta-center">
+						<div class="item wow  fadeInUp animated" data-wow-offset="350">
+							<img src="img/home/ico-desktop-sucursalonline.png" alt="" class="ico">
+							<h5 class="nopadding uc"><a href="#">Sucursal Online</a></h5>
+							<p class="nomargin nopadding fs-small lineheight120">Aprende a administrar tu cuenta y tus servicios.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container centroayuda-bottom-desktop">
+				<div class="row">
+					<div class="col-sm-4 col-sm-offset-2 centro-ayuda-faq">
+						<h4 class="uc ta-center morado-plain">Top 5 Preguntas Frecuentes</h4>
+						<ul>
+							<li class="wow fadeInUp animated">
+								<a href="#" class="fw-normal">
+									<span>1</span> <p>¿Cómo puedo cambiar mi equipo?</p>
+								</a>
+							</li>
+							<li class="wow fadeInUp animated">
+								<a href="#" class="fw-normal">
+									<span>2</span> <p>¿Cuáles son los requisitos para contratar un plan?</p>
+								</a>
+							</li>
+							<li class="wow fadeInUp animated">
+								<a href="#" class="fw-normal"><span>3</span> <p>¿Necesito cambiar el chip de mi equipo para navegar en 4G?</p>
+								</a>
+							</li>
+							<li class="wow fadeInUp animated"><a href="#" class="fw-normal"><span>4</span> <p>¿Puedo renovar mi equipo antes de los 18 meses de arriendo?</p></a></li>
+							<li class="wow fadeInUp animated"><a href="#" class="fw-normal"><span>5</span> <p>¿Que son los Gigas?</p></a></li>
+						</ul>
+					</div>
+					<div class="col-sm-5 centro-ayuda-social">
+						<h4 class="uc ta-center morado-plain fw-semibold">Que no te la cuenten, <br>Síguenos!</h4>
+						<ul>
+							<li class="wow  fadeInUp">
+								<a href="#">
+									<i class="fa fa-facebook"></i> Concursos y Promos
+								</a>
+							</li>
+							<li class="wow  fadeInUp">
+								<a href="#">
+									<i class="fa fa-twitter"></i> Ayuda y Contingencia
+								</a>
+							</li>
+							<li class="wow  fadeInUp">
+								<a href="#">
+									<i class="fa fa-instagram"></i> Selfies dándolo todo
+								</a>
+							</li>
+							<li class="wow  fadeInUp animated">
+								<a href="#">
+									<i class="fa fa-youtube"></i> Mira la revolución
+								</a>
+							</li>
+							<li class="wow  fadeInUp animated">
+								<a href="#">
+									<i class="fa fa-linkedin"></i> Buscamos talentos
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
 	</div>
 	
-	<div class="centro-ayuda-faq">
-		<h4 class="uc ta-center morado-plain fs-large fw-semibold">Top 5 Preguntas Frecuentes</h4>
-		<ul>
-			<li class="wow animated fadeInUp">
-				<a href="#" class="fw-normal"><span>1</span> ¿Cómo puedo cambiar mi equipo?</a>
-			</li>
-			<li class="wow animated fadeInUp"><a href="#" class="fw-normal"><span>2</span> ¿Cuáles son los requisitos para contratar un plan?</a></li>
-			<li class="wow animated fadeInUp"><a href="#" class="fw-normal"><span>3</span> ¿Necesito cambiar el chip de mi equipo para navegar en 4G?</a></li>
-			<li class="wow animated fadeInUp"><a href="#" class="fw-normal"><span>4</span> ¿Puedo renovar mi equipo antes de los 18 meses de arriendo?</a></li>
-			<li class="wow animated fadeInUp"><a href="#" class="fw-normal"><span>5</span> ¿Que son los Gigas?</a></li>
-		</ul>
-	</div>
+	<!-- layout mobile -->
+	<div class="visible-xs">
+		{% include "partials/header-centro-de-ayuda.html" %}
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<h4 class="ta-center morado-plain uc fw-semibold fs-large pb-0">Puedo darte lo que necesitas</h4>
+					<form action="#">
+						<div class="form-group ">
+							<input type="text" class="form-control centro-ayuda-search centro-ayuda-search-alt autocenter pb-10 pt-10" placeholder="Ingresa tu pregunta...">
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="row centro-ayuda-welcome">
+				<div class="col-xs-8">
+					<p class="fw-normal lineheight120 mt-10 ">Cuéntame tu duda y te enseño. Nuestros clientes me recomiendan para resolver cachitos de configuración de tu celu, entre otras cosas.</p>
+				</div>
+				<div class="centro-ayuda-robo col-xs-12">
+					<img class="icon-flaite" src="img/icons/ico-flaite.svg" alt="">
+					<p class="lineheight120 mt-10">¿Te robaron el celu? ¿Se te perdió? Rápido, comunicate con nosotros.</p>
+				</div>
+			</div>
+		</div>
 
-	<hr class="separador-home">
+		<div class="morado-bg">
+			<div class="container">
+				<div class="row">
+					<h4 class="white uc ta-center fw-normal">ENCUENTRA EN CADA SECCIÓN PREGUNTAS FRECUENTES SOBRE NUESTROS SERVICIOS</h4>
+						<ul class="centro-ayuda-navmap">
+							<li class="wow animated fadeInUp">
+								<a href="#">
+									<img src="img/centro-de-ayuda/ico-telefoniamovil.svg" alt="" class="icon">
+									<h5 class="uc fw-semibold">Telefonía Móvil</h5>
+									<p>Conoce lo esencial sobre planes, prepago, roaming e internet.</p>
+								</a>
+							</li>
+							<li class="wow animated fadeInUp">
+								<a href="#">
+									<img src="img/centro-de-ayuda/ico-navegacion.svg" alt="" class="icon">
+									<h5 class="uc fw-semibold">Navegación</h5>
+									<p>Encuentra info sobre red 3G y 4G, señal y cobertura de WOM.</p>
+								</a>
+							</li>
+							<li class="wow animated fadeInUp">
+								<a href="#">
+									<img src="img/centro-de-ayuda/ico-portabilidad.svg" alt="" class="icon">
+									<h5 class="uc fw-semibold">Portabilidad</h5>
+									<p>Resuelve dudas de portabilidad para planes y prepago.</p>
+								</a>
+							</li>
+							<li class="wow animated fadeInUp">
+								<a href="#">
+									<img class="icon" src="img/centro-de-ayuda/ico-configequipos.svg" alt="">
+									<h5 class="uc fw-semibold">Configuración de Equipos</h5>
+									<p>Configura tus equipos celulares y equipos de Wifi Móvil.</p>
+								</a>
+							</li>
+							<li class="wow animated fadeInUp">
+								<a href="#">
+									<img class="icon" src="img/centro-de-ayuda/ico-serviciotecnico.svg" alt="">
+									<h5 class="uc fw-semibold">Servicio Técnico</h5>
+									<p>Soluciona fallas de configuración o bloqueos en tu celular.</p>
+								</a>
+							</li>
+							<li class="wow animated fadeInUp">
+								<a href="#">
+									<img class="icon" src="img/centro-de-ayuda/ico-sucursalonline.svg" alt="">
+									<h5 class="uc fw-semibold">Sucursal Online</h5>
+									<p>Aprende a administrar tu cuenta y tus servicios.</p>
+								</a>
+							</li>
+						</ul>	
+				</div>
+			</div>
+		</div>
+		
+		<div class="centro-ayuda-faq">
+			<h4 class="uc ta-center morado-plain fs-large fw-semibold">Top 5 Preguntas Frecuentes</h4>
+			<ul>
+				<li class="wow animated fadeInUp">
+					<a href="#" class="fw-normal"><span>1</span> ¿Cómo puedo cambiar mi equipo?</a>
+				</li>
+				<li class="wow animated fadeInUp"><a href="#" class="fw-normal"><span>2</span> ¿Cuáles son los requisitos para contratar un plan?</a></li>
+				<li class="wow animated fadeInUp"><a href="#" class="fw-normal"><span>3</span> ¿Necesito cambiar el chip de mi equipo para navegar en 4G?</a></li>
+				<li class="wow animated fadeInUp"><a href="#" class="fw-normal"><span>4</span> ¿Puedo renovar mi equipo antes de los 18 meses de arriendo?</a></li>
+				<li class="wow animated fadeInUp"><a href="#" class="fw-normal"><span>5</span> ¿Que son los Gigas?</a></li>
+			</ul>
+		</div>
 
-	<div class="centro-ayuda-social">
-		<h4 class="uc ta-center morado-plain fs-large fw-semibold">Que no te la cuenten, ¡Síguenos!</h4>
-		<ul>
-			<li class="wow animated fadeInUp">
-				<a href="#">
-					<i class="fa fa-facebook"></i> Concursos y Promos
-				</a>
-			</li>
-			<li class="wow animated fadeInUp">
-				<a href="#">
-					<i class="fa fa-twitter"></i> Ayuda y Contingencia
-				</a>
-			</li>
-			<li class="wow animated fadeInUp">
-				<a href="#">
-					<i class="fa fa-instagram"></i> Selfies dándolo todo
-				</a>
-			</li>
-			<li class="wow animated fadeInUp">
-				<a href="#">
-					<i class="fa fa-youtube"></i> Mira la revolución
-				</a>
-			</li>
-			<li class="wow animated fadeInUp">
-				<a href="#">
-					<i class="fa fa-linkedin"></i> Buscamos talentos
-				</a>
-			</li>
-		</ul>
+		<hr class="separador-faq">
+
+		<div class="centro-ayuda-social">
+			<h4 class="uc ta-center morado-plain fw-semibold">Que no te la<br>cuenten, ¡Síguenos!</h4>
+			<ul>
+				<li class="wow animated fadeInUp">
+					<a href="#">
+						<i class="fa fa-facebook"></i> Concursos y Promos
+					</a>
+				</li>
+				<li class="wow animated fadeInUp">
+					<a href="#">
+						<i class="fa fa-twitter"></i> Ayuda y Contingencia
+					</a>
+				</li>
+				<li class="wow animated fadeInUp">
+					<a href="#">
+						<i class="fa fa-instagram"></i> Selfies dándolo todo
+					</a>
+				</li>
+				<li class="wow animated fadeInUp">
+					<a href="#">
+						<i class="fa fa-youtube"></i> Mira la revolución
+					</a>
+				</li>
+				<li class="wow animated fadeInUp">
+					<a href="#">
+						<i class="fa fa-linkedin"></i> Buscamos talentos
+					</a>
+				</li>
+			</ul>
+		</div>
 	</div>
 
 </div>

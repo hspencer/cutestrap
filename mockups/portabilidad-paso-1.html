@@ -21,7 +21,7 @@
   <!-- You write code for this content block in another file -->
   
 
-<nav class="navbar navbar-default navbar-main navbar-centered" role="navigation">
+	<nav class="navbar navbar-default navbar-main navbar-centered visible-xs" role="navigation">
 	<!-- Brand and toggle get grouped for better mobile display -->
 	<div class="navbar-header">
 
@@ -41,11 +41,11 @@
 			</a>
 		</div>
 		<!-- Collect the nav links, forms, and other content for toggling -->
-		<div class="collapse navbar-collapse" id="navbar-brand-centered">
+		<!-- <div class="collapse navbar-collapse" id="navbar-brand-centered">
 			<ul class="nav navbar-nav">
-				<!-- <li><a href="#">Link</a></li>
-				<li><a href="#">Link</a></li> -->
-				<!-- <li class="dropdown">
+				<<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a></li>
+				<<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Personas <span class="caret"></span></a>
 					<ul class="dropdown-menu" role="menu">
 						<li><a href="#">Planes</a></li>
@@ -55,30 +55,64 @@
 						<li class="divider"></li>
 						<li><a href="#">Sucursal Online</a></li>
 					</ul>
-				</li> -->
+				</li>
 				<li><a class="fw-semibold" href="#">Planes</a></li>
 				<li><a class="fw-semibold" href="#">Prepago</a></li>
 				<li><a class="fw-semibold" href="#">Internet</a></li>
 				<li><a class="fw-semibold" href="#">Equipos</a></li>
 				<li><a class="fw-semibold" href="#">Sucursal Online</a></li>
 			</ul>
-		</div><!-- /.navbar-collapse -->
+		</div> -->
+		<!-- /.navbar-collapse -->
 	</div>
 </nav>
 
-<header>
+<div class="desktop-layout hidden-xs">
+	<div class="desktop-header">
+		<div class="container-tablet">
+			<div class="row">
+				<div class="desktop-headerTitle col-lg-8 col-md-8 col-sm-8 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 ta-center">
+					<nav class="navbar navbar-default navbar-main hidden-xs" role="navigation">
+	<!-- Brand and toggle get grouped for better mobile display -->
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-brand-centered">
+			<span class="navLabel uc">Menú</span>
+			<figure class="hamburger">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</figure>
+		</button>
+		<!-- wom logo -->
+		<div class="navbar-brand navbar-brand-centered">
+			<a href="index.html" title="">
+				<img src="img/logo-wom.svg" width="80" height="80" >
+			</a>
+		</div>
+		<!-- /.navbar-collapse -->
+	</div>
+</nav>
+
+					<h1 class="uc white">Portabilidad</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="visible-xs">
+	<header>
 	<div class="bg-modulo-short modulo-portabilidad">
 		<div class="container">
 			<h2 class="ta-center white fw-semibold uc pt-80" style="font-size: 43px;">Portabilidad</h2>
 		</div>
 	</div>		
 </header>
-
-		<h3 class="uc fw-semibold ta-center nopadding nomargin mb-10">Prepago a prepago</h3>
-	</div>
 </div>
+
 <div class="container">
-	<ul id="stepper_portabilidad">
+	<h3 class="uc ta-center nopadding nomargin mb-10 morado-plain">Prepago a prepago</h3>
+	<ul id="stepper_portabilidad" class="mt-40 hidden-xs">
 		<li class="stepperLED-paso1 active"><span>1</span></li>
 		<li class="stepperLED-paso2"><span>2</span></li>
 		<li class="stepperLED-paso3"><span>3</span></li>
@@ -87,21 +121,26 @@
 	</ul>
 </div>
 
-<div id="camposvacios" class="alert alert-danger" role="alert" style="display: none;">
-	<strong>Uno o más campos están vacíos</strong>. Recuerda que toda la información es necesaria.
+<div class="container">
+	<div class="row">
+		<div class="col-lg-6 col-md-6 col-sm-6 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 mt-40">
+			<div id="camposvacios" class="alert alert-danger" role="alert" style="display: none;">
+				<strong>Uno o más campos están vacíos</strong>. Recuerda que toda la información es necesaria.
+			</div>	
+		</div>
+	</div>
 </div>
 
-<div class="container pl-30 pr-30">
+<div class="container pl-30 pr-30 mt-40">
 	<div class="row">
-		<div class="col-sm-12">
+		<div class="col-lg-8 col-md-8 col-sm-8 col-lg-offset-2 col-md-offset-2 col-sm-offset-2">
 			<form id="portateForm" class="nopadding">
 				<div id="portateForm-paso1" class="formPaso-stepper" data-nextStep="paso2" style="display: block;">
 
-					<h4 class="fw-semibold uc mb-10 nopadding">Ingresa tus datos</h4>
 
-					<div id="captcha" class="mb-20">
-						<p class="nopadding">Clic en <span class="skew">el candado</span> para continuar</p>
-						<p class="nopadding nomargin">
+					<div id="captcha" class="mb-20 ta-center">
+						<small class="nopadding">Clic en <span class="skew">el candado</span> para continuar</small>
+						<p class="nopadding mt-10">
 							<a href="#" class="captchaLink">
 								<i class="fa fa-music"></i>
 							</a>
@@ -120,33 +159,41 @@
 						</p>
 					</div>
 
+					<div class="row">
+						<div class="col-sm-6 col-sm-offset-2 col-xs-12">
+							<h4 class="fw-semibold uc mb-10 nopadding morado-plain">Ingresa tus datos</h4>
 
-					<div class="form-group">
-						<label class="select fw-normal">
-							<select>
-								<option disabled="disabled" selected="selected">Compañia actual</option>
-								<option>Option 1</option>
-								<option>Option 2</option>
-								<option>Option 3</option>
-							</select>
-						</label>
-					</div>
-					<div class="form-group input-effect">
-						<span class="miniLabel">Número de celular</span>
-						<input type="textnumber" class="form-control" id="numerocelular" placeholder="Número de celular" onfocus="$(this).val('569');">
-					</div>
-					<div class="form-group input-effect">
-						<span class="miniLabel">IMEI</span>
-						<input type="text" class="form-control" id="imeicelular" placeholder="IMEI">
-						<p class="help-block fs-small skew">Para obtener el IMEI marca *#06# desde tu celular.</p>
-					</div>
-					<div class="form-group input-effect">
-						<span class="miniLabel">Número de serie</span>
-						<input type="text" class="form-control" id="seriecelular" placeholder="Numero de serie">
-						<p class="help-block fs-small skew">Revisa en la sección ajustes o configuración el número de serie de tu celular.</p>
-					</div>
-					<div class="row ta-center">
-						<p><button type="button" class="btn btn-disabled fw-semibold nextStep">Continuar</button></p>
+							<div class="form-group">
+								<label class="select fw-normal">
+									<select>
+										<option disabled="disabled" selected="selected">Compañia actual</option>
+										<option>Option 1</option>
+										<option>Option 2</option>
+										<option>Option 3</option>
+									</select>
+								</label>
+							</div>
+							<div class="form-group input-effect">
+								<span class="miniLabel">Número de celular</span>
+								<input type="textnumber" class="form-control" id="numerocelular" placeholder="Número de celular" onfocus="$(this).val('569');">
+							</div>
+							<div class="form-group input-effect">
+								<span class="miniLabel">IMEI</span>
+								<input type="text" class="form-control" id="imeicelular" placeholder="IMEI">
+								<p class="help-block fs-small skew lineheight120">Para obtener el IMEI marca *#06# desde tu celular.</p>
+							</div>
+							<div class="form-group input-effect">
+								<span class="miniLabel">Número de serie</span>
+								<input type="text" class="form-control" id="seriecelular" placeholder="Numero de serie">
+								<p class="help-block fs-small skew lineheight120">Revisa en la sección ajustes o configuración el número de serie de tu celular.</p>
+							</div>
+							<div class="row ta-center">
+								<p><button type="button" class="btn btn-disabled fw-semibold nextStep">Continuar</button></p>
+							</div>
+						</div>
+						<div class="hidden-xs col-sm-4">
+							<img src="img/banner/persona-home-2.png" alt="" width="250px">
+						</div>
 					</div>
 				</div>
 
@@ -172,7 +219,7 @@
 						<span class="miniLabel">Teléfono</span>
 						<input type="text" class="form-control" id="telefono" placeholder="Teléfono">
 					</div>
-					<h4 class="fw-semibold morado-plain">¿DÓNDE VIVES?</h4>
+					<h4 class="fw-semibold morado-plain ">¿DÓNDE VIVES?</h4>
 					<div class="form-group input-effect">
 						<span class="miniLabel">Dirección</span>
 						<input type="text" class="form-control" id="direccion" placeholder="Dirección">
@@ -258,13 +305,13 @@
 							<input type="text" class="form-control" id="nombre" placeholder="Ingresa el código de verificación">
 						</div>
 							<p><button type="button" class="btn btn-success btn-lg fw-semibold nextStep">Verificar código</button></p>
-							<p><button type="button" class="btn btn-default btn-link fw-semibold notextdecoration" style="color: #ba007c;">Reenviar código de verificación</button></p>
+							<p><button type="button" class="btn btn-default btn-link fw-semibold notextdecoration nopadding nomargin mt--20" style="color: #ba007c;">Reenviar código de verificación</button></p>
 						</div>
 					</div>
 				</div>
 
 				<div id="portateForm-paso4" class="formPaso-stepper" data-nextStep="paso5" style="display: none;">
-					<h4 class="fw-semibold ta-center morado-plain uc mt-20 ">Estas sólo a un paso!</h4>
+					<h4 class="fw-semibold ta-center morado-plain uc mt-20 ">¡Estas sólo a un paso!</h4>
 					<p class="ta-center">Hemos recopilado los pasos necesarios para portarte.</p>
 					
 					<div class="row ta-center mt-20">
@@ -282,11 +329,11 @@
 				<div id="portateForm-paso5" class="formPaso-stepper" style="display: none;">
 					<h4 class="fw-semibold ta-center morado-plain uc mt-20 ">Portabilidad en curso</h4>
 					<div class="row mb-20">
-			          <div class="col-xs-3">
-			             <img src="img/portabilidad/ico-darthvader.svg" alt="">
+			          <div class="col-xs-5">
+			             <img src="img/portabilidad/ico-darthvader.svg" alt="" style="display: inline-block;float: right;margin-top: -10px;margin-right: -10px;">
 			          </div>
-			          <div class="col-xs-9">
-			            <h6 class="morado-plain fw-semibold nomargin nopadding">ABANDONA EL DARKSIDE Y ÚNETE AL LADO DE LA CONVENIENCIA.</h6>
+			          <div class="col-xs-7">
+			            <h6 class="morado-plain fw-semibold nomargin nopadding">ABANDONANDO<br>EL DARK SIDE</h6>
 			          </div>
 			        </div>
 			        <br>

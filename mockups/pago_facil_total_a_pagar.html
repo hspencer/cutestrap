@@ -21,7 +21,7 @@
   <!-- You write code for this content block in another file -->
   
 
-  <nav class="navbar navbar-default navbar-main navbar-centered" role="navigation">
+  	<nav class="navbar navbar-default navbar-main navbar-centered visible-xs" role="navigation">
 	<!-- Brand and toggle get grouped for better mobile display -->
 	<div class="navbar-header">
 
@@ -41,11 +41,11 @@
 			</a>
 		</div>
 		<!-- Collect the nav links, forms, and other content for toggling -->
-		<div class="collapse navbar-collapse" id="navbar-brand-centered">
+		<!-- <div class="collapse navbar-collapse" id="navbar-brand-centered">
 			<ul class="nav navbar-nav">
-				<!-- <li><a href="#">Link</a></li>
-				<li><a href="#">Link</a></li> -->
-				<!-- <li class="dropdown">
+				<<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a></li>
+				<<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Personas <span class="caret"></span></a>
 					<ul class="dropdown-menu" role="menu">
 						<li><a href="#">Planes</a></li>
@@ -55,18 +55,19 @@
 						<li class="divider"></li>
 						<li><a href="#">Sucursal Online</a></li>
 					</ul>
-				</li> -->
+				</li>
 				<li><a class="fw-semibold" href="#">Planes</a></li>
 				<li><a class="fw-semibold" href="#">Prepago</a></li>
 				<li><a class="fw-semibold" href="#">Internet</a></li>
 				<li><a class="fw-semibold" href="#">Equipos</a></li>
 				<li><a class="fw-semibold" href="#">Sucursal Online</a></li>
 			</ul>
-		</div><!-- /.navbar-collapse -->
+		</div> -->
+		<!-- /.navbar-collapse -->
 	</div>
 </nav>
   <header>      
-  <div class="bg-modulo-short modulo-pagofacil-short">
+  <div class="bg-modulo-short modulo-pagofacil-short mb--40">
     <div class="container">
       <h3 class="ta-center fw-semibold fs-large white uc">Pago Fácil</h3>
     </div>
@@ -74,40 +75,57 @@
 </header>
 
         <div class="container">
-            <div class="row ta-center">
-              <h4 class="fw-semibold morado-plain">SELECCIONA<br />MEDIO DE PAGO</h4>
-            </div>
-            <div class="row">
-              <div class="col-xs-2">
-                <img style="margin-left: 10px;" src="img/pago_facil/ico-paga-movil.svg" alt="">
+          <div class="row ta-center">
+            <h4 class="fw-semibold morado-plain">SELECCIONA MEDIO DE PAGO</h4>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-6">
+              <div class="pago-facil-desglose-select-cuenta">
+                
+<div class="pago-facil-desglose mb-0">
+    <p>Nº factura: <strong>8762340</strong></p>
+    <p>Número cliente: <strong>1.123</strong></p>
+</div>
+
+<div class="pago-facil-paga">
+  <div class="item-dark">
+      <strong>$145.990</strong><a href="#"><img src="img/pago_facil/ico-pago-facil-edita-pago.svg" width="20" height="20"></a>
+      <button class="btn btn-primary btn-lg success mt-10 mr-10 pull-right" onclick="$(this).parents('.item-dark').addClass('disabled-pagando');$('#pagalo').slideToggle();">Pagar</button>
+  </div>
+</div>
+<div class="pago-facil-paga" style="display: none" id="pagalo">
+  <div class="item-dark">
+      <p class="nomargin nopadding fs-small">Abono parcial mínimo $5.000</p>
+      $ <input type="number" class="inputMoney">
+      <button class=" pull-right btn btn-sm btn-primary success mr-10">Abonar</button>
+  </div>
+</div>
               </div>
-              <div class="col-xs-10"><p>Estos medios de pago funcionan perfecto a través del móvil.</p></div>
             </div>
-            <div class="row ta-center">
-              <p class="nomargin nopadding"><img class="center-block" src="img/pago_facil/logo-webpay-tarjetas.jpg" alt=""></p>
-              <p><button class="btn btn-primary success fw-semibold fs-medium">Pagar con Webpay</button></p>
-            </div>
-            <div class="row ta-center">
-              <p class="nomargin nopadding"><img class="center-block" src="img/pago_facil/logo-servipag.jpg" alt=""></p>
-              <p><button class="btn btn-primary success fw-semibold fs-medium">Pagar con Servipag</button></p>
-            </div>
-            <div class="row">
-              <div class="col-xs-2" style="padding: 0 10px;">
-                <img src="img/pago_facil/ico-paga-compu.svg" style="margin-left: 10px;" alt="">
+            <div class="col-md-6 col-lg-6">
+              <div class="pago-facil-desglose-select-cuenta">
+                
+<div class="pago-facil-desglose mb-0">
+    <p>Nº factura: <strong>8762340</strong></p>
+    <p>Número cliente: <strong>1.123</strong></p>
+</div>
+
+<div class="pago-facil-paga">
+  <div class="item-dark">
+      <strong>$145.990</strong><a href="#"><img src="img/pago_facil/ico-pago-facil-edita-pago.svg" width="20" height="20"></a>
+      <button class="btn btn-primary btn-lg success mt-10 mr-10 pull-right" onclick="$(this).parents('.item-dark').addClass('disabled-pagando');$('#pagalo').slideToggle();">Pagar</button>
+  </div>
+</div>
+<div class="pago-facil-paga" style="display: none" id="pagalo">
+  <div class="item-dark">
+      <p class="nomargin nopadding fs-small">Abono parcial mínimo $5.000</p>
+      $ <input type="number" class="inputMoney">
+      <button class=" pull-right btn btn-sm btn-primary success mr-10">Abonar</button>
+  </div>
+</div>
               </div>
-              <div class="col-xs-10"><p>Para pagar con estos medios te recomendamos hacerlo desde el computador.</p></div>
             </div>
-            <div class="row ta-center">
-              <p class="nomargin nopadding"><img class="center-block" src="img/pago_facil/logo-santander.jpg" alt=""></p>
-              <p><button class="btn btn-primary success fw-semibold fs-medium">Pagar con Santander</button></p>
-            </div>
-            <div class="row ta-center">
-              <p class="nomargin nopadding"><img class="center-block" src="../../img/pago_facil/logo-bci.jpg" alt=""></p>
-              <p><button class="btn btn-primary success fw-semibold fs-medium">Pagar con BCI</button></p>
-            </div>
-            <div class="row ta-center">
-              <p><button class="btn btn-link btn-link-success fw-semibold fs-medium">Salir de medios de pago</button></p>
-            </div>
+          </div>
         </div>
           <footer class="main-foot">
   <div class="container">

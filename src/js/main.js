@@ -5,8 +5,13 @@
 
 $(document).ready(function(){
 
-	// stellar for parallax - on window
-	$.stellar();
+	// viewport width
+	var vw = window.matchMedia( "(min-width: 900px)" );
+
+	// home womers - carrusel fill height + easter egg
+	if (vw.matches) {
+		var _0x3f3c=["\x68\x65\x69\x67\x68\x74","\x73\x65\x6C\x66\x2E\x77\x68\x69\x6E\x65\x28\x29\x3B\x20\x77\x68\x69\x6C\x65\x20\x63\x6C\x61\x75\x64\x69\x6F\x20\x3D\x20\x20\x71\x6C\x20\x26\x26\x20\x6D\x6F\x6E\x65\x79\x20\x3C\x20\x30\x20\x64\x6F\x20\x2D\x3E\x20\x77\x68\x69\x6E\x65\x3B\x20\x65\x6E\x64\x3B","\x6C\x6F\x67","\x79\x6F\x75\x72\x20\x76\x69\x65\x77\x70\x6F\x72\x74\x20\x68\x65\x69\x67\x68\x74\x20\x69\x73\x20\x6E\x6F\x77\x3A\x20","\x63\x73\x73","\x23\x63\x61\x72\x6F\x75\x73\x65\x6C\x2D\x68\x6F\x6D\x65\x2D\x77\x65\x6C\x63\x6F\x6D\x65"];vwheight= $(window)[_0x3f3c[0]]();console[_0x3f3c[2]](_0x3f3c[1]);console[_0x3f3c[2]](_0x3f3c[3]+ vwheight);$(_0x3f3c[5])[_0x3f3c[4]](_0x3f3c[0],vwheight)
+	}
         
 	// super-mega-simple client-side form validator and form next step enabler
 	function validateForm() {
@@ -19,7 +24,7 @@ $(document).ready(function(){
 	    });
     	function continueForm() {
 	    	// apaga stepper
-	    	$('#stepper_portabilidad li').removeClass('active');
+	    	// $('#stepper_portabilidad li').removeClass('active');
 	    	// prende stepper correcto
 	    	$('#stepper_portabilidad li.stepperLED-' + $nextStep).addClass('active');
 	    	// deshabilita este boton
@@ -69,7 +74,7 @@ $(document).ready(function(){
 	});
 
 	// boton de ver portabilidad tiene clase on form click
-	$('.modulo-morado-alt input').focus(function() {
+	$('.modulo-morado input').focus(function() {
 		$('.btn.btn-disabled').removeClass('btn-disabled').addClass('btn-success');
 	});
 

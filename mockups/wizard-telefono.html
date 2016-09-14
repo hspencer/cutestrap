@@ -21,7 +21,7 @@
   <!-- You write code for this content block in another file -->
   
 
-	<nav class="navbar navbar-default navbar-main navbar-centered" role="navigation">
+		<nav class="navbar navbar-default navbar-main navbar-centered visible-xs" role="navigation">
 	<!-- Brand and toggle get grouped for better mobile display -->
 	<div class="navbar-header">
 
@@ -41,11 +41,11 @@
 			</a>
 		</div>
 		<!-- Collect the nav links, forms, and other content for toggling -->
-		<div class="collapse navbar-collapse" id="navbar-brand-centered">
+		<!-- <div class="collapse navbar-collapse" id="navbar-brand-centered">
 			<ul class="nav navbar-nav">
-				<!-- <li><a href="#">Link</a></li>
-				<li><a href="#">Link</a></li> -->
-				<!-- <li class="dropdown">
+				<<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a></li>
+				<<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Personas <span class="caret"></span></a>
 					<ul class="dropdown-menu" role="menu">
 						<li><a href="#">Planes</a></li>
@@ -55,24 +55,59 @@
 						<li class="divider"></li>
 						<li><a href="#">Sucursal Online</a></li>
 					</ul>
-				</li> -->
+				</li>
 				<li><a class="fw-semibold" href="#">Planes</a></li>
 				<li><a class="fw-semibold" href="#">Prepago</a></li>
 				<li><a class="fw-semibold" href="#">Internet</a></li>
 				<li><a class="fw-semibold" href="#">Equipos</a></li>
 				<li><a class="fw-semibold" href="#">Sucursal Online</a></li>
 			</ul>
-		</div><!-- /.navbar-collapse -->
+		</div> -->
+		<!-- /.navbar-collapse -->
 	</div>
 </nav>
 
-	<header>
+	<header class="visible-xs">
 		<div class="bg-modulo bg-modulo-short modulo-portabilidad">
 			<div class="container">
 				<h3 class="ta-center white fw-semibold uc" style="margin-top: 140px">Busquemos el equipo más conveniente</h3>
 			</div>
 		</div>
 	</header>
+
+	<div class="desktop-layout hidden-xs">
+		<div class="desktop-header">
+			<div class="container-tablet">
+				<div class="row">
+					<div class="desktop-headerTitle col-lg-8 col-md-8 col-sm-8 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 ta-center">
+						<nav class="navbar navbar-default navbar-main hidden-xs" role="navigation">
+	<!-- Brand and toggle get grouped for better mobile display -->
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-brand-centered">
+			<span class="navLabel uc">Menú</span>
+			<figure class="hamburger">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</figure>
+		</button>
+		<!-- wom logo -->
+		<div class="navbar-brand navbar-brand-centered">
+			<a href="index.html" title="">
+				<img src="img/logo-wom.svg" width="80" height="80" >
+			</a>
+		</div>
+		<!-- /.navbar-collapse -->
+	</div>
+</nav>
+
+						<h1 class="uc white">Busquemos el plan más conveniente</h1>
+						<p>Te ayudamos a elegir un plan conveniente junto a un equipo</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	
 	<div id="wizardPlanes">
@@ -101,93 +136,109 @@
 			</div>
 		</div>
 		<div id="wizardPlanes-paso2" class="wizardPlanes-pasos" data-nextStep="paso3" style="display: none;">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12">
-						<h4 class="morado-plain uc fw-semibold nopadding ta-center">Ahora debes elegir tu equipo</h4>
-					</div>
+			<div class="row">
+				<div class="col-xs-12">
+					<h4 class="morado-plain uc fw-semibold nopadding ta-center">Ahora debes elegir tu equipo</h4>
 				</div>
-				<div class="wizard-appendix wizard-telefono-cuantocosto">
-					<div class="wizard-appendix-header">
+			</div>
+			<div class="wizard-appendix wizard-telefono-cuantocosto">
+				<div class="wizard-appendix-header">
+					<div class="container">
 						<div class="row">
-							<div class="col-xs-12">
+							<div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
 								<h5 class="morado-plain fw-semibold nomargin nopadding">Cuota inicial</h5>
 								<p class="nomargin nopadding">¿Cuánto estás dispuesto a pagar?</p>
 							</div>
 						</div>
 					</div>
-					<div class="row wizardGradiente">
-						<div class="col-xs-12 ta-center">
-							<p class="nopadding mt-20"><a class="btn btn-default fw-semibold option" style="display: inline-block;" href="#">Costo 0</a></p>
-							<p class="nopadding"><a class="btn btn-default fw-semibold option" style="display: inline-block;" href="#">Entre $9.990 y $49.990</a></p>
-							<p class="nopadding"><a class="btn btn-default fw-semibold option" style="display: inline-block;" href="#">Entre $49.990 y $149.990</a></p>
-							<p class="nopadding"><a class="btn btn-default fw-semibold option" style="display: inline-block;" href="#">Entre $150.000 y $249.990</a></p>
-							<p class="nopadding"><a class="btn btn-default fw-semibold option" style="display: inline-block;" href="#">Entre $250.000 y $499.990</a></p>
-							<p class="nopadding"><a class="btn btn-default fw-semibold option" style="display: inline-block;" href="#">Sobre $500.000</a></p>
-						</div>
+				</div>
+				<div class="row wizardGradiente">
+					<div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3 ta-center">
+						<p class="nopadding mt-20"><a class="btn btn-default fw-semibold option" style="display: inline-block;" href="#">Costo 0</a></p>
+						<p class="nopadding"><a class="btn btn-default fw-semibold option" style="display: inline-block;" href="#">Entre $9.990 y $49.990</a></p>
+						<p class="nopadding"><a class="btn btn-default fw-semibold option" style="display: inline-block;" href="#">Entre $49.990 y $149.990</a></p>
+						<p class="nopadding"><a class="btn btn-default fw-semibold option" style="display: inline-block;" href="#">Entre $150.000 y $249.990</a></p>
+						<p class="nopadding"><a class="btn btn-default fw-semibold option" style="display: inline-block;" href="#">Entre $250.000 y $499.990</a></p>
+						<p class="nopadding"><a class="btn btn-default fw-semibold option" style="display: inline-block;" href="#">Sobre $500.000</a></p>
 					</div>
 				</div>
-				<div class="wizard-appendix wizard-telefono-quemarca">
-					<div class="wizard-appendix-header">
+			</div>
+			<div class="wizard-appendix wizard-telefono-quemarca">
+				<div class="wizard-appendix-header">
+					<div class="container">
 						<div class="row">
-							<div class="col-xs-12">
+							<div class="col-xs-12col-xs-12 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
 								<h5 class="morado-plain fw-semibold nomargin nopadding">Marca</h5>
 								<p class="nomargin nopadding">¿Qué marca prefieres?</p>
 							</div>
 						</div>
 					</div>
-					<div class="row wizardGradiente">
-						<div class="col-xs-12 ta-center">
-							<p class="nopadding nomargin" style="line-height: 265%;"><a class="btn btn-default fw-semibold option" style="display: inline-block;" href="#">Apple</a> <a class="btn btn-default fw-semibold option" style="display: inline-block;" href="#">Huawei</a> <a class="btn btn-default fw-semibold option" style="display: inline-block;" href="#">Lenovo</a> <a class="btn btn-default fw-semibold option" style="display: inline-block;" href="#">LG</a> <a class="btn btn-default fw-semibold option" style="display: inline-block;" href="#">Motorola</a> <a class="btn btn-default fw-semibold option" style="display: inline-block;" href="#">Samsung</a> <a class="btn btn-default fw-semibold option" style="display: inline-block;" href="#">Verycool</a></p>
+				</div>
+				<div class="row wizardGradiente">
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-12 col-xs-12 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3 ta-center">
+								<p class="nopadding nomargin" style="line-height: 265%;"><a class="btn btn-default fw-semibold option" style="display: inline-block;" href="#">Apple</a> <a class="btn btn-default fw-semibold option" style="display: inline-block;" href="#">Huawei</a> <a class="btn btn-default fw-semibold option" style="display: inline-block;" href="#">Lenovo</a> <a class="btn btn-default fw-semibold option" style="display: inline-block;" href="#">LG</a> <a class="btn btn-default fw-semibold option" style="display: inline-block;" href="#">Motorola</a> <a class="btn btn-default fw-semibold option" style="display: inline-block;" href="#">Samsung</a> <a class="btn btn-default fw-semibold option" style="display: inline-block;" href="#">Verycool</a></p>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="wizard-appendix wizard-telefono-quepantalla">
-					<div class="wizard-appendix-header">
+			</div>
+			<div class="wizard-appendix wizard-telefono-quepantalla">
+				<div class="wizard-appendix-header">
+					<div class="container">
 						<div class="row">
-							<div class="col-xs-12">
+							<div class="col-xs-12 col-xs-12 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
 								<h5 class="morado-plain fw-semibold nomargin nopadding">Pantalla</h5>
 								<p class="nomargin nopadding">¿Qué pantalla prefieres?</p>
 							</div>
 						</div>
 					</div>
-					<div class="row wizardGradiente">
-						<div class="col-xs-3 ta-center">
-							<a href="#" class="option" style="background-color: transparent;">
-								<i class="fa fa-mobile-phone" style="font-size: 3rem; top: 15px;"></i>
-								<span class="smallLabel fs-small">3.9"</span>
-							</a>
-						</div>
-						<div class="col-xs-3 ta-center">
-							<a href="#" class="option" style="background-color: transparent;">
-								<i class="fa fa-mobile-phone" style="font-size: 4rem; top: 10px;"></i>
-								<span class="smallLabel fs-small">4" - 4.9"</span>
-							</a>
-						</div>
-						<div class="col-xs-3 ta-center">
-							<a href="#" class="option" style="background-color: transparent;">
-								<i class="fa fa-mobile-phone" style="font-size: 5rem; top: 5px;"></i>
-								<span class="smallLabel fs-small">5" - 5.9"</span>
-							</a>
-						</div>
-						<div class="col-xs-3 ta-center">
-							<a href="#" class="option" style="background-color: transparent;">
-								<i class="fa fa-mobile-phone" style="font-size: 6rem;"></i>
-								<span class="smallLabel fs-small">6" y más</span>
-							</a>
+				</div>
+				<div class="row wizardGradiente">
+					<div class="container">
+						<div class="row col-xs-12 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
+							<div class="col-xs-3 ta-center">
+								<a href="#" class="option" style="background-color: transparent;">
+									<i class="fa fa-mobile-phone" style="font-size: 3rem; top: 15px;"></i>
+									<span class="smallLabel fs-small">3.9"</span>
+								</a>
+							</div>
+							<div class="col-xs-3 ta-center">
+								<a href="#" class="option" style="background-color: transparent;">
+									<i class="fa fa-mobile-phone" style="font-size: 4rem; top: 10px;"></i>
+									<span class="smallLabel fs-small">4" - 4.9"</span>
+								</a>
+							</div>
+							<div class="col-xs-3 ta-center">
+								<a href="#" class="option" style="background-color: transparent;">
+									<i class="fa fa-mobile-phone" style="font-size: 5rem; top: 5px;"></i>
+									<span class="smallLabel fs-small">5" - 5.9"</span>
+								</a>
+							</div>
+							<div class="col-xs-3 ta-center">
+								<a href="#" class="option" style="background-color: transparent;">
+									<i class="fa fa-mobile-phone" style="font-size: 6rem;"></i>
+									<span class="smallLabel fs-small">6" y más</span>
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="wizard-appendix wizard-telefono-quecamara">
-					<div class="wizard-appendix-header">
+			</div>
+			<div class="wizard-appendix wizard-telefono-quecamara">
+				<div class="wizard-appendix-header">
+					<div class="container">
 						<div class="row">
-							<div class="col-xs-12">
+							<div class="col-xs-12 col-xs-12 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
 								<h5 class="morado-plain fw-semibold nomargin nopadding">Cámara</h5>
 								<p class="nomargin nopadding">¿Cuántos megapíxeles prefieres en tu cámara?</p>
 							</div>
 						</div>
 					</div>
-					<div class="row wizardGradiente">
+				</div>
+				<div class="row wizardGradiente">
+					<div class="row col-xs-12 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
 						<div class="col-xs-3 ta-center">
 							<a href="#" class="option" style="background-color: transparent;">
 								<i class="fa fa-camera" style="font-size: 2rem; top: 15px;"></i>
@@ -214,53 +265,59 @@
 						</div>
 					</div>
 				</div>
-				<div class="wizard-appendix wizard-telefono-cuantamemoria">
-					<div class="wizard-appendix-header">
+			</div>
+			<div class="wizard-appendix wizard-telefono-cuantamemoria">
+				<div class="wizard-appendix-header">
+					<div class="container">
 						<div class="row">
-							<div class="col-xs-12">
+							<div class="col-xs-12 col-xs-12 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
 								<h5 class="morado-plain fw-semibold nomargin nopadding">Memoria</h5>
 								<p class="nomargin nopadding">¿Cuánta capacidad en memoria quieres?</p>
 							</div>
 						</div>
 					</div>
-					<div class="row wizardGradiente">
-						<div class="col-xs-3 ta-center">
-							<a href="#" class="option" style="background-color: transparent;">
-								<i class="fa fa-folder-open" style="font-size: 3rem; top: 15px;"></i>
-								<span class="smallLabel fs-small">8GB</span>
-							</a>
-						</div>
-						<div class="col-xs-3 ta-center">
-							<a href="#" class="option" style="background-color: transparent;">
-								<i class="fa fa-folder-open" style="font-size: 4rem; top: 10px;"></i>
-								<span class="smallLabel fs-small">16GB</span>
-							</a>
-						</div>
-						<div class="col-xs-3 ta-center">
-							<a href="#" class="option" style="background-color: transparent;">
-								<i class="fa fa-folder-open" style="font-size: 5rem; top: 5px;"></i>
-								<span class="smallLabel fs-small">32GB</span>
-							</a>
-						</div>
-						<div class="col-xs-3 ta-center">
-							<a href="#" class="option" style="background-color: transparent;">
-								<i class="fa fa-folder-open" style="font-size: 6rem;"></i>
-								<span class="smallLabel fs-small">64GB y más</span>
-							</a>
+				</div>
+				<div class="row wizardGradiente">
+					<div class="container">
+						<div class="row col-xs-12 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
+							<div class="col-xs-3 ta-center">
+								<a href="#" class="option" style="background-color: transparent;">
+									<i class="fa fa-folder-open" style="font-size: 3rem; top: 15px;"></i>
+									<span class="smallLabel fs-small">8GB</span>
+								</a>
+							</div>
+							<div class="col-xs-3 ta-center">
+								<a href="#" class="option" style="background-color: transparent;">
+									<i class="fa fa-folder-open" style="font-size: 4rem; top: 10px;"></i>
+									<span class="smallLabel fs-small">16GB</span>
+								</a>
+							</div>
+							<div class="col-xs-3 ta-center">
+								<a href="#" class="option" style="background-color: transparent;">
+									<i class="fa fa-folder-open" style="font-size: 5rem; top: 5px;"></i>
+									<span class="smallLabel fs-small">32GB</span>
+								</a>
+							</div>
+							<div class="col-xs-3 ta-center">
+								<a href="#" class="option" style="background-color: transparent;">
+									<i class="fa fa-folder-open" style="font-size: 6rem;"></i>
+									<span class="smallLabel fs-small">64GB y más</span>
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="wizardTelefonos-ending">
-					<p class="mt-20 ta-center">
-						<button class="btn btn-lg disabled" onclick="$('#wizardPlanes-paso1').slideUp();$('#wizardPlanes-paso2').slideUp();$('#wizardPlanes-pasofinal').slideToggle();$('html, body').animate({ scrollTop: 0 }, 'slow'); return false;">Encontrar mi equipo</button>
-					</p>
-				</div>
+			</div>
+			<div class="wizardTelefonos-ending">
+				<p class="mt-20 ta-center">
+					<button class="btn btn-lg disabled" onclick="$('#wizardPlanes-paso1').slideUp();$('#wizardPlanes-paso2').slideUp();$('#wizardPlanes-pasofinal').slideToggle();$('html, body').animate({ scrollTop: 0 }, 'slow'); return false;">Encontrar mi equipo</button>
+				</p>
 			</div>
 		</div>
 		<div id="wizardPlanes-pasofinal" style="display: none;">
 			<div class="container">
 				<div class="row">
-					<div class="col-xs-6">
+					<div class="col-xs-6 col-sm-6 col-sm-offset-2 col-md-6 col-lg-6">
 						<h3 class="morado-plain fs-lg fw-semibold nopadding lineheight100">
 							<span class="uc" style="display: block;">Samsung</span>
 							Galaxy S6
@@ -281,7 +338,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="col-xs-6">
+					<div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
 						<img class="wizard-resultado-telefono-img" src="img/banner/wizardPlanes-resultado-telefono.svg" alt="">
 						<button class="btn btn-xs btn-primary fw-semibold">Buscar otro equipo</button>
 					</div>

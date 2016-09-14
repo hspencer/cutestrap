@@ -1,0 +1,122 @@
+{% extends "layout.nunjucks" %}
+{% set title = "Información Personal - Desktop" %}
+
+{% block content %}
+
+	{% include "partials/navbar.html" %}
+
+	<header>
+		<div class="bg-modulo modulo-portabilidad">
+			<div class="container">
+				<h3 class="ta-center white fw-semibold fs-normal uc">Información Personal de Clientes</h3>	
+			</div>
+		</div>
+	</header>
+
+	<div class="areaprivada-holder">
+		<div class="container">
+			<div class="row">
+				<div class="crumbs fs-small">
+					<p class="nomargin nopadding">Estás en: <a href="#">Inicio</a> <i class="fa fa-angle-right"></i> <strong>Mis datos</strong></p>
+				</div>
+				<h3 class="uc morado-plain nomargin nopadding mb-40">Información Personal</h3>
+			</div>
+		</div>
+		<div class="container informacion-personal">
+			<div class="row">
+				<div class="col-lg-4 col-md-4 col-sm-6">
+					<div class="informacion-personal--item">
+						<h5 class="nomargin nopadding text-muted mb-20">Datos Personales</h5>
+						<ul>
+							<li>
+								<p class="fs-small lineheight100">Nombres</p>
+								Vicente Guillermo
+							</li>
+							<li>
+								<p class="fs-small lineheight100">Apellidos</p>
+								Gutiérrez Echeverría
+							</li>
+							<li>
+								<p class="fs-small lineheight100">RUT</p>
+								<span class="numbers">15.342.236-6</span>
+							</li>
+							<hr>
+							<ul>
+								<li>
+									<p class="fs-small lineheight100">Correo Electrónico</p>
+									vicenteguillermo@lycos.com
+								</li>
+							</ul>
+							<hr>
+							<button class="btn btn-success btn-lg width100">Editar correo electrónico</button>
+							<hr>
+							<ul>
+								<li>
+									<p class="fs-small lineheight100">Correo Electrónico de facturación</p>
+									vicenteguillermo@latinmail.com
+								</li>
+							</ul>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-6">
+					<div class="informacion-personal--item">
+						<h5 class="nomargin nopadding text-muted mb-20">Dirección</h5>
+						<ul>
+							<li>
+								<p class="fs-small lineheight100">Calle</p>
+								Avenida Pedro Aguirre Cerda
+							</li>
+							<li class="half-width">
+								<p class="fs-small lineheight100">Número</p>
+								33.456
+							</li>
+							<li class="half-width">
+								<p class="fs-small lineheight100">Departamento</p>
+								131-D
+							</li>
+							<li class="half-width">
+								<p class="fs-small lineheight100">Comuna</p>
+								Arica
+							</li>
+							<li class="half-width">
+								<p class="fs-small lineheight100">Región</p>
+								Arica y Parinacota
+							</li>
+						</ul>
+					</div>
+					<div class="informacion-personal--item pb-5">
+						<ul>
+							<li class="half-width">
+								<p class="lineheight120">Deseas modificar la contraseña de tu cuenta?</p>
+							</li>
+							<li class="half-width">
+								<button class="btn btn-primary btn-lg ml-40 mt--20">Modifica tu contraseña</button>
+							</li>
+						</ul>
+					</div>
+					<div class="informacion-personal--item">
+						<h5 class="nomargin nopadding text-muted mb-20">Ejecutivo WOM de tu cuenta</h5>
+						<ul>
+							<li>
+								<p class="fs-small lineheight100">Nombre</p>
+								Alejandro Rojas Solís
+							</li>
+							<li class="half-width">
+								<p class="fs-small lineheight100">Teléfono</p>
+								+56987736456
+							</li>
+							<li class="half-width">
+								<p class="fs-small lineheight100">Correo Electrónico</p>
+								a.rojas@wom.cl
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+{% include "partials/footer.html" %}
+
+{% endblock %}
