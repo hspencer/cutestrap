@@ -3112,7 +3112,7 @@ $(document).ready(function(){
 	});
 
 	// boton de ver portabilidad tiene clase on form click
-	$('.modulo-morado-alt input').focus(function() {
+	$('.modulo-morado input').focus(function() {
 		$('.btn.btn-disabled').removeClass('btn-disabled').addClass('btn-success');
 	});
 
