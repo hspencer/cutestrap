@@ -26,6 +26,7 @@ Markup:
 .white                   - white text
 .serif                   - Serif text. Bitter font family.
 .uc                      - Text in upper case
+.iblock                  - Inline-block element flow
 
 Styleguide 3.0
 
@@ -71,6 +72,9 @@ Styleguide 3.0
   text-align: right;
 }
 
+.iblock{
+  display: inline-block;
+}
 
 
 /*
@@ -109,6 +113,10 @@ Styleguide 3.1
 
 .white{
   color: $white;
+}
+
+.notexttransform {
+  text-transform: none !important;
 }
 
 

@@ -994,9 +994,17 @@ padding: 2px 4px;
   border-radius: 0;
 }
 
-/*bootstrap modal vPos override*/
+/*bootstrap modal override*/
 .modal .modal-dialog {
   padding-top: 15px;
+}
+
+.modal .modal-title.uc {
+  text-transform: uppercase !important;
+}
+
+.modal .modal-header button.close {
+  color: black;
 }
 
 /* bootstrap core overrides para botones */
@@ -1489,6 +1497,10 @@ button {
 
 #compra-bolsa .modal-header {
   padding-bottom: 0;
+}
+
+#compra-bolsa .fechaslimite .col-xs-6:last-of-type {
+  border-left: 1px solid #CCC;
 }
 
 #compra-bolsa .modal-body {
