@@ -995,10 +995,20 @@ padding: 2px 4px;
   border-radius: 0;
 }
 
+/*bootstrap modal override*/
+.modal .modal-dialog {
+  padding-top: 15px;
+}
+
+.modal .modal-title.uc {
+  text-transform: uppercase !important;
+}
+
+.modal .modal-header button.close {
+  color: black;
+}
 
 /* bootstrap core overrides para botones */
-
-
 .btn-grey {
   background-color: #CCC;
   border-color: transparent;
@@ -1488,6 +1498,10 @@ button {
 
 #compra-bolsa .modal-header {
   padding-bottom: 0;
+}
+
+#compra-bolsa .fechaslimite .col-xs-6:last-of-type {
+  border-left: 1px solid #CCC;
 }
 
 #compra-bolsa .modal-body {
@@ -2155,6 +2169,10 @@ button {
   background-position: center 0px;
   background-size: 100% auto;
   border-bottom: 1px solid #CCC;
+}
+
+.centro-ayuda-satisfaction .btn-primary:first-of-type {
+  margin-right: 3px;
 }
 
 .centro-ayuda-satisfaction .btn.active {
@@ -3215,6 +3233,10 @@ button .icon {
 
   .main-foot {
     /*margin-top: -70px;*/
+  }
+  
+  .home-features-desktop .googleapple img {
+    width: 28%;
   }
 
   .home-features-desktop h3.morado-plain {
