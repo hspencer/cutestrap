@@ -994,10 +994,12 @@ padding: 2px 4px;
   border-radius: 0;
 }
 
+/*bootstrap modal vPos override*/
+.modal .modal-dialog {
+  padding-top: 15px;
+}
 
 /* bootstrap core overrides para botones */
-
-
 .btn-grey {
   background-color: #CCC;
   border-color: transparent;
