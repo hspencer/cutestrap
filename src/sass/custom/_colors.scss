@@ -45,3 +45,66 @@ $white:         #ffffff !default;
 
 $shadow-col:	fade-out($black, .6);
 
+.morado-plain {
+  color: $quaternary;
+}
+.morado-plain-bg {
+  background-color: $quaternary;
+  color: white;
+}
+.morado-bg {
+  background-color: $morado-morado;
+  color: white;
+}
+.gray-2 {
+  color: $gray-2;
+}
+.morado-chicle {
+  color: #ba007c;
+}
+.morado-uva {
+  color: $grape;
+}
+.morado {
+  color: $morado-morado;
+}
+.morado-datos {
+  color: #421441;
+}
+.morado-chicle-bg,
+.modal .modal-dialog .morado-chicle-bg {
+  background-color: #ba007c;
+  border: none;
+  color: white;
+}
+.morado-chicle a {
+  text-decoration: underline;
+}
+.fc-primary {
+  color: $primary;
+}
+.fc-gray3 {
+  color: $gray-3;
+}
+.fc-gray2 {
+  color: $gray-2;
+}
+.dark-red {
+  color: #AE8282;
+}
+.creamy-red {
+  color: #AE8282;
+}
+.morado-subrayado {
+  border-bottom: 2px solid $quaternary;
+  padding-bottom: 5px;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.morado-grande-subrayado {
+  font-size: 2.2rem;
+  border-bottom: 2px solid $quaternary;
+  padding-bottom: 5px;
+}
+

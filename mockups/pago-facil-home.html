@@ -21,7 +21,7 @@
   <!-- You write code for this content block in another file -->
   
 
-	<nav class="navbar navbar-default navbar-main navbar-centered" role="navigation">
+		<nav class="navbar navbar-default navbar-main navbar-centered visible-xs" role="navigation">
 	<!-- Brand and toggle get grouped for better mobile display -->
 	<div class="navbar-header">
 
@@ -67,6 +67,41 @@
 	</div>
 </nav>
 
+	<div class="desktop-layout hidden-xs">
+		<div class="desktop-header">
+			<div class="container-tablet">
+				<div class="row">
+					<div class="desktop-headerTitle col-lg-8 col-md-8 col-sm-8 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 ta-center">
+						<nav class="navbar navbar-default navbar-main hidden-xs" role="navigation">
+	<!-- Brand and toggle get grouped for better mobile display -->
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-brand-centered">
+			<span class="navLabel uc">Menú</span>
+			<figure class="hamburger">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</figure>
+		</button>
+		<!-- wom logo -->
+		<div class="navbar-brand navbar-brand-centered">
+			<a href="index.html" title="">
+				<img src="img/logo-wom.svg" width="80" height="80" >
+			</a>
+		</div>
+		<!-- /.navbar-collapse -->
+	</div>
+</nav>
+
+						<h1 class="uc white">Pago Fácil</h1>
+						<p>De este lado puedes pagar tu cuenta online. Hazla corta con pago fácil de forma rápida y segura para seguir volando en 4G</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="visible-xs">
 	<header>          
 		<div class="bg-modulo modulo-pagofacil mb--40">
 			<div class="container">
@@ -75,19 +110,78 @@
 			</div>
 		</div>
 	</header>
-
-	<div class="formPago-container">
+	</div>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-6 col-sm-offset-1 col-md-6 col-md-offset-1 col-lg-6 col-lg-offset-1">
+				<div class="hidden-xs">
+					<br><br><br><br>
+				</div>
+				<div class="formPago-container">
 		<div class="embed-responsive embed-responsive-16by9">
 		      <iframe class="embed-responsive-item" src="pago-facil-form.html"></iframe>
 		</div>
+	</div>		
+			</div>
+			<div class="hidden-xs col-sm-5 col-md-5 col-lg-5">
+				<img src="img/banner/persona-home-2.png" alt="">
+			</div>
+		</div>
 	</div>
 
-	<div class="container">
+	<div class="fullwidth-slab hidden-xs" style="margin-top: -280px; position: relative;">
+		<div class="container">
+			<div class="row">
+				<h4 class="uc ta-center">Otras formas de pago</h4>
+			</div>
+			<div class="row">
+				<div class="col-sm-4 col-md-4 col-lg-4">
+					<img src="img/pago_facil/ico-sucursal.svg" alt="" style="float: left; margin-right: 15px; margin-bottom: 40px;">
+					<div style="overflow: hidden;">
+						<h6 class="morado-plain fw-semibold nomargin nopadding uc">Sucursal Online</h6>
+						<p>Revisa tu boleta y paga desde tu cuenta.</p>
+					</div>
+				</div>
+				<div class="col-sm-4 col-md-4 col-lg-4">
+					<img src="img/pago_facil/ico-pago-online.svg" alt="" style="float: left; margin-right: 15px; margin-bottom: 40px;">
+					<div style="overflow: hidden;">
+						<h6 class="morado-plain fw-semibold nomargin nopadding uc">Pagos Online</h6>
+						<p>Paga de manera segura desde servipag.cl, sencillito.com o presto.cl.</p>
+					</div>
+				</div>
+				<div class="col-sm-4 col-md-4 col-lg-4">
+					<img src="img/pago_facil/ico-pago-online.svg" alt="" style="float: left; margin-right: 15px; margin-bottom: 40px;">
+					<div style="overflow: hidden;">
+						<h6 class="morado-plain fw-semibold nomargin nopadding uc">Pagos Automáticos</h6>
+						<p>Paga tus cuentas automáticamente con tarjeta de crédito (PAT)</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container pb-20">
+			<div class="row mt-20">
+				<h4 class="uc ta-center">Pagos Presenciales</h4>
+			</div>
+			<div class="row mb-40">
+				<div class="col-sm-4 col-sm-offset-1 col-md-4 col-md-offset-1 col-lg-4 col-lg-offset-1">
+					<p>WOMER cancela tus cuentas de forma electrónica en los siguientes bancos:</p>
+					<img src="img/pago_facil/bancos-1-black.svg" alt="">
+				</div>
+				<div class="col-sm-4 col-sm-offset-2 col-md-4 col-md-offset-2 col-lg-4 col-lg-offset-2">
+					<p>WOMER cancela tus cuentas de forma electrónica en las siguientes cajas::</p>
+					<img src="img/pago_facil/bancos-2-black.svg" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container visible-xs">
 		<div class="row ta-center">
 	<h4 class="fw-normal fs-medium morado-plain">OTRAS FORMAS DE PAGO</h4>
 </div>
 
-<div class="row marginbottom">
+<div class="row mb-15">
 	<div class="col-xs-2">
 		<img src="img/pago_facil/ico-sucursal.svg" alt="">
 	</div>
@@ -96,7 +190,7 @@
 		<p>Revisa tu boleta y paga desde tu cuenta.</p>
 	</div>
 </div>
-<div class="row marginbottom">
+<div class="row mb-15">
 	<div class="col-xs-2">
 		<img src="img/pago_facil/ico-pago-online.svg" alt="">
 	</div>
@@ -105,7 +199,7 @@
 		<p>Paga de manera segura desde servipag.com, sencillito.com y presto.cl</p>
 	</div>
 </div>
-<div class="row marginbottom">
+<div class="row mb-15">
 	<div class="col-xs-2">
 		<img src="img/pago_facil/ico-pago-online.svg" alt="">
 	</div>
@@ -122,12 +216,12 @@
 	<div class="col-xs-12 item">
 		<h6 class="fw-semibold pl-20">BANCOS</h6>
 		<small class="pl-20 pr-20">WOMER cancela tus cuentas de forma electrónica en los siguientes bancos:</small>
-		<img class="svg-blanco margintop p-10 pr-20" src="../wom-base/img/pago_facil/bancos-1.svg" alt="">
+		<img class="svg-blanco mt-15 p-10 pr-20" src="../wom-base/img/pago_facil/bancos-1.svg" alt="">
 	</div>
 	<div class="col-xs-12 item">
 		<h6 class="fw-semibold pl-20">CAJAS</h6>
 		<small class="pl-20 pr-20">WOMER cancela tus cuentas de forma electrónica en las siguientes cajas:</small>
-		<img class="svg-blanco margintop p-10 pr-20" src="../wom-base/img/pago_facil/bancos-2.svg" alt="">
+		<img class="svg-blanco mt-15 p-10 pr-20" src="../wom-base/img/pago_facil/bancos-2.svg" alt="">
 	</div>
 </div>
 	</div>

@@ -21,7 +21,7 @@
   <!-- You write code for this content block in another file -->
   
 
-	<nav class="navbar navbar-default navbar-main navbar-centered" role="navigation">
+		<nav class="navbar navbar-default navbar-main navbar-centered visible-xs" role="navigation">
 	<!-- Brand and toggle get grouped for better mobile display -->
 	<div class="navbar-header">
 
@@ -67,7 +67,7 @@
 	</div>
 </nav>
 
-	<header>
+	<header class="visible-xs">
 		<div class="bg-modulo bg-modulo-short modulo-portabilidad">
 			<div class="container">
 				<h3 class="ta-center white fw-semibold uc" style="margin-top: 140px">Busquemos el plan más conveniente</h3>
@@ -76,12 +76,46 @@
 		</div>
 	</header>
 
+	<div class="desktop-layout hidden-xs">
+		<div class="desktop-header">
+			<div class="container-tablet">
+				<div class="row">
+					<div class="desktop-headerTitle col-lg-8 col-md-8 col-sm-8 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 ta-center">
+						<nav class="navbar navbar-default navbar-main hidden-xs" role="navigation">
+	<!-- Brand and toggle get grouped for better mobile display -->
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-brand-centered">
+			<span class="navLabel uc">Menú</span>
+			<figure class="hamburger">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</figure>
+		</button>
+		<!-- wom logo -->
+		<div class="navbar-brand navbar-brand-centered">
+			<a href="index.html" title="">
+				<img src="img/logo-wom.svg" width="80" height="80" >
+			</a>
+		</div>
+		<!-- /.navbar-collapse -->
+	</div>
+</nav>
+
+						<h1 class="uc white">Busquemos el plan más conveniente</h1>
+						<p>Te ayudamos a elegir un plan conveniente junto a un equipo</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	
 	<div id="wizardPlanes">
 		<div class="container">
-			<div id="wizardPlanes-paso1" class="wizardPlanes-pasos" data-nextStep="paso2" style="display: block;"">
+			<div id="wizardPlanes-paso1" class="wizardPlanes-pasos col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1" data-nextStep="paso2" style="display: block;"">
 				<div class="row">
-					<div class="col-xs-12">
+					<div class="ta-center">
 						<h4 class="morado-plain uc fw-semibold nopadding">¿Qué tipo de WOMER eres?</h4>
 						<p class="nopadding">Selecciona tu tipo de WOMER</p>
 					</div>
@@ -113,298 +147,298 @@
 					</div>
 				</div>
 			</div>
-			<div id="wizardPlanes-paso2" class="wizardPlanes-pasos" data-nextStep="paso3" style="display: none;">
+			<div id="wizardPlanes-paso2" class="wizardPlanes-pasos col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1" data-nextStep="paso3" style="display: none;">
+				<h4 class="morado-plain uc fw-semibold nopadding">¿En qué gastas tus gigas?</h4>
 				<div class="row">
-					<div class="col-xs-12">
-						<h4 class="morado-plain uc fw-semibold nopadding">¿En qué gastas tus gigas?</h4>
-					</div>
-				</div>
-				<div class="wizard-appendix wizard-socialmedia">
-					<div class="wizard-appendix-header">
-						<div class="row">
-							<div class="col-xs-7">
-								<h5 class="morado-plain fw-semibold nomargin nopadding">Redes Sociales</h5>
+					<div class="wizard-appendix wizard-socialmedia col-xs-12 col-sm-12 col-md-5 col-lg-5">
+						<div class="wizard-appendix-header">
+							<div class="row">
+								<div class="col-xs-7">
+									<h5 class="morado-plain fw-semibold nomargin nopadding">Redes Sociales</h5>
+								</div>
+								<div class="col-xs-5">
+									<div class="wizard-appendix-icons ta-right">
+										<i class="fa fa-facebook"></i>
+										<i class="fa fa-twitter"></i>
+										<i class="fa fa-whatsapp"></i>
+										<i class="fa fa-instagram"></i>
+										<i class="fa fa-snapchat"></i>
+									</div>
+								</div>
 							</div>
-							<div class="col-xs-5">
-								<div class="wizard-appendix-icons ta-right">
-									<i class="fa fa-facebook"></i>
-									<i class="fa fa-twitter"></i>
-									<i class="fa fa-whatsapp"></i>
-									<i class="fa fa-instagram"></i>
-									<i class="fa fa-snapchat"></i>
+							<div class="row">
+								<div class="col-xs-9">
+									<p class="nopadding fs-small lineheight120 ta-left">¿Qué tan adicto eres a las redes sociales?</p>
 								</div>
 							</div>
 						</div>
-						<div class="row">
-							<div class="col-xs-9">
-								<p class="nopadding fs-small ta-left">¿Qué tan adicto eres a las redes sociales?</p>
+						<div class="row fs-small">
+							<div class="col-xs-12">
+								<ul class="gigaMeasures nomargin nopadding">
+									<li>
+										<a class="graphButton" href="#">
+											<div class="graphHolder">
+											</div>
+											<span class="gigas-bar-label ta-center fw-normal">Nada</span>
+										</a>
+									</li>
+									<li>
+										<a class="graphButton" href="#">
+											<div class="graphHolder">
+												<span class="gigas-bar">&nbsp;</span>
+											</div>
+											<span class="gigas-bar-label ta-center fw-normal">Poco</span>
+										</a>
+									</li>
+									<li>
+										<a class="graphButton" href="#">
+											<div class="graphHolder">
+												<span class="gigas-bar">&nbsp;</span>
+												<span class="gigas-bar">&nbsp;</span>
+											</div>
+											<span class="gigas-bar-label ta-center fw-normal">Normal</span>
+										</a>
+									</li>
+									<li>
+										<a class="graphButton" href="#">
+											<div class="graphHolder">
+												<span class="gigas-bar">&nbsp;</span>
+												<span class="gigas-bar">&nbsp;</span>
+												<span class="gigas-bar">&nbsp;</span>
+											</div>
+											<span class="gigas-bar-label ta-center fw-normal">Mucho</span>
+										</a>
+									</li>
+									<li>
+										<a class="graphButton" href="#">
+											<div class="graphHolder">
+												<span class="gigas-bar">&nbsp;</span>
+												<span class="gigas-bar">&nbsp;</span>
+												<span class="gigas-bar">&nbsp;</span>
+												<span class="gigas-bar">&nbsp;</span>
+											</div>
+											<span class="gigas-bar-label ta-center fw-normal">Caleta</span>
+										</a>
+									</li>
+								</ul>
 							</div>
 						</div>
 					</div>
-					<div class="row fs-small">
-						<div class="col-xs-12">
-							<ul class="gigaMeasures nomargin nopadding">
-								<li>
-									<a class="graphButton" href="#">
-										<div class="graphHolder">
-										</div>
-										<span class="gigas-bar-label ta-center fw-normal">Nada</span>
-									</a>
-								</li>
-								<li>
-									<a class="graphButton" href="#">
-										<div class="graphHolder">
-											<span class="gigas-bar">&nbsp;</span>
-										</div>
-										<span class="gigas-bar-label ta-center fw-normal">Poco</span>
-									</a>
-								</li>
-								<li>
-									<a class="graphButton" href="#">
-										<div class="graphHolder">
-											<span class="gigas-bar">&nbsp;</span>
-											<span class="gigas-bar">&nbsp;</span>
-										</div>
-										<span class="gigas-bar-label ta-center fw-normal">Normal</span>
-									</a>
-								</li>
-								<li>
-									<a class="graphButton" href="#">
-										<div class="graphHolder">
-											<span class="gigas-bar">&nbsp;</span>
-											<span class="gigas-bar">&nbsp;</span>
-											<span class="gigas-bar">&nbsp;</span>
-										</div>
-										<span class="gigas-bar-label ta-center fw-normal">Mucho</span>
-									</a>
-								</li>
-								<li>
-									<a class="graphButton" href="#">
-										<div class="graphHolder">
-											<span class="gigas-bar">&nbsp;</span>
-											<span class="gigas-bar">&nbsp;</span>
-											<span class="gigas-bar">&nbsp;</span>
-											<span class="gigas-bar">&nbsp;</span>
-										</div>
-										<span class="gigas-bar-label ta-center fw-normal">Caleta</span>
-									</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="wizard-appendix wizard-videos">
-					<div class="wizard-appendix-header">
-						<div class="row">
-							<div class="col-xs-7">
-								<h5 class="morado-plain fw-semibold nomargin nopadding">Videos</h5>
+					<div class="wizard-appendix wizard-videos col-xs-12 col-sm-12 col-md-5 col-md-offset-2 col-lg-5 col-lg-offset-2">
+						<div class="wizard-appendix-header">
+							<div class="row">
+								<div class="col-xs-7">
+									<h5 class="morado-plain fw-semibold nomargin nopadding">Videos</h5>
+								</div>
+								<div class="col-xs-5">
+									<div class="wizard-appendix-icons ta-right">
+										<i class="fa fa-youtube"></i>
+										<i class="fa fa-vimeo"></i>
+									</div>
+								</div>
 							</div>
-							<div class="col-xs-5">
-								<div class="wizard-appendix-icons ta-right">
-									<i class="fa fa-youtube"></i>
-									<i class="fa fa-vimeo"></i>
+							<div class="row">
+								<div class="col-xs-9">
+									<p class="nopadding fs-small lineheight120 ta-left">¿Qué tan adicto eres a los videos?</p>
 								</div>
 							</div>
 						</div>
-						<div class="row">
-							<div class="col-xs-9">
-								<p class="nopadding fs-small ta-left">¿Qué tan adicto eres a los videos?</p>
+						<div class="row fs-small">
+							<div class="col-xs-12">
+								<ul class="gigaMeasures nomargin nopadding">
+									<li>
+										<a class="graphButton" href="#">
+											<div class="graphHolder">
+											</div>
+											<span class="gigas-bar-label ta-center fw-normal">Nada</span>
+										</a>
+									</li>
+									<li>
+										<a class="graphButton" href="#">
+											<div class="graphHolder">
+												<span class="gigas-bar">&nbsp;</span>
+											</div>
+											<span class="gigas-bar-label ta-center fw-normal">Poco</span>
+										</a>
+									</li>
+									<li>
+										<a class="graphButton" href="#">
+											<div class="graphHolder">
+												<span class="gigas-bar">&nbsp;</span>
+												<span class="gigas-bar">&nbsp;</span>
+											</div>
+											<span class="gigas-bar-label ta-center fw-normal">Normal</span>
+										</a>
+									</li>
+									<li>
+										<a class="graphButton" href="#">
+											<div class="graphHolder">
+												<span class="gigas-bar">&nbsp;</span>
+												<span class="gigas-bar">&nbsp;</span>
+												<span class="gigas-bar">&nbsp;</span>
+											</div>
+											<span class="gigas-bar-label ta-center fw-normal">Mucho</span>
+										</a>
+									</li>
+									<li>
+										<a class="graphButton" href="#">
+											<div class="graphHolder">
+												<span class="gigas-bar">&nbsp;</span>
+												<span class="gigas-bar">&nbsp;</span>
+												<span class="gigas-bar">&nbsp;</span>
+												<span class="gigas-bar">&nbsp;</span>
+											</div>
+											<span class="gigas-bar-label ta-center fw-normal">Caleta</span>
+										</a>
+									</li>
+								</ul>
 							</div>
-						</div>
-					</div>
-					<div class="row fs-small">
-						<div class="col-xs-12">
-							<ul class="gigaMeasures nomargin nopadding">
-								<li>
-									<a class="graphButton" href="#">
-										<div class="graphHolder">
-										</div>
-										<span class="gigas-bar-label ta-center fw-normal">Nada</span>
-									</a>
-								</li>
-								<li>
-									<a class="graphButton" href="#">
-										<div class="graphHolder">
-											<span class="gigas-bar">&nbsp;</span>
-										</div>
-										<span class="gigas-bar-label ta-center fw-normal">Poco</span>
-									</a>
-								</li>
-								<li>
-									<a class="graphButton" href="#">
-										<div class="graphHolder">
-											<span class="gigas-bar">&nbsp;</span>
-											<span class="gigas-bar">&nbsp;</span>
-										</div>
-										<span class="gigas-bar-label ta-center fw-normal">Normal</span>
-									</a>
-								</li>
-								<li>
-									<a class="graphButton" href="#">
-										<div class="graphHolder">
-											<span class="gigas-bar">&nbsp;</span>
-											<span class="gigas-bar">&nbsp;</span>
-											<span class="gigas-bar">&nbsp;</span>
-										</div>
-										<span class="gigas-bar-label ta-center fw-normal">Mucho</span>
-									</a>
-								</li>
-								<li>
-									<a class="graphButton" href="#">
-										<div class="graphHolder">
-											<span class="gigas-bar">&nbsp;</span>
-											<span class="gigas-bar">&nbsp;</span>
-											<span class="gigas-bar">&nbsp;</span>
-											<span class="gigas-bar">&nbsp;</span>
-										</div>
-										<span class="gigas-bar-label ta-center fw-normal">Caleta</span>
-									</a>
-								</li>
-							</ul>
 						</div>
 					</div>
 				</div>
-				<div class="wizard-appendix wizard-browsing">
-					<div class="wizard-appendix-header">
-						<div class="row">
-							<div class="col-xs-7">
-								<h5 class="morado-plain fw-semibold nomargin nopadding">Navegación</h5>
+				<div class="row">
+					<div class="wizard-appendix wizard-browsing col-xs-12 col-sm-12 col-md-5 col-lg-5">
+						<div class="wizard-appendix-header">
+							<div class="row">
+								<div class="col-xs-7">
+									<h5 class="morado-plain fw-semibold nomargin nopadding">Navegación</h5>
+								</div>
+								<div class="col-xs-5">
+									<div class="wizard-appendix-icons ta-right">
+										<i class="fa fa-map-marker"></i>
+										<i class="fa fa-film"></i>
+										<i class="fa fa-file-photo-o"></i>
+									</div>
+								</div>
 							</div>
-							<div class="col-xs-5">
-								<div class="wizard-appendix-icons ta-right">
-									<i class="fa fa-map-marker"></i>
-									<i class="fa fa-film"></i>
-									<i class="fa fa-file-photo-o"></i>
+							<div class="row">
+								<div class="col-xs-9">
+									<p class="nopadding fs-small lineheight120 ta-left">¿Cuánto navegas con aplicaciones de mapas, películas, streaming?</p>
 								</div>
 							</div>
 						</div>
-						<div class="row">
-							<div class="col-xs-9">
-								<p class="nopadding fs-small ta-left">¿Cuánto navegas con aplicaciones de mapas, películas, streaming?</p>
+						<div class="row fs-small">
+							<div class="col-xs-12">
+								<ul class="gigaMeasures nomargin nopadding">
+									<li>
+										<a class="graphButton" href="#">
+											<div class="graphHolder">
+											</div>
+											<span class="gigas-bar-label ta-center fw-normal">Nada</span>
+										</a>
+									</li>
+									<li>
+										<a class="graphButton" href="#">
+											<div class="graphHolder">
+												<span class="gigas-bar">&nbsp;</span>
+											</div>
+											<span class="gigas-bar-label ta-center fw-normal">Poco</span>
+										</a>
+									</li>
+									<li>
+										<a class="graphButton" href="#">
+											<div class="graphHolder">
+												<span class="gigas-bar">&nbsp;</span>
+												<span class="gigas-bar">&nbsp;</span>
+											</div>
+											<span class="gigas-bar-label ta-center fw-normal">Normal</span>
+										</a>
+									</li>
+									<li>
+										<a class="graphButton" href="#">
+											<div class="graphHolder">
+												<span class="gigas-bar">&nbsp;</span>
+												<span class="gigas-bar">&nbsp;</span>
+												<span class="gigas-bar">&nbsp;</span>
+											</div>
+											<span class="gigas-bar-label ta-center fw-normal">Mucho</span>
+										</a>
+									</li>
+									<li>
+										<a class="graphButton" href="#">
+											<div class="graphHolder">
+												<span class="gigas-bar">&nbsp;</span>
+												<span class="gigas-bar">&nbsp;</span>
+												<span class="gigas-bar">&nbsp;</span>
+												<span class="gigas-bar">&nbsp;</span>
+											</div>
+											<span class="gigas-bar-label ta-center fw-normal">Caleta</span>
+										</a>
+									</li>
+								</ul>
 							</div>
 						</div>
 					</div>
-					<div class="row fs-small">
-						<div class="col-xs-12">
-							<ul class="gigaMeasures nomargin nopadding">
-								<li>
-									<a class="graphButton" href="#">
-										<div class="graphHolder">
-										</div>
-										<span class="gigas-bar-label ta-center fw-normal">Nada</span>
-									</a>
-								</li>
-								<li>
-									<a class="graphButton" href="#">
-										<div class="graphHolder">
-											<span class="gigas-bar">&nbsp;</span>
-										</div>
-										<span class="gigas-bar-label ta-center fw-normal">Poco</span>
-									</a>
-								</li>
-								<li>
-									<a class="graphButton" href="#">
-										<div class="graphHolder">
-											<span class="gigas-bar">&nbsp;</span>
-											<span class="gigas-bar">&nbsp;</span>
-										</div>
-										<span class="gigas-bar-label ta-center fw-normal">Normal</span>
-									</a>
-								</li>
-								<li>
-									<a class="graphButton" href="#">
-										<div class="graphHolder">
-											<span class="gigas-bar">&nbsp;</span>
-											<span class="gigas-bar">&nbsp;</span>
-											<span class="gigas-bar">&nbsp;</span>
-										</div>
-										<span class="gigas-bar-label ta-center fw-normal">Mucho</span>
-									</a>
-								</li>
-								<li>
-									<a class="graphButton" href="#">
-										<div class="graphHolder">
-											<span class="gigas-bar">&nbsp;</span>
-											<span class="gigas-bar">&nbsp;</span>
-											<span class="gigas-bar">&nbsp;</span>
-											<span class="gigas-bar">&nbsp;</span>
-										</div>
-										<span class="gigas-bar-label ta-center fw-normal">Caleta</span>
-									</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="wizard-appendix wizard-music">
-					<div class="wizard-appendix-header">
-						<div class="row">
-							<div class="col-xs-7">
-								<h5 class="morado-plain fw-semibold nomargin nopadding">Música Online</h5>
+					<div class="wizard-appendix wizard-music col-xs-12 col-sm-12 col-md-5 col-md-offset-2 col-lg-5 col-lg-offset-2">
+						<div class="wizard-appendix-header">
+							<div class="row">
+								<div class="col-xs-7">
+									<h5 class="morado-plain fw-semibold nomargin nopadding">Música Online</h5>
+								</div>
+								<div class="col-xs-5">
+									<div class="wizard-appendix-icons ta-right">
+										<i class="fa fa-spotify"></i>
+										<i class="fa fa-soundcloud"></i>
+										<i class="fa fa-music"></i>
+									</div>
+								</div>
 							</div>
-							<div class="col-xs-5">
-								<div class="wizard-appendix-icons ta-right">
-									<i class="fa fa-spotify"></i>
-									<i class="fa fa-soundcloud"></i>
-									<i class="fa fa-music"></i>
+							<div class="row">
+								<div class="col-xs-9">
+									<p class="nopadding fs-small lineheight120 ta-left">¿Cuánto navegas con aplicaciones de mapas, películas, streaming?</p>
 								</div>
 							</div>
 						</div>
-						<div class="row">
-							<div class="col-xs-9">
-								<p class="nopadding fs-small ta-left">¿Cuánto navegas con aplicaciones de mapas, películas, streaming?</p>
+						<div class="row fs-small">
+							<div class="col-xs-12">
+								<ul class="gigaMeasures nomargin nopadding">
+									<li>
+										<a class="graphButton" href="#">
+											<div class="graphHolder">
+											</div>
+											<span class="gigas-bar-label ta-center fw-normal">Nada</span>
+										</a>
+									</li>
+									<li>
+										<a class="graphButton" href="#">
+											<div class="graphHolder">
+												<span class="gigas-bar">&nbsp;</span>
+											</div>
+											<span class="gigas-bar-label ta-center fw-normal">Poco</span>
+										</a>
+									</li>
+									<li>
+										<a class="graphButton" href="#">
+											<div class="graphHolder">
+												<span class="gigas-bar">&nbsp;</span>
+												<span class="gigas-bar">&nbsp;</span>
+											</div>
+											<span class="gigas-bar-label ta-center fw-normal">Normal</span>
+										</a>
+									</li>
+									<li>
+										<a class="graphButton" href="#">
+											<div class="graphHolder">
+												<span class="gigas-bar">&nbsp;</span>
+												<span class="gigas-bar">&nbsp;</span>
+												<span class="gigas-bar">&nbsp;</span>
+											</div>
+											<span class="gigas-bar-label ta-center fw-normal">Mucho</span>
+										</a>
+									</li>
+									<li>
+										<a class="graphButton" href="#">
+											<div class="graphHolder">
+												<span class="gigas-bar">&nbsp;</span>
+												<span class="gigas-bar">&nbsp;</span>
+												<span class="gigas-bar">&nbsp;</span>
+												<span class="gigas-bar">&nbsp;</span>
+											</div>
+											<span class="gigas-bar-label ta-center fw-normal">Caleta</span>
+										</a>
+									</li>
+								</ul>
 							</div>
-						</div>
-					</div>
-					<div class="row fs-small">
-						<div class="col-xs-12">
-							<ul class="gigaMeasures nomargin nopadding">
-								<li>
-									<a class="graphButton" href="#">
-										<div class="graphHolder">
-										</div>
-										<span class="gigas-bar-label ta-center fw-normal">Nada</span>
-									</a>
-								</li>
-								<li>
-									<a class="graphButton" href="#">
-										<div class="graphHolder">
-											<span class="gigas-bar">&nbsp;</span>
-										</div>
-										<span class="gigas-bar-label ta-center fw-normal">Poco</span>
-									</a>
-								</li>
-								<li>
-									<a class="graphButton" href="#">
-										<div class="graphHolder">
-											<span class="gigas-bar">&nbsp;</span>
-											<span class="gigas-bar">&nbsp;</span>
-										</div>
-										<span class="gigas-bar-label ta-center fw-normal">Normal</span>
-									</a>
-								</li>
-								<li>
-									<a class="graphButton" href="#">
-										<div class="graphHolder">
-											<span class="gigas-bar">&nbsp;</span>
-											<span class="gigas-bar">&nbsp;</span>
-											<span class="gigas-bar">&nbsp;</span>
-										</div>
-										<span class="gigas-bar-label ta-center fw-normal">Mucho</span>
-									</a>
-								</li>
-								<li>
-									<a class="graphButton" href="#">
-										<div class="graphHolder">
-											<span class="gigas-bar">&nbsp;</span>
-											<span class="gigas-bar">&nbsp;</span>
-											<span class="gigas-bar">&nbsp;</span>
-											<span class="gigas-bar">&nbsp;</span>
-										</div>
-										<span class="gigas-bar-label ta-center fw-normal">Caleta</span>
-									</a>
-								</li>
-							</ul>
 						</div>
 					</div>
 				</div>
@@ -415,7 +449,7 @@
 					</div>
 				</div>
 			</div>
-			<div id="wizardPlanes-paso3" class="wizardPlanes-pasos wizard-pasoFinal" style="display: none;">
+			<div id="wizardPlanes-paso3" class="wizardPlanes-pasos col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1 wizard-pasoFinal" style="display: none;">
 				<div class="plan-result ta-center">
 					<img class="wow animated slideInUp" src="img/wizard-planes-resultado.svg" alt="" style="margin: 0 auto 20px; display: block;">
 					<p><button class="btn btn-primary">Buscar otro plan</button></p>

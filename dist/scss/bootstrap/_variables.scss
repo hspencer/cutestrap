@@ -12,9 +12,16 @@ $bootstrap-sass-asset-helper: false !default;
 //======
 // Brand colors
 
-$primary:			rgb(66, 20, 65) !default; // according to brand manual
-$primary-dark:		darken($primary, 5%);
-$primary-light:		desaturate(lighten($primary, 10%), 10%);
+// A beautiful selection of our branded colors
+//
+// Styleguide
+
+// Brand colors
+
+$primary:				rgb(66, 20, 65) !default; // according to brand manual
+$primary-dark:			darken($primary, 5%);
+$primary-light:			desaturate(lighten($primary, 10%), 10%);
+$primary-transparent:	rgba(70, 2, 123, 0.9); 
 
 $secondary:			#602F84; // #AEA091 #711082 !default; 
 $secondary-dark:	darken($secondary, 12%);
@@ -23,6 +30,13 @@ $secondary-light:	desaturate(lighten($secondary, 10%), 20%);
 $terciary:			#564599 !default;
 $terciary-dark:		darken($terciary, 11%);
 $terciary-light:	desaturate(lighten($terciary, 15%), 4%);
+
+$quaternary: 		#720184;
+$quaternary-light:	desaturate(lighten($quaternary, 15%), 4%);
+
+$pink: 				#D0AFD5;
+$morado-morado: 	#621082;
+$grape: 			#421441;
 
 $color-action:		#720184 !default;
 $link:          	$color-action !default;
@@ -186,7 +200,7 @@ $table-border-color:            #ddd !default;
 //
 //## For each of Bootstrap's buttons, define text, background and border color.
 
-$btn-font-weight:                900 !default;
+$btn-font-weight:                600 !default;
 
 $btn-default-color:              $primary !default;
 $btn-default-bg:                 #FFFEFF !default;
@@ -666,7 +680,7 @@ $modal-sm:                    300px !default;
 
 $alert-padding:               15px !default;
 $alert-border-radius:         $border-radius-base !default;
-$alert-link-font-weight:      bold !default;
+$alert-link-font-weight:      600 !default;
 
 $alert-success-bg:            $state-success-bg !default;
 $alert-success-text:          $state-success-text !default;

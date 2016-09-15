@@ -1,0 +1,102 @@
+<!-- layout.nunjucks -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Ejecutivo - Desktop</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- MOVER A /SRC -->
+  <link rel="stylesheet" href="https://dl.dropboxusercontent.com/u/3538/animate.css">
+  <link rel="stylesheet" href="../dist/css/womstrap.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="../dist/js/wom.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+  
+</head>
+<body>
+
+  <!-- You write code for this content block in another file -->
+  
+
+<nav class="navbar navbar-default navbar-main navbar-centered" role="navigation">
+	<!-- Brand and toggle get grouped for better mobile display -->
+	<div class="navbar-header">
+
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-brand-centered">
+			<span class="navLabel">Menú</span>
+			<figure class="hamburger">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</figure>
+		</button>
+
+		<!-- wom logo -->
+		<div class="navbar-brand navbar-brand-centered">
+			<a href="index.html" title="">
+				<img src="img/logo-wom.svg" width="80" height="80" >
+			</a>
+		</div>
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<!-- <div class="collapse navbar-collapse" id="navbar-brand-centered">
+			<ul class="nav navbar-nav">
+				<<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a></li>
+				<<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Personas <span class="caret"></span></a>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="#">Planes</a></li>
+						<li><a href="#">Prepago</a></li>
+						<li><a href="#">Internet</a></li>
+						<li><a href="#">Equipos</a></li>
+						<li class="divider"></li>
+						<li><a href="#">Sucursal Online</a></li>
+					</ul>
+				</li>
+				<li><a class="fw-semibold" href="#">Planes</a></li>
+				<li><a class="fw-semibold" href="#">Prepago</a></li>
+				<li><a class="fw-semibold" href="#">Internet</a></li>
+				<li><a class="fw-semibold" href="#">Equipos</a></li>
+				<li><a class="fw-semibold" href="#">Sucursal Online</a></li>
+			</ul>
+		</div> -->
+		<!-- /.navbar-collapse -->
+	</div>
+</nav>
+
+	<div class="login-ejecutivo-mockup--header">
+		&nbsp;
+	</div>
+
+	<div class="login-ejecutivo-holder">
+		<div class="container">
+			<div class="row">
+				<div class="login-ejecutivo--top"></div>
+				<div class="col-lg-4 col-lg-offset-4 ta-center">
+					<div id="camposvacios" class=" fs-small alert alert-danger ta-left" role="alert">
+						<i class="fa fa-exclamation-triangle"></i> Error al ingresar <strong>tu contraseña o usuario</strong>
+					</div>
+					<form action="#">
+						<div class="form-group input-effect">
+							<span class="miniLabel">Nombre de usuario</span>
+							<input type="text" class="form-control" id="username" placeholder="Nombre de usuario">
+						</div>
+						<div class="form-group input-effect">
+							<span class="miniLabel">Contraseña</span>
+							<input type="password" class="form-control" id="password" placeholder="Contraseña">
+						</div>
+						<button class="mt-40 btn btn-lg btn-primary fw-semibold">Inicia tu sesión</button>
+					</form>
+				</div>
+				<div class="login-ejecutivo--bottom"></div>
+			</div>
+		</div>
+	</div>
+
+
+
+</body>
+</html>

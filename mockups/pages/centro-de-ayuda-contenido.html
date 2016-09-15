@@ -5,121 +5,246 @@
 
 	{% include "partials/navbar.html" %}
 
-	{% include "partials/header-centro-de-ayuda-short.html" %}
-
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-12">
-				<h4 class="ta-center morado-plain uc fw-semibold fs-large">¿Qué es el 4G?</h4>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-xs-12">
-				<p class="fw-normal text-muted">La red 4G es la cuarta generación de datos móviles, sucesora de 2G y 3G, que permite entregar una excelente experiencia de navegación a los usuarios.</p>
-
-				<p class="text-muted">Gracias a la velocidad 4G podrás conectarte con tus dispositivos móviles compatibles y navegar con una conexión mucho más rápida. Es ideal para quienes demandan mayor rapidez de descarga, estar conectados en redes sociales en segundos, o realizan uso del streaming de videos, música y juegos en línea.</p>
-			</div>
-		</div>
-	</div>
-
-	<div class="centro-ayuda-satisfaction">
-		<div class="container">
-			<div class="col-xs-8 ta-center">
-				<p class="nopadding mt-20 text-muted fw-semibold">¿Te mostré lo que querías?</p>
-				<div class="btn-group" role="group" aria-label="...">
-				  <button type="button" class="btn btn-primary active fw-semibold pl-20 pr-20" style="margin-right: 3px;">Sí</button>
-				  <button type="button" class="btn btn-primary fw-semibold pl-20 pr-20" onclick="$(this).siblings('.active').removeClass('active');$(this).addClass('active');$('.centro-ayuda-feedback').slideDown();$('.satisfactionMsg').html('¡Ayúdame tú!'); return false;">No</button>
+		<!-- layout desktop -->
+		<div class="desktop-layout hidden-xs">
+			<div class="desktop-header">
+				<div class="container-tablet">
+					<div class="row">
+						<div class="desktop-headerTitle col-lg-8 col-md-8 col-sm-8 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 ta-center">
+							{% include "partials/navbar-desktop-inner.html" %}
+							<h1 class="uc white">Centro de Ayuda</h1>
+							<p>Encuentra en cada sección preguntas frecuentes con nuestros servicios</p>
+						</div>
+					</div>
 				</div>
-				<p class="satisfactionMsg nopadding text-muted skew mt-10">¡Súper! Vuelve cuando quieras</p>
 			</div>
-		</div>
-	</div>
 
-	<div class="centro-ayuda-feedback" style="display: none;">
+			<div class="centro-de-ayuda-welcome-desktop centro-de-ayuda-inner fullwidth-slab">
+				<div class="container">
+					<div class="row mt-40" style="display: flex;">
+						<div class="col-lg-5 col-md-5 col-sm-5 col-lg-offset-2 col-md-offset-2 col-sm-offset-2">
+							<h4 class="uc nopadding morado-plain">¿Qué es el 4G?</h4>
+							<p>La red 4G es la cuarta generación de datos móviles, sucesora de 2G y 3G, que permite entregar una excelente experiencia de navegación a los usuarios.</p>
+							<p>Gracias a la velocidad 4G podrás conectarte con tus dispositivos móviles compatibles y navegar con una conexión mucho más rápida. Es ideal para quienes demandan mayor rapidez de descarga, estar conectados en redes sociales en segundos, o realizan uso del streaming de videos, música y juegos en línea.</p>
+							<div class="ta-center mb-20">
+								<p class="nopadding mt-20 text-muted fw-semibold">¿Te mostré lo que querías?</p>
+								<div class="btn-group" role="group" aria-label="...">
+								  <button type="button" class="btn btn-primary active fw-semibold pl-20 pr-20" style="margin-right: 3px;">Sí</button>
+								  <button type="button" class="btn btn-primary fw-semibold pl-20 pr-20" onclick="$(this).siblings('.active').removeClass('active');$(this).addClass('active');$('.centro-ayuda-feedback').slideDown();$('.satisfactionMsg').html('¡Ayúdame tú!'); return false;">No</button>
+								</div>
+							</div>
+						</div>
+						<div class="personaImage col-lg-5 col-md-5 col-sm-5">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="centro-de-ayuda-related-links-desktop">
+				<h3 class="morado-plain uc ta-center">Links relacionados</h3>
+				<div class="row">
+					<div class="col-lg-3 col-md-3 col-sm-3 col-lg-offset-3 col-md-offset-3 col-sm-offset-3">
+						<p><a href="#">Ir a <strong>Planes Multimedia</strong></a></p>
+						<p><a href="#">Ir a <strong>Chip Prepago</strong></a></p>
+						<p><a href="#">Ir a <strong>Recargar tu prepago</strong></a></p>
+						<p><a href="#">Ir a <strong>Internet Móvil y Hogar</strong></a></p>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-lg-offset-1 col-md-offset-1 col-sm-offset-1">
+						<p><a href="#">Ir a <strong>Cobertura</strong></a></p>
+						<p><a href="#">Ir a <strong>4G</strong></a></p>
+						<p><a href="#">Ir a <strong>Nuestras Sucursales</strong></a></p>
+						<p><a href="#">Ir a <strong>Roaming</strong></a></p>
+					</div>
+				</div>
+			</div>
+
+			<hr class="separador-home">
+
+			<div class="centro-ayuda-desktop-otra-pregunta col-lg-6 col-md-6 col-sm-6 col-lg-offset-3 col-md-offset-3 col-sm-offset-3">
+				<h3 class="morado-plain uc ta-center">Busca otra pregunta</h3>
+				<form action="#">
+					<div class="form-group ">
+						<input type="text" class="form-control centro-ayuda-search centro-ayuda-search-alt autocenter pb-10 pt-10" placeholder="Ingresa tu pregunta...">
+					</div>
+				</form>
+			</div>
+
+			<div class="centro-ayuda-home-desktop">
+				<h3 class="uc ta-center lineheight120 morado-plain">Otras categorías</h3>
+				<div class="container cardsContainer">
+					<div class="row">
+						<div class="col-lg-4 ta-center">
+							<div class="item wow  fadeInUp">
+								<img src="img/home/ico-equipos-desktop.png" alt="" class="ico">
+								<h5 class="nopadding uc"><a href="#">Telefonía Móvil</a></h5>
+								<p class="nomargin nopadding fs-small lineheight120">Conoce lo esencial sobre planes, prepago, roaming e internet.</p>
+							</div>
+						</div>
+						<div class="col-lg-4 ta-center">
+							<div class="item wow  fadeInUp" data-wow-offset="200">
+								<img src="img/home/ico-planes-desktop.png" alt="" class="ico">
+								<h5 class="nopadding uc"><a href="#">Navegación</a></h5>
+								<p class="nomargin nopadding fs-small lineheight120">Encuentra info sobre red 3G y 4G, señal y cobertura de WOM.</p>
+							</div>
+						</div>
+						<div class="col-lg-4 ta-center">
+							<div class="item wow  fadeInUp" data-wow-offset="350">
+								<img src="img/home/ico-sucursales-desktop.png" alt="" class="ico">
+								<h5 class="nopadding uc"><a href="#">Portabilidad</a></h5>
+								<p class="nomargin nopadding fs-small lineheight120">Resuelve dudas de portabilidad para planes y prepago.</p>
+							</div>
+						</div>
+					</div>
+					<div class="row mb-40">
+						<div class="col-lg-4 ta-center">
+							<div class="item wow  fadeInUp">
+								<img src="img/home/ico-desktop-configuracion.png" alt="" class="ico">
+								<h5 class="nopadding uc"><a href="#">Configuración</a></h5>
+								<p class="nomargin nopadding fs-small lineheight120">Configura tus equipos celulares y equipos de Wifi Móvil.</p>
+							</div>
+						</div>
+						<div class="col-lg-4 ta-center">
+							<div class="item wow  fadeInUp" data-wow-offset="200">
+								<img src="img/home/ico-desktop-serviciotecnico.png" alt="" class="ico">
+								<h5 class="nopadding uc"><a href="#">Servicio Técnico</a></h5>
+								<p class="nomargin nopadding fs-small lineheight120">Soluciona fallas de configuración o bloqueos en tu celular.</p>
+							</div>
+						</div>
+						<div class="col-lg-4 ta-center">
+							<div class="item wow  fadeInUp" data-wow-offset="350">
+								<img src="img/home/ico-desktop-sucursalonline.png" alt="" class="ico">
+								<h5 class="nopadding uc"><a href="#">Sucursal Online</a></h5>
+								<p class="nomargin nopadding fs-small lineheight120">Aprende a administrar tu cuenta y tus servicios.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+
+	<!-- layout movil -->
+	
+	<div class="visible-xs">
+	
+		{% include "partials/header-centro-de-ayuda-short.html" %}
+
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">
-					<form action="#">
-						<textarea class="form-control input-outline" rows="7" placeholder="escribe tus comentarios"></textarea>
-					</form>
-					<p class="ta-right">
-						<button class="btn btn-primary morado-chicle-bg">Enviar</button>
-					</p>
+					<h4 class="ta-center morado-plain uc fw-semibold fs-large">¿Qué es el 4G?</h4>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12">
+					<p class="fw-normal text-muted">La red 4G es la cuarta generación de datos móviles, sucesora de 2G y 3G, que permite entregar una excelente experiencia de navegación a los usuarios.</p>
+
+					<p class="text-muted">Gracias a la velocidad 4G podrás conectarte con tus dispositivos móviles compatibles y navegar con una conexión mucho más rápida. Es ideal para quienes demandan mayor rapidez de descarga, estar conectados en redes sociales en segundos, o realizan uso del streaming de videos, música y juegos en línea.</p>
 				</div>
 			</div>
 		</div>
-	</div>
 
-	<div class="centro-ayuda-relatedLinks">
-		<h4 class="ta-center uc morado-plain fw-semibold">Links relacionados</h4>
-		<ul>
-			<li class="wow animated fadeInUp">
-				<a href="#">
-					<p>Ir a <strong>Planes Multimedia</strong> <i class="fa fa-angle-right"></i> </p>
-				</a>
-			</li>
-			<li class="wow animated fadeInUp">
-				<a href="#">
-					<p>Ir a <strong>Chip Prepago</strong> <i class="fa fa-angle-right"></i> </p>
-				</a>
-			</li>
-			<li class="wow animated fadeInUp">
-				<a href="#">
-					<p>Ir a <strong>Recargar tu prepago</strong> <i class="fa fa-angle-right"></i> </p>
-				</a>
-			</li>
-			<li class="wow animated fadeInUp">
-				<a href="#">
-					<p>Ir a <strong>Internet Móvil y Hogar</strong> <i class="fa fa-angle-right"></i> </p>
-				</a>
-			</li>
-			<li class="wow animated fadeInUp">
-				<a href="#">
-					<p>Ir a <strong>Cobertura</strong> <i class="fa fa-angle-right"></i> </p>
-				</a>
-			</li>
-			<li class="wow animated fadeInUp">
-				<a href="#">
-					<p>Ir a <strong>4G</strong> <i class="fa fa-angle-right"></i> </p>
-				</a>
-			</li>
-			<li class="wow animated fadeInUp">
-				<a href="#">
-					<p>Ir a <strong>Nuestras Sucursales</strong> <i class="fa fa-angle-right"></i> </p>
-				</a>
-			</li>
-			<li class="wow animated fadeInUp">
-				<a href="#">
-					<p>Ir a <strong>Roaming</strong> <i class="fa fa-angle-right"></i> </p>
-				</a>
-			</li>
-		</ul>
-	</div>
-
-	<hr class="separador-home">
-
-	<div class="centro-ayuda-busca-otra">
-		<h4 class="ta-center uc morado-plain fw-semibold nopadding">Busca otra<br>pregunta</h4>
-		<form action="#">
-			<div class="form-group">
-				<input type="text" class="form-control centro-ayuda-search centro-ayuda-search-alt autocenter pt-10 pb-10" placeholder="Ingresa tu pregunta...">
+		<div class="centro-ayuda-satisfaction">
+			<div class="container">
+				<div class="col-xs-8 ta-center">
+					<p class="nopadding mt-20 text-muted fw-semibold">¿Te mostré lo que querías?</p>
+					<div class="btn-group" role="group" aria-label="...">
+					  <button type="button" class="btn btn-primary active fw-semibold pl-20 pr-20" style="margin-right: 3px;">Sí</button>
+					  <button type="button" class="btn btn-primary fw-semibold pl-20 pr-20" onclick="$(this).siblings('.active').removeClass('active');$(this).addClass('active');$('.centro-ayuda-feedback').slideDown();$('.satisfactionMsg').html('¡Ayúdame tú!'); return false;">No</button>
+					</div>
+					<p class="satisfactionMsg nopadding text-muted skew mt-10">¡Súper! Vuelve cuando quieras</p>
+				</div>
 			</div>
-		</form>
-	</div>
+		</div>
 
-	<div class="centro-ayuda-otras-cats">
-		<h4 class="ta-center uc morado-plain fw-semibold nopadding">Otras categorías</h4>
-		<form action="#">
-			<div class="col-xs-12">
-				<select class="form-control select-caret" style="color: #555;">
-				  <option selected="">Navegación</option>
-				  <option>2</option>
-				  <option>3</option>
-				  <option>4</option>
-				  <option>5</option>
-				</select>
+		<div class="centro-ayuda-feedback" style="display: none;">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<form action="#">
+							<textarea class="form-control input-outline" rows="7" placeholder="escribe tus comentarios"></textarea>
+						</form>
+						<p class="ta-right">
+							<button class="btn btn-primary morado-chicle-bg">Enviar</button>
+						</p>
+					</div>
+				</div>
 			</div>
-		</form>
+		</div>
+
+		<div class="centro-ayuda-relatedLinks">
+			<h4 class="ta-center uc morado-plain fw-semibold">Links relacionados</h4>
+			<ul>
+				<li class="wow animated fadeInUp">
+					<a href="#">
+						<p>Ir a <strong>Planes Multimedia</strong> <i class="fa fa-angle-right"></i> </p>
+					</a>
+				</li>
+				<li class="wow animated fadeInUp">
+					<a href="#">
+						<p>Ir a <strong>Chip Prepago</strong> <i class="fa fa-angle-right"></i> </p>
+					</a>
+				</li>
+				<li class="wow animated fadeInUp">
+					<a href="#">
+						<p>Ir a <strong>Recargar tu prepago</strong> <i class="fa fa-angle-right"></i> </p>
+					</a>
+				</li>
+				<li class="wow animated fadeInUp">
+					<a href="#">
+						<p>Ir a <strong>Internet Móvil y Hogar</strong> <i class="fa fa-angle-right"></i> </p>
+					</a>
+				</li>
+				<li class="wow animated fadeInUp">
+					<a href="#">
+						<p>Ir a <strong>Cobertura</strong> <i class="fa fa-angle-right"></i> </p>
+					</a>
+				</li>
+				<li class="wow animated fadeInUp">
+					<a href="#">
+						<p>Ir a <strong>4G</strong> <i class="fa fa-angle-right"></i> </p>
+					</a>
+				</li>
+				<li class="wow animated fadeInUp">
+					<a href="#">
+						<p>Ir a <strong>Nuestras Sucursales</strong> <i class="fa fa-angle-right"></i> </p>
+					</a>
+				</li>
+				<li class="wow animated fadeInUp">
+					<a href="#">
+						<p>Ir a <strong>Roaming</strong> <i class="fa fa-angle-right"></i> </p>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<hr class="separador-home">
+
+		<div class="centro-ayuda-busca-otra">
+			<h4 class="ta-center uc morado-plain fw-semibold nopadding">Busca otra<br>pregunta</h4>
+			<form action="#">
+				<div class="form-group">
+					<input type="text" class="form-control centro-ayuda-search centro-ayuda-search-alt autocenter pt-10 pb-10" placeholder="Ingresa tu pregunta...">
+				</div>
+			</form>
+		</div>
+
+		<div class="centro-ayuda-otras-cats">
+			<h4 class="ta-center uc morado-plain fw-semibold nopadding">Otras categorías</h4>
+			<form action="#">
+				<div class="col-xs-12">
+					<select class="form-control select-caret" style="color: #555;">
+					  <option selected="">Navegación</option>
+					  <option>2</option>
+					  <option>3</option>
+					  <option>4</option>
+					  <option>5</option>
+					</select>
+				</div>
+			</form>
+		</div>
+
 	</div>
 
 </div>
