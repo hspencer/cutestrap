@@ -27,6 +27,7 @@ Markup:
 .serif                   - Serif text. Bitter font family.
 .uc                      - Text in upper case
 .iblock                  - Inline-block element flow
+.flex                    - Flexbox enable
 
 Styleguide 3.0
 
@@ -74,6 +75,10 @@ Styleguide 3.0
 
 .iblock{
   display: inline-block;
+}
+
+.flex {
+  display: flex;
 }
 
 
