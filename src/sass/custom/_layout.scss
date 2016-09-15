@@ -40,7 +40,7 @@
 
 .bg-portabilidad{
     background-color: transparent;
-    background-image: url('{$img-path}/portabilidad/FONDO1.png');
+    background-image: url('#{$img-path}/portabilidad/FONDO1.png');
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
@@ -57,7 +57,7 @@
 }
 .bg-home{
     background-color: transparent;
-    background-image: url('{$img-path}/home/bghome.jpg');
+    background-image: url('#{$img-path}/home/bghome.jpg');
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
@@ -77,7 +77,7 @@
 
 .main-foot{
     background-color: transparent;
-    background-image: url('{$img-path}/footer2.png');
+    background-image: url('#{$img-path}/footer2.png');
     color: #fff;
     margin-top: 70px;
     position: relative;
@@ -420,10 +420,10 @@ ul {
   line-height: 130%;
 }
 .modulo-portabilidad {
-  background-image: url("{$img-path}/portabilidad/FONDO1.png");
+  background-image: url("#{$img-path}/portabilidad/FONDO1.png");
 }
 .modulo-portatebien {
-  background-image: url("{$img-path}/portabilidad/fondo-portatebien.png");
+  background-image: url("#{$img-path}/portabilidad/fondo-portatebien.png");
   background-repeat: no-repeat;
   min-height: 420px;
   position: relative;
@@ -434,13 +434,13 @@ ul {
   width: 100%;
 }
 .modulo-pagofacil {
-  background-image: url("{$img-path}/pago_facil/bg-pago-facil.png");
+  background-image: url("#{$img-path}/pago_facil/bg-pago-facil.png");
   background-position: top right;
   min-height: 400px;
   margin-bottom: -50px;
 }
 .modulo-pagofacil-short {
-  background-image: url("{$img-path}/pago_facil/bg-pago-facil.png");
+  background-image: url("#{$img-path}/pago_facil/bg-pago-facil.png");
   min-height: 272px;
   background-position: bottom right;
 }
@@ -448,7 +448,7 @@ ul {
     padding-bottom: 40% !important;
 }
 .modulo-centroayuda {
-  background-image: url("{$img-path}/portabilidad/FONDO1.png");
+  background-image: url("#{$img-path}/portabilidad/FONDO1.png");
 }
 
 .modulo-pagofacil h3 {
@@ -689,7 +689,7 @@ padding: 2px 4px;
 }
 
 .modulo-portatebien .dropdown-menu li:after{
-  content: url('{$img-path}/icons/ico-arrow-right.svg');
+  content: url('#{$img-path}/icons/ico-arrow-right.svg');
   width: 10px;
   height: 17px;
   top: 20px;
@@ -771,14 +771,14 @@ padding: 2px 4px;
 }
 
 .ico-portabilidad-tengoplan {
-  background-image: url('{$img-path}/portabilidad/ico-tengo-plan.svg');
+  background-image: url('#{$img-path}/portabilidad/ico-tengo-plan.svg');
   background-position: 11px center;
 }
 .ico-portabilidad-tengoprepago {
-  background-image: url('{$img-path}/portabilidad/ico-tengo-prepago.svg');
+  background-image: url('#{$img-path}/portabilidad/ico-tengo-prepago.svg');
 }
 .ico-portabilidad-tengoprepago2 {
-  background-image: url('{$img-path}/portabilidad/ico-tengo-plan2.svg');
+  background-image: url('#{$img-path}/portabilidad/ico-tengo-plan2.svg');
 }
 
 #captcha {
@@ -817,7 +817,7 @@ padding: 2px 4px;
 }
 
 .portate-desktop-ad {
-  background-image: url('{$img-path}/banner/portate-desktop-ad.png');
+  background-image: url('#{$img-path}/banner/portate-desktop-ad.png');
 }
 
 .ratioimg {
@@ -954,7 +954,7 @@ padding: 2px 4px;
   top: 15px;
   width: 14px;
   height: 10px;
-  background-image: url('{$img-path}/icons/ico-ticket.svg');
+  background-image: url('#{$img-path}/icons/ico-ticket.svg');
 }
 .pagadoStamp {
   position: absolute;
@@ -978,7 +978,7 @@ padding: 2px 4px;
   top: 10px;
   width: 16px;
   height: 16px;
-  background-image: url('{$img-path}/icons/ico-warning.svg');
+  background-image: url('#{$img-path}/icons/ico-warning.svg');
 }
 
 .help-block{
@@ -1171,7 +1171,7 @@ button {
   color: $quaternary;
   line-height: 125%;
   height: auto;
-  background-image: url('{$img-path}/icons/caret-down-purple.svg');
+  background-image: url('#{$img-path}/icons/caret-down-purple.svg');
   background-position: 96% center;
   background-repeat: no-repeat;
   background-clip: padding-box;
@@ -1582,16 +1582,16 @@ button {
 }
 
   #compra-bolsa .modo-de-pago-btn.webpay {
-    background-image: url('{$img-path}/compra-bolsa/logo-webpay.png');
+    background-image: url('#{$img-path}/compra-bolsa/logo-webpay.png');
   }
   #compra-bolsa .modo-de-pago-btn.sencillito {
-    background-image: url('{$img-path}/compra-bolsa/logo-sencillito.png');
+    background-image: url('#{$img-path}/compra-bolsa/logo-sencillito.png');
   }
   #compra-bolsa .modo-de-pago-btn.servipag {
-    background-image: url('{$img-path}/compra-bolsa/logo-servipag.png');
+    background-image: url('#{$img-path}/compra-bolsa/logo-servipag.png');
   }
   #compra-bolsa .modo-de-pago-btn.santander {
-    background-image: url('{$img-path}/compra-bolsa/logo-santander.png');
+    background-image: url('#{$img-path}/compra-bolsa/logo-santander.png');
   }
   
   #compra-bolsa .modo-de-pago-btn span {
@@ -1650,7 +1650,7 @@ button {
 
 #cambia-password .modal-header {
   background: white;
-  background-image: url('{$img-path}/cambiapass-modal-header.png');
+  background-image: url('#{$img-path}/cambiapass-modal-header.png');
   background-position: top center;
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -1680,7 +1680,7 @@ button {
 }
 
 .ico-input-money {
-    background-image: url('{$img-path}/private_site/compra_bolsa/ico-input-money.svg');
+    background-image: url('#{$img-path}/private_site/compra_bolsa/ico-input-money.svg');
     width: 18px;
     height: 18px;
     display: block;
@@ -1690,42 +1690,42 @@ button {
 }
 
 .ico-bolsa-bolsa_datos {
-    background-image: url('{$img-path}/private_site/compra_bolsa/ico-bolsa_datos.svg');
+    background-image: url('#{$img-path}/private_site/compra_bolsa/ico-bolsa_datos.svg');
     width: 40px;
     height: 32px;
     display: block;
     margin: 0 auto;
 }
 .ico-bolsa-bolsa_voz {
-    background-image: url('{$img-path}/private_site/compra_bolsa/ico-bolsa_voz.svg');
+    background-image: url('#{$img-path}/private_site/compra_bolsa/ico-bolsa_voz.svg');
     width: 32px;
     height: 32px;
     display: block;
     margin: 0 auto;
 }
 .ico-bolsa-bolsa_sms {
-    background-image: url('{$img-path}/private_site/compra_bolsa/ico-bolsa_sms.svg');
+    background-image: url('#{$img-path}/private_site/compra_bolsa/ico-bolsa_sms.svg');
     width: 40px;
     height: 30px;
     display: block;
     margin: 0 auto;
 }
 .ico-bolsa-bolsa_mixtas {
-    background-image: url('{$img-path}/private_site/compra_bolsa/ico-bolsa_mixta.svg');
+    background-image: url('#{$img-path}/private_site/compra_bolsa/ico-bolsa_mixta.svg');
     width: 38px;
     height: 32px;
     display: block;
     margin: 0 auto;
 }
 .ico-bolsa-bolsa_tematicas {
-    background-image: url('{$img-path}/private_site/compra_bolsa/ico-bolsa_tematica.svg');
+    background-image: url('#{$img-path}/private_site/compra_bolsa/ico-bolsa_tematica.svg');
     width: 32px;
     height: 32px;
     display: block;
     margin: 0 auto;
 }
 .ico-bolsa-bolsa_roaming {
-    background-image: url('{$img-path}/private_site/compra_bolsa/ico-bolsa_roaming.svg');
+    background-image: url('#{$img-path}/private_site/compra_bolsa/ico-bolsa_roaming.svg');
     width: 32px;
     height: 32px;
     display: block;
@@ -1822,7 +1822,7 @@ button {
 }
 
 .purpleActions .list-group-item {
-  background-image: url('{$img-path}/home/thirdButtons-bg.png');
+  background-image: url('#{$img-path}/home/thirdButtons-bg.png');
   border-radius: 0;
   color: white;
   border-color: white;
@@ -1851,7 +1851,7 @@ button {
 }
 
 .purpleActions-large .list-group-item {
-  background-image: url('{$img-path}/home/halfButtons-bg.png');
+  background-image: url('#{$img-path}/home/halfButtons-bg.png');
   background-size: 200% auto;
 }
 
@@ -1868,7 +1868,7 @@ button {
     position: relative;
     top: -100px;
     z-index: 20;
-    background-image: url('{$img-path}/home/halfButtons-bg-desktop.png');
+    background-image: url('#{$img-path}/home/halfButtons-bg-desktop.png');
     background-position: center;
     background-size: 100% auto;
     background-repeat: no-repeat;
@@ -1901,7 +1901,7 @@ button {
 
 .separador-home {
   clear: both;
-  background-image: url('{$img-path}/home/tile-sombrita.png');
+  background-image: url('#{$img-path}/home/tile-sombrita.png');
   padding: 10%;
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -1911,7 +1911,7 @@ button {
 }
 
 .separador-faq {
-  background-image: url('{$img-path}/home/tile-sombrita.png');
+  background-image: url('#{$img-path}/home/tile-sombrita.png');
   padding: 20px;
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -1922,7 +1922,7 @@ button {
 }
 
 #carousel-home-welcome {
-  background-image: url('{$img-path}/home/fondo-carrusel-home-nonwomer.png');
+  background-image: url('#{$img-path}/home/fondo-carrusel-home-nonwomer.png');
   background-position: center bottom;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1946,7 +1946,7 @@ button {
 
 @media only screen and (min-width: 900px)  {
   #carousel-home-welcome {
-    background-image: url('{$img-path}/home/bg-carousel-womers-desktop.png');
+    background-image: url('#{$img-path}/home/bg-carousel-womers-desktop.png');
   }
   #carousel-home-welcome .item .promo-slide {
     width: 25%;  
@@ -1979,7 +1979,7 @@ button {
 }
 
 #carousel-home-nonwomers {
-  background-image: url('{$img-path}/home/bg-carousel-nonwomers.png');
+  background-image: url('#{$img-path}/home/bg-carousel-nonwomers.png');
   background-size: 100% auto;
   background-position: center;
   background-repeat: no-repeat;
@@ -2005,7 +2005,7 @@ button {
 
 @media only screen and (min-width: 900px) {
   #carousel-home-nonwomers {
-    background-image: url('{$img-path}/home/bg-carousel-nonwomers-desktop.png');
+    background-image: url('#{$img-path}/home/bg-carousel-nonwomers-desktop.png');
     margin-top: -120px;
     padding-top: 150px;
   }
@@ -2040,7 +2040,7 @@ button {
   background-position: center;
   background-size: 100% auto;
   background-repeat: no-repeat;
-  background-image: url('{$img-path}/home/plan-conveniente-title.png');
+  background-image: url('#{$img-path}/home/plan-conveniente-title.png');
 }
 
 #carousel-home-nonwomers .item .carousel-caption {
@@ -2094,14 +2094,14 @@ button {
 }
 #carousel-belowfold-equipos {
   margin: 30px 0;
-  background-image: url('{$img-path}/home/carrusel-nonwomers-equipos-bg.png');
+  background-image: url('#{$img-path}/home/carrusel-nonwomers-equipos-bg.png');
   padding: 30px 0;
   background-size: 100% auto;
 }
 @media only screen and (min-width: 900px) {
   #carousel-belowfold-equipos {
     padding-top: 50px;
-    background-image: url('{$img-path}/home/carrusel-nonwomers-equipos-bg-desktop.png');
+    background-image: url('#{$img-path}/home/carrusel-nonwomers-equipos-bg-desktop.png');
   }
 }
 
@@ -2127,7 +2127,7 @@ button {
 }
 .form-control.centro-ayuda-search {
   border: 1px solid #666;
-  background-image: url('{$img-path}/home/ico-lupa.svg');
+  background-image: url('#{$img-path}/home/ico-lupa.svg');
   background-repeat: no-repeat;
   background-position: 97% center;
   padding: 10px;
@@ -2140,7 +2140,7 @@ button {
 /* centro de ayuda : Home */
 
 .centro-ayuda-welcome {
-  background-image: url('{$img-path}/centro-de-ayuda/welcome-bg.png');
+  background-image: url('#{$img-path}/centro-de-ayuda/welcome-bg.png');
   background-position: center bottom;
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -2150,7 +2150,7 @@ button {
 }
 
 .centro-ayuda-satisfaction {
-  background-image: url('{$img-path}/centro-de-ayuda/welcome-bg.png');
+  background-image: url('#{$img-path}/centro-de-ayuda/welcome-bg.png');
   height: 185px;
   background-position: center 0px;
   background-size: 100% auto;
@@ -2598,7 +2598,7 @@ button {
 /* Otros iconos */
 
 .ico-input-money {
-    background-image: url('{$img-path}/private_site/compra_bolsa/ico-input-money.svg');
+    background-image: url('#{$img-path}/private_site/compra_bolsa/ico-input-money.svg');
     width: 18px;
     height: 18px;
     display: block;
@@ -2608,42 +2608,42 @@ button {
 }
 
 .ico-bolsa-bolsa_datos {
-    background-image: url('{$img-path}/private_site/compra_bolsa/ico-bolsa_datos.svg');
+    background-image: url('#{$img-path}/private_site/compra_bolsa/ico-bolsa_datos.svg');
     width: 40px;
     height: 32px;
     display: block;
     margin: 0 auto;
 }
 .ico-bolsa-bolsa_voz {
-    background-image: url('{$img-path}/private_site/compra_bolsa/ico-bolsa_voz.svg');
+    background-image: url('#{$img-path}/private_site/compra_bolsa/ico-bolsa_voz.svg');
     width: 32px;
     height: 32px;
     display: block;
     margin: 0 auto;
 }
 .ico-bolsa-bolsa_sms {
-    background-image: url('{$img-path}/private_site/compra_bolsa/ico-bolsa_sms.svg');
+    background-image: url('#{$img-path}/private_site/compra_bolsa/ico-bolsa_sms.svg');
     width: 40px;
     height: 30px;
     display: block;
     margin: 0 auto;
 }
 .ico-bolsa-bolsa_mixtas {
-    background-image: url('{$img-path}/private_site/compra_bolsa/ico-bolsa_mixta.svg');
+    background-image: url('#{$img-path}/private_site/compra_bolsa/ico-bolsa_mixta.svg');
     width: 38px;
     height: 32px;
     display: block;
     margin: 0 auto;
 }
 .ico-bolsa-bolsa_tematicas {
-    background-image: url('{$img-path}/private_site/compra_bolsa/ico-bolsa_tematica.svg');
+    background-image: url('#{$img-path}/private_site/compra_bolsa/ico-bolsa_tematica.svg');
     width: 32px;
     height: 32px;
     display: block;
     margin: 0 auto;
 }
 .ico-bolsa-bolsa_roaming {
-    background-image: url('{$img-path}/private_site/compra_bolsa/ico-bolsa_roaming.svg');
+    background-image: url('#{$img-path}/private_site/compra_bolsa/ico-bolsa_roaming.svg');
     width: 32px;
     height: 32px;
     display: block;
@@ -2651,7 +2651,7 @@ button {
 }
 
 .ico-promo-descubre-plan {
-    background-image: url('{$img-path}/private_site/ico-promo-descubre-plan.svg');
+    background-image: url('#{$img-path}/private_site/ico-promo-descubre-plan.svg');
     width: 19px;
     height: 25px;
     display: block;
@@ -2970,7 +2970,7 @@ button .icon {
 /*desktop CONTENT*/
 
 .desktop-header {
-  background-image: url('{$img-path}/servicio_tecnico/serviciotecnico-header-desktop-bg.png');
+  background-image: url('#{$img-path}/servicio_tecnico/serviciotecnico-header-desktop-bg.png');
   background-size: 100% auto;
   background-repeat: no-repeat;
   min-height: 520px;
@@ -2987,7 +2987,7 @@ button .icon {
   margin-top: 120px;
   padding: 70px 50px 150px;
   color: white;
-  background-image: url('{$img-path}/servicio_tecnico/serviciotecnico-header-desktop-bg__inner.png');
+  background-image: url('#{$img-path}/servicio_tecnico/serviciotecnico-header-desktop-bg__inner.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom center;
@@ -2999,7 +2999,7 @@ button .icon {
 }
 
 .desktop-content .personas-serviciotecnico-bg {
-  background-image: url('{$img-path}/banner/persona-home-nonwomer-1-nogradiente.png');
+  background-image: url('#{$img-path}/banner/persona-home-nonwomer-1-nogradiente.png');
   background-size: 300px auto;
   background-repeat: no-repeat;
   background-position: bottom right;
@@ -3018,7 +3018,7 @@ button .icon {
 .fullwidth-slab {
   flex-direction: column;
   min-height: 400px;
-  background-image: url('{$img-path}/home/sided-slab.png');
+  background-image: url('#{$img-path}/home/sided-slab.png');
   margin-top: -100px;
   margin-bottom: 70px;
   padding-top: 250px;
@@ -3030,7 +3030,7 @@ button .icon {
 }
 
 .centro-de-ayuda-welcome-desktop.fullwidth-slab .personaImage {
-  background: url('{$img-path}/banner/persona-home-3.png') no-repeat 80px bottom;
+  background: url('#{$img-path}/banner/persona-home-3.png') no-repeat 80px bottom;
   flex: 1;
   background-size: auto 100%;
 } 
@@ -3179,7 +3179,7 @@ button .icon {
 
 
 .login-ejecutivo-mockup--header {
-  background-image: url('{$img-path}/mockup-login-ejecutivo.png');
+  background-image: url('#{$img-path}/mockup-login-ejecutivo.png');
   height: 200px;
   background-size: 100% auto;
   background-repeat: no-repeat;
