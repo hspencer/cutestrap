@@ -18,10 +18,9 @@ $bootstrap-sass-asset-helper: false !default;
 
 // Brand colors
 
-$primary:				rgb(66, 20, 65) !default; // according to brand manual
-$primary-dark:			darken($primary, 5%);
-$primary-light:			desaturate(lighten($primary, 10%), 10%);
-$primary-transparent:	rgba(70, 2, 123, 0.9); 
+$primary:			rgb(66, 20, 65) !default; // according to brand manual
+$primary-dark:		darken($primary, 5%);
+$primary-light:		desaturate(lighten($primary, 10%), 10%);
 
 $secondary:			#602F84; // #AEA091 #711082 !default; 
 $secondary-dark:	darken($secondary, 12%);
@@ -45,19 +44,22 @@ $link--hover:   	lighten($link, 10%) !default;
 $link--active:  	darken($link, 20%);
 
 // dark shades
-$gray-1:         #424242 !default;
-$gray-2:         lighten($gray-1, 13%) !default;
-$gray-3:         lighten($gray-2, 13%) !default;
+
+$gray-1:         	#424242 !default;
+$gray-2:         	lighten($gray-1, 13%) !default;
+$gray-3:         	lighten($gray-2, 13%) !default;
 
 // light shades
+
 $gray-4:			lighten($gray-3, 13%) !default;
 $gray-5:			lighten($gray-4, 13%) !default;
 $gray-6:			lighten($gray-5, 13%) !default;
 
-$black:			#000000 !default;
-$white:         #ffffff !default;
+$black:				#000000 !default;
+$white:         	#ffffff !default;
 
-$shadow-col:	fade-out($black, .6);
+$shadow-col:		fade-out($black, .6);
+
 //======
 
 $gray-base:              #000 !default;
@@ -75,6 +77,9 @@ $brand-danger:          #D1104A !default;
 
 ///////////////////////////////////////////////
 
+$col-menu:				rgb(98, 39, 97);
+$col-deg-1: 			rgb(74, 26, 74);
+$col-deg-2: 			rgb(45, 16, 45);
 
 //////////////////////////////////////////////
 
@@ -128,6 +133,31 @@ $headings-font-weight:    500 !default;
 $headings-line-height:    1.1 !default;
 $headings-color:          inherit !default;
 
+
+// Font Variables sinonyms
+
+$sans-serif:				$font-family-sans-serif !default;
+$serif:						$font-family-serif !default; 
+$base-font:     			$sans-serif !default;
+$monospace-font:  			$font-family-monospace;
+
+$heading:         			$base-font;
+$body:            			$base-font !default;
+$monospace:       			$monospace-font !default;
+
+$font-size: 				1.6rem;
+$line-height: 				2.4rem !default;
+
+$font-size--small: 			1.2rem !default;
+$font-size--large: 			3rem !default;
+
+
+// tilt angle
+$angle: 					-8deg !default;  // according to brand book
+
+// style attributes
+$corner-radius: 			.5rem;
+$btn-offset: 				.2rem;
 
 //== Iconography
 //
