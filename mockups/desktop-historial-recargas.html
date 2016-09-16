@@ -4,12 +4,11 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Historial de Recargas</title>
+  <title>Historial de recargas - Desktop</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- MOVER A /SRC -->
   <link rel="stylesheet" href="https://dl.dropboxusercontent.com/u/3538/animate.css">
   <link rel="stylesheet" href="../dist/css/womstrap.css">
-  <link rel="stylesheet" href="../dist/css/carlos.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="../dist/js/wom.js"></script>
   <script>
@@ -42,42 +41,46 @@
 			</a>
 		</div>
 		<!-- Collect the nav links, forms, and other content for toggling -->
-		<div class="collapse navbar-collapse" id="navbar-brand-centered">
+		<!-- <div class="collapse navbar-collapse" id="navbar-brand-centered">
 			<ul class="nav navbar-nav">
-			
+				<<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a></li>
+				<<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Personas <span class="caret"></span></a>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="#">Planes</a></li>
+						<li><a href="#">Prepago</a></li>
+						<li><a href="#">Internet</a></li>
+						<li><a href="#">Equipos</a></li>
+						<li class="divider"></li>
+						<li><a href="#">Sucursal Online</a></li>
+					</ul>
+				</li>
 				<li><a class="fw-semibold" href="#">Planes</a></li>
 				<li><a class="fw-semibold" href="#">Prepago</a></li>
 				<li><a class="fw-semibold" href="#">Internet</a></li>
 				<li><a class="fw-semibold" href="#">Equipos</a></li>
 				<li><a class="fw-semibold" href="#">Sucursal Online</a></li>
 			</ul>
-		</div><!-- /.navbar-collapse -->
+		</div> -->
+		<!-- /.navbar-collapse -->
 	</div>
 </nav>
-
-	<header>
-		<div class="bg-modulo bg-modulo-short modulo-portabilidad">
-			<div class="container">
-				<h3 class="ta-center white fw-semibold uc">Historial de Recargas</h3>
-				<h4 class="ta-center fw-normal white fs-base">Revisa tu histórico de recargas</h4>
-			</div>
-		</div>
-	</header>
 
 	
 
 <div class="container">
-	<div class="row">
-		<div class="col-xs-12 col-md-4 col-md-offset-4 select-phone">
-	<select class="form-control select-caret fw-bold">
-	  <option selected="">+56 988776655</option>
-	  <option>2</option>
-	  <option>3</option>
-	  <option>4</option>
-	  <option>5</option>
-	</select>
-</div>
-</div>
+	<div class="row hidden-lg">
+		<div class="col-xs-12 select-phone">
+			<select class="form-control select-caret fw-bold">
+			  <option selected="">+56 988776655</option>
+			  <option>2</option>
+			  <option>3</option>
+			  <option>4</option>
+			  <option>5</option>
+			</select>
+		</div>
+	</div>
 	<div class="row mt-20">
 		<div class="col-xs-12 col-lg-4 ta-center">
 			<div class="modulo-saldo">
@@ -88,56 +91,45 @@
 				
 			</div>
 		</div>
-		<div class="col-xs-12 col-lg-4 ta-center" >
+		<div class="col-xs-12 col-lg-4 ta-center">
 			<div class="modulo-saldo">
 			<h4 class="fw-normal nopadding fs-smalish fc-gray2">Tu recarga promedio mensual es de:</h4>
-				<h2 class="modulo-saldo-promedio nopadding" style="margin-bottom:2px;">
+				<h2 class="modulo-saldo-promedio nopadding">
 					<small>$</small><span class="fw-semibold fc-gray2 fs-medium">20.000</span>
 				</h2>
 			</div>
 		</div>
 		<div class="col-xs-12 col-lg-4 ta-center">
 			<div class="well modulo-planes-convenientes">
-			<i class="fa fa-lightbulb-o ico-promo-descubre-plan pull-left" aria-hidden="true"></i>
-				<p class="desc-plan">Descubre un plan más conveniente</p>
-			
-					<button type="button" href="#" class="btn btn-primary fs-medium fw-semibold m-top-10">Ver planes</button>
+				<i class="fa morado-plain ico-promo-descubre-plan pull-left"></i>
+				<p class="pull-left hidden-lg">Descubre un plan más conveniente</p>
+				<p class="hidden-xs text-center">Descubre un plan más conveniente</p>
+				<p>
+					<button type="button" href="#" class="btn btn-primary fs-medium fw-semibold">Ver planes</button>
 				</p>
 			</div> 
 		</div>
 	</div>
+</div>
 
-<div class="row wow fadeInUp bottom-30">
-<div class="col-md-4">
-	<div class="arrow-right hidden-xs hidden-sm"></div>
-	
-	<div class="calendarCards">
-	<div class="item wow">
-<div class="cards-head act-month">
+<hr class="hidden-lg">
 
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12 col-lg-4">
+			<ul class="calendarCards">
+				<li class="item wow fadeInUp">
+					<div class="cards-head">
 						<div class="cards-head-mes uc">
 							<small>Mes Actual</small>
 							<strong>Julio</strong>
 						</div>
-
 						<div class="cards-head-total">
 							<strong class="fw-semibold white">Total</strong>
 							<span class="fw-semibold">$20.000</span>
 						</div>
-</div>
-
-</div>
-	</div>
-
-
-</div>
-
-<div class="col-md-8">
-	
-<div class="calendarCards">
-	<div class="item wow border-item">
-
-<div class="cards-content" >
+					</div>
+					<div class="cards-content">
 						<div class="cards-content-item">
 							<div class="cards-content-item-date ta-center fw-bold">
 								<span class="uc">Jul</span>
@@ -165,22 +157,13 @@
 							</div>
 						</div>
 					</div>
-</div></div>
-
-</div>
-
-
-</div>
-
-
-
-<div class="row wow fadeInUp bottom-30">
-<div class="col-md-4">
-	<div class="arrow-right-g hidden-xs hidden-sm"></div>
-	
-	<div class="calendarCards">
-	<div class="item wow">
-<div class="cards-head">
+				</li>
+			</ul>
+		</div>
+		<div class="col-xs-12 col-lg-4">
+			<ul class="calendarCards">
+				<li class="item wow fadeInUp">
+					<div class="cards-head bg-mes-recarga">
 						<div class="cards-head-mes uc">
 							<strong class="morado-chicle">Mayo</strong>
 						</div>
@@ -189,22 +172,10 @@
 							<span class="fw-semibold morado-plain">$20.000</span>
 						</div>
 					</div>
-
-</div>
-	</div>
-
-
-</div>
-
-<div class="col-md-8">
-	
-<div class="calendarCards">
-	<div class="item wow border-item">
-
-<div class="cards-content">
+					<div class="cards-content">
 						<div class="cards-content-item">
 							<div class="cards-content-item-date ta-center fw-bold">
-								<span class="uc">Jul</span>
+								<span class="uc">May</span>
 								25
 							</div>
 							<div class="cards-content-item-desc">
@@ -212,61 +183,42 @@
 								<p class="fw-semibold">Unimarc Portugal</p>
 							</div>
 							<div class="cards-content-item-total">
-								<p class="fw-semibold morado-chicle">$5.000</p>
+								<p class="fw-semibold morado-chicle">$10.000</p>
 							</div>
 						</div>
 						<div class="cards-content-item">
 							<div class="cards-content-item-date ta-center fw-bold">
-								<span class="uc">Jul</span>
+								<span class="uc">May</span>
 								08
 							</div>
 							<div class="cards-content-item-desc">
 								<p>Medio de recarga</p>
-								<p class="fw-semibold">Cruz Verde Av Matta</p>
+								<p class="fw-semibold">Cruz Verde Avda Matta</p>
 							</div>
 							<div class="cards-content-item-total">
-								<p class="fw-semibold morado-chicle">$15.000</p>
+								<p class="fw-semibold morado-chicle">$10.000</p>
 							</div>
 						</div>
 					</div>
-</div></div>
-
-</div>
-
-
-</div>
-
-<div class="row wow fadeInUp bottom-30">
-<div class="col-md-4">
-	<div class="arrow-right-g hidden-xs hidden-sm"></div>
-	
-	<div class="calendarCards">
-	<div class="item wow">
-<div class="cards-head">
+				</li>
+			</ul>
+		</div>
+		<div class="col-xs-12 col-lg-4">
+			<ul class="calendarCards">
+				<li class="item wow fadeInUp">
+					<div class="cards-head bg-mes-recarga">
 						<div class="cards-head-mes uc">
-							<strong class="morado-chicle">Abril</strong>
+							<strong class="morado-chicle">Mayo</strong>
 						</div>
 						<div class="cards-head-total nomargin-head">
 							<strong class="fw-normal text-muted">Total</strong>
 							<span class="fw-semibold morado-plain">$20.000</span>
 						</div>
 					</div>
-
-</div>
-	</div>
-
-
-</div>
-
-<div class="col-md-8">
-	
-<div class="calendarCards">
-	<div class="item wow border-item">
-
-<div class="cards-content">
+					<div class="cards-content">
 						<div class="cards-content-item">
 							<div class="cards-content-item-date ta-center fw-bold">
-								<span class="uc">Jul</span>
+								<span class="uc">May</span>
 								25
 							</div>
 							<div class="cards-content-item-desc">
@@ -274,56 +226,182 @@
 								<p class="fw-semibold">Unimarc Portugal</p>
 							</div>
 							<div class="cards-content-item-total">
-								<p class="fw-semibold morado-chicle">$5.000</p>
+								<p class="fw-semibold morado-chicle">$10.000</p>
 							</div>
 						</div>
 						<div class="cards-content-item">
 							<div class="cards-content-item-date ta-center fw-bold">
-								<span class="uc">Jul</span>
+								<span class="uc">May</span>
 								08
 							</div>
 							<div class="cards-content-item-desc">
 								<p>Medio de recarga</p>
-								<p class="fw-semibold">Cruz Verde Av Matta</p>
+								<p class="fw-semibold">Cruz Verde Avda Matta</p>
 							</div>
 							<div class="cards-content-item-total">
-								<p class="fw-semibold morado-chicle">$15.000</p>
+								<p class="fw-semibold morado-chicle">$10.000</p>
 							</div>
 						</div>
 					</div>
-</div></div>
+				</li>
+			</ul>
+		</div>
+	</div>
 
-</div>
-
-
-</div>
-
-
-
-
-
-
-
-
-
-</div>
-
-<hr class="hidden-lg">
-
-<div class="container">
-	
-
-	
+	<div class="row">
+		<div class="col-xs-12 col-lg-4">
+			<ul class="calendarCards">
+				<li class="item wow fadeInUp">
+					<div class="cards-head bg-mes-recarga">
+						<div class="cards-head-mes uc">
+							<strong class="morado-chicle">Mayo</strong>
+						</div>
+						<div class="cards-head-total nomargin-head">
+							<strong class="fw-normal text-muted">Total</strong>
+							<span class="fw-semibold morado-plain">$20.000</span>
+						</div>
+					</div>
+					<div class="cards-content">
+						<div class="cards-content-item">
+							<div class="cards-content-item-date ta-center fw-bold">
+								<span class="uc">May</span>
+								25
+							</div>
+							<div class="cards-content-item-desc">
+								<p>Medio de recarga</p>
+								<p class="fw-semibold">Unimarc Portugal</p>
+							</div>
+							<div class="cards-content-item-total">
+								<p class="fw-semibold morado-chicle">$10.000</p>
+							</div>
+						</div>
+						<div class="cards-content-item">
+							<div class="cards-content-item-date ta-center fw-bold">
+								<span class="uc">May</span>
+								08
+							</div>
+							<div class="cards-content-item-desc">
+								<p>Medio de recarga</p>
+								<p class="fw-semibold">Cruz Verde Avda Matta</p>
+							</div>
+							<div class="cards-content-item-total">
+								<p class="fw-semibold morado-chicle">$10.000</p>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="col-xs-12 col-lg-4">
+			<ul class="calendarCards">
+				<li class="item wow fadeInUp">
+					<div class="cards-head bg-mes-recarga">
+						<div class="cards-head-mes uc">
+							<strong class="morado-chicle">Mayo</strong>
+						</div>
+						<div class="cards-head-total nomargin-head">
+							<strong class="fw-normal text-muted">Total</strong>
+							<span class="fw-semibold morado-plain">$20.000</span>
+						</div>
+					</div>
+					<div class="cards-content">
+						<div class="cards-content-item">
+							<div class="cards-content-item-date ta-center fw-bold">
+								<span class="uc">May</span>
+								25
+							</div>
+							<div class="cards-content-item-desc">
+								<p>Medio de recarga</p>
+								<p class="fw-semibold">Unimarc Portugal</p>
+							</div>
+							<div class="cards-content-item-total">
+								<p class="fw-semibold morado-chicle">$10.000</p>
+							</div>
+						</div>
+						<div class="cards-content-item">
+							<div class="cards-content-item-date ta-center fw-bold">
+								<span class="uc">May</span>
+								08
+							</div>
+							<div class="cards-content-item-desc">
+								<p>Medio de recarga</p>
+								<p class="fw-semibold">Cruz Verde Avda Matta</p>
+							</div>
+							<div class="cards-content-item-total">
+								<p class="fw-semibold morado-chicle">$10.000</p>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="col-xs-12 col-lg-4">
+			<ul class="calendarCards">
+				<li class="item wow fadeInUp">
+					<div class="cards-head bg-mes-recarga">
+						<div class="cards-head-mes uc">
+							<strong class="morado-chicle">Mayo</strong>
+						</div>
+						<div class="cards-head-total nomargin-head">
+							<strong class="fw-normal text-muted">Total</strong>
+							<span class="fw-semibold morado-plain">$20.000</span>
+						</div>
+					</div>
+					<div class="cards-content">
+						<div class="cards-content-item">
+							<div class="cards-content-item-date ta-center fw-bold">
+								<span class="uc">May</span>
+								25
+							</div>
+							<div class="cards-content-item-desc">
+								<p>Medio de recarga</p>
+								<p class="fw-semibold">Unimarc Portugal</p>
+							</div>
+							<div class="cards-content-item-total">
+								<p class="fw-semibold morado-chicle">$10.000</p>
+							</div>
+						</div>
+						<div class="cards-content-item">
+							<div class="cards-content-item-date ta-center fw-bold">
+								<span class="uc">May</span>
+								08
+							</div>
+							<div class="cards-content-item-desc">
+								<p>Medio de recarga</p>
+								<p class="fw-semibold">Cruz Verde Avda Matta</p>
+							</div>
+							<div class="cards-content-item-total">
+								<p class="fw-semibold morado-chicle">$10.000</p>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		
+	</div>
 
 	<div class="ta-center">
 		<i class="fa morado-plain fa-circle-o-notch fa-spin fa-3x fa-fw margin-bottom"></i>
 	</div>
 
-	
+	<div class="row hidden-xs mt-20">
+		<div class="col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4">
+			<div class="factura-box ta-center">
+				<p class="">Descarga el total de todas tus facturas emitidas</p>
+				<div class="row">
+					<div class="col-lg-6 col-lg-offset-3">
+					<button class="btn-primary btn-large fw-semibold morado-chicle-bg" style="width: 100%;"><i class="fa fa-download"></i> Descargar</button>
+					</div>
+				</div>
+			</div>
+			
+		</div>	
+	</div>
 </div></div>
 </div>
 
-	<footer class="main-foot">
+<footer class="main-foot">
   <div class="container">
     <div class="row">
       <div class="ta-center">
