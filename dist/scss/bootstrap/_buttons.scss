@@ -36,10 +36,11 @@ Styleguide 2.1
   font-weight: $btn-font-weight;
   text-align: center;
   vertical-align: middle;
-  touch-action: manipulation;
+  // touch-action: manipulation;
   cursor: pointer;
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
-  border: 1px solid transparent;
+  border: 2px solid $primary;
+  border-collapse: $primary;
   white-space: nowrap;
   transition-property: all;
   transition-duration: 200ms;
@@ -92,8 +93,7 @@ a.btn {
 // --------------------------------------------------
 
 .btn-default {
-  @include button-variant($primary-light, $btn-default-bg, $primary-light);
-  border-width: 2px;
+  @include button-variant($primary-light, transparent, $primary-light);
 }
 .btn-primary {
   @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);

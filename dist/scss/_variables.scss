@@ -18,16 +18,17 @@ $bootstrap-sass-asset-helper: false !default;
 
 // Brand colors
 
-$primary:				rgb(66, 20, 65) !default; // according to brand manual
-$primary-dark:			darken($primary, 5%);
-$primary-light:			desaturate(lighten($primary, 10%), 10%);
-$primary-transparent:	rgba(70, 2, 123, 0.9); 
+$brand:				#411640 !default;
 
-$secondary:			#602F84; // #AEA091 #711082 !default; 
+$primary:			#381750 !default; // #411640 according to brand manual
+$primary-dark:		darken($primary, 5%);
+$primary-light:		desaturate(lighten($primary, 10%), 10%);
+
+$secondary:			#44007F; // #AEA091 #711082 !default; 
 $secondary-dark:	darken($secondary, 12%);
 $secondary-light:	desaturate(lighten($secondary, 10%), 20%);
 
-$terciary:			#564599 !default;
+$terciary:			#620782 !default;
 $terciary-dark:		darken($terciary, 11%);
 $terciary-light:	desaturate(lighten($terciary, 15%), 4%);
 
@@ -45,19 +46,22 @@ $link--hover:   	lighten($link, 10%) !default;
 $link--active:  	darken($link, 20%);
 
 // dark shades
-$gray-1:         #424242 !default;
-$gray-2:         lighten($gray-1, 13%) !default;
-$gray-3:         lighten($gray-2, 13%) !default;
+
+$gray-1:         	#424242 !default;
+$gray-2:         	lighten($gray-1, 13%) !default;
+$gray-3:         	lighten($gray-2, 13%) !default;
 
 // light shades
+
 $gray-4:			lighten($gray-3, 13%) !default;
 $gray-5:			lighten($gray-4, 13%) !default;
 $gray-6:			lighten($gray-5, 13%) !default;
 
-$black:			#000000 !default;
-$white:         #ffffff !default;
+$black:				#000000 !default;
+$white:         	#ffffff !default;
 
-$shadow-col:	fade-out($black, .6);
+$shadow-col:		fade-out($black, .6);
+
 //======
 
 $gray-base:              #000 !default;
@@ -73,6 +77,13 @@ $brand-info:            #7291E9 !default;
 $brand-warning:         #EB851F !default;
 $brand-danger:          #D1104A !default;
 
+///////////////////////////////////////////////
+
+$col-menu:				rgb(98, 39, 97);
+$col-deg-1: 			rgb(74, 26, 74);
+$col-deg-2: 			rgb(45, 16, 45);
+
+//////////////////////////////////////////////
 
 //== Scaffolding
 //
@@ -125,6 +136,31 @@ $headings-line-height:    1.1 !default;
 $headings-color:          inherit !default;
 
 
+// Font Variables sinonyms
+
+$sans-serif:				$font-family-sans-serif !default;
+$serif:						$font-family-serif !default; 
+$base-font:     			$sans-serif !default;
+$monospace-font:  			$font-family-monospace;
+
+$heading:         			$base-font;
+$body:            			$base-font !default;
+$monospace:       			$monospace-font !default;
+
+$font-size: 				1.6rem;
+$line-height: 				2.4rem !default;
+
+$font-size--small: 			1.2rem !default;
+$font-size--large: 			3rem !default;
+
+
+// tilt angle
+$angle: 					-8deg !default;  // according to brand book
+
+// style attributes
+$corner-radius: 			.5rem;
+$btn-offset: 				.2rem;
+
 //== Iconography
 //
 //## Specify custom location and filename of the included Glyphicons icon font. Useful for those including Bootstrap via Bower.
@@ -135,10 +171,15 @@ $headings-color:          inherit !default;
 // [converter] This is because some asset helpers, such as Sprockets, do not work with file-relative paths.
 $icon-font-path: if($bootstrap-sass-asset-helper, "bootstrap/", "../fonts/bootstrap/") !default;
 
+// Image path
+$img-path:					"../../mockups/img";
+
 //** File name for all font files.
 $icon-font-name:          "glyphicons-halflings-regular" !default;
 //** Element ID within SVG icon file.
 $icon-font-svg-id:        "glyphicons_halflingsregular" !default;
+
+
 
 
 //== Components
@@ -335,6 +376,18 @@ $zindex-navbar-fixed:      1030 !default;
 $zindex-modal-background:  1040 !default;
 $zindex-modal:             1050 !default;
 
+
+$z-index-0:   -1;
+$z-index-1:   100;
+$z-index-2:   200;
+$z-index-3:   300;
+$z-index-4:   400;
+$z-index-5:   500;
+$z-index-6:   600;
+$z-index-7:   700;
+$z-index-8:   800;
+$z-index-9:   900;
+$z-index-10: 1000;
 
 //== Media queries breakpoints
 //

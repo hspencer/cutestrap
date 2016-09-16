@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- MOVER A /SRC -->
   <link rel="stylesheet" href="https://dl.dropboxusercontent.com/u/3538/animate.css">
-  <link rel="stylesheet" href="../dist/css/womstrap.css">
+  <link rel="stylesheet" href="../dist/css/womstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="../dist/js/wom.js"></script>
   <script>
@@ -127,33 +127,31 @@
 		<div class="row">
 			<div class="col-xs-12">
 				<p class="nopadding mt-20 nomargin"><i class="fa fa-cloud-download morado-plain" aria-hidden="true"></i> Vas a comprar una bolsa de roaming</p>
-			</div>
-			
-			<div class="col-xs-12 select-phone fs-normal">
-				<select class="form-control select-caret fw-semibold">
-				  <option selected="">Roaming</option>
-				  <option>Bolsas de voz</option>
-				  <option>Bolsas de SMS</option>
-				  <option>Bolsas mixtas</option>
-				  <option>Bolsas temáticas</option>
-				  <option>Roaming</option>
-				</select>
-			</div>
-
-			<div class="col-xs-12 ta-center roamingNotify">
-				<i class="fa fa-exclamation-circle"></i>
-				<h5 class="morado-plain fw-normal nopadding mb-20">Tu servicio de roaming está <br> desactivado, ¿Deseas activarlo ahora?</h5>
-				<p>
-					<a href="#" onclick="$('.roamingNotify').hide();$('.roamingSelectContainer').show();$('#roamingactivado').slideDown();return false;">
-						<img class="autocenter" src="img/icons/activa-roaming-fancy-button.svg" alt="">
-					</a>
-				</p>
+				<div class="select-phone fs-normal">
+					<select class="form-control select-caret fw-semibold">
+					  <option selected="">Roaming</option>
+					  <option>Bolsas de voz</option>
+					  <option>Bolsas de SMS</option>
+					  <option>Bolsas mixtas</option>
+					  <option>Bolsas temáticas</option>
+					  <option>Roaming</option>
+					</select>
+				</div>
+				<div class="ta-center roamingNotify">
+					<i class="fa fa-exclamation-circle"></i>
+					<h5 class="morado-plain fw-normal nopadding mb-20">Tu servicio de roaming está <br> desactivado, ¿Deseas activarlo ahora?</h5>
+					<p>
+						<a href="#" onclick="$('.roamingNotify').hide();$('.roamingSelectContainer').show();$('#roamingactivado').slideDown();return false;">
+							<img class="autocenter" src="img/icons/activa-roaming-fancy-button.svg" alt="">
+						</a>
+					</p>
+				</div>
 			</div>
 		</div>
 	</div>
 	
 	<div class="roamingSelectContainer" style="display: none;">
-		<div class="roamingSelect animated" style="position: absolute; width: 100%;">
+		<div class="roamingSelect animated">
 			<ul>
 				<li>
 					<a href="javascript:void(0);" id="selectBolsa" href="#">
@@ -174,7 +172,7 @@
 			</ul>
 		</div>
 		
-		<div id="selectBolsa" class="roamingSelectBolsa animated fadeInRight" style="display: none; position: absolute; width: 100%;">
+		<div id="selectBolsa" class="roamingSelectBolsa animated fadeInRight" style="display: none;">
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12">

@@ -1,49 +1,99 @@
-// A beautiful selection of our branded colors
-//
-// Styleguide
+/*
 
-// Brand colors
+Colors
 
-$primary:				rgb(66, 20, 65) !default; // according to brand manual
-$primary-dark:			darken($primary, 5%);
-$primary-light:			desaturate(lighten($primary, 10%), 10%);
-$primary-transparent:	rgba(70, 2, 123, 0.9); 
+These are specific color backgrounds for different elements and containers
 
-$secondary:			#602F84; // #AEA091 #711082 !default; 
-$secondary-dark:	darken($secondary, 12%);
-$secondary-light:	desaturate(lighten($secondary, 10%), 20%);
+Markup:
+<div class="box color skew {{modifier_class}}">
+  <span class="white">{{modifier_class}}</span>
+</div>
 
-$terciary:			#564599 !default;
-$terciary-dark:		darken($terciary, 11%);
-$terciary-light:	desaturate(lighten($terciary, 15%), 4%);
 
-$quaternary: 		#720184;
-$quaternary-light:	desaturate(lighten($quaternary, 15%), 4%);
+.primary        - Primary brand color: Base purple: rgb(66, 20, 65) - loulou
+.secondary        - Secondary brand color: Lighter purple
+.terciary         - Terciary brand color: Washed purple
+.ok           - brand-ok
+.success        - brand success
+.cancel         - cancel
 
-$pink: 				#D0AFD5;
-$morado-morado: 	#621082;
-$grape: 			#421441;
 
-$color-action:		#720184 !default;
-$link:          	$color-action !default;
-$link--visited: 	darken($link, 10%) !default;
-$link--hover:   	lighten($link, 10%) !default;
-$link--active:  	darken($link, 20%);
+Styleguide 5.0
 
-// dark shades
-$gray-1:         #424242 !default;
-$gray-2:         lighten($gray-1, 13%) !default;
-$gray-3:         lighten($gray-2, 13%) !default;
+*/
 
-// light shades
-$gray-4:			lighten($gray-3, 13%) !default;
-$gray-5:			lighten($gray-4, 13%) !default;
-$gray-6:			lighten($gray-5, 13%) !default;
+.primary{background-color:      $primary;}
+.secondary{background-color:    $secondary;}
+.terciary{background-color:     $terciary;}
 
-$black:			#000000 !default;
-$white:         #ffffff !default;
+.primary-dark{background-color:   $primary-dark;}
+.secondary-dark{background-color:   $secondary-dark;}
+.terciary-dark{background-color:  $terciary-dark;}
 
-$shadow-col:	fade-out($black, .6);
+.primary-light{background-color:  $primary-light;}
+.secondary-light{background-color:  $secondary-light;}
+.terciary-light{background-color:   $terciary-light;}
+
+
+/*
+
+Shades of Gray
+
+These are the 6 different shades of gray defined.
+
+Markup:
+<div class="box color skew {{modifier_class}}">
+  <span class="white">{{modifier_class}}</span>
+</div>
+
+.gray-1             - Gray 1: darkest
+.gray-2             - Gray 2
+.gray-3             - Gray 3
+.gray-4             - Gray 4
+.gray-5             - Gray 5
+.gray-6             - Gray 6: lightest
+
+Styleguide 5.1
+
+*/
+
+.gray-1{background-color: $gray-1}
+.gray-2{background-color: $gray-2}
+.gray-3{background-color: $gray-3}
+.gray-4{background-color: $gray-4}
+.gray-5{background-color: $gray-5}
+.gray-6{background-color: $gray-6}
+
+/*
+
+Semantic Colors
+
+Color relative to kind of action performed. This needs to be consistent across touchpoints
+
+Markup:
+<div class="box color skew {{modifier_class}}">
+  <span class="white">{{modifier_class}}</span>
+</div>
+
+.ok             - Positive color, used for action buttons
+.cancel           - Neutral or negative action
+.success          - Success color
+.info             - Information color
+.warning          - Warning color
+.danger           - Danger color
+
+Styleguide 5.2
+
+*/
+
+.ok{background-color: $color-action}
+.cancel{background-color: $gray-3}
+.success{background-color: $brand-success;}
+.info{background-color: $brand-info;}
+.warning{background-color: $brand-warning;}
+.danger{background-color: $brand-danger;}
+
+
 
 .morado-plain {
   color: $quaternary;
@@ -107,4 +157,3 @@ $shadow-col:	fade-out($black, .6);
   border-bottom: 2px solid $quaternary;
   padding-bottom: 5px;
 }
-

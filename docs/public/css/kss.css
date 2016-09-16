@@ -101,6 +101,134 @@
   font-weight: normal;
   font-style: italic; }
 
+/*
+
+Colors
+
+These are specific color backgrounds for different elements and containers
+
+Markup:
+<div class="box color skew {{modifier_class}}">
+  <span class="white">{{modifier_class}}</span>
+</div>
+
+
+.primary        - Primary brand color: Base purple: rgb(66, 20, 65) - loulou
+.secondary        - Secondary brand color: Lighter purple
+.terciary         - Terciary brand color: Washed purple
+.ok           - brand-ok
+.success        - brand success
+.cancel         - cancel
+
+
+Styleguide 5.0
+
+*/
+.primary {
+  background-color: #381750; }
+
+.secondary {
+  background-color: #44007F; }
+
+.terciary {
+  background-color: #620782; }
+
+.primary-dark {
+  background-color: #2a113c; }
+
+.secondary-dark {
+  background-color: #230042; }
+
+.terciary-dark {
+  background-color: #3a044d; }
+
+.primary-light {
+  background-color: #532a70; }
+
+.secondary-light {
+  background-color: #5e12a0; }
+
+.terciary-light {
+  background-color: #970fc6; }
+
+/*
+
+Shades of Gray
+
+These are the 6 different shades of gray defined.
+
+Markup:
+<div class="box color skew {{modifier_class}}">
+  <span class="white">{{modifier_class}}</span>
+</div>
+
+.gray-1             - Gray 1: darkest
+.gray-2             - Gray 2
+.gray-3             - Gray 3
+.gray-4             - Gray 4
+.gray-5             - Gray 5
+.gray-6             - Gray 6: lightest
+
+Styleguide 5.1
+
+*/
+.gray-1 {
+  background-color: #424242; }
+
+.gray-2 {
+  background-color: #636363; }
+
+.gray-3 {
+  background-color: #848484; }
+
+.gray-4 {
+  background-color: #a5a5a5; }
+
+.gray-5 {
+  background-color: #c7c7c7; }
+
+.gray-6 {
+  background-color: #e8e8e8; }
+
+/*
+
+Semantic Colors
+
+Color relative to kind of action performed. This needs to be consistent across touchpoints
+
+Markup:
+<div class="box color skew {{modifier_class}}">
+  <span class="white">{{modifier_class}}</span>
+</div>
+
+.ok             - Positive color, used for action buttons
+.cancel           - Neutral or negative action
+.success          - Success color
+.info             - Information color
+.warning          - Warning color
+.danger           - Danger color
+
+Styleguide 5.2
+
+*/
+.ok {
+  background-color: #720184; }
+
+.cancel {
+  background-color: #848484; }
+
+.success {
+  background-color: #ba007c; }
+
+.info {
+  background-color: #7291E9; }
+
+.warning {
+  background-color: #EB851F; }
+
+.danger {
+  background-color: #D1104A; }
+
 .morado-plain {
   color: #720184; }
 
@@ -137,7 +265,7 @@
   text-decoration: underline; }
 
 .fc-primary {
-  color: #421441; }
+  color: #381750; }
 
 .fc-gray3 {
   color: #848484; }
@@ -162,19 +290,13 @@
   border-bottom: 2px solid #720184;
   padding-bottom: 5px; }
 
-html.grid--is_active {
-  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAYAQMAAADnK87dAAAABlBMVEX///8AAABVwtN+AAAAAnRSTlMANrkpWKEAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVAiZY2AgCTwAAAEQAOFwuZEGAAAAAElFTkSuQmCC) repeat left top; }
-  @media (min-width: 960px) {
-    html.grid--is_active {
-      background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAeAQMAAAAxci3AAAAABlBMVEX///8AAABVwtN+AAAAAnRSTlMANrkpWKEAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVAiZY2AgGzwAAAEcAOFHPV40AAAAAElFTkSuQmCC) repeat left top; } }
-
 .kss-modifier-title {
   color: #848484; }
 
 header {
-  background-image: linear-gradient(to right, #2e0e2e 0%, #602F84 100%);
+  background-image: linear-gradient(to right, #2a113c 0%, #44007F 100%);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF2E0E2E', endColorstr='#FF602F84', GradientType=1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF2A113C', endColorstr='#FF44007F', GradientType=1);
   color: #ffffff;
   padding: 0 1rem; }
 
