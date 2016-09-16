@@ -18,15 +18,17 @@ $bootstrap-sass-asset-helper: false !default;
 
 // Brand colors
 
-$primary:			rgb(66, 20, 65) !default; // according to brand manual
+$brand:				#411640 !default;
+
+$primary:			#381750 !default; // #411640 according to brand manual
 $primary-dark:		darken($primary, 5%);
 $primary-light:		desaturate(lighten($primary, 10%), 10%);
 
-$secondary:			#602F84; // #AEA091 #711082 !default; 
+$secondary:			#44007F; // #AEA091 #711082 !default; 
 $secondary-dark:	darken($secondary, 12%);
 $secondary-light:	desaturate(lighten($secondary, 10%), 20%);
 
-$terciary:			#564599 !default;
+$terciary:			#620782 !default;
 $terciary-dark:		darken($terciary, 11%);
 $terciary-light:	desaturate(lighten($terciary, 15%), 4%);
 
@@ -374,6 +376,18 @@ $zindex-navbar-fixed:      1030 !default;
 $zindex-modal-background:  1040 !default;
 $zindex-modal:             1050 !default;
 
+
+$z-index-0:   -1;
+$z-index-1:   100;
+$z-index-2:   200;
+$z-index-3:   300;
+$z-index-4:   400;
+$z-index-5:   500;
+$z-index-6:   600;
+$z-index-7:   700;
+$z-index-8:   800;
+$z-index-9:   900;
+$z-index-10: 1000;
 
 //== Media queries breakpoints
 //

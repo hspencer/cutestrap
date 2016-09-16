@@ -125,31 +125,31 @@ Styleguide 5.0
 
 */
 .primary {
-  background-color: #421441; }
+  background-color: #381750; }
 
 .secondary {
-  background-color: #602F84; }
+  background-color: #44007F; }
 
 .terciary {
-  background-color: #564599; }
+  background-color: #620782; }
 
 .primary-dark {
-  background-color: #2e0e2e; }
+  background-color: #2a113c; }
 
 .secondary-dark {
-  background-color: #3f1f57; }
+  background-color: #230042; }
 
 .terciary-dark {
-  background-color: #403472; }
+  background-color: #3a044d; }
 
 .primary-light {
-  background-color: #622761; }
+  background-color: #532a70; }
 
 .secondary-light {
-  background-color: #785393; }
+  background-color: #5e12a0; }
 
 .terciary-light {
-  background-color: #8071b9; }
+  background-color: #970fc6; }
 
 /*
 
@@ -265,7 +265,7 @@ Styleguide 5.2
   text-decoration: underline; }
 
 .fc-primary {
-  color: #421441; }
+  color: #381750; }
 
 .fc-gray3 {
   color: #848484; }
@@ -294,9 +294,9 @@ Styleguide 5.2
   color: #848484; }
 
 header {
-  background-image: linear-gradient(to right, #2e0e2e 0%, #602F84 100%);
+  background-image: linear-gradient(to right, #2a113c 0%, #44007F 100%);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF2E0E2E', endColorstr='#FF602F84', GradientType=1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF2A113C', endColorstr='#FF44007F', GradientType=1);
   color: #ffffff;
   padding: 0 1rem; }
 
