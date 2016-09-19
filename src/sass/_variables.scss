@@ -28,7 +28,11 @@ $secondary:			#44007F !default; // eggplant;
 $secondary-dark:	darken($secondary, 12%);
 $secondary-light:	desaturate(lighten($secondary, 10%), 20%);
 
+<<<<<<< HEAD
 $terciary:			#42257C !default; // windsor
+=======
+$terciary:			#564897 !default;
+>>>>>>> origin/dev-zmasterz
 $terciary-dark:		darken($terciary, 11%);
 $terciary-light:	desaturate(lighten($terciary, 15%), 4%);
 

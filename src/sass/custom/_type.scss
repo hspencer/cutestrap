@@ -1,0 +1,28 @@
+// Font based variables
+//
+// Styleguide
+
+
+
+$sans-serif:	Cera, sans-serif !default;
+$serif:			Bitter, serif !default;
+$base-font:     $sans-serif;
+$monospace-font:  'Consolas', 'Monaco', 'Courier New', monospace !default;
+
+$heading:         $base-font !default;
+$body:            $base-font !default;
+$monospace:       $monospace-font !default;
+
+$font-size: 1.6rem !default;
+$line-height: 2.4rem !default;
+
+$font-size--small: 1.2rem !default;
+$font-size--large: 3rem !default;
+
+
+// tilt angle
+$angle: -8deg !default;  // according to brand book
+
+// style attributes
+$corner-radius: .5rem;
+$btn-offset: .2rem;
