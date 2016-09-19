@@ -113,9 +113,11 @@ Markup:
 </div>
 
 
+.color-brand          -  Brand color: Base purple: rgb(66, 20, 65) - AKA Loulou
 .primary        - Primary brand color: Base purple: rgb(66, 20, 65) - loulou
 .secondary        - Secondary brand color: Lighter purple
-.terciary         - Terciary brand color: Washed purple
+.terciary           - Terciary brand color: Washed purple
+.quaternary         - Quaternary brand color: nobody knows
 .ok           - brand-ok
 .success        - brand success
 .cancel         - cancel
@@ -124,6 +126,9 @@ Markup:
 Styleguide 5.0
 
 */
+.color-brand {
+  background-color: #411640; }
+
 .primary {
   background-color: #381750; }
 
@@ -131,7 +136,10 @@ Styleguide 5.0
   background-color: #44007F; }
 
 .terciary {
-  background-color: #620782; }
+  background-color: #42257C; }
+
+.quaternary {
+  background-color: #720184; }
 
 .primary-dark {
   background-color: #2a113c; }
@@ -140,7 +148,7 @@ Styleguide 5.0
   background-color: #230042; }
 
 .terciary-dark {
-  background-color: #3a044d; }
+  background-color: #2b1851; }
 
 .primary-light {
   background-color: #532a70; }
@@ -149,7 +157,7 @@ Styleguide 5.0
   background-color: #5e12a0; }
 
 .terciary-light {
-  background-color: #970fc6; }
+  background-color: #633bb2; }
 
 /*
 
@@ -207,6 +215,7 @@ Markup:
 .info             - Information color
 .warning          - Warning color
 .danger           - Danger color
+.morado-bg        - Morado-morado
 
 Styleguide 5.2
 

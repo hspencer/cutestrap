@@ -10,9 +10,11 @@ Markup:
 </div>
 
 
+.color-brand          -  Brand color: Base purple: rgb(66, 20, 65) - AKA Loulou
 .primary        - Primary brand color: Base purple: rgb(66, 20, 65) - loulou
 .secondary        - Secondary brand color: Lighter purple
-.terciary         - Terciary brand color: Washed purple
+.terciary           - Terciary brand color: Washed purple
+.quaternary         - Quaternary brand color: nobody knows
 .ok           - brand-ok
 .success        - brand success
 .cancel         - cancel
@@ -22,9 +24,11 @@ Styleguide 5.0
 
 */
 
-.primary{background-color:      $primary;}
-.secondary{background-color:    $secondary;}
-.terciary{background-color:     $terciary;}
+.color-brand{background-color:      $brand;}
+.primary{background-color:          $primary;}
+.secondary{background-color:        $secondary;}
+.terciary{background-color:         $terciary;}
+.quaternary{background-color:        $quaternary;}
 
 .primary-dark{background-color:   $primary-dark;}
 .secondary-dark{background-color:   $secondary-dark;}
@@ -81,29 +85,28 @@ Markup:
 .info             - Information color
 .warning          - Warning color
 .danger           - Danger color
+.morado-bg        - Morado-morado
 
 Styleguide 5.2
 
 */
 
-.ok{background-color: $color-action}
-.cancel{background-color: $gray-3}
-.success{background-color: $brand-success;}
-.info{background-color: $brand-info;}
-.warning{background-color: $brand-warning;}
-.danger{background-color: $brand-danger;}
+.ok{background-color:       $color-action}
+.cancel{background-color:   $gray-3}
+.success{background-color:  $brand-success;}
+.info{background-color:     $brand-info;}
+.warning{background-color:  $brand-warning;}
+.danger{background-color:   $brand-danger;}
 
 
 
-.morado-plain {
-  color: $quaternary;
+.morado-plain {color: $quaternary;
 }
 .morado-plain-bg {
   background-color: $quaternary;
   color: white;
 }
-.morado-bg {
-  background-color: $morado-morado;
+.morado-bg {background-color: $morado-morado;
   color: white;
 }
 .gray-2 {
