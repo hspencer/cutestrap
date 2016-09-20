@@ -6,13 +6,13 @@ These utility classes have one or two CSS properties that are meant to save you 
 
 Markup:
 <div class="{{modifier_class}}" style="background-color: #ddd">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-  Sed faucibus mattis magna, quis tempus enim. Duis volutpat 
-  commodo laoreet. Pellentesque commodo pharetra massa non malesuada. 
-  Sed tristique ultricies metus nec pulvinar. Donec magna orci, 
-  rutrum et nisi dapibus, feugiat fringilla nisl. Donec id neque 
-  ante. Duis risus sem, consectetur eget ipsum vel, condimentum 
-  dictum ex. Proin sodales porttitor sem sed pharetra. 
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  Sed faucibus mattis magna, quis tempus enim. Duis volutpat
+  commodo laoreet. Pellentesque commodo pharetra massa non malesuada.
+  Sed tristique ultricies metus nec pulvinar. Donec magna orci,
+  rutrum et nisi dapibus, feugiat fringilla nisl. Donec id neque
+  ante. Duis risus sem, consectetur eget ipsum vel, condimentum
+  dictum ex. Proin sodales porttitor sem sed pharetra.
   Nam sed leo diam.
 </div>
 
@@ -90,7 +90,7 @@ These utility classes have one or two CSS properties that are meant to save you 
 
 Markup:
 <div class="{{modifier_class}}" style="background-color: #ddd">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 </div>
 
 .clearfix                - Clear floats to keep the parent container in shape
@@ -218,7 +218,7 @@ Markup:
 .box.box-shadow-soft    - A faded long shadow for boxes
 .fw-bold.white.text-shadow-hard       - A hard shadow for texts
 .box.box-shadow-hard    - A hard shadow for boxes
-.box.gradient-h.white   - An horizontal gradient in the background   
+.box.gradient-h.white   - An horizontal gradient in the background
 
 Styleguide 3.2
 
@@ -285,7 +285,7 @@ Styleguide 3.2
 Margen y paddings
 
 Clases de ayuda para modificar los paddings y margenes de los elementos.
-Existe p-*numero* y m-*numero* para modificar el padding y margen total. además existe la variante pt-*numero* pr-*numero* pb-*numero*, pl-*numero* para modificar los paddings de cada lado. 
+Existe p-*numero* y m-*numero* para modificar el padding y margen total. además existe la variante pt-*numero* pr-*numero* pb-*numero*, pl-*numero* para modificar los paddings de cada lado.
 Lo mismo se aplica para los márgenes (mt-*, mr-*, etc) con la salvedad que en los márgenes se pueden utilizar márgenes negativos anteponiendo 2 guiones en vez de uno antes del número: Ej: mt--40 (margin-top: -40px)
 
 Markup:
@@ -301,7 +301,7 @@ Markup:
 .pr-10      - padding-right: 10px
 .nomargin                 - margin: 0
 .m-10    - margin: 10px
-.mt-10   - Margin-top: 10px  
+.mt-10   - Margin-top: 10px
 .mt--10  - Margin-top: -10px
 
 Styleguide 3.4
@@ -351,6 +351,7 @@ Styleguide 3.4
 .mb-10 {margin-bottom: 10px !important;}
 .mb-15 {margin-bottom: 15px !important;}
 .mb-20 {margin-bottom: 20px !important;}
+.mb-30 {margin-bottom: 30px !important;}
 .mb-40 {margin-bottom: 40px !important;}
 .mb-60 {margin-bottom: 60px !important;}
 
