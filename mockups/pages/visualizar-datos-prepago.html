@@ -5,38 +5,37 @@
 
   {% include "partials/navbar.html" %}
 
-	<header>
-		<div class="bg-modulo bg-modulo-shortest modulo-portabilidad">
-			<div class="container">
-				<h3 class="ta-center white fw-semibold uc">Información Personal</h3>
-				
-			</div>
-		</div>
-	</header>
+  <header>
+    <div class="bg-modulo bg-modulo-shortest modulo-portabilidad">
+      <div class="container">
+        <h3 class="ta-center white fw-semibold uc">Información Personal</h3>
 
-  <div class="container">
-      
-    <div class="row">
-        <div class="col-xs-12 select-phone">
-            <select class="form-control select-caret fw-semibold">
-              <option selected="">+56 988776655</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-            </select>
+      </div>
+    </div>
+  </header>
+
+    <section class="data-prepaid">
+      <div class="data-prepaid__container container">
+
+        <div class="data-prepaid__select-caret select-caret mt-15">
+          <select class="form-control select-caret fw-semibold">
+            <option selected="">+56 988776655</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
         </div>
-    </div>
 
-    <br>
-    
-    {% include "partials/private-visualizar-datos-prepago-datos-personales.html" %}
-    {% include "partials/private-visualizar-datos-postpago-datos-direccion.html" %}   
-    {% include "partials/private-visualizar-datos-prepago-datos-clave.html" %} 
-    </div>
+        {% include "partials/private-visualizar-datos-prepago-datos-personales.html" %}
+        {% include "partials/private-visualizar-datos-postpago-datos-direccion.html" %}
+        {% include "partials/private-visualizar-datos-prepago-datos-clave.html" %}
+
+      </div>
+    </section>
   </div>
 
-   
-	{% include "partials/footer.html" %}
+
+  {% include "partials/footer.html" %}
 
 {% endblock %}
