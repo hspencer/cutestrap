@@ -1,0 +1,106 @@
+/*
+
+Buttons
+
+Class <code>.btn</code> defines a button-styled link. These are some variations
+This is a <a href='http://www.wom.cl' class='btn press-fx'>standard button</a>,
+this is the <a href='http://www.wom.cl' class='btn press-fx btn-secondary'>secondary button</a>,
+yet this is another, simpler one, the <a href='http://www.wom.cl' class='btn press-fx btn-link'>link button</a>
+
+Markup:
+<a href="http://www.wom.cl/testLink" class="btn {{modifier_class}}">Button</a>
+
+.press-fx                      - Press FX
+.btn-secondary                 - Secondary button
+.disabled                      - Disabled button
+.btn-link                      - Link button
+.btn-wom                       - A WOM-styled Buttom
+.box-shadow-soft               - A button with a fading shadow
+.box-shadow-hard               - A button with a hard shadow
+.skew                          - A link that`s skewed
+.tilt                          - A link that`s tilted (also skewed)
+.btn-wom.tilt                  - A link thats styled, tilted and skewed
+.btn-wom.tilt.box-shadow-soft       - A link thats styled, tilted, skewed and shadowed
+.btn-jumbo                     - A big one
+.btn-jumbo.uc                  - A big one in upper case
+.gradient-h                    - A button with an horizontal gradient background
+.btn-wom.tilt.gradient-h.box-shadow-soft       - Combined case
+.btn-jumbo.tilt.gradient-h.box-shadow-hard     - Combined case
+
+Styleguide 2.0
+
+*/
+
+.btn-secondary{
+  background-color: $gray-6;
+  color: $gray-1;
+
+  &:link,
+  &:visited{
+    color: $gray-1;
+  }
+
+  &:focus,
+  &:hover{
+    background-color: $gray-5;
+    color: $gray-1;
+  }
+
+  &:active{
+    color: $gray-3;
+  }
+}
+
+.btn-link{
+  background-color: transparent;
+  color: $link !important;
+  text-decoration: underline;
+
+  &:link{
+    color: $link !important;
+  }
+
+  &:visited{
+    color: $terciary-light !important;
+  }
+
+  &:focus,
+  &:hover{
+    color: $primary-dark !important;
+    background-color: transparent;
+  }
+
+  &:active{
+    color: $primary !important;
+    background-color: transparent;
+  }
+}
+
+.btn-wom{
+  color: $white !important;
+  background-color: $primary;
+  font-weight: 200;
+  text-transform: uppercase;
+  padding: 0 .3rem;
+  font-size: $font-size * 3;
+  height: 4.8rem;
+  line-height: .89;
+}
+
+.btn-jumbo{
+  padding: 0 .3rem;
+  font-size: $font-size * 3;
+  height: 4.8rem;
+  line-height: 5rem;
+}
+
+.btn-full {
+  width: 100%;
+}
+
+
+[type=button],
+[type=submit],
+button{
+  @extend .btn;
+}
