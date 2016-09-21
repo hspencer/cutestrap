@@ -1161,13 +1161,13 @@ button {
   font-size: 14px;
   line-height: 100%;
   text-align: center;
-  background-color: $quaternary;
-  color: white;
+  background-color: white;
+  color: $quaternary;
 }
 .portabilidad-pills .nav-pills .active a,
 .portabilidad-pills .nav-pills .active a:focus {
-  background-color: white;
-  color: $quaternary;
+  background-color: $quaternary;
+  color: white;
 }
 .portabilidad-pills .tab-content.well {
   border-radius: 0;
@@ -2462,10 +2462,20 @@ button {
 /* Servicio técnico */
 
 .servicio-tecnico-welcome { padding: 0 25px; }
+
 .servicio-tecnico-pills .tab-content {
   padding: 30px 5px;
   background-color: white;
   width: 98.5%;
+}
+
+.servicio-tecnico-pills.modulo-morado .nav-pills {
+  background-color: white;
+}
+
+.servicio-tecnico-pills.modulo-morado .tab-content {
+  background-color: transparent;
+  color: white;
 }
 
 .helpText {
