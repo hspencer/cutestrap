@@ -98,7 +98,6 @@ gulp.task('kss', ['kss-html'], function(cb) {
 
 // Compile Templates
 gulp.task('kss-html', ['temp'], function(){
-
   return gulp.src('./kss-html/homepage.md')
     .pipe(swig({
       defaults: {
