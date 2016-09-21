@@ -803,7 +803,7 @@ padding: 2px 4px;
   border-color: $quaternary;
 }
 
-#stepper_portabilidad {
+.stepper_portabilidad {
   font-family: 'Cera';
   height: 90px;
   margin: 0 auto -40px;
@@ -853,7 +853,7 @@ padding: 2px 4px;
   color: white;
 }
 
-#stepper_portabilidad:after {
+.stepper_portabilidad:after {
   content: '';
   background: $pink;
   width: 72%;
@@ -863,19 +863,18 @@ padding: 2px 4px;
   display: block;
 }
 
-#stepper_portabilidad li {
+.stepper_portabilidad li {
   display: inline-block;
   margin: 0 5%;
 }
-
-  #stepper_portabilidad li:first-of-type {
+  .stepper_portabilidad li:first-of-type {
     margin-left: 0;
   }
-  #stepper_portabilidad li:last-of-type {
+  .stepper_portabilidad li:last-of-type {
     margin-right: 0;
   }
 
-#stepper_portabilidad li span {
+.stepper_portabilidad li span {
   display: block;
   background: $pink;
   color: white;
@@ -886,8 +885,22 @@ padding: 2px 4px;
   line-height: 50px;
 }
 
-#stepper_portabilidad li.active span {
+.stepper_portabilidad li.active span {
   background: $primary;
+}
+
+.stepper_portabilidad.visible-xs li {
+  margin: 0 .89%;
+}
+
+.stepper_portabilidad.visible-xs li span {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+}
+
+.stepper_portabilidad.visible-xs:after{
+  margin-top: -20px;
 }
 
 /* para forms de portabilidad */
