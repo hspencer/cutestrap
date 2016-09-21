@@ -867,12 +867,6 @@ padding: 2px 4px;
   display: inline-block;
   margin: 0 5%;
 }
-  .stepper_portabilidad li:first-of-type {
-    margin-left: 0;
-  }
-  .stepper_portabilidad li:last-of-type {
-    margin-right: 0;
-  }
 
 .stepper_portabilidad li span {
   display: block;
@@ -901,6 +895,13 @@ padding: 2px 4px;
 
 .stepper_portabilidad.visible-xs:after{
   margin-top: -20px;
+}
+
+.stepper_portabilidad li:first-of-type {
+  margin-left: 0;
+}
+.stepper_portabilidad li:last-of-type {
+  margin-right: 0;
 }
 
 /* para forms de portabilidad */
