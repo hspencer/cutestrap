@@ -60,3 +60,19 @@ womstrap
        └── partials
 ```
 `/templates` define HTMLs DOM structure while `/partials` define HTML code snipets to use as modules.
+
+
+## Instrucciones para el Desarrollo Local
+
+Algunos requisitos básicos para ordenar el entorno de trabajo:
+
+1. Servidor web localhost
+2. [NodeJS](https://nodejs.org/es/)
+
+En Mac, se recomienda utilizar [homebrew](http://brew.sh) para instalar todos los paquetes necesarios.
+
+### Criterios de nombres para las clases en SASS
+
+* Utilizar nombres en **inglés** para las clases
+* Utilizar patrones de nombres estándar, leer [este artículo](http://thesassway.com/advanced/modular-css-naming-conventions)
+*
