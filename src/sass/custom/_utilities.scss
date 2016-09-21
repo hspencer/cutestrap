@@ -368,3 +368,53 @@ Styleguide 3.4
 .ml--20 {margin-left: -15px !important;}
 .ml--40 {margin-left: -40px !important;}
 .mr--20 {margin-right: -15px !important;}
+
+
+.container-sm,
+.container-md {
+  margin: 0 auto;
+}
+
+.container-sm {
+  max-width: 576px;
+}
+
+.container-md {
+  max-width: 870px;
+}
+
+
+.se-content {
+  background: #41ade5;
+  position: relative;
+  z-index: 1;
+
+  &:before,
+  &:after {
+    background: inherit;
+    content: '';
+    display: block;
+    height: 50%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    -webkit-backface-visibility: hidden; // for Chrome Windows
+  }
+
+  &:before {
+    top: 0;
+    transform: skewY(-5deg);
+    transform-origin: -50% 0;
+  }
+
+  &:after {
+    bottom: 0;
+    transform: skewY(-5deg);
+    transform-origin: 100%;
+  }
+}
+
+.se-slope {
+  margin: 100px 0;
+}

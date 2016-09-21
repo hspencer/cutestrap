@@ -68,7 +68,7 @@
 </nav>
 
 	<!-- layout desktop -->
-	<div class="desktop-header">
+	<div class="desktop-header hidden-xs">
 		<div class="container-tablet">
 			<div class="row">
 				<div class="desktop-headerTitle col-lg-8 col-md-8 col-sm-8 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 ta-center">
@@ -100,56 +100,70 @@
 		</div>
 	</div>
 
+	<div class="visible-xs">
+		<header>
+		<div class="bg-modulo bg-modulo-shortest modulo-portabilidad">
+			<div class="container">
+			  <h3 class="ta-center white fw-semibold uc">Centro de Ayuda</h3>
+			</div>
+		</div>		
+	</header>
+	</div>
+
 	<div class="help-center__welcome fullwidth-slab">
-		<div class="container">
+		<div class="help-center__welcome__container container-md">
 			<div class="row mt-40 flex">
-				<div class="col-lg-5 col-md-5 col-sm-5 col-lg-offset-2 col-md-offset-2 col-sm-offset-2">
+				<div class="col-lg-5 col-md-5 col-sm-5">
 					<h4 class="uc nopadding morado-plain">¿Qué es el 4G?</h4>
-					<p>La red 4G es la cuarta generación de datos móviles, sucesora de 2G y 3G, que permite entregar una excelente experiencia de navegación a los usuarios.</p>
-					<p>Gracias a la velocidad 4G podrás conectarte con tus dispositivos móviles compatibles y navegar con una conexión mucho más rápida. Es ideal para quienes demandan mayor rapidez de descarga, estar conectados en redes sociales en segundos, o realizan uso del streaming de videos, música y juegos en línea.</p>
-					<div class="ta-center mb-20">
-						<p class="nopadding mt-20 text-muted fw-semibold">¿Te mostré lo que querías?</p>
+					<p class="help-center__welcome__description">La red 4G es la cuarta generación de datos móviles, sucesora de 2G y 3G, que permite entregar una excelente experiencia de navegación a los usuarios.</p>
+					<p class="help-center__welcome__description">Gracias a la velocidad 4G podrás conectarte con tus dispositivos móviles compatibles y navegar con una conexión mucho más rápida. Es ideal para quienes demandan mayor rapidez de descarga, estar conectados en redes sociales en segundos, o realizan uso del streaming de videos, música y juegos en línea.</p>
+					<div class="mb-20 iblock text-center">
+						<p class="help-center__welcome__description nopadding mt-20">¿Te mostré lo que querías?</p>
 						<div class="btn-group" role="group" aria-label="...">
 						  <button type="button" class="btn btn-primary active fw-semibold pl-20 pr-20">Sí</button>
 						  <button type="button" class="btn btn-primary fw-semibold pl-20 pr-20" onclick="$(this).siblings('.active').removeClass('active');$(this).addClass('active');$('.centro-ayuda-feedback').slideDown();$('.satisfactionMsg').html('¡Ayúdame tú!'); return false;">No</button>
 						</div>
 					</div>
 				</div>
-				<div class="personaImage col-lg-5 col-md-5 col-sm-5"></div>
+				<div class="personaImage col-lg-7 col-md-5 col-sm-5">
+					<img class="nomargin" src="img/banner/persona-home-3.png" alt="">
+				</div>
 			</div>
 		</div>
 	</div>
 
-	<div class="centro-de-ayuda-related-links-desktop">
-		<h3 class="morado-plain uc ta-center">Links relacionados</h3>
-		<div class="row">
-			<div class="col-lg-3 col-md-3 col-sm-3 col-lg-offset-3 col-md-offset-3 col-sm-offset-3">
-				<p><a href="#">Ir a <strong>Planes Multimedia</strong></a></p>
-				<p><a href="#">Ir a <strong>Chip Prepago</strong></a></p>
-				<p><a href="#">Ir a <strong>Recargar tu prepago</strong></a></p>
-				<p><a href="#">Ir a <strong>Internet Móvil y Hogar</strong></a></p>
-			</div>
-			<div class="col-lg-3 col-md-3 col-sm-3 col-lg-offset-1 col-md-offset-1 col-sm-offset-1">
-				<p><a href="#">Ir a <strong>Cobertura</strong></a></p>
-				<p><a href="#">Ir a <strong>4G</strong></a></p>
-				<p><a href="#">Ir a <strong>Nuestras Sucursales</strong></a></p>
-				<p><a href="#">Ir a <strong>Roaming</strong></a></p>
+	<section class="centro-de-ayuda-related-links se-slope">
+		<div class="centro-de-ayuda-related-links__container container se-content">
+			<h3 class="morado-plain uc ta-center mb-60">Links relacionados</h3>
+			<div class="row container-md">
+				<div class="col-md-6 col-sm-12">
+					<p><a href="#">Ir a <strong>Planes Multimedia</strong></a></p>
+					<p><a href="#">Ir a <strong>Chip Prepago</strong></a></p>
+					<p><a href="#">Ir a <strong>Recargar tu prepago</strong></a></p>
+					<p><a href="#">Ir a <strong>Internet Móvil y Hogar</strong></a></p>
+				</div>
+				<div class="col-md-6 col-sm-12">
+					<p><a href="#">Ir a <strong>Cobertura</strong></a></p>
+					<p><a href="#">Ir a <strong>4G</strong></a></p>
+					<p><a href="#">Ir a <strong>Nuestras Sucursales</strong></a></p>
+					<p><a href="#">Ir a <strong>Roaming</strong></a></p>
+				</div>
 			</div>
 		</div>
-	</div>
+	</section>
 
-	<hr class="separador-home">
+	<section class="centro-ayuda-otra-pregunta">
+		<div class="centro-ayuda-otra-pregunta__container container-sm">
+			<h3 class="morado-plain uc ta-center">Busca otra pregunta</h3>
+			<form action="#">
+				<div class="form-group ">
+					<input type="text" class="form-control centro-ayuda-search centro-ayuda-search-alt autocenter pb-10 pt-10" placeholder="Ingresa tu pregunta...">
+				</div>
+			</form>
+		</div>
+	</section>
 
-	<div class="centro-ayuda-desktop-otra-pregunta col-lg-6 col-md-6 col-sm-6 col-lg-offset-3 col-md-offset-3 col-sm-offset-3">
-		<h3 class="morado-plain uc ta-center">Busca otra pregunta</h3>
-		<form action="#">
-			<div class="form-group ">
-				<input type="text" class="form-control centro-ayuda-search centro-ayuda-search-alt autocenter pb-10 pt-10" placeholder="Ingresa tu pregunta...">
-			</div>
-		</form>
-	</div>
-
-	<div class="centro-ayuda-home-desktop">
+	<div class="centro-ayuda-home">
 		<h3 class="uc ta-center lineheight120 morado-plain">Otras categorías</h3>
 		<div class="container cardsContainer">
 			<div class="row">
