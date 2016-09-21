@@ -5,42 +5,41 @@
 
   {% include "partials/navbar.html" %}
 
-	<header>
-		<div class="bg-modulo bg-modulo-shortest modulo-portabilidad">
-			<div class="container">
-				<h3 class="ta-center white fw-semibold uc">Información Personal</h3>
-				
-			</div>
-		</div>
-	</header> 
+  <header>
+    <div class="bg-modulo bg-modulo-shortest modulo-portabilidad">
+      <div class="container">
+        <h3 class="ta-center white fw-semibold uc">Información Personal</h3>
 
-	<div class="container">
-      
-      <div class="row">
-         <div class="col-xs-12 select-phone">
-            <select class="form-control select-caret fw-semibold">
-              <option selected="">+56 988776655</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-          </select>
       </div>
-  </div>
+    </div>
+  </header>
 
-  <br>
+  <section class="data-postpaid">
+    <div class="data-postpaid__container container">
 
-  {% include "partials/private-visualizar-datos-postpago-datos-personales.html" %}
-  {% include "partials/private-visualizar-datos-postpago-datos-direccion.html" %}
-  {% include "partials/private-visualizar-datos-postpago-datos-clave.html" %}
+      <div class="data-postpaid__select-phone select-phone mt-15">
+        <select class="form-control select-caret fw-semibold">
+          <option selected="">+56 988776655</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+      </div>
+
+      {% include "partials/private-visualizar-datos-postpago-datos-personales.html" %}
+      {% include "partials/private-visualizar-datos-postpago-datos-direccion.html" %}
+      {% include "partials/private-visualizar-datos-postpago-datos-clave.html" %}
+      {% include "partials/private-visualizar-datos-postpago-datos-ejecutivo.html" %}
+
+    </div>
+  </section>
+
 </div>
-{% include "partials/private-visualizar-datos-postpago-datos-ejecutivo.html" %}
 
 </div>
 
-</div>
 
-   
 {% include "partials/footer.html" %}
 
 {% endblock %}
