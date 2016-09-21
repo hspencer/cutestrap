@@ -2,7 +2,8 @@
 
 A sassy, opinionated CSS Framework for WOM. Now Bootstrap ~3.0.0 compatible!
 
-[Docs/Demo](http://tinet-ux.github.io/womstrap/docs)
+&rarr; [Womstrap](http://tinet-ux.github.io/womstrap/docs)
+&rarr; [Maquetas](http://tinet-ux.github.io/womstrap/mockups)
 
 ### Features
 
@@ -59,6 +60,7 @@ womstrap
        └── partials
 ```
 `/templates` define HTMLs DOM structure while `/partials` define HTML code snipets to use as modules.
+<<<<<<< HEAD
 
 -----
 
@@ -78,3 +80,5 @@ En Mac, se recomienda utilizar [homebrew](http://brew.sh) para instalar todos lo
 * 
 
 
+=======
+>>>>>>> gh-pages
