@@ -793,9 +793,9 @@ padding: 2px 4px;
   display: inline-block;
   margin-right: 6px;
   font-size: 2rem;
-  padding: 12px 12px;
-  width: 50px;
-  height: 50px;
+  padding: 7px;
+  width: 40px;
+  height: 40px;
 }
 
 #captcha .captchaLink.selected {
@@ -806,14 +806,9 @@ padding: 2px 4px;
 
 #stepper_portabilidad {
   font-family: 'Cera';
-  height: 90px;
-  margin: 0 auto -40px;
-  padding: 0 0 30px 0;
-  list-style-type: none;
   text-align: center;
   -webkit-font-feature-settings: "lnum";
   font-feature-settings: "lnum";
-  max-width: 768px;
 }
 
 .portate-desktop-ad {
@@ -847,7 +842,7 @@ padding: 2px 4px;
   text-decoration: none;
 }
 .outline-purple span {
-  padding: 0 40px;
+  padding: 0 20px;
 }
 .outline-purple span:last-of-type {
   background-color: #690481;
@@ -856,27 +851,48 @@ padding: 2px 4px;
 
 #stepper_portabilidad:after {
   content: '';
-  background: $pink;
-  width: 72%;
+  background: #D0AFD5;
+  width: 90%;
   height: 2px;
   margin-top: -25px;
-  margin-left: 15%;
+  margin-left: auto;
+  margin-right: auto;
   display: block;
 }
 
-#stepper_portabilidad li {
+#stepper_portabilidad .stepperLED {
   display: inline-block;
-  margin: 0 5%;
+  margin: 0 .8%;
 }
 
-  #stepper_portabilidad li:first-of-type {
+@media only screen and (min-width: 375px) {
+  #stepper_portabilidad .stepperLED {
+    margin: 0 2%;
+  }  
+}
+@media only screen and (min-width: 960px) {
+  #stepper_portabilidad .stepperLED {
+    margin: 0 2%;
+  }
+  #stepper_portabilidad:after {
+    width: 75%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #stepper_portabilidad .stepperLED {
+    margin: 0 6%;
+  }
+}
+
+
+  #stepper_portabilidad .stepperLED:first-of-type {
     margin-left: 0;
   }
-  #stepper_portabilidad li:last-of-type {
+  #stepper_portabilidad .stepperLED:last-of-type {
     margin-right: 0;
   }
 
-#stepper_portabilidad li span {
+#stepper_portabilidad .stepperLED > span {
   display: block;
   background: $pink;
   color: white;
@@ -887,7 +903,7 @@ padding: 2px 4px;
   line-height: 50px;
 }
 
-#stepper_portabilidad li.active span {
+#stepper_portabilidad .stepperLED.active span {
   background: $primary;
 }
 
