@@ -383,9 +383,14 @@ Styleguide 3.4
   max-width: 870px;
 }
 
+/* Justify content: center */
+.u-center {
+  justify-content: center;
+}
+
 
 .se-content {
-  background: #41ade5;
+  background: $gray-7;
   position: relative;
   z-index: 1;
 

@@ -1037,7 +1037,8 @@ button {
   background-color: transparent;
 }
 .form-control.input-outline {
-  border: 1px solid #666;
+  border: 1px solid #ccc;
+  padding: 15px;
 }
 .form-control.input-lite {
   color: #000;
@@ -2336,40 +2337,7 @@ button {
   color: #8B8B8B;
 }
 
-.centro-ayuda-relatedLinks ul {
-  list-style-type: none;
-  margin: 0;
-  margin-bottom: -30px;
-}
 
-.centro-ayuda-relatedLinks ul li a {
-  color: #8B8B8B;
-  padding: 15px 30px;
-  display: block;
-  border-bottom: 1px solid #D0D0D0;
-}
-
-.centro-ayuda-relatedLinks ul li:last-of-type a {
-  border-bottom: 0;
-}
-
-.centro-ayuda-relatedLinks ul li a p {
-  margin: 0;
-  padding: 0;
-}
-
-.centro-ayuda-relatedLinks ul li a strong {
-  text-transform: uppercase;
-  color: $quaternary;
-}
-
-.centro-ayuda-relatedLinks ul li a i.fa {
-  float: right;
-  font-size: 32px;
-  line-height: 16px;
-  color: $quaternary;
-  margin-top: 5px;
-}
 
 .centro-ayuda-home {
   clear: both;
@@ -3054,13 +3022,12 @@ button .icon {
   margin-top: -300px;
 }
 
-.help-center__welcome.fullwidth-slab .personaImage {
-  position: absolute;
-  bottom: 0;
-  right: 0px;
-  img {
-    width: 100px;
-  }
+.help-center__welcome.fullwidth-slab .personaImage img {
+  width: 220px;
+}
+
+.help-center__welcome__row {
+  border-bottom: 1px solid #ccc;
 }
 
 .help-center__welcome__container {
@@ -3068,25 +3035,20 @@ button .icon {
   position: relative;
 }
 
-.centro-de-ayuda-related-links a {
+.centro-ayuda-related__links a {
   color: #666;
 }
 
-.centro-de-ayuda-related-links a strong {
+.centro-ayuda-related__links a strong {
   text-transform: uppercase;
   color: $secondary;
-}
-
-.centro-de-ayuda-related-links__container {
-  background-color: $gray-7;
 }
 
 .desktop-persona-serviciotecnico {
   position: absolute;
 }
-
-.centro-de-ayuda-celrobado-ribbon {
-
+.centro-de-ayuda-feedback form {
+  padding-top: 0;
 }
 
 .centro-de-ayuda-celrobado-ribbon .holder {
@@ -3287,13 +3249,3 @@ button .icon {
 }
 /* only-for-desktop */
 
-
-
-@media screen and ( min-width: 768px ) {
-  .help-center__welcome.fullwidth-slab .personaImage {
-    right: -50px;
-    img {
-      width: 100%;
-    }
-  }
-}
