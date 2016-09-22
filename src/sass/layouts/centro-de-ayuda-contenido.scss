@@ -2,11 +2,6 @@
   margin: 0;
 }
 
-.centro-ayuda-related__title {
-  margin-bottom: 40px;
-  margin-top: 10px;
-}
-
 .centro-ayuda-related__links__col {
   padding: 0;
   &:last-of-type {
@@ -14,6 +9,50 @@
       border-bottom: 0;
     }
   }
+}
+
+
+.centro-ayuda-home {
+  clear: both;
+  margin-bottom: 70px;
+}
+
+
+.centro-ayuda-otra-pregunta {
+  margin-bottom: 70px;
+}
+
+.centro-ayuda-related__links a {
+  color: #666;
+}
+
+.centro-ayuda-related__links a strong {
+  text-transform: uppercase;
+  color: $secondary;
+}
+.centro-ayuda__welcome {
+  background-image: none;
+}
+
+.centro-ayuda__welcome__description {
+  color: $gray-2;
+}
+
+.centro-ayuda__welcome.fullwidth-slab {
+  margin-top: -300px;
+}
+
+.centro-ayuda__welcome.fullwidth-slab .personaImage img {
+  width: 220px;
+}
+
+.centro-ayuda__welcome__row {
+  border-bottom: 1px solid #ccc;
+}
+
+.centro-ayuda__welcome__container {
+  padding: 0 15px;
+  position: relative;
 }
 
 .centro-ayuda-related__links ul {
@@ -54,11 +93,20 @@
   }
 }
 
+.centro-ayuda-related__title {
+  margin-bottom: 40px;
+  margin-top: 10px;
+}
+
 
 @media screen and ( min-width: 768px ) {
 
   .centro-ayuda-related__links {
     margin: 100px 0;
+  }
+
+  .centro-ayuda-related__links ul li a {
+    border-bottom: 0;
   }
 
   .centro-ayuda-related__links__container {
@@ -72,16 +120,12 @@
     padding-bottom: 60px;
   }
 
-  .centro-ayuda-related__links ul li a {
-    border-bottom: 0;
-  }
-
   .centro-ayuda-related__title {
     margin-bottom: 60px;
     margin-top: 40px;
   }
 
-  .help-center__welcome.fullwidth-slab .personaImage {
+  .centro-ayuda__welcome.fullwidth-slab .personaImage {
     position: absolute;
     bottom: 0;
     right: -50px;
@@ -90,8 +134,7 @@
     }
   }
 
-
-  .help-center__welcome__row {
+  .centro-ayuda__welcome__row {
     border-bottom: 0;
   }
 }
