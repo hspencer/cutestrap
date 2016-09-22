@@ -2371,7 +2371,7 @@ button {
   margin-top: 5px;
 }
 
-.centro-ayuda-home-desktop {
+.centro-ayuda-home {
   clear: both;
   margin-bottom: 70px;
 }
@@ -3043,29 +3043,48 @@ button .icon {
   padding-bottom: 0px;
 }
 
+.help-center__welcome {
+  background-image: none;
+}
+
+.help-center__welcome__description {
+  color: $gray-2;
+}
+
 .help-center__welcome.fullwidth-slab {
   margin-top: -300px;
 }
 
 .help-center__welcome.fullwidth-slab .personaImage {
-  background: url(../../mockups/img/banner/persona-home-3.png) no-repeat 80px bottom;
-  flex: 1;
-  background-size: auto 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0px;
+  img {
+    width: 100px;
+  }
 }
 
-.help-center__welcome.fullwidth-slab .personaImage {
-  background-size: auto 70%;
+.help-center__welcome__container {
+  padding: 0 15px;
+  position: relative;
 }
 
-.centro-de-ayuda-related-links-desktop a {
+.centro-de-ayuda-related-links a {
   color: #666;
 }
 
-.centro-de-ayuda-related-links-desktop a strong {
+.centro-de-ayuda-related-links a strong {
   text-transform: uppercase;
   color: $secondary;
 }
 
+.centro-de-ayuda-related-links__container {
+  background-color: $gray-7;
+}
+
+.desktop-persona-serviciotecnico {
+  position: absolute;
+}
 
 .centro-de-ayuda-celrobado-ribbon {
 
@@ -3109,7 +3128,7 @@ button .icon {
   overflow: hidden;
 }
 
-.centro-ayuda-desktop-otra-pregunta {
+.centro-ayuda-otra-pregunta {
   margin-bottom: 70px;
 }
 
@@ -3209,7 +3228,7 @@ button .icon {
   background-color: white;
   padding: 15px;
   border: 1px solid #CCC;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .cardsContainer .item .ico {
@@ -3268,3 +3287,14 @@ button .icon {
   }
 }
 /* only-for-desktop */
+
+
+
+@media screen and ( min-width: 768px ) {
+  .help-center__welcome.fullwidth-slab .personaImage {
+    right: -50px;
+    img {
+      width: 100%;
+    }
+  }
+}
