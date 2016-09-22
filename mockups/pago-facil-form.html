@@ -16,16 +16,16 @@
   <!-- You write code for this content block in another file -->
   
   <div class="container-fluid">
-    <h4 class="ta-center fw-light morado-plain nopadding mb-10">PAGA TU CUENTA ONLINE</h4>
+    <h4 class="ta-center morado-plain nopadding mb-20">PAGA TU CUENTA ONLINE</h4>
     <form id="formPago" class="nomargin nopadding" method="get" action="http://pdrpre.wom.devetel.cl/pago_facil/pagarCuenta">
       <div id="resultado" class="row">
         <div class="col-xs-12">
           <div class="form-group input-effect">
             <span class="miniLabel">Ingresa tu rut</span>
-            <input type="textnumber" class="form-control" id="numerocelular" placeholder="Ingresa tu rut">
+            <input type="number" class="form-control" id="numerorut" placeholder="Ingresa tu rut">
           </div>
           <div class="row ta-center">
-            <button type="submit" class="btn btn-disabled fw-semibold">Ir a pagar tu cuenta</button>
+            <button id="goPagaCuenta" type="submit" class="btn btn-disabled fw-semibold">Ir a pagar tu cuenta</button>
           </div>
         </div>
       </div>
@@ -35,5 +35,14 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://use.fontawesome.com/fc096a74c6.js"></script>
   <script src="../dist/js/wom.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $('#numerorut').on('input', function() {
+        $('#goPagaCuenta').removeClass('btn-disabled').addClass('btn-success');
+      });
+    });
+  </script>
+
 </body>
 </html>

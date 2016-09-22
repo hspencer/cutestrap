@@ -323,7 +323,9 @@ ul {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#730184', endColorstr='#32004d', GradientType=0 );
 }
 
-
+.gray-holder {
+  background-color: #F5F5F5;
+}
 
 .modulo-morado-alt .miniLabel {
   color: white;
@@ -369,8 +371,8 @@ ul {
 }
 .modulo-morado .svg-blanco {
   background: rgba(145,2,168,1);
-  padding: 5px;
-  margin: 5px 0 0 0;
+  padding: 10px;
+  margin: 15px auto;
 }
 .modulo-morado h4,
 .modulo-morado h6 {
@@ -508,14 +510,15 @@ ul {
 }
 
 .pago-facil-desglose {
+  text-align: center;
   margin: 15px 0;
-  background-color: $primary;
+  background-color: $secondary;
+  padding: 5px 15px;
 }
 
 .pago-facil-desglose p {
   margin: 0;
-  padding: 3px;
-  font-size: 1.6rem;
+  padding: 0;
   color: white;
 }
 
@@ -552,13 +555,6 @@ ul {
 
 .pago-facil-paga {
   border: 1px solid #ECECEC;
-  background: -moz-linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(236,236,236,1) 100%); /* ff3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(236,236,236,1))); /* safari4+,chrome */
-  background: -webkit-linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(236,236,236,1) 100%); /* safari5.1+,chrome10+ */
-  background: -o-linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(236,236,236,1) 100%); /* opera 11.10+ */
-  background: -ms-linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(236,236,236,1) 100%); /* ie10+ */
-  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(236,236,236,1) 100%); /* w3c */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#ECECEC',GradientType=0 ); /* ie6-9 */
   color: $gray-1;
   padding-top: 10px;
   padding-bottom: 20px;
@@ -792,27 +788,15 @@ padding: 2px 4px;
   display: inline-block;
   margin-right: 6px;
   font-size: 2rem;
-  padding: 12px 12px;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
 }
 
 #captcha .captchaLink.selected {
   background-color: $quaternary;
   color: white;
   border-color: $quaternary;
-}
-
-#stepper_portabilidad {
-  font-family: 'Cera';
-  height: 90px;
-  margin: 0 auto -40px;
-  padding: 0 0 30px 0;
-  list-style-type: none;
-  text-align: center;
-  -webkit-font-feature-settings: "lnum";
-  font-feature-settings: "lnum";
-  max-width: 768px;
 }
 
 .portate-desktop-ad {
@@ -853,7 +837,19 @@ padding: 2px 4px;
   color: white;
 }
 
-#stepper_portabilidad:after {
+.stepper_portabilidad {
+  font-family: 'Cera';
+  height: 90px;
+  margin: 0 auto -20px;
+  padding: 0 0 20px 0;
+  list-style-type: none;
+  text-align: center;
+  -webkit-font-feature-settings: "lnum";
+  font-feature-settings: "lnum";
+  max-width: 768px;
+}
+
+.stepper_portabilidad:after {
   content: '';
   background: $pink;
   width: 72%;
@@ -863,19 +859,12 @@ padding: 2px 4px;
   display: block;
 }
 
-#stepper_portabilidad li {
+.stepper_portabilidad li {
   display: inline-block;
   margin: 0 5%;
 }
 
-  #stepper_portabilidad li:first-of-type {
-    margin-left: 0;
-  }
-  #stepper_portabilidad li:last-of-type {
-    margin-right: 0;
-  }
-
-#stepper_portabilidad li span {
+.stepper_portabilidad li span {
   display: block;
   background: $pink;
   color: white;
@@ -886,8 +875,29 @@ padding: 2px 4px;
   line-height: 50px;
 }
 
-#stepper_portabilidad li.active span {
+.stepper_portabilidad li.active span {
   background: $primary;
+}
+
+.stepper_portabilidad.visible-xs li {
+  margin: 0 .89%;
+}
+
+.stepper_portabilidad.visible-xs li span {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+}
+
+.stepper_portabilidad.visible-xs:after{
+  margin-top: -20px;
+}
+
+.stepper_portabilidad li:first-of-type {
+  margin-left: 0;
+}
+.stepper_portabilidad li:last-of-type {
+  margin-right: 0;
 }
 
 /* para forms de portabilidad */
@@ -956,9 +966,8 @@ padding: 2px 4px;
   background-image: url(../../mockups/img/icons/ico-ticket.svg);
 }
 .pagadoStamp {
-  position: absolute;
-  right: 15px;
-  margin-top: -20px;
+  margin-left: 200px;
+  display: inline-block;
 }
 .wom-mensaje-tle-cap {
   width: 80%;
@@ -1147,13 +1156,14 @@ button {
   font-size: 14px;
   line-height: 100%;
   text-align: center;
-  background-color: $quaternary;
-  color: white;
+  background-color: white;
+  color: $quaternary;
+  padding: 25px 15px;
 }
 .portabilidad-pills .nav-pills .active a,
 .portabilidad-pills .nav-pills .active a:focus {
-  background-color: white;
-  color: $quaternary;
+  background-color: $quaternary;
+  color: white;
 }
 .portabilidad-pills .tab-content.well {
   border-radius: 0;
@@ -1162,8 +1172,6 @@ button {
 }
 
 .portabilidad-pills .tab-pane input.form-control {
-  background-color: transparent;
-  color: white;
 }
 
 /* recargas */
@@ -2448,10 +2456,20 @@ button {
 /* Servicio técnico */
 
 .servicio-tecnico-welcome { padding: 0 25px; }
+
 .servicio-tecnico-pills .tab-content {
   padding: 30px 5px;
   background-color: white;
   width: 98.5%;
+}
+
+.servicio-tecnico-pills.modulo-morado .nav-pills {
+  background-color: white;
+}
+
+.servicio-tecnico-pills.modulo-morado .tab-content {
+  background-color: transparent;
+  color: white;
 }
 
 .helpText {
@@ -2475,7 +2493,7 @@ button {
 .servicio-tecnico-timeline ul li {
   position: relative;
   padding-left: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 60px;
   color: #7A7A7A;
   border-left: 2px dashed #7a7a7a;
 }
