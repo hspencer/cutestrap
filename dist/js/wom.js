@@ -3039,7 +3039,7 @@ if (typeof jQuery === 'undefined') {
 // js layer para prototipos WOM
 // version nunjucks!
 // dependencias: muchas, checar gulpfile
-// 
+//
 
 $(document).ready(function(){
 
@@ -3052,7 +3052,7 @@ $(document).ready(function(){
  		console.log(vwheight);
  		$('#carousel-home-welcome').css('height', vwheight);
 	}
-        
+
 	// super-mega-simple client-side form validator and form next step enabler
 	function validateForm() {
 		var $fields = $(".form-control:visible");
@@ -3137,7 +3137,7 @@ $(document).ready(function(){
 			$(this).addClass('selected');
 			return false;
 		});
-		
+
 		// goto Next Step
 		function wizardGo () {
 			$currentStep = $('#wizardPlanes .wizardPlanes-pasos').filter(':visible');
@@ -3146,7 +3146,7 @@ $(document).ready(function(){
   			// anima el DOM hasta el paso que viene
 	    	$('html, body').animate({scrollTop: $('#wizardPlanes-' + nextStep).offset().top}, 500);
 		}
-		
+
 		// wizard appendix - interaccion estándar
 		$('#wizardPlanes .graphButton').click(function() {
 			$(this).parents('.gigaMeasures').find('.graphButton').removeClass('selected');
@@ -3223,5 +3223,29 @@ $(document).ready(function(){
 	// 		$('.navbar-toggle:visible').click();
 	// 	}
 	// });
-	  
+
+	var $helpCenterFalse = $('#helpCenterFalse')
+	,	$helpCenterTrue = $('#helpCenterTrue')
+	,	$helpCenterFeedback = $('#helpCenterFeedback')
+	,	$helpCenterFeedbackTrue = $('#helpCenterFeedbackTrue')
+	,	$helpCenterFeedbackTrueDescription = $('#helpCenterFeedbackTrueDescription');
+
+
+		$helpCenterFalse.on( 'click', function() {
+
+			$helpCenterTrue.removeClass('active');
+			$(this).addClass('active');
+			$helpCenterFeedback.add($helpCenterFeedbackTrueDescription).removeClass('hide').addClass('show');
+			$helpCenterFeedbackTrue.removeClass('show').addClass('hide');
+		});
+
+		$helpCenterTrue.on( 'click', function() {
+
+			$helpCenterFalse.removeClass('active');
+			$(this).addClass('active');
+			$helpCenterFeedback.add($helpCenterFeedbackTrueDescription).removeClass('show').addClass('hide');
+			$helpCenterFeedbackTrue.removeClass('hide').addClass('show');
+		});
+
+
 });
