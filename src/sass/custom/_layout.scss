@@ -325,6 +325,8 @@ ul {
 
 .gray-holder {
   background-color: #F5F5F5;
+  position: relative;
+  z-index: 99;
 }
 
 .modulo-morado-alt .miniLabel {
