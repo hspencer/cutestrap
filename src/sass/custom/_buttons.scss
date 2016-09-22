@@ -3,8 +3,8 @@
 Buttons
 
 Class <code>.btn</code> defines a button-styled link. These are some variations
-This is a <a href='http://www.wom.cl' class='btn press-fx'>standard button</a>, 
-this is the <a href='http://www.wom.cl' class='btn press-fx btn-secondary'>secondary button</a>, 
+This is a <a href='http://www.wom.cl' class='btn press-fx'>standard button</a>,
+this is the <a href='http://www.wom.cl' class='btn press-fx btn-secondary'>secondary button</a>,
 yet this is another, simpler one, the <a href='http://www.wom.cl' class='btn press-fx btn-link'>link button</a>
 
 Markup:
@@ -92,6 +92,10 @@ Styleguide 2.0
   font-size: $font-size * 3;
   height: 4.8rem;
   line-height: 5rem;
+}
+
+.btn-full {
+  width: 100%;
 }
 
 

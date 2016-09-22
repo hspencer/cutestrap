@@ -128,8 +128,6 @@ gulp.task('kss-public', ['kss'], function(){
 });
 
 gulp.task('sass', function() {
-  gulp.src('./src/sass/**/*.*')
-    .pipe(gulp.dest('./dist/scss'));
 
   return gulp.src('./src/sass/womstrap.scss')
     .pipe(stylelint({

@@ -61,6 +61,7 @@ womstrap
 ```
 `/templates` define HTMLs DOM structure while `/partials` define HTML code snipets to use as modules.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 -----
 
@@ -80,5 +81,7 @@ En Mac, se recomienda utilizar [homebrew](http://brew.sh) para instalar todos lo
 * 
 
 
+=======
+>>>>>>> gh-pages
 =======
 >>>>>>> gh-pages
