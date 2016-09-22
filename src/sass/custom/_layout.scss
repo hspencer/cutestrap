@@ -467,6 +467,15 @@ ul {
   margin-bottom: 20px;
   line-height: 1rem;
 }
+.formPago-container {
+  width: 100%;
+  min-height: 154px;
+}
+@media only screen and (min-width: 760px) {
+  .formPago-container {
+    margin-top: 40px;
+  }
+}
 
 .title-selecciona-medio-pago {
   line-height: 2.5rem !important;
