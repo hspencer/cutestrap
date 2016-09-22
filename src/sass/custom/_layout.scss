@@ -323,7 +323,9 @@ ul {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#730184', endColorstr='#32004d', GradientType=0 );
 }
 
-
+.gray-holder {
+  background-color: #F5F5F5;
+}
 
 .modulo-morado-alt .miniLabel {
   color: white;
@@ -1156,6 +1158,7 @@ button {
   text-align: center;
   background-color: white;
   color: $quaternary;
+  padding: 25px 15px;
 }
 .portabilidad-pills .nav-pills .active a,
 .portabilidad-pills .nav-pills .active a:focus {
@@ -1169,8 +1172,6 @@ button {
 }
 
 .portabilidad-pills .tab-pane input.form-control {
-  background-color: transparent;
-  color: white;
 }
 
 /* recargas */

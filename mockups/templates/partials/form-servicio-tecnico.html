@@ -1,38 +1,39 @@
 
-<div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
-	<div class="portabilidad-pills servicio-tecnico-pills">
-		<ul class="nav nav-pills" role="tablist">
-		  <li class="active"><a href="#tab_telefono_desktop" data-toggle="tab" class="fw-semibold">N° TÉLEFONO</a></li>
-		  <li><a href="#tab_solicitud_desktop" data-toggle="tab" class="fw-semibold">N° SOLICITUD</a></li>
-		</ul>
-		<div class="tab-content">
-			<div class="tab-pane active" id="tab_telefono_desktop">							
-				<div class="row">
-					<div class="col-xs-10 col-xs-offset-1">
-						<div class="form-group">
-							<span class="miniLabel">Ingresa tu número de teléfono</span>
-							<input type="text" class="form-control" id="telefono" onfocus="$(this).val('+56 9');" placeholder="Ingresa tu número de teléfono">
-						</div>
+<div class="portabilidad-pills servicio-tecnico-pills mb-40">
+	<ul class="nav nav-pills" role="tablist">
+	  <li class="active"><a href="#tab_telefono_desktop" data-toggle="tab" class="fw-semibold">N° TÉLEFONO</a></li>
+	  <li><a href="#tab_solicitud_desktop" data-toggle="tab" class="fw-semibold">N° SOLICITUD</a></li>
+	</ul>
+	<div class="tab-content">
+		<div class="tab-pane active" id="tab_telefono_desktop">
+			<div class="row">
+				<div class="col-xs-2">
+					<img src="img/icons/ico-planes-black.svg" class="pull-right ml-20" alt="">
+				</div>
+				<div class="col-xs-10">
+					<div class="form-group">
+						<span class="miniLabel">Ingresa tu número de teléfono</span>
+						<input type="text" class="form-control" id="telefono" onfocus="$(this).val('+56 9');" placeholder="Ingresa tu número de teléfono">
+					</div>
+				</div>
+			</div>
+			<div class="row ta-center">
+				<button type="button" class="btn btn-disabled btn-sm">Ver estado de mi equipo</button>
+			</div>
+		</div>
+		<div class="tab-pane" id="tab_solicitud_desktop">
+			<div class="row">
+				<div class="col-xs-2">
+					<img src="img/icons/ico-planes-black.svg" class="pull-right ml-20" alt="">
+				</div>
+				<div class="col-xs-10">
+					<div class="form-group">
+						<span class="miniLabel">Ingresa tu número de solicitud</span>
+						<input type="text" class="form-control" id="solicitud" placeholder="Ingresa tu número de solicitud">
 					</div>
 				</div>
 				<div class="row ta-center">
 					<button type="button" class="btn btn-disabled btn-sm">Ver estado de mi equipo</button>
-				</div>
-			</div>
-			<div class="tab-pane" id="tab_solicitud_desktop">
-				<div class="row">
-					<div class="col-xs-2">
-						<img src="img/icons/ico-planes-black.svg" class="pull-right ml-20" alt="">
-					</div>
-					<div class="col-xs-10">
-						<div class="form-group">
-							<span class="miniLabel">Ingresa tu número de solicitud</span>
-							<input type="text" class="form-control" id="solicitud" placeholder="Ingresa tu número de solicitud">
-						</div>
-					</div>
-					<div class="row ta-center">
-						<button type="button" class="btn btn-disabled btn-sm">Ver estado de mi equipo</button>
-					</div>
 				</div>
 			</div>
 		</div>
