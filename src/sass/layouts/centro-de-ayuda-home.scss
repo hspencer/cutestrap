@@ -203,8 +203,10 @@
   padding-top: 0;
 }
 
-.centro-de-ayuda-celrobado-ribbon .holder {
-  padding-top: 100px;
+@media only screen and (min-width: 800px) {
+  .centro-de-ayuda-celrobado-ribbon .holder {
+    padding-top: 100px;
+  }
 }
 
 .centro-de-ayuda-celrobado-ribbon .holder .icon-flaite {
