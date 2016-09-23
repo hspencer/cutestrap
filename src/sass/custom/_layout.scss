@@ -329,18 +329,20 @@ ul {
   overflow: visible;
 }
 
-.gray-holder.gray-diagonal-lg:before {
-  content: '';
-  display: block;
-  position: absolute;
-  top: -155px;
-  left: 0;
-  width: 100%;
-  height: 155px;
-  background-image: url(../../mockups/img/diagonal-lg.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+@media only screen and (min-width: 750px) {
+  .gray-holder.gray-diagonal-lg:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -155px;
+    left: 0;
+    width: 100%;
+    height: 155px;
+    background-image: url(../../mockups/img/diagonal-lg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 
 .modulo-morado-alt .miniLabel {
