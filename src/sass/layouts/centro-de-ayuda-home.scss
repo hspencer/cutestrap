@@ -1,23 +1,76 @@
-.centro-ayuda__welcome-home.fullwidth-slab {
-  .personaImage {
-    position: relative;
+
+.centro-ayuda-bottom {
+  margin-bottom: 150px;
+  .centro-ayuda-faq > ul > li {
+    span {
+      margin-bottom: 15px;
+    }
+    p {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+  }
+  .centro-ayuda-social > ul > li i.fa {
+    width: 32px;
   }
 }
 
-.centro-ayuda__welcome-home__title {
-  text-align: center;
+.centro-ayuda-celrobado-ribbon {
+  margin-bottom: 0;
+  margin-top: 30px;
 }
 
-.centro-ayuda__welcome-home__col {
-  padding: 0;
+.centro-ayuda-celrobado-ribbon__content {
+  padding: 1rem 15px 3rem;
+  &:before {
+    box-shadow: inset 0 12px 20px -12px rgba(0,0,0,0.4);
+    height: 100%;
+  }
+  &:after {
+    height: 0;
+  }
 }
+
+
+.centro-ayuda-home__faq__container {
+  h3 {
+    font-size: 1.8rem;
+    padding-top: 30px;
+  }
+}
+
+.centro-ayuda-home__faq__cards__description p {
+  color: white;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.centro-ayuda-home__faq__cards__image {
+  margin-right: 1rem;
+  width: 50px;
+}
+
+
+.centro-ayuda-robo {
+  bottom: 0;
+  position: absolute;
+  width: 97%;
+}
+
+.centro-ayuda-robo .icon-flaite {
+  float: left;
+  margin-right: 15px;
+}
+
+
 
 .centro-ayuda-satisfaction {
   background-image: url(../../mockups/img/centro-de-ayuda/welcome-bg.png);
-  height: 185px;
   background-position: center 0px;
   background-size: 100% auto;
   border-bottom: 1px solid #CCC;
+  height: 185px;
 }
 
 .centro-ayuda-satisfaction .btn-primary:first-of-type {
@@ -29,16 +82,55 @@
   border-color: #ba007c;
 }
 
-.centro-ayuda-robo {
-  position: absolute;
-  bottom: 0;
-  width: 97%;
+
+
+.centro-ayuda-social__list-item {
+  padding: 20px 30px 20px 100px;
 }
 
-.centro-ayuda-robo .icon-flaite {
-  float: left;
-  margin-right: 15px;
+
+
+.centro-ayuda-welcome .fw-normal {
+  margin-left: 8%;
 }
+
+.centro-ayuda__welcome__description {
+  color: #666;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+}
+
+.centro-ayuda__welcome-home {
+  margin: 0;
+  &:after,
+  &:before {
+    height: 0;
+  }
+  .se-content {
+    background-color: white;
+  }
+}
+
+.centro-ayuda__welcome-home__col {
+  padding: 0;
+}
+
+.centro-ayuda__welcome-home.fullwidth-slab {
+  .personaImage {
+    position: relative;
+  }
+}
+
+.centro-ayuda__welcome-home__title {
+  text-align: center;
+}
+
+
+
+
+
 
 
 .form-control.centro-ayuda-search {
@@ -60,9 +152,7 @@
   width: 88%;
 }
 
-.centro-ayuda-welcome .fw-normal {
-  margin-left: 8%;
-}
+
 
 .centro-ayuda-navmap {
   list-style-type: none;
@@ -77,17 +167,24 @@
   padding-right: 15px;
 }
 
-  .centro-ayuda-navmap > li:last-of-type {
-    margin-bottom: 0;
-    border: none;
+
+.centro-ayuda-home__faq__cards__list:first-of-type {
+  li:last-of-type {
+    border-bottom: 1px solid white;
+    margin-bottom: 20px;
   }
+}
+
+.centro-ayuda-navmap > li:last-of-type {
+  margin-bottom: 0;
+  border: none;
+}
 
 .centro-ayuda-navmap > li .icon {
   float: left;
   margin-right: 20px;
   margin-bottom: 30px;
   width: 30px;
-  margin-left: 15px;
 }
 
 .centro-ayuda-navmap > li > a {
@@ -132,30 +229,26 @@
 }
 
 .centro-ayuda-faq ul > li > a span {
-  display: block;
-  float: left;
   background-color: $grape;
-  font-weight: 900;
   border-radius: 100%;
-  width: 25px;
-  text-align: center;
   color: white;
-  line-height: 25px;
-  margin-right: 20px;
+  display: block;
+  font-size: 16px;
+  font-weight: 900;
+  height: 32px;
+  line-height: 32px;
   margin-bottom: 20px;
-}
-
-.centro-ayuda-social {
+  margin-right: 20px;
+  min-height: 23px;
+  min-width: 32px;
+  text-align: center;
+  width: 32px;
 }
 
 .centro-ayuda-social ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
-}
-
-.centro-ayuda-social ul li {
-  padding: 20px 30px;
 }
 
 .centro-ayuda-social ul li i.fa {
@@ -203,42 +296,117 @@
   padding-top: 0;
 }
 
-@media only screen and (min-width: 800px) {
-  .centro-de-ayuda-celrobado-ribbon .holder {
-    padding-top: 100px;
-  }
-}
-
-.centro-de-ayuda-celrobado-ribbon .holder .icon-flaite {
-  float: left;
+.centro-ayuda-celrobado-ribbon .icon-flaite {
+  display: inline-block;
   margin-right: 15px;
 }
 
-.centro-de-ayuda-celrobado-ribbon .holder p {
-  margin: 0;
-  padding: 0;
-  color: #666;
-}
+@media screen and ( min-width: 768px ) {
 
-.centroayuda-bottom-desktop {
-  margin-bottom: 150px;
-}
+  .centro-ayuda-bottom .centro-ayuda-social > ul > li,
+  .centro-ayuda-bottom .centro-ayuda-faq > ul > li {
+    border: none;
+  }
 
-.centroayuda-bottom-desktop .centro-ayuda-social > ul > li,
-.centroayuda-bottom-desktop .centro-ayuda-faq > ul > li {
-  border: none;
-}
 
-.centroayuda-bottom-desktop .centro-ayuda-social > ul > li i.fa {
-  width: 32px;
-}
 
-.centroayuda-bottom-desktop .centro-ayuda-faq > ul > li span {
-  margin-bottom: 15px;
-}
+  .centro-ayuda-celrobado-ribbon {
+    margin-bottom: 130px;
+  }
 
-.centroayuda-bottom-desktop .centro-ayuda-faq > ul > li p {
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+  .centro-ayuda-celrobado-ribbon__content {
+    background-color: white;
+    padding: 3rem;
+    &:before {
+      box-shadow: none;
+      height: 0;
+    }
+    &:after {
+      border-bottom: 1px solid #ccc;
+      height: 100%;
+    }
+  }
+
+
+  .centro-ayuda-home__faq {
+    margin-top: 150px;
+  }
+
+  .centro-ayuda-home__faq__cards__image {
+    margin-right: 0;
+    width: auto;
+    img {
+      margin: 0 auto;
+      max-width: 75px;
+    }
+  }
+
+  .centro-ayuda-home__faq__cards__list {
+    margin-bottom: 0;
+    li {
+      margin-bottom: 0;
+    }
+  }
+
+  .centro-ayuda-home__faq__cards__list:first-of-type {
+    li:last-of-type {
+      border-bottom: 1px solid white;
+      margin-bottom: 0;
+    }
+  }
+
+  .centro-ayuda-home__faq__cards__list-item {
+    text-align: center;
+    a {
+      display: block;
+      text-decoration: none;
+    }
+  }
+
+
+  .centro-ayuda-home__faq__container {
+    background-color: white;
+    h3 {
+      color: #720184;
+      font-size: 2.8rem;
+      margin-bottom: 60px;
+    }
+  }
+
+
+  .centro-ayuda-social__list-item {
+    padding: 20px 30px;
+  }
+
+  .centro-ayuda-home__faq__cards__description {
+    h5 {
+      color: #720184;
+      margin-top: 1rem;
+    }
+    p {
+      color: #555;
+    }
+  }
+
+  .centro-ayuda-home__faq__cards__list__content {
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #CCC;
+    margin-bottom: 10px;
+  }
+
+
+
+  .centro-ayuda__welcome-home {
+    margin-bottom: 150px;
+    &:after,
+    &:before {
+      height: 50%;
+    }
+
+    .se-content {
+      background-color: $gray-7;
+    }
+  }
+
 }
