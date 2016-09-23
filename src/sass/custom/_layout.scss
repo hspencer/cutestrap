@@ -1573,7 +1573,9 @@ button {
 
 #compra-bolsa .compra-bolsa-stepper {
   padding-top: 40px;
-  margin-bottom: -20px;
+  position: relative;
+  max-width: 275px;
+  margin: 0 auto -20px;
 }
 
 #compra-bolsa .compra-bolsa-stepper:before {
@@ -1583,8 +1585,8 @@ button {
   height: 3px;
   background-color: #e9e9e9;
   width: 250px;
-  top: 75px;
-  left: 50px;
+  top: 60px;
+  left: 0;
 }
 
   #compra-bolsa .compra-bolsa-stepper span {
