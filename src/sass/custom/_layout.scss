@@ -1243,10 +1243,6 @@ button {
   margin-top: -10px;
 }
 
-.modulo-planes-convenientes button {
-  width: 85%;
-}
-
 .modulo-planes-convenientes {
   background-color: #f7f7f7;
   padding: 0;
@@ -1265,6 +1261,7 @@ button {
 .calendarCards .item {
   border: 1px solid #CCC;
   margin-bottom: 30px;
+  position: relative;
 }
 
 .calendarCards .item .cards-head {
@@ -1274,6 +1271,41 @@ button {
   padding: 8px 15px;
   border-bottom: 1px solid $gray-4;
 }
+
+@media only screen and (min-width: 991px) {
+  .calendarCards .item .cards-head {
+    position: absolute;
+    left: -500px;
+    overflow: visible;
+    border: 1px solid #CCC;
+  }
+    .calendarCards .item .cards-head:after {
+      content: '';
+      display: block;
+      position: absolute;
+      right: -12px;
+      top: 15px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 10px 0 10px 12px;
+      border-color: transparent transparent transparent #CCC;
+    }
+  
+    .calendarCards .item:first-of-type .cards-head:after {
+      top: 30px;
+      border-color: transparent transparent transparent #BA007C;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+  .calendarCards .item .cards-head {
+    position: absolute;
+    left: -400px;
+  }  
+}
+
 .cards-head-mes.cards-head-total strong {
   color: $gray-4;
 }
@@ -1619,7 +1651,6 @@ button {
   border: 1px solid #CCC;
   display: inline-block;
   border-radius: 4px;
-  width: 90px;
   height: 90px;
   margin-right: 5px;
   margin-bottom: 50px;
@@ -2481,9 +2512,9 @@ button {
     background-image: url(../../mockups/img/private_site/ico-promo-descubre-plan.svg);
     width: 19px;
     height: 25px;
-    display: block;
-    margin-left: 20px;
-    margin-top: 12px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
 }
 
 button .icon {
