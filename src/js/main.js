@@ -5,15 +5,14 @@
 
 $(document).ready(function(){
 
-	// viewport width
-	var vw = window.matchMedia( "(min-width: 900px)" );
 
 	// home womers - carrusel fill height + easter egg
-	if (vw.matches) {
-		vwheight = $(window).height();
- 		console.log(vwheight);
- 		$('#carousel-home-welcome').css('height', vwheight);
-	}
+		// var vw = window.matchMedia( "(min-width: 900px)" );
+		// if (vw.matches) {
+		// }
+	vwheight = $(window).height();
+		console.log(vwheight);
+		$('#carousel-home-welcome').css('height', vwheight);
 
 	// super-mega-simple client-side form validator and form next step enabler
 	function validateForm() {
