@@ -214,14 +214,36 @@ ul {
 }
   /* Visualizar consumos y saldos*/
   .info-mes-title {
-    background-color: transparent;
+    background-color: white;
     color: #3A1F4F;
-    padding: 10px 10px 10px 15px; }
+    padding: 10px 10px 10px 15px;
+    margin-bottom: 0;
+  }
 
    .mes-title {
     background-color: #421441;
     color: #fff;
     padding: 10px 10px 10px 15px; }
+
+    @media only screen and (min-width: 992px) {
+      .mes-title {
+        position: absolute;
+        left: -400px;
+      }
+
+      .mes-title:after {
+        content: '';
+        display: block;
+        position: absolute;
+        right: -12px;
+        top: 12px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 10px 0 10px 12px;
+        border-color: transparent transparent transparent $primary;
+      }
+    }
 
   /*Historico-contratos y facturas*/
   .contracts-box {
@@ -257,6 +279,7 @@ ul {
 
   table.llamadas {
     border-radius: 0;
+    background-color: white;
   }
     table.llamadas td {
       color: #3A1F4F;
@@ -323,7 +346,27 @@ ul {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#730184', endColorstr='#32004d', GradientType=0 );
 }
 
+.gray-holder {
+  background-color: #F5F5F5;
+  position: relative;
+  overflow: visible;
+}
 
+@media only screen and (min-width: 750px) {
+  .gray-holder.gray-diagonal-lg:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -155px;
+    left: 0;
+    width: 100%;
+    height: 155px;
+    background-image: url(../../mockups/img/diagonal-lg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
 
 .modulo-morado-alt .miniLabel {
   color: white;
@@ -369,8 +412,8 @@ ul {
 }
 .modulo-morado .svg-blanco {
   background: rgba(145,2,168,1);
-  padding: 5px;
-  margin: 5px 0 0 0;
+  padding: 10px;
+  margin: 15px auto;
 }
 .modulo-morado h4,
 .modulo-morado h6 {
@@ -465,6 +508,15 @@ ul {
   margin-bottom: 20px;
   line-height: 1rem;
 }
+.formPago-container {
+  width: 100%;
+  min-height: 154px;
+}
+@media only screen and (min-width: 760px) {
+  .formPago-container {
+    margin-top: 40px;
+  }
+}
 
 .title-selecciona-medio-pago {
   line-height: 2.5rem !important;
@@ -509,13 +561,21 @@ ul {
 
 .pago-facil-desglose {
   margin: 15px 0;
-  background-color: $primary;
+  background-color: $secondary;
+  background: rgba(114,1,132,1);
+  background: -moz-linear-gradient(top, rgba(114,1,132,1) 0%, rgba(50,0,77,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(114,1,132,1)), color-stop(100%, rgba(50,0,77,1)));
+  background: -webkit-linear-gradient(top, rgba(114,1,132,1) 0%, rgba(50,0,77,1) 100%);
+  background: -o-linear-gradient(top, rgba(114,1,132,1) 0%, rgba(50,0,77,1) 100%);
+  background: -ms-linear-gradient(top, rgba(114,1,132,1) 0%, rgba(50,0,77,1) 100%);
+  background: linear-gradient(to bottom, rgba(114,1,132,1) 0%, rgba(50,0,77,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#720184', endColorstr='#32004d', GradientType=0 );
+  padding: 5px 15px;
 }
 
 .pago-facil-desglose p {
   margin: 0;
-  padding: 3px;
-  font-size: 1.6rem;
+  padding: 0;
   color: white;
 }
 
@@ -551,15 +611,15 @@ ul {
 }
 
 .pago-facil-paga {
-  border: 1px solid #ECECEC;
+  border: 1px solid #CCCCCC;
+  color: $gray-1;
   background: -moz-linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(236,236,236,1) 100%); /* ff3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(236,236,236,1))); /* safari4+,chrome */
   background: -webkit-linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(236,236,236,1) 100%); /* safari5.1+,chrome10+ */
   background: -o-linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(236,236,236,1) 100%); /* opera 11.10+ */
   background: -ms-linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(236,236,236,1) 100%); /* ie10+ */
   background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(236,236,236,1) 100%); /* w3c */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#ECECEC',GradientType=0 ); /* ie6-9 */
-  color: $gray-1;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#ECECEC',GradientType=0 );
   padding-top: 10px;
   padding-bottom: 20px;
   padding-left: 15px;
@@ -670,6 +730,10 @@ padding: 2px 4px;
   position: relative;
   z-index: 180;
 }
+.modulo-portatebien .dropdown-menu {
+  position: static;
+}
+
 .modulo-portatebien .open > .dropdown-menu {
   max-height: 300px;
   opacity: 1;
@@ -780,44 +844,6 @@ padding: 2px 4px;
   background-image: url(../../mockups/img/portabilidad/ico-tengo-plan2.svg);
 }
 
-#captcha {
-  max-width: 768px;
-  margin: 0 auto;
-}
-
-#captcha .captchaLink {
-  border-radius: 100%;
-  border: 1px solid #CCC;
-  text-align: center;
-  display: inline-block;
-  margin-right: 6px;
-  font-size: 2rem;
-  padding: 12px 12px;
-  width: 50px;
-  height: 50px;
-  &:last-of-type {
-    margin-right: 0;
-  }
-}
-
-#captcha .captchaLink.selected {
-  background-color: $quaternary;
-  color: white;
-  border-color: $quaternary;
-}
-
-#stepper_portabilidad {
-  font-family: 'Cera';
-  height: 90px;
-  margin: 0 auto -40px;
-  padding: 0 0 30px 0;
-  list-style-type: none;
-  text-align: center;
-  -webkit-font-feature-settings: "lnum";
-  font-feature-settings: "lnum";
-  max-width: 768px;
-}
-
 .portate-desktop-ad {
   background-image: url(../../mockups/img/banner/portate-desktop-ad.png);
 }
@@ -856,42 +882,8 @@ padding: 2px 4px;
   color: white;
 }
 
-#stepper_portabilidad:after {
-  content: '';
-  background: $pink;
-  width: 72%;
-  height: 2px;
-  margin-top: -25px;
-  margin-left: 15%;
-  display: block;
-}
 
-#stepper_portabilidad li {
-  display: inline-block;
-  margin: 0 5%;
-}
 
-  #stepper_portabilidad li:first-of-type {
-    margin-left: 0;
-  }
-  #stepper_portabilidad li:last-of-type {
-    margin-right: 0;
-  }
-
-#stepper_portabilidad li span {
-  display: block;
-  background: $pink;
-  color: white;
-  text-align: center;
-  border-radius: 100%;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-}
-
-#stepper_portabilidad li.active span {
-  background: $primary;
-}
 
 /* para forms de portabilidad */
 
@@ -959,9 +951,8 @@ padding: 2px 4px;
   background-image: url(../../mockups/img/icons/ico-ticket.svg);
 }
 .pagadoStamp {
-  position: absolute;
-  right: 15px;
-  margin-top: -20px;
+  margin-left: 185px;
+  display: inline-block;
 }
 .wom-mensaje-tle-cap {
   width: 80%;
@@ -1016,6 +1007,17 @@ padding: 2px 4px;
   border-color: transparent;
 }
 
+.btn.btn-portate {
+  border-radius: 0;
+  border: none;
+  padding: 15px 0;
+  background: #86029e; /* Old browsers */
+  background: -moz-linear-gradient(top,  #86029e 48%, #86029e 48%, #4e0165 100%, #4e0165 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #86029e 48%,#86029e 48%,#4e0165 100%,#4e0165 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #86029e 48%,#86029e 48%,#4e0165 100%,#4e0165 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#86029e', endColorstr='#4e0165',GradientType=0 ); /* IE6-9 */
+}
+
 .btn-primary.success {
   border-color: transparent;
 }
@@ -1040,7 +1042,8 @@ button {
   background-color: transparent;
 }
 .form-control.input-outline {
-  border: 1px solid #666;
+  border: 1px solid #ccc;
+  padding: 15px;
 }
 .form-control.input-lite {
   color: #000;
@@ -1150,13 +1153,14 @@ button {
   font-size: 14px;
   line-height: 100%;
   text-align: center;
-  background-color: $quaternary;
-  color: white;
+  background-color: white;
+  color: $quaternary;
+  padding: 25px 15px;
 }
 .portabilidad-pills .nav-pills .active a,
 .portabilidad-pills .nav-pills .active a:focus {
-  background-color: white;
-  color: $quaternary;
+  background-color: $quaternary;
+  color: white;
 }
 .portabilidad-pills .tab-content.well {
   border-radius: 0;
@@ -1165,8 +1169,6 @@ button {
 }
 
 .portabilidad-pills .tab-pane input.form-control {
-  background-color: transparent;
-  color: white;
 }
 
 /* recargas */
@@ -1212,10 +1214,6 @@ button {
   margin-top: -10px;
 }
 
-.modulo-planes-convenientes button {
-  width: 85%;
-}
-
 .modulo-planes-convenientes {
   background-color: #f7f7f7;
   padding: 0;
@@ -1234,6 +1232,7 @@ button {
 .calendarCards .item {
   border: 1px solid #CCC;
   margin-bottom: 30px;
+  position: relative;
 }
 
 .calendarCards .item .cards-head {
@@ -1243,6 +1242,41 @@ button {
   padding: 8px 15px;
   border-bottom: 1px solid $gray-4;
 }
+
+@media only screen and (min-width: 991px) {
+  .calendarCards .item .cards-head {
+    position: absolute;
+    left: -500px;
+    overflow: visible;
+    border: 1px solid #CCC;
+  }
+    .calendarCards .item .cards-head:after {
+      content: '';
+      display: block;
+      position: absolute;
+      right: -12px;
+      top: 15px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 10px 0 10px 12px;
+      border-color: transparent transparent transparent #CCC;
+    }
+
+    .calendarCards .item:first-of-type .cards-head:after {
+      top: 30px;
+      border-color: transparent transparent transparent #BA007C;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+  .calendarCards .item .cards-head {
+    position: absolute;
+    left: -400px;
+  }
+}
+
 .cards-head-mes.cards-head-total strong {
   color: $gray-4;
 }
@@ -1323,7 +1357,7 @@ button {
 }
 
 /* womstrap inputs: general override; */
-.form-group {margin-bottom: 30px; position: relative;}
+.form-group {margin-bottom: 40px; position: relative;}
 .form-group .select select,
 .form-control {
   box-shadow: none;
@@ -1331,6 +1365,16 @@ button {
   border: none;
   border-bottom: 1px solid #333;
   background-color: transparent;
+  color: #9999a2;
+  font-size: 16px;
+  line-height: 1.42857;
+  padding-bottom: 12px;
+}
+
+.form-group {
+  input[type=file] {
+    padding-top: 6px;
+  }
 }
 
 .form-group .miniLabel {
@@ -1512,7 +1556,9 @@ button {
 
 #compra-bolsa .compra-bolsa-stepper {
   padding-top: 40px;
-  margin-bottom: -20px;
+  position: relative;
+  max-width: 275px;
+  margin: 0 auto -20px;
 }
 
 #compra-bolsa .compra-bolsa-stepper:before {
@@ -1522,8 +1568,8 @@ button {
   height: 3px;
   background-color: #e9e9e9;
   width: 250px;
-  top: 75px;
-  left: 50px;
+  top: 60px;
+  left: 0;
 }
 
   #compra-bolsa .compra-bolsa-stepper span {
@@ -1588,7 +1634,6 @@ button {
   border: 1px solid #CCC;
   display: inline-block;
   border-radius: 4px;
-  width: 90px;
   height: 90px;
   margin-right: 5px;
   margin-bottom: 50px;
@@ -1928,7 +1973,7 @@ button {
 
 .separador-faq {
   background-image: url(../../mockups/img/home/tile-sombrita.png);
-  padding: 20px;
+  padding: 25px;
   background-repeat: no-repeat;
   background-size: 100% auto;
   border: none;
@@ -2113,6 +2158,7 @@ button {
   background-image: url(../../mockups/img/home/carrusel-nonwomers-equipos-bg.png);
   padding: 30px 0;
   background-size: 100% auto;
+  background-repeat: no-repeat;
 }
 @media only screen and (min-width: 900px) {
   #carousel-belowfold-equipos {
@@ -2141,243 +2187,8 @@ button {
   top: -45px;
   margin-bottom: -75px;
 }
-.form-control.centro-ayuda-search {
-  border: 1px solid #666;
-  background-image: url(../../mockups/img/home/ico-lupa.svg);
-  background-repeat: no-repeat;
-  background-position: 97% center;
-  padding: 10px;
-  height: 40px;
-   background-color: white;
-    border-radius: 5px;
 
-}
 
-/* centro de ayuda : Home */
-
-.centro-ayuda-welcome {
-  background-image: url(../../mockups/img/centro-de-ayuda/welcome-bg.png);
-  background-position: center bottom;
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  height: 325px;
-  color: #8B8B8B;
-  position: relative;
-}
-
-.centro-ayuda-satisfaction {
-  background-image: url(../../mockups/img/centro-de-ayuda/welcome-bg.png);
-  height: 185px;
-  background-position: center 0px;
-  background-size: 100% auto;
-  border-bottom: 1px solid #CCC;
-}
-
-.centro-ayuda-satisfaction .btn-primary:first-of-type {
-  margin-right: 3px;
-}
-
-.centro-ayuda-satisfaction .btn.active {
-  background-color: #ba007c;
-  border-color: #ba007c;
-}
-
-.centro-ayuda-robo {
-  position: absolute;
-  bottom: 0;
-  width: 97%;
-}
-
-.centro-ayuda-robo .icon-flaite {
-  float: left;
-  margin-right: 15px;
-}
-
-.form-control.centro-ayuda-search-alt {
-  border-radius: 5px;
-  border-color: #CCC;
-  padding: 25px 10px;
-  width: 88%;
-}
-
-.centro-ayuda-welcome .fw-normal {
-  margin-left: 8%;
-}
-
-.centro-ayuda-navmap {
-  list-style-type: none;
-}
-
-.centro-ayuda-navmap > li {
-  line-height: 100%;
-  border-bottom: 1px solid white;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-  .centro-ayuda-navmap > li:last-of-type {
-    margin-bottom: 0;
-    border: none;
-  }
-
-.centro-ayuda-navmap > li .icon {
-  float: left;
-  margin-right: 20px;
-  margin-bottom: 30px;
-  width: 30px;
-  margin-left: 15px;
-}
-
-.centro-ayuda-navmap > li > a {
-  color: white;
-  text-decoration: none;
-}
-
-.centro-ayuda-navmap > li > a > p {
-  margin-bottom: 0;
-  padding-bottom: 0;
-  overflow: hidden;
-}
-
-.centro-ayuda-navmap h5 {
-  color: white;
-  margin: 0 0 5px 0;
-  padding: 0;
-}
-
-.centro-ayuda-faq {
-  margin-bottom: 0;
-}
-
-.centro-ayuda-faq ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  margin-bottom: -30px;
-}
-
-.centro-ayuda-faq ul > li {
-  padding: 15px 30px;
-  border-bottom: 1px solid #CCC;
-}
-
-.centro-ayuda-faq ul > li:last-of-type {
-  border-bottom: 0;
-}
-
-.centro-ayuda-faq ul > li > a {
-  color: $gray-2;
-}
-
-.centro-ayuda-faq ul > li > a span {
-  display: block;
-  float: left;
-  background-color: $grape;
-  font-weight: 900;
-  border-radius: 100%;
-  width: 25px;
-  text-align: center;
-  color: white;
-  line-height: 25px;
-  margin-right: 20px;
-  margin-bottom: 20px;
-}
-
-.centro-ayuda-social {
-}
-
-.centro-ayuda-social ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-.centro-ayuda-social ul li {
-  padding: 10px 10% 10px 22%;
-}
-
-.centro-ayuda-social ul li i.fa {
-  margin-right: 20px;
-  border-radius: 100%;
-  width: 30px;
-  text-align: center;
-  padding: 7px 0px;
-  color: white;
-}
-
-.centro-ayuda-social ul li i.fa.fa-facebook {
-  background-color: #3b5998;
-}
-
-.centro-ayuda-social ul li i.fa.fa-twitter {
-  background-color: #1da1f2;
-}
-
-.centro-ayuda-social ul li i.fa.fa-instagram {
-  background-color: #5851db;
-}
-
-.centro-ayuda-social ul li i.fa.fa-youtube {
-  background-color: #ff0000;
-}
-
-.centro-ayuda-social ul li i.fa.fa-linkedin {
-  background-color: #0077b5;
-}
-
-.centro-ayuda-social > ul > li {
-  border-bottom: 1px solid #CCC;
-}
-
-  .centro-ayuda-social > ul > li:last-of-type {
-    border-bottom: 0;
-  }
-
-.centro-ayuda-social > ul > li > a {
-  color: #8B8B8B;
-}
-
-.centro-ayuda-relatedLinks ul {
-  list-style-type: none;
-  margin: 0;
-  margin-bottom: -30px;
-}
-
-.centro-ayuda-relatedLinks ul li a {
-  color: #8B8B8B;
-  padding: 15px 30px;
-  display: block;
-  border-bottom: 1px solid #D0D0D0;
-}
-
-.centro-ayuda-relatedLinks ul li:last-of-type a {
-  border-bottom: 0;
-}
-
-.centro-ayuda-relatedLinks ul li a p {
-  margin: 0;
-  padding: 0;
-}
-
-.centro-ayuda-relatedLinks ul li a strong {
-  text-transform: uppercase;
-  color: $quaternary;
-}
-
-.centro-ayuda-relatedLinks ul li a i.fa {
-  float: right;
-  font-size: 32px;
-  line-height: 16px;
-  color: $quaternary;
-  margin-top: 5px;
-}
-
-.centro-ayuda-home-desktop {
-  clear: both;
-  margin-bottom: 70px;
-}
 
 /* autoatencion */
 
@@ -2451,9 +2262,20 @@ button {
 /* Servicio técnico */
 
 .servicio-tecnico-welcome { padding: 0 25px; }
+
 .servicio-tecnico-pills .tab-content {
   padding: 30px 5px;
   background-color: white;
+  width: 98.5%;
+}
+
+.servicio-tecnico-pills.modulo-morado .nav-pills {
+  background-color: white;
+}
+
+.servicio-tecnico-pills.modulo-morado .tab-content {
+  background-color: transparent;
+  color: white;
 }
 
 .helpText {
@@ -2477,7 +2299,7 @@ button {
 .servicio-tecnico-timeline ul li {
   position: relative;
   padding-left: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 60px;
   color: #7A7A7A;
   border-left: 2px dashed #7a7a7a;
 }
@@ -2526,8 +2348,13 @@ button {
   margin-top: -2px;
 }
 
-.modal-consumo-modulo .nav-tabs > li {
-  width: 50%;
+.modal-consumo-modulo.dostabs .nav-tabs > li {
+  width: 49.3333%;
+  text-align: center;
+}
+
+.modal-consumo-modulo.trestabs .nav-tabs > li {
+  width: 33.3333%;
   text-align: center;
 }
 
@@ -2536,6 +2363,7 @@ button {
   font-weight: 700;
   font-size: 15px;
   background-color: #f7f7f7;
+  border-bottom: 1px;
 }
 
 .modal-consumo-modulo .nav-tabs > li.active > a,
@@ -2674,9 +2502,9 @@ button {
     background-image: url(../../mockups/img/private_site/ico-promo-descubre-plan.svg);
     width: 19px;
     height: 25px;
-    display: block;
-    margin-left: 20px;
-    margin-top: 12px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
 }
 
 button .icon {
@@ -2993,7 +2821,13 @@ button .icon {
   background-image: url(../../mockups/img/servicio_tecnico/serviciotecnico-header-desktop-bg.png);
   background-size: 100% auto;
   background-repeat: no-repeat;
-  min-height: 520px;
+  min-height: 400px;
+}
+
+@media only screen and (min-width: 900) {
+  .desktop-header {
+    min-height: 520px;
+  }
 }
 
 .desktop-headerTitle {
@@ -3045,78 +2879,10 @@ button .icon {
   padding-bottom: 0px;
 }
 
-.centro-de-ayuda-welcome-desktop.fullwidth-slab {
-  margin-top: -300px;
-}
-
-.centro-de-ayuda-welcome-desktop.fullwidth-slab .personaImage {
-  background: url(../../mockups/img/banner/persona-home-3.png) no-repeat 80px bottom;
-  flex: 1;
-  background-size: auto 100%;
-}
-
-.centro-de-ayuda-welcome-desktop.centro-de-ayuda-inner.fullwidth-slab .personaImage {
-  background-size: auto 70%;
-}
-
-.centro-de-ayuda-related-links-desktop a {
-  color: #666;
-}
-
-.centro-de-ayuda-related-links-desktop a strong {
-  text-transform: uppercase;
-  color: $secondary;
-}
-
 .desktop-persona-serviciotecnico {
   position: absolute;
 }
 
-.centro-de-ayuda-celrobado-ribbon {
-
-}
-
-.centro-de-ayuda-celrobado-ribbon .holder {
-  padding-top: 100px;
-}
-
-.centro-de-ayuda-celrobado-ribbon .holder .icon-flaite {
-  float: left;
-  margin-right: 15px;
-}
-
-.centro-de-ayuda-celrobado-ribbon .holder p {
-  margin: 0;
-  padding: 0;
-  color: #666;
-}
-
-.centroayuda-bottom-desktop {
-  margin-bottom: 150px;
-}
-
-.centroayuda-bottom-desktop .centro-ayuda-social > ul > li,
-.centroayuda-bottom-desktop .centro-ayuda-faq > ul > li {
-  border: none;
-}
-
-.centroayuda-bottom-desktop .centro-ayuda-social > ul > li i.fa {
-  width: 35px;
-}
-
-.centroayuda-bottom-desktop .centro-ayuda-faq > ul > li span {
-  margin-bottom: 15px;
-}
-
-.centroayuda-bottom-desktop .centro-ayuda-faq > ul > li p {
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-.centro-ayuda-desktop-otra-pregunta {
-  margin-bottom: 70px;
-}
 
 @media only screen and (max-width: 768px)  {
   .desktop-headerTitle {
@@ -3214,7 +2980,7 @@ button .icon {
   background-color: white;
   padding: 15px;
   border: 1px solid #CCC;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .cardsContainer .item .ico {
@@ -3273,3 +3039,4 @@ button .icon {
   }
 }
 /* only-for-desktop */
+

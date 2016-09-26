@@ -28,6 +28,7 @@ Markup:
 .uc                      - Text in upper case
 .iblock                  - Inline-block element flow
 .flex                    - Flexbox enable
+.lineheight-1_2          - Line height: 1.2
 
 Styleguide 3.0
 
@@ -81,6 +82,9 @@ Styleguide 3.0
   display: flex;
 }
 
+.lineheight-1_2 {
+  line-height: 1.2;
+}
 
 /*
 
@@ -159,7 +163,7 @@ Styleguide 3.1
 }
 
 .fs-smalish{
-  font-size: $font-size *1.1;
+  font-size: $font-size *0.85;
 }
 .fs-base{
   font-size: $font-size;
@@ -320,11 +324,13 @@ Styleguide 3.4
 .pl-20 {padding-left:20px !important;}
 .pl-30 {padding-left: 30px !important;}
 .pl-40 {padding-left: 40px !important;}
+.pl-80 {padding-left: 80px !important;}
 .pb-0 {padding-bottom:0px !important;}
 .pb-5 {padding-bottom:5px !important;}
 .pb-10 {padding-bottom:10px !important;}
 .pb-20 {padding-bottom:20px !important;}
 .pr-10 {padding-right:10px !important;}
+.pr-15 {padding-right:15px !important;}
 .pr-20 {padding-right:20px !important;}
 .pr-30 {padding-right: 30px !important;}
 .pr-40 {padding-right: 40px !important;}
@@ -340,6 +346,7 @@ Styleguide 3.4
 .mt-30 {margin-top: 30px !important;}
 .mt-40 {margin-top: 40px !important;}
 .mt-60 {margin-top: 60px !important;}
+.mt-80 {margin-top: 80px !important;}
 
 .mt--10 {margin-top: -10px !important;}
 .mt--20 {margin-top: -20px !important;}
@@ -360,7 +367,9 @@ Styleguide 3.4
 .mb--40 {margin-bottom: -40px !important;}
 
 .mr-10 {margin-right: 10px !important;}
+.mr-20 {margin-right: 20px !important;}
 
+.ml-20 {margin-left: 20px !important;}
 .ml-40 {margin-left: 40px !important;}
 .ml-70 {margin-left: 70px !important;}
 .ml-90 {margin-left: 90px !important;}
@@ -368,3 +377,63 @@ Styleguide 3.4
 .ml--20 {margin-left: -15px !important;}
 .ml--40 {margin-left: -40px !important;}
 .mr--20 {margin-right: -15px !important;}
+
+
+.container-xs,
+.container-sm,
+.container-md {
+  margin: 0 auto;
+}
+
+.container-xs {
+  max-width: 310px;
+}
+
+.container-sm {
+  max-width: 580px;
+}
+
+.container-md {
+  max-width: 870px;
+}
+
+/* Justify content: center */
+.u-center {
+  justify-content: center;
+}
+
+
+.se-content {
+  background: $gray-7;
+  position: relative;
+  z-index: 1;
+
+  &:before,
+  &:after {
+    background: inherit;
+    content: '';
+    display: block;
+    height: 50%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    -webkit-backface-visibility: hidden; // for Chrome Windows
+  }
+
+  &:before {
+    top: 0;
+    transform: skewY(-5deg);
+    transform-origin: -50% 0;
+  }
+
+  &:after {
+    bottom: 0;
+    transform: skewY(-5deg);
+    transform-origin: 100%;
+  }
+}
+
+.se-slope {
+  margin: 100px 0;
+}
