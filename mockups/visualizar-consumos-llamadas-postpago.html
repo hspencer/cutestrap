@@ -82,12 +82,13 @@
                 <!-- Nav tabs -->
                 <ul class="nav nav-tabs" role="tablist">
                   <li role="presentation" class="active"><a class="fs-small" href="#trafico-rut" aria-controls="home" role="tab" data-toggle="tab">RUT</a></li>
+                  <li role="presentation"><a class="fs-small" href="#trafico-grupo" aria-controls="profile" role="tab" data-toggle="tab">Grupo</a></li>
                   <li role="presentation"><a class="fs-small" href="#trafico-linea" aria-controls="profile" role="tab" data-toggle="tab">Línea</a></li>
                 </ul>
 
                 <!-- Tab panes -->
                 <div class="tab-content">
-                  <div role="tabpanel" class="tab-pane active" id="#trafico-rut">
+                  <div role="tabpanel" class="tab-pane active" id="trafico-rut">
                     <p class="nomargin nopadding fw-semibold">Período:</p>
                     <select class="form-control select-caret fw-bold">
                       <option selected="">Enero</option>
@@ -96,18 +97,26 @@
                       <option>Octubre</option>
                       <option>...</option>
                     </select>
-                    <br>
+                  </div>
+                  <div role="tabpanel" class="tab-pane" id="trafico-grupo">
+                    <p class="nomargin nopadding fw-semibold">Grupo:</p>
+                    <select class="form-control select-caret fw-bold">
+                      <option selected="">Grupo 1</option>
+                      <option>Grupo 2</option>
+                      <option>Grupo 3</option>
+                      <option>Grupo 4</option>
+                      <option>...</option>
+                    </select>
                   </div>
                   <div role="tabpanel" class="tab-pane" id="trafico-linea">
-                    <p class="nomargin nopadding fw-semibold">Período:</p>
+                    <p class="nomargin nopadding fw-semibold">Línea:</p>
                     <select class="form-control select-caret fw-bold">
-                      <option selected="">Enero</option>
-                      <option>Diciembre</option>
-                      <option>Noviembre</option>
-                      <option>Octubre</option>
+                      <option selected="">+56977738243</option>
+                      <option>Otra</option>
+                      <option>Otra</option>
+                      <option>Otra</option>
                       <option>...</option>
                     </select>
-                    <br>
                   </div>
                 </div>  
               </div>
