@@ -214,14 +214,36 @@ ul {
 }
   /* Visualizar consumos y saldos*/
   .info-mes-title {
-    background-color: transparent;
+    background-color: white;
     color: #3A1F4F;
-    padding: 10px 10px 10px 15px; }
+    padding: 10px 10px 10px 15px;
+    margin-bottom: 0;
+  }
 
    .mes-title {
     background-color: #421441;
     color: #fff;
     padding: 10px 10px 10px 15px; }
+
+    @media only screen and (min-width: 992px) {
+      .mes-title {
+        position: absolute;
+        left: -400px;
+      }
+
+      .mes-title:after {
+        content: '';
+        display: block;
+        position: absolute;
+        right: -12px;
+        top: 12px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 10px 0 10px 12px;
+        border-color: transparent transparent transparent $primary;
+      }
+    }
 
   /*Historico-contratos y facturas*/
   .contracts-box {
@@ -257,6 +279,7 @@ ul {
 
   table.llamadas {
     border-radius: 0;
+    background-color: white;
   }
     table.llamadas td {
       color: #3A1F4F;
