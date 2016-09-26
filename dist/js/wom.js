@@ -3065,7 +3065,7 @@ $(document).ready(function(){
 	    	// apaga stepper
 	    	// $('#stepper_portabilidad li').removeClass('active');
 	    	// prende stepper correcto
-	    	$('#stepper_portabilidad li.stepperLED-' + $nextStep).addClass('active');
+	    	$('.stepper_portabilidad li.stepperLED-' + $nextStep).addClass('active');
 	    	// deshabilita este boton
 	    	$($thisStep).find('.nextStep').addClass('disabled');
 	    	// oculta este paso
