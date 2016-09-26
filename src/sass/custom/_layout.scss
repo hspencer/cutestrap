@@ -801,28 +801,6 @@ padding: 2px 4px;
   background-image: url(../../mockups/img/portabilidad/ico-tengo-plan2.svg);
 }
 
-#captcha {
-  max-width: 768px;
-  margin: 0 auto;
-}
-
-#captcha .captchaLink {
-  border-radius: 100%;
-  border: 1px solid #CCC;
-  text-align: center;
-  display: inline-block;
-  margin-right: 6px;
-  font-size: 2rem;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-}
-
-#captcha .captchaLink.selected {
-  background-color: $quaternary;
-  color: white;
-  border-color: $quaternary;
-}
 
 .portate-desktop-ad {
   background-image: url(../../mockups/img/banner/portate-desktop-ad.png);
@@ -862,68 +840,8 @@ padding: 2px 4px;
   color: white;
 }
 
-.stepper_portabilidad {
-  font-family: 'Cera';
-  height: 90px;
-  margin: 0 auto -20px;
-  padding: 0 0 20px 0;
-  list-style-type: none;
-  text-align: center;
-  -webkit-font-feature-settings: "lnum";
-  font-feature-settings: "lnum";
-  max-width: 768px;
-}
 
-.stepper_portabilidad:after {
-  content: '';
-  background: $pink;
-  width: 72%;
-  height: 2px;
-  margin-top: -25px;
-  margin-left: 15%;
-  display: block;
-}
 
-.stepper_portabilidad li {
-  display: inline-block;
-  margin: 0 5%;
-}
-
-.stepper_portabilidad li span {
-  display: block;
-  background: $pink;
-  color: white;
-  text-align: center;
-  border-radius: 100%;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-}
-
-.stepper_portabilidad li.active span {
-  background: $primary;
-}
-
-.stepper_portabilidad.visible-xs li {
-  margin: 0 .89%;
-}
-
-.stepper_portabilidad.visible-xs li span {
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-}
-
-.stepper_portabilidad.visible-xs:after{
-  margin-top: -20px;
-}
-
-.stepper_portabilidad li:first-of-type {
-  margin-left: 0;
-}
-.stepper_portabilidad li:last-of-type {
-  margin-right: 0;
-}
 
 /* para forms de portabilidad */
 
@@ -1386,7 +1304,7 @@ button {
 }
 
 /* womstrap inputs: general override; */
-.form-group {margin-bottom: 30px; position: relative;}
+.form-group {margin-bottom: 40px; position: relative;}
 .form-group .select select,
 .form-control {
   box-shadow: none;
@@ -1394,6 +1312,16 @@ button {
   border: none;
   border-bottom: 1px solid #333;
   background-color: transparent;
+  color: #9999a2;
+  font-size: 16px;
+  line-height: 1.42857;
+  padding-bottom: 12px;
+}
+
+.form-group {
+  input[type=file] {
+    padding-top: 6px;
+  }
 }
 
 .form-group .miniLabel {
