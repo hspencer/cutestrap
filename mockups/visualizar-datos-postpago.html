@@ -70,28 +70,43 @@
   <header>
     <div class="bg-modulo bg-modulo-shortest modulo-portabilidad">
       <div class="container">
-        <h3 class="ta-center white fw-semibold uc">Información Personal</h3>
+        <h3 class="ta-center white fw-semibold uc visible-xs">Información Personal</h3>
+        <h3 class="ta-center white fw-semibold fs-normal uc hidden-xs">Información Personal de Clientes</h3>
 
       </div>
     </div>
   </header>
 
-  <section class="data-postpaid">
-    <div class="data-postpaid__container container">
+  <div class="areaprivada-holder">
 
-      <div class="data-postpaid__select-phone select-phone mt-15">
-        <select class="form-control select-caret fw-semibold">
-          <option selected="">+56 988776655</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-        </select>
+    <div class="container hidden-xs">
+      <div class="row">
+        <div class="crumbs fs-small">
+          <p class="nomargin nopadding">Estás en: <a href="#">Inicio</a> <i class="fa fa-angle-right"></i> <strong>Mis datos</strong></p>
+        </div>
+        <h3 class="uc morado-plain nomargin nopadding mb-40">Información Personal</h3>
       </div>
+    </div>
+    <section class="data-postpaid">
+      <div class="data-postpaid__container informacion-personal container">
 
-      
+        <div class="data-postpaid__select-phone select-phone mt-15 visible-xs">
+          <select class="form-control select-caret fw-semibold mb-20">
+            <option selected="">+56 988776655</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="informacion-personal--item">
+              
   <section class="pv-data-postpaid-personal">
-    <h4 class="fw-semibold mt-20 mb-20 nopadding text-muted">Datos personales</h4>
+    <h4 class="fw-semibold mt-0 mb-20 nopadding text-muted">Datos personales</h4>
 
     <div class="heading-field mb-20">
       <h6 class="fw-normal mb-0 nopadding text-muted">Nombres</h6>
@@ -112,13 +127,24 @@
       <h6 class="fw-normal mb-0 nopadding text-muted">Correo electrónico</h6>
       <h5 class="fw-semibold nopadding nomargin morado-datos">vgutierrezecheverria@gmail.com</h5>
     </div>
+    <hr class="hidden-xs">
     <button class="btn btn-lg btn-primary btn-full text-center fs-base morado-chicle-bg fw-semibold">Editar correo electrónico</button>
-
     <hr>
+
+    <div class="heading-field mb-20">
+      <h6 class="fw-normal mb-0 nopadding text-muted">Correo Electrónico de facturación</h6>
+      <h5 class="fw-semibold nopadding nomargin morado-datos">vgutierrezecheverria@gmail.com</h5>
+    </div>
+
+    <hr class="visible-xs">
   </section>
-      
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
+            <div class="informacion-personal--item">
+              
   <section class="pv-data-postpaid-address">
-    <h4 class="fw-semibold mt-20 mb-20 nopadding text-muted">Dirección</h4>
+    <h4 class="fw-semibold mt-0 mb-20 nopadding text-muted">Dirección</h4>
 
     <div class="heading-field mb-20">
       <h6 class="fw-normal mb-0 nopadding text-muted">Calle</h6>
@@ -147,17 +173,33 @@
       </div>
     </section>
 
-    <hr>
+    <hr class="visible-xs">
   </section>
-      
-	<div class="heading-field mb-20">
-		<h6 class="fw-normal nopadding mb-10 text-center text-muted">¿Olvidaste tu contraseña?</h6>
-		<button class="btn btn-primary btn-lg btn-full fw-semibold fs-base">Modifica tu contraseña</button>
+            </div>
+
+            <div class="informacion-personal--item">
+              
+	<div class="heading-field">
+		<div class="row">
+			<div class="visible-xs">
+				<h6 class="fw-normal nopadding mt-0 mb-10 text-center text-muted">¿Olvidaste tu contraseña?</h6>
+			</div>
+			<div class="col-md-6 hidden-xs">
+				<p class="pv-postpago-datos-clave__pass fw-normal nopadding mb-0 lineheight-1_2 text-left text-muted">¿Deseas modificar la <br>contraseña de tu cuenta?</p>
+			</div>
+			<div class="col-md-6 ta-right">
+				<button class="btn btn-primary btn-lg btn-full fw-semibold fs-base">Modifica tu contraseña</button
+			>
+			</div>
+		</div>
 	</div>
 
-	<hr>
-      
-  <section class="ejecutivo-wom promociones-activas">
+	<hr class="visible-xs">
+            </div>
+
+            <div class="informacion-personal--item">
+              
+  <section class="ejecutivo-wom promociones-activas mt-20">
     <h4 class="fw-semibold nopadding text-muted">Ejecutivo WOM de tu cuenta</h4>
 
     <div class="heading-field mb-20">
@@ -165,20 +207,27 @@
       <h5 class="fw-semibold nopadding nomargin morado-datos">Alejandro Rojas Solís</h5>
     </div>
 
-    <div class="heading-field mb-20">
-      <h6 class="fw-normal mb-0 nopadding text-muted">Correo electrónico</h6>
-      <h5 class="fw-semibold nopadding nomargin morado-datos">a.rojas@wom.cl</h5>
-    </div>
+    <div class="row">
 
-    <div class="heading-field mb-20">
-      <h6 class="fw-normal mb-0 nopadding text-muted">Teléfono</h6>
-      <h5 class="fw-semibold nopadding nomargin morado-datos">+569 77665544</h5>
-    </div>
-    <hr>
-  </section>
+      <div class="col-sm-6 col-xs-12 heading-field mb-20">
+        <h6 class="fw-normal mb-0 nopadding text-muted">Correo electrónico</h6>
+        <h5 class="fw-semibold nopadding nomargin morado-datos">a.rojas@wom.cl</h5>
+      </div>
 
+      <div class="col-sm-6 col-xs-12 heading-field mb-20">
+        <h6 class="fw-normal mb-0 nopadding text-muted">Teléfono</h6>
+        <h5 class="fw-semibold nopadding nomargin morado-datos">+569 77665544</h5>
+      </div>
     </div>
+    <hr class="visible-xs">
   </section>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </div>
 
 </div>
 
