@@ -2421,7 +2421,12 @@ button {
   margin-top: -2px;
 }
 
-.modal-consumo-modulo .nav-tabs > li {
+.modal-consumo-modulo.dostabs .nav-tabs > li {
+  width: 49.3333%;
+  text-align: center;
+}
+
+.modal-consumo-modulo.trestabs .nav-tabs > li {
   width: 33.3333%;
   text-align: center;
 }
