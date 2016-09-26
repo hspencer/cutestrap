@@ -5,6 +5,73 @@
 
 {% include "partials/navbar.html" %}
 
+<div id="saldo-operaciones" class="modal saldo-modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header ta-center">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-close"></i></span></button>
+        <h4 class="modal-title">Seleccionar tráfico</h4>
+      </div>
+      <div class="modal-body">
+        
+        <!-- tres tabs class porque tres botones en tabs -->
+        <div class="modal-consumo-modulo trestabs mb-20">
+            <div class="row">
+              <div class="col-xs-12">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                  <li role="presentation" class="active"><a class="fs-small" href="#trafico-rut" aria-controls="home" role="tab" data-toggle="tab">RUT</a></li>
+                  <li role="presentation"><a class="fs-small" href="#trafico-grupo" aria-controls="profile" role="tab" data-toggle="tab">Grupo</a></li>
+                  <li role="presentation"><a class="fs-small" href="#trafico-linea" aria-controls="profile" role="tab" data-toggle="tab">Línea</a></li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <div role="tabpanel" class="tab-pane active" id="trafico-rut">
+                    <p class="nomargin nopadding fw-semibold">Período:</p>
+                    <select class="form-control select-caret fw-bold">
+                      <option selected="">Enero</option>
+                      <option>Diciembre</option>
+                      <option>Noviembre</option>
+                      <option>Octubre</option>
+                      <option>...</option>
+                    </select>
+                  </div>
+                  <div role="tabpanel" class="tab-pane" id="trafico-grupo">
+                    <p class="nomargin nopadding fw-semibold">Grupo:</p>
+                    <select class="form-control select-caret fw-bold">
+                      <option selected="">Grupo 1</option>
+                      <option>Grupo 2</option>
+                      <option>Grupo 3</option>
+                      <option>Grupo 4</option>
+                      <option>...</option>
+                    </select>
+                  </div>
+                  <div role="tabpanel" class="tab-pane" id="trafico-linea">
+                    <p class="nomargin nopadding fw-semibold">Línea:</p>
+                    <select class="form-control select-caret fw-bold">
+                      <option selected="">+56977738243</option>
+                      <option>Otra</option>
+                      <option>Otra</option>
+                      <option>Otra</option>
+                      <option>...</option>
+                    </select>
+                  </div>
+                </div>  
+              </div>
+            </div>
+          </div>
+
+
+        <button class="btn-primary btn-lg fw-semibold morado-chicle-bg autocenter">Solicitar ahora</button>
+        <p class="ta-center morado-plain mt-20">
+          Tu solicitud será envíada en las <br> próximas 24 horas
+        </p>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
 <header>
   <div class="bg-modulo bg-modulo-shortest modulo-portabilidad">
     <div class="container">
