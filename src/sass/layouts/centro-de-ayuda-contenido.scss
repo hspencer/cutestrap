@@ -11,6 +11,19 @@
   }
 }
 
+.centro-ayuda__welcome__btn-group {
+  button {
+    &:hover,
+    &:visited,
+    &:focus,
+    &.active {
+      background-color: #ba007c !important;
+      border-color: #ba007c !important;
+      outline: none !important;
+    }
+  }
+}
+
 
 .centro-ayuda-home {
   clear: both;
