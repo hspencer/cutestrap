@@ -130,53 +130,27 @@
 
 	<div class="visible-xs">
 		{% include "partials/modulo-portate-bien.html" %}
-		<div class="solicita-portabilidad">
-			<div class="col-xs-12">
+		
+		<div class="container">
+			<div class="solicita-portabilidad">
 				<h4 class="ta-center morado-plain fw-semibold">¿YA SOLICITASTE<br>PORTABILIDAD?</h4>
 				<p class="ta-center mt-20">Ahora conoce el estado...</p>
 			</div>
-		</div>
-		<div class="portabilidad-pills">
-			<ul class="nav nav-pills" role="tablist">
-			  <li class="active"><a href="#tab_telefono" data-toggle="tab" class="fw-semibold">N° TÉLEFONO</a></li>
-			  <li><a href="#tab_portabilidad" data-toggle="tab" class="fw-semibold">N° PORTABILIDAD</a></li>
-			</ul>
-			<div class="tab-content well modulo-morado">
-				<div class="tab-pane active" id="tab_telefono">							
-					<div class="row">
-						<div class="col-xs-3 nomargin">
-							<img src="img/portabilidad/ico-tengo-prepago.svg" alt="">
-						</div>
-						<div class="col-xs-9 nomargin nopadding">
-							<div class="form-group">
-								<span class="miniLabel white">Ingresa tu número de teléfono</span>
-								<input type="text" class="form-control input-lite" id="telefono" onfocus="$(this).val('+56 9');">
-							</div>
-						</div>
-					</div>
 
-					<div class="row ta-center">
-						<button type="button" class="btn morado-plain">Ver portabilidad</button>
-					</div>
-				</div>
-				<div class="tab-pane" id="tab_portabilidad">
-					<div class="row">
-						<div class="col-xs-3">
-							<img src="img/portabilidad/ico-portabilidad-solicitud.svg" alt="">
-						</div>
-						<div class="col-xs-9">
-							<div class="form-group"><span class="miniLabel white">Ingresa tu número de portabilidad</span>
-								<input type="text" class="form-control input-lite" id="nombre">
-							</div>
-						</div>
-					</div>
-
-					<div class="row ta-center">
-						<button type="button" class="btn morado-plain">Ver portabilidad</button>
+			<div class="row">
+				<div class="col-xs-10 col-xs-offset-1">
+					<div class="form-group">
+						<span class="miniLabel">Ingresa tu número de teléfono</span>
+						<input type="text" value="Ingresa tu número de teléfono" class="form-control input-effect" id="telefono" onfocus="$(this).val('+56 9');">
 					</div>
 				</div>
 			</div>
+
+			<div class="row ta-center">
+				<button type="button" class="btn morado-plain">Ver portabilidad</button>
+			</div>
 		</div>
+		
 	</div>
 
 	<div class="visible-sm visible-md visible-lg">	

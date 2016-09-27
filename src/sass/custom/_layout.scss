@@ -903,6 +903,21 @@ padding: 2px 4px;
   padding-top: 90px;
 }
 
+.modal .modal-dialog .cambia-password-message {
+  padding: 0 20px;
+  color: $gray-2;
+}
+
+.modal .modal-dialog .cambia-password-message i.fa.pull-left {
+  margin-top: 5px;
+  margin-right: 20px;
+}
+
+.modal .modal-dialog .cambia-password-message span {
+  overflow: hidden;
+  display: block;
+}
+
 .modal .modal-dialog .btn {
   text-transform: uppercase;
   color: $primary-light;
@@ -924,6 +939,10 @@ padding: 2px 4px;
 .modal .modal-dialog .modal-content .modal-title {
   padding: 0;
   text-transform: uppercase;
+}
+
+.modal .modal-footer .btn-lg {
+  padding: 10px 30px;
 }
 
 .photoUpload {
@@ -1361,14 +1380,13 @@ button {
 .form-group .select select,
 .form-control {
   box-shadow: none;
-  padding: 0 5px;
+  padding: 0;
   border: none;
   border-bottom: 1px solid #333;
   background-color: transparent;
   color: #9999a2;
   font-size: 16px;
   line-height: 1.42857;
-  padding-bottom: 12px;
 }
 
 .form-group {
