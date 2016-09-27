@@ -2902,54 +2902,6 @@ button .icon {
   }
 }
 
-.areaprivada-holder {
-  background-color: #E8E8E8;
-  margin: 20px 0 75px;
-  padding: 15px 0;
-}
-
-.areaprivada-holder .informacion-personal {
-  background-color: #f3f3f3;
-  padding-top: 15px;
-}
-
-/* POR QUE ESTO NO FUNCIONA? mal webfont kit? */
-.areaprivada-holder .informacion-personal .numbers {
-  font-variant-numeric: lining-nums;
-  -moz-font-feature-settings: "lnum";
-  -webkit-font-feature-settings: "lnum";
-  font-feature-settings: "lnum";
-}
-
-.areaprivada-holder .informacion-personal ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.areaprivada-holder .informacion-personal ul > li {
-  margin-bottom: 15px;
-  font-weight: 600;
-}
-
-.areaprivada-holder .informacion-personal ul > li.half-width {
-  width: 45%;
-  display: inline-block;
-}
-
-.areaprivada-holder .informacion-personal ul > li:last-of-type {
-  margin-bottom: 0;
-}
-
-.areaprivada-holder .informacion-personal ul > li > p {
-  margin: 0; padding: 0; font-weight: 400;
-}
-
-.areaprivada-holder .informacion-personal--item {
-  background-color: white;
-  padding: 15px;
-  margin-bottom: 15px;
-}
 
 .login-ejecutivo-holder {
   background-color: #f3f3f3;

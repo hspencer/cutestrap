@@ -8,31 +8,59 @@
   <header>
     <div class="bg-modulo bg-modulo-shortest modulo-portabilidad">
       <div class="container">
-        <h3 class="ta-center white fw-semibold uc">Información Personal</h3>
-
+        <h3 class="ta-center white fw-semibold uc visible-xs">Información Personal</h3>
+        <h3 class="ta-center white fw-semibold fs-normal uc hidden-xs">Información Personal de Clientes</h3>
       </div>
     </div>
   </header>
 
-    <section class="data-prepaid">
-      <div class="data-prepaid__container container">
+    <div class="areaprivada-holder">
 
-        <div class="data-prepaid__select-caret select-caret mt-15">
-          <select class="form-control select-caret fw-semibold">
-            <option selected="">+56 988776655</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-          </select>
+      <div class="container hidden-xs">
+        <div class="row">
+          <div class="crumbs fs-small">
+            <p class="nomargin nopadding">Estás en: <a href="#">Inicio</a> <i class="fa fa-angle-right"></i> <strong>Mis datos</strong></p>
+          </div>
+          <h3 class="uc morado-plain nomargin nopadding mb-40">Información Personal</h3>
         </div>
-
-        {% include "partials/private-visualizar-datos-prepago-datos-personales.html" %}
-        {% include "partials/private-visualizar-datos-postpago-datos-direccion.html" %}
-        {% include "partials/private-visualizar-datos-prepago-datos-clave.html" %}
-
       </div>
-    </section>
+      <section class="data-prepaid">
+        <div class="data-prepaid__container  informacion-personal container">
+
+          <div class="data-prepaid__select-caret select-caret mt-15 visible-xs">
+            <select class="form-control select-caret mb-20 fw-semibold">
+              <option selected="">+56 988776655</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+
+
+
+          <div class="row">
+
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+              <div class="informacion-personal--item">
+                {% include "partials/private-visualizar-datos-prepago-datos-personales.html" %}
+              </div>
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
+              <div class="informacion-personal--item">
+                {% include "partials/private-visualizar-datos-postpago-datos-direccion.html" %}
+              </div>
+
+              <div class="informacion-personal--item">
+                {% include "partials/private-visualizar-datos-prepago-datos-clave.html" %}
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </section>
+    </div>
   </div>
 
 
