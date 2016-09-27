@@ -1,0 +1,28 @@
+{% extends "layout.nunjucks" %}
+{% set title = "Error en modificación de ddatos" %}
+
+{% block content %}
+
+	{% include "partials/navbar.html" %}
+
+	<header>
+		<div class="bg-modulo bg-modulo-short modulo-portabilidad">
+			<div class="container">
+				<h3 class="ta-center white fw-semibold uc">Información de nuestros womers</h3>
+			</div>
+		</div>
+	</header>
+
+	<div class="container">
+		<div class="row ta-center">
+			<div class="col-xs-12 col-lg-6 col-lg-offset-3">
+				<h3 class="fw-semibold morado-plain uc">¡Oops!</h3>
+				<p>Estamos trabajando, pronto volveremos a estar disponibles</p>
+				
+			</div>
+		</div>
+	</div>
+
+{% include "partials/footer.html" %}
+
+{% endblock %}
