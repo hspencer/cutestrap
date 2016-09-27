@@ -1,0 +1,40 @@
+{% extends "layout.nunjucks" %}
+{% set title = "Portabilidad - Estado de portabilidad - Portabilidad fallida" %}
+
+{% block content %}
+
+	{% include "partials/navbar.html" %}
+
+	<div class="desktop-layout hidden-xs">
+		<div class="desktop-header">
+			<div class="container-tablet">
+				<div class="row">
+					<div class="desktop-headerTitle col-lg-8 col-md-8 col-sm-8 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 ta-center">
+						{% include "partials/navbar-desktop-inner.html" %}
+						<h1 class="uc white">Portabilidad</h1>
+						<p>Revolucionamos el mercado y somos líderes en portabilidad. ¡Gracias por ser parte! Vamos por más</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="visible-xs">
+		{% include "partials/header-portabilidad.html" %}
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 col-lg-offset-3 ta-center">
+				<h3 class="morado-plain uc lineheight120">¡Portabilidad <br>Fallida!</h3>
+				<img class="iblock" src="img/portabilidad/ico-portabilidad-fail.svg" alt="">
+				<h5 class="morado-plain uc">¡Pucha algo falló!</h5>
+				<p>Te llamaremos para retomar tu proceso de portabilidad.</p>
+				<p>También puedes comenzar una nueva portabilidad en la web.</p>
+			</div>
+		</div>
+	</div>
+
+	{% include "partials/footer.html" %}
+
+{% endblock %}

@@ -1,0 +1,43 @@
+{% extends "layout.nunjucks" %}
+{% set title = "Portabilidad - Estado de portabilidad - Portabilidad exitosa" %}
+
+{% block content %}
+
+	{% include "partials/navbar.html" %}
+
+	<div class="desktop-layout hidden-xs">
+		<div class="desktop-header">
+			<div class="container-tablet">
+				<div class="row">
+					<div class="desktop-headerTitle col-lg-8 col-md-8 col-sm-8 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 ta-center">
+						{% include "partials/navbar-desktop-inner.html" %}
+						<h1 class="uc white">Portabilidad</h1>
+						<p>Revolucionamos el mercado y somos líderes en portabilidad. ¡Gracias por ser parte! Vamos por más</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="visible-xs">
+		{% include "partials/header-portabilidad.html" %}
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 col-lg-offset-3 ta-center">
+				<h3 class="morado-plain uc lineheight120">¡Portabilidad <br>Exitosa!</h3>
+				<img class="iblock" src="img/portabilidad/ico-portabilidad-success.svg" alt="">
+				<h5 class="morado-plain uc">¡No te olvides de <br> cambiar tu chip!</h5>
+				<p>¡Ahora tu celular está listo para ser usado! Ya puedes descargar nuestra APP.</p>
+				<p>
+					<img class="iblock" src="img/home/boton-appstore.svg" alt="">
+					<img class="iblock" src="img/home/boton-googleplay.svg" alt="">
+				</p>
+			</div>
+		</div>
+	</div>
+
+	{% include "partials/footer.html" %}
+
+{% endblock %}
