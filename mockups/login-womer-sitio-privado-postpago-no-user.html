@@ -103,6 +103,9 @@
 		<div class="se-content">
 			<div class="home-pago-modulo consulta-datos-modulo mb-40">
 				<div class="pv-login-womer-postpago__container">
+					<div class="alert alert-warning fs-small" role="alert"><span class="fa fa-exclamation-circle mr-10"></span>No tenemos un
+						<strong>usuario con esos datos</strong>
+					</div>
 					<p class="text-muted nopadding">Ingresa a tu cuenta por:</p>
 				</div>
 				<div class="pv-login-womer-postpago__tabs">
@@ -116,7 +119,7 @@
 						<!-- Tab panes -->
 						<div class="tab-content ta-center">
 							<div role="tabpanel" class="tab-pane active" id="login-rut">
-								<div class="form-group">
+								<div class="form-group input-effect">
 									<span class="miniLabel">Rut</span>
 									<input type="textnumber" class="form-control" id="loginrut" placeholder="Rut">
 								</div>
@@ -130,7 +133,7 @@
 								</div>
 							</div>
 							<div role="tabpanel" class="tab-pane" id="login-telefono">
-								<div class="form-group">
+								<div class="form-group input-effect">
 									<span class="miniLabel">Nº de Teléfono</span>
 									<input type="textnumber" class="form-control" id="logintelefono" placeholder="Nº de Teléfono" onclick="$(this).val('+56 9');">
 								</div>
