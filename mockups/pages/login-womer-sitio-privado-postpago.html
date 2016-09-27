@@ -2,185 +2,124 @@
 {% set title = "Login WOMER Sitio Privado - Postpago" %}
 
 {% block content %}
-	
+
 	{% include "partials/navbar.html" %}
-	
+
 	<!-- layout desktop -->
-	<div class="desktop-layout hidden-xs">
-		<div class="desktop-header">
-			<div class="container-tablet">
-				<div class="row">
-					<div class="desktop-headerTitle col-lg-8 col-md-8 col-sm-8 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 ta-center">
-						{% include "partials/navbar-desktop-inner.html" %}
-						<h1 class="uc white">Sucursal Online</h1>
-						<p>WOMER, ingresa a tu cuenta y descubre cómo administrar tu servicio.</p>
+	<div class="desktop-header">
+		<div class="container-tablet">
+			<div class="row">
+				<div class="desktop-headerTitle col-lg-8 col-md-8 col-sm-8 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 ta-center">
+					{% include "partials/navbar-desktop-inner.html" %}
+					<h1 class="uc white">Sucursal Online</h1>
+					<p>WOMER, ingresa a tu cuenta y descubre cómo administrar tu servicio.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<section class="pv-login-womer-postpago se-slope">
+		<div class="se-content">
+			<div class="home-pago-modulo consulta-datos-modulo mb-40">
+				<div class="pv-login-womer-postpago__container">
+					<div class="alert alert-warning fs-small" role="alert"><span class="fa fa-exclamation-circle mr-10"></span>No tenemos un
+						<strong>usuario con esos datos</strong>
+					</div>
+
+					<div class="alert alert-danger fs-small" role="alert"><span class="fa fa-exclamation-circle mr-10"></span>Error al
+						<strong>ingresar tu rut o contraseña</strong>
+					</div>
+
+					<div class="alert alert-danger fs-small" role="alert"><span class="fa fa-exclamation-circle mr-10"></span>Error en tu
+						<strong>Nº de teléfono o contraseña</strong>
+					</div>
+					<p class="text-muted nopadding">Ingresa a tu cuenta por:</p>
+				</div>
+				<div class="pv-login-womer-postpago__tabs">
+					<div class="pv-login-womer-postpago__container">
+						<!-- Nav tabs -->
+						<ul class="nav nav-tabs" role="tablist">
+							<li role="presentation" class="active"><a class="fs-small" href="#login-rut" aria-controls="home" role="tab" data-toggle="tab">RUT</a></li>
+							<li role="presentation"><a class="fs-small" href="#login-telefono" aria-controls="profile" role="tab" data-toggle="tab">Nº de teléfono</a></li>
+						</ul>
+
+						<!-- Tab panes -->
+						<div class="tab-content ta-center">
+							<div role="tabpanel" class="tab-pane active" id="login-rut">
+								<div class="form-group invalidInput">
+									<span class="miniLabel">Rut</span>
+									<input type="textnumber" class="form-control" id="loginrut" placeholder="Rut">
+									<span class="helpText text-danger fs-small">Ingresa valores numéricos</span>
+								</div>
+								<div class="form-group input-effect">
+									<span class="miniLabel">Contraseña</span>
+									<input type="password" class="form-control" id="passwordrut" placeholder="Contraseña">
+								</div>
+								<div class="mb-30">
+									<div><a href="#" class="btn-link fs-small notextdecoration">¿Olvidaste tu contraseña?</a></div>
+									<button onclick="$('#errorcampos').slideToggle();return false;" class="btn btn-lg btn-primary morado-chicle-bg mt-20 fw-semibold">Inicia tu sesión</button>
+								</div>
+							</div>
+							<div role="tabpanel" class="tab-pane" id="login-telefono">
+								<div class="form-group invalidInput">
+									<span class="miniLabel">Nº de Teléfono</span>
+									<input type="textnumber" class="form-control" id="logintelefono" placeholder="Nº de Teléfono" onclick="$(this).val('+56 9');">
+									<span class="helpText text-danger fs-small">Ingresa valores numéricos</span>
+								</div>
+								<div class="form-group input-effect">
+									<span class="miniLabel">Contraseña</span>
+									<input type="password" class="form-control" id="passwordtelefono" placeholder="Contraseña">
+								</div>
+								<div class="mb-30">
+									<div><a href="#" class="btn-link fs-small notextdecoration">¿Olvidaste tu contraseña?</a></div>
+									<button onclick="$('#erroruser').slideToggle();return false;" class="btn btn-lg btn-primary morado-chicle-bg mt-20">Inicia tu sesión</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="ta-center pl-15 pr-15">
+					<p class="mt-20 pb-0 mb-0 pv-login-womer-postpago__help-desc">¿Tienes alguna duda? te ayudamos</p>
+					<button onclick="$('#errorcampos').slideToggle();return false;" class="btn btn-default mt-20 fw-semibold">Centro de ayuda</button>
+					<div class="pv-login-womer-postpago__container">
+						<hr>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="container home-pago-modulo consulta-datos-modulo mb-40">
-			<div class="row">
-				<div class="col-sm-4 col-sm-offset-4">
-					<p class="text-muted nopadding">Ingresa a tu cuenta por:</p>
-					<!-- Nav tabs -->
-					<ul class="nav nav-tabs" role="tablist">
-						<li role="presentation" class="active"><a class="fs-small" href="#login-rut" aria-controls="home" role="tab" data-toggle="tab">RUT</a></li>
-						<li role="presentation"><a class="fs-small" href="#login-telefono" aria-controls="profile" role="tab" data-toggle="tab">Nº de teléfono</a></li>
-					</ul>
-
-					<!-- Tab panes -->
-					<div class="tab-content ta-center">
-						<div role="tabpanel" class="tab-pane active" id="login-rut">
-							<div class="form-group input-effect">
-								<span class="miniLabel">RUT</span>
-								<input type="textnumber" class="form-control" id="loginrut" placeholder="RUT">
-							</div>
-							<div class="form-group input-effect">
-								<span class="miniLabel">Contraseña</span>
-								<input type="textnumber" class="form-control" id="passwordrut" placeholder="Contraseña">
-							</div>
-							<p>
-								<a href="#" class="btn-link notextdecoration">¿Olvidaste tu contraseña?</a>
-								<button onclick="$('#errorcampos').slideToggle();return false;" class="btn btn-lg btn-primary morado-chicle-bg mt-20 fw-semibold">Inicia tu sesión</button>
-							</p>
-						</div>
-						<div role="tabpanel" class="tab-pane" id="login-telefono">
-							<div class="form-group invalidInput">
-								<span class="miniLabel">Nº de Teléfono</span>
-								<input type="textnumber" class="form-control" id="logintelefono" placeholder="Nº de Teléfono" onclick="$(this).val('+56 9');">
-								<span class="helpText text-danger fs-small">Ingresa valores numéricos</span>
-							</div>
-							<div class="form-group input-effect">
-								<span class="miniLabel">Contraseña</span>
-								<input type="textnumber" class="form-control" id="passwordtelefono" placeholder="Contraseña">
-							</div>
-							<p>
-								<a href="#" class="btn-link notextdecoration">¿Olvidaste tu contraseña?</a>
-								<button onclick="$('#erroruser').slideToggle();return false;" class="btn btn-lg btn-primary morado-chicle-bg mt-20">Inicia tu sesión</button>
-							</p>
-						</div>
-						<p class="mt-40">
-								¿Tienes alguna duda? te ayudamos
-								<button onclick="$('#errorcampos').slideToggle();return false;" class="btn btn-default mt-20 fw-semibold">Centro de ayuda</button>
-							</p>
-					</div>	
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- layout mobile -->
-	<div class="visible-xs">
-
-
-		<header>
-			<div class="bg-modulo modulo-portabilidad">
-				<div class="container">
-					<h3 class="ta-center white fw-semibold fs-normal uc">Sucursal Online</h3>
-					<h4 class="ta-center fw-normal white fs-base">WOMER, ingresa a tu cuenta y descubre cómo administrar tu servicio</h4>
-				</div>
-			</div>
-		</header>
-
-		<div id="errorcampos" class="alert alert-danger" role="alert" style="display: none;">
-			<i class="fa fa-exclamation-triangle"></i> Error al <strong>ingresar tu RUT o contraseña</strong>.
-		</div>
-
-		<div id="erroruser" class="alert alert-warning" role="alert" style="display: none;">
-			<i class="fa fa-exclamation-triangle"></i> No tenemos un <strong>usuario con esos datos</strong>.
-		</div>
-		
-		<div class="container home-pago-modulo consulta-datos-modulo">
-			<div class="row">
-				<div class="col-xs-12">
-					<p class="text-muted nopadding">Ingresa a tu cuenta por:</p>
-					<!-- Nav tabs -->
-					<ul class="nav nav-tabs" role="tablist">
-						<li role="presentation" class="active"><a class="fs-small" href="#login-rut" aria-controls="home" role="tab" data-toggle="tab">RUT</a></li>
-						<li role="presentation"><a class="fs-small" href="#login-telefono" aria-controls="profile" role="tab" data-toggle="tab">Nº de teléfono</a></li>
-					</ul>
-
-					<!-- Tab panes -->
-					<div class="tab-content ta-center">
-						<div role="tabpanel" class="tab-pane active" id="login-rut">
-							<div class="form-group input-effect">
-								<span class="miniLabel">RUT</span>
-								<input type="textnumber" class="form-control" id="loginrut" placeholder="RUT">
-							</div>
-							<div class="form-group input-effect">
-								<span class="miniLabel">Contraseña</span>
-								<input type="textnumber" class="form-control" id="passwordrut" placeholder="Contraseña">
-							</div>
-							<p>
-								<a href="#" class="btn-link notextdecoration">¿Olvidaste tu contraseña?</a>
-								<button onclick="$('#errorcampos').slideToggle();return false;" class="btn btn-lg btn-primary morado-chicle-bg mt-20 fw-semibold">Inicia tu sesión</button>
-							</p>
-						</div>
-						<div role="tabpanel" class="tab-pane" id="login-telefono">
-							<div class="form-group invalidInput">
-								<span class="miniLabel">Nº de Teléfono</span>
-								<input type="textnumber" class="form-control" id="logintelefono" placeholder="Nº de Teléfono" onclick="$(this).val('+56 9');">
-								<span class="helpText text-danger fs-small">Ingresa valores numéricos</span>
-							</div>
-							<div class="form-group input-effect">
-								<span class="miniLabel">Contraseña</span>
-								<input type="textnumber" class="form-control" id="passwordtelefono" placeholder="Contraseña">
-							</div>
-							<p>
-								<a href="#" class="btn-link notextdecoration">¿Olvidaste tu contraseña?</a>
-								<button onclick="$('#erroruser').slideToggle();return false;" class="btn btn-lg btn-primary morado-chicle-bg mt-20">Inicia tu sesión</button>
-							</p>
-						</div>
-					</div>	
-				</div>
-			</div>
-		</div>
-		
-		<div class="container">
-			<div class="col-xs-12 ta-center">
-				<p class="text-muted nopadding mt-20">¿Tienes alguna duda? te ayudamos</p>
-				<p class="nomargin nopadding mt-20">
-					<a role="button" href="#" class="btn btn-default fw-semibold">Centro de ayuda</a>
-				</p>
-				<hr>
-			</div>
-		</div>
-
-	</div>
+	</section>
 
 	<!-- agnostic -->
 
-	<div class="container login-bienvenida-text">
+	<section class="pv-login-womer-postpago__welcome login-bienvenida-text">
+		<div class="pv-login-womer-postpago__welcome__container container-md pl-15 pr-15">
+			<h4 class="pv-login-womer-postpago__welcome__title morado-plain pt-0 mt-0 uc fw-normal">De este lado podrás:</h4>
 			<div class="row">
-				<div class="col-xs-12">
-					<h4 class="morado-plain uc fw-normal ta-center">De este lado podrás:</h4>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-4 col-sm-offset-2">
+				<div class="col-sm-6">
 					<img src="img/login_womer/icon-detalle-consumo.svg" alt="" class="icon">
-					<h5 class="morado-plain fw-semibold uc nopadding nomargin mb-20">VER EL DETALLE DE TU CONSUMO</h5>
-					<p class="overflowh">Revisa el uso de tu servicio cuantas veces quieras. Tendrás el detalle de tus llamadas, SMS, datos móviles, saldo, bolsas entre otros.</p>
+					<h5 class="morado-plain fw-semibold uc nopadding nomargin mb-10">VER EL DETALLE DE TU CONSUMO</h5>
+					<p class="overflowh lineheight-1_2">Revisa el uso de tu servicio cuantas veces quieras. Tendrás el detalle de tus llamadas, SMS, datos móviles, saldo, bolsas entre otros.</p>
 				</div>
-				<div class="col-sm-4">
+				<div class="col-sm-6">
 					<img src="img/login_womer/icon-estado-cuenta.svg" alt="" class="icon">
-					<h5 class="morado-plain fw-semibold uc nopadding nomargin mb-20">VER EL CONSUMO DE TU CUENTA</h5>
-					<p class="overflowh">Conoce todo sobre tu cuenta. Detalles de tu ciclo de facturación, pagos, entre otros.</p>
+					<h5 class="morado-plain fw-semibold uc nopadding nomargin mb-10">VER EL CONSUMO DE TU CUENTA</h5>
+					<p class="overflowh lineheight-1_2">Conoce todo sobre tu cuenta. Detalles de tu ciclo de facturación, pagos, entre otros.</p>
 				</div>
 			</div>
-			<div class="row mt-40">
-				<div class="col-sm-4 col-sm-offset-2">
+			<div class="row">
+				<div class="col-sm-6">
 					<img src="img/login_womer/icon-pagar-facil.svg" alt="" class="icon">
-					<h5 class="morado-plain fw-semibold uc nopadding nomargin mb-20">Pagar tu cuenta fácilmente</h5>
-					<p class="overflowh">Revisa y paga online de manera rápida y segura tu servicio.</p>
+					<h5 class="morado-plain fw-semibold uc nopadding nomargin mb-10">Pagar tu cuenta fácilmente</h5>
+					<p class="overflowh lineheight-1_2">Revisa y paga online de manera rápida y segura tu servicio.</p>
 				</div>
-				<div class="col-sm-4">
+				<div class="col-sm-6">
 					<img src="img/login_womer/icon-administrar-lineas.svg" alt="" class="icon">
-					<h5 class="morado-plain fw-semibold uc nopadding nomargin mb-20">Administrar tus líneas</h5>
-					<p class="overflowh">Ingresa y administra tus líneas o equipos contratados fácilmente..</p>
+					<h5 class="morado-plain fw-semibold uc nopadding nomargin mb-10">Administrar tus líneas</h5>
+					<p class="overflowh lineheight-1_2">Ingresa y administra tus líneas o equipos contratados fácilmente..</p>
 				</div>
 			</div>
 		</div>
-	
+	</section>
+
 	{% include "partials/footer.html" %}
 {% endblock %}
