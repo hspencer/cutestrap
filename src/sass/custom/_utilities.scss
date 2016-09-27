@@ -437,3 +437,9 @@ Styleguide 3.4
 .se-slope {
   margin: 100px 0;
 }
+
+.text-cut {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
