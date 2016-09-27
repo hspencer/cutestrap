@@ -1,5 +1,5 @@
 {% extends "layout.nunjucks" %}
-{% set title = "Login WOMER Sitio Privado - Postpago" %}
+{% set title = "Login WOMER Sitio Privado - Postpago - error usuario no existe" %}
 
 {% block content %}
 
@@ -21,8 +21,10 @@
 		<div class="se-content">
 			<div class="home-pago-modulo consulta-datos-modulo mb-40">
 				<div class="pv-login-womer-postpago__container">
-					<div class="alert alert-warning fs-small" role="alert"><span class="fa fa-exclamation-circle mr-10"></span>No tenemos un
-						<strong>usuario con esos datos</strong>
+					<div class="alert-container">
+						<div class="alert alert-warning fs-small" role="alert">
+							<i class="fa fa-exclamation-circle"></i> <span>No tenemos un <strong>usuario con esos datos</strong></span>
+						</div>
 					</div>
 					<p class="text-muted nopadding">Ingresa a tu cuenta por:</p>
 				</div>

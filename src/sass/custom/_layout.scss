@@ -980,12 +980,25 @@ padding: 2px 4px;
 }
 
 /* bootstrap core override para portabilidad form */
-.alert {
+.progress {
   border-radius: 0;
 }
 
-.progress {
-  border-radius: 0;
+.alert-container {
+  text-align: center;
+}
+
+.alert-container .alert {
+  display: inline-block;
+  & > i {
+    display: inline-block;
+    font-size: 32px;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  & > span {
+    display: inline-block;
+  }
 }
 
 /*bootstrap modal override*/

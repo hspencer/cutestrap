@@ -382,12 +382,21 @@ Styleguide 3.4
 
 .container-xs,
 .container-sm,
-.container-md {
+.container-md,
+.container-300,
+.container-420 {
   margin: 0 auto;
 }
 
 .container-xs {
   max-width: 310px;
+}
+
+.container-300 {
+  max-width: 300px;
+}
+.container-420 {
+  max-width: 420px;
 }
 
 .container-sm {
