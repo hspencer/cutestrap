@@ -917,6 +917,16 @@ padding: 2px 4px;
   border: none;
 }
 
+.modal-footer__btn-cancel {
+  color: #ba007c !important;
+}
+
+.modal-body .form-group {
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
 .modal .modal-dialog .modal-content {
   border-radius: 0;
 }
