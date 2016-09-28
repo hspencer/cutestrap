@@ -1,4 +1,24 @@
 
+	.pv-login-recover-pass__row {
+		align-items: center;
+		i {
+			color: #622761;
+			font-size: 32px;
+		}
+		p {
+			color: #777;
+		}
+	}
+
+	.pv-login-recover-pass__row__col {
+		&:first-of-type {
+			line-height: 1;
+		}
+		&:last-of-type {
+			padding-left: 0;
+		}
+	}
+
 	.pv-login-womer-postpago {
 		margin: 0;
 		.se-content {
