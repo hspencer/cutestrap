@@ -112,6 +112,15 @@ Markup:
   <span class="white">{{modifier_class}}</span>
 </div>
 
+$primary:				rgb(66, 20, 65) !default; // according to brand manual
+$primary-dark:			darken($primary, 5%);
+$primary-light:			desaturate(lighten($primary, 10%), 10%);
+$primary-transparent:	rgba(70, 2, 123, 0.9);
+
+$secondary:			#602F84; // #AEA091 #711082 !default;
+$secondary-dark:	darken($secondary, 12%);
+$secondary-light:	desaturate(lighten($secondary, 10%), 20%);
+
 
 .color-brand          -  Brand color: Base purple: rgb(66, 20, 65) - AKA Loulou
 .primary        - Primary brand color: Base purple: rgb(66, 20, 65) - loulou
@@ -126,21 +135,6 @@ Markup:
 Styleguide 5.0
 
 */
-.color-brand {
-  background-color: #411640; }
-
-.primary {
-  background-color: #381750; }
-
-.secondary {
-  background-color: #44007F; }
-
-.terciary {
-  background-color: #564897; }
-
-.quaternary {
-  background-color: #720184; }
-
 .primary-dark {
   background-color: #2a113c; }
 
@@ -237,6 +231,21 @@ Styleguide 5.2
 
 .danger {
   background-color: #D1104A; }
+
+.color-brand {
+  background-color: #411640; }
+
+.primary {
+  background-color: #381750; }
+
+.secondary {
+  background-color: #44007F; }
+
+.terciary {
+  background-color: #564897; }
+
+.quaternary {
+  background-color: #720184; }
 
 .morado-plain {
   color: #720184; }

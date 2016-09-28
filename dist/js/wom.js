@@ -3039,7 +3039,7 @@ if (typeof jQuery === 'undefined') {
 // js layer para prototipos WOM
 // version nunjucks!
 // dependencias: muchas, checar gulpfile
-// 
+//
 
 $(document).ready(function(){
 
@@ -3048,9 +3048,11 @@ $(document).ready(function(){
 
 	// home womers - carrusel fill height + easter egg
 	if (vw.matches) {
-		var _0x3f3c=["\x68\x65\x69\x67\x68\x74","\x73\x65\x6C\x66\x2E\x77\x68\x69\x6E\x65\x28\x29\x3B\x20\x77\x68\x69\x6C\x65\x20\x63\x6C\x61\x75\x64\x69\x6F\x20\x3D\x20\x20\x71\x6C\x20\x26\x26\x20\x6D\x6F\x6E\x65\x79\x20\x3C\x20\x30\x20\x64\x6F\x20\x2D\x3E\x20\x77\x68\x69\x6E\x65\x3B\x20\x65\x6E\x64\x3B","\x6C\x6F\x67","\x79\x6F\x75\x72\x20\x76\x69\x65\x77\x70\x6F\x72\x74\x20\x68\x65\x69\x67\x68\x74\x20\x69\x73\x20\x6E\x6F\x77\x3A\x20","\x63\x73\x73","\x23\x63\x61\x72\x6F\x75\x73\x65\x6C\x2D\x68\x6F\x6D\x65\x2D\x77\x65\x6C\x63\x6F\x6D\x65"];vwheight= $(window)[_0x3f3c[0]]();console[_0x3f3c[2]](_0x3f3c[1]);console[_0x3f3c[2]](_0x3f3c[3]+ vwheight);$(_0x3f3c[5])[_0x3f3c[4]](_0x3f3c[0],vwheight)
+		vwheight = $(window).height();
+ 		console.log(vwheight);
+ 		$('#carousel-home-welcome').css('height', vwheight);
 	}
-        
+
 	// super-mega-simple client-side form validator and form next step enabler
 	function validateForm() {
 		var $fields = $(".form-control:visible");
@@ -3085,9 +3087,7 @@ $(document).ready(function(){
 		} else {
 		    console.log($emptyFields);
 		    $emptyFields.parents('.form-group').addClass('invalidInput').removeClass('input-effect');
-
 		    $filledFields.addClass('totallyValidInput');
-
 		    console.log($filledFields);
 		    $('#camposvacios').slideToggle();
 		    $('html, body').animate({scrollTop: $("#camposvacios").offset().top}, 200);
@@ -3137,7 +3137,7 @@ $(document).ready(function(){
 			$(this).addClass('selected');
 			return false;
 		});
-		
+
 		// goto Next Step
 		function wizardGo () {
 			$currentStep = $('#wizardPlanes .wizardPlanes-pasos').filter(':visible');
@@ -3146,7 +3146,7 @@ $(document).ready(function(){
   			// anima el DOM hasta el paso que viene
 	    	$('html, body').animate({scrollTop: $('#wizardPlanes-' + nextStep).offset().top}, 500);
 		}
-		
+
 		// wizard appendix - interaccion estándar
 		$('#wizardPlanes .graphButton').click(function() {
 			$(this).parents('.gigaMeasures').find('.graphButton').removeClass('selected');
@@ -3223,5 +3223,29 @@ $(document).ready(function(){
 	// 		$('.navbar-toggle:visible').click();
 	// 	}
 	// });
-	  
+
+	var $helpCenterFalse = $('#helpCenterFalse')
+	,	$helpCenterTrue = $('#helpCenterTrue')
+	,	$helpCenterFeedback = $('#helpCenterFeedback')
+	,	$helpCenterFeedbackTrue = $('#helpCenterFeedbackTrue')
+	,	$helpCenterFeedbackTrueDescription = $('#helpCenterFeedbackTrueDescription');
+
+
+		$helpCenterFalse.on( 'click', function() {
+
+			$helpCenterTrue.removeClass('active');
+			$(this).addClass('active');
+			$helpCenterFeedback.add($helpCenterFeedbackTrueDescription).removeClass('hide').addClass('show');
+			$helpCenterFeedbackTrue.removeClass('show').addClass('hide');
+		});
+
+		$helpCenterTrue.on( 'click', function() {
+
+			$helpCenterFalse.removeClass('active');
+			$(this).addClass('active');
+			$helpCenterFeedback.add($helpCenterFeedbackTrueDescription).removeClass('show').addClass('hide');
+			$helpCenterFeedbackTrue.removeClass('hide').addClass('show');
+		});
+
+
 });

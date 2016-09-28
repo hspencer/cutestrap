@@ -1,0 +1,39 @@
+{% extends "layout.nunjucks" %}
+{% set title = "Prueba de Responsividad Modular" %}
+
+{% block content %}
+	
+
+
+	{% include "partials/navbar.html" %}
+
+	<div class="container">
+
+		{% set title = "Mi Coso" %}
+		{% include "partials/private-section-title.html" %}
+		
+		<div class="row">
+			<div class='col-md-4'>
+				{% set title = "Mi Plan" %}
+				{% include "partials/private-section.html" %}
+			</div>
+
+			<div class='col-md-4'>
+				{% set title = "Tu Coso" %}
+				{% include "partials/private-section.html" %}
+			
+			</div>
+
+			<div class='col-md-4'>
+				{% set title = "Nuestro Coso" %}
+				{% set btn = "cuchi cuchi" %}
+				{% include "partials/private-section.html" %}
+			
+			</div>
+		</div> <!-- end row -->
+	</div> <!-- end container -->
+	
+	{% include "partials/footer.html" %}
+
+
+{% endblock %}

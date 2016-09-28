@@ -360,7 +360,9 @@ Styleguide 3.4
 .mb--40 {margin-bottom: -40px !important;}
 
 .mr-10 {margin-right: 10px !important;}
+.mr-20 {margin-right: 20px !important;}
 
+.ml-20 {margin-left: 20px !important;}
 .ml-40 {margin-left: 40px !important;}
 .ml-70 {margin-left: 70px !important;}
 .ml-90 {margin-left: 90px !important;}
@@ -368,3 +370,58 @@ Styleguide 3.4
 .ml--20 {margin-left: -15px !important;}
 .ml--40 {margin-left: -40px !important;}
 .mr--20 {margin-right: -15px !important;}
+
+
+.container-sm,
+.container-md {
+  margin: 0 auto;
+}
+
+.container-sm {
+  max-width: 576px;
+}
+
+.container-md {
+  max-width: 870px;
+}
+
+/* Justify content: center */
+.u-center {
+  justify-content: center;
+}
+
+
+.se-content {
+  background: $gray-7;
+  position: relative;
+  z-index: 1;
+
+  &:before,
+  &:after {
+    background: inherit;
+    content: '';
+    display: block;
+    height: 50%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    -webkit-backface-visibility: hidden; // for Chrome Windows
+  }
+
+  &:before {
+    top: 0;
+    transform: skewY(-5deg);
+    transform-origin: -50% 0;
+  }
+
+  &:after {
+    bottom: 0;
+    transform: skewY(-5deg);
+    transform-origin: 100%;
+  }
+}
+
+.se-slope {
+  margin: 100px 0;
+}

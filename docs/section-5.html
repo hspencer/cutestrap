@@ -60,6 +60,13 @@
       <article class="pattern">
           <h2 id="5">Colors</h2>
           <div class="subtitle pattern-description"><p>These are specific color backgrounds for different elements and containers</p>
+<p>$primary:                rgb(66, 20, 65) !default; // according to brand manual
+$primary-dark:            darken($primary, 5%);
+$primary-light:            desaturate(lighten($primary, 10%), 10%);
+$primary-transparent:    rgba(70, 2, 123, 0.9);</p>
+<p>$secondary:            #602F84; // #AEA091 #711082 !default;
+$secondary-dark:    darken($secondary, 12%);
+$secondary-light:    desaturate(lighten($secondary, 10%), 20%);</p>
 </div>
           <section class="example">
 <pre class="">&lt;div class=&quot;box color skew [modifier class]&quot;&gt;

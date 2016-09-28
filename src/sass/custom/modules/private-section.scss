@@ -1,0 +1,38 @@
+// Private Section
+
+.private-section {
+	background-color: $white;
+	padding: $padding-large-vertical $padding-large-horizontal;
+	h4{
+		color: $secondary;
+		margin: 0 0 1em 0;
+		padding: 0;
+		line-height: 1.4;
+		font-size: 1.6rem;
+	}
+
+	.btn-xs{
+		position: absolute;
+		top: $padding-large-vertical;
+		right: $padding-large-horizontal + $padding-large-vertical;
+	}
+
+	ul{
+		li{
+			font-size: 1.2rem;
+			padding: 0 0 0 1em;
+			list-style-position: inside;
+		}
+	}
+}
+
+
+// breakpoint and up
+
+@media (min-width: $screen-md){
+	.private-section {
+
+	}
+}
+
+

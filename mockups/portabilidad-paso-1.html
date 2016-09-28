@@ -7,7 +7,7 @@
   <title>Portabilidad - Portate Form multiples pasos</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- MOVER A /SRC -->
-  <link rel="stylesheet" href="https://dl.dropboxusercontent.com/u/3538/animate.css">
+  <!-- <link rel="stylesheet" href="https://dl.dropboxusercontent.com/u/3538/animate.css"> -->
   <link rel="stylesheet" href="../dist/css/womstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="../dist/js/wom.js"></script>
@@ -112,7 +112,14 @@
 
 <div class="container">
 	<h3 class="uc ta-center nopadding nomargin mb-10 morado-plain">Prepago a prepago</h3>
-	<ul id="stepper_portabilidad" class="mt-40 hidden-xs">
+	<ul class="stepper_portabilidad mt-40 hidden-xs">
+		<li class="stepperLED-paso1 active"><span>1</span></li>
+		<li class="stepperLED-paso2"><span>2</span></li>
+		<li class="stepperLED-paso3"><span>3</span></li>
+		<li class="stepperLED-paso4"><span>4</span></li>
+		<li class="stepperLED-paso5"><span>5</span></li>
+	</ul>
+	<ul class="stepper_portabilidad mt-20 visible-xs">
 		<li class="stepperLED-paso1 active"><span>1</span></li>
 		<li class="stepperLED-paso2"><span>2</span></li>
 		<li class="stepperLED-paso3"><span>3</span></li>
@@ -121,24 +128,17 @@
 	</ul>
 </div>
 
-<div class="container">
+<div class="container pl-30 pr-30">
 	<div class="row">
-		<div class="col-lg-6 col-md-6 col-sm-6 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 mt-40">
-			<div id="camposvacios" class="alert alert-danger" role="alert" style="display: none;">
-				<strong>Uno o más campos están vacíos</strong>. Recuerda que toda la información es necesaria.
-			</div>	
-		</div>
-	</div>
-</div>
-
-<div class="container pl-30 pr-30 mt-40">
-	<div class="row">
+		<div id="camposvacios" class="alert alert-danger col-lg-6 col-md-6 col-sm-6 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 mt-40" role="alert" style="display: none;">
+			<strong>Uno o más campos están vacíos</strong>. Recuerda que toda la información es necesaria.
+		</div>	
 		<div class="col-lg-8 col-md-8 col-sm-8 col-lg-offset-2 col-md-offset-2 col-sm-offset-2">
 			<form id="portateForm" class="nopadding">
 				<div id="portateForm-paso1" class="formPaso-stepper" data-nextStep="paso2" style="display: block;">
 
 
-					<div id="captcha" class="mb-20 ta-center">
+					<div id="captcha" class="mb-40 mt-20 ta-center">
 						<small class="nopadding">Clic en <span class="skew">el candado</span> para continuar</small>
 						<p class="nopadding mt-10">
 							<a href="#" class="captchaLink">
