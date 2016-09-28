@@ -808,11 +808,13 @@ padding: 2px 4px;
 .despliegue-datos.despliegue-servicios-contratados {
   background-color: #F6F6F6;
   margin: 20px 0;
+  overflow: hidden;
 }
 
 .despliegue-datos.despliegue-servicios-contratados h4 {
   color: #777777;
   font-size: 24px;
+  padding: 0 15px;
 }
 
 /* para el flujo de portabilidad */
@@ -1451,6 +1453,14 @@ button {
   margin-bottom: 15px;
 }
   .info-plan-desglose .numbersData .item:first-of-type {border-left: none;}
+
+@media only screen and (min-width: 760px) {  
+  .datosPersonales-holder {
+    padding: 15px;
+    background-color: white;
+    margin-bottom: 20px;
+  }
+}
 
 .promociones-activas ul {
   list-style-type: none;
