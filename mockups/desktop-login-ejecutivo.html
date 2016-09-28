@@ -21,6 +21,100 @@
   <!-- You write code for this content block in another file -->
   
 
+<div id="recupera-pass" class="modal saldo-modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header ta-center">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-close"></i></span></button>
+        <h4 class="modal-title">Recupera tu contraseña</h4>
+      </div>
+      <div class="modal-body">
+        
+        <!-- tres tabs class porque tres botones en tabs -->
+        <div class="modal-consumo-modulo dostabs mb-20">
+            <div class="row">
+              <div class="col-xs-12">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                  <li role="presentation" class="active"><a class="fs-small" href="#recupera-rut" aria-controls="home" role="tab" data-toggle="tab">RUT</a></li>
+                  <li role="presentation"><a class="fs-small" href="#recupera-linea" aria-controls="profile" role="tab" data-toggle="tab">Línea</a></li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <div role="tabpanel" class="tab-pane active" id="recupera-rut">
+                  	<div id="recupera-pass-rut-paso-1" class="recupera-pass-rut-paso">
+	                    <div class="form-group input-effect">
+							<span class="miniLabel">RUT</span>
+							<input type="textnumber" class="form-control" id="recuperalo-rut" placeholder="RUT">
+						</div>
+						<button onclick="$('.recupera-pass-rut-paso').hide();$('#recupera-pass-rut-paso-2').show();return false;" class="btn-primary btn-lg btn-block fw-semibold morado-chicle-bg notexttransform">Continuar</button>
+					</div>
+					<div id="recupera-pass-rut-paso-2" class="recupera-pass-rut-paso ta-center" style="display: none;">
+						<p class="ta-left mb-20">Te enviaremos tu contraseña al siguiente email:</p>
+						<p class="ta-center"><strong>cxxxxxxx@gmail.com</strong></p>
+						<p><button class="btn-link btn fw-semibold notexttransform" onclick="$('.recupera-pass-rut-paso').hide();$('#recupera-pass-rut-paso-2a').show();">¿Este no es tu email?</button> </p>
+						<button onclick="$('.modal-title').hide();$('.modal-consumo-modulo').hide();$('#recupera-pass-rut-paso-3').show();return false;" class="btn-primary btn-lg btn-block fw-semibold morado-chicle-bg notexttransform">Continuar</button>
+					</div>
+					<div id="recupera-pass-rut-paso-2a" class="recupera-pass-rut-paso" style="display: none;">
+						<h5 class="notexttransform morado-plain">Cambiar mi email (1 de 2)</h5>
+						<p class="nomargin">Para cambiar tu email, primero necesitamos validar tu línea</p>
+						<div class="form-group input-effect">
+							<span class="miniLabel">Nº telefónico</span>
+							<input type="text" class="form-control" id="recuperalo-rut-cambiamail-telefono" placeholder="Nº telefónico" onclick="$(this).val('+56 9');">
+						</div>
+						<button onclick="$('.recupera-pass-rut-paso').hide();$('#recupera-pass-rut-paso-2b').show();return false;" class="btn-success btn-lg mt-20 btn-block fw-semibold notexttransform">Solicitar código SMS</button>
+						<p class="nomargin mt-10 ta-center fs-small nopadding lineheight120">Te enviaremos un SMS con un código maestro</p>
+					</div>
+					<div id="recupera-pass-rut-paso-2b" class="recupera-pass-rut-paso" style="display: none;">
+						<h5 class="notexttransform morado-plain">Cambiar mi email (2 de 2)</h5>
+						<p class="nomargin">Si recibiste el código vía SMS, ingrésalo acá:</p>
+						<div class="form-group input-effect">
+							<span class="miniLabel">Código SMS</span>
+							<input type="number" class="form-control" id="recuperalo-rut-cambiamail-codigosms" placeholder="Código SMS">
+						</div>
+						<div class="form-group input-effect">
+							<span class="miniLabel">Nuevo Email</span>
+							<input type="text" class="form-control" id="recuperalo-rut-cambiamail-codigosms" placeholder="Nuevo Email">
+						</div>
+						<div class="form-group input-effect">
+							<span class="miniLabel">Confirmar nuevo Email</span>
+							<input type="text" class="form-control" id="recuperalo-rut-cambiamail-codigosms" placeholder="Confirmar nuevo Email">
+						</div>
+						<button onclick="$('.modal-title').hide();$('.modal-consumo-modulo').hide();$('#recupera-pass-rut-paso-4').show();return false;" class="btn-success btn-lg btn-block fw-semibold notexttransform">Cambiar mi email</button>
+					</div>
+                  </div>
+                  <div role="tabpanel" class="tab-pane" id="recupera-linea">
+                    <select class="form-control select-caret fw-bold">
+                      <option selected="">+56977738243</option>
+                      <option>Otra</option>
+                      <option>Otra</option>
+                      <option>Otra</option>
+                      <option>...</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+			<div id="recupera-pass-rut-paso-3" class="recupera-pass-rut-paso ta-center" style="display: none;">
+				<h4 class="fw-semibold morado-plain">¡Listo!</h4>
+				<i class="fa fa-paper-plane-o big-icon"></i>
+				<p>Hemos enviado tu nueva contraseña a tu email</p>
+				<button onclick="alert('listo!');" class="btn-primary btn-lg btn-block fw-semibold morado-chicle-bg notexttransform">Continuar</button>
+			</div>
+			<div id="recupera-pass-rut-paso-4" class="recupera-pass-rut-paso ta-center" style="display: none;">
+				<h4 class="fw-semibold morado-plain">¡Listo!</h4>
+				<i class="fa fa-envelope-o big-icon"></i>
+				<p>¡Email cambiado! Te hemos enviado tu nueva contraseña a ese email</p>
+				<button onclick="alert('listo!');" class="btn-primary btn-lg btn-block fw-semibold morado-chicle-bg notexttransform">Continuar</button>
+			</div>
+        <!-- /.modal-body -->
+      	</div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
 <nav class="navbar navbar-default navbar-main navbar-centered" role="navigation">
 	<!-- Brand and toggle get grouped for better mobile display -->
 	<div class="navbar-header">
@@ -72,7 +166,7 @@
 	</div>
 
 	<div class="login-ejecutivo-holder">
-		<div class="container">
+		<div class="container mt-20">
 			<div class="row">
 				<div class="login-ejecutivo--top"></div>
 				<div class="col-lg-4 col-lg-offset-4 ta-center">
@@ -89,6 +183,7 @@
 							<input type="password" class="form-control" id="password" placeholder="Contraseña">
 						</div>
 						<button class="mt-40 btn btn-lg btn-primary fw-semibold">Inicia tu sesión</button>
+						<button data-toggle="modal" data-target="#recupera-pass" class="mt-20 btn btn-sm btn-link fw-semibold">¿Olvidaste tu contraseña?</button>
 					</form>
 				</div>
 				<div class="login-ejecutivo--bottom"></div>
