@@ -707,7 +707,7 @@ padding: 2px 4px;
     list-style: none;
     font-size: 1.35rem;
     text-align: left;
-    background-color: $primary-transparent;
+    background-color: #710183;
     border: 0;
     border-radius: 0;
     z-index : 90;
@@ -808,11 +808,13 @@ padding: 2px 4px;
 .despliegue-datos.despliegue-servicios-contratados {
   background-color: #F6F6F6;
   margin: 20px 0;
+  overflow: hidden;
 }
 
 .despliegue-datos.despliegue-servicios-contratados h4 {
   color: #777777;
   font-size: 24px;
+  padding: 0 15px;
 }
 
 /* para el flujo de portabilidad */
@@ -855,6 +857,10 @@ padding: 2px 4px;
 .ratio-superwide {
   width: 100%;
   padding-top: 27.25%;
+}
+
+.bg-white {
+  background-color: white;
 }
 
 .outline-purple {
@@ -949,10 +955,6 @@ padding: 2px 4px;
 .modal .modal-dialog .modal-content .modal-title {
   padding: 0;
   text-transform: uppercase;
-}
-
-.modal .modal-footer .btn-lg {
-  padding: 10px 30px;
 }
 
 .photoUpload {
@@ -1474,6 +1476,20 @@ button {
   margin-bottom: 15px;
 }
   .info-plan-desglose .numbersData .item:first-of-type {border-left: none;}
+
+@media only screen and (min-width: 760px) {  
+  .datosPersonales-holder {
+    padding: 15px;
+    background-color: white;
+    margin-bottom: 20px;
+  }
+}
+
+.recupera-pass-rut-paso .big-icon {
+  font-size: 90px;
+  margin-bottom: 20px;
+  color: #622761;
+}
 
 .promociones-activas ul {
   list-style-type: none;
@@ -2976,6 +2992,10 @@ button .icon {
   width: 50px;
   margin: 0 auto 15px;
   display: block;
+}
+
+.cardsContainer .item .ico.wideicon {
+  width: 140px;
 }
 
 .cardsContainer .item a {
