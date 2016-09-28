@@ -1,0 +1,30 @@
+{% extends "layout.nunjucks" %}
+{% set title = "Login Ejecutivo WOMER servicio erroneo" %}
+
+{% block content %}
+
+	{% include "partials/navbar.html" %}
+
+	<!-- layout desktop -->
+	<div class="desktop-header">
+		<div class="container-tablet">
+			<div class="row">
+				<div class="desktop-headerTitle col-lg-8 col-md-8 col-sm-8 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 ta-center">
+					{% include "partials/navbar-desktop-inner.html" %}
+					<h1 class="uc white">Sucursal Online</h1>
+					<p>WOMER, ingresa a tu cuenta y descubre cómo administrar tu servicio.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<section class="pv-login-womer-postpago-mistake">
+		<div class="pv-login-womer-postpago-mistake__container container-md ta-center">
+			<h3 class="morado-plain nomargin lineheight-1_2 nopadding mb-20">¡Oops!</h3>
+			<p class="fw-normal nopadding mb-0 lineheight-1_2 text-muted">Estamos trabajando, pronto</p>
+			<p class="fw-normal nopadding mb-20 lineheight-1_2 text-muted">volveremos a estar disponibles</p>
+			<button class="pv-login-womer-postpago-mistake__btn btn btn-primary btn-lg fw-semibold fs-base">Volver</button>
+		</div>
+	</section>
+
+	{% include "partials/footer.html" %}
+{% endblock %}

@@ -270,11 +270,11 @@ table{
       background-color: $primary;
       color: $white;
     }
-    
+
     tr:nth-child(even){
       background-color: lighten($terciary-light, 35%);
     }
-    
+
   }
 }
 
@@ -302,4 +302,8 @@ select:-webkit-autofill {
   color: $gray-1;
   -webkit-text-fill-color: $gray-1;
   -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
+
+.nav-tabs > li > a {
+  margin-right: 0;
 }

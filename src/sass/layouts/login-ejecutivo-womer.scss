@@ -1,0 +1,25 @@
+.login-ejecutivo-womer {
+	margin: 0;
+	position: relative;
+	z-index: 10;
+	.se-content {
+		background-color: white;
+		&:before {
+			height: 100%;
+		}
+		&:after {
+			height: 0;
+		}
+	}
+}
+
+
+@media screen and ( min-width: 768px ) {
+	.login-ejecutivo-womer {
+		margin: 100px 0;
+		.se-content {
+			background-color: #f3f3f3;
+			padding-bottom: 50px;
+		}
+	}
+}

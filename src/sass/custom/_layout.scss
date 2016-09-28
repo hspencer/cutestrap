@@ -932,6 +932,16 @@ padding: 2px 4px;
   border: none;
 }
 
+.modal-footer__btn-cancel {
+  color: #ba007c !important;
+}
+
+.modal-body .form-group {
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
 .modal .modal-dialog .modal-content {
   border-radius: 0;
 }
@@ -999,12 +1009,25 @@ padding: 2px 4px;
 }
 
 /* bootstrap core override para portabilidad form */
-.alert {
+.progress {
   border-radius: 0;
 }
 
-.progress {
-  border-radius: 0;
+.alert-container {
+  text-align: center;
+}
+
+.alert-container .alert {
+  display: inline-block;
+  & > i {
+    display: inline-block;
+    font-size: 32px;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  & > span {
+    display: inline-block;
+  }
 }
 
 /*bootstrap modal override*/
@@ -1382,7 +1405,7 @@ button {
   box-shadow: none;
   padding: 0;
   border: none;
-  border-bottom: 1px solid #333;
+  border-bottom: 2px solid #e7e7e7;
   background-color: transparent;
   color: #9999a2;
   font-size: 16px;
@@ -2395,7 +2418,7 @@ button {
 }
 
 .home-pago-modulo .tab-content > .tab-pane {
-  border: 1px solid $primary;
+  border: 1px solid #720184;
 }
 
 .home-pago-modulo .nav-tabs a {
@@ -2412,10 +2435,6 @@ button {
 
 .home-pago-modulo .nav-tabs {
   border-bottom: none;
-}
-
-.home-pago-modulo .tab-content {
-  margin-top: -1px;
 }
 
 .home-pago-modulo .tab-content .tab-pane {
@@ -2442,7 +2461,7 @@ button {
 }
 
 .home-pago-modulo.consulta-datos-modulo .nav-tabs li a {
-  background-color: #CCC;
+  background-color: #e7e7e7;
   color: $quaternary;
   border-bottom: 1px solid $quaternary;
   border-top: none;
