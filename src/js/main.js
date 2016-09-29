@@ -24,8 +24,6 @@ $(document).ready(function(){
 	    	return $.trim(this.value) === "";
 	    });
     	function continueForm() {
-	    	// apaga stepper
-	    	// $('#stepper_portabilidad li').removeClass('active');
 	    	// prende stepper correcto
 	    	$('.stepper_portabilidad li.stepperLED-' + $nextStep).addClass('active');
 	    	// deshabilita este boton
@@ -49,6 +47,7 @@ $(document).ready(function(){
 		    console.log($emptyFields);
 		    $emptyFields.parents('.form-group').addClass('invalidInput').removeClass('input-effect');
 		    $filledFields.addClass('totallyValidInput');
+		    // form validation no termina porque no es real! ojo. estas son las clases y los ids para el notify!
 		    console.log($filledFields);
 		    $('#camposvacios').slideToggle();
 		    $('html, body').animate({scrollTop: $("#camposvacios").offset().top}, 200);
@@ -78,7 +77,7 @@ $(document).ready(function(){
 	});
 
 	// progressbars animadas (primero a 100, luego a aria-value)
-	// DEPENDSON inview.js - migrar a wow quiza?
+	// DEPENDSON inview.js - migrar a wow quiza? aún tiene dependencies
 	$('.consumoBars').one('inview', function(event, isInView) {
 	   	$(this).find('.progress.progress-animated').each(function() {
 		  bar = $(this).children('.progress-bar');
