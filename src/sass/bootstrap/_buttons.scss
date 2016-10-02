@@ -131,6 +131,13 @@ a.btn {
 .btn-default {
   @include button-variant($primary-light, transparent, $primary-light);
   border: 2px solid $link; //$primary;
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    color: $white;
+    background-color: darken($link, 10%);
+        border-color: darken($link, 12%);
+  }
 }
 .btn-primary {
   @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);

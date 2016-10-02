@@ -29,6 +29,13 @@
   .btn-group + .btn-group {
     margin-left: -1px;
   }
+
+  // for radio select used in portal privado
+  &.radio-select{
+    .btn:not(:first-child){
+      margin-left: -2px;
+    }
+  }
 }
 
 // Optional: Group multiple button groups together for a toolbar
