@@ -60,10 +60,7 @@ womstrap
        └── partials
 ```
 `/templates` define HTMLs DOM structure while `/partials` define HTML code snipets to use as modules.
-<<<<<<< HEAD
-<<<<<<< HEAD
 
------
 
 ## Instrucciones para el Desarrollo Local
 
@@ -76,12 +73,12 @@ En Mac, se recomienda utilizar [homebrew](http://brew.sh) para instalar todos lo
 
 ### Criterios de nombres para las clases en SASS
 
-* Utilizar nombres en **inglés** para las clases
-* Utilizar patrones de nombres estándar, leer [este artículo](http://thesassway.com/advanced/modular-css-naming-conventions)
-* 
+* Utilizar nombres en **inglés** para todas las clases utilizando convensiones:
+* **Parent-child** relationships (ie: `.post > .post-title`) 
+* **Plural Parent Pattern** (ie. `.tabs` para contenedores de muchos hijos en vez de `.tab` como clase hija-genérica) 
+* Uso de modificadores en combinación con las clases definidas. Los modificadores van en `/utilities.scss`
+
+[Ver artículo de referencia](http://thesassway.com/advanced/modular-css-naming-conventions)
+ 
 
 
-=======
->>>>>>> gh-pages
-=======
->>>>>>> gh-pages
