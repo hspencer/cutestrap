@@ -34,6 +34,7 @@
   &.radio-select{
     .btn:not(:first-child){
       margin-left: -2px;
+      min-width: 95px;
     }
   }
 }
