@@ -1,6 +1,27 @@
-// Private Section
+/*
+Private Section
+
+Contenedor de sección del sitio privado.<br>HTML en <code>/mockups/templates/partials/private-section.html</code>
+
+Markup:
+<section class='private-section'>
+	<h4>Title</h4>
+	<a class='btn btn-default btn-xs'>link directo</a>
+	<ul>
+		<li><a href='#'>Lorem ipsum</a></li>
+		<li><a href='#'>Amet sin coto</a></li>
+		<li><a href='#'>Kisuaely neumyx</a></li>
+	</ul>
+</section>
+
+.private-section	                        - Standard
+
+Styleguide 7.2
+
+*/
 
 .private-section {
+	position: relative;
 	background-color: $white;
 	padding: $padding-large-vertical $padding-large-horizontal;
 	h4{
@@ -14,7 +35,7 @@
 	.btn-xs{
 		position: absolute;
 		top: $padding-large-vertical;
-		right: $padding-large-horizontal + $padding-large-vertical;
+		right: $padding-base-horizontal;
 	}
 
 	ul{
