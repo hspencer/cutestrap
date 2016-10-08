@@ -4,7 +4,7 @@
 Modules
 
 Móludos documentados en <code>/src/sass/custom/modules</code>. 
-<strong>¡Por favor sigan el orden!</strong>
+<strong><blink>¡Por favor sigan el orden!</blink></strong>
 
 Styleguide 7.0
 
@@ -18,11 +18,10 @@ Private Section Title
 Título genérico para módulos del portal privado.<br>HTML en <code>/mockups/templates/partials/private-section-title.html</code>
 
 Markup:
-<h3 class='{{modifier_class}}'>Título de sección</h3>
+<h3 class='private-section-title {{modifier_class}}'>Título de sección</h3>
 
-.private-section-title                      - Standard
-.private-section-title.uc                   - Uppercase
-.private-section-title.fw-light             - Light
+.uc                   - Uppercase
+.fw-light             - Light
 
 Styleguide 7.1
 

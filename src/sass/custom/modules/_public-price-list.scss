@@ -1,0 +1,79 @@
+/*
+Public Price list
+
+Contenedor de sección de lista de precios.<br>HTML en <code>/mockups/templates/partials/public-price-list.html</code>
+
+Markup:
+<section class='public-price-list'>
+	<h4 class="section-title uc fw-regular">En WOM tenemos las mejores tarifas</h4>
+	<ul class="list-group">
+	    <li class="list-group-item"><span class="price">$50</span> el minuto</li>
+	    <li class="list-group-item"><span class="price">$0,84</span> el segundo</li>
+	    <li class="list-group-item"><span class="price">$50</span> el <acronym title="Shot Message Service">SMS</acronym></li>
+	    <li class="list-group-item"><span class="price">$5</span> el mega</li>
+	 </ul>
+ </section>
+
+Styleguide 7.3
+
+*/
+
+.top-bg-primary{
+	padding: 0 !important;
+	background-image: url('#{$img-path}/top-bg-skew-primary.png');
+	background-position: top right;
+	background-repeat: no-repeat;
+	height: 72px;
+	margin: 0 -12px -12px -12px;
+}
+
+.public-price-list{
+	@include gradient-vertical($primary, $black, 20%, 100%);
+	margin: 0 -12px;
+	padding: 0 $padding-large-horizontal*2 $padding-large-vertical $padding-large-horizontal*2;
+	h4{
+		color: $white;
+		margin-bottom: $padding-base-vertical * 3;
+		padding: 0;
+		font-weight: normal;
+	}
+	ul.list-group{
+		li.list-group-item{
+			background-color: transparent;
+			border: 1px solid $white;
+			color: $white;
+		 	> .price{
+				font-size: 4rem;
+				display: inline-block;
+				min-width: 13rem;
+			}
+		}
+	}
+}
+
+
+
+// breakpoint and up
+
+@media (min-width: $screen-md){
+	.top-bg-primary{
+		display: none;
+	}
+	.public-price-list{
+		margin: 0;
+		background-color: transparent;
+		background-image: none;
+	
+		h4{
+			color: $primary;
+		}
+		ul.list-group{
+			li.list-group-item{
+				border: 1px solid $gray-5;
+				color: $gray-1;
+			}
+		}
+	}
+}
+
+

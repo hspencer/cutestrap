@@ -1,6 +1,8 @@
 /*
 
-Bootstrap Standard Forms
+Forms
+
+Bootstrap Standard Forms.
 
 Markup:
 <form>
@@ -25,7 +27,7 @@ Markup:
   <button type="submit" class="btn btn-default">Submit</button>
 </form>
 
-Styleguide 4.5
+Styleguide 4.0
 */
 
 /*
@@ -61,9 +63,13 @@ Markup:
   </div>
 </form>
 
-Styleguide 4.6
+Styleguide 4.1
 
 */
+
+//
+// Forms
+// --------------------------------------------------
 
 
 // Normalize non-controls
@@ -114,9 +120,12 @@ input[type="search"] {
 // Position radios and checkboxes better
 input[type="radio"],
 input[type="checkbox"] {
-  margin: 4px 0 0;
+  margin: 0 2em 0 0; // formely margin: 4px 0 0;
   margin-top: 1px \9; // IE8-9
   line-height: normal;
+  // extras by @hspencer
+  @include size(2.5rem, 2.5rem);
+
 }
 
 input[type="file"] {
@@ -184,9 +193,9 @@ output {
   color: $input-color;
   background-color: $input-bg;
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
-  border-bottom: 3px solid $input-border;
+  border: 1px solid $input-border;
   border-radius: $input-border-radius; // Note: This has no effect on <select>s in some browsers, due to the limited stylability of <select>s in CSS.
-  //@include box-shadow(inset 0 1px 1px rgba(0,0,0,.075));
+  @include box-shadow(inset 0 1px 1px rgba(0,0,0,.075));
   @include transition(border-color ease-in-out .15s, box-shadow ease-in-out .15s);
 
   // Customize the `:focus` state to imitate native WebKit styles.
@@ -290,6 +299,8 @@ input[type="search"] {
   display: block;
   margin-top: 10px;
   margin-bottom: 10px;
+  // 
+  margin-left: 12px; 
 
   label {
     min-height: $line-height-computed; // Ensure the input doesn't jump when there is no text
@@ -304,10 +315,10 @@ input[type="search"] {
 .checkbox input[type="checkbox"],
 .checkbox-inline input[type="checkbox"] {
   position: absolute;
-  margin-left: -20px;
+  margin-left: -31px;
   margin-top: 4px \9;
+  border: 2px solid $primary;
 }
-
 
 .radio + .radio,
 .checkbox + .checkbox {
@@ -319,7 +330,7 @@ input[type="search"] {
 .checkbox-inline {
   position: relative;
   display: inline-block;
-  padding-left: 20px;
+  padding-left: 30px;
   margin-bottom: 0;
   vertical-align: middle;
   font-weight: normal;
@@ -679,3 +690,4 @@ input[type="checkbox"] {
     }
   }
 }
+

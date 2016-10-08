@@ -60,7 +60,7 @@
       <article class="pattern">
           <h2 id="7">Modules</h2>
           <div class="subtitle pattern-description"><p>Móludos documentados en <code>/src/sass/custom/modules</code>.
-<strong>¡Por favor sigan el orden!</strong></p>
+<strong><blink>¡Por favor sigan el orden!</blink></strong></p>
 </div>
       </article>
       <article class="pattern">
@@ -70,16 +70,13 @@
           <div class="subtitle pattern-description"><p>Título genérico para módulos del portal privado.<br>HTML en <code>/mockups/templates/partials/private-section-title.html</code></p>
 </div>
           <section class="example">
-<pre class="">&lt;h3 class=&#x27;[modifier class]&#x27;&gt;Título de sección&lt;/h3&gt;</pre>
-            <div class="kss-example"><h3 class='[modifier class]'>Título de sección</h3></div>
+<pre class="">&lt;h3 class=&#x27;private-section-title [modifier class]&#x27;&gt;Título de sección&lt;/h3&gt;</pre>
+            <div class="kss-example"><h3 class='private-section-title [modifier class]'>Título de sección</h3></div>
               <hr />
-              <p class="clearfix kss-modifier-title"><code>.private-section-title</code> <span class="f-right fs-small">Standard</span></p>
-              <div class="kss-example"><h3 class='private-section-title'>Título de sección</h3></div>
-              <hr />
-              <p class="clearfix kss-modifier-title"><code>.private-section-title.uc</code> <span class="f-right fs-small">Uppercase</span></p>
+              <p class="clearfix kss-modifier-title"><code>.uc</code> <span class="f-right fs-small">Uppercase</span></p>
               <div class="kss-example"><h3 class='private-section-title uc'>Título de sección</h3></div>
               <hr />
-              <p class="clearfix kss-modifier-title"><code>.private-section-title.fw-light</code> <span class="f-right fs-small">Light</span></p>
+              <p class="clearfix kss-modifier-title"><code>.fw-light</code> <span class="f-right fs-small">Light</span></p>
               <div class="kss-example"><h3 class='private-section-title fw-light'>Título de sección</h3></div>
           </section>
       </article>
@@ -108,17 +105,33 @@
 		<li><a href='#'>Kisuaely neumyx</a></li>
 	</ul>
 </section></div>
-              <hr />
-              <p class="clearfix kss-modifier-title"><code>.private-section</code> <span class="f-right fs-small">Standard</span></p>
-              <div class="kss-example"><section class='private-section'>
-	<h4>Title</h4>
-	<a class='btn btn-default btn-xs'>link directo</a>
-	<ul>
-		<li><a href='#'>Lorem ipsum</a></li>
-		<li><a href='#'>Amet sin coto</a></li>
-		<li><a href='#'>Kisuaely neumyx</a></li>
-	</ul>
-</section></div>
+          </section>
+      </article>
+      <article class="pattern">
+          <h2 class="kss-title" id="7-3">
+            <span class="kss-ref badge pull-right">7-3</span> Public Price list
+          </h2>
+          <div class="subtitle pattern-description"><p>Contenedor de sección de lista de precios.<br>HTML en <code>/mockups/templates/partials/public-price-list.html</code></p>
+</div>
+          <section class="example">
+<pre class="">&lt;section class=&#x27;public-price-list&#x27;&gt;
+	&lt;h4 class=&quot;section-title uc fw-regular&quot;&gt;En WOM tenemos las mejores tarifas&lt;/h4&gt;
+	&lt;ul class=&quot;list-group&quot;&gt;
+	    &lt;li class=&quot;list-group-item&quot;&gt;&lt;span class=&quot;price&quot;&gt;$50&lt;/span&gt; el minuto&lt;/li&gt;
+	    &lt;li class=&quot;list-group-item&quot;&gt;&lt;span class=&quot;price&quot;&gt;$0,84&lt;/span&gt; el segundo&lt;/li&gt;
+	    &lt;li class=&quot;list-group-item&quot;&gt;&lt;span class=&quot;price&quot;&gt;$50&lt;/span&gt; el &lt;acronym title=&quot;Shot Message Service&quot;&gt;SMS&lt;/acronym&gt;&lt;/li&gt;
+	    &lt;li class=&quot;list-group-item&quot;&gt;&lt;span class=&quot;price&quot;&gt;$5&lt;/span&gt; el mega&lt;/li&gt;
+	 &lt;/ul&gt;
+ &lt;/section&gt;</pre>
+            <div class="kss-example"><section class='public-price-list'>
+	<h4 class="section-title uc fw-regular">En WOM tenemos las mejores tarifas</h4>
+	<ul class="list-group">
+	    <li class="list-group-item"><span class="price">$50</span> el minuto</li>
+	    <li class="list-group-item"><span class="price">$0,84</span> el segundo</li>
+	    <li class="list-group-item"><span class="price">$50</span> el <acronym title="Shot Message Service">SMS</acronym></li>
+	    <li class="list-group-item"><span class="price">$5</span> el mega</li>
+	 </ul>
+ </section></div>
           </section>
       </article>
 </div>
