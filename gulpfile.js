@@ -45,7 +45,7 @@ gulp.task('bump', function() {
 });
 
 gulp.task('compile', ['clean'], function(){
-  runSequence('sass', 'minify', 'kss-html', 'kss', 'kss-public', 'scripts', 'copy-fonts', 'nunjucks');
+  runSequence('sass', 'sass-public', 'sass-private', 'minify', 'minify-public', 'minify-private', 'kss-html', 'kss', 'kss-public', 'scripts', 'copy-fonts', 'nunjucks');
 });
 
 // Clean build
@@ -142,8 +142,52 @@ gulp.task('sass', function() {
     .pipe(gulp.dest('./dist/css'));
 });
 
+gulp.task('sass-public', function() {
+
+  return gulp.src('./src/sass/wom-public.scss')
+    .pipe(stylelint({
+      reporters: [
+        {formatter: 'string', console: true}
+      ]
+    }))
+    .pipe(sourcemaps.init())
+      .pipe(sass().on('error', sass.logError))
+    .pipe(sourcemaps.write())
+    .pipe(autoprefixer())
+    .pipe(gulp.dest('./dist/css'));
+});
+
+gulp.task('sass-private', function() {
+
+  return gulp.src('./src/sass/wom-private.scss')
+    .pipe(stylelint({
+      reporters: [
+        {formatter: 'string', console: true}
+      ]
+    }))
+    .pipe(sourcemaps.init())
+      .pipe(sass().on('error', sass.logError))
+    .pipe(sourcemaps.write())
+    .pipe(autoprefixer())
+    .pipe(gulp.dest('./dist/css'));
+});
+
 gulp.task('minify', ['sass'], function() {
   return gulp.src('./dist/css/womstrap.css')
+    .pipe(cssmin())
+    .pipe(rename({suffix: '.min'}))
+    .pipe(gulp.dest('./dist/css'));
+});
+
+gulp.task('minify-public', ['sass'], function() {
+  return gulp.src('./dist/css/wom-public.css')
+    .pipe(cssmin())
+    .pipe(rename({suffix: '.min'}))
+    .pipe(gulp.dest('./dist/css'));
+});
+
+gulp.task('minify-private', ['sass'], function() {
+  return gulp.src('./dist/css/wom-private.css')
     .pipe(cssmin())
     .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('./dist/css'));
