@@ -14,7 +14,7 @@
   </script>
   
 </head>
-<body>
+<body class='class-body'>
 
   <!-- You write code for this content block in another file -->
   {% block content %} {% endblock %}
