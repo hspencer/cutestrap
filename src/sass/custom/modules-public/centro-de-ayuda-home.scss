@@ -13,7 +13,7 @@
 }
 
 .centro-ayuda-satisfaction {
-  background-image: url(../../mockups/img/centro-de-ayuda/welcome-bg.png);
+  background-image: url('#{$img-path}/centro-de-ayuda/welcome-bg.png');
   height: 185px;
   background-position: center 0px;
   background-size: 100% auto;
