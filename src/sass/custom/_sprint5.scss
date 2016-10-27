@@ -661,34 +661,35 @@ table.roaming.table-striped th {
 }
 
 /* bootstrap pills override para triple */
-.triple-pills .nav-pills {
-  margin: 0;
-  padding: 0; 
+
+.triple-pills{
+  .nav-pills{
+    margin: 0;
+    padding: 0; 
+    > li{
+      width: 33%;
+      margin:0;
+      padding:0;
+      border:0;
+      > a{
+        border-radius: 0;
+        background-color: #730184; /*fix*/
+        color: #fff;
+        font-size: 14px;
+        line-height: 150%;
+        text-align: center;        
+      }
+    }
+    .active{
+      a, a:focus{
+        background-color: $white;
+        width:100%;
+        color:#730184;
+      }
+    }
+  }
 }
 
-.triple-pills .nav-pills > li {
-  width: 33%;
-  margin:0;
-  padding:0;
-  border:0;
-}
-
-.triple-pills .nav-pills > li > a {
-  border-radius: 0;
-  background-color: #730184;
-  color: #fff;
-  font-size: 14px;
-  line-height: 150%;
-  text-align: center; 
-}
-
-.triple-pills .nav-pills .active a,
-.triple-pills .nav-pills .active a:focus {
-  
-  background-color: $white;
-  width:100%;
-  color:#730184;
-}
 
 .triple-pills .tab-content.well {
   border-radius: 0;
