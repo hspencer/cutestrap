@@ -1,12 +1,10 @@
 
-/* CSS de CARLOS OPAZO */
-
 /* CSS de CAROLINA REYES */
-
 
 .comparador-pills .comparador-nav-pills{
   margin: 0;
-  padding: 0; }
+  padding: 0; 
+}
 
 
 .comparador-pills .comparador-nav-pills > li {
@@ -64,7 +62,6 @@
 }
 
 
-
 .nivel2-pills .nivel2-nav-pills{
   margin: 0;
   padding: 0;
@@ -114,14 +111,14 @@
 }
 
 .nivel2-nav-pills > li > a:hover{
-  background-color:#fff!important;
+  background-color: #fff !important;
 }
 
 .nivel2-nav-pills > li.active > a,
 .nivel2-nav-pills > li.active > a:hover,
 .nivel2-nav-pills > li.active > a:focus {
     color: #720184;
-    background-color: #fff!important; 
+    background-color: #fff !important; 
 }
 
 .pg-40{
@@ -160,11 +157,10 @@
 .table-comparador th{
   background-color:#720184;
   text-align: center;
-    color:#fff;
-    font-weight: 400;
-    font-size: 1rem;
-
- }
+  color:#fff;
+  font-weight: 400;
+  font-size: 1rem;
+}
 
 .table-comparador > thead > tr > th{
   border-bottom: none;
@@ -177,7 +173,7 @@
 
 .table-comparador td{
   text-align:center;
-    color:#777777;
+  color:#777777;
   font-size: 1.2rem;
 }
 
@@ -194,8 +190,6 @@
 .table-comparador-voz tr td{
   width:33.3%;
 }
-
-
 
 .pt-66{
   padding-top:66px;
@@ -229,15 +223,15 @@
 }
 
  .classBody{
-    background-color: #f3f3f3;
-  }
-
+  background-color: #f3f3f3;
+}
 
 
 @media only screen and (max-width:500px) {
   
-   .nivel2-pills  .nivel2-nav-pills > li{
-  width:33%;}
+  .nivel2-pills  .nivel2-nav-pills > li{
+    width:33%;
+  }
 
   .classBody{
     background-color: #fff;
@@ -245,16 +239,18 @@
 
   .table-responsive {
       
-      border:none; }
+      border:none; 
+    }
 
    .container {
     margin-right: auto;
     margin-left: auto;
     padding-left:0px;
     padding-right:0px
+  }
 }
 
-/*CSS DE CHARLES*/
+/* CSS de CARLOS OPAZO */
 
 .w-80 {
   width: 80%;
@@ -521,15 +517,18 @@
 }
 
 table.roaming  {
-  border-radius: 0; }
+  border-radius: 0; 
+}
 
 table.roaming td {
   color: #3A1F4F;
   font-size: 1.2rem;
-  line-height: 1.6rem; }
+  line-height: 1.6rem; 
+}
 
 table.roaming .table-striped > tbody > tr:nth-of-type(odd) {
-  background-color: #DDD; }
+  background-color: #DDD; 
+}
 
 table.roaming.table-striped th {
   background-color: #421441;
@@ -672,13 +671,15 @@ table.roaming.table-striped th {
 /* bootstrap pills override para triple */
 .triple-pills .nav-pills {
   margin: 0;
-  padding: 0; }
+  padding: 0; 
+}
 
 .triple-pills .nav-pills > li {
   width: 33%;
   margin:0;
   padding:0;
-  border:0;}
+  border:0;
+}
 
 .triple-pills .nav-pills > li > a {
   border-radius: 0;
@@ -686,22 +687,25 @@ table.roaming.table-striped th {
   color: #fff;
   font-size: 14px;
   line-height: 150%;
-  text-align: center; }
+  text-align: center; 
+}
 
 .triple-pills .nav-pills .active a,
 .triple-pills .nav-pills .active a:focus {
   
-  background-color: #fff;
+  background-color: $white;
   width:100%;
-  color:#730184; }
+  color:#730184;
+}
 
 .triple-pills .tab-content.well {
   border-radius: 0;
   padding: 30px 20px;
-  border: none; }
+  border: none;
+}
 
 .triple-pills .tab-content {
-  background: white;
+  background: $white;
 }
 
 @media (max-width: 768px) {
@@ -711,9 +715,6 @@ table.roaming.table-striped th {
     color: #fff;
     font-size: 12px;
     line-height: 150%;
-    text-align: center; }
-
-
-
-
-/* CSS de MIGUEL MATAMALA */
+    text-align: center; 
+  }
+}
