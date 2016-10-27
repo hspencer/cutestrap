@@ -1,0 +1,408 @@
+<!-- layout-public.nunjucks -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Comparador WOM</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../dist/css/wom-public.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="../dist/js/wom.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+  
+</head>
+<body class='class-body'>
+
+  <!-- You write code for this content block in another file -->
+  
+
+	<nav class="navbar navbar-default navbar-main navbar-centered visible-xs" role="navigation">
+	<!-- Brand and toggle get grouped for better mobile display -->
+	<div class="navbar-header">
+
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-brand-centered">
+			<span class="navLabel">Menú</span>
+			<figure class="hamburger">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</figure>
+		</button>
+
+		<!-- wom logo -->
+		<div class="navbar-brand navbar-brand-centered">
+			<a href="index.html" title="">
+				<img src="img/logo-wom.svg" width="80" height="80" >
+			</a>
+		</div>
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<!-- <div class="collapse navbar-collapse" id="navbar-brand-centered">
+			<ul class="nav navbar-nav">
+				<<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a></li>
+				<<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Personas <span class="caret"></span></a>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="#">Planes</a></li>
+						<li><a href="#">Prepago</a></li>
+						<li><a href="#">Internet</a></li>
+						<li><a href="#">Equipos</a></li>
+						<li class="divider"></li>
+						<li><a href="#">Sucursal Online</a></li>
+					</ul>
+				</li>
+				<li><a class="fw-semibold" href="#">Planes</a></li>
+				<li><a class="fw-semibold" href="#">Prepago</a></li>
+				<li><a class="fw-semibold" href="#">Internet</a></li>
+				<li><a class="fw-semibold" href="#">Equipos</a></li>
+				<li><a class="fw-semibold" href="#">Sucursal Online</a></li>
+			</ul>
+		</div> -->
+		<!-- /.navbar-collapse -->
+	</div>
+</nav>
+
+<div class="container">
+	<div class="row">
+		
+		<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+			<div class="comparador-pills mb-40">
+					<ul class="nav comparador-nav-pills" role="tablist">
+					  <li class="active"><a href="#tab_planes_multimedia" data-toggle="tab" class="fw-semibold uc">Planes multimedia</a></li>
+					  <li><a href="#tab_planes_voz" data-toggle="tab" class="fw-semibold uc">Planes solo voz</a></li>
+					  <li><a href="#tab_planes_datos" data-toggle="tab" class="fw-semibold uc">Planes solo datos</a></li>
+					</ul>
+					<div class="tab-content tabs-content-pane">
+						<div class="tab-pane active" id="tab_planes_multimedia">
+							<div class="row">
+								<div class="col-md-12 col-lg-12 col-xs-12 pg-40">
+									
+									<div class="nivel2-pills mb-40 ml-20">
+										<ul class="nav nivel2-nav-pills" role="tablist">
+										  <li class="active"><a href="#tab_oferta-conjunta-multimedia" data-toggle="tab" class="fw-semibold uc">Oferta conjunta</a></li>
+					  					  <li><a href="#tab_informacion_multimedia" data-toggle="tab" class="fw-semibold uc">Información</a></li>
+					  					  <li><a href="#tab_velocidades_multimedia" data-toggle="tab" class="fw-semibold uc">Velocidades</a></li>
+										</ul>
+										<div class="tab-content tabs-content-pane">
+						<div class="tab-pane active" id="tab_oferta-conjunta-multimedia">
+							<div class="row">
+								<div class="col-md-12 col-lg-12 table-responsive"">
+									<table class="table table-comparador mt-40">
+									  <thead>
+									    <tr>
+									      <th>Nombre del plan <br/>oferta conjunta</th>
+									      <th>Cargo fijo mensual <br/>plan sólo voz</th>
+									      <th>Cargo fijo mensual <br/> plan sólo datos</th>
+									      <th class="valign-center">Total cargos fijos</th>
+									      <th class="valign-center">Total descuentos</th>
+									      <th>Cargo fijo plan <br/>oferta conjunta</th>
+									     
+									    </tr>
+									  </thead>
+									  <tbody>
+									    <tr class="tc-1">
+									      
+									      <td><span class="span-plan numerical ">Plan 2 Gigas</span><br/>Plan Control</td>
+									       <td><span class="span-plan numerical">$8.990</span></td>
+									       <td><span class="span-plan numerical">$8.990</span></td>
+									       <td><span class="span-plan numerical">$17.990</span></td>
+									       <td><span class="span-plan numerical">-$7.990</span></td>
+									       <td><span class="span-plan numerical">$9.990</span></td>
+										</tr>
+									    <tr class="tc-2">
+									      <td><span class="span-plan numerical ">Plan 5 Gigas</span><br/>Plan Control</td>
+									      <td><span class="span-plan numerical">$14.990</span></td>
+									      <td><span class="span-plan numerical">$14.990</span></td>
+									      <td><span class="span-plan numerical">$29.980</span></td>
+									      <td><span class="span-plan numerical">-$13.990</span></td>
+									      <td><span class="span-plan numerical">$15.990</span></td>
+									    </tr>
+									    <tr class="tc-1">
+									      <td><span class="span-plan numerical ">Plan 7 Gigas</span><br/>Plan Control</td>
+									      <td><span class="span-plan numerical">$18.990</span></td>
+									      <td><span class="span-plan numerical">$18.990</span></td>
+									      <td><span class="span-plan numerical">$37.980</span></td>
+									      <td><span class="span-plan numerical">-$17.990</span></td>
+									      <td><span class="span-plan numerical">$19.990</span></td>
+									    </tr>
+										<tr class="tc-2">
+									       <td><span class="span-plan numerical ">Plan 10 Gigas</span><br/>Plan Control</td>
+									       <td><span class="span-plan numerical">$28.990</span></td>
+									       <td><span class="span-plan numerical">$28.990</span></td>
+									       <td><span class="span-plan numerical">$57.980</span></td>
+									       <td><span class="span-plan numerical">-$27.990</span></td>
+									       <td><span class="span-plan numerical">$29.990</span></td>
+									    </tr>
+
+									  </tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+
+
+
+
+
+						<div class="tab-pane tabs-content-pane" id="tab_informacion_multimedia">
+							<div class="row">
+								<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 table-responsive">
+									<table class="table table-comparador mt-40">
+									  <thead>
+									    <tr>
+									      <th>Nombre del plan <br/>oferta conjunta</th>
+									      <th class="valign-center">Cuota de navegación</th>
+									      <th>Minutos incluidos<br/>todo destino Nacional</th>
+									      <th>SMS/MMS Incluidos<br/>todo destino Nacional</th>
+									      <th>Valor adicional MIN, SMS, MMS<br/>todo destino Nacional</th>
+									      <th class="valign-center">Valor plan</th>
+									     
+									    </tr>
+									  </thead>
+									  <tbody>
+									    <tr class="tc-1">
+									      
+									      <td><span class="span-plan numerical ">Plan 2 Gigas</span><br/>Plan Control</td>
+									       <td><span class="span-plan numerical ">2GB</span></td>
+									       <td><span class="span-plan numerical">200 minutos</span></td>
+									       <td><span class="span-plan numerical">50 SMS</span></td>
+									       <td><span class="span-plan numerical">$50</span></td>
+									       <td><span class="span-plan numerical">$9.990</span></td>
+										</tr>
+									    <tr class="tc-2">
+									      <td><span class="span-plan numerical ">Plan 5 Gigas</span><br/>Plan Control</td>
+									      <td><span class="span-plan numerical ">5GB</span></td>
+									      <td><span class="span-plan numerical">500 minutos</span></td>
+									      <td><span class="span-plan numerical">50 SMS</span></td>
+									      <td><span class="span-plan numerical">$50</span></td>
+									      <td><span class="span-plan numerical">$15.990</span></td>
+									    </tr>
+									    <tr class="tc-1">
+									      <td><span class="span-plan numerical ">Plan 7 Gigas</span><br/>Plan Control</td>
+									      <td><span class="span-plan numerical ">7GB</span></td>
+									      <td><span class="span-plan numerical">1000 minutos</span></td>
+									      <td><span class="span-plan numerical">50 SMS</span></td>
+									      <td><span class="span-plan numerical">$50</span></td>
+									      <td><span class="span-plan numerical">$19.990</span></td>
+									    </tr>
+										<tr class="tc-2">
+									       <td><span class="span-plan numerical ">Plan 10 Gigas</span><br/>Plan Control</td>
+									       <td><span class="span-plan numerical ">10GB</span></td>
+									       <td><span class="span-plan numerical">2000 minutos</span></td>
+									       <td><span class="span-plan numerical">50 SMS</span></td>
+									       <td><span class="span-plan numerical">$50</span></td>
+									       <td><span class="span-plan numerical">$29.990</span></td>
+									    </tr>
+
+									  </tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="tab-pane tabs-content-pane" id="tab_velocidades_multimedia">
+							<div class="row">
+								<div class="col-md-8 col-lg-8 col-sm-8 col-xs-8 table-responsive"">
+									<table class="table table-comparador mt-40">
+									  <thead>
+									    <tr>
+									      <th>Nombre del plan</th>
+									      <th>Cuota de navegación</th>
+									    </tr>
+									  </thead>
+									  <tbody>
+									    <tr class="tc-1">
+									      
+									      <td><span class="span-plan numerical">Plan 2 Gigas</span><br/>Plan Control</td>
+									      <td><span class="span-plan numerical">2GB</span></td>
+									      </tr>
+									    <tr class="tc-2">
+									      <td><span class="span-plan numerical">Plan 5 Gigas</span><br/>Plan Control</td>
+									      <td><span class="span-plan numerical">5GB</span></td>
+									    </tr>
+									    <tr class="tc-1">
+									      <td><span class="span-plan numerical ">Plan 7 Gigas</span><br/>Plan Control</td>
+									      <td><span class="span-plan numerical ">7GB</span></td>
+									    </tr>
+										<tr class="tc-2">
+									       <td><span class="span-plan numerical ">Plan 10 Gigas</span><br/>Plan Control</td>
+									       <td><span class="span-plan numerical ">10GB</span></td>
+									      </tr>
+
+									  </tbody>
+									</table>
+								</div>
+								<div class="col-md-4 col-lg-4 col-sm-4 col-xs-12">
+									<div class="comparador-info">
+										<h6 class="comparador-info-title nopadding">Velocidades</h6>
+										<p>Velocidad máxima de descarga 2Mbps y velocidad máxima de subida 512 Kbps.<br/><br/>
+										Velocidad promedio de descarga nacional 1.1 Mbps. Velocidad promedio de subida nacional 300 Kbps.<br/><br/>
+										Una vez alcanzada la cuota de navegación, ambas velocidades máximas se reducen a 32 Kbps y ambas velocidades mínimas a 16kpbs.</p>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+
+	<div class="tab-pane tabs-content-pane" id="tab_planes_voz">
+						<div class="row">
+							<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 pg-40 pt-66">
+								<div class="table-responsive">
+									<table class="table table-comparador mt-40">
+									  <thead>
+									    <tr>
+									      <th class="valign-center">Nombre del plan</th>
+									      <th class="valign-center">Cargo fijo mensual</th>
+									      <th>Minutos incluidos<br/>todo destino Nacional</th>
+									      <th>SMS / MMS incluidos<br/>todo destino Nacional<br/></th>
+									      <th>Valor adicional MIN, SMS,<br/>MMS, todo destino Nacional<br/></th>
+									      
+									     
+									    </tr>
+									  </thead>
+									  <tbody>
+									    <tr class="tc-1">
+										   <td class="talignl"><span class="span-plan numerical ">Plan 200 minutos</span><br/>Plan Control</td>
+									       <td><span class="span-plan numerical">$8.990</span></td>
+									       <td><span class="span-plan numerical">200 minutos</span></td>
+									       <td><span class="span-plan numerical">50 SMS</span></td>
+									       <td><span class="span-plan numerical">$50</span></td>
+									    </tr>
+									    <tr class="tc-2">
+									      <td class="talignl"><span class="span-plan numerical ">Plan 500 minutos</span><br/>Plan Libre</td>
+									      <td><span class="span-plan numerical">$14.990</span></td>
+									      <td><span class="span-plan numerical">500 minutos</span></td>
+									      <td><span class="span-plan numerical">50 SMS</span></td>
+									      <td><span class="span-plan numerical">$50</span></td>
+									      
+									    </tr>
+									    <tr class="tc-1">
+									      <td class="talignl"><span class="span-plan numerical ">Plan 1000 minutos</span><br/>Plan Libre</td>
+									      <td><span class="span-plan numerical">$18.990</span></td>
+									      <td><span class="span-plan numerical">1000 minutos</span></td>
+									      <td><span class="span-plan numerical">50 SMS</span></td>
+									      <td><span class="span-plan numerical">$50</span></td>
+									    </tr>
+										<tr class="tc-2">
+									       <td class="talignl"><span class="span-plan numerical ">Plan 2000 minutos</span><br/>Plan Libre</td>
+									       <td><span class="span-plan numerical">$28.990</span></td>
+									       <td><span class="span-plan numerical">2000 minutos</span></td>
+									       <td><span class="span-plan numerical">50 SMS</span></td>
+									       <td><span class="span-plan numerical">$50</span></td>
+									    </tr>
+
+									  </tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+						<div class="tab-pane tabs-content-pane" id="tab_planes_datos">
+			<div class="row">
+				<div class="nivel2-pills mb-40 ml-20 pg-40">
+					<ul class="nav nivel2-nav-pills" role="tablist">
+						<li class="active"><a href="#tab_informacion_datos" data-toggle="tab" class="fw-semibold uc">Información</a></li>
+						
+					</ul>
+				
+					<div class="row">
+						<div class="tab-content tabs-content-pane">
+						<div class="tab-pane active" id="tab_informacion_datos">
+							<div class="row">
+								<div class="col-md-12 col-lg-12">
+									<table class="table table-comparador mt-40 table-comparador-voz">
+										<thead>
+											<tr>
+												<th>Nombre del Plan<br/>oferta conjunta</th>
+												<th>Precio<br/>plan</th>
+												<th>Cuota<br/>navegación</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr class="tc-1">
+												<td class="talignl"><span class="span-plan numerical">Plan 2 Gigas</span><br/>Plan Control</td>
+												<td><span class="span-plan numerical">$8.990</span></td>
+												<td><span class="span-plan numerical">2GB</span></td>
+											</tr>
+											<tr class="tc-2">
+												<td class="talignl"><span class="span-plan numerical ">Plan 5 Gigas</span><br/>Plan Libre</td>
+												<td><span class="span-plan numerical">$14.990</span></td>
+												<td><span class="span-plan numerical">5GB</span></td>
+											</tr>
+											<tr class="tc-1">
+												<td class="talignl"><span class="span-plan numerical ">Plan 7 Gigas</span><br/>Plan Libre</td>
+												<td><span class="span-plan numerical">$18.990</span></td>
+												<td><span class="span-plan numerical">7GB</span></td>
+											</tr>
+											<tr class="tc-2">
+												<td class="talignl"><span class="span-plan numerical ">Plan 10 Gigas</span><br/>Plan Libre</td>
+												<td><span class="span-plan numerical">$28.990</span></td>
+												<td><span class="span-plan numerical">10GB</span></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+</div><!--col-->
+</div><!--row-->
+</div><!--container-->
+
+<footer class="main-foot">
+  <div class="container">
+    <div class="row">
+      <div class="ta-center">
+        <img src="img/logo-footer.svg">
+      </div>
+      <ul class="accesos-foot">
+        <li class="non-point">
+          <a class="salt-space" href="#">¡Síguenos!</a>
+          <a class="salt-space" href="https://www.facebook.com/womchile" target="_blank">
+            <img class="ico-space" src="img/icons/ico-face-white.png">
+          </a>
+          <a class="salt-space" href="#" target="_blank">
+            <img class="ico-space" src="img/icons/ico-twitter-white.png">
+          </a>
+          <a class="salt-space" href="#" target="_blank">
+            <img class="ico-space" src="img/icons/ico-youtube-white.png">
+          </a>
+          <a class="salt-space" href="#" target="_blank"><img class="ico-space" src="img/icons/ico-white-instagram.png"></a>
+        </li>
+      </ul>
+      <ul class="lista-foot">
+        <li><a href="#">Te ayudamos</a></li>
+        <li><a href="#">Sobre WOM</a></li>
+        <li><a href="#">Términos Legales</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+
+</body>
+</html>
