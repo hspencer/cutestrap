@@ -16,7 +16,7 @@ General classes for Public Pages
 .ticket-list{
 	line-height: 1.6rem;
 	font-size: 1.4rem;
-	color: #4A4A4A; 
+	color: $gray-8; 
 }
 
 .ticket-list li{
@@ -31,5 +31,5 @@ General classes for Public Pages
 	font-family: 'FontAwesome';
 	content: '\f00c';
 	margin-right: 16px;
-	color: #720184;
+	color: $quaternary;
 }
