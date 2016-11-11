@@ -4,6 +4,12 @@ General classes for Public Pages
 
 */
 
+
+body 
+{
+	background: $gray-9;
+}
+
 .p-womer {
 	line-height: 1.6rem;
 	font-size: 1.2rem;
@@ -16,7 +22,7 @@ General classes for Public Pages
 }
 
 .ticket-list li{
-	margin-bottom: 20px !important;
+	margin-bottom: 20px;
 	list-style: none;
 	list-style-position: inside;
 	text-indent: -30px;
