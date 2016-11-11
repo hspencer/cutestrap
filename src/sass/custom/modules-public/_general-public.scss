@@ -1,0 +1,35 @@
+/*
+
+General classes for Public Pages 
+
+*/
+
+.p-20 {
+	padding: 20px;
+}
+
+.p-womer {
+	line-height: 1.6rem;
+	font-size: 1.2rem;
+}
+
+.ticket-list{
+	line-height: 1.6rem;
+	font-size: 1.4rem;
+	color: #4A4A4A; 
+}
+
+.ticket-list li{
+	margin-bottom: 20px !important;
+	list-style: none;
+	list-style-position: inside;
+	text-indent: -30px;
+	padding-left: 30px;
+}
+
+.ticket-list li:before {    
+	font-family: 'FontAwesome';
+	content: '\f00c';
+	margin-right: 16px;
+	color: #720184;
+}
