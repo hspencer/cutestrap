@@ -1,0 +1,37 @@
+/*
+
+General classes for Public Pages 
+
+*/
+
+
+body 
+{
+	background: $gray-9;
+}
+
+.p-womer {
+	line-height: 1.6rem;
+	font-size: 1.2rem;
+}
+
+.ticket-list{
+	line-height: 1.6rem;
+	font-size: 1.4rem;
+	color: $gray-8; 
+}
+
+.ticket-list li{
+	margin-bottom: 20px;
+	list-style: none;
+	list-style-position: inside;
+	text-indent: -30px;
+	padding-left: 30px;
+}
+
+.ticket-list li:before {    
+	font-family: 'FontAwesome';
+	content: '\f00c';
+	margin-right: 16px;
+	color: $quaternary;
+}
