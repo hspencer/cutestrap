@@ -3,31 +3,23 @@
 
 
 @font-face {
-    font-family: 'bitterbold';
+    font-family: 'Bitter';
     src: url('bitter-bold-webfont.woff2') format('woff2'),
          url('bitter-bold-webfont.woff') format('woff');
-    font-weight: normal;
+    font-weight: bold;
     font-style: normal;
-
 }
 
-
-
-
 @font-face {
-    font-family: 'bitteritalic';
+    font-family: 'Bitter';
     src: url('bitter-italic-webfont.woff2') format('woff2'),
          url('bitter-italic-webfont.woff') format('woff');
     font-weight: normal;
-    font-style: normal;
-
+    font-style: italic;
 }
 
-
-
-
 @font-face {
-    font-family: 'bitterregular';
+    font-family: 'Bitter';
     src: url('bitter-regular-webfont.woff2') format('woff2'),
          url('bitter-regular-webfont.woff') format('woff');
     font-weight: normal;
